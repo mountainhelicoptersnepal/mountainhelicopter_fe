@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --mh-color-primary-blue: #003366;
+  --mh-color-blue: #0062b1;
+  --mh-color-blue-light: #e6f0f8;
+  --mh-color-blue-deep: #001a33;
+
+  --mh-color-gold: #f2b632;
+  --mh-color-gold-warm: #e5a82d;
+  --mh-color-gold-deep: #b8860b;
+
+  --mh-color-white: #ffffff;
+  --mh-color-off-white: #f8fafc;
+  --mh-color-ink: #0a1929;
+  --mh-color-ink-soft: #1e2a3a;
+  --mh-color-grey: #6b7886;
+  --mh-color-grey-light: #94a3b8;
+
+  --mh-color-whatsapp-green: #25d366;
+  --mh-color-success: #10b981;
+  --mh-color-error: #ef4444;
+
+  --background: var(--mh-color-white);
+  --foreground: var(--mh-color-ink);
+  --surface: var(--mh-color-off-white);
+  --border: #e5e7eb;
+
+  --font-size-display-lg: 4.5rem;
+  --font-size-display-md: 3.25rem;
+  --font-size-display-sm: 2.5rem;
+  --font-size-heading-2xl: 2rem;
+  --font-size-heading-xl: 1.75rem;
+  --font-size-heading-lg: 1.375rem;
+  --font-size-heading-md: 1.125rem;
+  --font-size-heading-sm: 1rem;
+  --font-size-heading-xs: 0.875rem;
+  --font-size-text-2xl: 1.5rem;
+  --font-size-text-xl: 1.25rem;
+  --font-size-text-lg: 1.125rem;
+  --font-size-text-md: 1rem;
+  --font-size-text-sm: 0.875rem;
+  --font-size-text-xs: 0.75rem;
+  --font-size-text-2xs: 0.625rem;
+
+  --line-height-display: 1.05;
+  --line-height-heading: 1.15;
+  --line-height-body: 1.6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+
+  --color-primary-blue: var(--mh-color-primary-blue);
+  --color-blue: var(--mh-color-blue);
+  --color-blue-light: var(--mh-color-blue-light);
+  --color-blue-deep: var(--mh-color-blue-deep);
+  --color-gold: var(--mh-color-gold);
+  --color-gold-warm: var(--mh-color-gold-warm);
+  --color-gold-deep: var(--mh-color-gold-deep);
+  --color-off-white: var(--mh-color-off-white);
+  --color-ink: var(--mh-color-ink);
+  --color-ink-soft: var(--mh-color-ink-soft);
+  --color-grey: var(--mh-color-grey);
+  --color-grey-light: var(--mh-color-grey-light);
+  --color-whatsapp-green: var(--mh-color-whatsapp-green);
+  --color-success: var(--mh-color-success);
+  --color-error: var(--mh-color-error);
+
+  --font-sans: var(--font-manrope);
+
+  --text-display-lg: var(--font-size-display-lg);
+  --text-display-md: var(--font-size-display-md);
+  --text-display-sm: var(--font-size-display-sm);
+  --text-heading-2xl: var(--font-size-heading-2xl);
+  --text-heading-xl: var(--font-size-heading-xl);
+  --text-heading-lg: var(--font-size-heading-lg);
+  --text-heading-md: var(--font-size-heading-md);
+  --text-heading-sm: var(--font-size-heading-sm);
+  --text-heading-xs: var(--font-size-heading-xs);
+  --text-text-2xl: var(--font-size-text-2xl);
+  --text-text-xl: var(--font-size-text-xl);
+  --text-text-lg: var(--font-size-text-lg);
+  --text-text-md: var(--font-size-text-md);
+  --text-text-sm: var(--font-size-text-sm);
+  --text-text-xs: var(--font-size-text-xs);
+  --text-text-2xs: var(--font-size-text-2xs);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-text-md);
+  line-height: var(--line-height-body);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: var(--mh-color-gold);
+  color: var(--mh-color-blue-deep);
+}
+
+@layer utilities {
+  .font-manrope {
+    font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  }
+
+  .font-fraunces {
+    font-family: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  }
+
+  .font-montserrat {
+    font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  }
+}
