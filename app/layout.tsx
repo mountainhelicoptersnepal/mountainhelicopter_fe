@@ -3,19 +3,19 @@ import { Fraunces, Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const manrope = Manrope({
-  variable: "--font-manrope",
+  variable: "--font-family-manrope",
   subsets: ["latin"],
   display: "swap",
 });
 
 const fraunces = Fraunces({
-  variable: "--font-fraunces",
+  variable: "--font-family-fraunces",
   subsets: ["latin"],
   display: "swap",
 });
 
 const montserrat = Montserrat({
-  variable: "--font-montserrat",
+  variable: "--font-family-montserrat",
   subsets: ["latin"],
   display: "swap",
 });

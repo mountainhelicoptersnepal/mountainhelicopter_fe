@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useRef } from "react";
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
 
 function clamp(value: number, minimum = 0, maximum = 1) {
   return Math.min(Math.max(value, minimum), maximum);
@@ -190,30 +191,11 @@ export default function Hero() {
             </p>
 
             <div className="mx-auto mt-5 flex w-full max-w-[409.5px] flex-col items-center justify-center gap-4 sm:h-[46px] sm:flex-row sm:gap-[30px]">
-              <Link
-                href="/contact"
-                className="group relative isolate flex h-[46px] w-[157px] shrink-0 items-center justify-center gap-[5px] overflow-hidden whitespace-nowrap bg-[#F2B632] px-6 py-2 font-manrope text-[14px] font-bold uppercase text-[#003366]"
-              >
-                <span className="absolute inset-0 -translate-x-[101%] bg-white transition-transform duration-500 ease-out group-hover:translate-x-0" />
+              <PrimaryButton href="/contact">Enquire Now</PrimaryButton>
 
-                <span className="relative z-10 flex items-center gap-[5px]">
-                  Enquire Now
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </span>
-              </Link>
-
-              <Link
-                href="/experiences"
-                className="group relative isolate flex h-[46px] w-[222px] max-w-full shrink-0 items-center justify-center gap-[5px] overflow-hidden whitespace-nowrap border-2 border-white bg-transparent px-6 py-2 font-manrope text-[14px] font-bold uppercase text-white"
-              >
-                <span className="absolute inset-0 -translate-x-[101%] bg-white transition-transform duration-500 ease-out group-hover:translate-x-0" />
-
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-[#003366]">
-                  Find Your Experience
-                </span>
-              </Link>
+              <SecondaryButton href="/experiences">
+                Find Your Experience
+              </SecondaryButton>
             </div>
           </div>
         </div>

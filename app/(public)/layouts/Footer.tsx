@@ -146,7 +146,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[#06111f] pt-16 md:pt-20 pb-8">
+    <footer className="w-full bg-[#000b15] pt-16 md:pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         {/* ─── Decorative Heading ─── */}
         <h2
@@ -354,13 +354,13 @@ export default function Footer() {
         {/* ─── Bottom Bar ─── */}
         <div className="border-t border-gold pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p
-            className="text-grey-light text-xs tracking-wider uppercase"
+            className="text-grey-light max-w-full text-center text-xs tracking-wider uppercase md:text-left"
             style={{ fontFamily }}
           >
             &copy; {currentYear} MOUNTAIN HELICOPTERS PVT. LTD. ALL RIGHTS
             RESERVED.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex-nowrap md:justify-start md:gap-6">
             {["PRIVACY", "TERMS", "CANCELLATION", "REFUND"].map((link) => (
               <a
                 key={link}
