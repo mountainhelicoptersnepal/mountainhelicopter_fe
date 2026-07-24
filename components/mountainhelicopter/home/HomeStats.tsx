@@ -38,17 +38,17 @@ export default function StateSection() {
             }`}
           >
             {/* Value: 32px, Bold, Gold #F2B632 */}
-            <h3 className="text-[#F2B632] font-serif text-[32px] font-bold leading-[32px] mb-2">
+            <h3 className="text-[#F2B632] font-fraunces text-[32px] font-bold leading-[32px] mb-2">
               {stat.value}
             </h3>
             
             {/* Label: 11px, SemiBold, Uppercase, White */}
-            <p className="text-white text-[11px] font-semibold uppercase leading-[14px] mb-1">
+            <p className="text-white text-[11px] font-manrope uppercase leading-[14px] mb-1">
               {stat.label}
             </p>
             
             {/* Sub text: 9px, Regular, Uppercase, White/Gray */}
-            <p className="text-white/70 text-[9px] font-normal uppercase leading-[20px]">
+            <p className="text-white/70 text-[9px] font-manrope uppercase leading-[20px]">
               {stat.sub}
             </p>
           </div>
