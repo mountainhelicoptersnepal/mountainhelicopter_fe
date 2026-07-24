@@ -5,18 +5,18 @@ import Rescue from "./Rescue";
 import Blogs from "./Blogs";
 import Cta from "./CTA";
 import Faq from "./Faq";
+import Stats from "./Stats";
 
 const page = () => {
   return (
     <div>
       <Hero />
-   
+      <Stats />
       <Story />
       <Rescue />
       <Blogs />
       <Faq />
       <Cta />
-    
     </div>
   );
 };
