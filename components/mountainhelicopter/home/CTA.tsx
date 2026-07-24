@@ -61,7 +61,7 @@ export default function CTA() {
         <div className="flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
           <PrimaryButton href="/inquire">Inquire Now</PrimaryButton>
           <SecondaryButton
-            href="/app/whatsapp"
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-inline gap-2"
