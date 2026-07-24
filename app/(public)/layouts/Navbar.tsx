@@ -11,6 +11,7 @@ import {
   UserRound,
   X,
 } from "lucide-react";
+import Image from "next/image";
 
 const SCROLL_THRESHOLD = 20;
 
@@ -97,16 +98,16 @@ const NAV_LINKS = [
     label: "Fleet",
     href: "/fleet",
     dropdown: [
-      {
-        title: "Our Helicopters",
-        href: "/fleet/helicopters",
-        description: "Modern helicopters with advanced safety features.",
-      },
-      {
-        title: "Aircraft Details",
-        href: "/fleet/details",
-        description: "Technical information about our fleet.",
-      },
+      // {
+      //   title: "Our Helicopters",
+      //   href: "/fleet/helicopters",
+      //   description: "Modern helicopters with advanced safety features.",
+      // },
+      // {
+      //   title: "Aircraft Details",
+      //   href: "/fleet/details",
+      //   description: "Technical information about our fleet.",
+      // },
     ],
   },
   {
@@ -299,6 +300,9 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
   const isHomeTop = pathname === "/" && !isScrolled;
   const navTextColor = isHomeTop ? "text-white" : "text-[#071825]";
+  const logoSrc = isHomeTop
+    ? "/images/logo.png"
+    : "/images/navbar-logo-clear.png";
 
   return (
     <header
@@ -306,7 +310,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         isHomeTop ? "bg-transparent" : "bg-white shadow-sm backdrop-blur-md"
       }`}
     >
-      <nav className="mx-auto flex h-[75px] w-full max-w-[1400px] items-center justify-between px-4 py-[10px] sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+      <nav className="mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between px-6 py-[10px] sm:px-6 md:px-12 lg:px-16">
         {/* Logo */}
 
         <Link
@@ -315,20 +319,12 @@ function NavbarContent({ pathname }: { pathname: string }) {
           aria-label="Go to homepage"
           className="flex shrink-0 flex-col leading-none"
         >
-          <span
-            className={`font-fraunces text-xl font-bold tracking-normal sm:text-2xl ${
-              isHomeTop ? "text-white" : "text-[#071825]"
-            }`}
-          >
-            Mountain
-          </span>
-          <span
-            className={`font-manrope text-[10px] font-bold uppercase tracking-[0.22em] ${
-              isHomeTop ? "text-[#F5B82E]" : "text-[#B8860B]"
-            }`}
-          >
-            Helicopters
-          </span>
+          <Image
+            src={logoSrc}
+            alt="Mountain Helicopters Logo"
+            width={136}
+            height={54}
+          />
         </Link>
 
         {/* Desktop navigation */}
@@ -340,13 +336,18 @@ function NavbarContent({ pathname }: { pathname: string }) {
             const isCurrentPath =
               pathname === link.href || pathname.startsWith(`${link.href}/`);
 
+            const hasDropdown = link.dropdown.length > 0;
             const isDropdownOpen = activeDropdown === index;
 
             return (
               <div
                 key={link.href}
                 className="relative"
-                onMouseEnter={() => setActiveDropdown(index)}
+                onMouseEnter={() => {
+                  if (hasDropdown) {
+                    setActiveDropdown(index);
+                  }
+                }}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
@@ -356,13 +357,15 @@ function NavbarContent({ pathname }: { pathname: string }) {
                 >
                   {link.label}
 
-                  <ChevronDown
-                    size={16}
-                    aria-hidden="true"
-                    className={`transition-transform duration-300 ${
-                      isDropdownOpen ? "rotate-180" : ""
-                    }`}
-                  />
+                  {hasDropdown ? (
+                    <ChevronDown
+                      size={16}
+                      aria-hidden="true"
+                      className={`transition-transform duration-300 ${
+                        isDropdownOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  ) : null}
 
                   <span
                     className={`absolute -bottom-2 left-0 h-[2px] bg-[#f5b82e] transition-all duration-300 ${
@@ -373,30 +376,32 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
                 {/* Desktop dropdown */}
 
-                <div
-                  className={`absolute left-0 top-10 w-[300px] origin-top rounded-xl border border-gray-100 bg-white p-3 shadow-2xl transition-all duration-300 ${
-                    isDropdownOpen
-                      ? "visible translate-y-0 opacity-100"
-                      : "invisible translate-y-5 opacity-0"
-                  }`}
-                >
-                  {link.dropdown.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={closeNavigation}
-                      className="group block rounded-lg p-3 transition hover:bg-[#f7b51e]/10"
-                    >
-                      <h3 className="text-sm font-bold text-[#071825] transition group-hover:text-[#f7b51e]">
-                        {item.title}
-                      </h3>
+                {hasDropdown ? (
+                  <div
+                    className={`absolute left-0 top-10 w-[300px] origin-top rounded-xl border border-gray-100 bg-white p-3 shadow-2xl transition-all duration-300 ${
+                      isDropdownOpen
+                        ? "visible translate-y-0 opacity-100"
+                        : "invisible translate-y-5 opacity-0"
+                    }`}
+                  >
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={closeNavigation}
+                        className="group block rounded-lg p-3 transition hover:bg-[#f7b51e]/10"
+                      >
+                        <h3 className="text-sm font-bold text-[#071825] transition group-hover:text-[#f7b51e]">
+                          {item.title}
+                        </h3>
 
-                      <p className="mt-1 text-xs normal-case text-gray-500">
-                        {item.description}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
+                        {/* <p className="mt-1 text-xs normal-case text-gray-500">
+                          {item.description}
+                        </p> */}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             );
           })}
@@ -512,53 +517,66 @@ function NavbarContent({ pathname }: { pathname: string }) {
       >
         <div className="px-6 py-5 text-sm font-semibold uppercase text-white">
           {NAV_LINKS.map((link, index) => {
+            const hasDropdown = link.dropdown.length > 0;
             const isDropdownOpen = mobileDropdown === index;
 
             return (
               <div key={link.href}>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setMobileDropdown(isDropdownOpen ? null : index)
-                  }
-                  aria-expanded={isDropdownOpen}
-                  className="flex w-full items-center justify-between border-b border-white/10 py-4"
-                >
-                  {link.label}
+                {hasDropdown ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMobileDropdown(isDropdownOpen ? null : index)
+                      }
+                      aria-expanded={isDropdownOpen}
+                      className="flex w-full items-center justify-between border-b border-white/10 py-4"
+                    >
+                      {link.label}
 
-                  <ChevronDown
-                    size={18}
-                    aria-hidden="true"
-                    className={`transition-transform ${
-                      isDropdownOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                      <ChevronDown
+                        size={18}
+                        aria-hidden="true"
+                        className={`transition-transform ${
+                          isDropdownOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
 
-                <div
-                  className={`overflow-hidden transition-all duration-500 ${
-                    isDropdownOpen ? "max-h-96" : "max-h-0"
-                  }`}
-                >
+                    <div
+                      className={`overflow-hidden transition-all duration-500 ${
+                        isDropdownOpen ? "max-h-96" : "max-h-0"
+                      }`}
+                    >
+                      <Link
+                        href={link.href}
+                        onClick={closeNavigation}
+                        className="block px-4 py-3 text-xs normal-case text-gray-300 transition hover:text-[#f7b51e]"
+                      >
+                        View all {link.label}
+                      </Link>
+
+                      {link.dropdown.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          onClick={closeNavigation}
+                          className="block px-4 py-3 text-xs normal-case text-gray-300 transition hover:text-[#f7b51e]"
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
                   <Link
                     href={link.href}
                     onClick={closeNavigation}
-                    className="block px-4 py-3 text-xs normal-case text-gray-300 transition hover:text-[#f7b51e]"
+                    className="block border-b border-white/10 py-4"
                   >
-                    View all {link.label}
+                    {link.label}
                   </Link>
-
-                  {link.dropdown.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={closeNavigation}
-                      className="block px-4 py-3 text-xs normal-case text-gray-300 transition hover:text-[#f7b51e]"
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                </div>
+                )}
               </div>
             );
           })}

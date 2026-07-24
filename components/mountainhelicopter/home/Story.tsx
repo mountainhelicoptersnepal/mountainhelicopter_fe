@@ -1,6 +1,12 @@
 function SafetyIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="M8 1L2 3V9C2 12.3141 4.68594 15 8 15C11.3141 15 14 12.3141 14 9V3L8 1ZM12.875 9C12.875 11.6922 10.6922 13.875 8 13.875C5.30781 13.875 3.125 11.6922 3.125 9V3.84375L8 2.125L12.875 3.84375V9Z"
         fill="currentColor"
@@ -15,7 +21,13 @@ function SafetyIcon() {
 
 function HelicopterIcon() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="M10.077 13.462V7.154C8.15367 7.154 6.62167 7.78867 5.481 9.058C4.34033 10.3273 3.76967 11.7947 3.769 13.46L10.077 13.462ZM13.462 16.846V7.154H11.077V14.462H3.769V16.231C3.769 16.4103 3.82667 16.5577 3.942 16.673C4.058 16.7883 4.20567 16.846 4.385 16.846H13.462ZM14.462 13.685L20.231 13.085V11H14.461L14.462 13.685ZM12.75 20.23H4V19.23H12.75V20.23ZM14.462 17.845H4.385C3.94033 17.845 3.56 17.687 3.244 17.371C2.92733 17.0543 2.769 16.674 2.769 16.23V13.46C2.769 11.5093 3.43833 9.80367 4.777 8.343C6.11567 6.88233 7.88233 6.15233 10.077 6.153H14.462V10H19.346L20.231 8H21.231V13.98L14.461 14.685L14.462 17.845ZM18.75 4.77H4V3.77H18.75V4.77Z"
         fill="currentColor"
@@ -26,7 +38,13 @@ function HelicopterIcon() {
 
 function ClockIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z"
         stroke="currentColor"
@@ -47,7 +65,13 @@ function ClockIcon() {
 
 function TeamIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="M10 13.125V11.875C10 11.212 9.73661 10.5761 9.26777 10.1072C8.79893 9.63839 8.16304 9.375 7.5 9.375H3.75C3.08696 9.375 2.45107 9.63839 1.98223 10.1072C1.51339 10.5761 1.25 11.212 1.25 11.875V13.125"
         stroke="currentColor"
@@ -82,7 +106,13 @@ function TeamIcon() {
 
 function ComplianceIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="M12 2.25H15.75V17.25H2.25V2.25H6M6 10.5L8.25 12.75L12.75 8.25M6 4.5H12V0.75H6V4.5Z"
         stroke="currentColor"
@@ -94,7 +124,13 @@ function ComplianceIcon() {
 
 function GenerationIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 15 15"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         d="M8 12.25C8.15845 12.3688 8.34288 12.4483 8.53807 12.4819C8.73327 12.5155 8.93365 12.5022 9.12271 12.4431C9.31177 12.3841 9.48408 12.2809 9.62546 12.1422C9.76683 12.0035 9.87322 11.8332 9.93585 11.6453C9.99849 11.4574 10.0156 11.2573 9.9857 11.0615C9.95583 10.8657 9.87986 10.6798 9.76405 10.5191C9.64824 10.3584 9.49591 10.2276 9.3196 10.1373C9.14329 10.0471 8.94806 10 8.75 10H1.25"
         stroke="currentColor"
@@ -161,10 +197,10 @@ const features = [
 
 export default function Story() {
   return (
-    <section className="w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-[751fr_689fr]">
+    <section className="w-full bg-[#003366] lg:bg-[linear-gradient(to_right,#003366_0%,#003366_50%,#002448_50%,#002448_100%)]">
+      <div className="mx-auto grid w-full max-w-[1440px] grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col justify-center bg-[#003366] px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
-          <div className="mx-auto flex w-full max-w-[535px] flex-col gap-6">
+          <div className="mx-auto flex w-full max-w-4xl lg:max-w-lg flex-col gap-8 text-left lg:mx-0 xl:ml-16">
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-6 bg-[#f2b632]" />
 
@@ -181,15 +217,14 @@ export default function Story() {
             </h2>
 
             <p className="font-manrope text-[16px] font-normal leading-[26px] text-white/80">
-              Founded in Kathmandu in 2009, Mountain Helicopters Nepal was
-              born from a passion for aviation and a deep respect for the
-              Himalayas. What began as a vision to connect Nepal&apos;s most
-              extraordinary landscapes has grown into more than 17 years of
-              trusted helicopter operations. Every mission we undertake is
-              guided by the same principles that inspired our first
-              flight—safety without compromise, operational excellence, and a
-              commitment to showcasing Nepal&apos;s natural beauty with
-              responsibility and respect.
+              Founded in Kathmandu in 2009, Mountain Helicopters Nepal was born
+              from a passion for aviation and a deep respect for the Himalayas.
+              What began as a vision to connect Nepal&apos;s most extraordinary
+              landscapes has grown into more than 17 years of trusted helicopter
+              operations. Every mission we undertake is guided by the same
+              principles that inspired our first flight—safety without
+              compromise, operational excellence, and a commitment to showcasing
+              Nepal&apos;s natural beauty with responsibility and respect.
             </p>
 
             <p className="font-manrope text-[16px] font-normal leading-[26px] text-white/80">
@@ -198,15 +233,15 @@ export default function Story() {
               remote valleys and communities. Whether delivering unforgettable
               Himalayan experiences, supporting mountaineering expeditions,
               providing high-altitude logistics, or responding to life-saving
-              rescue missions, every journey reflects our purpose: to make
-              the unreachable accessible while setting the standard for
-              helicopter aviation in Nepal.
+              rescue missions, every journey reflects our purpose: to make the
+              unreachable accessible while setting the standard for helicopter
+              aviation in Nepal.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col justify-center bg-[#002448] px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
-          <div className="mx-auto flex w-full max-w-[439px] flex-col gap-8">
+          <div className="mx-auto flex w-full max-w-4xl lg:max-w-lg flex-col gap-8 text-left lg:ml-auto lg:mr-0 xl:mr-16">
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-6 bg-[#f2b632]" />
 

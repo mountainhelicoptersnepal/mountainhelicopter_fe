@@ -1,7 +1,8 @@
 import BlogCard from "@/components/shared/cards/BlogCard";
 
 const BLOG_IMAGE = "/images/blogs/blogs.png";
-const BLOG_IMAGE_ALT = "Aerial view of the Himalayan range from a Mountain Helicopters flight";
+const BLOG_IMAGE_ALT =
+  "Aerial view of the Himalayan range from a Mountain Helicopters flight";
 
 const POST_CONTENT = {
   image: BLOG_IMAGE,
@@ -22,7 +23,7 @@ export default function Blogs() {
     <section className="w-full bg-[#002347]">
       <div className="mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <div className="mb-10 flex flex-col gap-8 md:mb-12 md:flex-row md:items-end md:justify-between">
-          <div className="rounded-[10px] border border-[#6b7886] bg-[#002448] p-5 sm:p-6">
+          <div className="rounded-[10px] bg-[#002448] p-5 sm:p-6">
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-6 bg-[#f2b632]" />
 
@@ -38,7 +39,7 @@ export default function Blogs() {
             </h2>
           </div>
 
-          <div className="inline-flex w-fit shrink-0 items-center gap-[6px] rounded-[10px] border border-[#6b7886] bg-[#002448]">
+          <div className="inline-flex w-fit shrink-0 items-center gap-[6px] rounded-[10px] bg-[#002448]">
             <span className="font-manrope text-[11px] font-semibold uppercase leading-[16.5px] tracking-[1.98px] text-white/40">
               All Stories
             </span>
