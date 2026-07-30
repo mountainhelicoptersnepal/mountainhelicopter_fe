@@ -13,14 +13,20 @@ export type InquiryInput = {
 };
 
 export async function submitInquiry(input: InquiryInput) {
+  const groupSize =
+    typeof input.group_size === "string"
+      ? Number(input.group_size)
+      : input.group_size;
+
+  if (!Number.isFinite(groupSize)) {
+    throw new Error("Please choose a valid group size.");
+  }
+
   const { error } = await supabase.from("inquiries").insert({
     full_name: input.full_name,
     email: input.email,
     phone: input.phone,
-    group_size:
-      typeof input.group_size === "string"
-        ? Number(input.group_size)
-        : input.group_size,
+    group_size: groupSize,
     service_type: input.service_type,
     preferred_date: input.preferred_date || null,
     message: input.message,

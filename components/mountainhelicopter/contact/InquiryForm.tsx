@@ -1,4 +1,57 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+import { submitInquiry } from "@/lib/inquiries";
+
+type SupabaseLikeError = {
+  message?: string;
+};
+
 export default function InquiryForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(
+    null,
+  );
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitMessage("");
+    setSubmitStatus(null);
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await submitInquiry({
+        full_name: String(formData.get("name") || ""),
+        email: String(formData.get("email") || ""),
+        phone: String(formData.get("phone") || ""),
+        group_size: String(formData.get("group") || ""),
+        service_type: String(formData.get("service") || ""),
+        preferred_date: String(formData.get("date") || "") || null,
+        message: String(formData.get("message") || ""),
+      });
+
+      form.reset();
+      setSubmitStatus("success");
+      setSubmitMessage("Inquiry submitted successfully. We will contact you soon.");
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : (error as SupabaseLikeError)?.message ||
+            "Unable to submit your inquiry. Please try again.";
+
+      console.error("Inquiry submission failed:", error);
+      setSubmitStatus("error");
+      setSubmitMessage(errorMessage);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section
       id="inquiry-form"
@@ -81,8 +134,7 @@ export default function InquiryForm() {
 
             <form
               className="space-y-5"
-              action="mailto:info@mountainhelicoptersnepal.com"
-              method="get"
+              onSubmit={handleSubmit}
             >
               <div className="grid gap-5 sm:grid-cols-2">
                 <label className="block">
@@ -132,12 +184,12 @@ export default function InquiryForm() {
                     name="group"
                     className="w-full rounded-lg border border-[#E2E8F0] bg-white px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
                   >
-                    <option>1 passenger</option>
-                    <option>2 passengers</option>
-                    <option>3 passengers</option>
-                    <option>4 passengers</option>
-                    <option>5 passengers</option>
-                    <option>Charter full helicopter</option>
+                    <option value="1">1 passenger</option>
+                    <option value="2">2 passengers</option>
+                    <option value="3">3 passengers</option>
+                    <option value="4">4 passengers</option>
+                    <option value="5">5 passengers</option>
+                    <option value="5">Charter full helicopter</option>
                   </select>
                 </label>
               </div>
@@ -190,9 +242,10 @@ export default function InquiryForm() {
 
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-lg border-b-2 border-[#f5a623] bg-[#003366] px-8 py-4 font-manrope font-bold text-white transition hover:bg-[#001A33]"
               >
-                Send Inquiry
+                {isSubmitting ? "Sending..." : "Send Inquiry"}
                 <svg
                   className="h-4 w-4 transition-transform group-hover:translate-x-1"
                   viewBox="0 0 24 24"
@@ -207,6 +260,18 @@ export default function InquiryForm() {
                   />
                 </svg>
               </button>
+
+              {submitMessage ? (
+                <p
+                  className={`text-center font-manrope text-sm font-semibold ${
+                    submitStatus === "success"
+                      ? "text-[#1d7a46]"
+                      : "text-[#b42318]"
+                  }`}
+                >
+                  {submitMessage}
+                </p>
+              ) : null}
 
               <p className="text-center font-manrope text-xs text-[#6B7886]">
                 Your details are used only to answer this inquiry. Never sold,
