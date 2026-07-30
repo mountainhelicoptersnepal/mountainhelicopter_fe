@@ -235,7 +235,7 @@ export default function InquiryForm() {
 
               <p className="text-center text-[10px] text-gray-400 tracking-wider uppercase leading-relaxed">
                 By submitting, you agree to be contacted by Mountain Helicopters
-                about your inquiry. We don't share data with third parties.
+                about your inquiry. We don&apos;t share data with third parties.
               </p>
             </form>
           ) : (
@@ -260,7 +260,7 @@ export default function InquiryForm() {
                 Inquiry Sent!
               </h3>
               <p className="text-gray-500 text-sm mb-6">
-                We'll get back to you within 2 hours.
+                We&apos;ll get back to you within 2 hours.
               </p>
               <button
                 onClick={resetForm}

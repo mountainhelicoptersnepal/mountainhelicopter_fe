@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type TouchEvent } from "react";
 
 const TESTIMONIALS = [
   {
@@ -52,8 +52,8 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   const [active, setActive] = useState(0);
-  const touchStartX = useRef(null);
-  const touchEndX = useRef(null);
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
 
   const goNext = () => {
     setActive((prev) => (prev + 1) % TESTIMONIALS.length);
@@ -73,12 +73,12 @@ export default function Testimonials() {
     return () => clearTimeout(id);
   }, [active]);
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.touches[0].clientX;
     touchEndX.current = null;
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: TouchEvent<HTMLDivElement>) => {
     touchEndX.current = e.touches[0].clientX;
   };
 
