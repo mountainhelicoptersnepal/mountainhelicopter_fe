@@ -306,11 +306,11 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 w-full max-w-[100vw] overflow-x-clip transition-all duration-300 ${
         isHomeTop ? "bg-transparent" : "bg-white shadow-sm backdrop-blur-md"
       }`}
     >
-      <nav className="mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between px-6 py-[10px] sm:px-6 md:px-12 lg:px-16">
+      <nav className="mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between px-4 py-[10px] sm:px-6 md:px-8 xl:px-12 2xl:px-16">
         {/* Logo */}
 
         <Link
@@ -322,15 +322,16 @@ function NavbarContent({ pathname }: { pathname: string }) {
           <Image
             src={logoSrc}
             alt="Mountain Helicopters Logo"
-            width={136}
+            width={112}
             height={54}
+            className="h-auto w-[112px] sm:w-[128px]"
           />
         </Link>
 
         {/* Desktop navigation */}
 
         <div
-          className={`hidden items-center gap-6 text-[16px] font-semibold uppercase lg:flex xl:gap-8 2xl:gap-12 ${navTextColor}`}
+          className={`hidden min-w-0 items-center gap-5 text-[14px] font-semibold uppercase xl:flex 2xl:gap-8 2xl:text-[16px] ${navTextColor}`}
         >
           {NAV_LINKS.map((link, index) => {
             const isCurrentPath =
@@ -410,14 +411,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Desktop right section */}
 
         <div
-          className={`hidden items-center gap-5 lg:flex xl:gap-7 2xl:gap-8 ${navTextColor}`}
+          className={`hidden shrink-0 items-center gap-4 xl:flex 2xl:gap-6 ${navTextColor}`}
         >
           <div ref={desktopSearchRef} className="flex items-center gap-3">
             <form
               onSubmit={handleSearchSubmit}
               className={`overflow-hidden transition-all duration-700 ${
                 showSearch
-                  ? "w-[180px] opacity-100 xl:w-[230px] 2xl:w-[290px]"
+                  ? "w-[180px] opacity-100 2xl:w-[240px]"
                   : "w-0 opacity-0"
               }`}
             >
@@ -463,18 +464,20 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
         {/* Mobile navigation buttons */}
 
-        <div className={`flex items-center gap-4 lg:hidden ${navTextColor}`}>
+        <div
+          className={`flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${navTextColor}`}
+        >
           <button
             type="button"
             onClick={toggleSearch}
             aria-label={showSearch ? "Close search" : "Open search"}
             aria-expanded={showSearch}
           >
-            <Search size={25} />
+            <Search size={23} />
           </button>
 
           <button type="button" aria-label="Open shopping cart">
-            <ShoppingCart size={24} />
+            <ShoppingCart size={23} />
           </button>
 
           <button
@@ -483,7 +486,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
             aria-label={showMobileMenu ? "Close menu" : "Open menu"}
             aria-expanded={showMobileMenu}
           >
-            {showMobileMenu ? <X size={32} /> : <Menu size={32} />}
+            {showMobileMenu ? <X size={29} /> : <Menu size={29} />}
           </button>
         </div>
       </nav>
@@ -492,7 +495,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
       <div
         ref={mobileSearchRef}
-        className={`overflow-hidden px-5 transition-all duration-500 lg:hidden ${
+        className={`overflow-hidden px-5 transition-all duration-500 xl:hidden ${
           showSearch ? "max-h-20 pb-3" : "max-h-0"
         }`}
       >
@@ -511,7 +514,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
       {/* Mobile menu */}
 
       <div
-        className={`mx-5 overflow-hidden rounded-xl bg-[#071825]/95 backdrop-blur-md transition-all duration-500 lg:hidden ${
+        className={`mx-4 overflow-hidden rounded-xl bg-[#071825]/95 backdrop-blur-md transition-all duration-500 sm:mx-5 xl:hidden ${
           showMobileMenu ? "max-h-[700px]" : "max-h-0"
         }`}
       >

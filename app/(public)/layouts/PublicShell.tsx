@@ -7,9 +7,11 @@ export default function PublicShell({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="flex min-h-screen w-full max-w-full flex-col overflow-x-hidden bg-white">
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className="w-full max-w-full flex-1 overflow-x-hidden">
+        {children}
+      </main>
       <Footer />
     </div>
   );

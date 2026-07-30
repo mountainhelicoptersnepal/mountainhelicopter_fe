@@ -37,17 +37,15 @@ export default function Hero() {
     const scrollHintElement = scrollHint;
 
     let animationFrameId: number | null = null;
+    let effectProgress = 0;
+    let effectComplete = false;
+    let touchY: number | null = null;
+
+    const effectEnd = 0.7;
 
     function updateHero() {
       animationFrameId = null;
-
-      const heroPosition = heroElement.getBoundingClientRect();
-      const scrollDistance = heroElement.offsetHeight - window.innerHeight;
-
-      const rawProgress =
-        scrollDistance > 0 ? -heroPosition.top / scrollDistance : 0;
-
-      const progress = clamp(rawProgress);
+      const progress = effectProgress;
 
       /*
        * Text moves toward the viewer while remaining centered.
@@ -86,7 +84,7 @@ export default function Hero() {
       scrollHintElement.style.opacity = String(1 - clamp(progress / 0.14));
     }
 
-    function handleScroll() {
+    function requestHeroUpdate() {
       if (animationFrameId !== null) {
         return;
       }
@@ -94,17 +92,89 @@ export default function Hero() {
       animationFrameId = window.requestAnimationFrame(updateHero);
     }
 
+    function isHeroAtViewportTop() {
+      return Math.abs(heroElement.getBoundingClientRect().top) < 2;
+    }
+
+    function advanceEffect(deltaY: number) {
+      if (!isHeroAtViewportTop() || deltaY === 0) {
+        return false;
+      }
+
+      if (deltaY < 0 && effectComplete) {
+        effectComplete = false;
+        effectProgress = effectEnd;
+      }
+
+      if (deltaY > 0 && effectComplete) {
+        return false;
+      }
+
+      const previousProgress = effectProgress;
+      const controlledDelta =
+        Math.sign(deltaY) * Math.min(Math.abs(deltaY), 80) * 0.0005;
+
+      effectProgress = clamp(
+        effectProgress + controlledDelta,
+        0,
+        effectEnd,
+      );
+
+      if (effectProgress >= effectEnd) {
+        effectComplete = true;
+      }
+
+      if (effectProgress !== previousProgress) {
+        requestHeroUpdate();
+        return true;
+      }
+
+      return false;
+    }
+
+    function handleWheel(event: WheelEvent) {
+      if (advanceEffect(event.deltaY)) {
+        event.preventDefault();
+      }
+    }
+
+    function handleTouchStart(event: TouchEvent) {
+      touchY = event.touches[0]?.clientY ?? null;
+    }
+
+    function handleTouchMove(event: TouchEvent) {
+      const currentTouchY = event.touches[0]?.clientY;
+
+      if (touchY === null || currentTouchY === undefined) {
+        return;
+      }
+
+      const deltaY = touchY - currentTouchY;
+      touchY = currentTouchY;
+
+      if (advanceEffect(deltaY)) {
+        event.preventDefault();
+      }
+    }
+
+    function handleTouchEnd() {
+      touchY = null;
+    }
+
     updateHero();
 
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-
-    window.addEventListener("resize", handleScroll);
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
+    window.addEventListener("resize", requestHeroUpdate);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
+      window.removeEventListener("resize", requestHeroUpdate);
 
       if (animationFrameId !== null) {
         window.cancelAnimationFrame(animationFrameId);
@@ -115,10 +185,10 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative h-[180vh] overflow-x-clip bg-[#071825]"
+      className="relative h-screen overflow-x-clip bg-[#071825]"
     >
       <div
-        className="sticky top-0 h-screen overflow-hidden"
+        className="relative h-screen overflow-hidden"
         style={{
           perspective: "900px",
           perspectiveOrigin: "center center",
@@ -151,11 +221,11 @@ export default function Hero() {
           }}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#071825]/20 via-transparent to-[#071825]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/35" />
 
         <div
           ref={contentRef}
-          className="relative z-20 mx-auto flex h-full w-full items-center justify-center px-4 text-center text-white sm:px-6 md:px-10"
+          className="absolute inset-0 z-20 mx-auto flex h-screen w-full items-center justify-center px-4 text-center text-white sm:px-6 md:px-10"
           style={{
             transform: "translate3d(0, 0, 0) scale(1)",
             transformOrigin: "center center",

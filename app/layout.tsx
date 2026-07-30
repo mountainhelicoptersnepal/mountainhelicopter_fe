@@ -10,7 +10,9 @@ const manrope = Manrope({
 
 const fraunces = Fraunces({
   variable: "--font-family-fraunces",
+  weight: "variable",
   subsets: ["latin"],
+  axes: ["SOFT", "WONK", "opsz"],
   display: "swap",
 });
 
@@ -35,7 +37,9 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body
+        className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} min-h-full flex flex-col`}
+      >
         {/* reCAPTCHA removed */}
         {/* RootProvider is reserved for the later dynamic/admin phase. */}
         {children}

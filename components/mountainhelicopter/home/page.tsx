@@ -6,14 +6,20 @@ import Blogs from "./Blogs";
 import Cta from "./CTA";
 import Faq from "./Faq";
 import Stats from "./Stats";
+import Testimonial from "./Testimonial";
+import TourSection from "./TourSection";
+import InstagramSection from "./InstagramSection";
 
 const page = () => {
   return (
     <div>
       <Hero />
       <Stats />
+      <TourSection />
       <Story />
       <Rescue />
+      <Testimonial />
+      <InstagramSection />
       <Blogs />
       <Faq />
       <Cta />

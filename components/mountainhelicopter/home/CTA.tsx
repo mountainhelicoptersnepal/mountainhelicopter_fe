@@ -51,7 +51,7 @@ export default function CTA() {
           <span className="text-[#F2B632]">Helicopter Tour in Nepal</span>
         </h2>
 
-        <p className="mx-auto mb-10 max-w-3xl font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">
+        <p className="mx-auto mb-10 max-w-2xl font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">
           Let us know where you would like to fly: Everest, Annapurna, Langtang,
           Muktinath, Mustang, or an individualized Himalayas flight plan. We
           will assist in creating a safe and enjoyable experience that fits your
