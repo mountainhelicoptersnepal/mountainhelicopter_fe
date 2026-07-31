@@ -208,6 +208,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
   const desktopSearchRef = useRef<HTMLDivElement>(null);
   const mobileSearchRef = useRef<HTMLDivElement>(null);
+  const mobileControlsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -237,15 +238,18 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
       const clickedMobileSearch = mobileSearchRef.current?.contains(target);
 
-      if (!clickedDesktopSearch && !clickedMobileSearch) {
+      const clickedMobileControls =
+        mobileControlsRef.current?.contains(target);
+
+      if (!clickedDesktopSearch && !clickedMobileSearch && !clickedMobileControls) {
         setShowSearch(false);
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -435,6 +439,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Mobile navigation buttons */}
 
         <div
+          ref={mobileControlsRef}
           className={`relative z-20 flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${navTextColor}`}
         >
           <button
