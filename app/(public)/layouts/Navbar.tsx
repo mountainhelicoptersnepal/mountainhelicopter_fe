@@ -6,7 +6,8 @@ import { usePathname, useRouter } from "next/navigation";
 import { ChevronDown, Menu, Search, UserRound, X } from "lucide-react";
 import Image from "next/image";
 
-const SCROLL_THRESHOLD = 20;
+const NAVBAR_HEIGHT = 75;
+const HERO_NAV_PATHS = new Set(["/", "/fleet", "/contact"]);
 
 const NAV_LINKS = [
   {
@@ -199,7 +200,7 @@ export default function Navbar() {
 function NavbarContent({ pathname }: { pathname: string }) {
   const router = useRouter();
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHeroPassed, setIsHeroPassed] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [searchValue, setSearchValue] = useState("");
@@ -211,8 +212,26 @@ function NavbarContent({ pathname }: { pathname: string }) {
   const mobileControlsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const updateHeroState = () => {
+      if (!HERO_NAV_PATHS.has(pathname)) {
+        setIsHeroPassed(true);
+        return;
+      }
+
+      const heroElement = document.querySelector("main section");
+
+      if (!(heroElement instanceof HTMLElement)) {
+        setIsHeroPassed(true);
+        return;
+      }
+
+      setIsHeroPassed(
+        heroElement.getBoundingClientRect().bottom <= NAVBAR_HEIGHT,
+      );
+    };
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > SCROLL_THRESHOLD);
+      updateHeroState();
       setShowSearch(false);
       setActiveDropdown(null);
     };
@@ -220,11 +239,15 @@ function NavbarContent({ pathname }: { pathname: string }) {
     window.addEventListener("scroll", handleScroll, {
       passive: true,
     });
+    window.addEventListener("resize", updateHeroState);
+
+    updateHeroState();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateHeroState);
     };
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     const handleClickOutside = (event: globalThis.MouseEvent) => {
@@ -238,10 +261,13 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
       const clickedMobileSearch = mobileSearchRef.current?.contains(target);
 
-      const clickedMobileControls =
-        mobileControlsRef.current?.contains(target);
+      const clickedMobileControls = mobileControlsRef.current?.contains(target);
 
-      if (!clickedDesktopSearch && !clickedMobileSearch && !clickedMobileControls) {
+      if (
+        !clickedDesktopSearch &&
+        !clickedMobileSearch &&
+        !clickedMobileControls
+      ) {
         setShowSearch(false);
       }
     };
@@ -284,17 +310,22 @@ function NavbarContent({ pathname }: { pathname: string }) {
     setShowSearch(false);
   };
 
-  const isHomeTop = pathname === "/" && !isScrolled;
-  const navTextColor = isHomeTop ? "text-white" : "text-[#071825]";
-  const logoSrc = isHomeTop
-    ? "/images/logo.png"
-    : "/images/navbar-logo-clear.png";
+  const hasHeroSection = HERO_NAV_PATHS.has(pathname);
+  const isHeroActive = hasHeroSection && !isHeroPassed;
+  const isPassedHeroPage = hasHeroSection && isHeroPassed;
+  const desktopNavTextColor = isHeroActive ? "text-white" : "text-[#071825]";
+  const mobileNavTextColor = "text-[#071825]";
+  const headerBackgroundClass = isHeroActive
+    ? "bg-white/65 shadow-sm backdrop-blur-xl backdrop-saturate-150 supports-[backdrop-filter]:bg-white/55 xl:bg-transparent xl:shadow-none xl:backdrop-blur-none xl:supports-[backdrop-filter]:bg-transparent"
+    : isPassedHeroPage
+      ? "bg-white/65 shadow-sm backdrop-blur-xl backdrop-saturate-150 supports-[backdrop-filter]:bg-white/55"
+      : "bg-white shadow-sm";
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-[1000] w-full max-w-[100vw] transition-all duration-300 ${
-        isHomeTop ? "bg-transparent" : "bg-white shadow-sm backdrop-blur-md"
-      }`}
+      onTouchStart={(event) => event.stopPropagation()}
+      onTouchMove={(event) => event.stopPropagation()}
+      className={`fixed inset-x-0 top-0 z-[1000] w-full max-w-[100vw] transition-all duration-300 ${headerBackgroundClass}`}
     >
       <nav className="relative z-10 mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between overflow-x-clip px-4 py-[10px] sm:px-6 md:px-8 xl:px-12 2xl:px-16">
         {/* Logo */}
@@ -305,19 +336,38 @@ function NavbarContent({ pathname }: { pathname: string }) {
           aria-label="Go to homepage"
           className="flex shrink-0 flex-col leading-none"
         >
-          <Image
-            src={logoSrc}
-            alt="Mountain Helicopters Logo"
-            width={112}
-            height={54}
-            className="h-auto w-[112px] sm:w-[128px]"
-          />
+          {isHeroActive ? (
+            <>
+              <Image
+                src="/images/navbar-logo-clear.png"
+                alt="Mountain Helicopters Logo"
+                width={112}
+                height={54}
+                className="h-auto w-[112px] sm:w-[128px] xl:hidden"
+              />
+              <Image
+                src="/images/logo.png"
+                alt="Mountain Helicopters Logo"
+                width={112}
+                height={54}
+                className="hidden h-auto w-[112px] sm:w-[128px] xl:block"
+              />
+            </>
+          ) : (
+            <Image
+              src="/images/navbar-logo-clear.png"
+              alt="Mountain Helicopters Logo"
+              width={112}
+              height={54}
+              className="h-auto w-[112px] sm:w-[128px]"
+            />
+          )}
         </Link>
 
         {/* Desktop navigation */}
 
         <div
-          className={`hidden min-w-0 items-center gap-5 text-[14px] font-semibold uppercase xl:flex 2xl:gap-8 2xl:text-[16px] ${navTextColor}`}
+          className={`hidden min-w-0 items-center gap-5 text-[14px] font-semibold uppercase xl:flex 2xl:gap-8 2xl:text-[16px] ${desktopNavTextColor}`}
         >
           {NAV_LINKS.map((link, index) => {
             const isCurrentPath =
@@ -393,7 +443,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Desktop right section */}
 
         <div
-          className={`hidden shrink-0 items-center gap-4 xl:flex 2xl:gap-6 ${navTextColor}`}
+          className={`hidden shrink-0 items-center gap-4 xl:flex 2xl:gap-6 ${desktopNavTextColor}`}
         >
           <div ref={desktopSearchRef} className="flex items-center gap-3">
             <form
@@ -439,8 +489,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Mobile navigation buttons */}
 
         <div
-          ref={mobileControlsRef}
-          className={`relative z-20 flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${navTextColor}`}
+          className={`relative z-20 flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${mobileNavTextColor}`}
         >
           <button
             type="button"
