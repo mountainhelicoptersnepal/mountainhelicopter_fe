@@ -1,7 +1,7 @@
 export default function CTA() {
   return (
-    <section className="bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
+    <section className="bg-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#003366] via-[#001A33] to-[#003366] p-8 text-white md:p-12 lg:p-16">
           <div className="absolute right-6 top-6 flex items-center gap-2 md:right-8 md:top-8">
             <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#f5a623] shadow-[0_0_12px_rgba(245,166,35,1)]" />
@@ -10,7 +10,7 @@ export default function CTA() {
             </span>
           </div>
 
-          <div className="grid items-center gap-8 lg:grid-cols-[3fr_2fr]">
+          <div className="grid mt-6 sm:mt-0 items-center gap-8 lg:grid-cols-[3fr_2fr]">
             <div>
               <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
                 Helicopter rescue · 24/7
@@ -75,7 +75,8 @@ export default function CTA() {
               </a>
 
               <p className="pt-2 text-center font-manrope text-xs text-white/60">
-                Have ready: GPS location · patient condition · number of evacuees
+                Have ready: GPS location · patient condition · number of
+                evacuees
               </p>
             </div>
           </div>

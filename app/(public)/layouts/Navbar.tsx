@@ -3,14 +3,7 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import {
-  ChevronDown,
-  Menu,
-  Search,
-  ShoppingCart,
-  UserRound,
-  X,
-} from "lucide-react";
+import { ChevronDown, Menu, Search, UserRound, X } from "lucide-react";
 import Image from "next/image";
 
 const SCROLL_THRESHOLD = 20;
@@ -97,18 +90,7 @@ const NAV_LINKS = [
   {
     label: "Fleet",
     href: "/fleet",
-    dropdown: [
-      // {
-      //   title: "Our Helicopters",
-      //   href: "/fleet/helicopters",
-      //   description: "Modern helicopters with advanced safety features.",
-      // },
-      // {
-      //   title: "Aircraft Details",
-      //   href: "/fleet/details",
-      //   description: "Technical information about our fleet.",
-      // },
-    ],
+    dropdown: [],
   },
   {
     label: "Rescue",
@@ -306,11 +288,11 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 w-full max-w-[100vw] overflow-x-clip transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[1000] w-full max-w-[100vw] transition-all duration-300 ${
         isHomeTop ? "bg-transparent" : "bg-white shadow-sm backdrop-blur-md"
       }`}
     >
-      <nav className="mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between px-4 py-[10px] sm:px-6 md:px-8 xl:px-12 2xl:px-16">
+      <nav className="relative z-10 mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between overflow-x-clip px-4 py-[10px] sm:px-6 md:px-8 xl:px-12 2xl:px-16">
         {/* Logo */}
 
         <Link
@@ -395,10 +377,6 @@ function NavbarContent({ pathname }: { pathname: string }) {
                         <h3 className="text-sm font-bold text-[#071825] transition group-hover:text-[#f7b51e]">
                           {item.title}
                         </h3>
-
-                        {/* <p className="mt-1 text-xs normal-case text-gray-500">
-                          {item.description}
-                        </p> */}
                       </Link>
                     ))}
                   </div>
@@ -444,14 +422,6 @@ function NavbarContent({ pathname }: { pathname: string }) {
             </button>
           </div>
 
-          <button
-            type="button"
-            aria-label="Open shopping cart"
-            className="transition hover:text-[#f7b51e]"
-          >
-            <ShoppingCart size={25} />
-          </button>
-
           <Link
             href="/account"
             onClick={closeNavigation}
@@ -465,19 +435,16 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Mobile navigation buttons */}
 
         <div
-          className={`flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${navTextColor}`}
+          className={`relative z-20 flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${navTextColor}`}
         >
           <button
             type="button"
             onClick={toggleSearch}
             aria-label={showSearch ? "Close search" : "Open search"}
             aria-expanded={showSearch}
+            className="pointer-events-auto flex h-11 w-11 touch-manipulation select-none items-center justify-center"
           >
             <Search size={23} />
-          </button>
-
-          <button type="button" aria-label="Open shopping cart">
-            <ShoppingCart size={23} />
           </button>
 
           <button
@@ -485,6 +452,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
             onClick={toggleMobileMenu}
             aria-label={showMobileMenu ? "Close menu" : "Open menu"}
             aria-expanded={showMobileMenu}
+            className="pointer-events-auto flex h-11 w-11 touch-manipulation select-none items-center justify-center"
           >
             {showMobileMenu ? <X size={29} /> : <Menu size={29} />}
           </button>
@@ -495,7 +463,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
       <div
         ref={mobileSearchRef}
-        className={`overflow-hidden px-5 transition-all duration-500 xl:hidden ${
+        className={`relative z-20 overflow-hidden px-5 transition-all duration-500 xl:hidden ${
           showSearch ? "max-h-20 pb-3" : "max-h-0"
         }`}
       >
@@ -514,7 +482,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
       {/* Mobile menu */}
 
       <div
-        className={`mx-4 overflow-hidden rounded-xl bg-[#071825]/95 backdrop-blur-md transition-all duration-500 sm:mx-5 xl:hidden ${
+        className={`relative z-20 mx-4 overflow-hidden rounded-xl bg-[#071825]/95 backdrop-blur-md transition-all duration-500 sm:mx-5 xl:hidden ${
           showMobileMenu ? "max-h-[700px]" : "max-h-0"
         }`}
       >

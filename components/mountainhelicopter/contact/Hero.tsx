@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="absolute inset-0 opacity-10 [background-image:radial-gradient(circle_at_25%_25%,rgba(242,182,50,0.6),transparent_50%),radial-gradient(circle_at_75%_75%,rgba(255,255,255,0.3),transparent_40%)]" />
       <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#f5a623] via-[#e5a82d] to-[#f5a623]" />
 
-      <div className="relative mx-auto max-w-[1400px] px-6 py-20 md:py-28 lg:px-12">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28 mt-10 sm:mt-0">
         <div className="grid items-center gap-12 lg:grid-cols-[3fr_2fr]">
           <div>
             <nav className="mb-5 font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">

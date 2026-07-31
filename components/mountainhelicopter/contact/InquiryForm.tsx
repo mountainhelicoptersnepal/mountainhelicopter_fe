@@ -36,7 +36,9 @@ export default function InquiryForm() {
 
       form.reset();
       setSubmitStatus("success");
-      setSubmitMessage("Inquiry submitted successfully. We will contact you soon.");
+      setSubmitMessage(
+        "Inquiry submitted successfully. We will contact you soon.",
+      );
     } catch (error) {
       const errorMessage =
         error instanceof Error
@@ -55,11 +57,11 @@ export default function InquiryForm() {
   return (
     <section
       id="inquiry-form"
-      className="relative overflow-hidden bg-[#003366] py-24 text-white md:py-32"
+      className="relative overflow-hidden bg-[#003366] text-white"
     >
       <div className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:radial-gradient(circle,#FFFFFF_1px,transparent_1px)] [background-size:20px_20px]" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-[2fr_3fr] lg:gap-16">
           <div>
             <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
@@ -132,10 +134,7 @@ export default function InquiryForm() {
               We respond within 2 hours, 7 days a week.
             </p>
 
-            <form
-              className="space-y-5"
-              onSubmit={handleSubmit}
-            >
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid gap-5 sm:grid-cols-2">
                 <label className="block">
                   <span className="mb-1.5 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#6B7886]">

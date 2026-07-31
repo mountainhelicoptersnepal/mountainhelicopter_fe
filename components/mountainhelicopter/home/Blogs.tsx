@@ -23,7 +23,7 @@ export default function Blogs() {
     <section className="w-full bg-[#002347]">
       <div className="mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <div className="mb-10 flex flex-col gap-8 md:mb-12 md:flex-row md:items-end md:justify-between">
-          <div className="rounded-[10px] bg-[#002448] p-5 sm:p-6">
+          <div className="rounded-[10px] bg-[#002448]">
             <div className="flex items-center gap-3">
               <span aria-hidden="true" className="h-px w-6 bg-[#f2b632]" />
 
