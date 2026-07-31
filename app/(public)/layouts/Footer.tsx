@@ -149,11 +149,8 @@ export default function Footer() {
     <footer className="w-full bg-[#000b15] pt-16 md:pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         {/* ─── Decorative Heading ─── */}
-        <h2
-          className="text-[#33485C] text-3xl sm:text-4xl md:text-5xl lg:text-[76px] font-serif text-center mb-10 md:mb-12 tracking-tight"
-          style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-        >
-          Above Everest. Beyond ordinary.
+        <h2 className="font-fraunces text-[#33485C] text-3xl sm:text-4xl md:text-5xl lg:text-[76px] font-bold text-center mb-10 md:mb-12 tracking-tight">
+          “One Sky, Every Journey.”
         </h2>
 
         {/* ─── Gold Divider ─── */}

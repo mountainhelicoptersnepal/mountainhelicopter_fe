@@ -76,6 +76,8 @@
     var(--font-family-fraunces), Georgia, "Times New Roman", serif;
   --font-montserrat:
     var(--font-family-montserrat), Arial, Helvetica, sans-serif;
+  --font-jetbrains-mono:
+    var(--font-family-jetbrains-mono), "Courier New", monospace;
 
   --text-display-lg: var(--font-size-display-lg);
   --text-display-md: var(--font-size-display-md);
@@ -146,5 +148,9 @@ select {
 
   .font-montserrat {
     font-family: var(--font-family-montserrat), Arial, Helvetica, sans-serif;
+  }
+
+  .font-jetbrains-mono {
+    font-family: var(--font-family-jetbrains-mono), "Courier New", monospace;
   }
 }
