@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ReachDesk() {
   return (
-    <section className="py-20 md:py-28">
-      <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
+    <section className="">
+      <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <header className="mx-auto mb-14 max-w-[640px] text-center">
           <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#F2B632]">
             Who do you need?
@@ -74,9 +74,7 @@ export default function ReachDesk() {
             </p>
 
             <div className="space-y-1 border-t border-[#003366]/20 pt-4 font-manrope text-sm">
-              <div className="font-semibold tabular-nums">
-                +977-9712082949
-              </div>
+              <div className="font-semibold tabular-nums">+977-9712082949</div>
               <div className="break-all text-xs text-[#003366]/75">
                 info@mountainhelicoptersnepal.com
               </div>
@@ -84,8 +82,7 @@ export default function ReachDesk() {
           </div>
 
           <div className="relative overflow-hidden rounded-2xl bg-[#003366] p-7 text-white transition-all hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,51,102,0.18)]">
-            <div className="absolute right-4 top-4 flex items-center gap-1.5">
-            </div>
+            <div className="absolute right-4 top-4 flex items-center gap-1.5"></div>
 
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#F2B632]/20">
               <svg

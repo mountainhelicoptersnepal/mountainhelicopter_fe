@@ -40,6 +40,7 @@ export default function Hero() {
     let effectProgress = 0;
     let effectComplete = false;
     let touchY: number | null = null;
+    let isTrackingHeroTouch = false;
 
     const effectEnd = 0.7;
 
@@ -114,11 +115,7 @@ export default function Hero() {
       const controlledDelta =
         Math.sign(deltaY) * Math.min(Math.abs(deltaY), 80) * 0.0005;
 
-      effectProgress = clamp(
-        effectProgress + controlledDelta,
-        0,
-        effectEnd,
-      );
+      effectProgress = clamp(effectProgress + controlledDelta, 0, effectEnd);
 
       if (effectProgress >= effectEnd) {
         effectComplete = true;
@@ -140,9 +137,14 @@ export default function Hero() {
 
     function handleTouchStart(event: TouchEvent) {
       touchY = event.touches[0]?.clientY ?? null;
+      isTrackingHeroTouch = touchY !== null;
     }
 
     function handleTouchMove(event: TouchEvent) {
+      if (!isTrackingHeroTouch) {
+        return;
+      }
+
       const currentTouchY = event.touches[0]?.clientY;
 
       if (touchY === null || currentTouchY === undefined) {
@@ -159,21 +161,32 @@ export default function Hero() {
 
     function handleTouchEnd() {
       touchY = null;
+      isTrackingHeroTouch = false;
     }
 
     updateHero();
 
     window.addEventListener("wheel", handleWheel, { passive: false });
-    window.addEventListener("touchstart", handleTouchStart, { passive: true });
-    window.addEventListener("touchmove", handleTouchMove, { passive: false });
-    window.addEventListener("touchend", handleTouchEnd, { passive: true });
+    heroElement.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
+    heroElement.addEventListener("touchmove", handleTouchMove, {
+      passive: false,
+    });
+    heroElement.addEventListener("touchend", handleTouchEnd, {
+      passive: true,
+    });
+    heroElement.addEventListener("touchcancel", handleTouchEnd, {
+      passive: true,
+    });
     window.addEventListener("resize", requestHeroUpdate);
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
-      window.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchmove", handleTouchMove);
-      window.removeEventListener("touchend", handleTouchEnd);
+      heroElement.removeEventListener("touchstart", handleTouchStart);
+      heroElement.removeEventListener("touchmove", handleTouchMove);
+      heroElement.removeEventListener("touchend", handleTouchEnd);
+      heroElement.removeEventListener("touchcancel", handleTouchEnd);
       window.removeEventListener("resize", requestHeroUpdate);
 
       if (animationFrameId !== null) {

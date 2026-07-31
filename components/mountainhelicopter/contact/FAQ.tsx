@@ -19,7 +19,8 @@ const faqs = [
       "Yes — walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
   },
   {
-    question: "I'm calling about an emergency rescue. What do you need from me?",
+    question:
+      "I'm calling about an emergency rescue. What do you need from me?",
     answer:
       "Three things: the patient's location, their condition, and the number of people needing evacuation. If the patient has travel insurance with heli-rescue cover, have the policy number ready.",
   },
@@ -58,17 +59,17 @@ export default function FAQ() {
   }, []);
 
   return (
-    <section className="flex min-h-screen items-start justify-center bg-[#f9f8f6] px-6 py-20 text-[#0d1f3c] lg:px-20 lg:py-24">
+    <section className="flex items-start justify-center bg-[#f9f8f6] text-[#0d1f3c]">
       <div
         ref={faqRef}
-        className="grid w-full max-w-6xl grid-cols-1 items-start gap-14 lg:grid-cols-[320px_1fr] lg:gap-[200px]" >
-        
-        <aside className="flex flex-col justify-center lg:min-h-[620px]">
+        className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-16 md:gap-12 md:px-12 md:py-24 lg:flex-row lg:justify-between lg:gap-24 lg:px-16 lg:py-28"
+      >
+        <div className="flex w-full max-w-[650px] flex-col justify-center lg:max-w-[360px]">
           <p className="mb-5 text-[16px] font-semibold uppercase tracking-[0.28em] text-[#F2B632] font-manrope">
             Questions
           </p>
 
-          <h2 className="font-fraunces text-[36.95px] font-bold leading-[33.99px] tracking-[-0.92px] text-[#0A1929]">
+          <h2 className="font-fraunces text-[34px] font-bold leading-[1] tracking-[-0.92px] text-[#0A1929] sm:text-[36.95px] sm:leading-[33.99px]">
             Everything you
             <br />
             need to know.
@@ -87,51 +88,49 @@ export default function FAQ() {
               →
             </span>
           </a>
-        </aside>
+        </div>
 
-        <div className="max-h-155 border-t border-[#d1cfc9] pr-2 font-manrope">
+        <div className="w-full min-w-0 border-t border-[#d1cfc9] font-manrope lg:max-w-[760px] lg:pr-2">
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-[#d1cfc9]">
               <button
                 onClick={() => toggle(index)}
                 aria-expanded={openIndex === index}
-                className="group flex w-full cursor-pointer items-center justify-between gap-6 py-6 text-left"
+                className="group flex w-full cursor-pointer items-start justify-between gap-4 py-5 text-left sm:items-center sm:gap-6 sm:py-6"
               >
-                <span className="text-[16px] font-semibold leading-snug text-[#0d1f3c] transition group-hover:text-[#C49A3C] font-manrope tracking-normal ">
+                <span className="min-w-0 text-[15px] font-semibold leading-snug text-[#0d1f3c] transition group-hover:text-[#C49A3C] font-manrope tracking-normal sm:text-[16px]">
                   {faq.question}
                 </span>
 
-                <span
-  className="flex h-7 w-7 shrink-0 items-center justify-center text-[#0A1929]"
->
-  {openIndex === index ? (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-    >
-      <path d="M6 6L18 18" />
-      <path d="M18 6L6 18" />
-    </svg>
-  ) : (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-    >
-      <path d="M12 5V19" />
-      <path d="M5 12H19" />
-    </svg>
-  )}
-</span>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center text-[#0A1929]">
+                  {openIndex === index ? (
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                    >
+                      <path d="M6 6L18 18" />
+                      <path d="M18 6L6 18" />
+                    </svg>
+                  ) : (
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                    >
+                      <path d="M12 5V19" />
+                      <path d="M5 12H19" />
+                    </svg>
+                  )}
+                </span>
               </button>
 
               <div
@@ -142,7 +141,7 @@ export default function FAQ() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="max-w-2xl pb-7 text-sm leading-7 text-gray-500">
+                  <p className="max-w-2xl pb-6 pr-1 text-sm leading-7 text-gray-500 sm:pb-7 sm:pr-6">
                     {faq.answer}
                   </p>
                 </div>
