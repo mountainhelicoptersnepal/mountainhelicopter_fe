@@ -167,26 +167,26 @@ export default function Hero() {
     updateHero();
 
     window.addEventListener("wheel", handleWheel, { passive: false });
-    heroElement.addEventListener("touchstart", handleTouchStart, {
+    window.addEventListener("touchstart", handleTouchStart, {
       passive: true,
     });
-    heroElement.addEventListener("touchmove", handleTouchMove, {
+    window.addEventListener("touchmove", handleTouchMove, {
       passive: false,
     });
-    heroElement.addEventListener("touchend", handleTouchEnd, {
+    window.addEventListener("touchend", handleTouchEnd, {
       passive: true,
     });
-    heroElement.addEventListener("touchcancel", handleTouchEnd, {
+    window.addEventListener("touchcancel", handleTouchEnd, {
       passive: true,
     });
     window.addEventListener("resize", requestHeroUpdate);
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
-      heroElement.removeEventListener("touchstart", handleTouchStart);
-      heroElement.removeEventListener("touchmove", handleTouchMove);
-      heroElement.removeEventListener("touchend", handleTouchEnd);
-      heroElement.removeEventListener("touchcancel", handleTouchEnd);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
+      window.removeEventListener("touchcancel", handleTouchEnd);
       window.removeEventListener("resize", requestHeroUpdate);
 
       if (animationFrameId !== null) {
