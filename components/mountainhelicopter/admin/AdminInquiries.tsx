@@ -3,6 +3,8 @@
 import { FormEvent, useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
+import Image from "next/image";
+import Link from "next/link";
 
 type Inquiry = {
   full_name: string | null;
@@ -174,9 +176,17 @@ export default function AdminInquiries() {
       <header className="border-b border-[#dbe3ec] bg-white px-6 py-5 md:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#003366]">
-              Admin
-            </p>
+            <Link href="/" target="_blank" className="flex items-center gap-2">
+              <Image
+                src="/images/logo/mountainhelicopter-logo.jpeg"
+                alt="Company Logo"
+                width={160}
+                height={50}
+              />
+            </Link>
+          </div>
+
+          <div>
             <h1 className="mt-1 font-fraunces text-3xl font-bold">
               Website Inquiries
             </h1>
