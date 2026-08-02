@@ -4,7 +4,7 @@ import Story from "./Story";
 import Rescue from "./Rescue";
 import Blogs from "./Blogs";
 import Cta from "./CTA";
-import Faq from "./Faq";
+import FAQ from "./FAQ";
 import Stats from "./Stats";
 import Testimonial from "./Testimonial";
 import TourSection from "./TourSection";
@@ -21,7 +21,7 @@ const page = () => {
       <Testimonial />
       <InstagramSection />
       <Blogs />
-      <Faq />
+      <FAQ />
       <Cta />
     </div>
   );
