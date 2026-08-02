@@ -1,45 +1,15 @@
 import Image from "next/image";
-import Link from "next/link";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
-
-const TOUR_LINKS = [
-  { label: "Everest Base Camp", href: "/tours/everest-base-camp" },
-  { label: "Annapurna Base Camp", href: "/tours/annapurna-base-camp" },
-  { label: "Langtang Valley", href: "/tours/langtang-valley" },
-  { label: "Gosaikunda Lake", href: "/tours/gosaikunda-lake" },
-  { label: "Muktinath Tour", href: "/tours/muktinath" },
-];
-
-
+import TourTabsNavbar from "@/components/shared/navbar/TourTabsNavbar";
 
 export default function Hero() {
   return (
     <section className="relative w-full">
       {/* Tour quick links */}
-      <nav
-        aria-label="Tour quick links"
-        className="relative z-10 mt-[75px] w-full bg-[#0d3d6e]"
-      >
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-6 py-4 md:px-12 lg:px-16">
-          <Link
-            href="/tours"
-            className="shrink-0 font-manrope text-[11px] font-semibold uppercase tracking-[1.1px] text-[#c1cdda] transition hover:text-[#f2b632]"
-          >
-            Our Tours
-          </Link>
-
-          {TOUR_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-manrope text-[11px] font-semibold uppercase tracking-[1.1px] text-[#c1cdda] transition hover:text-[#f2b632]"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      </nav>
+      <div className="relative z-10 mt-[75px]">
+        <TourTabsNavbar activeHref="/tours" />
+      </div>
 
       {/* Hero image */}
       <div className="relative flex min-h-[600px] w-full items-center overflow-hidden bg-[#071825] sm:min-h-[720px] lg:min-h-[860px]">

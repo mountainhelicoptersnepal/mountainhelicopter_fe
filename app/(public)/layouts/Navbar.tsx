@@ -327,7 +327,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
       onTouchMove={(event) => event.stopPropagation()}
       className={`fixed inset-x-0 top-0 z-[1000] w-full max-w-[100vw] transition-all duration-300 ${headerBackgroundClass}`}
     >
-      <nav className="relative z-10 mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between overflow-x-clip px-4 py-[10px] sm:px-6 md:px-8 xl:px-12 2xl:px-16">
+      <nav className="relative z-10 mx-auto flex h-[75px] w-full max-w-7xl items-center justify-between overflow-x-clip px-6 py-[10px] sm:px-6 md:px-12 lg:px-16">
         {/* Logo */}
 
         <Link
@@ -489,6 +489,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Mobile navigation buttons */}
 
         <div
+          ref={mobileControlsRef}
           className={`relative z-20 flex shrink-0 items-center gap-3 sm:gap-4 xl:hidden ${mobileNavTextColor}`}
         >
           <button
@@ -527,6 +528,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
             placeholder="Search Everest, Annapurna..."
             value={searchValue}
             onChange={(event) => setSearchValue(event.target.value)}
+            autoFocus={showSearch}
             aria-label="Search website"
             className="h-11 w-full rounded-full bg-white px-5 text-sm outline-none"
           />
@@ -537,7 +539,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
 
       <div
         className={`relative z-20 mx-4 overflow-hidden rounded-xl bg-[#071825]/95 backdrop-blur-md transition-all duration-500 sm:mx-5 xl:hidden ${
-          showMobileMenu ? "max-h-[700px]" : "max-h-0"
+          showMobileMenu ? "my-4 max-h-[700px]" : "my-0 max-h-0"
         }`}
       >
         <div className="px-6 py-5 text-sm font-semibold capitaized sm:uppercase text-white">
@@ -573,14 +575,6 @@ function NavbarContent({ pathname }: { pathname: string }) {
                         isDropdownOpen ? "max-h-96" : "max-h-0"
                       }`}
                     >
-                      <Link
-                        href={link.href}
-                        onClick={closeNavigation}
-                        className="block px-4 py-3 text-xs normal-case text-gray-300 transition hover:text-[#f7b51e]"
-                      >
-                        View all {link.label}
-                      </Link>
-
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.href}
@@ -591,6 +585,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
                           {item.title}
                         </Link>
                       ))}
+
+                      <Link
+                        href={link.href}
+                        onClick={closeNavigation}
+                        className="block px-4 py-3 text-xs normal-case text-gray-300 transition hover:text-[#f7b51e]"
+                      >
+                        View all {link.label}
+                      </Link>
                     </div>
                   </>
                 ) : (
