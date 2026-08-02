@@ -68,8 +68,16 @@ const aircraft = [
 export default function Aircraft() {
   return (
     <section className="w-full bg-[#fafcfd]">
-      <div className="mx-auto w-full max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
-        <div className="flex flex-col gap-16 lg:gap-24">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+        <p className="font-jetbrains-mono text-[11px] font-medium uppercase leading-[16.5px] tracking-[1.98px] text-gold">
+          — Fleets
+        </p>
+
+        <h2 className="mt-4 max-w-[600px] text-center font-fraunces text-[32px] font-semibold leading-[1.05] tracking-[-0.02em] text-primary-blue sm:text-[40px] lg:text-[42px]">
+          Explore Our <span className="text-gold">Fleets</span>
+        </h2>
+
+        <div className="mt-12 flex w-full flex-col gap-16 lg:mt-16 lg:gap-24">
           {aircraft.map((item) => (
             <AircraftCard key={item.registration} {...item} />
           ))}
