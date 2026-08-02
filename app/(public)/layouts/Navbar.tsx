@@ -540,7 +540,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
           showMobileMenu ? "max-h-[700px]" : "max-h-0"
         }`}
       >
-        <div className="px-6 py-5 text-sm font-semibold uppercase text-white">
+        <div className="px-6 py-5 text-sm font-semibold capitaized sm:uppercase text-white">
           {NAV_LINKS.map((link, index) => {
             const hasDropdown = link.dropdown.length > 0;
             const isDropdownOpen = mobileDropdown === index;

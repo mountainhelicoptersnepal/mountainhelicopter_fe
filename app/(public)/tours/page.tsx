@@ -1,11 +1,9 @@
-import Hero from "@/components/mountainhelicopter/tours/Hero";
-import Principle from "@/components/mountainhelicopter/tours/Principle";
+import Tours from "@/components/mountainhelicopter/tours/page";
 
 export default function ToursPage() {
   return (
     <>
-      <Hero />
-      <Principle />
+      <Tours />
     </>
   );
 }
