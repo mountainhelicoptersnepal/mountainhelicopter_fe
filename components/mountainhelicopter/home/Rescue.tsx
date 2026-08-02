@@ -32,25 +32,24 @@ export default function Rescue() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-16">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <span aria-hidden="true" className="h-px w-6 bg-[#f2b632]" />
+              <span aria-hidden="true" className="h-px w-6 bg-[#DCA62E]" />
 
-              <p className="font-manrope text-[10px] font-bold uppercase leading-[15px] tracking-[3.8px] text-[#ac8124]">
+              <p className="font-manrope text-[10px] font-bold uppercase leading-[15px] tracking-[3.8px] text-[#DCA62E]">
                 Emergency, Rescue &amp; Relief Operations
               </p>
             </div>
 
             <h2 className="font-fraunces text-[26px] font-bold leading-[0.92] tracking-[-0.025em] lg:whitespace-nowrap lg:text-[33px] xl:text-[43.108px]">
               <span className="text-[#003366]">When Every Minute </span>
-              <span className="text-[#ac8124]">Matters</span>
+              <span className="text-[#DCA62E]">Matters</span>
             </h2>
 
             <div className="flex flex-col gap-5">
               <p className="font-manrope text-[16px] font-medium leading-[26px] text-[#4a5568]">
                 Mountain Helicopters Nepal also participates in various rescue
-                missions in the high altitude regions of Nepal. Our
-                helicopters are highly skilled and knowledgeable about
-                navigating through the challenging mountains, where time is
-                of the essence.
+                missions in the high altitude regions of Nepal. Our helicopters
+                are highly skilled and knowledgeable about navigating through
+                the challenging mountains, where time is of the essence.
               </p>
 
               <p className="font-manrope text-[16px] font-medium leading-[26px] text-[#4a5568]">
@@ -66,7 +65,7 @@ export default function Rescue() {
                   key={stat.label}
                   className="flex flex-col items-center justify-center gap-1.5 rounded-[10px] border border-[#003366]/[0.08] bg-white px-6 py-5 text-center"
                 >
-                  <p className="font-fraunces text-[28px] font-bold leading-[28px] text-[#f2b632]">
+                  <p className="font-fraunces text-[28px] font-bold leading-[28px] text-[#DCA62E]">
                     {stat.value}
                   </p>
 

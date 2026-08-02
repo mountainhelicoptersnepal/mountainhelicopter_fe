@@ -58,7 +58,7 @@
 export default function InstagramSection() {
   return (
     <section className="bg-white">
-      <div className="mx-auto flex w-full max-w-7xl py-16 sm:py-14 md:py-24 lg:py-28 px-6 sm:px-6 md:px-10 lg:px-16 flex-col">
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 py-16 md:px-10 md:py-24 lg:px-16 lg:py-28">
         {/* Instagram profile header */}
         <h2 className="mb-4 text-center font-fraunces text-[34px] font-bold leading-tight tracking-[-1.23px] text-[#0A1929] sm:mb-6 sm:text-5xl md:mb-6 md:text-6xl">
           Our Instagram

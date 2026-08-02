@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope, Montserrat } from "next/font/google";
+import { Fraunces, JetBrains_Mono, Manrope, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -10,12 +10,20 @@ const manrope = Manrope({
 
 const fraunces = Fraunces({
   variable: "--font-family-fraunces",
+  weight: "variable",
   subsets: ["latin"],
+  axes: ["SOFT", "WONK", "opsz"],
   display: "swap",
 });
 
 const montserrat = Montserrat({
   variable: "--font-family-montserrat",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-family-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -33,9 +41,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} h-full antialiased`}
+      className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body
+        className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} min-h-full flex flex-col`}
+      >
         {/* reCAPTCHA removed */}
         {/* RootProvider is reserved for the later dynamic/admin phase. */}
         {children}

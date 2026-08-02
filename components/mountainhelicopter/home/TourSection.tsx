@@ -1,0 +1,185 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const tours = [
+  {
+    title: "Everest Base Camp & Kala Patthar Helicopter Tour",
+    meta: "4-5 HRS  |  5,364M  |  KHUMBU, NEPAL",
+    price: "FROM $1,200",
+    cta: "VIEW EVEREST TOUR",
+    href: "/tours/everest-base-camp",
+    image: "/images/home-section/everest-base-camp.jpg",
+    detail:
+      "Fly deep into the heart of the Everest region for an unforgettable Himalayan adventure. Soar above the legendary Everest Base Camp, Khumbu Glacier, and the towering peaks of Everest, Lhotse, Nuptse, and Ama Dablam before landing at Kala Patthar for panoramic mountain views.",
+    size: "hero",
+  },
+  {
+    title: "Pathivara Devi Helicopter Tour",
+    meta: "4 HRS  |  3,794M  |  KOSHI PROVINCE",
+    price: "From $1,100",
+    cta: "VIEW PATHIVARA TOUR",
+    href: "/tours/pathivara-devi",
+    image: "/images/langtang-valley/langtang.jpg",
+    detail:
+      "Journey east by helicopter to the sacred Pathivara Devi temple, a revered pilgrimage destination surrounded by rolling ridges and distant Himalayan views. This flight blends spiritual significance with a smooth, scenic mountain approach.",
+    size: "side",
+  },
+  {
+    title: "Manaslu Base Camp Helicopter Tour",
+    meta: "3-4 HRS  |  4,800 M  |  GORKHA, NEPAL",
+    price: "From $1,100",
+    cta: "VIEW MANASLU TOUR",
+    href: "/tours/manaslu-base-camp",
+    image: "/images/gosaikunda-lake/gosaikunda-lake.jpg",
+    detail:
+      "Trace the remote valleys beneath Manaslu and reach one of Nepal's most dramatic high-altitude landscapes in comfort. The route opens wide views of glaciers, ridgelines, and quiet mountain settlements far from the usual trails.",
+    size: "small",
+  },
+  {
+    title: "Bardiya National Park Helicopter Tour",
+    meta: "3-4 HRS  |  TERAI, NEPAL",
+    price: "From $750",
+    cta: "VIEW BARDIYA TOUR",
+    href: "/tours/bardiya-national-park",
+    image: "/images/home-section/image_filtersection.png",
+    detail:
+      "Swap the high Himalaya for Nepal's wild western lowlands with a private helicopter journey to Bardiya National Park. Fly over changing terrain and arrive ready for a refined wildlife escape in tiger and rhino country.",
+    size: "small",
+  },
+  {
+    title: "Shey Phoksundo Helicopter Tour",
+    meta: "2-3 HRS  |  3,611 M  |  DOLPA, NEPAL",
+    price: "From $1250",
+    cta: "VIEW SHEY PHOKSUNDO TOUR",
+    href: "/tours/shey-phoksundo",
+    image: "/images/langtang-valley/langtang-gallary5.jpg",
+    detail:
+      "Lift into the hidden landscapes of Dolpa and discover the turquoise waters of Shey Phoksundo from above. This rare helicopter journey reveals remote cliffs, ancient valleys, and one of Nepal's most striking alpine lakes.",
+    size: "small",
+  },
+];
+
+export default function TourSection() {
+  return (
+    <section className="bg-[#f4f7fa]">
+      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+        <div className="flex items-center gap-[13px] text-[#DCA62E]">
+          <span className="h-px w-[24px] bg-[#DCA62E]" />
+          <p className="font-manrope text-[16px] font-semibold uppercase leading-none tracking-[0.32em]">
+            Signature Helicopter Tours In Nepal
+          </p>
+        </div>
+
+        <h2 className="mt-[18px] font-fraunces text-[49px] font-bold leading-[0.95] tracking-[-0.02em] text-[#06213f] sm:text-[52px]">
+          Five Bucket List <span className="text-[#DCA62E]">Journeys.</span>
+        </h2>
+
+        <p className="mt-[32px] font-manrope text-[15px] font-medium leading-[1.45] text-[#40526b]">
+          For those who dream bigger, travel farther, and believe the
+          world&apos;s greatest adventures are best experienced from above.
+        </p>
+
+        <div className="mt-[7px] grid grid-cols-1 gap-[18px] sm:grid-cols-2 lg:grid-cols-3">
+          {tours.map((tour) => (
+            <TourCard key={tour.title} tour={tour} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+type Tour = (typeof tours)[number];
+
+function TourCard({ tour }: { tour: Tour }) {
+  const isHero = tour.size === "hero";
+  const isSide = tour.size === "side";
+
+  return (
+    <Link
+      href={tour.href}
+      className={`group relative block overflow-hidden bg-[#102035] outline-none ${
+        isHero
+          ? "min-h-[360px] sm:col-span-2 lg:min-h-[414px]"
+          : isSide
+            ? "min-h-[360px] lg:min-h-[414px]"
+            : "min-h-[360px] lg:min-h-[393px]"
+      }`}
+    >
+      <Image
+        src={tour.image}
+        alt={tour.title}
+        fill
+        sizes={
+          isHero
+            ? "(max-width: 1024px) 100vw, 755px"
+            : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 367px"
+        }
+        className="object-cover transition duration-700 group-hover:scale-105"
+        priority={isHero}
+      />
+      <div className="absolute inset-0 bg-black/20 transition duration-500 group-hover:bg-black/38 group-focus-visible:bg-black/38" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/82 via-black/30 to-transparent transition duration-500 group-hover:from-black/90 group-hover:via-black/48 group-focus-visible:from-black/90 group-focus-visible:via-black/48" />
+
+      <div
+        className={`absolute inset-x-0 bottom-0 text-white transition-transform duration-500 ease-out group-hover:-translate-y-3 group-focus-visible:-translate-y-3 ${
+          isHero
+            ? "px-[30px] pb-[27px] sm:pb-[29px]"
+            : isSide
+              ? "px-[30px] pb-[27px] sm:pb-[28px]"
+              : "px-[30px] pb-[27px]"
+        }`}
+      >
+        <p
+          className={`font-manrope font-semibold uppercase leading-none tracking-[0.18em] text-white/90 ${
+            isHero ? "text-[9px] sm:text-[14px]" : "text-[9px]"
+          }`}
+        >
+          {tour.meta}
+        </p>
+
+        <h3
+          className={`mt-[12px] max-w-[700px] font-fraunces font-bold leading-[0.92] tracking-[-0.01em] text-white ${
+            isHero
+              ? "text-[24px] sm:text-[40px]"
+              : isSide
+                ? "max-w-[300px] text-[23px] sm:text-[24px]"
+                : "max-w-[330px] text-[24px] sm:text-[25px]"
+          }`}
+        >
+          {tour.title}
+        </h3>
+
+        <p
+          className={`mt-[10px] line-clamp-5 max-h-0 max-w-[720px] overflow-hidden font-manrope font-medium leading-[1.35] text-white/90 opacity-0 transition-all duration-500 ease-out group-hover:max-h-[120px] group-hover:opacity-100 group-focus-visible:max-h-[120px] group-focus-visible:opacity-100 ${
+            isHero ? "text-[12px] sm:text-[14px]" : "text-[12px]"
+          }`}
+        >
+          {tour.detail}
+        </p>
+
+        <div
+          className={`flex items-end justify-between gap-4 font-manrope font-bold ${
+            isHero ? "mt-[8px] sm:mt-[18px]" : "mt-[8px]"
+          }`}
+        >
+          <span
+            className={`shrink-0 text-[#DCA62E] ${
+              isHero ? "text-[13px] sm:text-[16px]" : "text-[13px]"
+            }`}
+          >
+            {tour.price}
+          </span>
+
+          <span
+            className={`text-right font-extrabold uppercase leading-none tracking-[0.18em] text-white ${
+              isHero ? "text-[9px] sm:text-[13px]" : "text-[9px]"
+            }`}
+          >
+            {tour.cta} →
+          </span>
+        </div>
+      </div>
+    </Link>
+  );
+}

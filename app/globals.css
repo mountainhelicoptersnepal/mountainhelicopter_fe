@@ -72,10 +72,12 @@
 
   --font-sans: var(--font-family-manrope), Arial, Helvetica, sans-serif;
   --font-manrope: var(--font-family-manrope), Arial, Helvetica, sans-serif;
-  --font-fraunces: var(--font-family-fraunces), Georgia, "Times New Roman",
-    serif;
-  --font-montserrat: var(--font-family-montserrat), Arial, Helvetica,
-    sans-serif;
+  --font-fraunces:
+    var(--font-family-fraunces), Georgia, "Times New Roman", serif;
+  --font-montserrat:
+    var(--font-family-montserrat), Arial, Helvetica, sans-serif;
+  --font-jetbrains-mono:
+    var(--font-family-jetbrains-mono), "Courier New", monospace;
 
   --text-display-lg: var(--font-size-display-lg);
   --text-display-md: var(--font-size-display-md);
@@ -100,12 +102,16 @@
 }
 
 html {
+  max-width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  max-width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-family-manrope), Arial, Helvetica, sans-serif;
@@ -135,10 +141,16 @@ select {
   }
 
   .font-fraunces {
-    font-family: var(--font-family-fraunces), Georgia, "Times New Roman", serif;
+    font-family:
+      var(--font-family-fraunces), Georgia, "Times New Roman", serif !important;
+    font-optical-sizing: auto;
   }
 
   .font-montserrat {
     font-family: var(--font-family-montserrat), Arial, Helvetica, sans-serif;
+  }
+
+  .font-jetbrains-mono {
+    font-family: var(--font-family-jetbrains-mono), "Courier New", monospace;
   }
 }

@@ -48,7 +48,7 @@ const BlogCard = ({
           </p>
         </div>
 
-        <div className="mt-auto flex items-center justify-between font-manrope text-[11px] leading-[16.5px] text-white/25">
+        <div className="mt-auto flex items-center justify-between font-manrope text-[11px] leading-[16.5px] text-gold">
           <time dateTime={dateTime}>{date}</time>
           <span>{readTime}</span>
         </div>
