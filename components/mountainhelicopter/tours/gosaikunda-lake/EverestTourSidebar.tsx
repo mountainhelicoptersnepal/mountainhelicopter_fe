@@ -19,7 +19,7 @@ import {
 const phoneNumber = "9779712082949";
 
 const message =
-  "Hi, I would like to know more about the Everest Base Camp Helicopter Tour.";
+  "Hi, I would like to know more about the Gosaikunda Lake Helicopter Tour.";
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message,
@@ -77,7 +77,7 @@ export default function EverestTourSidebar() {
 
         <div className="p-5">
           <h3 className="font-fraunces text-xl font-semibold leading-tight text-[#0a3158]">
-            Everest Base Camp
+            Gosaikunda Lake 
             <br />
             Helicopter Tour
           </h3>

@@ -19,7 +19,7 @@ import {
 const phoneNumber = "9779712082949";
 
 const message =
-  "Hi, I would like to know more about the Everest Base Camp Helicopter Tour.";
+  "Hi, I would like to know more about the Annapurna Base Camp Helicopter Tour.";
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message,
