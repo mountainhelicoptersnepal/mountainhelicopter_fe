@@ -16,7 +16,7 @@ export default function EverestBaseCamp() {
       <div className="absolute inset-0 bg-[#06182c]/55" />
       <div className="absolute inset-0 bg-black/20" />
 
-      <TourTabsNavbar activeHref="/tours/everest-base-camp" />
+      <TourTabsNavbar activeHref="/tours/muktinath-pilgrimage" />
 
       {/* Hero Section */}
       <section className="relative z-10 min-h-[560px] py-16 sm:py-20 lg:h-[calc(100vh-168px)] lg:py-0">
