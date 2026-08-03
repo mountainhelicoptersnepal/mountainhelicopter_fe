@@ -43,7 +43,7 @@ const bookingFacts: Array<{
   {
     icon: Mountain,
     label: "Max Altitude",
-    value: "5,545 m",
+    value: "4,380 m",
   },
   {
     icon: CalendarDays,
