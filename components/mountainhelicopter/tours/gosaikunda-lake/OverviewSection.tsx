@@ -2,14 +2,11 @@
 
 import { useEffect, useState } from "react";
 import {
-  Clock3,
+ Waves,
+ Trees,
+ House,
   Download,
-  Gauge,
-  Hotel,
-  MapPin,
   Mountain,
-  Plane,
-  Sunrise,
 } from "lucide-react";
 import EverestTourSidebar from "./EverestTourSidebar";
 
@@ -23,151 +20,95 @@ const tabs = [
 ];
 
 const quickFacts = [
-  {
-    label: "Duration",
-    value: "4–5 hrs",
-  },
-  {
-    label: "Departure Time",
-    value: "5:30 am – 6:30 am",
-  },
-  {
+ {
     label: "Departure Point",
-    value: "Tribhuvan International Airport Domestic Terminal",
+    value: "Tribhuvan International Airport Domestic Terminal, Kathmandu",
   },
   {
-    label: "Return Point",
-    value: "Tribhuvan International Airport, Kathmandu",
+    label: "Maximum Altitude",
+    value: "4,380 m / 14,370 ft at Gosaikunda Lake",
   },
   {
-    label: "Max Altitude Reached",
-    value: "5,545 m / 18,192 ft (Kala Patthar)",
+    label: "One-Way Flight Time",
+    value: "Approximately 15–20 minutes",
   },
   {
-    label: "EBC Flight Duration",
-    value: "5.5 hrs / 175 km & Everest Base Camp",
+    label: "Landing Time",
+    value: "Approximately 30–40 minutes at Gosaikunda",
   },
   {
-    label: "Helicopter Type",
-    value: "Airbus H125 (AS350 B3e), CAAN-certified",
+    label: "Helicopter Model",
+    value: "CAAN-certified Airbus H125 (AS350 B3e)",
   },
   {
     label: "Helicopter Capacity",
-    value: "Up to 4 passengers + 2 pilots",
+    value: "Up to 4 passengers plus 1 pilot",
   },
   {
-    label: "Difficulty Level",
-    value: "Easy, no physical fitness required",
+    label: "Shared Tour Cost",
+    value: "From USD 300–400 per person",
   },
   {
-    label: "Minimum Recommended Age",
-    value: "5 years",
+    label: "Private Charter Cost",
+    value: "From USD 1,500–1,800 for the complete helicopter",
   },
   {
-    label: "Best Season",
+    label: "Best Seasons",
     value: "March–May and September–November",
   },
   {
-    label: "Shared Tour Price",
-    value: "From USD 1,400 per person",
-  },
-  {
-    label: "Private Charter Price",
-    value: "From USD 5,400",
-  },
-  {
-    label: "Ideal Time",
-    value: "Early Tour Operation in one morning",
-  },
-  {
-    label: "Meal Included",
-    value: "Breakfast at Hotel Everest View",
-  },
-  {
-    label: "Permit Included",
-    value: "Yes, for Sagarmatha National Park",
-  },
-  {
-    label: "Hotel Pickup",
-    value: "Yes, included from your Kathmandu hotel",
-  },
-  {
-    label: "Travel Insurance",
-    value: "Required, minimum 6,000 m altitude coverage",
+    label: "Required Permit",
+    value: "Langtang National Park Entry Permit",
   },
 ];
 
 const tourHighlights = [
-  {
-    icon: Mountain,
-    title: "Everest Base Camp Flyover",
+    {
+    icon: Waves,
+    title: "Sacred Gosaikunda Lakes",
     description:
-      "Fly above the traditional trail from Lukla and witness the Everest region from the air.",
-  },
-  {
-    icon: MapPin,
-    title: "Kala Patthar Landing",
-    description:
-      "Land near one of the best viewpoints for clear views of Mount Everest and the surrounding peaks.",
-  },
-  {
-    icon: Hotel,
-    title: "Hotel Everest View Breakfast",
-    description:
-      "Enjoy breakfast with panoramic Himalayan views at one of the world's highest-altitude hotels.",
-  },
-  {
-    icon: Sunrise,
-    title: "Khumbu Icefall From Above",
-    description:
-      "See the Khumbu Icefall, glaciers and high-altitude valleys from a completely different perspective.",
+      "Fly above the main Gosaikunda Lake and its sacred neighbouring lakes, including Bhairab Kunda and Saraswati Kunda.",
   },
   {
     icon: Mountain,
-    title: "Eight 8,000m+ Peaks",
+    title: "Langtang and Ganesh Himal Views",
     description:
-      "See Everest, Lhotse, Makalu, Cho Oyu, Ama Dablam, Pumori and other Himalayan giants.",
+      "See Langtang Lirung, Dorje Lakpa, Ganesh Himal and the surrounding Himalayan ridgelines during the flight north from Kathmandu.",
   },
   {
-    icon: Plane,
-    title: "Lukla Airstrip",
+    icon: Trees,
+    title: "Shivapuri National Park",
     description:
-      "Fly past the famous Tenzing-Hillary Airport, one of the world's most remarkable mountain airstrips.",
+      "Fly above the forested hills and protected landscapes of Shivapuri National Park shortly after departing Kathmandu.",
   },
   {
-    icon: Gauge,
-    title: "Sherpa Villages Aerial",
+    icon: House,
+    title: "Traditional Tamang Villages",
     description:
-      "View Namche Bazaar, Tengboche, Pheriche and other Sherpa settlements from above.",
-  },
-  {
-    icon: Clock3,
-    title: "Sunrise Over the Khumbu",
-    description:
-      "Early departures provide beautiful morning light over the Himalayan valleys and peaks.",
+      "View traditional Tamang settlements, slate-roofed houses, terraced fields and remote mountain communities across the Langtang region.",
   },
 ];
 
 const designedForItems = [
   {
-    title: "Travellers on Short Notice",
+    title: "Gosaikunda Pilgrims",
     description:
-      "A short trip to Nepal isn't enough to trek. It is enough to fly. The helicopter departs at dawn from Kathmandu and returns in just 4 to 5 hours. This is the tour designed for tight itineraries and tighter schedules.",
+      "Complete a pilgrimage to the sacred Gosaikunda Lake without undertaking the traditional five-to-seven-day trek. The landing normally provides around 30 to 40 minutes for a short puja, photography and quiet time beside the lake.",
   },
   {
-    title: "Families and Multi-Generational Groups",
+    title: "Short-Term Travellers",
     description:
-      "No fitness requirement. No acclimatization. No age limit. Children aged 3 and above fly, and so do grandparents. The lap of Mount Everest is not reserved for the young and strong. It is reserved for those who book.",
+      "Travellers with only a few days in Kathmandu may not have enough time to complete the full Gosaikunda trek. The helicopter journey reaches the lake and returns to the capital within the same morning.",
   },
   {
-    title: "Creatives & Photographers",
+    title: "Families, Elder Pilgrims and Private Groups",
     description:
-      "Charter privately for full aircraft control, unobstructed window angles, and extended ground time at 5,545 metres. The amphitheatre of the Khumbu giants lit by first light is not a backdrop. It is the subject. Ask about door-off configuration.",
+      "The helicopter removes most of the physical demands associated with a multi-day mountain trek. Families, older pilgrims and private groups can experience Gosaikunda together, subject to medical suitability and operational conditions.",
   },
   {
-    title: "Travellers With Mobility Limitations",
+    title: "Photographers and First-Time Visitors",
     description:
-      "Knee injuries. Joint conditions. Wheelchair users. Post-surgery recovery. The two-week trek is not an option, but the destination still is. The helicopter removes every physical barrier between Kathmandu and the foot of Mount Everest.",
+      "Photograph Shivapuri’s forests, Tamang villages, alpine valleys, Ganesh Himal and the Langtang mountain range from the air. A private charter provides greater flexibility for dedicated photography groups.",
   },
 ];
 
@@ -259,8 +200,8 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_ebc.pdf"
-              download="Everest-Base-Camp-Itinerary.pdf"
+              href="/pdfs/itinerary_of_gosaikunda.pdf"
+              download="Gosaikunda-Lake-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
               <Download
@@ -290,37 +231,21 @@ export default function OverviewSection() {
                 <h2 className="font-fraunces text-3xl font-semibold leading-[1.12] tracking-[-0.02em] text-[#0a3158] md:text-4xl">
                   Helicopter Tour to,
                   <br />
-                  <span className="text-[#dfa11e]">Everest Base Camp.</span>
+                  <span className="text-[#dfa11e]">Gosaikunda Lake.</span>
                 </h2>
               </div>
 
               <div className="space-y-4 font-manrope text-sm leading-7 text-[#657180]">
                 <p>
-                  The Everest Base Camp Helicopter Tour is not just an
-                  experience of flying; it is an entire experience of being in
-                  the presence of the highest peak on earth. The helicopter tour
-                  to Everest Base Camp begins early in the morning, where the
-                  helicopter takes off from the Tribhuvan Airport in Kathmandu
-                  and flies towards the north-east, where it tours over the
-                  beautiful scenery, peaks of Khumbu region.
+                  The Gosaikunda helicopter tour experience is an unforgettable one, as you are transferred from the noisy streets of Kathmandu to the alpine peaks of the Langtang Himalayas within a period of less than 20 minutes. At Mountain Helicopter Tour, our Airbus H125 helicopters offer you this amazing tour experience every day from CAAN-certified aircraft.
                 </p>
 
                 <p>
-                  In no time of taking off, in around ninety minutes the
-                  helicopter will be viewing the beautiful Khumbu glacier and
-                  its popular viewpoint, scenic Lhotse and the dreamy Mt.
-                  Everest. The helicopter will land at the hotel mountain view.
-                  Here at the hotel mountain view Everest Base Camp Helicopter
-                  Tour with landing is an excellent opportunity for travellers
-                  who cannot go trekking and want to feel the thrill of standing
-                  at the lap of Mt. Everest.
+                  Situated at approximately 4,380 m height in the district of Rasuwa, this lake is the most revered and holy among the Hindu pilgrims. The site is actually more than just one lake; Gosaikunda is, in fact, a set of 108 alpine lakes, a number important in both Hinduism and Buddhism.
                 </p>
 
                 <p>
-                  Everest. After that the helicopter will land at an altitude of
-                  5,545 m above sea level at Kala Patthar, and the first picture
-                  every passenger will see is the closest view of Mt. Everest
-                  possible without climbing it.
+                  While the usual trekking tour to Gosaikunda would take about 5 to 7 days, the helicopter tour allows you to enjoy a comfortable landing at a 4,380 m altitude and gives you an ample 30 to 40 minute landing period to walk around the shores of the lake and bathe in the holy water or perform pujas and take photographs of the mountains.
                 </p>
               </div>
 
@@ -331,10 +256,7 @@ export default function OverviewSection() {
                 </h3>
 
                 <p className="mt-2 max-w-4xl font-manrope text-xs leading-6 text-[#7b8490]">
-                  These are the trip facts of the helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the trip facts of the helicopter tour to Gosaikunda , which makes the helicopter trip to Gosaikunda more predictable of what we are offering you in your journey..
                 </p>
 
                 <div className="mt-5 overflow-hidden rounded-xl bg-[#062b55] shadow-[0_15px_35px_rgba(6,43,85,0.12)]">
@@ -435,10 +357,12 @@ export default function OverviewSection() {
         </div>
       </section>
 
-      {/* ROUTE ELEVATION SECTION */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
+    {/* ROUTE ELEVATION SECTION */}
+      {/* GOSAIKUNDA ROUTE ELEVATION */}
+      <section className="bg-white px-5 pb-16 md:px-8 lg:pb-20">
+        <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-[28px] bg-[#061c38] px-5 py-10 md:px-10 md:py-12 lg:px-14">
+            {/* HEADING */}
             <div className="text-center">
               <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#e1a51f]">
                 <span className="h-px w-7 bg-[#e1a51f]" />
@@ -446,37 +370,42 @@ export default function OverviewSection() {
               </p>
 
               <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight text-white md:text-4xl">
-                Kathmandu to Kala Patthar,{" "}
+                Kathmandu to Gosaikunda,{" "}
                 <span className="text-[#e4ab25]">plotted.</span>
               </h2>
             </div>
 
+            {/* ELEVATION GRAPH */}
             <div className="mt-10 overflow-x-auto">
-              <div className="min-w-[760px]">
+              <div className="min-w-[820px]">
                 <svg
-                  viewBox="0 0 1100 250"
+                  viewBox="0 0 1100 270"
                   className="h-auto w-full"
                   role="img"
-                  aria-label="Elevation profile from Kathmandu to Kala Patthar and back"
+                  aria-label="Illustrative elevation profile from Kathmandu to Gosaikunda Lake and back"
                 >
                   <defs>
-                    <linearGradient id="routeArea" x1="0" y1="0" x2="0" y2="1">
-                      <stop
-                        offset="0%"
-                        stopColor="#f2b321"
-                        stopOpacity="0.18"
-                      />
+                    <linearGradient
+                      id="gosaikundaRouteArea"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
+                      <stop offset="0%" stopColor="#f2b321" stopOpacity="0.2" />
+
                       <stop offset="100%" stopColor="#f2b321" stopOpacity="0" />
                     </linearGradient>
 
                     <filter
-                      id="pointGlow"
+                      id="gosaikundaPointGlow"
                       x="-50%"
                       y="-50%"
                       width="200%"
                       height="200%"
                     >
                       <feGaussianBlur stdDeviation="5" result="blur" />
+
                       <feMerge>
                         <feMergeNode in="blur" />
                         <feMergeNode in="SourceGraphic" />
@@ -484,7 +413,7 @@ export default function OverviewSection() {
                     </filter>
                   </defs>
 
-                  {/* HORIZONTAL GRID */}
+                  {/* GRID LINES */}
                   {[35, 75, 115, 155, 195, 235].map((y) => (
                     <line
                       key={y}
@@ -505,46 +434,58 @@ export default function OverviewSection() {
                     fontSize="10"
                   >
                     <text x="28" y="39">
-                      6k m
-                    </text>
-                    <text x="28" y="79">
                       5k m
                     </text>
-                    <text x="28" y="119">
+
+                    <text x="28" y="79">
                       4k m
                     </text>
-                    <text x="28" y="159">
+
+                    <text x="28" y="119">
                       3k m
                     </text>
-                    <text x="28" y="199">
+
+                    <text x="28" y="159">
                       2k m
                     </text>
-                    <text x="28" y="239">
+
+                    <text x="28" y="199">
                       1k m
+                    </text>
+
+                    <text x="28" y="239">
+                      0 m
                     </text>
                   </g>
 
-                  {/* AREA */}
+                  {/* SHADED AREA */}
                   <path
-                    d="M65 195
-                       L225 140
-                       L390 38
-                       L610 105
-                       L920 142
-                       L1060 195
-                       L1060 235
-                       L65 235 Z"
-                    fill="url(#routeArea)"
+                    d="
+                M65 179
+                L235 126
+                L390 171
+                L545 157
+                L700 60
+                L865 111
+                L1060 179
+                L1060 235
+                L65 235
+                Z
+              "
+                    fill="url(#gosaikundaRouteArea)"
                   />
 
                   {/* ROUTE LINE */}
                   <path
-                    d="M65 195
-                       L225 140
-                       L390 38
-                       L610 105
-                       L920 142
-                       L1060 195"
+                    d="
+                M65 179
+                L235 126
+                L390 171
+                L545 157
+                L700 60
+                L865 111
+                L1060 179
+              "
                     fill="none"
                     stroke="#f2b321"
                     strokeWidth="3"
@@ -552,152 +493,245 @@ export default function OverviewSection() {
                     strokeLinejoin="round"
                   />
 
-                  {/* KATHMANDU */}
+                  {/* KATHMANDU DEPARTURE */}
                   <circle
                     cx="65"
-                    cy="195"
-                    r="12"
+                    cy="179"
+                    r="13"
                     fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
+                    opacity="0.13"
+                    filter="url(#gosaikundaPointGlow)"
                   />
-                  <circle cx="65" cy="195" r="6" fill="#f2b321" />
+
+                  <circle cx="65" cy="179" r="6" fill="#f2b321" />
 
                   <text
-                    x="42"
-                    y="182"
+                    x="39"
+                    y="160"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    KTM 1,400m
-                  </text>
-
-                  {/* LUKLA */}
-                  <circle
-                    cx="225"
-                    cy="140"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="225" cy="140" r="6" fill="#f2b321" />
-
-                  <text
-                    x="207"
-                    y="126"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    LUKLA
+                    KATHMANDU
                   </text>
 
                   <text
-                    x="214"
-                    y="136"
+                    x="48"
+                    y="171"
                     fill="#7f91a6"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    2,860m
+                    1,400 m
                   </text>
 
-                  {/* KALA PATTHAR */}
+                  {/* SHIVAPURI */}
+                  <circle
+                    cx="235"
+                    cy="126"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.13"
+                    filter="url(#gosaikundaPointGlow)"
+                  />
+
+                  <circle cx="235" cy="126" r="6" fill="#f2b321" />
+
+                  <text
+                    x="205"
+                    y="107"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    SHIVAPURI
+                  </text>
+
+                  <text
+                    x="219"
+                    y="118"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    2,732 m
+                  </text>
+
+                  {/* TRISHULI VALLEY */}
                   <circle
                     cx="390"
-                    cy="38"
-                    r="14"
-                    fill="#e34d55"
-                    opacity="0.14"
-                    filter="url(#pointGlow)"
+                    cy="171"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.13"
+                    filter="url(#gosaikundaPointGlow)"
                   />
-                  <circle cx="390" cy="38" r="7" fill="#e34d55" />
+
+                  <circle cx="390" cy="171" r="6" fill="#f2b321" />
 
                   <text
-                    x="360"
-                    y="21"
+                    x="350"
+                    y="151"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    KALA PATTHAR
+                    TRISHULI VALLEY
                   </text>
 
                   <text
-                    x="378"
-                    y="31"
+                    x="372"
+                    y="163"
                     fill="#7f91a6"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    5,545m
+                    1,500 m
                   </text>
 
-                  {/* HOTEL EVEREST VIEW */}
+                  {/* DHUNCHE */}
                   <circle
-                    cx="610"
-                    cy="105"
+                    cx="545"
+                    cy="157"
                     r="12"
                     fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
+                    opacity="0.13"
+                    filter="url(#gosaikundaPointGlow)"
                   />
-                  <circle cx="610" cy="105" r="6" fill="#f2b321" />
+
+                  <circle cx="545" cy="157" r="6" fill="#f2b321" />
 
                   <text
-                    x="600"
+                    x="522"
+                    y="138"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    DHUNCHE
+                  </text>
+
+                  <text
+                    x="529"
+                    y="149"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    1,960 m
+                  </text>
+
+                  {/* GOSAIKUNDA */}
+                  <circle
+                    cx="700"
+                    cy="60"
+                    r="16"
+                    fill="#e34d55"
+                    opacity="0.17"
+                    filter="url(#gosaikundaPointGlow)"
+                  />
+
+                  <circle cx="700" cy="60" r="7" fill="#e34d55" />
+
+                  <text
+                    x="663"
+                    y="30"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    GOSAIKUNDA LAKE
+                  </text>
+
+                  <text
+                    x="682"
+                    y="43"
+                    fill="#9aabc0"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    4,380 m
+                  </text>
+
+                  {/* LANGTANG RIDGE RETURN */}
+                  <circle
+                    cx="865"
+                    cy="111"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.13"
+                    filter="url(#gosaikundaPointGlow)"
+                  />
+
+                  <circle cx="865" cy="111" r="6" fill="#f2b321" />
+
+                  <text
+                    x="823"
                     y="91"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    HEV
+                    LANGTANG RIDGE
                   </text>
 
                   <text
-                    x="594"
-                    y="101"
+                    x="843"
+                    y="103"
                     fill="#7f91a6"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    3,880m
+                    RETURN
                   </text>
 
-                  {/* RETURN */}
+                  {/* KATHMANDU RETURN */}
                   <circle
                     cx="1060"
-                    cy="195"
-                    r="12"
+                    cy="179"
+                    r="13"
                     fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
+                    opacity="0.13"
+                    filter="url(#gosaikundaPointGlow)"
                   />
-                  <circle cx="1060" cy="195" r="6" fill="#f2b321" />
+
+                  <circle cx="1060" cy="179" r="6" fill="#f2b321" />
 
                   <text
-                    x="1038"
-                    y="182"
+                    x="1010"
+                    y="160"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    KTM 1,400m
+                    KATHMANDU
+                  </text>
+
+                  <text
+                    x="1035"
+                    y="171"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    1,400 m
                   </text>
                 </svg>
               </div>
             </div>
 
+            {/* DESCRIPTION */}
             <p className="mt-5 font-manrope text-xs leading-6 text-[#7c8da1]">
-              Elevation profile: Kathmandu (1,400 m) to Kala Patthar (5,545 m)
-              and back, plotted against elapsed time.
+              Illustrative elevation profile from Kathmandu at 1,400 metres over
+              Shivapuri, the Trishuli Valley and Dhunche to Gosaikunda Lake at
+              4,380 metres, followed by the return flight to Kathmandu.
             </p>
           </div>
         </div>

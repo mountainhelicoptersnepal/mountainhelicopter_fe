@@ -12,48 +12,76 @@ export default function FlightExperience() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            What The Everest Helicopter Tour{" "}
+            What The Gosaikunda Lake Helicopter Tour{" "}
             <span className="text-[#e0a326]">Feels Like.</span>
           </h2>
         </div>
 
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-6xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
+           <div>
+            <h3 className="font-fraunces text-xl font-semibold text-[#08294d]">
+              The Instant the Sacred Lakes Come Into View
+            </h3>
+
+            <p className="mt-3">
+              Less than twenty minutes after departing Kathmandu, the
+              helicopter leaves the busy city behind and flies above the green
+              ridges and dense forests of Shivapuri National Park. The urban
+              landscape quickly gives way to quiet valleys, terraced hills and
+              remote Himalayan settlements.
+            </p>
+          </div>
+
           <p>
-            The moment the Khumbu Valley opens, just forty-five minutes after
-            departing Kathmandu, the helicopter leaves the city sprawl behind
-            and enters the dramatic Dudh Koshi river gorge. Flying past the
-            famous Lukla airstrip, the horseshoe-shaped Namche Bazaar, and the
-            sacred Tengboche Monastery, the Airbus H125 follows the ancient
-            trekking route into the heart of the Everest region, a path
-            trekkers usually take over a week to complete. Then the landscape
-            dramatically shifts.
+            Flying north, the Airbus H125 passes above traditional Tamang
+            villages and forest-covered slopes before climbing toward the
+            Langtang Himalayan range. On clear mornings, passengers can see
+            Langtang Lirung, Dorje Lakpa, Ganesh Himal and the surrounding
+            mountain ridgelines through the helicopter windows.
           </p>
 
           <p>
-            Mount Everest, Lhotse, Nuptse, and Ama Dablam surround the aircraft
-            in a breathtaking 360-degree amphitheatre of rock, snow, and ice.
-            Rather than viewing the Himalayas from a distance, passengers fly
-            directly over the massive Khumbu Glacier, the treacherous Khumbu
-            Icefall, and the colourful expedition tents of Everest Base Camp.
+            Then the ridges suddenly open. Gosaikunda Lake appears at
+            approximately 4,380 metres, resting among dark rocks, snow-covered
+            slopes and the open Himalayan sky. Nearby, Bhairab Kunda and
+            Saraswati Kunda form part of the sacred cluster of alpine lakes
+            revered by Hindu and Buddhist pilgrims.
+          </p>
+
+          <div>
+            <h3 className="font-fraunces text-xl font-semibold text-[#08294d]">
+              Landing Beside Gosaikunda Lake
+            </h3>
+
+            <p className="mt-3">
+              When conditions allow, the helicopter lands near Gosaikunda Lake.
+              As the rotors slow, the sound of the aircraft gives way to cold
+              mountain air, prayer flags and the stillness of the sacred
+              landscape.
+            </p>
+          </div>
+
+          <p>
+            Passengers normally receive approximately 30 to 40 minutes on the
+            ground. This provides time to walk carefully around the permitted
+            landing area, take photographs, offer a short prayer, touch the
+            sacred water or quietly experience the surrounding mountains.
           </p>
 
           <p>
-            The helicopter lands at Kala Patthar at an altitude of 5,545
-            metres. As the rotors slow, the crisp mountain air, the sheer scale
-            of the world&apos;s highest peaks, and the panoramic views create
-            an unforgettable atmosphere. Passengers have around 10 to 15
-            minutes to step out, take photographs, absorb the surreal altitude,
-            and experience the ultimate vantage point of Mount Everest.
+            The return flight offers another perspective over the Langtang
+            ridges, Tamang villages, alpine valleys and Shivapuri forests before
+            descending toward Kathmandu. Within a single morning, passengers
+            can complete a journey that would normally require several days of
+            trekking.
           </p>
 
           <p>
-            The return flight offers a relaxing breakfast at the world&apos;s
-            highest hotel, Hotel Everest View, with unobstructed views of Ama
-            Dablam before gliding back over the Khumbu Valley to Kathmandu.
-            Within a single morning, passengers can stand in the lap of the
-            world&apos;s highest mountain and return to their hotel before
-            mid-morning.
+            The Gosaikunda helicopter tour is more than a scenic flight. It is
+            a direct journey to one of Nepal&apos;s most sacred high-altitude
+            lakes, combining pilgrimage, Himalayan scenery and cultural
+            significance in one experience.
           </p>
         </div>
 
@@ -61,13 +89,21 @@ export default function FlightExperience() {
         <div className="mx-auto mt-10 max-w-3xl overflow-hidden">
           <div className="relative aspect-[4/3] w-full">
             <Image
-              src="/images/everest-base-camp/everest-helicopter-route-map.png"
-              alt="Everest Base Camp helicopter tour route map from Kathmandu"
+              src="/images/gosaikunda-lake/gosaikunda-helicopter-route-map.png"
+              alt="Gosaikunda Lake Helicopter Tour Route Map from Kathmandu"
               fill
               sizes="(max-width: 768px) 100vw, 768px"
               className="object-cover object-top"
             />
           </div>
+        </div>
+          {/* OPERATIONAL NOTE */}
+        <div className="mx-auto mt-8 max-w-4xl rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 text-center md:px-7">
+          <p className="font-manrope text-xs leading-6 text-slate-500">
+            The final route, landing location and ground duration depend on
+            visibility, wind, cloud cover, passenger weight, lake-area
+            conditions and the pilot&apos;s operational assessment.
+          </p>
         </div>
       </div>
     </section>

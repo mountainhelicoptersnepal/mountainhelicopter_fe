@@ -1,97 +1,123 @@
 const itineraryItems = [
   {
     number: "01",
-    time: "05:30h",
-    title: "Hotel Pickup in Kathmandu",
+    time: "06:00h",
+    title: "Hotel Pickup in Pokhara",
     description:
-      "A private vehicle collects you from your hotel in Kathmandu or Thamel. The 20-minute drive to Tribhuvan International Airport gives you a quiet view of the city before dawn. Bring your passport or identification, warm layers, and approximately USD 51 in cash for permits.",
+      "Your Annapurna Base Camp Helicopter Tour begins with an early-morning pickup from your hotel in Pokhara. A private vehicle transfers you to Pokhara Airport, where the Mountain Helicopters Nepal ground team assists with check-in and flight preparation.",
+    bullets: [
+      "Carry your passport or valid identification.",
+      "Wear warm, layered and windproof clothing.",
+      "Bring sunglasses, personal medication and a small water bottle.",
+      "Keep your luggage within the confirmed helicopter weight allowance.",
+    ],
   },
   {
     number: "02",
-    time: "06:00h",
-    title:
-      "Arrival at Tribhuvan International Airport (Domestic Terminal)",
+    time: "06:15h",
+    title: "Airport Check-In and Safety Briefing",
     description:
-      "After pickup, you are taken directly to the domestic terminal helipad area. Our ground team will already have processed your permit documentation from the previous day.",
+      "After arriving at Pokhara Airport, passengers complete check-in, identification verification and final weight checks. The pilot then provides a mandatory safety briefing before boarding the Airbus H125 helicopter.",
     bullets: [
-      "Receive your Sagarmatha National Park entry permit and Khumbu Pasang Lhamu Rural Municipality permit.",
-      "Attend a mandatory pre-flight safety briefing covering oxygen use, emergency procedures, high-altitude precautions, and landing instructions.",
-      "Meet your CAAN-certified mountain pilots.",
-      "Complete final luggage and passenger weight checks.",
+      "Receive instructions for approaching and leaving the helicopter.",
+      "Review seat-belt, door and emergency procedures.",
+      "Learn about high-altitude precautions at Annapurna Base Camp.",
+      "Confirm the latest weather, route and landing conditions.",
     ],
   },
   {
     number: "03",
     time: "06:30h",
-    title: "Departure From Kathmandu",
+    title: "Helicopter Departure From Pokhara",
     description:
-      "The helicopter departs Kathmandu and heads northeast. Within minutes, the city and temples disappear beneath the aircraft, revealing the Himalayan foothills and the first line of snow-covered peaks. Your pilot provides commentary and points out major landmarks along the route.",
+      "The helicopter departs Pokhara Airport and heads north toward the Annapurna region. Shortly after takeoff, passengers can enjoy aerial views of Pokhara Valley, Phewa Lake, surrounding hills and terraced farmland.",
   },
   {
     number: "04",
-    time: "07:15h",
-    title: "Refuelling Stop at Lukla, Tenzing-Hillary Airport (2,860m)",
+    time: "06:35h",
+    title: "Fly Over Phewa Lake and the Pokhara Valley",
     description:
-      "The helicopter makes a short refuelling stop at Lukla Airport, known for its short mountain runway and dramatic location. Passengers may briefly step outside when operational conditions permit and observe one of the world's most famous mountain airstrips.",
+      "As the aircraft gains altitude, the city and lakes spread out beneath the flight path. On a clear morning, the Annapurna range and the distinct summit of Machhapuchhre begin to dominate the northern skyline.",
+    bullets: [
+      "Phewa Lake and the Pokhara cityscape.",
+      "Green hills and terraced agricultural fields.",
+      "Annapurna South and Hiunchuli.",
+      "Machhapuchhre, also known as Fishtail Mountain.",
+    ],
   },
   {
     number: "05",
-    time: "07:30h",
-    title: "Flyover at Namche Bazaar (3,440m)",
+    time: "06:40h",
+    title: "Aerial Views of Ghandruk and Chhomrong",
     description:
-      "Fly above Namche Bazaar, the main trading centre of the Khumbu region. From the aircraft, you can see the curved settlement, terraced slopes, monasteries, trekking trails, and the valley leading deeper into the Everest region.",
+      "The helicopter continues above traditional Gurung settlements such as Ghandruk and Chhomrong. From the air, passengers can see stone-roofed houses, cultivated terraces, trekking trails and the deep Modi Khola Valley.",
   },
   {
     number: "06",
-    time: "07:55h",
-    title: "Flyover at Tengboche Monastery (3,860m)",
+    time: "06:45h",
+    title: "Flight Through the Modi Khola Gorge",
     description:
-      "Pass Tengboche Monastery, one of the most important Buddhist sites in the Everest region. The monastery sits on a forested ridge with panoramic views toward Ama Dablam, Everest, Lhotse, and surrounding peaks.",
+      "The aircraft follows the narrow Modi Khola corridor toward the Annapurna Sanctuary. Forested slopes and waterfalls gradually give way to steep Himalayan walls, glaciers and high-alpine terrain.",
   },
   {
     number: "07",
-    time: "08:05h",
-    title: "Flyover at Pheriche (4,240m)",
+    time: "06:50h",
+    title: "Machhapuchhre and Annapurna Range Views",
     description:
-      "The helicopter continues over Pheriche, a high-altitude village and acclimatization stop for trekkers. The settlement is also known for its seasonal medical clinic and its position beneath the surrounding Himalayan walls.",
+      "As the helicopter approaches the sanctuary, Machhapuchhre and Hiunchuli rise on opposite sides of the valley. Passengers can also see Annapurna South, Gangapurna and the immense face of Annapurna I.",
+    bullets: [
+      "Machhapuchhre at 6,993 metres.",
+      "Annapurna South at 7,219 metres.",
+      "Hiunchuli at 6,441 metres.",
+      "Gangapurna at 7,455 metres.",
+      "Annapurna I at 8,091 metres.",
+    ],
   },
   {
     number: "08",
-    time: "08:30h",
-    title: "Flyover at Everest Base Camp (5,364m)",
+    time: "Around 06:55h",
+    title: "Landing at Annapurna Base Camp (4,130m)",
     description:
-      "The aircraft flies above Everest Base Camp, the Khumbu Glacier, expedition tents, and the surrounding icefall. Landing directly at Everest Base Camp is not permitted for scheduled tourist helicopter operations, so the flight continues toward Kala Patthar for the landing experience.",
+      "The helicopter lands at Annapurna Base Camp inside the natural amphitheatre of the Annapurna Sanctuary. Passengers step out beneath the surrounding walls of Annapurna I, Annapurna South, Hiunchuli, Gangapurna and Machhapuchhre.",
+    note:
+      "The landing location and ground duration depend on weather, wind, snow, passenger condition, aircraft performance and the pilot’s final operational assessment.",
   },
   {
     number: "09",
-    time: "10:00h",
-    title: "Landing at Kala Patthar (5,545m / 18,192 ft)",
+    time: "06:55–07:40h",
+    title: "Explore Annapurna Base Camp",
     description:
-      "Land at Kala Patthar, one of the most extraordinary viewpoints in the Himalayas. The landing normally lasts around 10 to 15 minutes, depending on weather, aircraft performance, and passenger condition.",
+      "Passengers normally receive approximately 30 to 45 minutes at Annapurna Base Camp, with up to around one hour possible when conditions allow. This time may be used for photography, sightseeing, hot tea or breakfast and a short walk around the permitted landing area.",
     bullets: [
-      "Mount Everest and the Southwest Face.",
-      "Lhotse and the South Col.",
-      "Nuptse and the surrounding ridgelines.",
-      "Pumori rising directly behind Kala Patthar.",
-      "The Khumbu Glacier and Khumbu Icefall.",
-      "Everest Base Camp beneath the aircraft.",
+      "Photograph the Annapurna Sanctuary amphitheatre.",
+      "Enjoy close views of Annapurna I and Machhapuchhre.",
+      "See nearby glaciers, prayer flags and mountain lodges.",
+      "Enjoy hot Nepali tea or breakfast when available.",
+      "Walk slowly and avoid unnecessary physical exertion.",
     ],
     note:
-      "At 5,545 metres, oxygen levels are significantly lower than at sea level. Passengers should move slowly, avoid unnecessary exertion, and follow the pilot's instructions throughout the landing.",
+      "At 4,130 metres, the available oxygen is lower than at sea level. Inform the pilot immediately if you experience headache, dizziness, nausea, unusual breathlessness or discomfort.",
   },
   {
     number: "10",
-    time: "10:15h",
-    title: "Return Flight to Kathmandu",
+    time: "Around 07:40h",
+    title: "Return Flight to Pokhara",
     description:
-      "The return flight follows the Khumbu Valley past Tengboche, Namche Bazaar, and the Dudh Koshi gorge. Depending on fuel and operating conditions, the aircraft may make another short stop at Lukla before continuing to Kathmandu.",
+      "After the base-camp visit, passengers board the helicopter for the return journey. When weather and air-traffic conditions permit, the pilot may use a slightly different return corridor, providing new views of Machhapuchhre, the Modi Valley and surrounding villages.",
   },
   {
     number: "11",
-    time: "10:15h",
-    title: "Drop-Off at Kathmandu Hotel",
+    time: "Around 08:00h",
+    title: "Arrival at Pokhara Airport",
     description:
-      "After landing at Tribhuvan International Airport, our vehicle transfers you back to your hotel in Kathmandu. You return before midday with the rest of the afternoon free.",
+      "The helicopter lands at Pokhara Airport after the scenic return flight. The ground team assists passengers with disembarkation and prepares the onward hotel transfer.",
+  },
+  {
+    number: "12",
+    time: "Around 08:15h",
+    title: "Hotel Drop-Off in Pokhara",
+    description:
+      "A private vehicle transfers you from Pokhara Airport back to your hotel, completing the Annapurna Base Camp helicopter experience. The remainder of the day is free for relaxation or additional sightseeing in Pokhara.",
   },
 ];
 
@@ -192,10 +218,7 @@ export default function Itinerary() {
         {/* OPERATIONAL NOTE */}
         <div className="mt-20 rounded-2xl border border-white/15 bg-white/[0.06] px-5 py-6 backdrop-blur-sm md:px-7">
           <p className="font-manrope text-xs leading-6 text-white/65">
-            All flight times are approximate. The final departure time, route,
-            ground duration, passenger capacity, and return schedule may change
-            according to weather, visibility, aircraft availability, air
-            traffic, passenger weight, and operational safety requirements.
+           All times are approximate. The final departure time, route, landing location, ground duration, passenger capacity and return schedule may change according to weather, visibility, wind, snow, aircraft availability, air traffic, passenger weight and operational safety requirements. The pilot has final authority over all flight and landing decisions.
           </p>
         </div>
       </div>

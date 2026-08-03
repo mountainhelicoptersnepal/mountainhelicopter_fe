@@ -3,39 +3,42 @@
 const plans = [
   {
     title: "Shared Seat",
-    subtitle: "Join a scheduled dawn departure",
-    price: "$1,100",
+    subtitle: "Join a scheduled early-morning departure",
+    price: "$300",
     unit: "per person",
     button: "Book Shared Seat",
-    href: "/contact#inquiry-form",
+    href: "/contact",
     featured: false,
     features: [
-      "Hotel pickup & drop in Kathmandu",
-      "Pre-flight safety briefing",
-      "Window seat (every passenger)",
-      "Kala Patthar landing (5,545m)",
-      "Breakfast at Everest View Hotel",
-      "All park entry fees",
-      "Oxygen on board (if needed)",
+      "Round-trip Airbus H125 helicopter flight",
+      "Hotel pickup and drop-off in Kathmandu",
+      "Airport assistance and pre-flight safety briefing",
+      "Scenic flight over Shivapuri and the Langtang region",
+      "Landing near Gosaikunda Lake at 4,380m",
+      "Approximately 30–40 minutes of ground time",
+      "Langtang National Park entry permit",
+      "Emergency oxygen and first-aid kit onboard",
     ],
   },
   {
-    title: "Private Charter",
-    subtitle: "The whole helicopter, on your schedule",
-    price: "$5,800",
+       title: "Private Charter",
+    subtitle: "Reserve the complete helicopter for your group",
+    price: "$1,500",
     unit: "per helicopter",
     button: "Charter the Helicopter",
-    href: "/contact#inquiry-form",
+    href: "/charter",
     featured: true,
     features: [
-      "Everything in Shared Seat",
-      "Custom departure time",
-      "Custom landing points (where permitted)",
-      "Extended ground time at Kala Patthar",
-      "Private briefing",
-      "Dedicated ground coordinator",
-      "Up to 5 passengers full aircraft",
-      "Priority weather rescheduling",
+      "Everything included with a shared seat",
+      "Private Airbus H125 for your group",
+      "Flexible departure time where possible",
+      "Dedicated ground operations coordinator",
+      "Private scenic flight over the Langtang region",
+      "Gosaikunda Lake landing when conditions permit",
+      "Approximately 30–40 minutes at the sacred lake",
+      "Up to 4 passengers in the complete aircraft",
+      "Private safety briefing for your group",
+      "Priority weather-rescheduling assistance",
     ],
   },
 ];
@@ -164,8 +167,15 @@ export default function PriceSection() {
           ))}
         </div>
 
-        <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
-          Fares exclude: Travel insurance · Gratuities
+       <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
+          Fares exclude: Personal travel insurance · Additional food and
+          beverages · Personal expenses · Gratuities
+        </p>
+
+       <p className="mx-auto mt-3 max-w-3xl text-center font-manrope text-[11px] leading-5 text-[#9aa4af]">
+          Final fares may vary according to departure city, passenger count,
+          aircraft availability, fuel requirements, weather conditions and the
+          package confirmed in your booking agreement.
         </p>
       </div>
     </section>

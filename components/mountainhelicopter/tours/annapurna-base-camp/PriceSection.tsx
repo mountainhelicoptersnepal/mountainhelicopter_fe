@@ -3,40 +3,45 @@
 const plans = [
   {
     title: "Shared Seat",
-    subtitle: "Join a scheduled dawn departure",
-    price: "$1,100",
+    subtitle: "Join a scheduled early-morning departure from Pokhara",
+    price: "$500",
     unit: "per person",
     button: "Book Shared Seat",
     href: "/contact#inquiry-form",
     featured: false,
-    features: [
-      "Hotel pickup & drop in Kathmandu",
-      "Pre-flight safety briefing",
-      "Window seat (every passenger)",
-      "Kala Patthar landing (5,545m)",
-      "Breakfast at Everest View Hotel",
-      "All park entry fees",
-      "Oxygen on board (if needed)",
-    ],
+features: [
+  "Round-trip Airbus H125 helicopter flight",
+  "Hotel pickup and drop-off in Pokhara",
+  "Airport assistance and pre-flight briefing",
+  "Window-seat helicopter experience",
+  "Scenic flight through the Annapurna region",
+  "Landing at Annapurna Base Camp (4,130m)",
+  "30–45 minutes of ground time",
+  "Hot beverages or breakfast when available",
+  "ACAP permit and applicable airport taxes",
+  "Emergency oxygen and first-aid kit onboard",
+],
   },
   {
     title: "Private Charter",
-    subtitle: "The whole helicopter, on your schedule",
-    price: "$5,800",
+    subtitle: "Reserve the entire helicopter for your group",
+    price: "$2,500",
     unit: "per helicopter",
     button: "Charter the Helicopter",
     href: "/contact#inquiry-form",
     featured: true,
     features: [
-      "Everything in Shared Seat",
-      "Custom departure time",
-      "Custom landing points (where permitted)",
-      "Extended ground time at Kala Patthar",
-      "Private briefing",
-      "Dedicated ground coordinator",
-      "Up to 5 passengers full aircraft",
-      "Priority weather rescheduling",
-    ],
+  "Everything included with a shared seat",
+  "Private Airbus H125 for your group",
+  "Flexible departure time where possible",
+  "Dedicated ground operations coordinator",
+  "Private flight through the Annapurna Sanctuary",
+  "30–45 minutes at Annapurna Base Camp",
+  "Views of Annapurna I, Machhapuchhre and Hiunchuli",
+  "Up to 5 passengers in the full aircraft",
+  "Priority weather-rescheduling assistance",
+  "Private briefing for your group",
+],
   },
 ];
 
@@ -163,10 +168,17 @@ export default function PriceSection() {
             <PriceCard key={plan.title} plan={plan} />
           ))}
         </div>
-
-        <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
-          Fares exclude: Travel insurance · Gratuities
+          <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
+          Fares exclude: Personal travel insurance · Additional food and
+          beverages · Personal expenses · Gratuities
         </p>
+
+       <p className="mx-auto mt-3 max-w-3xl text-center font-manrope text-[11px] leading-5 text-[#9aa4af]">
+          Final fares may vary according to departure city, passenger count,
+          aircraft availability, fuel requirements, weather conditions and the
+          package confirmed in your booking agreement.
+        </p>
+     
       </div>
     </section>
   );

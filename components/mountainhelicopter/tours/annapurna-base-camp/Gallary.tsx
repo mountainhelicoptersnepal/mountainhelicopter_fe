@@ -4,35 +4,35 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "/images/everest-base-camp/everest-gallary.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary1.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary1.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary2.png",
+    src: "/images/annapurna-base-camp/annapurna-gallary2.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary3.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary3.jpg",
     className: "col-span-1 row-span-1 md:col-span-2",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary4.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary4.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary5.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary5.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary6.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary6.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/everest-base-camp/everest-gallary7.jpg",
+    src: "/images/annapurna-base-camp/annapurna-gallary7.jpg",
     className: "col-span-1 row-span-1",
   },
 ];

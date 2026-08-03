@@ -10,7 +10,7 @@ export default function EverestBaseCamp() {
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
       style={{
         backgroundImage:
-          "url('/images/everest-base-camp/everest-base-camp.jpg')",
+          "url('/images/annapurna-base-camp/annapurna-gallary6.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-[#06182c]/55" />
@@ -35,8 +35,7 @@ export default function EverestBaseCamp() {
             </h1>
 
             <p className="mt-6 max-w-[540px] font-manrope text-[17px] font-bold leading-[1.45] text-white sm:mt-7 sm:text-[20px] md:text-[20px] tracking-normal">
-              Witness the world’s highest peaks from an unforgettable aerial
-              perspective.
+              Witness the majestic Annapurna range from an unforgettable aerial perspective, flying deep into the heart of the Himalayas toward Annapurna Base Camp.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">

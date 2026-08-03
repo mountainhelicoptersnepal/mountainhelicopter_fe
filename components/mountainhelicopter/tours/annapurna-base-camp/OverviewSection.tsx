@@ -3,13 +3,14 @@
 import { useEffect, useState } from "react";
 import {
   Clock3,
+  Compass,
   Download,
   Gauge,
   Hotel,
   MapPin,
   Mountain,
   Plane,
-  Sunrise,
+  Sunrise
 } from "lucide-react";
 import EverestTourSidebar from "./EverestTourSidebar";
 
@@ -23,151 +24,116 @@ const tabs = [
 ];
 
 const quickFacts = [
-  {
-    label: "Duration",
-    value: "4–5 hrs",
-  },
-  {
-    label: "Departure Time",
-    value: "5:30 am – 6:30 am",
-  },
-  {
-    label: "Departure Point",
-    value: "Tribhuvan International Airport Domestic Terminal",
-  },
-  {
-    label: "Return Point",
-    value: "Tribhuvan International Airport, Kathmandu",
-  },
-  {
-    label: "Max Altitude Reached",
-    value: "5,545 m / 18,192 ft (Kala Patthar)",
-  },
-  {
-    label: "EBC Flight Duration",
-    value: "5.5 hrs / 175 km & Everest Base Camp",
-  },
-  {
-    label: "Helicopter Type",
-    value: "Airbus H125 (AS350 B3e), CAAN-certified",
-  },
-  {
-    label: "Helicopter Capacity",
-    value: "Up to 4 passengers + 2 pilots",
-  },
-  {
-    label: "Difficulty Level",
-    value: "Easy, no physical fitness required",
-  },
-  {
-    label: "Minimum Recommended Age",
-    value: "5 years",
-  },
-  {
-    label: "Best Season",
-    value: "March–May and September–November",
-  },
-  {
-    label: "Shared Tour Price",
-    value: "From USD 1,400 per person",
-  },
-  {
-    label: "Private Charter Price",
-    value: "From USD 5,400",
-  },
-  {
-    label: "Ideal Time",
-    value: "Early Tour Operation in one morning",
-  },
-  {
-    label: "Meal Included",
-    value: "Breakfast at Hotel Everest View",
-  },
-  {
-    label: "Permit Included",
-    value: "Yes, for Sagarmatha National Park",
-  },
-  {
-    label: "Hotel Pickup",
-    value: "Yes, included from your Kathmandu hotel",
-  },
-  {
-    label: "Travel Insurance",
-    value: "Required, minimum 6,000 m altitude coverage",
-  },
+{
+      label: "PRIMARY DEPARTURE POINT",
+      value: "Pokhara Airport Helipad, Pokhara",
+    },
+    {
+      label: "SECONDARY DEPARTURE POINT",
+      value: "Tribhuvan International Airport Domestic Terminal, Kathmandu",
+    },
+    {
+      label: "FLIGHT DURATION FROM POKHARA",
+      value: "Approximately 20–25 minutes each way",
+    },
+    {
+      label: "FLIGHT DURATION FROM KATHMANDU",
+      value: "Approximately 50–60 minutes each way",
+    },
+    {
+      label: "LANDING TIME AT ABC",
+      value: "Approximately 30–45 minutes for photography and breakfast",
+    },
+    {
+      label: "HELICOPTER MODEL",
+      value: "CAAN-certified Airbus H125 (AS350 B3e)",
+    },
+    {
+      label: "HELICOPTER CAPACITY",
+      value: "Up to 5 passengers plus 1 pilot",
+    },
+    {
+      label: "SHARED TOUR COST FROM POKHARA",
+      value: "From USD 340–480 per person",
+    },
+    {
+      label: "PRIVATE CHARTER FROM POKHARA",
+      value: "From USD 1,980–2,400 for the full helicopter",
+    },
+    {
+      label: "PRIVATE CHARTER FROM KATHMANDU",
+      value: "From USD 3,000–3,500 for the full helicopter",
+    },
+    {
+      label: "BEST SEASON",
+      value: "March–May and September–November",
+    },
+    {
+      label: "REQUIRED PERMIT",
+      value: "Annapurna Conservation Area Permit; TIMS card not required",
+    },
 ];
 
 const tourHighlights = [
   {
     icon: Mountain,
-    title: "Everest Base Camp Flyover",
+    title: "Machhapuchhre – Fishtail Peak",
     description:
-      "Fly above the traditional trail from Lukla and witness the Everest region from the air.",
+      "Fly close to the distinctive 6,993-metre summit of Machhapuchhre, a sacred mountain that dominates the skyline above Pokhara and the Annapurna Sanctuary.",
   },
   {
-    icon: MapPin,
-    title: "Kala Patthar Landing",
+    icon: Mountain,
+    title: "Annapurna Sanctuary Amphitheatre",
     description:
-      "Land near one of the best viewpoints for clear views of Mount Everest and the surrounding peaks.",
-  },
-  {
-    icon: Hotel,
-    title: "Hotel Everest View Breakfast",
-    description:
-      "Enjoy breakfast with panoramic Himalayan views at one of the world's highest-altitude hotels.",
+      "Enter the natural mountain amphitheatre formed by Annapurna I, Annapurna South, Gangapurna, Hiunchuli, Machhapuchhre and the surrounding Himalayan walls.",
   },
   {
     icon: Sunrise,
-    title: "Khumbu Icefall From Above",
+    title: "Pokhara’s Lakes From Above",
+    description:
+      "Enjoy aerial views of Phewa Lake, Begnas Lake and Rupa Lake as the helicopter climbs north from the Pokhara Valley toward the Annapurna region.",
+  },
+  {
+    icon: MapPin,
+    title: "Gurung and Magar Villages",
     description:
       "See the Khumbu Icefall, glaciers and high-altitude valleys from a completely different perspective.",
   },
   {
-    icon: Mountain,
-    title: "Eight 8,000m+ Peaks",
-    description:
-      "See Everest, Lhotse, Makalu, Cho Oyu, Ama Dablam, Pumori and other Himalayan giants.",
-  },
-  {
-    icon: Plane,
-    title: "Lukla Airstrip",
-    description:
-      "Fly past the famous Tenzing-Hillary Airport, one of the world's most remarkable mountain airstrips.",
-  },
-  {
     icon: Gauge,
-    title: "Sherpa Villages Aerial",
+    title: "Seti Gorge and Modi Valley",
     description:
-      "View Namche Bazaar, Tengboche, Pheriche and other Sherpa settlements from above.",
+      "Fly above the Seti River Gorge and follow the Modi Khola Valley through forested hills, narrow glacial corridors and cascading waterfalls.",
   },
   {
-    icon: Clock3,
-    title: "Sunrise Over the Khumbu",
+    icon: Hotel,
+    title: "Breakfast at 4,130 Metres",
     description:
-      "Early departures provide beautiful morning light over the Himalayan valleys and peaks.",
+      "Enjoy a hot breakfast at an Annapurna Base Camp lodge while facing the immense mountain walls of Annapurna I and the surrounding sanctuary.",
   },
+  
 ];
 
 const designedForItems = [
   {
     title: "Travellers on Short Notice",
     description:
-      "A short trip to Nepal isn't enough to trek. It is enough to fly. The helicopter departs at dawn from Kathmandu and returns in just 4 to 5 hours. This is the tour designed for tight itineraries and tighter schedules.",
+      "One day in Pokhara is not enough to complete the traditional Annapurna Base Camp trek, but it is enough to fly. The helicopter departs early in the morning, reaches the sanctuary within minutes and returns before the day is over. This experience is designed for travellers with limited time and tightly planned itineraries.",
   },
   {
     title: "Families and Multi-Generational Groups",
     description:
-      "No fitness requirement. No acclimatization. No age limit. Children aged 3 and above fly, and so do grandparents. The lap of Mount Everest is not reserved for the young and strong. It is reserved for those who book.",
+      "No trekking experience or advanced physical fitness is required. Children aged three and above, parents and grandparents can experience the Annapurna Sanctuary together without carrying heavy luggage or spending several nights in mountain teahouses.",
   },
   {
     title: "Creatives & Photographers",
     description:
-      "Charter privately for full aircraft control, unobstructed window angles, and extended ground time at 5,545 metres. The amphitheatre of the Khumbu giants lit by first light is not a backdrop. It is the subject. Ask about door-off configuration.",
+      "A private charter provides greater control over timing, cabin positioning and photography opportunities. Capture the Annapurna amphitheatre in the early-morning light through spacious windows, with approximately 30 to 45 minutes available on the ground at 4,130 metres.",
   },
   {
     title: "Travellers With Mobility Limitations",
     description:
-      "Knee injuries. Joint conditions. Wheelchair users. Post-surgery recovery. The two-week trek is not an option, but the destination still is. The helicopter removes every physical barrier between Kathmandu and the foot of Mount Everest.",
+      "Knee injuries, joint conditions, limited mobility or post-surgery recovery may make the traditional multi-day trek impractical. The helicopter removes most of the physical barriers between Pokhara and Annapurna Base Camp while still allowing passengers to experience the sanctuary.",
   },
 ];
 
@@ -259,8 +225,8 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_ebc.pdf"
-              download="Everest-Base-Camp-Itinerary.pdf"
+              href="/pdfs/itinerary_of_abc.pdf"
+              download="Annapurna-Base-Camp-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
               <Download
@@ -290,37 +256,21 @@ export default function OverviewSection() {
                 <h2 className="font-fraunces text-3xl font-semibold leading-[1.12] tracking-[-0.02em] text-[#0a3158] md:text-4xl">
                   Helicopter Tour to,
                   <br />
-                  <span className="text-[#dfa11e]">Everest Base Camp.</span>
+                  <span className="text-[#dfa11e]">Annapurna Base Camp.</span>
                 </h2>
               </div>
 
               <div className="space-y-4 font-manrope text-sm leading-7 text-[#657180]">
                 <p>
-                  The Everest Base Camp Helicopter Tour is not just an
-                  experience of flying; it is an entire experience of being in
-                  the presence of the highest peak on earth. The helicopter tour
-                  to Everest Base Camp begins early in the morning, where the
-                  helicopter takes off from the Tribhuvan Airport in Kathmandu
-                  and flies towards the north-east, where it tours over the
-                  beautiful scenery, peaks of Khumbu region.
+                 The Annapurna Base Camp Helicopter Tour is considered one of the best day trips in Nepal because it offers you to explore the beauty of the Annapurna Sanctuary (4,130 m) within a day without undergoing the physical burden of a 10-day trek. At Mountain Helicopter Tour, we arrange this tour every day in our CAAN-licensed Airbus H125 helicopters from the lakeside city Pokhara and even from the capital city Kathmandu.
                 </p>
 
                 <p>
-                  In no time of taking off, in around ninety minutes the
-                  helicopter will be viewing the beautiful Khumbu glacier and
-                  its popular viewpoint, scenic Lhotse and the dreamy Mt.
-                  Everest. The helicopter will land at the hotel mountain view.
-                  Here at the hotel mountain view Everest Base Camp Helicopter
-                  Tour with landing is an excellent opportunity for travellers
-                  who cannot go trekking and want to feel the thrill of standing
-                  at the lap of Mt. Everest.
+                  The helicopter flies along the north-facing range of the Himalayan Mountains, close to the famous Mt. Machapuchare (Fishtail, 6,993 m), before making its stop at the glacial Annapurna Base Camp located at 4,130 m. Unlike other tour operators who will just make their landing, take some pictures of you in ten minutes, and return immediately, we will offer a landing period of 30-45 minutes during which you can enjoy hot tea/coffee or breakfast surrounded by 7,000 m and 8,000 m tall mountains.
                 </p>
 
                 <p>
-                  Everest. After that the helicopter will land at an altitude of
-                  5,545 m above sea level at Kala Patthar, and the first picture
-                  every passenger will see is the closest view of Mt. Everest
-                  possible without climbing it.
+                  No fitness or hiking experience is needed to land in the base camp, whether you're traveling with your family members or old people.
                 </p>
               </div>
 
@@ -331,10 +281,7 @@ export default function OverviewSection() {
                 </h3>
 
                 <p className="mt-2 max-w-4xl font-manrope text-xs leading-6 text-[#7b8490]">
-                  These are the trip facts of the helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the trip facts of the helicopter tour to Annapurna Base Camp, which makes the helicopter trip to Annapurna Base Camp more predictable of what we are offering you in your journey.
                 </p>
 
                 <div className="mt-5 overflow-hidden rounded-xl bg-[#062b55] shadow-[0_15px_35px_rgba(6,43,85,0.12)]">
@@ -435,10 +382,11 @@ export default function OverviewSection() {
         </div>
       </section>
 
-      {/* ROUTE ELEVATION SECTION */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
+     {/* ANNAPURNA BASE CAMP ROUTE ELEVATION */}
+      <section className="bg-white px-5 pb-16 md:px-8 lg:pb-20">
+        <div className="mx-auto max-w-7xl">
           <div className="overflow-hidden rounded-[28px] bg-[#061c38] px-5 py-10 md:px-10 md:py-12 lg:px-14">
+            {/* HEADING */}
             <div className="text-center">
               <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#e1a51f]">
                 <span className="h-px w-7 bg-[#e1a51f]" />
@@ -446,37 +394,42 @@ export default function OverviewSection() {
               </p>
 
               <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight text-white md:text-4xl">
-                Kathmandu to Kala Patthar,{" "}
+                Pokhara to Annapurna Base Camp,{" "}
                 <span className="text-[#e4ab25]">plotted.</span>
               </h2>
             </div>
 
+            {/* ELEVATION GRAPH */}
             <div className="mt-10 overflow-x-auto">
-              <div className="min-w-[760px]">
+              <div className="min-w-[820px]">
                 <svg
-                  viewBox="0 0 1100 250"
+                  viewBox="0 0 1100 270"
                   className="h-auto w-full"
                   role="img"
-                  aria-label="Elevation profile from Kathmandu to Kala Patthar and back"
+                  aria-label="Elevation profile from Pokhara to Annapurna Base Camp and back"
                 >
                   <defs>
-                    <linearGradient id="routeArea" x1="0" y1="0" x2="0" y2="1">
-                      <stop
-                        offset="0%"
-                        stopColor="#f2b321"
-                        stopOpacity="0.18"
-                      />
+                    <linearGradient
+                      id="abcRouteArea"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
+                      <stop offset="0%" stopColor="#f2b321" stopOpacity="0.2" />
+
                       <stop offset="100%" stopColor="#f2b321" stopOpacity="0" />
                     </linearGradient>
 
                     <filter
-                      id="pointGlow"
+                      id="abcPointGlow"
                       x="-50%"
                       y="-50%"
                       width="200%"
                       height="200%"
                     >
                       <feGaussianBlur stdDeviation="5" result="blur" />
+
                       <feMerge>
                         <feMergeNode in="blur" />
                         <feMergeNode in="SourceGraphic" />
@@ -505,46 +458,58 @@ export default function OverviewSection() {
                     fontSize="10"
                   >
                     <text x="28" y="39">
-                      6k m
-                    </text>
-                    <text x="28" y="79">
                       5k m
                     </text>
-                    <text x="28" y="119">
+
+                    <text x="28" y="79">
                       4k m
                     </text>
-                    <text x="28" y="159">
+
+                    <text x="28" y="119">
                       3k m
                     </text>
-                    <text x="28" y="199">
+
+                    <text x="28" y="159">
                       2k m
                     </text>
-                    <text x="28" y="239">
+
+                    <text x="28" y="199">
                       1k m
+                    </text>
+
+                    <text x="28" y="239">
+                      0 m
                     </text>
                   </g>
 
-                  {/* AREA */}
+                  {/* SHADED AREA */}
                   <path
-                    d="M65 195
-                       L225 140
-                       L390 38
-                       L610 105
-                       L920 142
-                       L1060 195
-                       L1060 235
-                       L65 235 Z"
-                    fill="url(#routeArea)"
+                    d="
+                M65 203
+                L245 158
+                L405 149
+                L570 87
+                L700 70
+                L860 125
+                L1060 203
+                L1060 235
+                L65 235
+                Z
+              "
+                    fill="url(#abcRouteArea)"
                   />
 
                   {/* ROUTE LINE */}
                   <path
-                    d="M65 195
-                       L225 140
-                       L390 38
-                       L610 105
-                       L920 142
-                       L1060 195"
+                    d="
+                M65 203
+                L245 158
+                L405 149
+                L570 87
+                L700 70
+                L860 125
+                L1060 203
+              "
                     fill="none"
                     stroke="#f2b321"
                     strokeWidth="3"
@@ -552,152 +517,245 @@ export default function OverviewSection() {
                     strokeLinejoin="round"
                   />
 
-                  {/* KATHMANDU */}
+                  {/* POKHARA DEPARTURE */}
                   <circle
                     cx="65"
-                    cy="195"
-                    r="12"
+                    cy="203"
+                    r="13"
                     fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
+                    opacity="0.13"
+                    filter="url(#abcPointGlow)"
                   />
-                  <circle cx="65" cy="195" r="6" fill="#f2b321" />
+
+                  <circle cx="65" cy="203" r="6" fill="#f2b321" />
 
                   <text
-                    x="42"
-                    y="182"
+                    x="40"
+                    y="185"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    KTM 1,400m
-                  </text>
-
-                  {/* LUKLA */}
-                  <circle
-                    cx="225"
-                    cy="140"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="225" cy="140" r="6" fill="#f2b321" />
-
-                  <text
-                    x="207"
-                    y="126"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    LUKLA
+                    POKHARA
                   </text>
 
                   <text
-                    x="214"
-                    y="136"
+                    x="49"
+                    y="195"
                     fill="#7f91a6"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    2,860m
+                    822 m
                   </text>
 
-                  {/* KALA PATTHAR */}
+                  {/* GHANDRUK */}
                   <circle
-                    cx="390"
-                    cy="38"
-                    r="14"
+                    cx="245"
+                    cy="158"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.13"
+                    filter="url(#abcPointGlow)"
+                  />
+
+                  <circle cx="245" cy="158" r="6" fill="#f2b321" />
+
+                  <text
+                    x="219"
+                    y="141"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    GHANDRUK
+                  </text>
+
+                  <text
+                    x="229"
+                    y="151"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    1,940 m
+                  </text>
+
+                  {/* CHHOMRONG */}
+                  <circle
+                    cx="405"
+                    cy="149"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.13"
+                    filter="url(#abcPointGlow)"
+                  />
+
+                  <circle cx="405" cy="149" r="6" fill="#f2b321" />
+
+                  <text
+                    x="375"
+                    y="132"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    CHHOMRONG
+                  </text>
+
+                  <text
+                    x="389"
+                    y="142"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    2,170 m
+                  </text>
+
+                  {/* MACHHAPUCHHRE BASE CAMP */}
+                  <circle
+                    cx="570"
+                    cy="87"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.13"
+                    filter="url(#abcPointGlow)"
+                  />
+
+                  <circle cx="570" cy="87" r="6" fill="#f2b321" />
+
+                  <text
+                    x="532"
+                    y="68"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    MBC
+                  </text>
+
+                  <text
+                    x="553"
+                    y="79"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    3,700 m
+                  </text>
+
+                  {/* ANNAPURNA BASE CAMP */}
+                  <circle
+                    cx="700"
+                    cy="70"
+                    r="16"
                     fill="#e34d55"
-                    opacity="0.14"
-                    filter="url(#pointGlow)"
+                    opacity="0.16"
+                    filter="url(#abcPointGlow)"
                   />
-                  <circle cx="390" cy="38" r="7" fill="#e34d55" />
+
+                  <circle cx="700" cy="70" r="7" fill="#e34d55" />
 
                   <text
-                    x="360"
-                    y="21"
+                    x="653"
+                    y="42"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    KALA PATTHAR
+                    ANNAPURNA BASE CAMP
                   </text>
 
                   <text
-                    x="378"
-                    y="31"
-                    fill="#7f91a6"
+                    x="683"
+                    y="55"
+                    fill="#9aabc0"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    5,545m
+                    4,130 m
                   </text>
 
-                  {/* HOTEL EVEREST VIEW */}
+                  {/* ANNAPURNA SANCTUARY RETURN */}
                   <circle
-                    cx="610"
-                    cy="105"
+                    cx="860"
+                    cy="125"
                     r="12"
                     fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
+                    opacity="0.13"
+                    filter="url(#abcPointGlow)"
                   />
-                  <circle cx="610" cy="105" r="6" fill="#f2b321" />
+
+                  <circle cx="860" cy="125" r="6" fill="#f2b321" />
 
                   <text
-                    x="600"
-                    y="91"
+                    x="817"
+                    y="108"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    HEV
+                    SANCTUARY
                   </text>
 
                   <text
-                    x="594"
-                    y="101"
+                    x="843"
+                    y="118"
                     fill="#7f91a6"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    3,880m
+                    RETURN
                   </text>
 
-                  {/* RETURN */}
+                  {/* POKHARA RETURN */}
                   <circle
                     cx="1060"
-                    cy="195"
-                    r="12"
+                    cy="203"
+                    r="13"
                     fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
+                    opacity="0.13"
+                    filter="url(#abcPointGlow)"
                   />
-                  <circle cx="1060" cy="195" r="6" fill="#f2b321" />
+
+                  <circle cx="1060" cy="203" r="6" fill="#f2b321" />
 
                   <text
-                    x="1038"
-                    y="182"
+                    x="1012"
+                    y="185"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    KTM 1,400m
+                    POKHARA
+                  </text>
+
+                  <text
+                    x="1035"
+                    y="195"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    822 m
                   </text>
                 </svg>
               </div>
             </div>
 
+            {/* DESCRIPTION */}
             <p className="mt-5 font-manrope text-xs leading-6 text-[#7c8da1]">
-              Elevation profile: Kathmandu (1,400 m) to Kala Patthar (5,545 m)
-              and back, plotted against elapsed time.
+              Illustrative elevation profile from Pokhara at 822 metres through
+              Ghandruk, Chhomrong and Machhapuchhre Base Camp to Annapurna Base
+              Camp at 4,130 metres, followed by the return flight to Pokhara.
             </p>
           </div>
         </div>

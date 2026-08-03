@@ -10,13 +10,13 @@ export default function EverestBaseCamp() {
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
       style={{
         backgroundImage:
-          "url('/images/everest-base-camp/everest-base-camp.jpg')",
+          "url('/images/tour-section/gosaikunda.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-[#06182c]/55" />
       <div className="absolute inset-0 bg-black/20" />
 
-      <TourTabsNavbar activeHref="/tours/gosaikunda-lake" />
+      <TourTabsNavbar activeHref="/tour-section/gosaikunda.jpg" />
 
       {/* Hero Section */}
       <section className="relative z-10 min-h-[560px] py-16 sm:py-20 lg:h-[calc(100vh-168px)] lg:py-0">
@@ -30,13 +30,12 @@ export default function EverestBaseCamp() {
             </div>
 
             <h1 className="font-fraunces font-bold leading-[0.95] tracking-[-1.5px] text-[#FFFFFF] text-[42px] sm:text-[68px] md:text-[88px] lg:text-[104px] xl:text-[90.32px] sm:tracking-[-2.83px]">
-              Everest Base Camp <br />
+              Gosaikunda Lake<br />
               Helicopter Tour.
             </h1>
 
             <p className="mt-6 max-w-[540px] font-manrope text-[17px] font-bold leading-[1.45] text-white sm:mt-7 sm:text-[20px] md:text-[20px] tracking-normal">
-              Witness the world’s highest peaks from an unforgettable aerial
-              perspective.
+              Fly above Langtang’s alpine valleys and reach the sacred Gosaikunda Lake, one of Nepal’s most beautiful high-altitude pilgrimage destinations.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">

@@ -36,27 +36,27 @@ export default function CTA() {
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,20,40,0.50)_0%,rgba(8,16,32,0.70)_55%,rgba(6,12,26,0.88)_100%)]" />
 
-      <div className="relative z-[2] max-w-[820px] px-6 pb-24 pt-20 text-center">
+     <div className="relative z-[2] max-w-[820px] px-6 pb-24 pt-20 text-center">
         <div className="mb-8 flex items-center justify-center gap-4">
           <span className="h-px w-9 bg-[#f5a623]/80" />
 
           <span className="font-manrope text-[0.72rem] font-medium uppercase tracking-[0.22em] text-[#f5a623]">
-            Begin Your Journey
+            Begin Your Sacred Lake Journey
           </span>
 
           <span className="h-px w-9 bg-[#f5a623]/80" />
         </div>
 
-        <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,4.2rem)] font-extrabold leading-[1.05] text-white">
-          Ready to Experience
+        <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,5.2rem)] font-extrabold leading-[1.05] text-white">
+          Gosaikunda Lake
           <br />
-          Everest <span className="text-[#f5a623]">From Above?</span>
+          is <span className="text-[#f5a623]">waiting.</span>
         </h2>
 
         <p className="mx-auto mb-10 max-w-[560px] font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">
-          Let our experienced team create your unforgettable Himalayan journey.
+          Fly above Langtang’s valleys, alpine ridges, and Himalayan landscapes
+          to visit the sacred Gosaikunda Lake in comfort and safety.
         </p>
-
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             href="/contact"
