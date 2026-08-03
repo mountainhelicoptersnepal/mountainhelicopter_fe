@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
+
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
 
 export default function Hero() {
   return (
@@ -55,29 +57,20 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="mt-1 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-[18px] lg:gap-[26px]">
-            <Link
+            <PrimaryButton
               href="#experiences"
-              className="group relative flex h-[46px] w-full items-center justify-center overflow-hidden bg-[#F2B632] px-5 text-center [font-family:var(--font-manrope)] text-[12px] font-bold uppercase leading-none tracking-[-0.14px] text-[#003366] sm:w-[216px] sm:text-[14px]"
+              className="w-full px-5 text-center text-[12px] leading-none tracking-[-0.14px] sm:w-[216px] sm:text-[14px]"
+              showArrow={false}
             >
-              {/* Sliding white background */}
-              <span className="absolute inset-0 -translate-x-full bg-white transition-transform duration-500 ease-out group-hover:translate-x-0" />
+              Find Your Experience
+            </PrimaryButton>
 
-              <span className="relative z-10 transition-colors duration-500 group-hover:text-[#F2B632]">
-                Find Your Experience
-              </span>
-            </Link>
-
-            <Link
+            <SecondaryButton
               href="/contact"
-              className="group relative flex h-[46px] w-full items-center justify-center overflow-hidden border-2 border-white bg-transparent px-5 text-center [font-family:var(--font-manrope)] text-[12px] font-bold leading-none tracking-[-0.14px] text-white sm:w-[222.5px] sm:text-[14px]"
+              className="w-full px-5 text-center text-[12px] leading-none tracking-[-0.14px] sm:w-[222.5px] sm:text-[14px]"
             >
-              {/* Sliding white background */}
-              <span className="absolute inset-0 -translate-x-full bg-white transition-transform duration-500 ease-out group-hover:translate-x-0" />
-
-              <span className="relative z-10 transition-colors duration-500 group-hover:text-[#003366]">
-                Talk to a Flight Designer
-              </span>
-            </Link>
+              Talk to a Flight Designer
+            </SecondaryButton>
           </div>
         </div>
       </div>
