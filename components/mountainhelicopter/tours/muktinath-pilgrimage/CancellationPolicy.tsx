@@ -55,11 +55,11 @@ export default function CancellationPolicy() {
             </h3>
 
             <p className="mt-5 font-manrope text-sm leading-7 text-[#4f5965]">
-              If the flight is cancelled due to fog, rain or heavy winds in
-              Kathmandu or at Kala Patthar then you are eligible to choose
-              between a same-day full cash refund, reschedule your tour valid
-              for 1 year for free or use the same credit for any other route,
-              so long as the morning has a clear flight path.
+              On your departure day, we check the weather at 4 AM and share
+              updates over WhatsApp or Viber by 5 AM. If poor visibility, rain,
+              or high wind in Kathmandu, Pokhara, or Muktinath cancels the
+              flight, you may claim a full refund or reschedule for the next
+              clear morning.
             </p>
           </article>
 
@@ -74,13 +74,11 @@ export default function CancellationPolicy() {
             </h3>
 
             <p className="mt-5 font-manrope text-sm leading-7 text-[#4f5965]">
-              With regards to the pilot&apos;s judgment whether it is cloudy
-              and it is good enough to fly down to safe landing in Kala Patthar
-              at 5,545 m or not, the pilot has every discretion to fly down to a
-              viewpoint at a much safer altitude than Kala Patthar and the
-              decision is either landing down to Pheriche or to Syangboche /
-              Hotel Everest View; else fly back to Kathmandu. There will then be
-              a partial refund based on the flying time already covered.
+              The pilot&apos;s safety decision is final. If visibility, wind,
+              clouds, landing conditions, or aircraft performance do not support
+              a safe Muktinath landing, the pilot may alter the flight, return,
+              or choose the safest operational option. Any applicable partial
+              refund is calculated according to flying time and services used.
             </p>
           </article>
 

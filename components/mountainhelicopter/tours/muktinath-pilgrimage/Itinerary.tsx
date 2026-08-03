@@ -1,97 +1,80 @@
 const itineraryItems = [
   {
     number: "01",
-    time: "05:30h",
+    time: "07:00h",
     title: "Hotel Pickup in Kathmandu",
     description:
-      "A private vehicle collects you from your hotel in Kathmandu or Thamel. The 20-minute drive to Tribhuvan International Airport gives you a quiet view of the city before dawn. Bring your passport or identification, warm layers, and approximately USD 51 in cash for permits.",
+      "We pick you up from your hotel and transfer you to Tribhuvan International Airport for the Muktinath helicopter flight.",
   },
   {
     number: "02",
-    time: "06:00h",
-    title:
-      "Arrival at Tribhuvan International Airport (Domestic Terminal)",
+    time: "07:30h",
+    title: "Depart from Kathmandu to Muktinath",
     description:
-      "After pickup, you are taken directly to the domestic terminal helipad area. Our ground team will already have processed your permit documentation from the previous day.",
-    bullets: [
-      "Receive your Sagarmatha National Park entry permit and Khumbu Pasang Lhamu Rural Municipality permit.",
-      "Attend a mandatory pre-flight safety briefing covering oxygen use, emergency procedures, high-altitude precautions, and landing instructions.",
-      "Meet your CAAN-certified mountain pilots.",
-      "Complete final luggage and passenger weight checks.",
-    ],
+      "The helicopter departs Kathmandu and heads toward Mustang. Enjoy aerial views of white Himalayan peaks, lush valleys, and the Annapurna and Dhaulagiri ranges.",
   },
   {
     number: "03",
-    time: "06:30h",
-    title: "Departure From Kathmandu",
+    time: "08:15h",
+    title: "Muktinath Temple Puja and Worship",
     description:
-      "The helicopter departs Kathmandu and heads northeast. Within minutes, the city and temples disappear beneath the aircraft, revealing the Himalayan foothills and the first line of snow-covered peaks. Your pilot provides commentary and points out major landmarks along the route.",
+      "Arrive at Muktinath and perform puja, worship, and the 108-tap ritual bath. Ground time is normally about 30 to 60 minutes depending on the package and operating conditions.",
   },
   {
     number: "04",
-    time: "07:15h",
-    title: "Refuelling Stop at Lukla, Tenzing-Hillary Airport (2,860m)",
+    time: "08:45h",
+    title: "Fly Back to Kathmandu",
     description:
-      "The helicopter makes a short refuelling stop at Lukla Airport, known for its short mountain runway and dramatic location. Passengers may briefly step outside when operational conditions permit and observe one of the world's most famous mountain airstrips.",
+      "After darshan and temple exploration, fly back toward Kathmandu with another chance to see the Mustang valley, Kali Gandaki Gorge, Annapurna, and Dhaulagiri from the air.",
   },
   {
     number: "05",
-    time: "07:30h",
-    title: "Flyover at Namche Bazaar (3,440m)",
+    time: "10:00h",
+    title: "Return to Kathmandu",
     description:
-      "Fly above Namche Bazaar, the main trading centre of the Khumbu region. From the aircraft, you can see the curved settlement, terraced slopes, monasteries, trekking trails, and the valley leading deeper into the Everest region.",
+      "Land back at Kathmandu airport and complete the morning pilgrimage flight.",
   },
   {
     number: "06",
-    time: "07:55h",
-    title: "Flyover at Tengboche Monastery (3,860m)",
+    time: "07:00h",
+    title: "Pokhara Route: Airport Transfer",
     description:
-      "Pass Tengboche Monastery, one of the most important Buddhist sites in the Everest region. The monastery sits on a forested ridge with panoramic views toward Ama Dablam, Everest, Lhotse, and surrounding peaks.",
+      "For the Pokhara departure, start with a hotel-to-airport transfer at 7:00 AM.",
   },
   {
     number: "07",
-    time: "08:05h",
-    title: "Flyover at Pheriche (4,240m)",
+    time: "07:30h",
+    title: "Pokhara to Muktinath Flight",
     description:
-      "The helicopter continues over Pheriche, a high-altitude village and acclimatization stop for trekkers. The settlement is also known for its seasonal medical clinic and its position beneath the surrounding Himalayan walls.",
+      "Take off from Pokhara and enjoy the Annapurna range, Mustang valley, and high Himalayan terrain from above.",
   },
   {
     number: "08",
-    time: "08:30h",
-    title: "Flyover at Everest Base Camp (5,364m)",
+    time: "08:15h",
+    title: "Darshan, Puja and Havan at Muktinath",
     description:
-      "The aircraft flies above Everest Base Camp, the Khumbu Glacier, expedition tents, and the surrounding icefall. Landing directly at Everest Base Camp is not permitted for scheduled tourist helicopter operations, so the flight continues toward Kala Patthar for the landing experience.",
+      "Arrive at Muktinath Temple for darshan, puja, havan, and time around the sacred temple complex.",
   },
   {
     number: "09",
-    time: "10:00h",
-    title: "Landing at Kala Patthar (5,545m / 18,192 ft)",
+    time: "08:45h",
+    title: "Fly Back to Pokhara",
     description:
-      "Land at Kala Patthar, one of the most extraordinary viewpoints in the Himalayas. The landing normally lasts around 10 to 15 minutes, depending on weather, aircraft performance, and passenger condition.",
-    bullets: [
-      "Mount Everest and the Southwest Face.",
-      "Lhotse and the South Col.",
-      "Nuptse and the surrounding ridgelines.",
-      "Pumori rising directly behind Kala Patthar.",
-      "The Khumbu Glacier and Khumbu Icefall.",
-      "Everest Base Camp beneath the aircraft.",
-    ],
-    note:
-      "At 5,545 metres, oxygen levels are significantly lower than at sea level. Passengers should move slowly, avoid unnecessary exertion, and follow the pilot's instructions throughout the landing.",
+      "Depart Muktinath and return to Pokhara while enjoying the aerial scenery again.",
   },
   {
     number: "10",
-    time: "10:15h",
-    title: "Return Flight to Kathmandu",
+    time: "09:30h",
+    title: "Arrive in Pokhara",
     description:
-      "The return flight follows the Khumbu Valley past Tengboche, Namche Bazaar, and the Dudh Koshi gorge. Depending on fuel and operating conditions, the aircraft may make another short stop at Lukla before continuing to Kathmandu.",
+      "Land in Pokhara. The PDF notes optional Pokhara sightseeing around Phewa Lake and the valley view after arrival.",
   },
   {
     number: "11",
-    time: "10:15h",
-    title: "Drop-Off at Kathmandu Hotel",
+    time: "10:00h",
+    title: "Pokhara Tour Completion",
     description:
-      "After landing at Tribhuvan International Airport, our vehicle transfers you back to your hotel in Kathmandu. You return before midday with the rest of the afternoon free.",
+      "Complete the Pokhara-based Muktinath helicopter tour.",
   },
 ];
 
@@ -106,7 +89,7 @@ export default function Itinerary() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('/images/everest-base-camp/itinerary-bg.jpg')",
+            "url('/images/muktinath-pilgrimage/mustang.jpg')",
         }}
       />
 
@@ -168,21 +151,6 @@ export default function Itinerary() {
                     {item.description}
                   </p>
 
-                  {item.bullets && (
-                    <ul className="mt-3 space-y-1.5 pl-5 font-manrope text-sm leading-6 text-white/75">
-                      {item.bullets.map((bullet) => (
-                        <li key={bullet} className="list-disc">
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {item.note && (
-                    <p className="mt-4 border-l-2 border-[#e0a321] pl-4 font-manrope text-sm leading-7 text-white/70">
-                      {item.note}
-                    </p>
-                  )}
                 </div>
               </article>
             ))}

@@ -1,64 +1,37 @@
-import { CheckCircle2, XCircle } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const clothingLayers = [
   {
-    layer: "Base Layer",
-    item: "Thermal top and bottom (merino or synthetic)",
-    reason: "Moisture-wicking against the skin keeps you warm and dry",
+    layer: "Clothing",
+    item: "Warm down jacket, thermal inner layer, gloves, warm hat",
+    reason: "Muktinath is cold at 3,710 m, especially in the morning",
   },
   {
-    layer: "Mid Layer",
-    item: "Fleece jacket or down vest",
-    reason: "Insulation — removable when back in Kathmandu",
+    layer: "Eyewear",
+    item: "UV-protected sunglasses",
+    reason: "High-altitude light and glare are stronger in the mountains",
   },
   {
-    layer: "Outer Layer",
-    item: "Windproof and waterproof jacket",
-    reason: "Wind chill at 5,545 m is significant even in low wind",
+    layer: "Documents",
+    item: "Passport, visa copy, printed booking confirmation",
+    reason: "Required for airport and booking verification",
   },
   {
-    layer: "Hands",
-    item: "Insulated gloves or mittens",
-    reason: "Fingers go numb fast at altitude",
+    layer: "Health",
+    item: "Personal medication and motion sickness tablets",
+    reason: "Bring your own prescribed or personal-use medicines",
   },
   {
-    layer: "Head",
-    item: "Warm hat covering ears",
-    reason: "Significant heat loss through the head at altitude",
-  },
-  {
-    layer: "Eyes",
-    item: "UV-protective sunglasses",
-    reason: "Glacier glare and high-altitude UV intensity",
-  },
-  {
-    layer: "Feet",
-    item: "Warm boots (trekking or winter boots)",
-    reason: "Cold ground and wind at the landing zone",
-  },
-  {
-    layer: "Skin",
-    item: "Sunscreen SPF 50+ and lip balm",
-    reason: "UV radiation is much stronger at 5,545 m",
+    layer: "Electronics",
+    item: "Camera or smartphone, spare battery or power bank",
+    reason: "Cold conditions can drain batteries faster than usual",
   },
 ];
 
 const bringItems = [
-  "Passport (mandatory — required for permit verification at the airport)",
-  "Booking confirmation (digital or printed)",
-  "Travel insurance documents",
-  "Cash in USD or NPR for optional expenses (breakfast, gratuity)",
-  "Camera or smartphone with a full charge",
-  "Spare camera batteries (cold drains batteries rapidly)",
-  "Personal medication if required",
-];
-
-const leaveBehindItems = [
-  "Large suitcases or duffel bags — maximum 5 kg per passenger",
-  "Trekking poles (not needed — no walking involved)",
-  "Sleeping bags, camping gear",
-  "Valuables not needed for the flight",
-  "Drones — not permitted in Sagarmatha National Park without special permit",
+  "Change of clothes if you plan to take the 108 taps ritual bath",
+  "Small NPR notes for tea, breakfast, porter help, or temple purchases",
+  "Puja materials if you prefer to bring your own",
 ];
 
 export default function WhatToPack() {
@@ -73,14 +46,14 @@ export default function WhatToPack() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            Dress for{" "}
-            <span className="text-[#e2aa22]">5,545 metres.</span>
+            Pack for{" "}
+            <span className="text-[#e2aa22]">3,710 metres.</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-5xl font-manrope text-sm leading-7 text-slate-500">
-            At Kala Patthar the temperature can drop to -10°C even in spring.
-            Dress in layers — you will be comfortable in Kathmandu (20–25°C)
-            but cold at the summit vantage point.
+            Muktinath is lower than several other helicopter landing points in
+            Nepal, but it is still cold, windy, and high-altitude. Keep your
+            packing minimal and practical.
           </p>
         </div>
 
@@ -132,7 +105,7 @@ export default function WhatToPack() {
 
         {/* BRING / LEAVE BEHIND */}
         <div className="mx-auto mt-6 grid max-w-5xl gap-5 lg:grid-cols-2">
-          <article className="rounded-[18px] border border-slate-200 bg-white px-6 py-7 md:px-7">
+          <article className="rounded-[18px] border border-slate-200 bg-white px-6 py-7 md:px-7 lg:col-span-2">
             <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.18em] text-[#dc9d16]">
               What to Bring
             </h3>
@@ -154,27 +127,6 @@ export default function WhatToPack() {
             </div>
           </article>
 
-          <article className="rounded-[18px] border border-slate-200 bg-white px-6 py-7 md:px-7">
-            <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
-              What to Leave Behind
-            </h3>
-
-            <div className="mt-5 space-y-3">
-              {leaveBehindItems.map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <XCircle
-                    size={15}
-                    strokeWidth={1.7}
-                    className="mt-0.5 shrink-0 text-slate-400"
-                  />
-
-                  <p className="font-manrope text-sm leading-6 text-slate-500">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </article>
         </div>
       </div>
     </section>

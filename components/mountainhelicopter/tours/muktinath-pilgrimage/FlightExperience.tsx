@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function FlightExperience() {
   return (
     <section className="bg-white">
@@ -12,7 +10,7 @@ export default function FlightExperience() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            What The Everest Helicopter Tour{" "}
+            What The Muktinath Helicopter Tour{" "}
             <span className="text-[#e0a326]">Feels Like.</span>
           </h2>
         </div>
@@ -20,54 +18,34 @@ export default function FlightExperience() {
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-6xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
-            The moment the Khumbu Valley opens, just forty-five minutes after
-            departing Kathmandu, the helicopter leaves the city sprawl behind
-            and enters the dramatic Dudh Koshi river gorge. Flying past the
-            famous Lukla airstrip, the horseshoe-shaped Namche Bazaar, and the
-            sacred Tengboche Monastery, the Airbus H125 follows the ancient
-            trekking route into the heart of the Everest region, a path
-            trekkers usually take over a week to complete. Then the landscape
-            dramatically shifts.
+            During this tour, you can see spectacular Annapurna and Dhaulagiri
+            views and capture photographs that are impossible to take from the
+            ground on the trekking route. The total duration is about 3 to 4
+            hours from Kathmandu and about 2 hours from Pokhara, including the
+            temple visit.
           </p>
 
           <p>
-            Mount Everest, Lhotse, Nuptse, and Ama Dablam surround the aircraft
-            in a breathtaking 360-degree amphitheatre of rock, snow, and ice.
-            Rather than viewing the Himalayas from a distance, passengers fly
-            directly over the massive Khumbu Glacier, the treacherous Khumbu
-            Icefall, and the colourful expedition tents of Everest Base Camp.
+            The helicopter crosses lush hills, blooming rhododendron areas in
+            season, Kali Gandaki Gorge, Jomsom, Kagbeni, Jharkot, Marpha, and
+            the dry Mustang valley before reaching the sacred temple below
+            Thorong La Pass.
           </p>
 
           <p>
-            The helicopter lands at Kala Patthar at an altitude of 5,545
-            metres. As the rotors slow, the crisp mountain air, the sheer scale
-            of the world&apos;s highest peaks, and the panoramic views create
-            an unforgettable atmosphere. Passengers have around 10 to 15
-            minutes to step out, take photographs, absorb the surreal altitude,
-            and experience the ultimate vantage point of Mount Everest.
+            At Muktinath, pilgrims have time for darshan, puja, worship, the
+            108 taps ritual bath, and exploration around the temple complex.
+            The journey is suitable for families, groups of friends, solo
+            travellers, and elderly pilgrims who want the blessing of Muktinath
+            without the bodily fatigue of a multi-day trek.
           </p>
 
           <p>
-            The return flight offers a relaxing breakfast at the world&apos;s
-            highest hotel, Hotel Everest View, with unobstructed views of Ama
-            Dablam before gliding back over the Khumbu Valley to Kathmandu.
-            Within a single morning, passengers can stand in the lap of the
-            world&apos;s highest mountain and return to their hotel before
-            mid-morning.
+            Sharing tours are sometimes possible if another solo traveller,
+            couple, family, or group is interested on the same date. Most
+            Muktinath flights, however, operate as private charters because
+            pilgrimage groups usually prefer to travel together.
           </p>
-        </div>
-
-        {/* ROUTE MAP */}
-        <div className="mx-auto mt-10 max-w-3xl overflow-hidden">
-          <div className="relative aspect-[4/3] w-full">
-            <Image
-              src="/images/everest-base-camp/everest-helicopter-route-map.png"
-              alt="Everest Base Camp helicopter tour route map from Kathmandu"
-              fill
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover object-top"
-            />
-          </div>
         </div>
       </div>
     </section>

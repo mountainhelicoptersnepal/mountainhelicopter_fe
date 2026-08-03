@@ -1,35 +1,40 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 
 const includes = [
-  "Helicopter flight (Kathmandu to Everest and Everest to Kathmandu)",
-  "Certified pilot and crew",
-  "Hotel pick-up and airport transfers",
-  "Fuel, landing, and helipad fees",
-  "Emergency oxygen system onboard",
-  "Breakfast at Hotel Everest View (landing package)",
+  "Round-trip Airbus H125 helicopter from Pokhara or Kathmandu to Muktinath",
+  "Hotel pickup and drop facility within the city",
+  "Annapurna Conservation Area Permit (ACAP)",
+  "Pokhara or Kathmandu domestic airport departure tax",
+  "Nepal Government VAT (13%)",
+  "Passenger insurance",
+  "Emergency oxygen cylinder and first-aid kit on the helicopter",
+  "60 minutes ground time at Muktinath Temple for exploration and worship",
+  "CAAN-licensed mountain specialist pilots",
+  "Pre-flight briefing",
 ];
 
 const excludes = [
-  "Nepal entry visa and international air fare",
-  "Travel insurance covering high-altitude flights",
-  "Personal meals and beverages",
-  "Pilot and staff gratuities",
-  "Additional filming or landing permits",
-  "Weather-related delays or reschedules",
+  "Personal travel or medical evacuation insurance, recommended for high-altitude travel",
+  "Meals and drinks at Muktinath",
+  "Puja materials, available at the temple",
+  "Change of clothes after the 108 taps ritual bath",
+  "Porter for elderly or mobility-limited passengers, locally arranged for about USD 5-10",
+  "Shaligrams or other religious items purchased at the temple",
+  "Tips for pilots or ground staff",
 ];
 
 const permits = [
   {
-    name: "Sagarmatha National Park Entry Permit",
-    authority: "Department of National Parks and Wildlife Conservation, Nepal",
-    usd: "USD 22",
-    npr: "NPR 3,000",
+    name: "Annapurna Conservation Area Permit (ACAP)",
+    authority: "Annapurna Conservation Area",
+    usd: "Included",
+    npr: "Included",
   },
   {
-    name: "Khumbu Pasang Lhamu Rural Municipality Permit",
-    authority: "Khumbu Pasang Lhamu Rural Municipality",
-    usd: "USD 15",
-    npr: "NPR 2,000",
+    name: "Annapurna Region / Mustang Entry Conditions",
+    authority: "Applicable Annapurna and Mustang district entry requirements",
+    usd: "Included",
+    npr: "Included",
   },
 ];
 
@@ -41,7 +46,7 @@ export default function InclusionsExclusions() {
         <div className="text-center">
           <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#d99a1b]">
             <span className="h-px w-7 bg-[#d99a1b]" />
-            What Your Seat Covers
+            What Your Charter Covers
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
@@ -103,13 +108,13 @@ export default function InclusionsExclusions() {
         <div className="mt-10 overflow-hidden rounded-[24px] bg-[#061b35] px-5 py-8 md:px-8 md:py-10 lg:px-10">
           <div className="text-center">
             <p className="font-manrope text-xs font-bold uppercase tracking-[0.2em] text-[#e0a326]">
-              Permits Included in Your Seat
+              Permits Included in Your Package
             </p>
           </div>
 
           <div className="mt-10">
             <p className="font-manrope text-xs font-bold uppercase tracking-[0.18em] text-[#e0a326]">
-              Permits Included in Your Seat
+              Permits Included in Your Package
             </p>
 
             <div className="mt-5">
@@ -146,19 +151,20 @@ export default function InclusionsExclusions() {
                 </p>
 
                 <p className="font-manrope text-sm font-bold text-[#e0a326]">
-                  USD 37
+                  Included
                 </p>
               </div>
             </div>
 
             <p className="font-manrope text-sm leading-6 text-white/50">
-              Important: You don&apos;t need a TIMS card.
+              Your Annapurna and Mustang tour cost covers the listed entrance
+              fees, so you do not need to pay them separately.
             </p>
 
             <p className="mt-10 text-center font-manrope text-xs leading-6 text-white/35">
-              Other Nepal helicopter operators may ask passengers to pay these
-              permit fees in cash on the day. Mountain Helicopters Nepal handles
-              them upfront as part of the booking process.
+              Permit requirements may be updated by local authorities, but the
+              package is designed to include mandatory ACAP and listed regional
+              entry fees.
             </p>
           </div>
         </div>

@@ -1,25 +1,24 @@
 import { CircleX } from "lucide-react";
 
 const landingExpectations = [
-  "Slightly increased heart rate as your body works harder to circulate oxygen.",
-  "A mild feeling of breathlessness when moving quickly.",
-  "A possible slight headache if you are sensitive to altitude.",
-  "Feeling colder than usual despite similar outdoor temperatures.",
+  "Mild breathlessness or light-headedness can happen briefly.",
+  "Cold temperature and wind chill are normal around the temple area.",
+  "No acclimatization is usually needed for the short landing duration.",
+  "Emergency oxygen is available on every flight.",
 ];
 
 const safetyActions = [
-  "Move slowly and deliberately. Do not run.",
-  "Breathe steadily and deeply.",
-  "Stay hydrated and drink water before the flight.",
-  "Inform the pilot immediately if you feel unwell.",
-  "Use the supplemental oxygen onboard if needed.",
+  "Move slowly during the temple visit and follow pilot instructions.",
+  "Keep the landing time within the planned limit, normally up to 60 minutes.",
+  "Tell the pilot or ground team immediately if you feel unwell.",
+  "Use onboard oxygen if required.",
 ];
 
 const contraindications = [
-  "A history of serious heart conditions or unstable high blood pressure.",
-  "Chronic respiratory conditions such as COPD or severe asthma.",
-  "Pregnancy, especially after the first trimester, because rapid high-altitude landings may not be suitable.",
-  "Major surgery within the last six weeks.",
+  "Unstable cardiac conditions, recent heart surgery, or serious heart history.",
+  "Severe high blood pressure or pulmonary conditions such as COPD or severe asthma.",
+  "Pregnancy beyond the first trimester.",
+  "Stroke or major surgery in the past 3 months.",
 ];
 
 export default function HealthSafetyGuidelines() {
@@ -46,12 +45,11 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-6 font-manrope text-sm leading-7 text-white/65 md:text-base md:leading-8">
-            At Kala Patthar, 5,545 metres above sea level, atmospheric pressure
-            is approximately 53% of sea-level pressure. This means each breath
-            delivers substantially less oxygen than at lower elevations. Most
-            healthy passengers tolerate a short landing of around 10 to 15
-            minutes without serious difficulty, but the body may still react to
-            the rapid increase in altitude.
+            Muktinath sits at 3,710 metres, where oxygen is roughly equivalent
+            to 65% of sea-level altitude. This is lower than Tilicho Lake,
+            Annapurna Base Camp, or Everest Base Camp, making Muktinath more
+            accessible to many first-time altitude travellers and older
+            pilgrims.
           </p>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">

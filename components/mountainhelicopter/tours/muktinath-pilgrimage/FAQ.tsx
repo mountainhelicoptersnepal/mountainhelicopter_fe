@@ -5,35 +5,34 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How fast do you actually respond?",
+    question: "Is the Muktinath helicopter tour available on a sharing basis?",
     answer:
-      "WhatsApp messages are typically answered within 5 minutes during operating hours. Email and form inquiries within 2 hours. Emergency rescue calls are answered immediately, any hour of the day or night.",
+      "Unlike ABC or EBC tours, the Muktinath tour usually operates as a private charter because most visitors travel as a family or private pilgrimage group. Sharing may be possible if multiple guests book the same date, but shared availability is not guaranteed.",
   },
   {
-    question: "What information should I include in my inquiry?",
+    question: "How long do we spend at Muktinath Temple?",
     answer:
-      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission — filming, cargo, expedition support — so we can allocate the right configuration.",
+      "The standard ground time is about 60 minutes, enough for the 108-taps bath, darshan at the main Vishnu temple, Jwala Mai temple darshan, and monastery visit.",
   },
   {
-    question: "Can I visit the office without an appointment?",
+    question: "Can the 60-minute ground time be extended?",
     answer:
-      "Yes — walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
+      "Yes, on a private charter. Depending on schedule and weather, extended ground time of 2 to 3 hours may be possible for longer puja, meditation, or repeated 108-taps rituals. Please mention this while booking.",
   },
   {
-    question:
-      "I'm calling about an emergency rescue. What do you need from me?",
+    question: "Is there a Jomsom fuel stop on the Kathmandu route?",
     answer:
-      "Three things: the patient's location, their condition, and the number of people needing evacuation. If the patient has travel insurance with heli-rescue cover, have the policy number ready.",
+      "Yes. Kathmandu-Muktinath flights often stop briefly at Jomsom Airport for refueling. This is standard operating procedure and adds approximately 15 to 20 minutes to the one-way journey.",
   },
   {
-    question: "Which languages does your team speak?",
+    question: "Can we get breakfast at Muktinath?",
     answer:
-      "English, Nepali, and Hindi — spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
+      "Yes. Ranipauwa village near Muktinath Temple has teahouses and small restaurants serving basic Nepali food, Indian dal-bhat, noodles, egg dishes, tea, and coffee. Bring Nepali rupee notes because card payment is not reliable.",
   },
   {
-    question: "How do payments work?",
+    question: "What happens if weather cancels the flight?",
     answer:
-      "A 30% deposit confirms your booking; the balance is due on flight day. We accept bank transfer, credit card, cash, eSewa, and Khalti. If we cancel for weather, you choose full refund or free reschedule.",
+      "We review the weather at 4 AM and notify guests by WhatsApp or Viber around 5 AM. If bad weather cancels the flight, you can reschedule for the next clear morning free of charge or claim a full refund if rescheduling is not possible during your Nepal trip.",
   },
 ];
 

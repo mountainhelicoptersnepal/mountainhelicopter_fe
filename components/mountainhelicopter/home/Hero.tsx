@@ -249,10 +249,10 @@ export default function Hero() {
         >
           <div className="w-full max-w-full origin-center pt-16 sm:pt-20 min-[1400px]:scale-[0.86]">
             <h1 className="mx-auto max-w-full font-fraunces text-[clamp(38px,10vw,58px)] font-bold leading-[1.064] tracking-[-1.5px] sm:text-[64px] sm:tracking-[-2px] lg:whitespace-nowrap lg:text-[86px] lg:tracking-[-2.6px]">
-              <span className="block lg:inline">Above Everest, </span>
+              <span className="block lg:inline">“One Sky, </span>
 
               <span className="block text-[#F5B82E] lg:inline">
-                Beyond Ordinary
+                Every Journey”
               </span>
             </h1>
 

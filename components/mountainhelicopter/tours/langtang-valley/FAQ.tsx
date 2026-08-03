@@ -5,35 +5,54 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How fast do you actually respond?",
+    question: "Is the Langtang helicopter tour safe for children and elderly passengers?",
     answer:
-      "WhatsApp messages are typically answered within 5 minutes during operating hours. Email and form inquiries within 2 hours. Emergency rescue calls are answered immediately, any hour of the day or night.",
+      "Yes. Langtang helicopter tours can be suitable for children and elderly passengers because trekking is not involved and no physical fitness is required. Guests with serious heart, lung, or respiratory conditions should seek medical advice before booking.",
   },
   {
-    question: "What information should I include in my inquiry?",
+    question: "Where does the helicopter land during the Langtang tour?",
     answer:
-      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission — filming, cargo, expedition support — so we can allocate the right configuration.",
+      "The helicopter commonly lands at Kyanjin Gompa, also called Kyanjin Village, at 3,870 m / 12,696 ft. This is the tour highlight with views of Langtang Lirung, Langtang Glacier, Dorje Lakpa, Yala Peak, and surrounding peaks.",
   },
   {
-    question: "Can I visit the office without an appointment?",
+    question: "How long is the Langtang helicopter tour from Kathmandu?",
     answer:
-      "Yes — walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
+      "Kathmandu to Kyanjin Gompa usually takes about 25-35 minutes one way. Including hotel pickup, airport check-in, flight time, ground time, and drop-off, the full tour normally takes approximately 2-4 hours.",
   },
   {
-    question:
-      "I'm calling about an emergency rescue. What do you need from me?",
+    question: "Why do you ask for passenger weight before the flight?",
     answer:
-      "Three things: the patient's location, their condition, and the number of people needing evacuation. If the patient has travel insurance with heli-rescue cover, have the policy number ready.",
+      "Passenger weight is required for helicopter safety and aircraft balance. The pilot uses it to calculate payload, fuel capacity, altitude performance, and landing safety.",
   },
   {
-    question: "Which languages does your team speak?",
+    question: "What happens if the weather is bad on the flight day?",
     answer:
-      "English, Nepali, and Hindi — spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
+      "If weather or visibility cancels the flight, we offer a free reschedule for the next available clear morning or a refund according to booking terms. Langtang flights do not operate if the pilot determines conditions are unsafe.",
   },
   {
-    question: "How do payments work?",
+    question: "What should I wear for the Langtang helicopter tour?",
     answer:
-      "A 30% deposit confirms your booking; the balance is due on flight day. We accept bank transfer, credit card, cash, eSewa, and Khalti. If we cancel for weather, you choose full refund or free reschedule.",
+      "Wear warm and windproof clothing. We recommend a down jacket, thermal layer, gloves, warm hat, sunglasses, and comfortable shoes because Kyanjin Gompa is much colder than Kathmandu.",
+  },
+  {
+    question: "Is altitude sickness a problem on the Langtang helicopter tour?",
+    answer:
+      "Serious altitude sickness is unlikely because ground time at Kyanjin Gompa is short. Some passengers may feel slight shortness of breath, headache, or a faster pulse at 3,870 m. Avoid running and tell the pilot if you feel unwell.",
+  },
+  {
+    question: "Can I book the Langtang helicopter tour for 2 or 3 people?",
+    answer:
+      "Yes. For shared group joining, we try to combine you with other passengers. If you need privacy or want to fly without waiting for others, you can book a private helicopter charter.",
+  },
+  {
+    question: "Is the Kyanjin cheese factory included in the tour?",
+    answer:
+      "You can visit the Kyanjin cheese factory during ground time if it is open and weather permits. It is one of the distinctive local cultural attractions at Kyanjin Gompa.",
+  },
+  {
+    question: "Do I need a TIMS card for the Langtang helicopter tour?",
+    answer:
+      "No. A TIMS card is not required for a helicopter-only Langtang trip because you are not trekking on the trail. You only need the Langtang National Park Entry Permit, which is included.",
   },
 ];
 
@@ -53,97 +72,47 @@ export default function FAQ() {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
-    <section
-      id="faq"
-      className="scroll-mt-36 flex items-start justify-center bg-[#f9f8f6] text-[#0d1f3c]"
-    >
-      <div
-        ref={faqRef}
-        className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-16 md:gap-12 md:px-12 md:py-24 lg:flex-row lg:justify-between lg:gap-24 lg:px-16 lg:py-28"
-      >
+    <section id="faq" className="scroll-mt-36 flex items-start justify-center bg-[#f9f8f6] text-[#0d1f3c]">
+      <div ref={faqRef} className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 py-16 md:gap-12 md:px-12 md:py-24 lg:flex-row lg:justify-between lg:gap-24 lg:px-16 lg:py-28">
         <div className="flex w-full max-w-[650px] flex-col justify-center lg:max-w-[360px]">
-          <p className="mb-5 text-[16px] font-semibold uppercase tracking-[0.28em] text-[#F2B632] font-manrope">
+          <p className="mb-5 font-manrope text-[16px] font-semibold uppercase tracking-[0.28em] text-[#F2B632]">
             Questions
           </p>
-
           <h2 className="font-fraunces text-[34px] font-bold leading-[1] tracking-[-0.92px] text-[#0A1929] sm:text-[36.95px] sm:leading-[33.99px]">
             Everything you
             <br />
             need to know.
           </h2>
-
-          <p className="mt-6 max-w-[650px] text-sm font-medium leading-7 text-gray-500 font-manrope tracking-normal">
+          <p className="mt-6 max-w-[650px] font-manrope text-sm font-medium leading-7 tracking-normal text-gray-500">
             Still have questions? Our team is available 7 days a week.
           </p>
-
-          <Link
-            href="/contact#inquiry-form"
-            className="mt-[26px] inline-flex w-fit items-center gap-2.5 bg-[#0d1f3c] text-white text-[16px] font-bold uppercase px-8 py-3 border-2 border-[#0d1f3c] transition-all duration-300 group hover:bg-[#fbfbfb] hover:border-[#F2B632] hover:text-[#F2B632] font-manrope tracking-[-0.01em]"
-          >
+          <Link href="/contact#inquiry-form" className="mt-[26px] inline-flex w-fit items-center gap-2.5 border-2 border-[#0d1f3c] bg-[#0d1f3c] px-8 py-3 font-manrope text-[16px] font-bold uppercase tracking-[-0.01em] text-white transition-all duration-300 hover:border-[#F2B632] hover:bg-[#fbfbfb] hover:text-[#F2B632]">
             ASK US DIRECTLY
-            <span className="transition-transform duration-300 group-hover:translate-x-1">
-              →
-            </span>
+            <span>→</span>
           </Link>
         </div>
 
         <div className="w-full min-w-0 border-t border-[#d1cfc9] font-manrope lg:max-w-[760px] lg:pr-2">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-[#d1cfc9]">
+            <div key={faq.question} className="border-b border-[#d1cfc9]">
               <button
                 onClick={() => toggle(index)}
                 aria-expanded={openIndex === index}
                 className="group flex w-full cursor-pointer items-start justify-between gap-4 py-5 text-left sm:items-center sm:gap-6 sm:py-6"
               >
-                <span className="min-w-0 text-[15px] font-semibold leading-snug text-[#0d1f3c] transition group-hover:text-[#C49A3C] font-manrope tracking-normal sm:text-[16px]">
+                <span className="min-w-0 font-manrope text-[15px] font-semibold leading-snug tracking-normal text-[#0d1f3c] transition group-hover:text-[#C49A3C] sm:text-[16px]">
                   {faq.question}
                 </span>
-
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center text-[#0A1929]">
-                  {openIndex === index ? (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    >
-                      <path d="M6 6L18 18" />
-                      <path d="M18 6L6 18" />
-                    </svg>
-                  ) : (
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    >
-                      <path d="M12 5V19" />
-                      <path d="M5 12H19" />
-                    </svg>
-                  )}
+                  {openIndex === index ? "×" : "+"}
                 </span>
               </button>
 
-              <div
-                className={`grid transition-all duration-500 ease-in-out ${
-                  openIndex === index
-                    ? "grid-rows-[1fr] opacity-100"
-                    : "grid-rows-[0fr] opacity-0"
-                }`}
-              >
+              <div className={`grid transition-all duration-500 ease-in-out ${openIndex === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
                 <div className="overflow-hidden">
                   <p className="max-w-2xl pb-6 pr-1 text-sm leading-7 text-gray-500 sm:pb-7 sm:pr-6">
                     {faq.answer}

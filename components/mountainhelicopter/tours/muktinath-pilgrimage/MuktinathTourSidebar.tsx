@@ -19,7 +19,7 @@ import {
 const phoneNumber = "9779712082949";
 
 const message =
-  "Hi, I would like to know more about the Everest Base Camp Helicopter Tour.";
+  "Hi, I would like to know more about the Muktinath Helicopter Tour.";
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message,
@@ -33,7 +33,7 @@ const bookingFacts: Array<{
   {
     icon: Clock3,
     label: "Duration",
-    value: "5 Hours",
+    value: "About 4 Hours",
   },
   {
     icon: Users,
@@ -43,7 +43,7 @@ const bookingFacts: Array<{
   {
     icon: Mountain,
     label: "Max Altitude",
-    value: "5,545 m",
+    value: "3,710 m",
   },
   {
     icon: CalendarDays,
@@ -53,22 +53,22 @@ const bookingFacts: Array<{
 ];
 
 const whyBookItems = [
-  "Best Price Guarantee",
-  "No Hidden Charges",
-  "Flexible Booking Options",
+  "Direct Fleet Operator",
+  "ACAP Permit Included",
+  "Weather Reschedule Guarantee",
   "CAAN Certified Operations",
   "Professional High-Altitude Pilots",
 ];
 
 const groupPricing = [
-  ["1 Passenger", "USD 1,400–1,600"],
-  ["2 Passengers", "USD 1,280–1,500"],
-  ["3 Passengers", "USD 1,200–1,350"],
-  ["4 Passengers", "USD 1,000–1,200"],
-  ["5 Passengers", "USD 1,000–1,200"],
+  ["1 Passenger", "USD 4,800"],
+  ["2 Passengers", "USD 2,400 pp"],
+  ["3 Passengers", "USD 1,600 pp"],
+  ["4 Passengers", "USD 1,200 pp"],
+  ["5 Passengers", "USD 960 pp"],
 ];
 
-export default function EverestTourSidebar() {
+export default function MuktinathTourSidebar() {
   return (
     <aside className="space-y-5 lg:sticky lg:top-[155px] lg:self-start">
       {/* BOOKING CARD */}
@@ -77,7 +77,7 @@ export default function EverestTourSidebar() {
 
         <div className="p-5">
           <h3 className="font-fraunces text-xl font-semibold leading-tight text-[#0a3158]">
-            Everest Base Camp
+            Muktinath
             <br />
             Helicopter Tour
           </h3>
@@ -107,7 +107,7 @@ export default function EverestTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  $1,400
+                  $960
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">
@@ -116,9 +116,9 @@ export default function EverestTourSidebar() {
               </div>
 
               <p className="mt-2 font-manrope text-[10px] text-slate-400">
-                Shared & Private Charter
+                Kathmandu full group
                 <br />
-                Available
+                per-person estimate
               </p>
             </div>
 
@@ -201,8 +201,8 @@ export default function EverestTourSidebar() {
             </div>
 
             <p className="mt-3 font-manrope text-[9px] leading-4 text-slate-400">
-              Prices change based on group size, operating conditions and
-              available aircraft.
+              Kathmandu private charter is USD 4,800 per helicopter. Pokhara
+              private charter is USD 2,900 per helicopter.
             </p>
           </div>
 
@@ -259,7 +259,7 @@ export default function EverestTourSidebar() {
           <div className="mt-4 flex items-center gap-3">
             <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
               <Image
-                src="/images/everest-base-camp/everest-gallary3.jpg"
+                src="/images/muktinath-pilgrimage/muktinath-gallary3.png"
                 alt="Mountain Helicopters Nepal tour expert"
                 fill
                 sizes="56px"
@@ -301,13 +301,13 @@ export default function EverestTourSidebar() {
             <div className="flex justify-between gap-4">
               <span className="text-slate-400">Specialty</span>
               <span className="text-right font-semibold text-[#0a3158]">
-                Everest & Khumbu Region
+                Muktinath & Mustang Region
               </span>
             </div>
           </div>
 
           <p className="mt-4 font-manrope text-[10px] leading-5 text-slate-500">
-            Need help choosing the perfect helicopter experience? Our Himalayan
+            Need help planning your Muktinath pilgrimage flight? Our Himalayan
             travel specialists are here to guide you.
           </p>
 

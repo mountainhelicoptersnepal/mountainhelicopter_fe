@@ -3,39 +3,39 @@ import Image from "next/image";
 const seasons = [
   {
     name: "Spring",
-    months: "March–May",
-    completion: "92%",
+    months: "February-May",
+    completion: "Most stable",
     visibility: "Excellent",
-    status: "Highly Recommended",
+    status: "Most Recommended",
     statusClass: "bg-[#2f8f57] text-white",
-    image: "/images/everest-base-camp/everest-gallary2.png",
+    image: "/images/muktinath-pilgrimage/muktinath-gallary2.png",
   },
   {
     name: "Autumn",
     months: "September–November",
-    completion: "95%",
+    completion: "High",
     visibility: "Excellent",
-    status: "Highly Recommended",
+    status: "Best Visibility",
     statusClass: "bg-[#2f8f57] text-white",
-    image: "/images/everest-base-camp/everest-gallary3.jpg",
-  },
-  {
-    name: "Winter",
-    months: "December–February",
-    completion: "68%",
-    visibility: "Variable",
-    status: "With Caution",
-    statusClass: "bg-[#ef3434] text-white",
-    image: "/images/everest-base-camp/everest-gallary4.jpg",
+    image: "/images/muktinath-pilgrimage/muktinath-gallary3.png",
   },
   {
     name: "Monsoon",
-    months: "June–August",
-    completion: "34%",
-    visibility: "Poor",
-    status: "Not Recommended",
+    months: "July-August",
+    completion: "30-40% cancellation risk",
+    visibility: "Challenging",
+    status: "Possible",
     statusClass: "bg-[#ef3434] text-white",
-    image: "/images/everest-base-camp/everest-gallary5.jpg",
+    image: "/images/muktinath-pilgrimage/mustang.jpg",
+  },
+  {
+    name: "Winter",
+    months: "December-January",
+    completion: "Weather dependent",
+    visibility: "Very clear on crisp days",
+    status: "Cold but Possible",
+    statusClass: "bg-[#ef3434] text-white",
+    image: "/images/muktinath-pilgrimage/muktinath-gallary5.png",
   },
 ];
 
@@ -51,8 +51,8 @@ export default function BestTime() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            When we recommend flying — and when we{" "}
-            <span className="text-[#e0a326]">don&apos;t.</span>
+            Best Season for the Muktinath{" "}
+            <span className="text-[#e0a326]">Helicopter Tour.</span>
           </h2>
         </div>
 
@@ -65,7 +65,7 @@ export default function BestTime() {
             >
               <Image
                 src={season.image}
-                alt={`${season.name} season in the Everest region`}
+                alt={`${season.name} season for the Muktinath Helicopter Tour`}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition duration-500 group-hover:scale-105"

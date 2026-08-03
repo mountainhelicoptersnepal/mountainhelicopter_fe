@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import {
   Clock3,
-  Download,
   Gauge,
   Hotel,
   MapPin,
@@ -11,140 +10,130 @@ import {
   Plane,
   Sunrise,
 } from "lucide-react";
-import EverestTourSidebar from "./EverestTourSidebar";
+import MuktinathTourSidebar from "./MuktinathTourSidebar";
 
 const tabs = [
   { label: "Overview", href: "#overview" },
   { label: "Itinerary", href: "#itinerary" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Review", href: "#review" },
   { label: "FAQ", href: "#faq" },
 ];
 
 const quickFacts = [
   {
-    label: "Duration",
-    value: "4–5 hrs",
+    label: "Temple Elevation",
+    value: "3,710 m / 12,172 ft",
   },
   {
-    label: "Departure Time",
-    value: "5:30 am – 6:30 am",
+    label: "Location",
+    value: "Mustang District, Gandaki Province, below Thorong La Pass",
+  },
+  {
+    label: "Tour Type",
+    value: "Pilgrimage and scenic helicopter tour",
   },
   {
     label: "Departure Point",
-    value: "Tribhuvan International Airport Domestic Terminal",
-  },
-  {
-    label: "Return Point",
     value: "Tribhuvan International Airport, Kathmandu",
   },
   {
-    label: "Max Altitude Reached",
-    value: "5,545 m / 18,192 ft (Kala Patthar)",
+    label: "Kathmandu Flight Time",
+    value: "Approximately 75-90 minutes one way",
   },
   {
-    label: "EBC Flight Duration",
-    value: "5.5 hrs / 175 km & Everest Base Camp",
+    label: "Total Duration",
+    value: "About 4 hours from Kathmandu",
   },
   {
-    label: "Helicopter Type",
-    value: "Airbus H125 (AS350 B3e), CAAN-certified",
+    label: "Temple Ground Time",
+    value: "About 60 minutes for worship, exploration, and puja",
   },
   {
-    label: "Helicopter Capacity",
-    value: "Up to 4 passengers + 2 pilots",
+    label: "Walk to Temple",
+    value: "Approximately 5 minutes from the helipad",
   },
   {
-    label: "Difficulty Level",
-    value: "Easy, no physical fitness required",
+    label: "Helicopter Model",
+    value: "CAAN-certified Airbus H125 (AS350 B3e)",
   },
   {
-    label: "Minimum Recommended Age",
-    value: "5 years",
+    label: "Maximum Passengers",
+    value: "5 passengers plus 1 pilot",
   },
   {
-    label: "Best Season",
-    value: "March–May and September–November",
+    label: "Private Charter",
+    value: "USD 4,800 per helicopter from Kathmandu",
   },
   {
-    label: "Shared Tour Price",
-    value: "From USD 1,400 per person",
+    label: "Per-Person Cost",
+    value: "USD 960 with 5 passengers; USD 2,400 with 2 passengers",
   },
   {
-    label: "Private Charter Price",
-    value: "From USD 5,400",
+    label: "Required Permits",
+    value: "Annapurna Conservation Area Permit (ACAP), included",
   },
   {
-    label: "Ideal Time",
-    value: "Early Tour Operation in one morning",
+    label: "Major Mountains Visible",
+    value: "Dhaulagiri, Annapurna I, Nilgiri, Annapurna South, Baraha Chuli, Hiunchuli",
   },
   {
-    label: "Meal Included",
-    value: "Breakfast at Hotel Everest View",
+    label: "Best Seasons",
+    value: "Spring (February-May) and Autumn (September-November)",
   },
   {
-    label: "Permit Included",
-    value: "Yes, for Sagarmatha National Park",
-  },
-  {
-    label: "Hotel Pickup",
-    value: "Yes, included from your Kathmandu hotel",
-  },
-  {
-    label: "Travel Insurance",
-    value: "Required, minimum 6,000 m altitude coverage",
+    label: "Tour Availability",
+    value: "Year-round, weather permitting, typically 7:00 AM to 12:00 PM",
   },
 ];
 
 const tourHighlights = [
   {
     icon: Mountain,
-    title: "Everest Base Camp Flyover",
+    title: "Muktinath Temple",
     description:
-      "Fly above the traditional trail from Lukla and witness the Everest region from the air.",
+      "Visit the sacred Lord of Salvation temple, revered by both Hindus and Buddhists.",
   },
   {
     icon: MapPin,
-    title: "Kala Patthar Landing",
+    title: "108 Holy Taps",
     description:
-      "Land near one of the best viewpoints for clear views of Mount Everest and the surrounding peaks.",
+      "Pilgrims can take a purifying bath from the sacred spring-fed jaladharas.",
   },
   {
     icon: Hotel,
-    title: "Hotel Everest View Breakfast",
+    title: "Shaligram Stones",
     description:
-      "Enjoy breakfast with panoramic Himalayan views at one of the world's highest-altitude hotels.",
+      "See the sacred fossils associated with Lord Vishnu in the Muktinath region.",
   },
   {
     icon: Sunrise,
-    title: "Khumbu Icefall From Above",
+    title: "Mustang Valley",
     description:
-      "See the Khumbu Icefall, glaciers and high-altitude valleys from a completely different perspective.",
+      "Fly into the dry, dramatic desert-like landscapes beyond the Annapurna range.",
   },
   {
     icon: Mountain,
-    title: "Eight 8,000m+ Peaks",
+    title: "Kali Gandaki Gorge",
     description:
-      "See Everest, Lhotse, Makalu, Cho Oyu, Ama Dablam, Pumori and other Himalayan giants.",
+      "Look down over one of Nepal's most striking river valleys during the flight.",
   },
   {
     icon: Plane,
-    title: "Lukla Airstrip",
+    title: "Jomsom, Kagbeni and Marpha",
     description:
-      "Fly past the famous Tenzing-Hillary Airport, one of the world's most remarkable mountain airstrips.",
+      "View Mustang's windy headquarters, medieval villages, white houses, and apple country.",
   },
   {
     icon: Gauge,
-    title: "Sherpa Villages Aerial",
+    title: "Annapurna and Dhaulagiri Views",
     description:
-      "View Namche Bazaar, Tengboche, Pheriche and other Sherpa settlements from above.",
+      "See Dhaulagiri, Annapurna I, Nilgiri, Annapurna South, Baraha Chuli, and Hiunchuli.",
   },
   {
     icon: Clock3,
-    title: "Sunrise Over the Khumbu",
+    title: "Lush to Barren Transition",
     description:
-      "Early departures provide beautiful morning light over the Himalayan valleys and peaks.",
+      "Watch green hills and rhododendron zones change into Mustang's high desert.",
   },
 ];
 
@@ -152,22 +141,22 @@ const designedForItems = [
   {
     title: "Travellers on Short Notice",
     description:
-      "A short trip to Nepal isn't enough to trek. It is enough to fly. The helicopter departs at dawn from Kathmandu and returns in just 4 to 5 hours. This is the tour designed for tight itineraries and tighter schedules.",
+      "A short trip to Nepal is not enough for the weeks-long Annapurna Circuit trek. It is enough to fly. The helicopter departs in the morning and completes the sacred pilgrimage and return flight in just 3 to 4 hours.",
   },
   {
-    title: "Families and Multi-Generational Groups",
+    title: "Families and Groups",
     description:
-      "No fitness requirement. No acclimatization. No age limit. Children aged 3 and above fly, and so do grandparents. The lap of Mount Everest is not reserved for the young and strong. It is reserved for those who book.",
+      "No strenuous fitness requirement and no acclimatization needed at this accessible 3,710-meter altitude. Children and grandparents can make the journey together for darshan, puja, and the 108 holy taps.",
   },
   {
     title: "Creatives & Photographers",
     description:
-      "Charter privately for full aircraft control, unobstructed window angles, and extended ground time at 5,545 metres. The amphitheatre of the Khumbu giants lit by first light is not a backdrop. It is the subject. Ask about door-off configuration.",
+      "Charter privately for full aircraft control, unobstructed window angles, and extended ground time at the temple. The transition from rhododendron forests to Mustang's barren landscapes, framed by Dhaulagiri and Annapurna, is the subject.",
   },
   {
     title: "Travellers With Mobility Limitations",
     description:
-      "Knee injuries. Joint conditions. Wheelchair users. Post-surgery recovery. The two-week trek is not an option, but the destination still is. The helicopter removes every physical barrier between Kathmandu and the foot of Mount Everest.",
+      "Knee injuries, joint conditions, wheelchair users, and post-surgery recovery can make the multi-day trek impossible. With porter services available at the helipad and a gentle 5-minute walk to the temple, the helicopter removes the physical barrier.",
   },
 ];
 
@@ -258,19 +247,6 @@ export default function OverviewSection() {
               </button>
             ))}
 
-            <a
-              href="/pdfs/itinerary_of_ebc.pdf"
-              download="Everest-Base-Camp-Itinerary.pdf"
-              className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
-            >
-              <Download
-                size={15}
-                strokeWidth={2}
-                className="transition-transform duration-300 group-hover:translate-y-0.5"
-              />
-
-              <span className="whitespace-nowrap">Itinerary PDF</span>
-            </a>
           </nav>
         </div>
       </section>
@@ -290,37 +266,31 @@ export default function OverviewSection() {
                 <h2 className="font-fraunces text-3xl font-semibold leading-[1.12] tracking-[-0.02em] text-[#0a3158] md:text-4xl">
                   Helicopter Tour to,
                   <br />
-                  <span className="text-[#dfa11e]">Everest Base Camp.</span>
+                  <span className="text-[#dfa11e]">Muktinath Temple.</span>
                 </h2>
               </div>
 
               <div className="space-y-4 font-manrope text-sm leading-7 text-[#657180]">
                 <p>
-                  The Everest Base Camp Helicopter Tour is not just an
-                  experience of flying; it is an entire experience of being in
-                  the presence of the highest peak on earth. The helicopter tour
-                  to Everest Base Camp begins early in the morning, where the
-                  helicopter takes off from the Tribhuvan Airport in Kathmandu
-                  and flies towards the north-east, where it tours over the
-                  beautiful scenery, peaks of Khumbu region.
+                  The Muktinath Helicopter Tour by Mountain Helicopters Nepal is
+                  a fast private flight to one of Nepal&apos;s most revered
+                  pilgrimage sites. Muktinath Temple sits at 3,710 m in Mustang,
+                  below Thorong La Pass, and is sacred to both Hindus and
+                  Buddhists.
                 </p>
 
                 <p>
-                  In no time of taking off, in around ninety minutes the
-                  helicopter will be viewing the beautiful Khumbu glacier and
-                  its popular viewpoint, scenic Lhotse and the dreamy Mt.
-                  Everest. The helicopter will land at the hotel mountain view.
-                  Here at the hotel mountain view Everest Base Camp Helicopter
-                  Tour with landing is an excellent opportunity for travellers
-                  who cannot go trekking and want to feel the thrill of standing
-                  at the lap of Mt. Everest.
+                  Flying by helicopter saves the time and energy required for a
+                  multi-day trek while still giving you panoramic views of the
+                  Annapurna and Dhaulagiri ranges, lush foothills, Kali Gandaki
+                  Gorge, and the barren Mustang valley.
                 </p>
 
                 <p>
-                  Everest. After that the helicopter will land at an altitude of
-                  5,545 m above sea level at Kala Patthar, and the first picture
-                  every passenger will see is the closest view of Mt. Everest
-                  possible without climbing it.
+                  The journey includes temple ground time for worship, puja,
+                  exploration, and the 108 holy taps. For elderly visitors or
+                  passengers with limited mobility, porter support can be
+                  arranged near the helipad.
                 </p>
               </div>
 
@@ -331,10 +301,9 @@ export default function OverviewSection() {
                 </h3>
 
                 <p className="mt-2 max-w-4xl font-manrope text-xs leading-6 text-[#7b8490]">
-                  These are the trip facts of the helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the key trip facts for the Muktinath Helicopter
+                  Tour, including altitude, timing, permits, aircraft, and
+                  pricing expectations.
                 </p>
 
                 <div className="mt-5 overflow-hidden rounded-xl bg-[#062b55] shadow-[0_15px_35px_rgba(6,43,85,0.12)]">
@@ -391,7 +360,7 @@ export default function OverviewSection() {
             </main>
 
             {/* SIDEBAR */}
-            <EverestTourSidebar />
+            <MuktinathTourSidebar />
           </div>
         </div>
       </section>
@@ -446,7 +415,7 @@ export default function OverviewSection() {
               </p>
 
               <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight text-white md:text-4xl">
-                Kathmandu to Kala Patthar,{" "}
+                Kathmandu to Muktinath,{" "}
                 <span className="text-[#e4ab25]">plotted.</span>
               </h2>
             </div>
@@ -457,7 +426,7 @@ export default function OverviewSection() {
                   viewBox="0 0 1100 250"
                   className="h-auto w-full"
                   role="img"
-                  aria-label="Elevation profile from Kathmandu to Kala Patthar and back"
+                  aria-label="Elevation profile from Kathmandu to Muktinath and back"
                 >
                   <defs>
                     <linearGradient id="routeArea" x1="0" y1="0" x2="0" y2="1">
@@ -527,10 +496,10 @@ export default function OverviewSection() {
                   {/* AREA */}
                   <path
                     d="M65 195
-                       L225 140
-                       L390 38
-                       L610 105
-                       L920 142
+                       L225 156
+                       L390 105
+                       L610 83
+                       L920 140
                        L1060 195
                        L1060 235
                        L65 235 Z"
@@ -540,10 +509,10 @@ export default function OverviewSection() {
                   {/* ROUTE LINE */}
                   <path
                     d="M65 195
-                       L225 140
-                       L390 38
-                       L610 105
-                       L920 142
+                       L225 156
+                       L390 105
+                       L610 83
+                       L920 140
                        L1060 195"
                     fill="none"
                     stroke="#f2b321"
@@ -574,100 +543,100 @@ export default function OverviewSection() {
                     KTM 1,400m
                   </text>
 
-                  {/* LUKLA */}
+                  {/* POKHARA */}
                   <circle
                     cx="225"
+                    cy="156"
+                    r="12"
+                    fill="#f2b321"
+                    opacity="0.12"
+                    filter="url(#pointGlow)"
+                  />
+                  <circle cx="225" cy="156" r="6" fill="#f2b321" />
+
+                  <text
+                    x="207"
+                    y="142"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    POKHARA
+                  </text>
+
+                  <text
+                    x="214"
+                    y="152"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    800m
+                  </text>
+
+                  {/* MUKTINATH */}
+                  <circle
+                    cx="390"
+                    cy="83"
+                    r="14"
+                    fill="#e34d55"
+                    opacity="0.14"
+                    filter="url(#pointGlow)"
+                  />
+                  <circle cx="390" cy="83" r="7" fill="#e34d55" />
+
+                  <text
+                    x="360"
+                    y="66"
+                    fill="#ffffff"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="9"
+                    fontWeight="700"
+                  >
+                    MUKTINATH
+                  </text>
+
+                  <text
+                    x="378"
+                    y="76"
+                    fill="#7f91a6"
+                    fontFamily="Manrope, sans-serif"
+                    fontSize="8"
+                  >
+                    3,710m
+                  </text>
+
+                  {/* JOMSOM */}
+                  <circle
+                    cx="610"
                     cy="140"
                     r="12"
                     fill="#f2b321"
                     opacity="0.12"
                     filter="url(#pointGlow)"
                   />
-                  <circle cx="225" cy="140" r="6" fill="#f2b321" />
+                  <circle cx="610" cy="140" r="6" fill="#f2b321" />
 
                   <text
-                    x="207"
+                    x="600"
                     y="126"
                     fill="#ffffff"
                     fontFamily="Manrope, sans-serif"
                     fontSize="9"
                     fontWeight="700"
                   >
-                    LUKLA
+                    JOMSOM
                   </text>
 
                   <text
-                    x="214"
+                    x="594"
                     y="136"
                     fill="#7f91a6"
                     fontFamily="Manrope, sans-serif"
                     fontSize="8"
                   >
-                    2,860m
-                  </text>
-
-                  {/* KALA PATTHAR */}
-                  <circle
-                    cx="390"
-                    cy="38"
-                    r="14"
-                    fill="#e34d55"
-                    opacity="0.14"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="390" cy="38" r="7" fill="#e34d55" />
-
-                  <text
-                    x="360"
-                    y="21"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    KALA PATTHAR
-                  </text>
-
-                  <text
-                    x="378"
-                    y="31"
-                    fill="#7f91a6"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="8"
-                  >
-                    5,545m
-                  </text>
-
-                  {/* HOTEL EVEREST VIEW */}
-                  <circle
-                    cx="610"
-                    cy="105"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="610" cy="105" r="6" fill="#f2b321" />
-
-                  <text
-                    x="600"
-                    y="91"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    HEV
-                  </text>
-
-                  <text
-                    x="594"
-                    y="101"
-                    fill="#7f91a6"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="8"
-                  >
-                    3,880m
+                    2,743m
                   </text>
 
                   {/* RETURN */}
@@ -696,8 +665,8 @@ export default function OverviewSection() {
             </div>
 
             <p className="mt-5 font-manrope text-xs leading-6 text-[#7c8da1]">
-              Elevation profile: Kathmandu (1,400 m) to Kala Patthar (5,545 m)
-              and back, plotted against elapsed time.
+              Elevation profile: Kathmandu (1,400 m) to Muktinath Temple
+              (3,710 m) and back, plotted against elapsed time.
             </p>
           </div>
         </div>

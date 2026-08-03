@@ -118,20 +118,21 @@ const toursLinks = [
   { label: "Annapurna Base Camp", href: "/tours/annapurna-base-camp" },
   { label: "Langtang Valley", href: "/tours/langtang-valley" },
   { label: "Muktinath Pilgrimage", href: "/tours/muktinath-pilgrimage" },
-  { label: "Mera Peak", href: "/tours/mera-peak" },
-  { label: "Cultural Kathmandu", href: "/tours/cultural-kathmandu" },
+  { label: "Gosaikunda Lake", href: "/tours/gosaikunda-lake" },
+  // { label: "Mera Peak", href: "/tours/mera-peak" },
+  // { label: "Cultural Kathmandu", href: "/tours/cultural-kathmandu" },
   { label: "Heli Picnic", href: "/experiences/heli-picnic" },
-  { label: "Rara Lake", href: "/tours/rara-lake" },
+  // { label: "Rara Lake", href: "/tours/rara-lake" },
 ];
 
 const servicesLinks = [
   { label: "Charter", href: "/experiences/private-charter" },
   { label: "Rescue", href: "/rescue" },
   { label: "Fleet", href: "/fleet" },
-  { label: "About", href: "/about" },
-  { label: "Gallery", href: "/gallery" },
+  // { label: "About", href: "/about" },
+  // { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blogs" },
-  { label: "FAQs", href: "/faqs" },
+  // { label: "FAQs", href: "/faqs" },
 ];
 
 const legalLinks = [
@@ -233,14 +234,36 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               {[
-                { Icon: FacebookIcon, label: "Facebook", href: "/not-found" },
-                { Icon: TikTokIcon, label: "TikTok", href: "/not-found" },
-                { Icon: InstagramIcon, label: "Instagram", href: "/not-found" },
-                { Icon: YouTubeIcon, label: "YouTube", href: "/not-found" },
-              ].map(({ Icon, label, href }) => (
+                {
+                  Icon: FacebookIcon,
+                  label: "Facebook",
+                  target: "_blank",
+                  href: "https://www.facebook.com/mtnhelicoptersnepal",
+                },
+                {
+                  Icon: TikTokIcon,
+                  label: "TikTok",
+                  target: "_blank",
+                  href: "https://www.tiktok.com/@mountainhelicoptersnepal",
+                },
+                {
+                  Icon: InstagramIcon,
+                  label: "Instagram",
+                  target: "_blank",
+                  href: "https://www.instagram.com/mountainhelicoptersnepal",
+                },
+                {
+                  Icon: YouTubeIcon,
+                  label: "YouTube",
+                  target: "_blank",
+                  href: "https://www.youtube.com/@MountainHelicoptersNepal",
+                },
+              ].map(({ Icon, label, href, target }) => (
                 <Link
                   key={label}
                   href={href}
+                  target={target}
+                  rel={target === "_blank" ? "noopener noreferrer" : undefined}
                   aria-label={label}
                   className="text-grey-light transition-colors hover:text-gold"
                 >
@@ -305,24 +328,22 @@ export default function Footer() {
               Contact Us
             </h4>
             <div className="space-y-2 mb-6">
-              {["+977-9802022870", "+977-9802022870", "+977-9802022870"].map(
-                (phone, index) => (
-                  <a
-                    key={`${phone}-${index}`}
-                    href={`tel:${phone}`}
-                    className="block text-off-white text-sm transition-colors hover:text-gold"
-                    style={{ fontFamily }}
-                  >
-                    {phone}
-                  </a>
-                ),
-              )}
+              {["+977-9712082949"].map((phone, index) => (
+                <a
+                  key={`${phone}-${index}`}
+                  href={`tel:${phone}`}
+                  className="block text-off-white text-sm transition-colors hover:text-gold"
+                  style={{ fontFamily }}
+                >
+                  {phone}
+                </a>
+              ))}
               <a
                 href="mailto:marketing@mtnhelicopters.com"
                 className="block text-off-white text-sm transition-colors hover:text-gold"
                 style={{ fontFamily }}
               >
-                marketing@mtnhelicopters.com
+                info@mountainhelicoptersnepal.com
               </a>
             </div>
 
@@ -366,6 +387,7 @@ export default function Footer() {
             &copy; {currentYear} MOUNTAIN HELICOPTERS PVT. LTD. ALL RIGHTS
             RESERVED.
           </p>
+
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex-nowrap md:justify-start md:gap-6">
             {legalLinks.map((link) => (
               <Link
@@ -379,6 +401,12 @@ export default function Footer() {
             ))}
           </div>
         </div>
+        <span
+          className="text-gold text-xs font-semibold text-center block mt-4"
+          style={{ fontFamily }}
+        >
+          *This is a Beta Version of the website.
+        </span>
       </div>
     </footer>
   );

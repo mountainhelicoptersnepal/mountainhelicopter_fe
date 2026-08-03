@@ -19,7 +19,7 @@ function WhatsappIcon() {
 export default function CTA() {
   const phoneNumber = "9712082949";
   const message =
-    "Hi — I have a quick question about a Mountain Helicopters flight.";
+    "Hi, I have a quick question about the Muktinath Helicopter Tour.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message,
@@ -48,13 +48,13 @@ export default function CTA() {
         </div>
 
         <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,4.2rem)] font-extrabold leading-[1.05] text-white">
-          Ready to Experience
+          Ready for Muktinath
           <br />
-          Everest <span className="text-[#f5a623]">From Above?</span>
+          <span className="text-[#f5a623]">By Helicopter?</span>
         </h2>
 
         <p className="mx-auto mb-10 max-w-[560px] font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">
-          Let our experienced team create your unforgettable Himalayan journey.
+          Let our team plan your sacred Mustang pilgrimage flight.
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
