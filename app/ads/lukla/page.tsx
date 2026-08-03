@@ -48,10 +48,7 @@ const faqJsonLd = {
 
 export default function LuklaLandingPage() {
   return (
-    <div
-      id="top"
-      className="bg-white text-[17px] leading-[1.6] text-[#12233F]"
-    >
+    <div id="top" className="bg-white text-[17px] leading-[1.6] text-[#12233F]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

@@ -1,0 +1,182 @@
+const processSteps = [
+  {
+    number: "01",
+    label: "Rescue Journey",
+    title: "Emergency Call and Patient Information",
+    duration: "Typical duration: 3–5 min",
+    description:
+      "The Tilicho helicopter rescue process begins when the patient, trekking guide, lodge owner, trekking agency, family member, or insurance company contacts the rescue team. We collect the patient’s condition, exact location, altitude, nationality, insurance details, and emergency contact information.",
+  },
+  {
+    number: "02",
+    label: "Rescue Journey",
+    title: "Location and Weather Verification",
+    duration: "Typical duration: 5–10 min",
+    description:
+      "We verify the patient's location using GPS coordinates, nearby landmarks, or trekking points such as Tilicho Lake, Tilicho Base Camp, Shree Kharka, Khangsar, Yak Kharka, and Manang. Weather conditions, visibility, wind, cloud cover, and landing safety are checked before dispatch.",
+  },
+  {
+    number: "03",
+    label: "Rescue Journey",
+    title: "Insurance Details or Payment Assurance",
+    duration: "Typical duration: 10–20 min",
+    description:
+      "If the patient has travel insurance, we verify the policy details and coordinate with the assistance company for rescue approval. When insurance is unavailable, direct payment or payment assurance is required before the rescue proceeds.",
+  },
+  {
+    number: "04",
+    label: "Rescue Journey",
+    title: "Helicopter Dispatch",
+    duration: "Typical duration: 15–45 min after confirmation",
+    description:
+      "After confirming the rescue request, weather, location, and insurance or payment details, the helicopter is dispatched from Pokhara, Kathmandu, or the nearest available base. The pilot selects the safest flight route based on weather, altitude, and operational conditions.",
+  },
+  {
+    number: "05",
+    label: "Rescue Journey",
+    title: "Patient Pickup and Medical Evacuation",
+    duration: "On-scene time: approximately 5–15 min",
+    description:
+      "The patient is picked up from the safest accessible location in the Tilicho region, including Tilicho Lake, Tilicho Base Camp, Shree Kharka, Khangsar, Yak Kharka, or Manang. If direct landing is not possible, the patient is moved to the nearest safe pickup point before being evacuated to Pokhara or Kathmandu for medical treatment.",
+  },
+  {
+    number: "06",
+    label: "Rescue Journey",
+    title: "Documents for Insurance",
+    duration: "Prepared after mission completion",
+    description:
+      "After the Tilicho helicopter evacuation, documents including flight details, rescue route, pickup location, evacuation time, patient information, and invoice are prepared to support insurance claims and official records.",
+  },
+];
+
+function ProcessStep({
+  number,
+  label,
+  title,
+  duration,
+  description,
+  isLast,
+}) {
+  return (
+    <article className="relative grid grid-cols-[44px_minmax(0,1fr)] gap-5 md:grid-cols-[56px_minmax(0,1fr)] md:gap-7">
+      {/* TIMELINE */}
+      <div className="relative flex justify-center">
+        {!isLast && (
+          <span className="absolute bottom-[-48px] top-11 w-px bg-[#d99f19]" />
+        )}
+
+        <span className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border-2 border-[#e0a321] bg-white font-manrope text-[10px] font-bold text-[#0a4b7c] md:h-10 md:w-10">
+          {number}
+        </span>
+      </div>
+
+      {/* STEP CARD */}
+      <div className="rounded-[22px] border border-[#3170a7]/70 bg-[#073865]/80 px-5 py-6 shadow-[0_16px_40px_rgba(0,16,40,0.18)] backdrop-blur-[2px] md:px-7 md:py-7">
+        <p className="flex items-center gap-3 font-manrope text-[10px] font-bold uppercase tracking-[0.16em] text-[#e1a51f]">
+          <span className="h-px w-7 bg-[#e1a51f]" />
+          {number} / {label}
+        </p>
+
+        <h3 className="mt-4 font-fraunces text-xl font-semibold uppercase leading-tight text-white md:text-2xl">
+          {title}
+        </h3>
+
+        <p className="mt-3 font-manrope text-xs text-white/55">
+          {duration}
+        </p>
+
+        <p className="mt-4 font-manrope text-sm leading-7 text-white/70">
+          {description}
+        </p>
+      </div>
+    </article>
+  );
+}
+
+export default function TilichoProcess() {
+  return (
+    <section
+      id="process"
+      className="relative scroll-mt-[133px] overflow-hidden bg-[#061b31] px-5 py-16 md:px-8 lg:py-24"
+    >
+      {/* BACKGROUND IMAGE */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url('/images/rescue/regions/annapurna-rescue-process-bg.jpg')",
+        }}
+      />
+
+      {/* OVERLAYS */}
+      <div className="absolute inset-0 bg-[#061b31]/88" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#061b31]/40 via-transparent to-[#061b31]/90" />
+
+      <div className="relative z-10 mx-auto max-w-5xl">
+        {/* HEADING */}
+        <div className="text-center">
+          <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#e1a51f]">
+            <span className="h-px w-8 bg-[#e1a51f]" />
+            Our Process
+          </p>
+
+          <h2 className="mx-auto mt-5 max-w-4xl font-fraunces text-4xl font-semibold leading-[1.02] tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
+            Our Tilicho Helicopter
+            <br />
+            <span className="italic text-[#f0ad1f]">
+              Rescue Process.
+            </span>
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-3xl font-manrope text-sm leading-7 text-white/55 md:text-base">
+            A structured rescue journey from the first emergency call through
+            patient evacuation, hospital transfer, and insurance documentation.
+          </p>
+        </div>
+
+        {/* INTRODUCTION */}
+        <div className="mx-auto mt-10 max-w-4xl rounded-2xl border border-white/10 bg-[#073865]/45 p-5 backdrop-blur-sm md:p-7">
+          <p className="font-manrope text-sm leading-7 text-white/70">
+            The Tilicho helicopter rescue process begins when the patient,
+            trekking guide, lodge owner, trekking agency, family member, or
+            insurance company contacts the rescue team. The dispatch team
+            collects the patient&apos;s condition, exact location, altitude,
+            nationality, insurance details, and emergency contact information.
+          </p>
+
+          <p className="mt-4 font-manrope text-sm leading-7 text-white/70">
+            The patient&apos;s location is verified using GPS coordinates,
+            nearby landmarks, or trekking points such as Tilicho Lake, Tilicho
+            Base Camp, Shree Kharka, Khangsar, Yak Kharka, and Manang. Weather,
+            visibility, wind, cloud cover, and landing safety are checked while
+            insurance or payment details are confirmed.
+          </p>
+
+          <p className="mt-4 font-manrope text-sm leading-7 text-white/70">
+            Once the rescue requirements are confirmed, the helicopter is
+            dispatched from Pokhara, Kathmandu, or the nearest available base.
+            The patient is then collected from the safest accessible pickup
+            point and evacuated for medical treatment.
+          </p>
+        </div>
+
+        {/* PROCESS TIMELINE */}
+        <div className="mt-12 space-y-12">
+          {processSteps.map((step, index) => (
+            <ProcessStep
+              key={step.number}
+              {...step}
+              isLast={index === processSteps.length - 1}
+            />
+          ))}
+        </div>
+
+        {/* BOTTOM NOTE */}
+        <div className="mt-10 flex items-center justify-center gap-3 text-center font-manrope text-xs font-semibold text-[#e1a51f]">
+          <span className="h-2 w-2 shrink-0 rounded-full bg-[#e1a51f]" />
+          24/7 operational coordination throughout the Tilicho and Manang region
+        </div>
+      </div>
+    </section>
+  );
+}

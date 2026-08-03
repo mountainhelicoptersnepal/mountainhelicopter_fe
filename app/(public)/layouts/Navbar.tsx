@@ -7,7 +7,7 @@ import { ChevronDown, Menu, Search, UserRound, X } from "lucide-react";
 import Image from "next/image";
 
 const NAVBAR_HEIGHT = 75;
-const HERO_NAV_PATHS = new Set(["/", "/fleet", "/contact"]);
+const HERO_NAV_PATHS = new Set(["/", "/fleet", "/contact", "/rescue"]);
 
 const NAV_LINKS = [
   {
@@ -96,23 +96,7 @@ const NAV_LINKS = [
   {
     label: "Rescue",
     href: "/rescue",
-    dropdown: [
-      {
-        title: "Mountain Rescue",
-        href: "/rescue/mountain",
-        description: "Fast emergency Himalayan rescue.",
-      },
-      {
-        title: "Medical Rescue",
-        href: "/rescue/medical",
-        description: "Emergency medical helicopter service.",
-      },
-      {
-        title: "Emergency Support",
-        href: "/rescue/emergency",
-        description: "24/7 rescue assistance.",
-      },
-    ],
+    dropdown: [],
   },
   // {
   //   label: "Safety Report",
@@ -333,7 +317,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
   const desktopNavTextColor = isHeroActive ? "text-white" : "text-[#071825]";
   const mobileNavTextColor = "text-[#071825]";
   const headerBackgroundClass = isHeroActive
-    ? "bg-white/65 shadow-sm backdrop-blur-xl backdrop-saturate-150 supports-[backdrop-filter]:bg-white/55 xl:bg-transparent xl:shadow-none xl:backdrop-blur-none xl:supports-[backdrop-filter]:bg-transparent"
+    ? "bg-white/65 shadow-sm backdrop-blur-xl xl:bg-transparent xl:shadow-none xl:backdrop-blur-none xl:supports-[backdrop-filter]:bg-transparent"
     : isPassedHeroPage
       ? "bg-white/65 shadow-sm backdrop-blur-xl backdrop-saturate-150 supports-[backdrop-filter]:bg-white/55"
       : "bg-white shadow-sm";

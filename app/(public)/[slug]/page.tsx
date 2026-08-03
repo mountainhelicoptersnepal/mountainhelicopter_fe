@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import ExperiencesPage from "@/components/mountainhelicopter/experiences/page";
+import RescuePage from "@/components/mountainhelicopter/rescue/page";
 
 type SlugPageProps = {
   params: Promise<{
@@ -10,6 +11,7 @@ type SlugPageProps = {
 
 const pages = {
   experiences: ExperiencesPage,
+  rescue: RescuePage,
 } as const;
 
 export default async function SlugPage({ params }: SlugPageProps) {
