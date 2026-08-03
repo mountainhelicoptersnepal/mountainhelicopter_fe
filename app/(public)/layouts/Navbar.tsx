@@ -7,7 +7,14 @@ import { ChevronDown, Menu, Search, UserRound, X } from "lucide-react";
 import Image from "next/image";
 
 const NAVBAR_HEIGHT = 75;
-const HERO_NAV_PATHS = new Set(["/", "/fleet", "/contact", "/rescue"]);
+const HERO_NAV_PATHS = new Set([
+  "/",
+  "/fleet",
+  "/contact",
+  "/rescue",
+  "/blogs",
+  "/search",
+]);
 
 const NAV_LINKS = [
   {
@@ -98,6 +105,11 @@ const NAV_LINKS = [
     href: "/rescue",
     dropdown: [],
   },
+  {
+    label: "Contact",
+    href: "/contact",
+    dropdown: [],
+  },
   // {
   //   label: "Safety Report",
   //   href: "/safety",
@@ -116,49 +128,6 @@ const NAV_LINKS = [
   // },
 ];
 
-const SEARCH_PAGES = [
-  {
-    keywords: ["everest base camp", "everest", "ebc"],
-    href: "/tours/everest-base-camp",
-  },
-  {
-    keywords: ["annapurna base camp", "annapurna", "abc"],
-    href: "/tours/annapurna-base-camp",
-  },
-  {
-    keywords: ["muktinath helicopter", "muktinath"],
-    href: "/tours/muktinath-pilgrimage",
-  },
-  {
-    keywords: ["langtang valley", "langtang"],
-    href: "/tours/langtang-valley",
-  },
-  {
-    keywords: ["gosaikunda lake", "gosaikunda"],
-    href: "/tours/gosaikunda-lake",
-  },
-  {
-    keywords: ["safety report", "safety"],
-    href: "/safety",
-  },
-  {
-    keywords: ["contact us", "contact"],
-    href: "/contact",
-  },
-  {
-    keywords: ["about us", "about"],
-    href: "/about",
-  },
-  {
-    keywords: ["aircraft", "fleet"],
-    href: "/fleet",
-  },
-  {
-    keywords: ["tours", "tour"],
-    href: "/tours",
-  },
-];
-
 function findSearchDestination(searchValue: string) {
   const query = searchValue.trim().toLowerCase();
 
@@ -166,13 +135,7 @@ function findSearchDestination(searchValue: string) {
     return null;
   }
 
-  const matchingPage = SEARCH_PAGES.find(({ keywords }) =>
-    keywords.some((keyword) => query.includes(keyword)),
-  );
-
-  return (
-    matchingPage?.href ?? `/tours?search=${encodeURIComponent(searchValue)}`
-  );
+  return `/search?q=${encodeURIComponent(searchValue.trim())}`;
 }
 
 export default function Navbar() {

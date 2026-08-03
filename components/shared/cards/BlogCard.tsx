@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export interface BlogCardProps {
+  slug?: string;
   image: string;
   imageAlt: string;
   category: string;
@@ -12,6 +14,7 @@ export interface BlogCardProps {
 }
 
 const BlogCard = ({
+  slug,
   image,
   imageAlt,
   category,
@@ -21,8 +24,8 @@ const BlogCard = ({
   dateTime,
   readTime,
 }: BlogCardProps) => {
-  return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-[10px] border border-[#6b7886] bg-[#002448]">
+  const card = (
+    <>
       <div className="relative aspect-[383/205] w-full shrink-0 overflow-hidden">
         <Image
           src={image}
@@ -53,6 +56,23 @@ const BlogCard = ({
           <span>{readTime}</span>
         </div>
       </div>
+    </>
+  );
+
+  if (slug) {
+    return (
+      <Link
+        href={`/blog/${slug}`}
+        className="group flex h-full flex-col overflow-hidden rounded-[10px] border border-[#6b7886] bg-[#002448] transition-transform duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#f2b632] focus:ring-offset-2 focus:ring-offset-[#002347]"
+      >
+        {card}
+      </Link>
+    );
+  }
+
+  return (
+    <article className="group flex h-full flex-col overflow-hidden rounded-[10px] border border-[#6b7886] bg-[#002448]">
+      {card}
     </article>
   );
 };

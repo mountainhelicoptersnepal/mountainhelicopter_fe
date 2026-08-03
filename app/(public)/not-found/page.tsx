@@ -1,5 +1,5 @@
 import NotFoundPage from "@/components/mountainhelicopter/not-found/NotFoundPage";
 
-export default function NotFound() {
+export default function NotFoundRoutePage() {
   return <NotFoundPage />;
 }

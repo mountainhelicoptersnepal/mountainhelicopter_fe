@@ -114,24 +114,31 @@ const ChevronRightIcon = () => (
 
 // ─── Link Data ───
 const toursLinks = [
-  "Everest Base Camp",
-  "Annapurna Base Camp",
-  "Langtang Valley",
-  "Muktinath Pilgrimage",
-  "Mera Peak",
-  "Cultural Kathmandu",
-  "Heli Picnic",
-  "Rara Lake",
+  { label: "Everest Base Camp", href: "/tours/everest-base-camp" },
+  { label: "Annapurna Base Camp", href: "/tours/annapurna-base-camp" },
+  { label: "Langtang Valley", href: "/tours/langtang-valley" },
+  { label: "Muktinath Pilgrimage", href: "/tours/muktinath-pilgrimage" },
+  { label: "Mera Peak", href: "/tours/mera-peak" },
+  { label: "Cultural Kathmandu", href: "/tours/cultural-kathmandu" },
+  { label: "Heli Picnic", href: "/experiences/heli-picnic" },
+  { label: "Rara Lake", href: "/tours/rara-lake" },
 ];
 
 const servicesLinks = [
-  "Charter",
-  "Rescue",
-  "Fleet",
-  "About",
-  "Gallery",
-  "Blog",
-  "FAQs",
+  { label: "Charter", href: "/experiences/private-charter" },
+  { label: "Rescue", href: "/rescue" },
+  { label: "Fleet", href: "/fleet" },
+  { label: "About", href: "/about" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Blog", href: "/blogs" },
+  { label: "FAQs", href: "/faqs" },
+];
+
+const legalLinks = [
+  { label: "PRIVACY", href: "/privacy" },
+  { label: "TERMS", href: "/terms" },
+  { label: "CANCELLATION", href: "/cancellation" },
+  { label: "REFUND", href: "/refund" },
 ];
 
 export default function Footer() {
@@ -221,24 +228,24 @@ export default function Footer() {
               className="text-grey-light text-sm leading-relaxed mb-5"
               style={{ fontFamily }}
             >
-              Nepal&apos;s most experiences helicopter operator. Tours, charter,
-              and resue since 2009.
+              Nepal&apos;s mountain helicopter operator for tours, private
+              charters, pilgrimage flights, and rescue coordination since 2009.
             </p>
             <div className="flex items-center gap-3">
               {[
-                { Icon: FacebookIcon, label: "Facebook" },
-                { Icon: TikTokIcon, label: "TikTok" },
-                { Icon: InstagramIcon, label: "Instagram" },
-                { Icon: YouTubeIcon, label: "YouTube" },
-              ].map(({ Icon, label }) => (
-                <a
+                { Icon: FacebookIcon, label: "Facebook", href: "/not-found" },
+                { Icon: TikTokIcon, label: "TikTok", href: "/not-found" },
+                { Icon: InstagramIcon, label: "Instagram", href: "/not-found" },
+                { Icon: YouTubeIcon, label: "YouTube", href: "/not-found" },
+              ].map(({ Icon, label, href }) => (
+                <Link
                   key={label}
-                  href="#"
+                  href={href}
                   aria-label={label}
                   className="text-grey-light transition-colors hover:text-gold"
                 >
                   <Icon />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -253,14 +260,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {toursLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
                     className="text-off-white text-sm transition-colors hover:text-gold"
                     style={{ fontFamily }}
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -276,14 +283,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {servicesLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
                     className="text-off-white text-sm transition-colors hover:text-gold"
                     style={{ fontFamily }}
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -337,7 +344,9 @@ export default function Footer() {
               </p>
             </div>
             <a
-              href="#"
+              href="https://www.google.com/maps/search/?api=1&query=Old+Sinamangal+Pepsicola+Kathmandu+Nepal"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-1 text-gold text-sm transition-colors hover:text-gold-warm"
               style={{ fontFamily }}
             >
@@ -358,15 +367,15 @@ export default function Footer() {
             RESERVED.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex-nowrap md:justify-start md:gap-6">
-            {["PRIVACY", "TERMS", "CANCELLATION", "REFUND"].map((link) => (
-              <a
-                key={link}
-                href="#"
+            {legalLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
                 className="text-grey-light text-xs tracking-wider uppercase transition-colors hover:text-gold"
                 style={{ fontFamily }}
               >
-                {link}
-              </a>
+                {link.label}
+              </Link>
             ))}
           </div>
         </div>
