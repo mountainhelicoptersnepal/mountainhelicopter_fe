@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import TourTabsNavbar from "@/components/shared/navbar/TourTabsNavbar";
 
 export default function EverestBaseCamp() {
@@ -8,7 +9,8 @@ export default function EverestBaseCamp() {
     <div
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
       style={{
-        backgroundImage: "url('/images/everest-base-camp/everest-base-camp.jpg')",
+        backgroundImage:
+          "url('/images/everest-base-camp/everest-base-camp.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-[#06182c]/55" />
@@ -38,19 +40,16 @@ export default function EverestBaseCamp() {
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">
+              <PrimaryButton
+                href="/contact"
+                className="w-full sm:w-[157px]"
+                showArrow={false}
+              >
+                Plan Your Flight
+              </PrimaryButton>
+
               <Link
                 href="/contact"
-                className="group relative isolate flex h-[46px] w-full items-center justify-center overflow-hidden bg-[#F2B632] transition sm:w-[157px]"
-              >
-                <span className="absolute inset-0 translate-x-[-101%] bg-white transition-transform duration-500 group-hover:translate-x-0" />
-
-                <span className="relative z-10 flex items-center gap-2 font-manrope text-[14px] font-bold tracking-[-0.2px] text-[#003366] group-hover:text-[#F2B632]">
-                  Plan Your Flight
-                </span>
-              </Link>
-
-              <Link
-                href="/charter"
                 className="group relative isolate flex h-[44px] w-full items-center justify-center overflow-hidden border-2 border-white bg-transparent font-manrope text-[15px] font-extrabold uppercase text-white sm:w-[222.5px]"
               >
                 <span className="absolute inset-0 translate-x-[-101%] bg-white transition-transform duration-500 group-hover:translate-x-0" />

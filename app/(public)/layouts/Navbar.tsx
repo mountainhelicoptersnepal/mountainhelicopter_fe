@@ -114,22 +114,22 @@ const NAV_LINKS = [
       },
     ],
   },
-  {
-    label: "Safety Report",
-    href: "/safety",
-    dropdown: [
-      {
-        title: "Safety Policy",
-        href: "/safety/policy",
-        description: "Our aviation safety standards.",
-      },
-      {
-        title: "Safety Reports",
-        href: "/safety/reports",
-        description: "View operational safety reports.",
-      },
-    ],
-  },
+  // {
+  //   label: "Safety Report",
+  //   href: "/safety",
+  //   dropdown: [
+  //     {
+  //       title: "Safety Policy",
+  //       href: "/safety/policy",
+  //       description: "Our aviation safety standards.",
+  //     },
+  //     {
+  //       title: "Safety Reports",
+  //       href: "/safety/reports",
+  //       description: "View operational safety reports.",
+  //     },
+  //   ],
+  // },
 ];
 
 const SEARCH_PAGES = [
@@ -210,6 +210,8 @@ function NavbarContent({ pathname }: { pathname: string }) {
   const desktopSearchRef = useRef<HTMLDivElement>(null);
   const mobileSearchRef = useRef<HTMLDivElement>(null);
   const mobileControlsRef = useRef<HTMLDivElement>(null);
+  const desktopSearchInputRef = useRef<HTMLInputElement>(null);
+  const mobileSearchInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const updateHeroState = () => {
@@ -278,6 +280,21 @@ function NavbarContent({ pathname }: { pathname: string }) {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+
+  useEffect(() => {
+    if (!showSearch) {
+      return;
+    }
+
+    const input =
+      window.innerWidth >= 1280
+        ? desktopSearchInputRef.current
+        : mobileSearchInputRef.current;
+
+    window.requestAnimationFrame(() => {
+      input?.focus();
+    });
+  }, [showSearch]);
 
   const closeNavigation = () => {
     setActiveDropdown(null);
@@ -455,13 +472,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
               }`}
             >
               <input
+                ref={desktopSearchInputRef}
                 type="search"
                 placeholder="Search..."
                 value={searchValue}
                 onChange={(event) => setSearchValue(event.target.value)}
                 autoFocus={showSearch}
                 aria-label="Search website"
-                className="h-10 w-full rounded-full bg-white/95 px-5 text-sm text-[#333] outline-none"
+                className="h-10 w-full rounded-full border border-[#cbd5e1] bg-white px-5 text-sm text-[#333] outline-none transition focus:border-[#F2B632]"
               />
             </form>
 
@@ -524,13 +542,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
       >
         <form onSubmit={handleSearchSubmit}>
           <input
+            ref={mobileSearchInputRef}
             type="search"
             placeholder="Search Everest, Annapurna..."
             value={searchValue}
             onChange={(event) => setSearchValue(event.target.value)}
             autoFocus={showSearch}
             aria-label="Search website"
-            className="h-11 w-full rounded-full bg-white px-5 text-sm outline-none"
+            className="h-11 w-full rounded-full border border-[#cbd5e1] bg-white px-5 text-sm text-[#333] outline-none transition focus:border-[#F2B632] focus:ring-2 focus:ring-[#F2B632]/30"
           />
         </form>
       </div>

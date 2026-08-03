@@ -177,9 +177,7 @@ function smoothScrollTo(targetY: number, duration = 700) {
   const startTime = performance.now();
 
   const easeInOutCubic = (time: number) =>
-    time < 0.5
-      ? 4 * time * time * time
-      : 1 - Math.pow(-2 * time + 2, 3) / 2;
+    time < 0.5 ? 4 * time * time * time : 1 - Math.pow(-2 * time + 2, 3) / 2;
 
   const animateScroll = (currentTime: number) => {
     const elapsed = currentTime - startTime;
@@ -244,13 +242,13 @@ export default function OverviewSection() {
       {/* MINI NAVBAR */}
       <section className="sticky top-[75px] z-40 border-b border-slate-200 bg-white">
         <div className="mx-auto flex min-h-[58px] max-w-7xl items-center px-6 md:px-12 lg:px-16">
-          <nav className="flex h-full w-full items-center gap-1 overflow-x-auto">
+          <nav className="mobile-tabs-scrollbar flex h-full w-full items-center gap-1 overflow-x-scroll pb-1 md:overflow-x-auto md:pb-0">
             {tabs.map((tab) => (
               <button
                 key={tab.label}
                 type="button"
                 onClick={() => handleTabClick(tab.href)}
-                className={`flex h-[58px] shrink-0 cursor-pointer items-center border-0 px-5 font-manrope text-xs font-bold uppercase tracking-[0.14em] transition md:px-6 ${
+                className={`flex h-[58px] shrink-0 cursor-pointer items-center border-0 px-5 font-manrope !text-sm font-bold uppercase tracking-[0.14em] transition md:px-6 ${
                   activeTab === tab.href
                     ? "bg-[#f6b51f] text-[#073763]"
                     : "bg-white text-slate-500 hover:bg-slate-50 hover:text-[#073763]"
@@ -263,7 +261,7 @@ export default function OverviewSection() {
             <a
               href="/pdfs/itinerary_of_ebc.pdf"
               download="Everest-Base-Camp-Itinerary.pdf"
-              className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:px-5"
+              className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
               <Download
                 size={15}
@@ -278,10 +276,7 @@ export default function OverviewSection() {
       </section>
 
       {/* OVERVIEW SECTION */}
-      <section
-        id="overview"
-        className="scroll-mt-36 bg-[#fbfbfa]"
-      >
+      <section id="overview" className="scroll-mt-36 bg-[#fbfbfa]">
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
           <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px]">
             {/* LEFT CONTENT */}
@@ -295,9 +290,7 @@ export default function OverviewSection() {
                 <h2 className="font-fraunces text-3xl font-semibold leading-[1.12] tracking-[-0.02em] text-[#0a3158] md:text-4xl">
                   Helicopter Tour to,
                   <br />
-                  <span className="text-[#dfa11e]">
-                    Everest Base Camp.
-                  </span>
+                  <span className="text-[#dfa11e]">Everest Base Camp.</span>
                 </h2>
               </div>
 
@@ -305,11 +298,11 @@ export default function OverviewSection() {
                 <p>
                   The Everest Base Camp Helicopter Tour is not just an
                   experience of flying; it is an entire experience of being in
-                  the presence of the highest peak on earth. The helicopter
-                  tour to Everest Base Camp begins early in the morning, where
-                  the helicopter takes off from the Tribhuvan Airport in
-                  Kathmandu and flies towards the north-east, where it tours
-                  over the beautiful scenery, peaks of Khumbu region.
+                  the presence of the highest peak on earth. The helicopter tour
+                  to Everest Base Camp begins early in the morning, where the
+                  helicopter takes off from the Tribhuvan Airport in Kathmandu
+                  and flies towards the north-east, where it tours over the
+                  beautiful scenery, peaks of Khumbu region.
                 </p>
 
                 <p>
@@ -319,8 +312,8 @@ export default function OverviewSection() {
                   Everest. The helicopter will land at the hotel mountain view.
                   Here at the hotel mountain view Everest Base Camp Helicopter
                   Tour with landing is an excellent opportunity for travellers
-                  who cannot go trekking and want to feel the thrill of
-                  standing at the lap of Mt. Everest.
+                  who cannot go trekking and want to feel the thrill of standing
+                  at the lap of Mt. Everest.
                 </p>
 
                 <p>
@@ -415,9 +408,7 @@ export default function OverviewSection() {
             <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-[1.08] tracking-[-0.02em] text-[#092c52] md:text-4xl">
               Who this flight is
               <br />
-              <span className="text-[#e3a62a]">
-                designed directly for.
-              </span>
+              <span className="text-[#e3a62a]">designed directly for.</span>
             </h2>
 
             <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -469,23 +460,13 @@ export default function OverviewSection() {
                   aria-label="Elevation profile from Kathmandu to Kala Patthar and back"
                 >
                   <defs>
-                    <linearGradient
-                      id="routeArea"
-                      x1="0"
-                      y1="0"
-                      x2="0"
-                      y2="1"
-                    >
+                    <linearGradient id="routeArea" x1="0" y1="0" x2="0" y2="1">
                       <stop
                         offset="0%"
                         stopColor="#f2b321"
                         stopOpacity="0.18"
                       />
-                      <stop
-                        offset="100%"
-                        stopColor="#f2b321"
-                        stopOpacity="0"
-                      />
+                      <stop offset="100%" stopColor="#f2b321" stopOpacity="0" />
                     </linearGradient>
 
                     <filter

@@ -153,4 +153,32 @@ select {
   .font-jetbrains-mono {
     font-family: var(--font-family-jetbrains-mono), "Courier New", monospace;
   }
+
+  .mobile-tabs-scrollbar {
+    scrollbar-color: #073763 #e2e8f0;
+    scrollbar-width: thin;
+  }
+
+  .mobile-tabs-scrollbar::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .mobile-tabs-scrollbar::-webkit-scrollbar-track {
+    background: #e2e8f0;
+  }
+
+  .mobile-tabs-scrollbar::-webkit-scrollbar-thumb {
+    background: #073763;
+    border-radius: 999px;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-tabs-scrollbar {
+      scrollbar-width: none;
+    }
+
+    .mobile-tabs-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
