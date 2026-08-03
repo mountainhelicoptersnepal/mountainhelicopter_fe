@@ -1,22 +1,8 @@
 import BlogCard from "@/components/shared/cards/BlogCard";
+import { blogPosts } from "@/lib/blogs";
+import Link from "next/link";
 
-const BLOG_IMAGE = "/images/blogs/blogs.png";
-const BLOG_IMAGE_ALT =
-  "Aerial view of the Himalayan range from a Mountain Helicopters flight";
-
-const POST_CONTENT = {
-  image: BLOG_IMAGE,
-  imageAlt: BLOG_IMAGE_ALT,
-  category: "Destination",
-  title: "The Sacred Heights: Muktinath Temple by Helicopter",
-  excerpt:
-    "A pilgrimage that once took weeks now takes hours. We trace the spiritual journey from Kathmandu to one of Asia's most revered high-altitude temples.",
-  date: "22 February 2026",
-  dateTime: "2026-02-22",
-  readTime: "3 min read",
-} as const;
-
-const posts = [POST_CONTENT, POST_CONTENT, POST_CONTENT];
+const featuredPosts = blogPosts.slice(0, 3);
 
 export default function Blogs() {
   return (
@@ -40,9 +26,12 @@ export default function Blogs() {
           </div>
 
           <div className="inline-flex w-fit shrink-0 items-center gap-[6px] rounded-[10px] bg-[#002448]">
-            <span className="font-manrope text-[11px] font-semibold uppercase leading-[16.5px] tracking-[1.98px] text-white/40">
+            <Link
+              href="/blogs"
+              className="font-manrope text-[11px] font-semibold uppercase leading-[16.5px] tracking-[1.98px] text-white/40"
+            >
               All Stories
-            </span>
+            </Link>
 
             <svg
               width="12"
@@ -62,8 +51,8 @@ export default function Blogs() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-[21px]">
-          {posts.map((post, index) => (
-            <BlogCard key={index} {...post} />
+          {featuredPosts.map((post) => (
+            <BlogCard key={post.slug} {...post} />
           ))}
         </div>
       </div>

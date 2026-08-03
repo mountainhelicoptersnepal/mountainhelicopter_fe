@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import BlogDetailPage from "@/components/mountainhelicopter/blogs/BlogDetailPage";
 import CelebrationsPage from "@/components/mountainhelicopter/experiences/celebrations/page";
 import EverestBreakfastExperiencePage from "@/components/mountainhelicopter/experiences/everest-breakfast/page";
 import HeliPicnicPage from "@/components/mountainhelicopter/experiences/heli-picnic/page";
@@ -12,6 +13,7 @@ import EverestBaseCampPage from "@/components/mountainhelicopter/tours/everest-b
 import GosaikundaLakePage from "@/components/mountainhelicopter/tours/gosaikunda-lake/page";
 import LangtangValleyPage from "@/components/mountainhelicopter/tours/langtang-valley/page";
 import MuktinathPilgrimagePage from "@/components/mountainhelicopter/tours/muktinath-pilgrimage/page";
+import { blogPosts, getBlogPost } from "@/lib/blogs";
 
 type DetailPageProps = {
   params: Promise<{
@@ -38,8 +40,50 @@ const experiencePages = {
   "private-charter": PrivateCharterPage,
 } as const;
 
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: "blog",
+    detailSlug: post.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: DetailPageProps) {
+  const { slug, detailSlug } = await params;
+
+  if (slug !== "blog") {
+    return {};
+  }
+
+  const post = getBlogPost(detailSlug);
+
+  if (!post) {
+    return {};
+  }
+
+  return {
+    title: post.metaTitle,
+    description: post.metaDescription,
+    openGraph: {
+      title: post.metaTitle,
+      description: post.metaDescription,
+      images: [post.image],
+      type: "article",
+    },
+  };
+}
+
 export default async function DetailPage({ params }: DetailPageProps) {
   const { slug, detailSlug } = await params;
+
+  if (slug === "blog") {
+    const post = getBlogPost(detailSlug);
+
+    if (!post) {
+      notFound();
+    }
+
+    return <BlogDetailPage post={post} />;
+  }
 
   if (slug === "tours" && detailSlug in tourPages) {
     const TourPage = tourPages[detailSlug as keyof typeof tourPages];

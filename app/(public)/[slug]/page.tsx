@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import BlogPage from "@/components/mountainhelicopter/blogs/page";
 import ExperiencesPage from "@/components/mountainhelicopter/experiences/page";
 import RescuePage from "@/components/mountainhelicopter/rescue/page";
 
@@ -10,6 +11,7 @@ type SlugPageProps = {
 };
 
 const pages = {
+  blogs: BlogPage,
   experiences: ExperiencesPage,
   rescue: RescuePage,
 } as const;
