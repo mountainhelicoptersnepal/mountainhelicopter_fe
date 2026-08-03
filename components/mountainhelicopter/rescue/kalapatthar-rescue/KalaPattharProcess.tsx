@@ -12,7 +12,7 @@ const processSteps = [
     number: "02",
     title: "Location and Weather Verification",
     description:
-      "Before dispatch, we verify the rescue point using GPS coordinates, lodge or village names, helipad details, trail markers, or known locations such as Kala Patthar, Gorak Shep, Everest Base Camp, Lobuche, Pheriche, and Dingboche. Visibility, wind, cloud cover, terrain, and landing safety are checked.",
+      "Before dispatch, we verify the rescue point using GPS coordinates, lodge or village names, helipad details, trail markers, or known locations such as Kala Patthar, GorakShep, Everest Base Camp, Lobuche, Pheriche, and Dingboche. Visibility, wind, cloud cover, terrain, and landing safety are checked.",
     accent: "from-[#1e5aa8]/14 via-[#1e5aa8]/5 to-transparent",
   },
   {
@@ -95,7 +95,7 @@ export default function KalaPattharProcess() {
 
           <div className="mt-5 max-w-[860px] space-y-5 font-manrope text-[11px] leading-[1.8] text-[#4d5963] sm:text-[12px]">
             <p>
-              Every Kala Patthar and Gorak Shep rescue follows a structured
+              Every Kala Patthar and GorakShep rescue follows a structured
               emergency process designed to verify the patient&apos;s
               condition, exact location, current altitude, weather, landing
               access, aircraft requirements, and insurance or payment details

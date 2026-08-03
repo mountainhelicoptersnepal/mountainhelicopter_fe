@@ -15,7 +15,7 @@ export default function DailyFlights() {
           </h2>
           <p className="mt-3 text-[#4A5B76]">
             Fly in to start your trek, fly out when it ends, or fly straight home
-            from Gorak Shep without walking back to Lukla.
+            from GorakShep without walking back to Lukla.
           </p>
         </Reveal>
 
@@ -41,7 +41,6 @@ export default function DailyFlights() {
               ctaHref={waLink(
                 "Hi, I want to book a Kathmandu to Lukla helicopter seat.",
               )}
-              ctaVariant="gold"
             />
           </Reveal>
           <Reveal delay={0.08}>
@@ -70,10 +69,10 @@ export default function DailyFlights() {
           <Reveal delay={0.16}>
             <ServiceCard
               image="/images/everest-base-camp/everest-gallary1.jpg"
-              imageAlt="Helicopter pickup at Gorak Shep near Everest Base Camp"
-              route="GORAK SHEP → KTM · One Way"
-              title="Gorak Shep to Kathmandu"
-              desc="Reached Base Camp? Skip the three day walk back to Lukla. Morning pickup from Gorak Shep, lunch in Kathmandu."
+              imageAlt="Helicopter pickup at GorakShep near Everest Base Camp"
+              route="GorakShep → KTM · One Way"
+              title="GorakShep to Kathmandu"
+              desc="Reached Base Camp? Skip the three day walk back to Lukla. Morning pickup from GorakShep, lunch in Kathmandu."
               bullets={[
                 "Pickup at 5,164 m, the last stop before EBC",
                 "Save 3 trekking days on the return",
@@ -84,7 +83,7 @@ export default function DailyFlights() {
               priceNote="/ person"
               ctaLabel="Book Pickup"
               ctaHref={waLink(
-                "Hi, I want a helicopter pickup from Gorak Shep to Kathmandu after my EBC trek.",
+                "Hi, I want a helicopter pickup from GorakShep to Kathmandu after my EBC trek.",
               )}
             />
           </Reveal>

@@ -19,7 +19,7 @@ import { FAQS } from "@/components/mountainhelicopter/ads/lukla/constants";
 const TITLE =
   "Kathmandu to Lukla Helicopter | Everyday Departure | Everest Heli Tours | Mountain Helicopters Nepal";
 const DESCRIPTION =
-  "Everyday helicopter departures Kathmandu to Lukla and Lukla to Kathmandu. Gorak Shep pickup after your EBC trek. Everest heli tours with Kala Patthar landing, breakfast at Hotel Everest View, and Gokyo Lake overfly. CAAN certified, since 2009.";
+  "Everyday helicopter departures Kathmandu to Lukla and Lukla to Kathmandu. GorakShep pickup after your EBC trek. Everest heli tours with Kala Patthar landing, breakfast at Hotel Everest View, and Gokyo Lake overfly. CAAN certified, since 2009.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title:
       "Kathmandu to Lukla Helicopter | Everyday Departure | Mountain Helicopters Nepal",
     description:
-      "Fly the Everest Gateway without delays. Daily Kathmandu to Lukla helicopter departures, Gorak Shep pickups, and Everest tours with Kala Patthar landing.",
+      "Fly the Everest Gateway without delays. Daily Kathmandu to Lukla helicopter departures, GorakShep pickups, and Everest tours with Kala Patthar landing.",
     type: "website",
   },
   robots: {

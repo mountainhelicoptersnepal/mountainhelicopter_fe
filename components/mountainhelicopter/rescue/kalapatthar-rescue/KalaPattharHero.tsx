@@ -11,7 +11,7 @@ export default function KalaPattharRescueHero() {
         <div className="mx-auto grid min-h-[730px] max-w-[1440px] items-center gap-12 px-5 pb-16 pt-24 sm:px-8 sm:pb-20 sm:pt-28 lg:grid-cols-[1fr_300px] lg:px-12 lg:pb-20 lg:pt-32 xl:px-[80px] 2xl:px-[125px]">
         <div className="max-w-[920px]">
           <p className="font-manrope text-[10px] font-bold uppercase tracking-[0.24em] text-[#f2a10d]">
-            — Kala Patthar &amp; Gorak Shep // 24/7 Helicopter Rescue
+            — Kala Patthar &amp; GorakShep // 24/7 Helicopter Rescue
           </p>
 
           <h1 className="mt-7 max-w-[920px] font-fraunces text-[48px] font-semibold leading-[0.98] tracking-[-0.035em] text-[#f6f2ea] sm:text-[62px] lg:text-[76px] xl:text-[84px]">
@@ -19,16 +19,16 @@ export default function KalaPattharRescueHero() {
               <span className="italic text-[#f2a10d]">Kala Patthar</span> &amp;
             </span>
 
-            <span className="block">Gorak Shep</span>
+            <span className="block">GorakShep</span>
             <span className="block">Helicopter Rescue</span>
           </h1>
 
           <p className="mt-8 max-w-[800px] font-manrope text-[15px] leading-7 text-white/75 sm:text-[17px] sm:leading-8">
-            Kala Patthar and Gorak Shep helicopter rescue provides emergency
+            Kala Patthar and GorakShep helicopter rescue provides emergency
             evacuation for trekkers, climbers, guides and expedition members
             facing altitude illness, injury, severe weather or other urgent
             conditions in the upper Everest region. Rescue may be coordinated
-            from Kala Patthar, Gorak Shep, Everest Base Camp, Lobuche,
+            from Kala Patthar, GorakShep, Everest Base Camp, Lobuche,
             Pheriche, Dingboche and nearby safe pickup points.
           </p>
 
@@ -84,7 +84,7 @@ export default function KalaPattharRescueHero() {
               </p>
 
               <p className="mt-2 font-manrope text-[11px] leading-[1.6] text-white/65">
-                Kala Patthar, Gorak Shep, EBC, Lobuche and Pheriche
+                Kala Patthar, GorakShep, EBC, Lobuche and Pheriche
               </p>
             </div>
 

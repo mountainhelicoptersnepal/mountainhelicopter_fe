@@ -34,7 +34,9 @@ export default function BookingForm({
 }) {
   const minDate = useMemo(() => today(), []);
   const formStartedAt = useRef(0);
-  const [captcha, setCaptcha] = useState(randomCaptcha);
+  // Fixed values on first render so SSR and client hydration match;
+  // randomized client-side once mounted (see effect below).
+  const [captcha, setCaptcha] = useState({ a: 3, b: 4, sum: 7 });
   const [type, setType] = useState<string>(FLIGHT_TYPES[0]);
   const [date, setDate] = useState("");
   const [pax, setPax] = useState("2");
@@ -53,6 +55,10 @@ export default function BookingForm({
 
   useEffect(() => {
     formStartedAt.current = Date.now();
+    // Randomize only after mount: doing this during render would make the
+    // server-rendered numbers differ from the client's, causing a hydration mismatch.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setCaptcha(randomCaptcha());
   }, []);
 
   const refreshCaptcha = () => {

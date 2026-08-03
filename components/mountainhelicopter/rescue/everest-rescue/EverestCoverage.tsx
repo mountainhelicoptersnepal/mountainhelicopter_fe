@@ -41,7 +41,7 @@ const waypoints = [
     type: "point",
   },
   {
-    name: "Gorak Shep",
+    name: "GorakShep",
     altitude: 5164,
     type: "point",
   },

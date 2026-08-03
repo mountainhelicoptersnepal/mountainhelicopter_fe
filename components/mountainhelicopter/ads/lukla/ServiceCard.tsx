@@ -14,7 +14,6 @@ export default function ServiceCard({
   priceNote,
   ctaLabel,
   ctaHref,
-  ctaVariant = "blue",
 }: {
   image: string;
   imageAlt: string;
@@ -28,16 +27,10 @@ export default function ServiceCard({
   priceNote: string;
   ctaLabel: string;
   ctaHref: string;
-  ctaVariant?: "blue" | "gold";
 }) {
   return (
-    <article
-      className={`relative flex h-full flex-col rounded-[14px] border bg-white p-[30px_26px] ${
-        flagged
-          ? "border-2 border-[#F5AF00] shadow-[0_12px_34px_rgba(245,175,0,.15)]"
-          : "border-[#D7E2F2]"
-      }`}
-    >
+    <article className="relative flex h-full flex-col rounded-[14px] border border-[#D7E2F2] bg-white p-[30px_26px] transition-all duration-300 hover:border-2 hover:border-[#F5AF00] hover:shadow-[0_12px_34px_rgba(245,175,0,.15)]">
+
       <div className="relative -mx-[26px] -mt-[30px] mb-5 aspect-video overflow-hidden rounded-t-xl bg-[linear-gradient(140deg,#0C4396,#082F6B)]">
         <Image
           src={image}
@@ -86,11 +79,7 @@ export default function ServiceCard({
           href={ctaHref}
           target="_blank"
           rel="noopener"
-          className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 py-2.5 text-sm font-bold tracking-[.02em] transition active:scale-[.98] ${
-            ctaVariant === "gold"
-              ? "bg-[#F5AF00] text-[#051F49] shadow-[0_4px_14px_rgba(245,175,0,.35)] hover:bg-[#FFBE12]"
-              : "bg-[#0C4396] text-white hover:bg-[#0D4DAC]"
-          }`}
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[#0C4396] px-5 py-2.5 text-sm font-bold tracking-[.02em] text-white transition-colors duration-300 hover:bg-[#F5AF00] hover:text-[#051F49] active:scale-[.98]"
         >
           {ctaLabel}
         </a>

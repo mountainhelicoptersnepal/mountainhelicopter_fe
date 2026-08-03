@@ -26,7 +26,7 @@ const rescuePoints = [
     displayAltitude: "4,940 m",
   },
   {
-    location: "Gorak Shep",
+    location: "GorakShep",
     altitude: 5140,
     displayAltitude: "5,140 m",
   },
@@ -81,7 +81,7 @@ export default function KalaPattharCoverage() {
             </p>
 
             <p className="mt-3 max-w-[900px] font-manrope text-[11px] leading-[1.8] text-[#46545f] sm:text-[12px]">
-              Kala Patthar and Gorak Shep rescue operations follow the same
+              Kala Patthar and GorakShep rescue operations follow the same
               Everest-region dispatch, insurance and patient-transfer process.
               Every mission remains subject to current weather, aircraft
               availability, landing access, payload limitations and the
@@ -95,13 +95,13 @@ export default function KalaPattharCoverage() {
             </p>
 
             <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
-              Common Kala Patthar &amp; Gorak Shep{" "}
+              Common Kala Patthar &amp; GorakShep{" "}
               <span className="italic text-[#9b6b00]">rescue points.</span>
             </h2>
 
             <p className="mt-5 max-w-[820px] font-manrope text-[11px] leading-[1.8] text-[#4d5963] sm:text-[12px]">
               The upper Everest corridor climbs from Lukla through Pheriche and
-              Lobuche to Gorak Shep, Everest Base Camp and Kala Patthar. Rescue
+              Lobuche to GorakShep, Everest Base Camp and Kala Patthar. Rescue
               planning becomes increasingly sensitive to altitude, payload,
               weather, landing access and patient condition at each stage.
             </p>
@@ -173,7 +173,7 @@ export default function KalaPattharCoverage() {
             </p>
 
             <p className="font-manrope text-[10px] leading-[1.7] text-[#5b6872]">
-              Kala Patthar, Gorak Shep and Everest Base Camp rescues may require
+              Kala Patthar, GorakShep and Everest Base Camp rescues may require
               relocation to the safest available landing point.
             </p>
           </div>

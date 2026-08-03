@@ -33,7 +33,7 @@ const processSteps = [
     flightTimes: [
       ["Namche Bazaar", "55 minutes"],
       ["Pheriche", "65 minutes"],
-      ["Gorak Shep / EBC", "75 minutes"],
+      ["GorakShep / EBC", "75 minutes"],
       ["Annapurna region", "80 minutes (via Pokhara staging)"],
       ["Muktinath", "90 minutes (via Pokhara staging)"],
     ],

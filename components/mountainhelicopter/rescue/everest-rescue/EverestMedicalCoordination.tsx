@@ -110,7 +110,7 @@ export default function EverestMedicalCoordination() {
                 Certain morning weather patterns close Kathmandu departures
                 while the Khumbu remains flyable. On these days, Mountain
                 Helicopters can dispatch rescue aircraft directly from Lukla
-                (2,860 m), cutting the typical response time to Gorak Shep from
+                (2,860 m), cutting the typical response time to GorakShep from
                 about 80 minutes to under 30 minutes.
               </p>
 

@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "How much does Everest Helicopter Rescue cost?",
     answer:
-      "Everest Helicopter Rescue usually ranges from around USD 3,000 to USD 8,000 or more depending on pickup location, altitude, route, weather, aircraft positioning, and destination. Rescue from Gorak Shep or Everest Base Camp is generally more expensive than rescue from Namche, Pheriche, or Dingboche.",
+      "Everest Helicopter Rescue usually ranges from around USD 3,000 to USD 8,000 or more depending on pickup location, altitude, route, weather, aircraft positioning, and destination. Rescue from GorakShep or Everest Base Camp is generally more expensive than rescue from Namche, Pheriche, or Dingboche.",
   },
   {
     question: "Is insurance required for Everest Helicopter Rescue?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "What are the most common rescue points in the Everest region?",
     answer:
-      "Common rescue points include Everest Base Camp, Gorak Shep, Lobuche, Dingboche, Pheriche, Tengboche, Namche Bazaar, and Lukla.",
+      "Common rescue points include Everest Base Camp, GorakShep, Lobuche, Dingboche, Pheriche, Tengboche, Namche Bazaar, and Lukla.",
   },
   {
     question: "Can helicopter rescue be done in bad weather?",

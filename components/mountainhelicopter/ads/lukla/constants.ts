@@ -11,7 +11,7 @@ export const FLIGHT_TYPES = [
   "Kathmandu to Lukla, shared seat",
   "Lukla to Kathmandu, shared seat",
   "Round trip, Kathmandu ⇄ Lukla",
-  "Gorak Shep to Kathmandu, after EBC trek",
+  "GorakShep to Kathmandu, after EBC trek",
   "Everest Heli Tour: Kala Patthar landing + HEV breakfast",
   "Gokyo Lake + mountain overfly tour",
   "Private charter",
@@ -199,9 +199,9 @@ export const FAQS = [
       "Yes. Departures are scheduled every day in both directions, timed to the morning weather window. Mountain weather has the final word, and if a window closes you move to the next one at no charge.",
   },
   {
-    question: "Can you pick me up from Gorak Shep after Base Camp?",
+    question: "Can you pick me up from GorakShep after Base Camp?",
     answer:
-      "Yes. Message us from the trail a day ahead and we schedule a morning pickup from Gorak Shep at 5,164 m. At that altitude the helicopter carries fewer passengers per lift, so groups may shuttle via Pheriche or Lukla before flying on to Kathmandu. You are back the same day.",
+      "Yes. Message us from the trail a day ahead and we schedule a morning pickup from GorakShep at 5,164 m. At that altitude the helicopter carries fewer passengers per lift, so groups may shuttle via Pheriche or Lukla before flying on to Kathmandu. You are back the same day.",
   },
   {
     question: "How much luggage can I bring?",

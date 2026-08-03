@@ -13,7 +13,7 @@ const pickupCosts = [
     cost: "USD 3,500 - 6,000",
   },
   {
-    point: "Gorak Shep to Kathmandu",
+    point: "GorakShep to Kathmandu",
     cost: "USD 4,000 - 8,000",
   },
   {

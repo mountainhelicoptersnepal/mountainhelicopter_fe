@@ -41,7 +41,6 @@ export default function EverestTours() {
               ctaHref={waLink(
                 "Hi, I want to book the Everest Heli Tour with Kala Patthar landing and breakfast at Hotel Everest View.",
               )}
-              ctaVariant="gold"
             />
           </Reveal>
           <Reveal delay={0.08}>

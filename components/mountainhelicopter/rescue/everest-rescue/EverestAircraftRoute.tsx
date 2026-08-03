@@ -56,7 +56,7 @@ export default function EverestAircraftRoute() {
               weather pattern, and time of day. They know which lodges have
               accessible helipads. They know the ridge crossings that become
               dangerous at 09:00 in spring. They know Lukla ATC by first name.
-              When we fly a rescue at 04:30 from Gorak Shep, our pilots are not
+              When we fly a rescue at 04:30 from GorakShep, our pilots are not
               learning the route.
             </p>
 

@@ -25,7 +25,7 @@ const rescueCosts = [
     range: "3,500 – 6,000",
   },
   {
-    point: "Gorak Shep",
+    point: "GorakShep",
     typical: "USD 6,000",
     range: "4,000 – 8,000",
   },

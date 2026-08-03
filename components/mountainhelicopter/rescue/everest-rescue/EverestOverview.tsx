@@ -42,7 +42,7 @@ export default function EverestOverview() {
                 helicopter evacuations of trekkers, climbers, guides, expedition
                 crews, travel agencies, etc. Who requires urgent transport from
                 elevated points in the Everest region, including Everest Base
-                Camp, Gorak Shep, Lobuche, Dingboche, Pheriche, Namche Bazaar &
+                Camp, GorakShep, Lobuche, Dingboche, Pheriche, Namche Bazaar &
                 Lukla? The beauty of the Everest region can be misleading.
               </p>
 

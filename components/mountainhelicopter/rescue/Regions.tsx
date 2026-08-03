@@ -5,7 +5,7 @@ const regions = [
   {
     title: "Everest Region",
     places:
-      "EBC, Gorak Shep, Lobuche, Dingboche, Pheriche, Namche, Lukla",
+      "EBC, GorakShep, Lobuche, Dingboche, Pheriche, Namche, Lukla",
     response: "1h 30m",
     cost: "USD 2,800 – 8,000",
     image: "/images/rescue/regions/everest.jpg",
@@ -62,8 +62,8 @@ const regions = [
     href: "/rescue/mardi-helicopter-rescue",
   },
   {
-    title: "Kala Patthar / Gorak Shep",
-    places: "Kala Patthar landing point, Gorak Shep",
+    title: "Kala Patthar / GorakShep",
+    places: "Kala Patthar landing point, GorakShep",
     response: "1h 30m",
     cost: "USD 4,000 – 8,500",
     image: "/images/rescue/regions/kala-patthar.jpg",

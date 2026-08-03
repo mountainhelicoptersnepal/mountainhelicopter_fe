@@ -25,6 +25,8 @@ export default function Hero() {
           <h1 className="font-fraunces text-[clamp(2.05rem,4.8vw,3.5rem)] font-black leading-[1.12] tracking-[-.015em]">
             Kathmandu to Lukla by helicopter.{" "}
             <em className="not-italic text-[#F5AF00]">45 minutes, no delays.</em>
+            <br/>
+             <em className="not-italic text-[#F5AF00]">No Cancellation.</em>
           </h1>
 
           <p className="mt-5 max-w-[520px] text-[clamp(1rem,1.9vw,1.18rem)] text-[#C9DAF5]">

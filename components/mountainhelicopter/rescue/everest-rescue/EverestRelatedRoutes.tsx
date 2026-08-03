@@ -10,7 +10,7 @@ const rescueRoutes = [
     href: "/helicopter-rescue/kala-patthar-helicopter-rescue",
   },
   {
-    title: "Gorak Shep Helicopter Rescue",
+    title: "GorakShep Helicopter Rescue",
     meta: "5,140 m · staging point for EBC visits",
     href: "/helicopter-rescue/gorak-shep-helicopter-rescue",
   },
