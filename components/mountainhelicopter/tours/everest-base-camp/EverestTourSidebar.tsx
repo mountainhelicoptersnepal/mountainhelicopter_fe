@@ -195,9 +195,7 @@ export default function EverestTourSidebar() {
                 >
                   <span className="text-slate-500">{person}</span>
 
-                  <span className="font-semibold text-[#0a4775]">
-                    {price}
-                  </span>
+                  <span className="font-semibold text-[#0a4775]">{price}</span>
                 </div>
               ))}
             </div>
@@ -271,7 +269,7 @@ export default function EverestTourSidebar() {
 
             <div>
               <h3 className="font-fraunces text-base font-semibold text-[#0a3158]">
-                Pemba Sherpa
+                Ojan Parajuli
               </h3>
 
               <p className="font-manrope text-[9px] font-semibold text-[#d59a1b]">
@@ -309,8 +307,8 @@ export default function EverestTourSidebar() {
           </div>
 
           <p className="mt-4 font-manrope text-[10px] leading-5 text-slate-500">
-            Need help choosing the perfect helicopter experience? Our
-            Himalayan travel specialists are here to guide you.
+            Need help choosing the perfect helicopter experience? Our Himalayan
+            travel specialists are here to guide you.
           </p>
 
           <a
@@ -320,7 +318,7 @@ export default function EverestTourSidebar() {
             className="mt-4 flex min-h-10 w-full items-center justify-center gap-2 rounded-sm bg-[#25d366] px-4 font-manrope text-[10px] font-bold text-white transition hover:bg-[#1fb95a]"
           >
             <MessageCircle size={14} fill="currentColor" />
-            WhatsApp Pemba
+            WhatsApp Ojan
           </a>
 
           <div className="mt-3 grid grid-cols-2">
@@ -333,7 +331,7 @@ export default function EverestTourSidebar() {
             </a>
 
             <a
-              href="mailto:resources.mountainlhelicopters@gmail.com"
+              href="mailto:info@mountainlhelicoptersnepal.com"
               className="flex min-h-9 items-center justify-center gap-2 border-y border-r border-slate-200 font-manrope text-[9px] font-semibold text-[#0a3158] transition hover:bg-slate-50"
             >
               <Mail size={12} />
@@ -360,29 +358,11 @@ function ShareIcon() {
       fill="none"
       aria-hidden="true"
     >
-      <circle
-        cx="18"
-        cy="5"
-        r="3"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
+      <circle cx="18" cy="5" r="3" stroke="currentColor" strokeWidth="1.8" />
 
-      <circle
-        cx="6"
-        cy="12"
-        r="3"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
+      <circle cx="6" cy="12" r="3" stroke="currentColor" strokeWidth="1.8" />
 
-      <circle
-        cx="18"
-        cy="19"
-        r="3"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
+      <circle cx="18" cy="19" r="3" stroke="currentColor" strokeWidth="1.8" />
 
       <path
         d="M8.6 10.5 15.4 6.6M8.6 13.5l6.8 3.9"

@@ -7,7 +7,7 @@ const plans = [
     price: "$1,100",
     unit: "per person",
     button: "Book Shared Seat",
-    href: "/contact",
+    href: "/contact#inquiry-form",
     featured: false,
     features: [
       "Hotel pickup & drop in Kathmandu",
@@ -25,7 +25,7 @@ const plans = [
     price: "$5,800",
     unit: "per helicopter",
     button: "Charter the Helicopter",
-    href: "/charter",
+    href: "/contact#inquiry-form",
     featured: true,
     features: [
       "Everything in Shared Seat",

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const fleet = [
   {
@@ -51,59 +52,63 @@ export default function FleetSection() {
         {/* FLEET CARDS */}
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {fleet.map((aircraft) => (
-            <article
+            <Link
               key={aircraft.registration}
-              className="group overflow-hidden rounded-[22px] border border-slate-200 bg-white shadow-[0_10px_30px_rgba(8,41,77,0.04)] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#d99a1b]/50 hover:shadow-[0_24px_55px_rgba(8,41,77,0.14)]"
+              href="/fleet"
+              className="group block"
+              aria-label={`View fleet details for ${aircraft.registration}`}
             >
-              {/* AIRCRAFT IMAGE */}
-              <div className="relative h-56 w-full overflow-hidden md:h-64">
-                <Image
-                  src={aircraft.image}
-                  alt={`${aircraft.registration} ${aircraft.model}`}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+              <article className="h-full overflow-hidden rounded-[22px] border border-slate-200 bg-white shadow-[0_10px_30px_rgba(8,41,77,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:border-[#d99a1b]/50 group-hover:shadow-[0_24px_55px_rgba(8,41,77,0.14)]">
+                {/* AIRCRAFT IMAGE */}
+                <div className="relative h-56 w-full overflow-hidden md:h-64">
+                  <Image
+                    src={aircraft.image}
+                    alt={`${aircraft.registration} ${aircraft.model}`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
 
-                <div className="absolute inset-0 bg-[#08294d]/20 transition-colors duration-500 group-hover:bg-[#08294d]/10" />
+                  <div className="absolute inset-0 bg-[#08294d]/20 transition-colors duration-500 group-hover:bg-[#08294d]/10" />
 
-                {/* HOVER GOLD LINE */}
-                <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#e0a326] transition-all duration-500 group-hover:w-full" />
-              </div>
-
-              {/* CARD CONTENT */}
-              <div className="p-6 md:p-7">
-                <h3 className="font-fraunces text-xl font-semibold text-[#08294d] transition-colors duration-300 group-hover:text-[#d99a1b]">
-                  {aircraft.registration}
-                </h3>
-
-                <p className="mt-1 font-manrope text-xs font-bold uppercase tracking-[0.14em] text-slate-500 transition-colors duration-300 group-hover:text-[#08294d]">
-                  {aircraft.model}
-                </p>
-
-                {/* AIRCRAFT SPECIFICATIONS */}
-                <div className="mt-6">
-                  {aircraft.specs.map(([label, value]) => (
-                    <div
-                      key={label}
-                      className="flex items-start justify-between gap-5 border-b border-slate-100 px-2 py-3 transition-all duration-300 hover:bg-[#fff9ec]"
-                    >
-                      <span className="font-manrope text-xs text-slate-500 transition-colors duration-300">
-                        {label}
-                      </span>
-
-                      <span className="max-w-[55%] text-right font-manrope text-xs font-semibold leading-5 text-[#08294d]">
-                        {value}
-                      </span>
-                    </div>
-                  ))}
+                  {/* HOVER GOLD LINE */}
+                  <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#e0a326] transition-all duration-500 group-hover:w-full" />
                 </div>
 
-                <p className="mt-6 font-manrope text-sm leading-7 text-slate-500 transition-colors duration-300 group-hover:text-slate-600">
-                  {aircraft.description}
-                </p>
-              </div>
-            </article>
+                {/* CARD CONTENT */}
+                <div className="p-6 md:p-7">
+                  <h3 className="font-fraunces text-xl font-semibold text-[#08294d] transition-colors duration-300 group-hover:text-[#d99a1b]">
+                    {aircraft.registration}
+                  </h3>
+
+                  <p className="mt-1 font-manrope text-xs font-bold uppercase tracking-[0.14em] text-slate-500 transition-colors duration-300 group-hover:text-[#08294d]">
+                    {aircraft.model}
+                  </p>
+
+                  {/* AIRCRAFT SPECIFICATIONS */}
+                  <div className="mt-6">
+                    {aircraft.specs.map(([label, value]) => (
+                      <div
+                        key={label}
+                        className="flex items-start justify-between gap-5 border-b border-slate-100 px-2 py-3 transition-all duration-300 hover:bg-[#fff9ec]"
+                      >
+                        <span className="font-manrope text-xs text-slate-500 transition-colors duration-300">
+                          {label}
+                        </span>
+
+                        <span className="max-w-[55%] text-right font-manrope text-xs font-semibold leading-5 text-[#08294d]">
+                          {value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <p className="mt-6 font-manrope text-sm leading-7 text-slate-500 transition-colors duration-300 group-hover:text-slate-600">
+                    {aircraft.description}
+                  </p>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
       </div>
