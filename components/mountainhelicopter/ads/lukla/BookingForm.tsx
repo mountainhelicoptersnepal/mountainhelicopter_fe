@@ -1,7 +1,7 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
-import { submitInquiry } from "@/lib/inquiries";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { submitAdsLuklaBooking } from "@/lib/ads-lukla-bookings";
 import { DIAL_CODES, FLIGHT_TYPES, PHONE_TEL } from "./constants";
 
 const NAME_RE = /^[A-Za-zÀ-ɏ' .-]{2,60}$/;
@@ -33,13 +33,14 @@ export default function BookingForm({
   heading?: boolean;
 }) {
   const minDate = useMemo(() => today(), []);
+  const formStartedAt = useRef(0);
   const [captcha, setCaptcha] = useState(randomCaptcha);
   const [type, setType] = useState<string>(FLIGHT_TYPES[0]);
   const [date, setDate] = useState("");
   const [pax, setPax] = useState("2");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [cc, setCc] = useState("+977");
+  const [countryDialCode, setCountryDialCode] = useState("Nepal|+977");
   const [phone, setPhone] = useState("");
   const [website, setWebsite] = useState(""); // honeypot
   const [captchaAnswer, setCaptchaAnswer] = useState("");
@@ -49,6 +50,10 @@ export default function BookingForm({
   const [serverError, setServerError] = useState("");
 
   const id = (name: string) => `${idPrefix}-${name}`;
+
+  useEffect(() => {
+    formStartedAt.current = Date.now();
+  }, []);
 
   const refreshCaptcha = () => {
     setCaptcha(randomCaptcha());
@@ -75,6 +80,9 @@ export default function BookingForm({
     if (!date || date < minDate) {
       nextErrors.date = "Pick a date from today onward.";
     }
+    if (Date.now() - formStartedAt.current < 2500) {
+      nextErrors.captcha = "Please take a moment and try again.";
+    }
     if (parseInt(captchaAnswer, 10) !== captcha.sum) {
       nextErrors.captcha = "That answer is not right. Try the new question.";
     }
@@ -87,19 +95,26 @@ export default function BookingForm({
 
     setSubmitting(true);
     try {
-      await submitInquiry({
+      const [countryName, countryCode] = countryDialCode.split("|");
+      await submitAdsLuklaBooking({
+        flight_type: type,
+        travel_date: date,
+        passengers: pax === "More than 5" ? 6 : Number(pax),
         full_name: name.trim(),
         email: email.trim(),
-        phone: `${cc} ${digits}`,
-        group_size: pax === "More than 5" ? 6 : Number(pax),
-        service_type: type,
-        preferred_date: date,
-        message: `Ad landing page (Kathmandu ↔ Lukla): ${type}`,
+        country_name: countryName,
+        country_code: countryCode,
+        phone_number: digits,
+        captcha_question: `${captcha.a} + ${captcha.b}`,
+        captcha_answer: Number(captchaAnswer),
       });
       setSubmitted(true);
-    } catch {
+    } catch (error) {
+      console.error("Ads booking submission failed:", error);
       setServerError(
-        "Something went wrong sending your request. Please try WhatsApp instead.",
+        error instanceof Error
+          ? error.message
+          : "Something went wrong sending your request. Please try WhatsApp instead.",
       );
     } finally {
       setSubmitting(false);
@@ -236,12 +251,12 @@ export default function BookingForm({
             id={id("cc")}
             name="cc"
             aria-label="Country code"
-            value={cc}
-            onChange={(e) => setCc(e.target.value)}
+            value={countryDialCode}
+            onChange={(e) => setCountryDialCode(e.target.value)}
             className="rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-2 py-3 font-sans text-[14.5px] text-[#12233F] focus:border-[#0C4396] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#0C4396]"
           >
             {DIAL_CODES.map(([country, code], i) => (
-              <option key={`${country}-${i}`} value={code}>
+              <option key={`${country}-${i}`} value={`${country}|${code}`}>
                 {country} ({code})
               </option>
             ))}
