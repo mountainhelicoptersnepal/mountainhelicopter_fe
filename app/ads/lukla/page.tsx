@@ -31,6 +31,14 @@ export const metadata: Metadata = {
       "Fly the Everest Gateway without delays. Daily Kathmandu to Lukla helicopter departures, Gorak Shep pickups, and Everest tours with Kala Patthar landing.",
     type: "website",
   },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 const faqJsonLd = {

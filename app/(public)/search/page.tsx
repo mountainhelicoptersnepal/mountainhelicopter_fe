@@ -1,9 +1,21 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Search } from "lucide-react";
 
 import BlogCard from "@/components/shared/cards/BlogCard";
 import { blogPosts } from "@/lib/blogs";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};
 
 type SearchPageProps = {
   searchParams: Promise<{
