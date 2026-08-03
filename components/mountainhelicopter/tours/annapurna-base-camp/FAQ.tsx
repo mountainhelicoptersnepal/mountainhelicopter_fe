@@ -5,35 +5,76 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How fast do you actually respond?",
+    question:
+      "How long does the Annapurna Base Camp helicopter tour take?",
     answer:
-      "WhatsApp messages are typically answered within 5 minutes during operating hours. Email and form inquiries within 2 hours. Emergency rescue calls are answered immediately, any hour of the day or night.",
-  },
-  {
-    question: "What information should I include in my inquiry?",
-    answer:
-      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission — filming, cargo, expedition support — so we can allocate the right configuration.",
-  },
-  {
-    question: "Can I visit the office without an appointment?",
-    answer:
-      "Yes — walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
+      "From Pokhara, the complete experience normally takes approximately 2 to 3 hours, including hotel transfers, airport procedures, the helicopter flight and ground time at Annapurna Base Camp. A one-way flight from Pokhara generally takes around 20 to 25 minutes. Flights from Kathmandu require more time and may include operational or refuelling stops.",
   },
   {
     question:
-      "I'm calling about an emergency rescue. What do you need from me?",
+      "Where does the helicopter land during the Annapurna tour?",
     answer:
-      "Three things: the patient's location, their condition, and the number of people needing evacuation. If the patient has travel insurance with heli-rescue cover, have the policy number ready.",
+      "The planned landing is at Annapurna Base Camp, approximately 4,130 metres above sea level. The exact landing point is selected by the pilot according to wind, snow, visibility, passenger weight and current landing-zone conditions. When landing at ABC is not considered safe, the pilot may change the route, use an approved lower-altitude landing or return to Pokhara.",
   },
   {
-    question: "Which languages does your team speak?",
+    question:
+      "How much time do passengers receive at Annapurna Base Camp?",
     answer:
-      "English, Nepali, and Hindi — spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
+      "Passengers normally receive approximately 30 to 45 minutes at Annapurna Base Camp. During this time, you can take photographs, enjoy the mountain views, walk around the permitted area and have hot tea or breakfast when lodge services are available. The pilot may shorten the landing because of changing weather, wind, aircraft performance or passenger health.",
   },
   {
-    question: "How do payments work?",
+    question:
+      "Is the Annapurna Base Camp helicopter tour safe for children and elderly passengers?",
     answer:
-      "A 30% deposit confirms your booking; the balance is due on flight day. We accept bank transfer, credit card, cash, eSewa, and Khalti. If we cancel for weather, you choose full refund or free reschedule.",
+      "The tour does not require trekking or advanced physical fitness, so many families and older passengers can participate. However, Annapurna Base Camp is located at 4,130 metres, where oxygen availability is lower than at sea level. Children, elderly travellers and passengers with heart, lung, blood-pressure or mobility concerns should consult a qualified healthcare professional before booking.",
+  },
+  {
+    question:
+      "Can altitude sickness occur during the ABC helicopter tour?",
+    answer:
+      "Mild altitude symptoms can occur because the helicopter ascends rapidly from Pokhara to 4,130 metres. Some passengers may experience a light headache, faster heartbeat, mild breathlessness, dizziness or nausea. Move slowly, avoid running and inform the pilot immediately if you feel unwell. Supplemental oxygen and a first-aid kit are carried onboard.",
+  },
+  {
+    question:
+      "What happens when the weather is unsuitable for the flight?",
+    answer:
+      "The flight may be delayed, rescheduled, rerouted or cancelled when poor visibility, cloud, rain, snowfall or strong winds make the route unsafe. Eligible passengers may receive a rescheduled departure or a refund according to the confirmed booking terms. The pilot has final authority over all departure, route and landing decisions.",
+  },
+  {
+    question:
+      "What should I wear for the Annapurna Base Camp helicopter tour?",
+    answer:
+      "Wear thermal base layers, a fleece or light insulating layer and a warm windproof down jacket. Bring gloves, a hat covering the ears, UV-protective sunglasses, sunscreen and comfortable walking shoes or light hiking boots. Annapurna Base Camp can be cold and windy even when Pokhara is warm.",
+  },
+  {
+    question:
+      "Are ACAP and TIMS permits required for the helicopter tour?",
+    answer:
+      "An Annapurna Conservation Area Permit, commonly known as ACAP, is required for entry into the Annapurna Conservation Area and can be arranged as part of the confirmed package. A TIMS card may be required when the helicopter journey is combined with trekking. The final documentation requirement depends on your itinerary, nationality and type of trip.",
+  },
+  {
+    question:
+      "Why is passenger weight required before confirming the flight?",
+    answer:
+      "Accurate passenger weight is required for aircraft balance, payload planning, fuel calculation and high-altitude performance. Annapurna Base Camp is located at 4,130 metres, where helicopter lifting performance is lower than at Pokhara. The operations team may arrange weight distribution, passenger grouping or additional flight rotations when necessary.",
+  },
+  {
+    question:
+      "Can I book the Annapurna helicopter tour for two or three passengers?",
+    answer:
+      "Yes. Two or three passengers may join a shared departure when matching seats are available. The operations team can combine your booking with other travellers. A private charter is available when you prefer the complete helicopter, greater privacy and more control over the departure schedule.",
+  },
+  {
+    question:
+      "Is breakfast included in the Annapurna Base Camp helicopter tour?",
+    answer:
+      "Hot tea, beverages or breakfast may be included according to the selected package and lodge availability at Annapurna Base Camp. Food service can be affected by the season, weather, lodge operation and available ground time. Your booking confirmation will clearly state what is included.",
+  },
+  {
+    question:
+      "How many passengers can fly in the Airbus H125 helicopter?",
+    answer:
+      "The Airbus H125 can carry up to five passengers plus the pilot under suitable conditions. The actual passenger capacity may be reduced according to total passenger weight, baggage, fuel requirements, weather and high-altitude aircraft performance.",
   },
 ];
 

@@ -1,25 +1,27 @@
 import { CircleX } from "lucide-react";
 
 const landingExpectations = [
-  "Slightly increased heart rate as your body works harder to circulate oxygen.",
-  "A mild feeling of breathlessness when moving quickly.",
-  "A possible slight headache if you are sensitive to altitude.",
-  "Feeling colder than usual despite similar outdoor temperatures.",
+   "You may feel mildly short of breath when walking or climbing steps.",
+  "A slight headache or faster heart rate may occur after the rapid ascent.",
+  "Cold temperatures and dry mountain air may make breathing feel different.",
+  "These mild sensations often improve after returning to a lower altitude.",
 ];
 
 const safetyActions = [
-  "Move slowly and deliberately. Do not run.",
-  "Breathe steadily and deeply.",
-  "Stay hydrated and drink water before the flight.",
-  "Inform the pilot immediately if you feel unwell.",
-  "Use the supplemental oxygen onboard if needed.",
+  "Move slowly and avoid running or unnecessary physical exertion.",
+  "Breathe steadily and take regular pauses while walking.",
+  "Stay hydrated before and during the tour.",
+  "Remain within the permitted landing area and follow the pilot’s instructions.",
+  "Inform the pilot immediately if you feel dizzy, nauseous, unusually weak or severely short of breath.",
+  "Use the supplemental oxygen onboard when instructed by the pilot or crew.",
 ];
 
 const contraindications = [
-  "A history of serious heart conditions or unstable high blood pressure.",
+   "A history of serious heart conditions or unstable high blood pressure.",
   "Chronic respiratory conditions such as COPD or severe asthma.",
-  "Pregnancy, especially after the first trimester, because rapid high-altitude landings may not be suitable.",
-  "Major surgery within the last six weeks.",
+  "Pregnancy, particularly after the first trimester, unless approved by your doctor.",
+  "Major surgery, serious illness or hospitalisation within the previous six weeks.",
+  "Any medical condition that may be affected by rapid ascent to high altitude.",
 ];
 
 export default function HealthSafetyGuidelines() {
@@ -46,12 +48,11 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-6 font-manrope text-sm leading-7 text-white/65 md:text-base md:leading-8">
-            At Kala Patthar, 5,545 metres above sea level, atmospheric pressure
-            is approximately 53% of sea-level pressure. This means each breath
-            delivers substantially less oxygen than at lower elevations. Most
-            healthy passengers tolerate a short landing of around 10 to 15
-            minutes without serious difficulty, but the body may still react to
-            the rapid increase in altitude.
+          At Annapurna Base Camp, 4,130 metres above sea level, atmospheric
+            pressure and available oxygen are roughly 60–62% of sea-level
+            conditions. Most healthy passengers tolerate a short landing
+            without serious difficulty, but the rapid altitude change can
+            produce mild and temporary symptoms.
           </p>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">

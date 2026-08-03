@@ -2,23 +2,23 @@ import { CloudRain, PlaneLanding, UserRoundX } from "lucide-react";
 
 const passengerCancellationRules = [
   {
-    period: ">30D",
+    period: ">72H",
     description:
-      "If cancellations are made more than 30 days in advance of departure, we will grant a full refund, less a small USD 50 administrative fee per person to cover costs incurred.",
+      "Cancellations made more than 72 hours before departure are eligible for a full refund, less a USD 50 administrative fee per passenger for costs already incurred.",
     accent: "border-[#d4dae2]",
     periodClass: "text-[#0a4f82]",
   },
   {
-    period: "7–30D",
+    period: "24–48H",
     description:
-      "Cancellations between 7 to 30 days of departure are 75% refundable.",
+      "Cancellations made between 24 and 48 hours before the scheduled departure are eligible for a 75% refund.",
     accent: "border-[#d5a023]",
     periodClass: "text-[#a6770c]",
   },
   {
-    period: "<7D",
+    period: "<24H",
     description:
-      "Cancellations less than 7 days of departure or no-shows incur a 50% charge.",
+      "Cancellations made less than 24 hours before departure, as well as passenger no-shows, incur a 50% cancellation charge.",
     accent: "border-[#d92626]",
     periodClass: "text-[#c71919]",
   },
@@ -35,10 +35,10 @@ export default function CancellationPolicy() {
           </h2>
 
           <p className="mt-3 max-w-5xl font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
-            Since weather conditions in Nepal&apos;s mountain regions change
-            rapidly and can be unpredictable, we&apos;ve developed the
-            following cancellation policy so you aren&apos;t hit with
-            unexpected charges:
+             Mountain aviation in Nepal is affected by rapidly changing weather,
+            visibility and wind conditions. These policies are designed to
+            provide clear options when the Annapurna Base Camp flight cannot
+            operate as planned.
           </p>
         </div>
 
@@ -55,12 +55,18 @@ export default function CancellationPolicy() {
             </h3>
 
             <p className="mt-5 font-manrope text-sm leading-7 text-[#4f5965]">
-              If the flight is cancelled due to fog, rain or heavy winds in
-              Kathmandu or at Kala Patthar then you are eligible to choose
-              between a same-day full cash refund, reschedule your tour valid
-              for 1 year for free or use the same credit for any other route,
-              so long as the morning has a clear flight path.
+              If Mountain Helicopters Nepal cancels the flight because of poor
+              visibility, rain, cloud, snowfall or strong winds at Pokhara,
+              along the route or at Annapurna Base Camp, eligible passengers
+              may choose a full refund or move the booking to the next suitable
+              departure.
             </p>
+
+            <p className="mt-5 font-manrope text-sm leading-7 text-[#4f5965]">
+               Rescheduled flights remain subject to improved weather, aircraft
+              availability and the pilot&apos;s operational approval.
+            </p>
+            
           </article>
 
           {/* PILOT DECISION */}
@@ -74,14 +80,11 @@ export default function CancellationPolicy() {
             </h3>
 
             <p className="mt-5 font-manrope text-sm leading-7 text-[#4f5965]">
-              With regards to the pilot&apos;s judgment whether it is cloudy
-              and it is good enough to fly down to safe landing in Kala Patthar
-              at 5,545 m or not, the pilot has every discretion to fly down to a
-              viewpoint at a much safer altitude than Kala Patthar and the
-              decision is either landing down to Pheriche or to Syangboche /
-              Hotel Everest View; else fly back to Kathmandu. There will then be
-              a partial refund based on the flying time already covered.
+             The pilot has final authority over departure, route and landing decisions. If conditions are unsuitable for landing at Annapurna Base Camp, the pilot may continue as a scenic flight, use a lower-altitude landing such as Chhomrong or Mardi Himal Base Camp when permitted and operationally safe, or return directly to Pokhara.
             </p>
+             <p className="mt-5 font-manrope text-sm leading-7 text-[#4f5965]">
+              When part of the planned flight has already been completed, any applicable refund will be calculated after deducting the flight time, fuel, airport services, permits and other services already used.
+             </p>
           </article>
 
           {/* PASSENGER CANCELLATION */}
@@ -118,10 +121,7 @@ export default function CancellationPolicy() {
         {/* IMPORTANT NOTE */}
         <div className="mt-10 rounded-2xl border border-[#e7d5a8] bg-[#fffaf0] px-5 py-5 md:px-7">
           <p className="font-manrope text-xs leading-6 text-[#6f6245]">
-            All refunds are calculated according to the final booking agreement
-            and the services already used. Bank charges, payment gateway fees,
-            currency conversion differences and non-refundable third-party
-            expenses may be deducted where applicable.
+            Cancellation requests submitted between 48 and 72 hours before departure will be handled according to the terms stated in the confirmed booking agreement. Bank charges, payment-gateway fees, foreign-exchange differences and non-refundable third-party costs may be deducted from any approved refund.
           </p>
         </div>
       </div>

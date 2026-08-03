@@ -1,97 +1,109 @@
 const itineraryItems = [
-  {
+   {
     number: "01",
-    time: "05:30h",
+    time: "06:00h",
     title: "Hotel Pickup in Kathmandu",
     description:
-      "A private vehicle collects you from your hotel in Kathmandu or Thamel. The 20-minute drive to Tribhuvan International Airport gives you a quiet view of the city before dawn. Bring your passport or identification, warm layers, and approximately USD 51 in cash for permits.",
+      "Your Gosaikunda Helicopter Tour begins with an early-morning pickup from your hotel in Kathmandu or Thamel. A private vehicle transfers you to the domestic terminal at Tribhuvan International Airport.",
+    bullets: [
+      "Carry your passport or valid identification.",
+      "Wear warm, layered and windproof clothing.",
+      "Bring sunglasses, sunscreen and personal medication.",
+      "Keep your luggage within the confirmed helicopter allowance.",
+    ],
   },
   {
     number: "02",
-    time: "06:00h",
-    title:
-      "Arrival at Tribhuvan International Airport (Domestic Terminal)",
+    time: "06:20h",
+    title: "Airport Check-In and Safety Briefing",
     description:
-      "After pickup, you are taken directly to the domestic terminal helipad area. Our ground team will already have processed your permit documentation from the previous day.",
+      "Upon arrival at the domestic terminal, our ground team assists with passenger registration, identification checks, permit documentation and final weight verification before boarding.",
     bullets: [
-      "Receive your Sagarmatha National Park entry permit and Khumbu Pasang Lhamu Rural Municipality permit.",
-      "Attend a mandatory pre-flight safety briefing covering oxygen use, emergency procedures, high-altitude precautions, and landing instructions.",
-      "Meet your CAAN-certified mountain pilots.",
-      "Complete final luggage and passenger weight checks.",
+      "Receive your Langtang National Park entry permit.",
+      "Attend the mandatory pre-flight safety briefing.",
+      "Review helicopter boarding and landing procedures.",
+      "Receive guidance about rapid altitude gain and oxygen use.",
     ],
   },
   {
     number: "03",
     time: "06:30h",
-    title: "Departure From Kathmandu",
+    title: "Helicopter Departure From Kathmandu",
     description:
-      "The helicopter departs Kathmandu and heads northeast. Within minutes, the city and temples disappear beneath the aircraft, revealing the Himalayan foothills and the first line of snow-covered peaks. Your pilot provides commentary and points out major landmarks along the route.",
+      "The Airbus H125 departs Kathmandu and flies north toward the Langtang region. Within minutes, the city disappears beneath the aircraft as forested hills, terraced farmland and Himalayan valleys come into view.",
   },
   {
     number: "04",
-    time: "07:15h",
-    title: "Refuelling Stop at Lukla, Tenzing-Hillary Airport (2,860m)",
+    time: "06:35h",
+    title: "Flyover of Shivapuri National Park",
     description:
-      "The helicopter makes a short refuelling stop at Lukla Airport, known for its short mountain runway and dramatic location. Passengers may briefly step outside when operational conditions permit and observe one of the world's most famous mountain airstrips.",
+      "The flight crosses the green ridges and dense forests of Shivapuri National Park. On a clear morning, passengers can see the Kathmandu Valley behind them and the first Himalayan ridgelines ahead.",
   },
   {
     number: "05",
-    time: "07:30h",
-    title: "Flyover at Namche Bazaar (3,440m)",
+    time: "06:40h",
+    title: "Tamang Villages and Langtang Valley Views",
     description:
-      "Fly above Namche Bazaar, the main trading centre of the Khumbu region. From the aircraft, you can see the curved settlement, terraced slopes, monasteries, trekking trails, and the valley leading deeper into the Everest region.",
+      "The helicopter continues over traditional Tamang settlements, slate-roofed houses, terraced fields and remote valleys leading toward the Langtang Himal.",
+    bullets: [
+      "Traditional Tamang mountain villages.",
+      "Forested valleys and alpine ridges.",
+      "Langtang Lirung and Dorje Lakpa.",
+      "Ganesh Himal and surrounding peaks.",
+    ],
   },
   {
     number: "06",
-    time: "07:55h",
-    title: "Flyover at Tengboche Monastery (3,860m)",
+    time: "Around 06:50h",
+    title: "Approach to the Sacred Alpine Lakes",
     description:
-      "Pass Tengboche Monastery, one of the most important Buddhist sites in the Everest region. The monastery sits on a forested ridge with panoramic views toward Ama Dablam, Everest, Lhotse, and surrounding peaks.",
+      "As the aircraft climbs toward 4,000 metres, the forested landscape gives way to rocky alpine terrain, snow-covered ridges and the sacred lake system surrounding Gosaikunda.",
   },
   {
     number: "07",
-    time: "08:05h",
-    title: "Flyover at Pheriche (4,240m)",
+    time: "Around 07:00h",
+    title: "Landing at Gosaikunda Lake (4,380m)",
     description:
-      "The helicopter continues over Pheriche, a high-altitude village and acclimatization stop for trekkers. The settlement is also known for its seasonal medical clinic and its position beneath the surrounding Himalayan walls.",
+      "When weather and landing conditions permit, the helicopter lands close to Gosaikunda Lake. The sacred lake sits among rocky slopes, prayer flags and high Himalayan ridges.",
+    note:
+      "The final landing point is selected by the pilot according to wind, visibility, snow, passenger weight, aircraft performance and current ground conditions.",
   },
   {
     number: "08",
-    time: "08:30h",
-    title: "Flyover at Everest Base Camp (5,364m)",
+    time: "07:00–07:40h",
+    title: "Explore Gosaikunda",
     description:
-      "The aircraft flies above Everest Base Camp, the Khumbu Glacier, expedition tents, and the surrounding icefall. Landing directly at Everest Base Camp is not permitted for scheduled tourist helicopter operations, so the flight continues toward Kala Patthar for the landing experience.",
+      "Passengers normally receive approximately 30 to 40 minutes beside the lake for sightseeing, photography and religious observance.",
+    bullets: [
+      "Walk carefully around the permitted landing area.",
+      "Offer a short prayer or perform a brief puja.",
+      "Touch the sacred water when conditions allow.",
+      "Photograph Gosaikunda, Bhairab Kunda and nearby ridges.",
+      "Observe the surrounding Langtang and Ganesh Himal mountains.",
+    ],
+    note:
+      "At 4,380 metres, oxygen availability is considerably lower than at sea level. Move slowly, avoid running and immediately inform the pilot if you experience dizziness, nausea, severe headache or unusual breathlessness.",
   },
   {
     number: "09",
-    time: "10:00h",
-    title: "Landing at Kala Patthar (5,545m / 18,192 ft)",
+    time: "Around 07:40h",
+    title: "Return Flight to Kathmandu",
     description:
-      "Land at Kala Patthar, one of the most extraordinary viewpoints in the Himalayas. The landing normally lasts around 10 to 15 minutes, depending on weather, aircraft performance, and passenger condition.",
-    bullets: [
-      "Mount Everest and the Southwest Face.",
-      "Lhotse and the South Col.",
-      "Nuptse and the surrounding ridgelines.",
-      "Pumori rising directly behind Kala Patthar.",
-      "The Khumbu Glacier and Khumbu Icefall.",
-      "Everest Base Camp beneath the aircraft.",
-    ],
-    note:
-      "At 5,545 metres, oxygen levels are significantly lower than at sea level. Passengers should move slowly, avoid unnecessary exertion, and follow the pilot's instructions throughout the landing.",
+      "The helicopter departs Gosaikunda and begins the scenic return journey. Passengers receive another aerial view of the Langtang mountains, alpine valleys, Tamang settlements and Shivapuri forests.",
   },
   {
     number: "10",
-    time: "10:15h",
-    title: "Return Flight to Kathmandu",
+    time: "Around 08:00h",
+    title: "Arrival at Kathmandu Airport",
     description:
-      "The return flight follows the Khumbu Valley past Tengboche, Namche Bazaar, and the Dudh Koshi gorge. Depending on fuel and operating conditions, the aircraft may make another short stop at Lukla before continuing to Kathmandu.",
+      "The helicopter lands at Tribhuvan International Airport’s domestic terminal. The ground team assists passengers with disembarkation and onward transfer arrangements.",
   },
   {
     number: "11",
-    time: "10:15h",
-    title: "Drop-Off at Kathmandu Hotel",
+    time: "Around 08:20h",
+    title: "Hotel Drop-Off in Kathmandu",
     description:
-      "After landing at Tribhuvan International Airport, our vehicle transfers you back to your hotel in Kathmandu. You return before midday with the rest of the afternoon free.",
+      "A private vehicle transfers you back to your hotel, completing the Gosaikunda Helicopter Tour. You return early enough to keep the rest of the day available for sightseeing or relaxation.",
   },
 ];
 

@@ -1,35 +1,55 @@
-import { CheckCircle2, XCircle } from "lucide-react";
+import { CheckCircle2, Info,XCircle } from "lucide-react";
 
 const includes = [
-  "Helicopter flight (Kathmandu to Everest and Everest to Kathmandu)",
-  "Certified pilot and crew",
-  "Hotel pick-up and airport transfers",
-  "Fuel, landing, and helipad fees",
-  "Emergency oxygen system onboard",
-  "Breakfast at Hotel Everest View (landing package)",
+  "Round-trip helicopter transport in a CAAN-certified Airbus H125",
+  "Hotel pickup and drop-off within Pokhara or Kathmandu",
+  "Annapurna Conservation Area Permit arrangement",
+  "Applicable local government and municipality tourism taxes",
+  "Domestic airport or helipad departure taxes in Pokhara or Kathmandu",
+  "Approximately 30–45 minutes of landing and exploration time at Annapurna Base Camp",
+  "Hot beverages or breakfast at an available Annapurna Base Camp lodge",
+  "Supplemental oxygen cylinders and an emergency first-aid kit onboard",
+  "Experienced mountain pilot qualified for high-altitude Himalayan operations",
+  "Mandatory pre-flight safety and operational briefing",
 ];
 
 const excludes = [
-  "Nepal entry visa and international air fare",
-  "Travel insurance covering high-altitude flights",
-  "Personal meals and beverages",
-  "Pilot and staff gratuities",
-  "Additional filming or landing permits",
-  "Weather-related delays or reschedules",
+  "Personal travel insurance covering emergency helicopter evacuation up to at least 5,000 metres",
+  "Tips and gratuities for the pilot and airport ground staff",
+  "Personal clothing, cold-weather down jackets and walking equipment",
+  "Additional food or beverages beyond the confirmed package",
+  "Nepal entry visa fees",
+  "International airfares and other international travel expenses",
+  "Personal expenses, souvenirs and services not listed under inclusions",
 ];
 
 const permits = [
   {
-    name: "Sagarmatha National Park Entry Permit",
-    authority: "Department of National Parks and Wildlife Conservation, Nepal",
-    usd: "USD 22",
-    npr: "NPR 3,000",
+    name: "Annapurna Conservation Area Permit",
+    shortName: "ACAP",
+    authority: "Annapurna Conservation Area Project",
+    description:
+      "Required for entry into the Annapurna Conservation Area, including Annapurna Base Camp.",
+    fees: [
+      {
+        category: "Foreign Nationals",
+        price: "USD 30",
+      },
+      {
+        category: "SAARC Nationals",
+        price: "USD 10",
+      },
+    ],
+    status: "Arranged by MHN",
   },
   {
-    name: "Khumbu Pasang Lhamu Rural Municipality Permit",
-    authority: "Khumbu Pasang Lhamu Rural Municipality",
-    usd: "USD 15",
-    npr: "NPR 2,000",
+    name: "Trekkers’ Information Management System Card",
+    shortName: "TIMS",
+    authority: "Applicable trekking and tourism authorities",
+    description:
+      "A TIMS card may be required when the helicopter journey is combined with trekking. The requirement can vary according to the itinerary, passenger nationality and type of trek.",
+    fees: [],
+    status: "Itinerary Dependent",
   },
 ];
 
@@ -96,71 +116,155 @@ export default function InclusionsExclusions() {
                 </div>
               ))}
             </div>
+            <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-4">
+              <p className="font-manrope text-xs leading-6 text-amber-800">
+                Travel insurance should specifically cover high-altitude travel
+                and emergency helicopter evacuation at elevations of at least
+                5,000 metres.
+              </p>
+            </div>
           </div>
+          
         </div>
-
-        {/* PERMITS CARD */}
-        <div className="mt-10 overflow-hidden rounded-[24px] bg-[#061b35] px-5 py-8 md:px-8 md:py-10 lg:px-10">
+        
+{/* PERMIT SECTION */}
+        <div className="mt-12 overflow-hidden rounded-[24px] bg-[#061b35] px-5 py-8 md:px-8 md:py-10 lg:px-10">
           <div className="text-center">
             <p className="font-manrope text-xs font-bold uppercase tracking-[0.2em] text-[#e0a326]">
-              Permits Included in Your Seat
+              Permits for the Annapurna Helicopter Tour
+            </p>
+
+            <h3 className="mt-3 font-fraunces text-2xl font-semibold text-white md:text-3xl">
+              Entry and trekking documentation
+            </h3>
+
+            <p className="mx-auto mt-4 max-w-3xl font-manrope text-sm leading-6 text-white/50">
+              The permit requirement depends on whether your booking is a
+              helicopter-only experience or includes trekking inside the
+              Annapurna region.
             </p>
           </div>
 
-          <div className="mt-10">
-            <p className="font-manrope text-xs font-bold uppercase tracking-[0.18em] text-[#e0a326]">
-              Permits Included in Your Seat
-            </p>
+          {/* PERMIT CARDS */}
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">
+            {permits.map((permit) => (
+              <article
+                key={permit.shortName}
+                className="rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#e0a326]/40 hover:bg-white/[0.055] md:p-6"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="rounded-full border border-[#e0a326]/30 bg-[#e0a326]/10 px-3 py-1 font-manrope text-[10px] font-bold uppercase tracking-[0.15em] text-[#e0a326]">
+                    {permit.shortName}
+                  </span>
 
-            <div className="mt-5">
-              {permits.map((permit) => (
-                <div
-                  key={permit.name}
-                  className="grid gap-4 border-b border-white/10 py-5 md:grid-cols-[1fr_auto] md:items-center"
-                >
-                  <div>
-                    <h3 className="font-manrope text-sm font-medium text-white">
-                      {permit.name}
-                    </h3>
-
-                    <p className="mt-1 font-manrope text-xs leading-5 text-white/35">
-                      {permit.authority}
-                    </p>
-                  </div>
-
-                  <div className="text-left md:text-right">
-                    <p className="font-manrope text-sm font-bold text-white">
-                      {permit.usd}
-                    </p>
-
-                    <p className="mt-1 font-manrope text-xs uppercase tracking-[0.12em] text-white/35">
-                      {permit.npr}
-                    </p>
-                  </div>
+                  <span className="font-manrope text-[10px] font-bold uppercase tracking-[0.13em] text-white/45">
+                    {permit.status}
+                  </span>
                 </div>
-              ))}
 
-              <div className="grid gap-4 py-5 md:grid-cols-[1fr_auto] md:items-center">
-                <p className="font-manrope text-xs font-bold uppercase tracking-[0.16em] text-[#e0a326]">
-                  Total Permits Value
+                <h4 className="mt-5 font-fraunces text-xl font-semibold text-white">
+                  {permit.name}
+                </h4>
+
+                <p className="mt-2 font-manrope text-xs leading-5 text-white/35">
+                  {permit.authority}
                 </p>
 
-                <p className="font-manrope text-sm font-bold text-[#e0a326]">
-                  USD 37
+                <p className="mt-4 font-manrope text-sm leading-7 text-white/55">
+                  {permit.description}
+                </p>
+
+                {permit.fees.length > 0 && (
+                  <div className="mt-6 overflow-hidden rounded-xl border border-white/10">
+                    {permit.fees.map((fee, index) => (
+                      <div
+                        key={fee.category}
+                        className={`flex items-center justify-between gap-4 px-4 py-4 ${
+                          index !== permit.fees.length - 1
+                            ? "border-b border-white/10"
+                            : ""
+                        }`}
+                      >
+                        <span className="font-manrope text-xs text-white/50">
+                          {fee.category}
+                        </span>
+
+                        <span className="font-manrope text-sm font-bold text-[#e0a326]">
+                          {fee.price}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+
+          {/* ACAP INFORMATION */}
+          <div className="mt-6 rounded-xl border border-[#e0a326]/20 bg-[#e0a326]/[0.06] px-5 py-5">
+            <div className="flex items-start gap-3">
+                <Info
+                size={17}
+                strokeWidth={1.8}
+                className="mt-0.5 shrink-0 text-[#e0a326]"
+              />
+
+              <div>
+                <p className="font-manrope text-xs font-bold uppercase tracking-[0.15em] text-[#e0a326]">
+                  ACAP Permit Arrangement
+                </p>
+
+                <p className="mt-2 font-manrope text-xs leading-6 text-white/45">
+                  Mountain Helicopters Nepal can prepare the required ACAP
+                  documentation using the identification details supplied
+                  during booking. Your final confirmation will state whether
+                  the permit fee is included in the quoted package price.
                 </p>
               </div>
             </div>
-
-            <p className="font-manrope text-sm leading-6 text-white/50">
-              Important: You don&apos;t need a TIMS card.
-            </p>
-
-            <p className="mt-10 text-center font-manrope text-xs leading-6 text-white/35">
-              Other Nepal helicopter operators may ask passengers to pay these
-              permit fees in cash on the day. Mountain Helicopters Nepal handles
-              them upfront as part of the booking process.
-            </p>
           </div>
+
+          {/* TIMS INFORMATION */}
+          <div className="mt-5 rounded-xl border border-sky-400/20 bg-sky-400/[0.06] px-5 py-5">
+            <div className="flex items-start gap-3">
+              <Info
+                size={17}
+                strokeWidth={1.8}
+                className="mt-0.5 shrink-0 text-sky-300"
+              />
+
+              <div>
+                <p className="font-manrope text-xs font-bold uppercase tracking-[0.15em] text-sky-300">
+                  When a TIMS Card May Be Required
+                </p>
+
+                <p className="mt-2 font-manrope text-xs leading-6 text-white/45">
+                  A TIMS card may be required when the helicopter flight is
+                  combined with a trekking itinerary. The requirement can vary
+                  according to nationality, trekking route, group type and the
+                  agency organising the trek. A standard helicopter-only visit
+                  will be reviewed separately during booking.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* IDENTIFICATION NOTE */}
+          <p className="mt-7 text-center font-manrope text-xs leading-6 text-white/35">
+            Carry your passport or valid government-issued identification.
+            Permit fees, documentation requirements and applicable rules may
+            change, so the final requirement will be confirmed before
+            departure.
+          </p>
+        </div>
+
+        {/* OPERATIONAL NOTE */}
+        <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-7">
+          <p className="font-manrope text-xs leading-6 text-slate-500">
+            Final inclusions and permit charges may vary according to
+            nationality, departure city, selected package, trekking component
+            and the services listed in your confirmed booking agreement.
+          </p>
         </div>
       </div>
     </section>

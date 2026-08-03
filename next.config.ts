@@ -5,4 +5,10 @@ const nextConfig: NextConfig = {
   allowedDevOrigins:["192.168.18.47"]
 };
 
+
+module.exports = {
+  images: {
+    qualities: [75, 80],
+  },
+};
 export default nextConfig;

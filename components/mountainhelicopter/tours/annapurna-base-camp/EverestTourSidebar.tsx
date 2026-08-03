@@ -77,7 +77,7 @@ export default function EverestTourSidebar() {
 
         <div className="p-5">
           <h3 className="font-fraunces text-xl font-semibold leading-tight text-[#0a3158]">
-            Everest Base Camp
+            Annapurna Base Camp
             <br />
             Helicopter Tour
           </h3>

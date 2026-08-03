@@ -48,13 +48,14 @@ export default function CTA() {
         </div>
 
         <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,4.2rem)] font-extrabold leading-[1.05] text-white">
-          Ready to Experience
+         The Himalayas
+
           <br />
-          Everest <span className="text-[#f5a623]">From Above?</span>
+         are  <span className="text-[#f5a623]">waiting.</span>
         </h2>
 
         <p className="mx-auto mb-10 max-w-[560px] font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">
-          Let our experienced team create your unforgettable Himalayan journey.
+          Every charter begins with a conversation. Tell us the peaks you want to see, the moments you want to hold — and we will build the flight around it.
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">

@@ -1,41 +1,41 @@
 import {
+  BadgeDollarSign,
   Clock3,
-  Headphones,
+  CloudSun,
+  Plane,
   ShieldCheck,
-  UsersRound,
-  Wind,
 } from "lucide-react";
 
 const reasons = [
   {
-    icon: ShieldCheck,
-    title: "Experienced Team",
+    icon: Plane,
+    title: "Direct Helicopter Fleet Operator",
     description:
-      "Our pilots have thousands of hours of high-altitude Himalayan flight experience. Our operations team has been running this route since 2009.",
+      "Mountain Helicopters Nepal is a licensed aviation operator. You book directly with the company operating the helicopter rather than through a tour agency, broker or intermediary.",
   },
   {
-    icon: UsersRound,
-    title: "Best Pricing",
+    icon: ShieldCheck,
+    title: "CAAN-Certified Safety Standards",
     description:
-      "We are the direct operator — no agency markup and no third-party commissions. What you pay is the actual operating cost plus our margin, with nothing hidden.",
+      "Our Gosaikunda flights are operated using CAAN-certified Airbus H125 helicopters. Experienced Himalayan pilots manage changing weather, confined valleys and high-altitude landing conditions.",
   },
   {
     icon: Clock3,
-    title: "Professional Itinerary",
+    title: "30–40 Minutes at Gosaikunda",
     description:
-      "Every landing, departure time, and breakfast stop has been refined over hundreds of flights. You are not the test case.",
+      "When weather and landing conditions allow, passengers normally receive approximately 30 to 40 minutes beside Gosaikunda Lake for photography, sightseeing, prayer and quiet exploration.",
   },
   {
-    icon: Headphones,
-    title: "24/7 Available",
+    icon: BadgeDollarSign,
+    title: "Transparent, All-Inclusive Pricing",
     description:
-      "Our team is reachable around the clock before, during, and after your flight. WhatsApp, phone, and email are all monitored.",
+      "Your confirmed package clearly explains the helicopter flight, Langtang National Park permit, airport taxes, applicable government charges, hotel transfers and included operational services without hidden intermediary commissions.",
   },
   {
-    icon: Wind,
-    title: "Environmentally Responsible",
+    icon: CloudSun,
+    title: "Flexible Weather Rescheduling",
     description:
-      "We operate fuel-efficient aircraft on this route and follow Sagarmatha National Park requirements and approved procedures for mountain landing zones.",
+      "When poor visibility, cloud, rain, snowfall or strong winds make the Gosaikunda route unsafe, eligible bookings may be moved to the next suitable departure or refunded according to the confirmed cancellation terms.",
   },
 ];
 

@@ -3,62 +3,78 @@ import { CheckCircle2, XCircle } from "lucide-react";
 const clothingLayers = [
   {
     layer: "Base Layer",
-    item: "Thermal top and bottom (merino or synthetic)",
-    reason: "Moisture-wicking against the skin keeps you warm and dry",
+    item: "Thermal top and bottom",
+    reason:
+      "Helps retain body heat during the rapid ascent from Kathmandu at 1,400 metres to Gosaikunda at approximately 4,380 metres.",
   },
   {
     layer: "Mid Layer",
-    item: "Fleece jacket or down vest",
-    reason: "Insulation — removable when back in Kathmandu",
+    item: "Fleece jacket or light down vest",
+    reason:
+      "Provides insulation and can be removed easily after returning to the warmer Kathmandu Valley.",
   },
   {
     layer: "Outer Layer",
-    item: "Windproof and waterproof jacket",
-    reason: "Wind chill at 5,545 m is significant even in low wind",
+    item: "Warm, windproof and waterproof down jacket",
+    reason:
+      "Protects against cold alpine wind, snowfall and rapidly changing conditions around the exposed lake.",
   },
   {
     layer: "Hands",
     item: "Insulated gloves or mittens",
-    reason: "Fingers go numb fast at altitude",
+    reason:
+      "Keeps your hands warm while taking photographs, praying or walking beside the lake.",
   },
   {
     layer: "Head",
-    item: "Warm hat covering ears",
-    reason: "Significant heat loss through the head at altitude",
+    item: "Warm hat or beanie covering the ears",
+    reason:
+      "Reduces heat loss and protects your head and ears from cold mountain wind.",
   },
   {
     layer: "Eyes",
-    item: "UV-protective sunglasses",
-    reason: "Glacier glare and high-altitude UV intensity",
+    item: "UV-protective or polarised sunglasses",
+    reason:
+      "Protects your eyes from strong high-altitude sunlight and glare reflected from snow, rock and water.",
   },
   {
     layer: "Feet",
-    item: "Warm boots (trekking or winter boots)",
-    reason: "Cold ground and wind at the landing zone",
+    item: "Comfortable closed-toe shoes with good grip",
+    reason:
+      "The ground near Gosaikunda can be rocky, uneven, wet, icy or covered with snow.",
   },
   {
     layer: "Skin",
-    item: "Sunscreen SPF 50+ and lip balm",
-    reason: "UV radiation is much stronger at 5,545 m",
+    item: "SPF 50+ sunscreen and lip balm",
+    reason:
+      "High-altitude sunlight, cold air and dry wind can quickly affect exposed skin and lips.",
   },
 ];
 
 const bringItems = [
-  "Passport (mandatory — required for permit verification at the airport)",
-  "Booking confirmation (digital or printed)",
-  "Travel insurance documents",
-  "Cash in USD or NPR for optional expenses (breakfast, gratuity)",
+    "Passport or valid government-issued identification",
+  "Visa copy where applicable",
+  "Digital or printed booking confirmation",
+  "Travel and emergency helicopter evacuation insurance documents",
   "Camera or smartphone with a full charge",
-  "Spare camera batteries (cold drains batteries rapidly)",
-  "Personal medication if required",
+  "Spare camera battery or compact power bank",
+  "Personal medication prescribed by your doctor",
+  "Motion-sickness tablets if recommended for you",
+  "Small water bottle",
+  "Cash in NPR for religious offerings, souvenirs or gratuities",
+  "Sunscreen, lip balm and hand sanitiser",
+  "A small snack such as an energy bar or chocolate",
 ];
 
 const leaveBehindItems = [
-  "Large suitcases or duffel bags — maximum 5 kg per passenger",
-  "Trekking poles (not needed — no walking involved)",
-  "Sleeping bags, camping gear",
-  "Valuables not needed for the flight",
-  "Drones — not permitted in Sagarmatha National Park without special permit",
+   "Large suitcases, duffel bags and bulky luggage",
+  "More than the baggage allowance confirmed by the operations team",
+  "Sleeping bags, tents and multi-day camping equipment",
+  "Heavy trekking gear not needed for the short landing",
+  "Extra clothing beyond one suitable warm outfit",
+  "Formal clothing and footwear without proper grip",
+  "Expensive jewellery and unnecessary electronic equipment",
+  "Drones without the required aviation and national park permissions",
 ];
 
 export default function WhatToPack() {
@@ -74,13 +90,11 @@ export default function WhatToPack() {
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
             Dress for{" "}
-            <span className="text-[#e2aa22]">5,545 metres.</span>
+            <span className="text-[#e2aa22]">4,380 metres.</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-5xl font-manrope text-sm leading-7 text-slate-500">
-            At Kala Patthar the temperature can drop to -10°C even in spring.
-            Dress in layers — you will be comfortable in Kathmandu (20–25°C)
-            but cold at the summit vantage point.
+            Gosaikunda can be cold, windy and exposed even when Kathmandu is warm. Temperatures may fall below freezing, particularly during winter and early-morning departures, so dress in removable layers and carry only the essentials.
           </p>
         </div>
 

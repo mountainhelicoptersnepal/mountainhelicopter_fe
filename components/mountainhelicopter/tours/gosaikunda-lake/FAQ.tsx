@@ -5,35 +5,34 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How fast do you actually respond?",
+    question: "Is Gosaikunda Lake frozen?",
     answer:
-      "WhatsApp messages are typically answered within 5 minutes during operating hours. Email and form inquiries within 2 hours. Emergency rescue calls are answered immediately, any hour of the day or night.",
+      "Gosaikunda Lake is commonly frozen during the winter months, particularly from December through February. From spring to late autumn, visitors can normally see the lake’s open blue water, although snow and ice conditions vary each year.",
   },
   {
-    question: "What information should I include in my inquiry?",
+    question: "Can elderly passengers and children take this tour?",
     answer:
-      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission — filming, cargo, expedition support — so we can allocate the right configuration.",
+      "The tour does not involve a multi-day trek, making it suitable for many families and elderly pilgrims. However, the helicopter lands at approximately 4,380 metres. Children, elderly passengers and anyone with heart, lung or blood-pressure conditions should consult a qualified medical professional before booking.",
   },
   {
-    question: "Can I visit the office without an appointment?",
+    question: "Do we receive enough time for a holy bath or puja?",
     answer:
-      "Yes — walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
+      "Passengers normally receive approximately 30 to 40 minutes at Gosaikunda when weather and landing conditions permit. This can provide time for a short puja, photography and touching the sacred water. A full bath may not always be practical because of cold temperatures, altitude, ground conditions and the pilot’s required departure time.",
   },
   {
-    question:
-      "I'm calling about an emergency rescue. What do you need from me?",
+    question: "What is the helicopter passenger-weight limit?",
     answer:
-      "Three things: the patient's location, their condition, and the number of people needing evacuation. If the patient has travel insurance with heli-rescue cover, have the policy number ready.",
+      "The allowable payload depends on passenger weight, baggage, fuel, temperature, wind and high-altitude aircraft performance. The operations team must receive accurate individual weights before confirming the flight. Passenger capacity may be reduced or split into additional rotations when required.",
   },
   {
-    question: "Which languages does your team speak?",
+    question: "What should I wear for the Gosaikunda flight?",
     answer:
-      "English, Nepali, and Hindi — spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
+      "Wear thermal inner layers, a warm down jacket, gloves, a beanie covering the ears and comfortable closed-toe shoes with good grip. UV-protective or polarised sunglasses, sunscreen and lip balm are also recommended because sunlight and glare can be intense at altitude.",
   },
   {
-    question: "How do payments work?",
+    question: "What happens if the flight is cancelled because of weather?",
     answer:
-      "A 30% deposit confirms your booking; the balance is due on flight day. We accept bank transfer, credit card, cash, eSewa, and Khalti. If we cancel for weather, you choose full refund or free reschedule.",
+      "When visibility, cloud, rain, snowfall or strong winds make the route unsafe, the flight may be delayed, rescheduled or cancelled. Eligible passengers may move their booking to the next suitable departure or receive a refund according to the confirmed cancellation and refund terms.",
   },
 ];
 
