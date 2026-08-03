@@ -26,7 +26,7 @@ const NAV_LINKS = [
       },
       {
         title: "Muktinath Tour",
-        href: "/tours/muktinath",
+        href: "/tours/muktinath-pilgrimage",
         description: "Sacred helicopter pilgrimage experience.",
       },
       {
