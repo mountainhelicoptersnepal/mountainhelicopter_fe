@@ -59,7 +59,7 @@ export default function CTA() {
         </p>
 
         <div className="flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
-          <PrimaryButton href="/inquire">Inquire Now</PrimaryButton>
+          <PrimaryButton href="/contact">Inquire Now</PrimaryButton>
           <SecondaryButton
             href={whatsappUrl}
             target="_blank"
