@@ -1,18 +1,20 @@
-import Image from "next/image";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
 
 export default function Hero() {
   return (
     <section className="relative flex min-h-[600px] w-full items-center overflow-hidden bg-[#071825] sm:min-h-[720px] lg:min-h-[860px]">
-      <Image
-        src="/images/fleet/home.jpg"
-        alt="Mountain Helicopters aircraft in flight against the snow-capped Himalayan range"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover"
+      >
+        <source src="/videos/hero-video.mp4" type="video/mp4" />
+      </video>
 
       <div className="absolute inset-0 bg-black/40" />
 
