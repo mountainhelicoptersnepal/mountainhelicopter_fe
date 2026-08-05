@@ -20,10 +20,10 @@ const STEPS = [
 
 export default function Steps() {
   return (
-    <section className="bg-[#051F49] py-[70px] text-white">
+    <section className="bg-[#0d1a2d] py-[70px] text-white">
       <div className="mx-auto max-w-[1160px] px-[22px]">
         <Reveal className="mb-9 max-w-[700px]">
-          <div className="mb-2.5 font-jetbrains-mono text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#F5AF00]">
+          <div className="mb-2.5 font-manrope text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#F2B632]">
             Booking
           </div>
           <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-white">
@@ -39,7 +39,7 @@ export default function Steps() {
           {STEPS.map((step, i) => (
             <Reveal key={step.n} delay={i * 0.08}>
               <div className="h-full rounded-[14px] border border-white/[.14] bg-white/5 p-6">
-                <div className="mb-3.5 font-jetbrains-mono text-[13px] font-semibold tracking-[.14em] text-[#F5AF00]">
+                <div className="mb-3.5 font-manrope text-[13px] font-semibold tracking-[.14em] text-[#F2B632]">
                   {step.n}
                 </div>
                 <h3 className="mb-2 font-fraunces text-[1.1rem] font-extrabold">

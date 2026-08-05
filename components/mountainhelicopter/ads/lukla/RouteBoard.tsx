@@ -21,10 +21,10 @@ export default function RouteBoard() {
           className="grid grid-cols-[auto_1fr_auto] items-center gap-[clamp(14px,3vw,34px)]"
         >
           <div className="text-center">
-            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#0C4396]">
+            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#003366]">
               KTM
             </div>
-            <div className="font-jetbrains-mono text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
+            <div className="font-manrope text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
               Kathmandu · 1,400 m
             </div>
           </div>
@@ -42,10 +42,10 @@ export default function RouteBoard() {
           </div>
 
           <div className="text-center">
-            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#0C4396]">
+            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#003366]">
               LUA
             </div>
-            <div className="font-jetbrains-mono text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
+            <div className="font-manrope text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
               Lukla · 2,860 m
             </div>
           </div>
@@ -59,8 +59,8 @@ export default function RouteBoard() {
                 i === 4 ? "col-span-2 sm:col-span-1" : ""
               }`}
             >
-              <Icon className="mx-auto mb-1 h-[19px] w-[19px] text-[#D99A00]" />
-              <div className="font-jetbrains-mono text-[clamp(.95rem,2vw,1.15rem)] font-semibold text-[#0C4396]">
+              <Icon className="mx-auto mb-1 h-[19px] w-[19px] text-[#C49A3C]" />
+              <div className="font-manrope text-[clamp(.95rem,2vw,1.15rem)] font-semibold text-[#003366]">
                 {v}
               </div>
               <div className="text-xs uppercase tracking-[.08em] text-[#4A5B76]">{k}</div>
