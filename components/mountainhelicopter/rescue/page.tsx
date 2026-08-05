@@ -12,6 +12,8 @@ export default function RescuePage() {
   return (
     <>
       <RescueHero />
+
+      {/*
       <Regions />
       <WhenToCall />
       <Process />
@@ -20,6 +22,7 @@ export default function RescuePage() {
       <Costs />
       <EmergencyDispatch />
       <FaqRescue />
+       */}
     </>
   );
 }
