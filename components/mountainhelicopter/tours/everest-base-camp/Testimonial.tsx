@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type TouchEvent } from "react";
 
 const TESTIMONIALS = [
   {
@@ -73,12 +73,12 @@ export default function Testimonials() {
     return () => clearTimeout(id);
   }, [active]);
 
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.touches[0].clientX;
     touchEndX.current = null;
   };
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchMove = (e: TouchEvent<HTMLDivElement>) => {
     touchEndX.current = e.touches[0].clientX;
   };
 
@@ -101,8 +101,15 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="review" className="scroll-mt-36 w-full bg-[#031a36] py-16 sm:py-20">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative w-full overflow-hidden bg-[#0A1929] py-16 md:py-24 lg:py-28">
+      <img
+        src="/images/home-section/testimonial-bg.jpg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-15"
+      />
+
+      <div className="relative z-10 mx-auto max-w-6xl px-6">
         <div className="text-center">
           <p className="mb-3 font-manrope text-[10px] font-semibold uppercase tracking-[0.22em] text-[#f5a623]">
             Traveller Stories
@@ -116,7 +123,7 @@ export default function Testimonials() {
         </div>
 
         <div
-          className="mx-auto mt-12 max-w-5xl overflow-hidden touch-pan-y select-none"
+          className="mx-auto my-12 sm:my-24 max-w-5xl overflow-hidden touch-pan-y select-none"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -140,7 +147,7 @@ export default function Testimonials() {
 
                 <div className="min-w-0 flex-1">
                   <p className="font-manrope text-[18px] leading-[1.5] text-white/85 sm:text-[18px]">
-                    &ldquo;{t.quote}&rdquo;
+                    &quot;{t.quote}&quot;
                   </p>
 
                   <p className="mt-5 font-fraunces text-[30px] font-semibold leading-none text-white/70 sm:text-[25px]">

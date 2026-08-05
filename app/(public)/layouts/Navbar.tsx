@@ -48,53 +48,53 @@ const NAV_LINKS = [
       },
     ],
   },
-  {
-    label: "Experiences",
-    href: "/experiences",
-    dropdown: [
-      {
-        title: "Breakfast Above the Clouds",
-        href: "/experiences/everest-breakfast",
-        description: "Hot coffee at 3,880 metres. Everest through the window.",
-      },
-      {
-        title: "Stand at 5,545 Metres",
-        href: "/experiences/kala-patthar",
-        description:
-          "The closest legal landing viewpoint to Everest without climbing it.",
-      },
-      {
-        title: "A Table in the Sky",
-        href: "/experiences/heli-picnic",
-        description:
-          "Aerial filming and photography flights designed around the light.",
-      },
-      {
-        title: "Pilgrimage by Air",
-        href: "/experiences/pilgrimage",
-        description:
-          "Muktinath, Gosaikunda, and sacred Himalayan destinations.",
-      },
-      {
-        title: "Say It at 5,000 Metres",
-        href: "/experiences/celebrations",
-        description:
-          "Proposals, anniversaries, birthdays, and private celebrations.",
-      },
-      {
-        title: "The Golden Hour Flight",
-        href: "/experiences/photo-flight",
-        description:
-          "Photography and filming flights designed around the light.",
-      },
-      {
-        title: "Design Your Own Day",
-        href: "/experiences/private-charter",
-        description:
-          "Start with a blank map of Nepal. We arrange the route, permits, landings, timing, and aircraft around the experience you imagine.",
-      },
-    ],
-  },
+  // {
+  //   label: "Experiences",
+  //   href: "/experiences",
+  //   dropdown: [
+  //     {
+  //       title: "Breakfast Above the Clouds",
+  //       href: "/experiences/everest-breakfast",
+  //       description: "Hot coffee at 3,880 metres. Everest through the window.",
+  //     },
+  //     {
+  //       title: "Stand at 5,545 Metres",
+  //       href: "/experiences/kala-patthar",
+  //       description:
+  //         "The closest legal landing viewpoint to Everest without climbing it.",
+  //     },
+  //     {
+  //       title: "A Table in the Sky",
+  //       href: "/experiences/heli-picnic",
+  //       description:
+  //         "Aerial filming and photography flights designed around the light.",
+  //     },
+  //     {
+  //       title: "Pilgrimage by Air",
+  //       href: "/experiences/pilgrimage",
+  //       description:
+  //         "Muktinath, Gosaikunda, and sacred Himalayan destinations.",
+  //     },
+  //     {
+  //       title: "Say It at 5,000 Metres",
+  //       href: "/experiences/celebrations",
+  //       description:
+  //         "Proposals, anniversaries, birthdays, and private celebrations.",
+  //     },
+  //     {
+  //       title: "The Golden Hour Flight",
+  //       href: "/experiences/photo-flight",
+  //       description:
+  //         "Photography and filming flights designed around the light.",
+  //     },
+  //     {
+  //       title: "Design Your Own Day",
+  //       href: "/experiences/private-charter",
+  //       description:
+  //         "Start with a blank map of Nepal. We arrange the route, permits, landings, timing, and aircraft around the experience you imagine.",
+  //     },
+  //   ],
+  // },
   {
     label: "Fleet",
     href: "/fleet",
@@ -343,7 +343,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
             return (
               <div
                 key={link.href}
-                className="relative"
+                className="group/nav-item relative"
                 onMouseEnter={() => {
                   if (hasDropdown) {
                     setActiveDropdown(index);
@@ -362,7 +362,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
                     <ChevronDown
                       size={16}
                       aria-hidden="true"
-                      className={`transition-transform duration-300 ${
+                      className={`opacity-0 transition-all duration-300 group-hover/nav-item:opacity-100 ${
                         isDropdownOpen ? "rotate-180" : ""
                       }`}
                     />

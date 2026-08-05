@@ -16,7 +16,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-const phoneNumber = "9779712082949";
+const phoneNumber = "9779712082953";
 
 const message =
   "Hi, I would like to know more about the Everest Base Camp Helicopter Tour.";

@@ -42,7 +42,7 @@ export default function Hero() {
     let touchY: number | null = null;
     let isTrackingHeroTouch = false;
 
-    const effectEnd = 0.7;
+    const effectEnd = 0.34;
 
     function updateHero() {
       animationFrameId = null;
@@ -51,12 +51,12 @@ export default function Hero() {
       /*
        * Text moves toward the viewer while remaining centered.
        */
-      const zoomProgress = smoothStep(clamp((progress - 0.02) / 0.58));
+      const zoomProgress = smoothStep(clamp((progress - 0.01) / 0.26));
 
       /*
        * Text fades after moving forward.
        */
-      const fadeProgress = smoothStep(clamp((progress - 0.4) / 0.3));
+      const fadeProgress = smoothStep(clamp((progress - 0.18) / 0.16));
 
       const contentDepth = zoomProgress * 280;
       const contentScale = 1 + zoomProgress * 0.18;
@@ -113,7 +113,7 @@ export default function Hero() {
 
       const previousProgress = effectProgress;
       const controlledDelta =
-        Math.sign(deltaY) * Math.min(Math.abs(deltaY), 80) * 0.0005;
+        Math.sign(deltaY) * Math.min(Math.abs(deltaY), 120) * 0.001;
 
       effectProgress = clamp(effectProgress + controlledDelta, 0, effectEnd);
 
