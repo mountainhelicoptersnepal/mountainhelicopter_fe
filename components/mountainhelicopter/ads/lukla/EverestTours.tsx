@@ -7,10 +7,10 @@ export default function EverestTours() {
     <section id="tours" className="pb-[70px]">
       <div className="mx-auto max-w-[1160px] px-[22px]">
         <Reveal className="mb-9 max-w-[700px]">
-          <div className="mb-2.5 font-jetbrains-mono text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#D99A00]">
+          <div className="mb-2.5 font-manrope text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#C49A3C]">
             Everest Helicopter Tours
           </div>
-          <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#051F49]">
+          <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#0d1a2d]">
             See Everest by air. Back in Kathmandu by lunch.
           </h2>
           <p className="mt-3 text-[#4A5B76]">

@@ -22,19 +22,19 @@ export function ChevronIcon({ className }: { className?: string }) {
 export function HeliIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className={className}>
-      <path d="M8 14h48" stroke="#0C4396" strokeWidth="3" strokeLinecap="round" />
-      <path d="M32 14v6" stroke="#0C4396" strokeWidth="3" />
+      <path d="M8 14h48" stroke="#003366" strokeWidth="3" strokeLinecap="round" />
+      <path d="M32 14v6" stroke="#003366" strokeWidth="3" />
       <path
         d="M20 30c0-4 4-8 12-8s14 3 14 9c0 5-4 8-10 8H26c-4 0-6-3-6-6v-3Z"
-        fill="#F5AF00"
+        fill="#F2B632"
       />
       <path
         d="M18 46h22M24 40v6M36 40v6"
-        stroke="#0C4396"
+        stroke="#003366"
         strokeWidth="3"
         strokeLinecap="round"
       />
-      <path d="M46 33h8l4-6" stroke="#F5AF00" strokeWidth="3" strokeLinecap="round" />
+      <path d="M46 33h8l4-6" stroke="#F2B632" strokeWidth="3" strokeLinecap="round" />
     </svg>
   );
 }
