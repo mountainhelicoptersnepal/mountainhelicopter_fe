@@ -10,8 +10,9 @@ import {
   Users,
 } from "lucide-react";
 
-const phoneNumber = "9779712082949";
-const message = "Hi, I would like to know more about the Langtang Helicopter Tour.";
+const phoneNumber = "9779712082953";
+const message =
+  "Hi, I would like to know more about the Langtang Helicopter Tour.";
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message,
 )}`;
@@ -54,7 +55,12 @@ export default function LangtangTourSidebar() {
           <div className="mt-2 flex flex-wrap items-center gap-2">
             <div className="flex text-[#f3ad20]">
               {Array.from({ length: 5 }).map((_, index) => (
-                <Star key={index} size={11} fill="currentColor" strokeWidth={1.5} />
+                <Star
+                  key={index}
+                  size={11}
+                  fill="currentColor"
+                  strokeWidth={1.5}
+                />
               ))}
             </div>
 
@@ -96,7 +102,11 @@ export default function LangtangTourSidebar() {
                     index % 2 === 0 ? "border-r border-slate-100" : ""
                   }`}
                 >
-                  <Icon size={15} strokeWidth={1.8} className="mt-0.5 shrink-0 text-[#0a568d]" />
+                  <Icon
+                    size={15}
+                    strokeWidth={1.8}
+                    className="mt-0.5 shrink-0 text-[#0a568d]"
+                  />
 
                   <div>
                     <p className="font-manrope text-[8px] font-bold uppercase tracking-[0.12em] text-slate-400">
@@ -119,7 +129,10 @@ export default function LangtangTourSidebar() {
 
             <div className="mt-3 space-y-2.5">
               {whyBookItems.map((item) => (
-                <div key={item} className="flex items-center gap-2 font-manrope text-[10px] text-[#64707d]">
+                <div
+                  key={item}
+                  className="flex items-center gap-2 font-manrope text-[10px] text-[#64707d]"
+                >
                   <span className="flex h-4 w-4 items-center justify-center rounded-full bg-emerald-50 text-emerald-500">
                     <Check size={10} strokeWidth={2.5} />
                   </span>
@@ -136,7 +149,10 @@ export default function LangtangTourSidebar() {
 
             <div className="mt-3">
               {groupPricing.map(([label, value]) => (
-                <div key={label} className="flex items-center justify-between border-b border-slate-100 py-2 font-manrope text-[10px]">
+                <div
+                  key={label}
+                  className="flex items-center justify-between border-b border-slate-100 py-2 font-manrope text-[10px]"
+                >
                   <span className="text-slate-500">{label}</span>
                   <span className="font-semibold text-[#0a4775]">{value}</span>
                 </div>
@@ -150,7 +166,10 @@ export default function LangtangTourSidebar() {
               className="group flex min-h-11 w-full items-center justify-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-[10px] font-bold uppercase tracking-[0.13em] text-white transition hover:bg-[#052947]"
             >
               Book Your Journey
-              <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+              <ArrowRight
+                size={14}
+                className="transition-transform group-hover:translate-x-1"
+              />
             </Link>
 
             <a

@@ -64,9 +64,9 @@ export default function SecrecyProtocol() {
         </h2>
 
         <p className="leading-[1.8] text-white/85">
-          A surprise celebration in the mountains involves several moving
-          parts. The crew, ground team and photographer are briefed in advance
-          so the experience feels natural when the moment arrives.
+          A surprise celebration in the mountains involves several moving parts.
+          The crew, ground team and photographer are briefed in advance so the
+          experience feels natural when the moment arrives.
         </p>
 
         <ul className="mt-7 space-y-4">
@@ -79,7 +79,7 @@ export default function SecrecyProtocol() {
               />
 
               <span className="text-sm leading-[1.75] text-white/85">
-                <strong className="text-white">{item.title}</strong> —{" "}
+                <strong className="text-white">{item.title}</strong>,{" "}
                 {item.description}
               </span>
             </li>

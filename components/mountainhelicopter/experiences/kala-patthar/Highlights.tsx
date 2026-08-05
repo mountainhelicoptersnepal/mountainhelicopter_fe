@@ -14,7 +14,7 @@ const highlights = [
   {
     icon: Wind,
     title: "50% of sea-level oxygen",
-    description: "You will feel it — that is the thrill",
+    description: "You will feel it, that is the thrill",
   },
   {
     icon: Clock3,

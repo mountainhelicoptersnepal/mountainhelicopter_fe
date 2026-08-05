@@ -76,7 +76,7 @@ export default function MardiProcess() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[1040px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — How a Rescue Unfolds
+            , How a Rescue Unfolds
           </p>
 
           <h2 className="mt-4 max-w-[1180px] font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">

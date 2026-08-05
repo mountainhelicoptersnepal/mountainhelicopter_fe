@@ -26,7 +26,7 @@ export default function MuktinathCoverage() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[980px]">
           <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — Coverage Map
+            , Coverage Map
           </p>
 
           <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#003366] sm:text-[50px] lg:text-[60px]">

@@ -7,12 +7,12 @@ const faqs = [
   {
     question: "Why only 15 minutes on the ground?",
     answer:
-      "At 5,545 m your body starts objecting quickly — you have arrived from 1,400 m in under two hours with no acclimatisation. Fifteen minutes lets you feel the place fully and leave before altitude does anything worse than thrill you. It is a safety protocol and it is non-negotiable.",
+      "At 5,545 m your body starts objecting quickly, you have arrived from 1,400 m in under two hours with no acclimatisation. Fifteen minutes lets you feel the place fully and leave before altitude does anything worse than thrill you. It is a safety protocol and it is non-negotiable.",
   },
   {
     question: "Why only 3 passengers?",
     answer:
-      "Thin air means less lift. Above 5,000 m we fly lighter for safety margin — it is the same discipline our rescue crews use every week. It also means everyone gets a window.",
+      "Thin air means less lift. Above 5,000 m we fly lighter for safety margin, it is the same discipline our rescue crews use every week. It also means everyone gets a window.",
   },
   {
     question: "What if I feel unwell up there?",

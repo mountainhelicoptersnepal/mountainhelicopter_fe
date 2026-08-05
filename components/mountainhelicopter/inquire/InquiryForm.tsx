@@ -42,7 +42,7 @@ export default function InquiryForm() {
             </h1>
           </div>
           <p className="text-blue-100 text-base leading-relaxed max-w-sm">
-            Tour, charter, or rescue inquiry — share your details and our flight
+            Tour, charter, or rescue inquiry, share your details and our flight
             team will respond within 2 hours.
           </p>
 
@@ -79,7 +79,7 @@ export default function InquiryForm() {
           </div>
         </div>
 
-        {/* ─── Right Panel — Form ─── */}
+        {/* ─── Right Panel, Form ─── */}
         <div className="flex-1 w-full bg-white rounded-2xl p-8 lg:p-10 shadow-2xl relative overflow-hidden">
           {/* Gold accent line */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-[#f5c518]" />
@@ -152,7 +152,7 @@ export default function InquiryForm() {
                     Tour of Interest
                   </label>
                   <select className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0a2f5c]/20 focus:border-[#0a2f5c] transition-all text-sm text-gray-600 bg-white">
-                    <option>Not sure yet — please advise</option>
+                    <option>Not sure yet, please advise</option>
                     <option>Everest Base Camp Tour</option>
                     <option>Annapurna Circuit Tour</option>
                     <option>Langtang Valley Tour</option>

@@ -37,8 +37,7 @@ const emergencyCards = [
       "Weather-related isolation or route blockage",
       "Emergency evacuation from expedition camps or trekking routes",
     ],
-    note:
-      "A medical decision should always be made carefully. Mild discomfort does not always require helicopter rescue, but serious symptoms at altitude should never be ignored.",
+    note: "A medical decision should always be made carefully. Mild discomfort does not always require helicopter rescue, but serious symptoms at altitude should never be ignored.",
   },
 ];
 
@@ -104,15 +103,12 @@ function EmergencyCard({ title, subtitle, groups, items, note }) {
 
 export default function EverestWhenToCall() {
   return (
-    <section
-      id="when-to-call"
-      className="scroll-mt-[123px] bg-[#F8FAFC]"
-    >
+    <section id="when-to-call" className="scroll-mt-[123px] bg-[#F8FAFC]">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col px-5 py-16 sm:px-8 lg:px-12 lg:py-20 xl:px-[125px]">
         {/* Section heading */}
         <div className="w-full max-w-[1187px]">
           <p className="font-manrope text-[11px] font-medium uppercase leading-[14px] tracking-[1.98px] text-[#F2B632]">
-            — When to call
+            , When to call
           </p>
 
           <div className="w-full pt-4 lg:h-[71px]">

@@ -6,7 +6,7 @@ const comparisonRows = [
   },
   {
     label: "Physical demand",
-    overland: "High — multiple altitude days on foot",
+    overland: "High, multiple altitude days on foot",
     helicopter: "Minimal walking with crew assistance",
   },
   {

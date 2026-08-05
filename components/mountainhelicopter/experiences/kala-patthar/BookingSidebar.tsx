@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  Check,
-  MessageCircle,
-  ShieldCheck,
-} from "lucide-react";
+import { Check, MessageCircle, ShieldCheck } from "lucide-react";
 
 const phoneNumber = "9779712082949";
 
@@ -52,11 +48,7 @@ const bestMonths = [
 
 export default function BookingSidebar() {
   return (
-    <aside
-      id="booking"
-      aria-label="Booking information"
-      className="space-y-5"
-    >
+    <aside id="booking" aria-label="Booking information" className="space-y-5">
       <div className="relative overflow-hidden rounded-3xl bg-[#003366] p-8 text-white shadow-[0_20px_40px_rgba(0,51,102,0.18)]">
         <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#F2B632]/10" />
 
@@ -74,7 +66,7 @@ export default function BookingSidebar() {
           </div>
 
           <p className="mb-7 text-xs text-white/70">
-            Private charter — weight-limited to 3 guests at altitude
+            Private charter, weight-limited to 3 guests at altitude
           </p>
 
           <Link

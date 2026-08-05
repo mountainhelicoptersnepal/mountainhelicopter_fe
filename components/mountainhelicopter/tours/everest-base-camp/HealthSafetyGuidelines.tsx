@@ -10,7 +10,7 @@ const contraindications = [
 export default function HealthSafetyGuidelines() {
   return (
     <section className="bg-[#071b33] px-6 py-20 md:px-12 md:py-24 lg:px-16 lg:py-28">
-      <div className="mx-auto max-w-7xl bg-[#061a31] px-6 py-10 md:px-8 md:py-12 lg:px-10">
+      <div className="mx-auto max-w-7xl bg-[#061a31] px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28">
         <div className="text-center">
           <p className="flex items-center justify-center gap-3 font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#e0a321]">
             <span className="h-px w-8 bg-[#e0a321]" />
@@ -29,12 +29,12 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Kala Patthar (5,545 m), the atmospheric pressure is
-            approximately 53% of sea level. This means that with every breath,
-            your lungs receive roughly half the oxygen compared to what you
-            breathe at sea level. For a very short visit of 10-15 minutes, most
-            healthy people tolerate this without serious issues. However, your
-            body does notice the difference.
+            At Kala Patthar (5,545 m), the atmospheric pressure is approximately
+            53% of sea level. This means that with every breath, your lungs
+            receive roughly half the oxygen compared to what you breathe at sea
+            level. For a very short visit of 10-15 minutes, most healthy people
+            tolerate this without serious issues. However, your body does notice
+            the difference.
           </p>
         </div>
 

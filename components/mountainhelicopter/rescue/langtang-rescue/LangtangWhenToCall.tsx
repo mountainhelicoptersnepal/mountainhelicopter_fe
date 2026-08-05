@@ -75,7 +75,7 @@ export default function LangtangWhenToCall() {
         {/* HEADING AND INTRODUCTION */}
         <div className="max-w-[900px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#B87800]">
-            — When to Call
+            , When to Call
           </p>
 
           <h2 className="mt-4 max-w-[980px] font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#003366] sm:text-[50px] lg:text-[60px]">

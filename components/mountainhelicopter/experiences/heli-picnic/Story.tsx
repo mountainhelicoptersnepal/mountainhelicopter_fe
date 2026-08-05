@@ -21,13 +21,13 @@ export default function Story() {
 
         <p>
           No trail reaches it. No teahouse serves it. On the day you visit, its
-          entire population will be you, the people you love, and a pilot reading
-          a newspaper beside the helicopter.
+          entire population will be you, the people you love, and a pilot
+          reading a newspaper beside the helicopter.
         </p>
 
         <p>
-          We set the table before you land — rugs, cushions, a proper spread
-          from one of Kathmandu&apos;s best kitchens, and anything you have
+          We set the table before you land, rugs, cushions, a proper spread from
+          one of Kathmandu&apos;s best kitchens, and anything you have
           requested: champagne on ice, a birthday cake, or your
           grandmother&apos;s favourite achar.
         </p>
@@ -39,9 +39,9 @@ export default function Story() {
 
         <p>
           It is the silence you will talk about afterwards. When the rotors spin
-          down and the last echo rolls across the valley, you hear it arrive —
-          a quiet so complete you can hear grass move, a kettle beginning to
-          sing, and the person beside you breathing.
+          down and the last echo rolls across the valley, you hear it arrive, a
+          quiet so complete you can hear grass move, a kettle beginning to sing,
+          and the person beside you breathing.
         </p>
 
         <p>

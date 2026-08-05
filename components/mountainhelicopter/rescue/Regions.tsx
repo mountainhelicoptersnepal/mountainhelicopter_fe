@@ -4,8 +4,7 @@ import Link from "next/link";
 const regions = [
   {
     title: "Everest Region",
-    places:
-      "EBC, GorakShep, Lobuche, Dingboche, Pheriche, Namche, Lukla",
+    places: "EBC, GorakShep, Lobuche, Dingboche, Pheriche, Namche, Lukla",
     response: "1h 30m",
     cost: "USD 2,800 – 8,000",
     image: "/images/rescue/regions/everest.jpg",
@@ -13,8 +12,7 @@ const regions = [
   },
   {
     title: "Annapurna Region",
-    places:
-      "ABC, MBC, Chomrong, Ghandruk, Ghorepani, Poon Hill",
+    places: "ABC, MBC, Chomrong, Ghandruk, Ghorepani, Poon Hill",
     response: "1h 15m",
     cost: "USD 2,500 – 5,000",
     image: "/images/rescue/regions/annapurna.jpg",
@@ -120,7 +118,7 @@ function RegionCard({
       <div className="relative h-[280px] shrink-0 overflow-hidden bg-[#E4E7E9]">
         <Image
           src={image}
-          alt={`Helicopter rescue coverage — ${title}, Nepal`}
+          alt={`Helicopter rescue coverage, ${title}, Nepal`}
           fill
           sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-[1.035]"
@@ -186,19 +184,16 @@ function RegionCard({
 
 export default function Regions() {
   return (
-    <section
-      id="regions"
-      className="scroll-mt-[125px] bg-white"
-    >
+    <section id="regions" className="scroll-mt-[125px] bg-white">
       <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         {/* Section heading */}
         <div className="max-w-[950px]">
           <p className="font-manrope text-[11px] font-semibold uppercase leading-none tracking-[0.18em] text-[#C28218]">
-            — Coverage
+            , Coverage
           </p>
 
           <h2 className="mt-[18px] font-fraunces text-[38px] font-semibold leading-[1.06] tracking-[-0.8px] text-[#003366] sm:text-[44px] lg:text-[51.2px] lg:leading-[54.27px] lg:tracking-[-1.02px]">
-            Our Rescue Helicopter Service 
+            Our Rescue Helicopter Service
           </h2>
         </div>
 

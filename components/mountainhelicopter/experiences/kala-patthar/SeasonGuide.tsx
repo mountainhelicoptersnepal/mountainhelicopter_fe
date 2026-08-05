@@ -26,17 +26,17 @@ const months = [
   },
   {
     name: "Jun",
-    description: "Monsoon — not flown",
+    description: "Monsoon, not flown",
     status: "closed",
   },
   {
     name: "Jul",
-    description: "Monsoon — not flown",
+    description: "Monsoon, not flown",
     status: "closed",
   },
   {
     name: "Aug",
-    description: "Monsoon — not flown",
+    description: "Monsoon, not flown",
     status: "closed",
   },
   {

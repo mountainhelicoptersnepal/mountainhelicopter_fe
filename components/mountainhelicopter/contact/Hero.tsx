@@ -32,8 +32,8 @@ export default function Hero() {
 
             <p className="mb-8 max-w-[560px] font-manrope text-lg leading-relaxed text-white/85 md:text-xl">
               Our flight desk is staffed 24/7. We answer calls, WhatsApp, and
-              email within 2 hours during business hours — immediately for
-              urgent matters.
+              email within 2 hours during business hours, immediately for urgent
+              matters.
             </p>
 
             <div className="flex flex-wrap items-center gap-x-8 gap-y-3">

@@ -1,4 +1,3 @@
-
 const highlights = [
   "Continuous emergency dispatch services are maintained across the Muktinath and Lower Mustang region.",
   "Rapid rescue deployment can be coordinated from Pokhara or Kathmandu depending on aircraft position, weather and operational availability.",
@@ -29,7 +28,7 @@ export default function MuktinathHighlights() {
     >
       <div className="mx-auto max-w-[1440px]">
         <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#f2a10d]">
-          — Operational Highlights
+          , Operational Highlights
         </p>
 
         <h2 className="mt-5 max-w-[1200px] font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#f6f2ea] sm:text-[50px] lg:text-[60px]">

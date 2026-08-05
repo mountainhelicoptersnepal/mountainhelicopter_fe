@@ -39,7 +39,7 @@ export default function MakaluCoverage() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[1000px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — Rescue Coverage by Altitude
+            , Rescue Coverage by Altitude
           </p>
 
           <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">

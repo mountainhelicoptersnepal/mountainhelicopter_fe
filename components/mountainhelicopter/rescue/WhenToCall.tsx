@@ -86,14 +86,11 @@ function EmergencyCard({ title, items, groups, note }: EmergencyCardProps) {
 
 export default function WhenToCall() {
   return (
-    <section
-      id="when-to-call"
-      className="scroll-mt-[125px] bg-[#F5F7F9]"
-    >
+    <section id="when-to-call" className="scroll-mt-[125px] bg-[#F5F7F9]">
       <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         <div className="mb-[50px]">
           <p className="mb-3 font-manrope text-[11px] font-semibold uppercase leading-none tracking-[1.98px] text-[#B97912]">
-            — When to Call
+            , When to Call
           </p>
 
           <h2 className="max-w-[940px] font-fraunces text-[51.2px] font-semibold leading-[1.06] tracking-[-1px] text-[#003366] sm:text-[38px] lg:text-[47px]">
@@ -111,14 +108,19 @@ export default function WhenToCall() {
           <div className="mx-auto max-w-[720px]">
             <h3 className="font-fraunces text-[23px] font-semibold leading-[1.15] tracking-[-0.2px] text-white sm:text-[28px]">
               When is Emergency Air Evacuation Necessary?
-
             </h3>
 
             <p className="mt-4 max-w-[680px] font-manrope text-[11px] font-normal leading-[1.65] text-white/80 sm:text-[17px]">
- In most cases of altitude illness the situation warrants evacuation only if an individual is experiencing severe, life-threatening
-  altitude sickness such as HAPE or HACE, or if a group is unable to evacuate because of the extent of a serious illness, trauma or injury, 
-  other life-threatening medical emergency, or any conditions preventing descent. Air evacuations also occur due to non-medical factors, such as
-   inaccessible trails, absent individuals in the party, adverse weather conditions, insufficient supplies or a necessity for early evacuation before worsening conditions.
+              In most cases of altitude illness the situation warrants
+              evacuation only if an individual is experiencing severe,
+              life-threatening altitude sickness such as HAPE or HACE, or if a
+              group is unable to evacuate because of the extent of a serious
+              illness, trauma or injury, other life-threatening medical
+              emergency, or any conditions preventing descent. Air evacuations
+              also occur due to non-medical factors, such as inaccessible
+              trails, absent individuals in the party, adverse weather
+              conditions, insufficient supplies or a necessity for early
+              evacuation before worsening conditions.
             </p>
 
             <div className="mt-6 flex justify-center sm:justify-start sm:pl-[245px]">

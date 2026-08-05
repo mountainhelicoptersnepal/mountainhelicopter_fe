@@ -9,7 +9,7 @@ const clothingLayers = [
   {
     layer: "Mid Layer",
     item: "Fleece jacket or down vest",
-    reason: "Insulation — removable when back in Kathmandu",
+    reason: "Insulation, removable when back in Kathmandu",
   },
   {
     layer: "Outer Layer",
@@ -44,7 +44,7 @@ const clothingLayers = [
 ];
 
 const bringItems = [
-  "Passport (mandatory — required for permit verification at the airport)",
+  "Passport (mandatory, required for permit verification at the airport)",
   "Booking confirmation (digital or printed)",
   "Travel insurance documents",
   "Cash in USD or NPR for optional expenses (breakfast, gratuity)",
@@ -54,11 +54,11 @@ const bringItems = [
 ];
 
 const leaveBehindItems = [
-  "Large suitcases or duffel bags — maximum 5 kg per passenger",
-  "Trekking poles (not needed — no walking involved)",
+  "Large suitcases or duffel bags, maximum 5 kg per passenger",
+  "Trekking poles (not needed, no walking involved)",
   "Sleeping bags, camping gear",
   "Valuables not needed for the flight",
-  "Drones — not permitted in Sagarmatha National Park without special permit",
+  "Drones, not permitted in Sagarmatha National Park without special permit",
 ];
 
 export default function WhatToPack() {
@@ -73,14 +73,13 @@ export default function WhatToPack() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            Dress for{" "}
-            <span className="text-[#e2aa22]">5,545 metres.</span>
+            Dress for <span className="text-[#e2aa22]">5,545 metres.</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-5xl font-manrope text-sm leading-7 text-slate-500">
             At Kala Patthar the temperature can drop to -10°C even in spring.
-            Dress in layers — you will be comfortable in Kathmandu (20–25°C)
-            but cold at the summit vantage point.
+            Dress in layers, you will be comfortable in Kathmandu (20–25°C) but
+            cold at the summit vantage point.
           </p>
         </div>
 
@@ -108,9 +107,7 @@ export default function WhatToPack() {
                 {clothingLayers.map((row, index) => (
                   <tr
                     key={row.layer}
-                    className={
-                      index % 2 === 0 ? "bg-white" : "bg-[#f5f7f9]"
-                    }
+                    className={index % 2 === 0 ? "bg-white" : "bg-[#f5f7f9]"}
                   >
                     <td className="border-b border-slate-200 px-5 py-4 font-manrope text-sm font-semibold text-[#08294d]">
                       {row.layer}

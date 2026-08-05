@@ -17,8 +17,8 @@ export default function Story() {
           For forty years your mother has spoken of Muktinath. The 108
           waterspouts. The eternal flame that burns above running water. The
           temple at 3,710 metres where Vishnu grants liberation. And for forty
-          years, the eighteen-day journey — the buses, the jeep tracks, the days
-          of walking at altitude — has stood between her and her god.
+          years, the eighteen-day journey, the buses, the jeep tracks, the days
+          of walking at altitude, has stood between her and her god.
         </p>
 
         <p>
@@ -36,8 +36,8 @@ export default function Story() {
         <p>
           Two hours after leaving Kathmandu, a 74-year-old woman is standing
           beneath the waterspouts, the cold sacred water running over her hands,
-          weeping — while her son films it on a phone held in hands that will
-          not stay still.
+          weeping, while her son films it on a phone held in hands that will not
+          stay still.
         </p>
 
         <p>

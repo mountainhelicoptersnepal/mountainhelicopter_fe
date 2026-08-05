@@ -4,7 +4,7 @@ const processSteps = [
     title: "Emergency Call",
     duration: "Typical duration: 3–5 min",
     description:
-      "Caller — patient, guide, expedition leader, agency, or insurance assistance company — reaches MHN dispatch. We collect patient name, condition, current location and altitude, nationality, insurance details, and emergency contact.",
+      "Caller, patient, guide, expedition leader, agency, or insurance assistance company, reaches MHN dispatch. We collect patient name, condition, current location and altitude, nationality, insurance details, and emergency contact.",
     extra:
       "If unable to reach us by phone: WhatsApp, satellite phone via inReach network, or email. Every incoming channel routes to the same dispatch officer.",
   },
@@ -95,7 +95,7 @@ const responseRows = [
     region: "Makalu region",
     typical: "2h 15m",
     bestCase: "2h",
-    extension: "Up to 8h — remote staging required",
+    extension: "Up to 8h, remote staging required",
   },
 ];
 
@@ -229,7 +229,7 @@ export default function Process() {
           {/* Heading */}
           <div className="mx-auto max-w-[650px] text-center">
             <p className="font-manrope text-[12px] font-semibold uppercase tracking-[2.4px] text-[#F2B632]">
-              — Our Process
+              , Our Process
             </p>
 
             <h2 className="mt-3 font-fraunces text-[36px] font-semibold leading-[1.02] tracking-[-1px] text-[#ffffff] sm:text-[44px] lg:text-[53px]">
@@ -261,98 +261,96 @@ export default function Process() {
         </div>
       </section>
 
+      <section id="response-time" className="bg-[#FFFFFF]">
+        <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+          {/* Section label */}
+          <p className="font-manrope text-[11px] font-semibold uppercase leading-none tracking-[1.98px] text-[#B87800]">
+            , Response Time
+          </p>
 
-<section id="response-time" className="bg-[#FFFFFF]">
-  <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
-    {/* Section label */}
-    <p className="font-manrope text-[11px] font-semibold uppercase leading-none tracking-[1.98px] text-[#B87800]">
-      — Response Time
-    </p>
+          {/* Main heading */}
+          <h2 className="mt-[20px] max-w-[897px] font-fraunces text-[36px] font-semibold leading-[1.06] tracking-[-0.8px] text-[#003366] sm:text-[44px] lg:text-[47.2px] lg:leading-[54.27px] lg:tracking-[-1.02px]">
+            Helicopter rescue response times by region:{" "}
+            <span className="font-black italic text-[#003366]">
+              call to extraction.
+            </span>
+          </h2>
 
-    {/* Main heading */}
-    <h2 className="mt-[20px] max-w-[897px] font-fraunces text-[36px] font-semibold leading-[1.06] tracking-[-0.8px] text-[#003366] sm:text-[44px] lg:text-[47.2px] lg:leading-[54.27px] lg:tracking-[-1.02px]">
-     Helicopter rescue response times by region:{" "}
-      <span className="font-black italic text-[#003366]">
-        call to extraction.
-      </span>
-    </h2>
+          {/* Table and response factors */}
+          <div className="mt-[40px] grid items-start gap-10 lg:grid-cols-[minmax(0,1.55fr)_minmax(300px,0.9fr)] lg:gap-[46px]">
+            {/* Response table */}
+            <div className="min-w-0 overflow-x-auto">
+              <table className="w-full min-w-[680px] border-collapse font-manrope text-left">
+                <thead>
+                  <tr className="bg-[#F5F7F9] text-white">
+                    <th className="border-r border-white/10 px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
+                      Region
+                    </th>
 
-    {/* Table and response factors */}
-    <div className="mt-[40px] grid items-start gap-10 lg:grid-cols-[minmax(0,1.55fr)_minmax(300px,0.9fr)] lg:gap-[46px]">
-      {/* Response table */}
-      <div className="min-w-0 overflow-x-auto">
-        <table className="w-full min-w-[680px] border-collapse font-manrope text-left">
-          <thead>
-            <tr className="bg-[#F5F7F9] text-white">
-              <th className="border-r border-white/10 px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
-                Region
-              </th>
+                    <th className="w-[112px] border-r border-white/10 px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
+                      Typical
+                    </th>
 
-              <th className="w-[112px] border-r border-white/10 px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
-                Typical
-              </th>
+                    <th className="w-[112px] border-r border-white/10 px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
+                      Best Case
+                    </th>
 
-              <th className="w-[112px] border-r border-white/10 px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
-                Best Case
-              </th>
+                    <th className="w-[285px] px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
+                      Weather-Dependent Extension
+                    </th>
+                  </tr>
+                </thead>
 
-              <th className="w-[285px] px-[16px] py-[12px] text-[12px] font-semibold uppercase leading-[1.4] tracking-[0.12em]">
-                Weather-Dependent Extension
-              </th>
-            </tr>
-          </thead>
+                <tbody>
+                  {responseRows.map((row) => (
+                    <tr
+                      key={row.region}
+                      className="border-b border-[#DCE3E9] bg-white"
+                    >
+                      <td className="border-x border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-medium leading-[1.45] text-[#164C79]">
+                        {row.region}
+                      </td>
 
-          <tbody>
-            {responseRows.map((row) => (
-              <tr
-                key={row.region}
-                className="border-b border-[#DCE3E9] bg-white"
-              >
-                <td className="border-x border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-medium leading-[1.45] text-[#164C79]">
-                  {row.region}
-                </td>
+                      <td className="border-r border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-medium leading-[1.45] text-[#164C79]">
+                        {row.typical}
+                      </td>
 
-                <td className="border-r border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-medium leading-[1.45] text-[#164C79]">
-                  {row.typical}
-                </td>
+                      <td className="border-r border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-normal leading-[1.45] text-[#41596C]">
+                        {row.bestCase}
+                      </td>
 
-                <td className="border-r border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-normal leading-[1.45] text-[#41596C]">
-                  {row.bestCase}
-                </td>
-
-                <td className="border-r border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-normal leading-[1.45] text-[#41596C]">
-                  {row.extension}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* What affects response time */}
-      <aside className="border-l border-[#D7A43E] pl-[28px] sm:pl-[32px]">
-        <h3 className="font-manrope text-[14px] font-semibold uppercase leading-[1.5] tracking-[0.16em] text-[#28557C]">
-          What Affects Response Time
-        </h3>
-
-        <div className="mt-[22px] flex flex-col gap-[22px]">
-          {responseFactors.map((factor) => (
-            <div key={factor.title}>
-              <h4 className="font-manrope text-[14px] font-semibold uppercase leading-[1.5] tracking-[0.13em] text-[#C28218]">
-                {factor.title}
-              </h4>
-
-              <p className="mt-[7px] max-w-[425px] font-manrope text-[14px] font-normal leading-[22.75px] tracking-0 text-[#0A1929]/80">
-                {factor.description}
-              </p>
+                      <td className="border-r border-[#DCE3E9] px-[16px] py-[13px] font-manrope text-[14px] font-normal leading-[1.45] text-[#41596C]">
+                        {row.extension}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-          ))}
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
 
+            {/* What affects response time */}
+            <aside className="border-l border-[#D7A43E] pl-[28px] sm:pl-[32px]">
+              <h3 className="font-manrope text-[14px] font-semibold uppercase leading-[1.5] tracking-[0.16em] text-[#28557C]">
+                What Affects Response Time
+              </h3>
+
+              <div className="mt-[22px] flex flex-col gap-[22px]">
+                {responseFactors.map((factor) => (
+                  <div key={factor.title}>
+                    <h4 className="font-manrope text-[14px] font-semibold uppercase leading-[1.5] tracking-[0.13em] text-[#C28218]">
+                      {factor.title}
+                    </h4>
+
+                    <p className="mt-[7px] max-w-[425px] font-manrope text-[14px] font-normal leading-[22.75px] tracking-0 text-[#0A1929]/80">
+                      {factor.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -65,27 +65,17 @@ function formatAltitude(altitude) {
 }
 
 function getPointX(index) {
-  const usableWidth =
-    chartWidth - chartPaddingLeft - chartPaddingRight;
+  const usableWidth = chartWidth - chartPaddingLeft - chartPaddingRight;
 
-  return (
-    chartPaddingLeft +
-    (index / (rescuePoints.length - 1)) * usableWidth
-  );
+  return chartPaddingLeft + (index / (rescuePoints.length - 1)) * usableWidth;
 }
 
 function getPointY(altitude) {
-  const usableHeight =
-    chartHeight - chartPaddingTop - chartPaddingBottom;
+  const usableHeight = chartHeight - chartPaddingTop - chartPaddingBottom;
 
-  const normalized =
-    (altitude - minAltitude) / (maxAltitude - minAltitude);
+  const normalized = (altitude - minAltitude) / (maxAltitude - minAltitude);
 
-  return (
-    chartPaddingTop +
-    usableHeight -
-    normalized * usableHeight
-  );
+  return chartPaddingTop + usableHeight - normalized * usableHeight;
 }
 
 const routePath = rescuePoints
@@ -117,10 +107,7 @@ export default function LangtangCoverage() {
           <h2 className="mt-5 font-fraunces text-4xl font-semibold leading-[1.02] tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
             Langtang Rescue
             <br />
-
-            <span className="italic text-[#f2ad22]">
-              Coverage Map
-            </span>
+            <span className="italic text-[#f2ad22]">Coverage Map</span>
           </h2>
 
           <p className="mt-6 max-w-[850px] font-manrope text-sm leading-7 text-white/75 md:text-base md:leading-8">
@@ -148,10 +135,7 @@ export default function LangtangCoverage() {
                   width="300%"
                   height="300%"
                 >
-                  <feGaussianBlur
-                    stdDeviation="5"
-                    result="blur"
-                  />
+                  <feGaussianBlur stdDeviation="5" result="blur" />
 
                   <feMerge>
                     <feMergeNode in="blur" />
@@ -182,7 +166,7 @@ export default function LangtangCoverage() {
                 fontWeight="700"
                 letterSpacing="1.2"
               >
-                ALTITUDE ILLNESS RISK ZONE — AMS / HAPE / HACE POSSIBLE
+                ALTITUDE ILLNESS RISK ZONE, AMS / HAPE / HACE POSSIBLE
               </text>
 
               {/* HIGH-ALTITUDE OPERATING LIMIT */}
@@ -226,8 +210,7 @@ export default function LangtangCoverage() {
                 const y = getPointY(point.altitude);
 
                 const isHighlighted =
-                  point.type === "rescue" ||
-                  point.type === "hra";
+                  point.type === "rescue" || point.type === "hra";
 
                 return (
                   <g key={point.location}>
@@ -318,9 +301,7 @@ export default function LangtangCoverage() {
                     <text
                       x={x - 5}
                       y={chartHeight - 58}
-                      transform={`rotate(-45 ${x - 5} ${
-                        chartHeight - 58
-                      })`}
+                      transform={`rotate(-45 ${x - 5} ${chartHeight - 58})`}
                       textAnchor="end"
                       fill="#ffffff"
                       opacity="0.45"
@@ -350,10 +331,7 @@ export default function LangtangCoverage() {
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="text-lg leading-none text-[#f2ad22]">
-              +
-            </span>
-
+            <span className="text-lg leading-none text-[#f2ad22]">+</span>
             Major High-Altitude Rescue Point
           </div>
 

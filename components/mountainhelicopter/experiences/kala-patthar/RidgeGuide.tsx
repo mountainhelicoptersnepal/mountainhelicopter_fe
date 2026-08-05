@@ -3,42 +3,42 @@ const ridgeViews = [
     name: "Everest",
     altitude: "8,849 M",
     description:
-      "Two and a half kilometres away, face-on. The Southwest Face fills half the sky — this is the closest legal look a non-climber gets.",
+      "Two and a half kilometres away, face-on. The Southwest Face fills half the sky, this is the closest legal look a non-climber gets.",
     accent: "gold",
   },
   {
     name: "Nuptse",
     altitude: "7,861 M",
     description:
-      "A serrated blade of ice standing guard at Everest's right shoulder — from here, the two peaks seem to lean into each other.",
+      "A serrated blade of ice standing guard at Everest's right shoulder, from here, the two peaks seem to lean into each other.",
     accent: "blue",
   },
   {
     name: "Pumori",
     altitude: "7,161 M",
     description:
-      "Towering directly above you — Kala Patthar is a fold in Pumori's skirt. Tilt your head back until your neck complains.",
+      "Towering directly above you, Kala Patthar is a fold in Pumori's skirt. Tilt your head back until your neck complains.",
     accent: "gold",
   },
   {
     name: "Khumbu Glacier & Icefall",
     altitude: "Below You",
     description:
-      "A frozen river of grey ice unrolling beneath the ridge, cracking into the Icefall — the maze every summiteer must thread first.",
+      "A frozen river of grey ice unrolling beneath the ridge, cracking into the Icefall, the maze every summiteer must thread first.",
     accent: "blue",
   },
   {
     name: "Everest Base Camp",
     altitude: "5,364 M",
     description:
-      "In climbing season, a scatter of yellow tents on the glacier below — a village of ambition you can take in with one glance.",
+      "In climbing season, a scatter of yellow tents on the glacier below, a village of ambition you can take in with one glance.",
     accent: "blue",
   },
   {
     name: "Changtse",
     altitude: "7,543 M",
     description:
-      "Peeking over the Lho La pass from the Tibet side — proof that from this ridge, you are looking clean across a border.",
+      "Peeking over the Lho La pass from the Tibet side, proof that from this ridge, you are looking clean across a border.",
     accent: "blue",
   },
 ];

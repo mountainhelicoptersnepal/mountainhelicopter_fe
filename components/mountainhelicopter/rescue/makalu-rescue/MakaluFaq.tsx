@@ -25,8 +25,7 @@ const faqs = [
       "It may be possible when the combined patient condition, aircraft configuration, altitude, temperature, fuel requirement and passenger weight remain within safe operating limits. At high elevations, separate shuttle flights may be required.",
   },
   {
-    question:
-      "What’s the flight time for a helicopter to Makalu Base Camp?",
+    question: "What’s the flight time for a helicopter to Makalu Base Camp?",
     answer:
       "Flight time varies according to the departure point, aircraft location, weather, route, fuel planning and whether intermediate staging is required. Total response time also includes rescue verification, aircraft preparation, authorization and the availability of a safe flying window.",
   },
@@ -55,8 +54,7 @@ const faqs = [
       "Evacuations may be coordinated from Makalu Base Camp, Langmale Kharka, Yangle Kharka, Dobate, Shipton La, Kongma Danda, Tashigaon, Num and other accessible points along the Makalu-Barun trekking corridor.",
   },
   {
-    question:
-      "What documents are needed to process a travel insurance claim?",
+    question: "What documents are needed to process a travel insurance claim?",
     answer:
       "The insurer may request the rescue invoice, flight log, pickup location, evacuation time, patient report, medical records, passport details, policy number, assistance-company case reference and supporting communication from the guide, agency or rescue team.",
   },
@@ -82,7 +80,7 @@ export default function MakaluFaq() {
     >
       <div className="mx-auto max-w-[1440px]">
         <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-          — Questions, Answered
+          , Questions, Answered
         </p>
 
         <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -120,9 +118,7 @@ export default function MakaluFaq() {
                     size={18}
                     strokeWidth={1.8}
                     className={`shrink-0 text-[#a66e00] transition-all duration-300 ${
-                      isOpen
-                        ? "rotate-90"
-                        : "group-hover:translate-x-1"
+                      isOpen ? "rotate-90" : "group-hover:translate-x-1"
                     }`}
                   />
                 </button>

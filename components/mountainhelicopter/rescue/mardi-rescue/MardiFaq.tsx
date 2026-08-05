@@ -59,7 +59,7 @@ export default function MardiFaq() {
     >
       <div className="mx-auto max-w-[1440px]">
         <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-          — Questions, Answered
+          , Questions, Answered
         </p>
 
         <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -97,9 +97,7 @@ export default function MardiFaq() {
                     size={18}
                     strokeWidth={1.8}
                     className={`shrink-0 text-[#a66e00] transition-all duration-300 ${
-                      isOpen
-                        ? "rotate-90"
-                        : "group-hover:translate-x-1"
+                      isOpen ? "rotate-90" : "group-hover:translate-x-1"
                     }`}
                   />
                 </button>

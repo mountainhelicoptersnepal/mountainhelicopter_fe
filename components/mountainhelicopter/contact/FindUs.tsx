@@ -20,8 +20,8 @@ export default function FindUs() {
 
           <div className="font-manrope leading-relaxed text-[#0A1929]/70">
             <p>
-              Old Sinamangal, Pepsicola — 10 minutes from Tribhuvan
-              International Airport. Visitor parking available on-site.
+              Old Sinamangal, Pepsicola, 10 minutes from Tribhuvan International
+              Airport. Visitor parking available on-site.
             </p>
           </div>
         </header>
@@ -87,7 +87,7 @@ export default function FindUs() {
 
                 <p className="mb-4 font-manrope text-sm leading-relaxed text-white/80">
                   Flights depart from the TIA General Aviation Terminal. Meet us
-                  at the office — we transfer you to the helipad 30 minutes
+                  at the office, we transfer you to the helipad 30 minutes
                   before takeoff.
                 </p>
 

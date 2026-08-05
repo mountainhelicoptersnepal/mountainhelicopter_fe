@@ -40,8 +40,7 @@ const emergencyCards = [
       "Blocked roads or trails leaving travelers stranded",
       "Emergency extraction from remote trekking routes or mountain areas",
     ],
-    note:
-      "A medical evacuation decision should always be made carefully. Mild discomfort does not always require helicopter rescue, but serious symptoms, major injuries, and dangerous weather conditions should never be ignored.",
+    note: "A medical evacuation decision should always be made carefully. Mild discomfort does not always require helicopter rescue, but serious symptoms, major injuries, and dangerous weather conditions should never be ignored.",
   },
 ];
 
@@ -112,7 +111,7 @@ export default function MuktinathWhenToCall() {
         {/* Section heading */}
         <div className="w-full max-w-[1187px]">
           <p className="font-manrope text-[11px] font-medium uppercase leading-[14px] tracking-[1.98px] text-[#F2B632]">
-            — When to call
+            , When to call
           </p>
 
           <div className="w-full pt-4 lg:h-[71px]">

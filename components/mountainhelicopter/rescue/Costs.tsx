@@ -153,30 +153,26 @@ function CrossIcon() {
 
 export default function Costs() {
   return (
-    <section
-      id="costs"
-      className="scroll-mt-[125px] bg-[#F5F7F9]"
-    >
+    <section id="costs" className="scroll-mt-[125px] bg-[#F5F7F9]">
       <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         {/* Rescue cost heading */}
         <div className="max-w-[900px]">
           <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.22em] text-[#A66E00]">
-            — Rescue Costs
+            , Rescue Costs
           </p>
 
           <h2 className="mt-3 font-fraunces text-[38px] font-semibold leading-[1.06] tracking-[-0.8px] text-[#003366] sm:text-[44px] lg:text-[51.2px] lg:leading-[54.27px] lg:tracking-[-1.02px]">
-             Cost of Helicopter Rescue
+            Cost of Helicopter Rescue
           </h2>
 
           <p className="mt-4 max-w-[900px] font-manrope text-[15px] font-normal leading-[24px] tracking-0 text-[#44515C] sm:text-[16px] sm:leading-[26px] lg:text-[17px] lg:leading-[27.63px]">
             Helicopter rescue cost depends on pickup location, altitude,
-            distance, flight route, weather delay, aircraft positioning,
-            landing difficulty, patient condition, and destination. The ranges
-            below are typical for direct extraction to Kathmandu. Exact quotes
-            are provided at the time of dispatch.
+            distance, flight route, weather delay, aircraft positioning, landing
+            difficulty, patient condition, and destination. The ranges below are
+            typical for direct extraction to Kathmandu. Exact quotes are
+            provided at the time of dispatch.
           </p>
         </div>
-
 
         {/* Cost factors */}
         <div className="mt-10">
@@ -200,7 +196,7 @@ export default function Costs() {
         {/* Included section */}
         <div className="mt-12 md:mt-16">
           <p className="font-manrope text-[10px] font-bold uppercase tracking-[0.22em] text-[#A66E00]">
-            — What&apos;s Included
+            , What&apos;s Included
           </p>
 
           <h2 className="mt-3 font-fraunces text-[38px] font-semibold leading-[1.06] tracking-[-0.8px] text-[#071825] sm:text-[44px] lg:text-[51.2px] lg:leading-[54.27px] lg:tracking-[-1.02px]">

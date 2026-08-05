@@ -34,7 +34,7 @@ export default function MuktinathCoverage() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[980px]">
           <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — Coverage Map
+            , Coverage Map
           </p>
 
           <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#003366] sm:text-[50px] lg:text-[60px]">
@@ -43,9 +43,9 @@ export default function MuktinathCoverage() {
 
           <p className="mt-5 max-w-[840px] font-manrope text-[14px] leading-[1.8] text-[#4d5963] sm:text-[14px]">
             The Gosaikunda trails run from Dhunche to Lauribina La Pass and into
-            the Helambu region, gaining over 2,600 meters in elevation along
-            the way. Rescue conditions change significantly at each stage of
-            that route.
+            the Helambu region, gaining over 2,600 meters in elevation along the
+            way. Rescue conditions change significantly at each stage of that
+            route.
           </p>
         </div>
 

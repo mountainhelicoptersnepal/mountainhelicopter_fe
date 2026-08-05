@@ -1,22 +1,18 @@
 import Link from "next/link";
 
-import {
-  Check,
-  MessageCircle,
-  ShieldCheck,
-} from "lucide-react";
+import { Check, MessageCircle, ShieldCheck } from "lucide-react";
 
 const phoneNumber = "9779712082949";
 
 const whatsappMessage =
-  "Hello! I would like to design a Heli Picnic — A Table in the Sky experience.";
+  "Hello! I would like to design a Heli Picnic, A Table in the Sky experience.";
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   whatsappMessage,
 )}`;
 
 const benefits = [
-  "Fully private — no other guests",
+  "Fully private, no other guests",
   "Custom menus available",
   "Weather rescheduling options",
 ];
@@ -53,11 +49,7 @@ const bestMonths = [
 
 export default function BookingSidebar() {
   return (
-    <aside
-      id="booking"
-      aria-label="Booking information"
-      className="space-y-5"
-    >
+    <aside id="booking" aria-label="Booking information" className="space-y-5">
       <div className="relative overflow-hidden rounded-3xl bg-[#003366] p-8 text-white shadow-[0_20px_40px_rgba(0,51,102,0.18)]">
         <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#F2B632]/10" />
 

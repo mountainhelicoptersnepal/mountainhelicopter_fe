@@ -70,7 +70,7 @@ export default function Aircraft() {
     <section className="w-full bg-[#fafcfd]">
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         <p className="font-jetbrains-mono text-[11px] font-medium uppercase leading-[16.5px] tracking-[1.98px] text-gold">
-          — Fleets
+          , Fleets
         </p>
 
         <h2 className="mt-4 max-w-[600px] text-center font-fraunces text-[32px] font-semibold leading-[1.05] tracking-[-0.02em] text-primary-blue sm:text-[40px] lg:text-[42px]">

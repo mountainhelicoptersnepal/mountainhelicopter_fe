@@ -67,15 +67,12 @@ function BulletList({
 
 export default function Fleet() {
   return (
-    <section
-      id="fleet"
-      className="scroll-mt-[125px] bg-[#F6F3ED]"
-    >
+    <section id="fleet" className="scroll-mt-[125px] bg-[#F6F3ED]">
       <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         {/* Cabin configuration */}
         <div>
           <p className="font-manrope text-[9px] font-semibold uppercase leading-none tracking-[0.18em] text-[#F2B632]">
-            — Cabin Configuration
+            , Cabin Configuration
           </p>
 
           <h2 className="mt-[18px] max-w-[1000px] font-fraunces text-[38px] font-semibold leading-[1.06] tracking-[-0.8px] text-[#003366] sm:text-[44px] lg:text-[51.2px] lg:leading-[54.27px] lg:tracking-[-1.02px]">
@@ -162,7 +159,7 @@ export default function Fleet() {
                       }`}
                     >
                       <td className="px-4 py-4 align-top font-manrope text-[13px] font-semibold leading-[20px] text-[#315471] sm:text-[14px] sm:leading-[22px]">
-                        {configuration.letter} — {configuration.title}
+                        {configuration.letter}, {configuration.title}
                       </td>
 
                       <td className="px-4 py-4 align-top font-manrope text-[13px] font-normal leading-[20px] text-[#46535E] sm:text-[14px] sm:leading-[22px]">

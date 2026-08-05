@@ -11,7 +11,7 @@ const travellers = [
     icon: RefreshCw,
     title: "The trekker the weather beat",
     description:
-      "You walked eleven days and the clouds rolled in on the twelfth. It still stings. Come back for the fifteen minutes the mountain owes you — this time, we pick the morning.",
+      "You walked eleven days and the clouds rolled in on the twelfth. It still stings. Come back for the fifteen minutes the mountain owes you, this time, we pick the morning.",
   },
   {
     icon: Camera,
@@ -23,7 +23,7 @@ const travellers = [
     icon: Heart,
     title: "The milestone-marker",
     description:
-      "A fortieth, a recovery, a promise kept, a person remembered. Some moments deserve the biggest backdrop there is — and this is, literally, the biggest there is.",
+      "A fortieth, a recovery, a promise kept, a person remembered. Some moments deserve the biggest backdrop there is, and this is, literally, the biggest there is.",
   },
 ];
 

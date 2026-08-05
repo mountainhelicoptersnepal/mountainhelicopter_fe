@@ -26,17 +26,17 @@ const months = [
   },
   {
     name: "Jun",
-    description: "Monsoon — valley sites",
+    description: "Monsoon, valley sites",
     status: "limited",
   },
   {
     name: "Jul",
-    description: "Monsoon — valley sites",
+    description: "Monsoon, valley sites",
     status: "limited",
   },
   {
     name: "Aug",
-    description: "Monsoon — valley sites",
+    description: "Monsoon, valley sites",
     status: "limited",
   },
   {

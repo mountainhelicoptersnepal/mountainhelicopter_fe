@@ -92,7 +92,7 @@ export default function MardiWhenToCall() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[960px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — When to Call
+            , When to Call
           </p>
 
           <h2 className="mt-4 max-w-[1100px] font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -102,9 +102,9 @@ export default function MardiWhenToCall() {
           <div className="mt-5 max-w-[820px] space-y-5 font-manrope text-[11px] leading-[1.8] text-[#4d5963] sm:text-[12px]">
             <p>
               Not every symptom on the trail requires immediate helicopter
-              evacuation. Some cases may be monitored while the patient rests
-              or descends under supervision. The critical decision is
-              recognizing when waiting is no longer safe.
+              evacuation. Some cases may be monitored while the patient rests or
+              descends under supervision. The critical decision is recognizing
+              when waiting is no longer safe.
             </p>
 
             <p>
@@ -146,12 +146,10 @@ export default function MardiWhenToCall() {
                   className="group inline-flex h-[42px] items-center justify-center gap-2 bg-[#c65c00] px-5 font-manrope text-[9px] font-extrabold uppercase tracking-[0.15em] text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#df6b00] hover:shadow-[0_10px_25px_rgba(0,0,0,0.25)]"
                 >
                   <span>[</span>
-
                   <Phone
                     size={13}
                     className="transition-transform duration-300 group-hover:rotate-12"
                   />
-
                   Call Now
                   <span>]</span>
                 </a>

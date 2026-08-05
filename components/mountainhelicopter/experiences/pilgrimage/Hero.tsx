@@ -3,13 +3,7 @@ import Link from "next/link";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
 
-import {
-  CalendarDays,
-  Check,
-  Clock3,
-  Flame,
-  Users,
-} from "lucide-react";
+import { CalendarDays, Check, Clock3, Flame, Users } from "lucide-react";
 
 const details = [
   {
@@ -98,7 +92,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="mb-10 mt-6 max-w-[680px] [font-family:var(--font-manrope)] text-xl font-light leading-relaxed text-white/90 md:text-2xl">
-          Muktinath. Gosaikunda. Kailash. Darshan without the days of walking —
+          Muktinath. Gosaikunda. Kailash. Darshan without the days of walking,
           for every body that faith still calls.
         </p>
 
@@ -112,10 +106,7 @@ export default function Hero() {
                 key={detail.label}
                 className="inline-flex items-center gap-2 [font-family:var(--font-manrope)] text-[11px] font-semibold uppercase tracking-[0.12em] text-white/85"
               >
-                <Icon
-                  size={16}
-                  className="shrink-0 text-[#F2B632]"
-                />
+                <Icon size={16} className="shrink-0 text-[#F2B632]" />
 
                 {detail.label}
               </span>

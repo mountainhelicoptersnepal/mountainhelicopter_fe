@@ -51,8 +51,8 @@ export default function Hero() {
           {/* Paragraph */}
           <p className="max-w-[586px] [font-family:var(--font-manrope)] text-[16px] font-light leading-[25px] text-white/90 sm:text-[18px] sm:leading-[28px] md:text-[21px] md:leading-[30px] lg:text-[24px] lg:leading-[32px]">
             A photograph of Everest is everywhere. The feeling of standing
-            beneath it at sunrise — heart pounding in the thin air, prayer flags
-            snapping in the wind — belongs only to the people who go.
+            beneath it at sunrise, heart pounding in the thin air, prayer flags
+            snapping in the wind, belongs only to the people who go.
           </p>
 
           {/* Buttons */}

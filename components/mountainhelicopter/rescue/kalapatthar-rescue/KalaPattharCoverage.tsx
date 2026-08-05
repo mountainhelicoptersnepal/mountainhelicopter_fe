@@ -48,9 +48,7 @@ function TrustItem({ item, index }) {
   return (
     <div
       className={`flex min-h-[74px] items-center justify-center px-3 text-center ${
-        index !== trustItems.length - 1
-          ? "lg:border-r lg:border-[#d7a03d]"
-          : ""
+        index !== trustItems.length - 1 ? "lg:border-r lg:border-[#d7a03d]" : ""
       }`}
     >
       <span className="font-manrope text-[9px] font-bold uppercase tracking-[0.2em] text-[#071825] sm:text-[10px]">
@@ -77,7 +75,7 @@ export default function KalaPattharCoverage() {
           {/* Optional status notice */}
           <div className="border border-[#dfbd78] bg-[#f1eee7] px-6 py-6 sm:px-8">
             <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-              — Regional Rescue Information
+              , Regional Rescue Information
             </p>
 
             <p className="mt-3 max-w-[900px] font-manrope text-[11px] leading-[1.8] text-[#46545f] sm:text-[12px]">
@@ -91,7 +89,7 @@ export default function KalaPattharCoverage() {
 
           <div className="mt-16 max-w-[1180px]">
             <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-              — Rescue Coverage by Altitude
+              , Rescue Coverage by Altitude
             </p>
 
             <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">

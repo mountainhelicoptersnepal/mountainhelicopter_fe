@@ -100,16 +100,13 @@ function ExcludedItem({ children }) {
 
 export default function GosaikundaCosts() {
   return (
-    <section
-      id="costs"
-      className="scroll-mt-[123px]  "
-    >
+    <section id="costs" className="scroll-mt-[123px]  ">
       {/* Cost factors */}
       <div className="bg-[#F8FAFC]">
         <div className="mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20 xl:px-[125px]">
           <div className="w-full max-w-[1100px]">
             <p className="font-manrope text-[11px] font-bold uppercase leading-[14px] tracking-[2px] text-[#B87800]">
-              — Main Factors Affecting Cost
+              , Main Factors Affecting Cost
             </p>
 
             <h2 className="mt-3 font-fraunces text-[34px] font-semibold uppercase leading-[40px] tracking-[-0.7px] text-[#003366] sm:text-[42px] sm:leading-[48px] lg:text-[48px] lg:leading-[54px] lg:tracking-[-0.96px]">

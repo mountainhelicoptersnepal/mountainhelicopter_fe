@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "I have been to sixty countries and I keep a private list of the best moment from each one. Fifteen minutes on that black ridge rearranged all of them. Number one, permanently — and honestly, it is not close.",
+      "I have been to sixty countries and I keep a private list of the best moment from each one. Fifteen minutes on that black ridge rearranged all of them. Number one, permanently, and honestly, it is not close.",
     name: "James Whitfield",
     experience: "Dawn Landing",
     location: "Australia",
@@ -23,11 +23,7 @@ function Rating() {
   return (
     <div className="mb-4 flex gap-1" aria-label="Five out of five stars">
       {Array.from({ length: 5 }).map((_, index) => (
-        <Star
-          key={index}
-          size={16}
-          className="fill-[#F2B632] text-[#F2B632]"
-        />
+        <Star key={index} size={16} className="fill-[#F2B632] text-[#F2B632]" />
       ))}
     </div>
   );

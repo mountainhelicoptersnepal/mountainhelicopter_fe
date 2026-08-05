@@ -20,8 +20,7 @@ const costFactors = [
   },
   {
     factor: "Patient condition",
-    reason:
-      "Oxygen, stretcher needs, or medical support can change logistics.",
+    reason: "Oxygen, stretcher needs, or medical support can change logistics.",
   },
   {
     factor: "Insurance approval",
@@ -29,13 +28,11 @@ const costFactors = [
   },
   {
     factor: "Private vs Shared Evacuation",
-    reason:
-      "Shared evacuation may reduce cost when safe and practical.",
+    reason: "Shared evacuation may reduce cost when safe and practical.",
   },
   {
     factor: "Passenger count",
-    reason:
-      "Weight affects high-altitude performance (strict 400 kg limit).",
+    reason: "Weight affects high-altitude performance (strict 400 kg limit).",
   },
   {
     factor: "Documentation needs",
@@ -106,7 +103,7 @@ export default function MuktinathCosts() {
         <div className="mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20 xl:px-[125px]">
           <div className="w-full max-w-[1100px]">
             <p className="font-manrope text-[9px] font-bold uppercase leading-[14px] tracking-[2px] text-[#B87800]">
-              — Main Factors Affecting Cost
+              , Main Factors Affecting Cost
             </p>
 
             <h2 className="mt-3 font-fraunces text-[34px] font-semibold uppercase leading-[40px] tracking-[-0.7px] text-[#003366] sm:text-[42px] sm:leading-[48px] lg:text-[48px] lg:leading-[54px] lg:tracking-[-0.96px]">
@@ -159,8 +156,7 @@ export default function MuktinathCosts() {
 
           <p className="mt-6 w-full max-w-[780px] font-manrope text-[12px] font-normal leading-[20px] tracking-[0px] text-[#0A1929]/70 sm:text-[14px] sm:leading-[21px]">
             The safest approach is to share your location and patient condition
-            first. Then the rescue team can confirm the possible cost
-            structure.
+            first. Then the rescue team can confirm the possible cost structure.
           </p>
         </div>
       </div>

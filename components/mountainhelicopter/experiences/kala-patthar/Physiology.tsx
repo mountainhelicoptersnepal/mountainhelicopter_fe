@@ -38,7 +38,7 @@ export default function Physiology() {
             At 5,545 metres, every lungful of air delivers roughly half the
             oxygen it does at sea level. Your body notices immediately: your
             heart rate climbs, your breathing deepens, colours seem sharper, and
-            a light champagne-fizz euphoria arrives — the honest signature of
+            a light champagne-fizz euphoria arrives, the honest signature of
             altitude.
           </p>
 
@@ -49,7 +49,7 @@ export default function Physiology() {
 
           <p>
             Stay longer, though, and the body starts writing cheques it cannot
-            cash — headache, nausea, the early grammar of altitude sickness.
+            cash, headache, nausea, the early grammar of altitude sickness.
           </p>
 
           <p>
@@ -57,7 +57,7 @@ export default function Physiology() {
             You arrive in ninety minutes from 1,400 metres, so we cap the visit
             at{" "}
             <strong className="font-semibold text-white">
-              fifteen minutes — a hard limit, set by physiology, not by us
+              fifteen minutes, a hard limit, set by physiology, not by us
             </strong>
             .
           </p>

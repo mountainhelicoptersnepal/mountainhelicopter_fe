@@ -91,11 +91,14 @@ function BulletList({ items }: { items: string[] }) {
 export default function Insurance() {
   return (
     <>
-      <section id="insurance" className="scroll-mt-[125px] bg-[#061523] text-white">
+      <section
+        id="insurance"
+        className="scroll-mt-[125px] bg-[#061523] text-white"
+      >
         <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-16 md:px-12 md:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:px-16 lg:py-28">
           <div>
             <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#d59618]">
-              — Insurance
+              , Insurance
             </p>
 
             <h2 className="mt-3 max-w-[680px] font-fraunces text-[36px] font-semibold leading-[1.05] tracking-[-0.025em] text-[#f7f3ec] sm:text-[46px] lg:text-[54px]">
@@ -113,11 +116,11 @@ export default function Insurance() {
               </p>
 
               <p>
-                MHN coordinates directly with insurance assistance companies
-                for confirmed policy cases. Where the assistance company
-                authorizes rescue, we dispatch without requiring upfront
-                payment from the patient. Documentation is prepared after the
-                rescue for direct billing.
+                MHN coordinates directly with insurance assistance companies for
+                confirmed policy cases. Where the assistance company authorizes
+                rescue, we dispatch without requiring upfront payment from the
+                patient. Documentation is prepared after the rescue for direct
+                billing.
               </p>
 
               <p>
@@ -192,7 +195,7 @@ export default function Insurance() {
       <section className="bg-[#f6f3ed]">
         <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — Post-Rescue
+            , Post-Rescue
           </p>
 
           <h2 className="mt-3 font-fraunces text-[36px] font-semibold leading-[1.05] tracking-[-0.025em] text-[#071825] sm:text-[46px] lg:text-[54px]">
@@ -200,10 +203,9 @@ export default function Insurance() {
           </h2>
 
           <p className="mt-4 max-w-[760px] font-manrope text-[11px] leading-[1.75] text-[#4a5660] sm:text-[12px]">
-            Complete documentation is prepared within 24–48 hours of
-            evacuation, delivered by email to the patient or designated family
-            member, and directly to the insurance assistance company where
-            applicable.
+            Complete documentation is prepared within 24–48 hours of evacuation,
+            delivered by email to the patient or designated family member, and
+            directly to the insurance assistance company where applicable.
           </p>
 
           <div className="mt-8 grid border-l border-t border-[#cfd2d3] sm:grid-cols-2 lg:grid-cols-3">
@@ -211,9 +213,7 @@ export default function Insurance() {
               <article
                 key={document.number}
                 className={`min-h-[155px] border-b border-r border-[#cfd2d3] bg-white p-5 ${
-                  index === documents.length - 1
-                    ? "lg:col-span-1"
-                    : ""
+                  index === documents.length - 1 ? "lg:col-span-1" : ""
                 }`}
               >
                 <span className="font-manrope text-[8px] font-bold uppercase tracking-[0.14em] text-[#a66e00]">

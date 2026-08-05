@@ -16,14 +16,14 @@ export default function Story() {
         <p className="first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-fraunces first-letter:text-6xl first-letter:font-bold first-letter:leading-none first-letter:text-[#003366]">
           There is a moment, stepping out of the helicopter at Kala Patthar,
           when your brain refuses the scale of what it is seeing. Everest is no
-          longer a photograph or a shape on the horizon — it is a wall of black
+          longer a photograph or a shape on the horizon, it is a wall of black
           rock and blue ice filling half the sky, close enough that you can
           watch the wind tear snow off the summit ridge.
         </p>
 
         <p>
           You land just after dawn, when the light is still amber and the air is
-          glass. The rotor slows, the door opens, and the cold arrives first —
+          glass. The rotor slows, the door opens, and the cold arrives first,
           sharp, mineral, absolutely clean. Then the sound arrives, which is to
           say: none.
         </p>
@@ -35,19 +35,17 @@ export default function Story() {
         </p>
 
         <p>
-          The dark rocks under your feet —{" "}
-          <em className="font-medium text-[#B8860B]">
-            kala patthar
-          </em>{" "}
-          means “black rock” in Nepali — are frosted silver, and the first sun
-          is running like liquid gold down the face of Pumori above you.
+          The dark rocks under your feet,{" "}
+          <em className="font-medium text-[#B8860B]">kala patthar</em> means
+          “black rock” in Nepali, are frosted silver, and the first sun is
+          running like liquid gold down the face of Pumori above you.
         </p>
 
         <p>
           Trekkers spend twelve days walking to this ridge. They arrive
           exhausted, oxygen-starved, and stay twenty minutes. You will arrive at
           dawn with fresh legs, a thermos of hot tea, and the same twenty
-          minutes — except yours come with a helicopter waiting and a pilot
+          minutes, except yours come with a helicopter waiting and a pilot
           watching the weather so you do not have to.
         </p>
 

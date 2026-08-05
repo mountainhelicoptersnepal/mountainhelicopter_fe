@@ -20,7 +20,7 @@ function WhatsappIcon() {
 export default function CTA() {
   const phoneNumber = "9712082949";
   const message =
-    "Hi — I have a quick question about a Mountain Helicopters flight.";
+    "Hi, I have a quick question about a Mountain Helicopters flight.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message,

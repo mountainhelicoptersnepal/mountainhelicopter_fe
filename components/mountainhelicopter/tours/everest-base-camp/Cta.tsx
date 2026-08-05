@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
 
 function WhatsappIcon() {
   return (
@@ -19,7 +20,7 @@ function WhatsappIcon() {
 export default function CTA() {
   const phoneNumber = "9712082949";
   const message =
-    "Hi — I have a quick question about a Mountain Helicopters flight.";
+    "Hi, I have a quick question about a Mountain Helicopters flight.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message,
@@ -58,27 +59,21 @@ export default function CTA() {
         </p>
 
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
+          <PrimaryButton
             href="/contact"
-            className="group relative isolate flex h-[46px] w-[157px] items-center justify-center overflow-hidden bg-[#f5a623] font-manrope text-[14px] font-bold uppercase tracking-[-0.01em] text-[#06203c] transition-colors duration-300"
+            className="bg-[#f5a623] text-[#06203c]"
           >
-            <span className="absolute inset-0 z-0 -translate-x-[101%] bg-white transition-transform duration-500 [transition-timing-function:cubic-bezier(0.4,0,0.2,1)] group-hover:translate-x-0" />
-            <span className="relative z-10">Book Journey →</span>
-          </Link>
+            Book Journey
+          </PrimaryButton>
 
-          <a
+          <SecondaryButton
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative isolate flex h-[46px] w-[222.5px] items-center justify-center gap-2 overflow-hidden border border-white bg-transparent font-manrope text-[14px] font-bold uppercase text-white transition-colors duration-300"
           >
-            <span className="absolute inset-0 z-0 -translate-x-[101%] bg-white transition-transform duration-500 [transition-timing-function:cubic-bezier(0.4,0,0.2,1)] group-hover:translate-x-0" />
-
-            <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 group-hover:text-[#06203c]">
-              <WhatsappIcon />
-              Contact our team
-            </span>
-          </a>
+            <WhatsappIcon />
+            Contact our team
+          </SecondaryButton>
         </div>
       </div>
 

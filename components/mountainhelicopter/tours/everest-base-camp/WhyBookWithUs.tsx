@@ -17,7 +17,7 @@ const reasons = [
     icon: UsersRound,
     title: "Best Pricing",
     description:
-      "We are the direct operator — no agency markup and no third-party commissions. What you pay is the actual operating cost plus our margin, with nothing hidden.",
+      "We are the direct operator, no agency markup and no third-party commissions. What you pay is the actual operating cost plus our margin, with nothing hidden.",
   },
   {
     icon: Clock3,

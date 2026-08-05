@@ -1,4 +1,3 @@
-
 const waypoints = [
   {
     name: "Lukla",
@@ -71,14 +70,12 @@ function getX(index) {
   if (waypoints.length === 1) return chartLeft;
 
   return (
-    chartLeft +
-    (index / (waypoints.length - 1)) * (chartRight - chartLeft)
+    chartLeft + (index / (waypoints.length - 1)) * (chartRight - chartLeft)
   );
 }
 
 function getY(altitude) {
-  const progress =
-    (altitude - minAltitude) / (maxAltitude - minAltitude);
+  const progress = (altitude - minAltitude) / (maxAltitude - minAltitude);
 
   return chartBottom - progress * (chartBottom - chartTop);
 }
@@ -137,14 +134,12 @@ export default function EverestCoverage() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[900px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#f2a10d]">
-            — Coverage Profile
+            , Coverage Profile
           </p>
 
           <h2 className="mt-4 font-fraunces text-[38px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#f6f2ea] sm:text-[48px] lg:text-[58px]">
             Every Everest waypoint.{" "}
-            <span className="italic text-[#f2a10d]">
-              Every altitude.
-            </span>
+            <span className="italic text-[#f2a10d]">Every altitude.</span>
           </h2>
 
           <p className="mt-5 max-w-[760px] font-manrope text-[12px] leading-[1.75] text-white/78 sm:text-[13px]">
@@ -187,7 +182,7 @@ export default function EverestCoverage() {
                 fontFamily="var(--font-manrope-family)"
                 letterSpacing="1.2"
               >
-                ALTITUDE ILLNESS RISK ZONE — HAPE / HACE POSSIBLE
+                ALTITUDE ILLNESS RISK ZONE, HAPE / HACE POSSIBLE
               </text>
 
               {/* Shuttle limit */}
@@ -229,8 +224,7 @@ export default function EverestCoverage() {
                 const y = getY(point.altitude);
                 const isHra = point.type === "hra";
                 const isEverestEr = point.type === "everest-er";
-                const labelAbove =
-                  index !== 1 && index !== 5 && index !== 8;
+                const labelAbove = index !== 1 && index !== 5 && index !== 8;
 
                 return (
                   <g key={point.name}>
@@ -284,12 +278,7 @@ export default function EverestCoverage() {
                       </g>
                     )}
 
-                    <circle
-                      cx={x}
-                      cy={y}
-                      r="5"
-                      fill="#f2a10d"
-                    />
+                    <circle cx={x} cy={y} r="5" fill="#f2a10d" />
 
                     <text
                       x={x}

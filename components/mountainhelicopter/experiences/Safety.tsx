@@ -23,13 +23,11 @@ export default function Safety() {
         {/* Only the content is limited to 1440px */}
         <div>
           <p className="mb-7 [font-family:var(--font-manrope)] text-[11px] font-semibold uppercase leading-[16.5px] tracking-[1.65px] text-[#F2B632]">
-            Chapter Four — The Safety Behind the Magic
+            Chapter Four, The Safety Behind the Magic
           </p>
 
           <h2 className="[font-family:var(--font-fraunces)] text-[38px] font-semibold leading-[1.1] tracking-[-0.8px] sm:text-[46px] md:text-[56px] md:leading-[61.6px] md:tracking-[-1.12px]">
-            <span className="block">
-              Wonder in the front of your mind.
-            </span>
+            <span className="block">Wonder in the front of your mind.</span>
 
             <span className="block text-[#F2B632]">
               Safety in the back of ours.
@@ -37,7 +35,7 @@ export default function Safety() {
           </h2>
 
           <p className="mx-auto mt-10 max-w-[1130px] [font-family:var(--font-manrope)] text-[16px] font-normal leading-[25px] text-white/90 sm:text-[18px] sm:leading-[27px] md:text-[20px] md:leading-[28px]">
-            Every experience flies on the Airbus AS 350 B3e — the only
+            Every experience flies on the Airbus AS 350 B3e, the only
             single-engine helicopter certified above 23,000 ft, maintained
             exclusively by our own CAAN-certified engineers. The same crews that
             answer 24/7 rescue calls across the Himalayas are the ones flying

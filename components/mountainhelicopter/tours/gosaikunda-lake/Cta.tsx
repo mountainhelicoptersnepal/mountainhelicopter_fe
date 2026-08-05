@@ -19,7 +19,7 @@ function WhatsappIcon() {
 export default function CTA() {
   const phoneNumber = "9712082949";
   const message =
-    "Hi — I have a quick question about a Mountain Helicopters flight.";
+    "Hi, I have a quick question about a Mountain Helicopters flight.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message,
@@ -36,7 +36,7 @@ export default function CTA() {
 
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,20,40,0.50)_0%,rgba(8,16,32,0.70)_55%,rgba(6,12,26,0.88)_100%)]" />
 
-     <div className="relative z-[2] max-w-[820px] px-6 pb-24 pt-20 text-center">
+      <div className="relative z-[2] max-w-[820px] px-6 pb-24 pt-20 text-center">
         <div className="mb-8 flex items-center justify-center gap-4">
           <span className="h-px w-9 bg-[#f5a623]/80" />
 

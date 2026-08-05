@@ -73,7 +73,7 @@ export default function MardiCosts() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[1080px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — What Drives the Cost
+            , What Drives the Cost
           </p>
 
           <h2 className="mt-4 font-fraunces text-[40px] font-semibold uppercase leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -94,11 +94,7 @@ export default function MardiCosts() {
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
             {costFactors.map((factor, index) => (
-              <CostFactorCard
-                key={factor.title}
-                {...factor}
-                index={index}
-              />
+              <CostFactorCard key={factor.title} {...factor} index={index} />
             ))}
           </div>
 

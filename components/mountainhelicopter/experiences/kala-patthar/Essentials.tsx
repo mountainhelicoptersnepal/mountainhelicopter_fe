@@ -1,8 +1,8 @@
 import { Check, Info } from "lucide-react";
 
 const included = [
-  "Private helicopter — weight-limited to 3 guests at altitude",
-  "Oxygen supplementation onboard — used routinely above 5,000 m",
+  "Private helicopter, weight-limited to 3 guests at altitude",
+  "Oxygen supplementation onboard, used routinely above 5,000 m",
   "Down jackets provided on request",
   "Hot tea thermos at the summit stop",
   "All landing fees and Sagarmatha National Park permits",
@@ -10,19 +10,19 @@ const included = [
 ];
 
 const know = [
-  "15-minute maximum ground time — a hard safety limit, non-negotiable",
-  "At 5,545 m you have around 50% of sea-level oxygen — you will feel it",
-  "Very cold at dawn — minus 10°C is possible on the ridge",
+  "15-minute maximum ground time, a hard safety limit, non-negotiable",
+  "At 5,545 m you have around 50% of sea-level oxygen, you will feel it",
+  "Very cold at dawn, minus 10°C is possible on the ridge",
   "Age 5+ recommended; doctor's approval for 70+ or heart and lung conditions",
-  "Departure can shift 1–2 hours for weather — keep the morning flexible",
+  "Departure can shift 1–2 hours for weather, keep the morning flexible",
 ];
 
 const bring = [
-  "Your warmest layers — dress for a freezer with a view",
-  "Gloves and a warm hat — fingers go numb fast at minus 10°C",
-  "Sunglasses — category 4 ideal; snow glare at 5,500 m is ferocious",
-  "A fully charged camera — cold halves battery life",
-  "Passport copy — needed for the national park checkpoint",
+  "Your warmest layers, dress for a freezer with a view",
+  "Gloves and a warm hat, fingers go numb fast at minus 10°C",
+  "Sunglasses, category 4 ideal; snow glare at 5,500 m is ferocious",
+  "A fully charged camera, cold halves battery life",
+  "Passport copy, needed for the national park checkpoint",
 ];
 
 type InformationCardProps = {
@@ -54,10 +54,7 @@ function InformationCard({ title, items, type }: InformationCardProps) {
         {items.map((item) => (
           <li key={item} className="flex items-start gap-3">
             {isInfo ? (
-              <Info
-                size={16}
-                className="mt-1 shrink-0 text-[#003366]"
-              />
+              <Info size={16} className="mt-1 shrink-0 text-[#003366]" />
             ) : (
               <Check
                 size={16}
@@ -90,17 +87,9 @@ export default function Essentials() {
           type="included"
         />
 
-        <InformationCard
-          title="What to Know"
-          items={know}
-          type="info"
-        />
+        <InformationCard title="What to Know" items={know} type="info" />
 
-        <InformationCard
-          title="What to Bring"
-          items={bring}
-          type="bring"
-        />
+        <InformationCard title="What to Bring" items={bring} type="bring" />
       </div>
     </article>
   );

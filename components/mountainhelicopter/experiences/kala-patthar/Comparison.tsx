@@ -6,13 +6,13 @@ const comparisonRows = [
   },
   {
     label: "Physical demand",
-    trek: "Extreme — the hardest day of the EBC trek",
-    helicopter: "A short walk on the ridge — fresh legs",
+    trek: "Extreme, the hardest day of the EBC trek",
+    helicopter: "A short walk on the ridge, fresh legs",
   },
   {
     label: "Acclimatisation days",
     trek: "6–8 built into the itinerary",
-    helicopter: "Zero — visit capped at 15 min",
+    helicopter: "Zero, visit capped at 15 min",
   },
   {
     label: "Time with the summit view",
@@ -26,8 +26,8 @@ const comparisonRows = [
   },
   {
     label: "Success rate",
-    trek: "Around 65% — illness and turn-backs take a toll",
-    helicopter: "95%+ — we only fly when the window is right",
+    trek: "Around 65%, illness and turn-backs take a toll",
+    helicopter: "95%+, we only fly when the window is right",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Comparison() {
       </h2>
 
       <p className="mb-8 mt-4 max-w-[580px] leading-relaxed text-[#475569]">
-        The trek to Kala Patthar is one of the world&apos;s great walks — and we
+        The trek to Kala Patthar is one of the world&apos;s great walks, and we
         salute everyone who makes it. But the ridge does not check how you
         arrived. Here is the honest maths.
       </p>

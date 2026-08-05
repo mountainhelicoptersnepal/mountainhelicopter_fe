@@ -3,12 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowRight,
-  CalendarDays,
-  Clock3,
-  MapPin,
-} from "lucide-react";
+import { ArrowRight, CalendarDays, Clock3, MapPin } from "lucide-react";
 
 const filters = [
   { label: "All Experiences", value: "all" },
@@ -26,8 +21,7 @@ const experiences = [
     subtitle: "Hot coffee at 3,880 metres. Everest through the window.",
     description:
       "Fly through the Khumbu at dawn, land at Hotel Everest View, and take breakfast on the terrace with Everest, Lhotse, and Ama Dablam in front of you.",
-    quote:
-      "A Himalayan morning that begins before the rest of Nepal wakes.",
+    quote: "A Himalayan morning that begins before the rest of Nepal wakes.",
     image: "/images/experiences/everest-breakfast.png",
     categories: ["iconic"],
     duration: "4–5 Hours",
@@ -57,8 +51,7 @@ const experiences = [
     id: 3,
     number: "03",
     title: "A Table in the Sky",
-    subtitle:
-      "A private picnic on a ridge reachable only by helicopter.",
+    subtitle: "A private picnic on a ridge reachable only by helicopter.",
     description:
       "Land on a secluded mountain meadow and enjoy a private picnic surrounded by an uninterrupted Himalayan panorama.",
     quote: "Lunch where no restaurant will ever exist.",
@@ -73,12 +66,10 @@ const experiences = [
     id: 4,
     number: "04",
     title: "Pilgrimage by Air",
-    subtitle:
-      "Muktinath, Gosaikunda, and sacred Himalayan destinations.",
+    subtitle: "Muktinath, Gosaikunda, and sacred Himalayan destinations.",
     description:
       "A meaningful helicopter journey for pilgrims whose faith calls them to Nepal's sacred mountain destinations.",
-    quote:
-      "A difficult pilgrimage made possible in a single day.",
+    quote: "A difficult pilgrimage made possible in a single day.",
     image: "/images/experiences/pilgrimage.png",
     categories: ["spiritual"],
     duration: "Half Day",
@@ -90,8 +81,7 @@ const experiences = [
     id: 5,
     number: "05",
     title: "Say It at 5,000 Metres",
-    subtitle:
-      "Proposals, anniversaries, birthdays, and private celebrations.",
+    subtitle: "Proposals, anniversaries, birthdays, and private celebrations.",
     description:
       "We arrange the route, landing, timing, flowers, photographer, and small details so you can focus entirely on the moment.",
     quote: "The Himalayas become part of your story.",
@@ -106,12 +96,10 @@ const experiences = [
     id: 6,
     number: "06",
     title: "The Golden Hour Flight",
-    subtitle:
-      "Photography and filming flights designed around the light.",
+    subtitle: "Photography and filming flights designed around the light.",
     description:
       "Fly at sunrise or sunset with pilots who understand mountain light, ridgelines, cloud movement, and photography positioning.",
-    quote:
-      "Capture the shot that cannot be reached from the ground.",
+    quote: "Capture the shot that cannot be reached from the ground.",
     image: "/images/experiences/photo-flight.png",
     categories: ["bespoke"],
     duration: "Custom",
@@ -144,35 +132,24 @@ type ExperienceMetaProps = {
 };
 
 function ExperienceMeta({ experience, light = false }: ExperienceMetaProps) {
-  const textClass = light
-    ? "text-white/75"
-    : "text-[#475569]";
+  const textClass = light ? "text-white/75" : "text-[#475569]";
 
   return (
     <div
       className={`flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-semibold uppercase tracking-[0.1em] ${textClass}`}
     >
       <span className="inline-flex items-center gap-2">
-        <Clock3
-          size={14}
-          className="shrink-0 text-[#F2B632]"
-        />
+        <Clock3 size={14} className="shrink-0 text-[#F2B632]" />
         {experience.duration}
       </span>
 
       <span className="inline-flex items-center gap-2">
-        <MapPin
-          size={14}
-          className="shrink-0 text-[#F2B632]"
-        />
+        <MapPin size={14} className="shrink-0 text-[#F2B632]" />
         {experience.location}
       </span>
 
       <span className="inline-flex items-center gap-2">
-        <CalendarDays
-          size={14}
-          className="shrink-0 text-[#F2B632]"
-        />
+        <CalendarDays size={14} className="shrink-0 text-[#F2B632]" />
         {experience.season}
       </span>
     </div>
@@ -182,13 +159,11 @@ function ExperienceMeta({ experience, light = false }: ExperienceMetaProps) {
 export default function Experiences() {
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const filteredExperiences = experiences.filter(
-    (experience) => {
-      if (activeFilter === "all") return true;
+  const filteredExperiences = experiences.filter((experience) => {
+    if (activeFilter === "all") return true;
 
-      return experience.categories.includes(activeFilter);
-    },
-  );
+    return experience.categories.includes(activeFilter);
+  });
 
   const featuredExperience = filteredExperiences.find(
     (experience) => experience.featured,
@@ -224,16 +199,13 @@ export default function Experiences() {
         {/* Filters */}
         <div className="mb-10 flex flex-wrap gap-2 md:mb-12">
           {filters.map((filter) => {
-            const isActive =
-              activeFilter === filter.value;
+            const isActive = activeFilter === filter.value;
 
             return (
               <button
                 key={filter.value}
                 type="button"
-                onClick={() =>
-                  setActiveFilter(filter.value)
-                }
+                onClick={() => setActiveFilter(filter.value)}
                 className={`min-h-11 rounded-full border px-4 py-2.5 text-[12px] font-semibold transition sm:px-5 sm:text-[13px] ${
                   isActive
                     ? "border-[#003366] bg-[#003366] text-white"
@@ -277,8 +249,7 @@ export default function Experiences() {
               {/* Featured content */}
               <div className="flex flex-col justify-center px-7 pb-9 pt-5 text-white sm:px-9 sm:pb-11 lg:p-12 xl:p-16">
                 <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.15em] text-[#F2B632]">
-                  {featuredExperience.number} — Everest
-                  Experience
+                  {featuredExperience.number}, Everest Experience
                 </p>
 
                 <h3 className="font-fraunces text-[34px] font-semibold leading-[1.06] tracking-[-1px] sm:text-[42px] md:text-[48px]">
@@ -293,10 +264,7 @@ export default function Experiences() {
                   {featuredExperience.description}
                 </p>
 
-                <ExperienceMeta
-                  experience={featuredExperience}
-                  light
-                />
+                <ExperienceMeta experience={featuredExperience} light />
 
                 <span className="mt-8 inline-flex items-center gap-2 text-[16px] font-bold text-[#F2B632] transition-all group-hover:gap-4 sm:text-[18px]">
                   Reserve this experience
@@ -328,7 +296,7 @@ export default function Experiences() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/80 via-transparent to-transparent" />
 
                   <span className="absolute bottom-5 left-6 text-[10px] font-bold uppercase tracking-[0.15em] text-[#F2B632]">
-                    {experience.number} — Experience
+                    {experience.number}, Experience
                   </span>
                 </div>
 
@@ -350,9 +318,7 @@ export default function Experiences() {
                   </p>
 
                   <div className="border-t border-[#E2E8F0] pt-5">
-                    <ExperienceMeta
-                      experience={experience}
-                    />
+                    <ExperienceMeta experience={experience} />
 
                     <span className="mt-5 inline-flex items-center gap-2 text-[14px] font-bold text-[#003366] transition-all group-hover:gap-4">
                       Explore experience
@@ -366,8 +332,7 @@ export default function Experiences() {
         ) : (
           <div className="rounded-2xl border border-[#E2E8F0] bg-white px-6 py-16 text-center">
             <p className="text-[17px] text-[#475569]">
-              No experiences are currently available in
-              this category.
+              No experiences are currently available in this category.
             </p>
           </div>
         )}

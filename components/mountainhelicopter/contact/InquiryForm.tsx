@@ -73,7 +73,7 @@ export default function InquiryForm() {
             </h2>
 
             <p className="mb-10 font-manrope text-lg leading-relaxed text-white/85">
-              Tour, charter, or rescue inquiry — share your details and our
+              Tour, charter, or rescue inquiry, share your details and our
               flight team responds within 2 hours.
             </p>
 
@@ -90,7 +90,7 @@ export default function InquiryForm() {
                   We read your inquiry
                 </h4>
                 <p className="font-manrope text-sm leading-relaxed text-white/70">
-                  A real flight coordinator — not a bot — reviews your dates,
+                  A real flight coordinator, not a bot, reviews your dates,
                   route, and group size.
                 </p>
               </div>

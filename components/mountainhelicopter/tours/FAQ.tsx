@@ -12,12 +12,12 @@ const faqs = [
   {
     question: "What information should I include in my inquiry?",
     answer:
-      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission — filming, cargo, expedition support — so we can allocate the right configuration.",
+      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission, filming, cargo, expedition support, so we can allocate the right configuration.",
   },
   {
     question: "Can I visit the office without an appointment?",
     answer:
-      "Yes — walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
+      "Yes, walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
   },
   {
     question:
@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "Which languages does your team speak?",
     answer:
-      "English, Nepali, and Hindi — spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
+      "English, Nepali, and Hindi, spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
   },
   {
     question: "How do payments work?",

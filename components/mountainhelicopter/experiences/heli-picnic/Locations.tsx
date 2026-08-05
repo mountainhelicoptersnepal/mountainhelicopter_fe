@@ -10,7 +10,7 @@ const locations = [
     name: "Lakeside Shelf",
     detail: "Glacial Lake",
     description:
-      "Lunch beside still glacial water. On calm days, the mountains appear twice — once in the sky and once in the reflection.",
+      "Lunch beside still glacial water. On calm days, the mountains appear twice, once in the sky and once in the reflection.",
     accent: "blue",
   },
   {

@@ -8,10 +8,10 @@ export default function KalaPattharRescueHero() {
         <div className="absolute bottom-0 left-1/3 h-[320px] w-[320px] rounded-full bg-[#0b2135]/30 blur-3xl" />
       </div>
 
-        <div className="mx-auto grid min-h-[730px] max-w-[1440px] items-center gap-12 px-5 pb-16 pt-24 sm:px-8 sm:pb-20 sm:pt-28 lg:grid-cols-[1fr_300px] lg:px-12 lg:pb-20 lg:pt-32 xl:px-[80px] 2xl:px-[125px]">
+      <div className="mx-auto grid min-h-[730px] max-w-[1440px] items-center gap-12 px-5 pb-16 pt-24 sm:px-8 sm:pb-20 sm:pt-28 lg:grid-cols-[1fr_300px] lg:px-12 lg:pb-20 lg:pt-32 xl:px-[80px] 2xl:px-[125px]">
         <div className="max-w-[920px]">
           <p className="font-manrope text-[10px] font-bold uppercase tracking-[0.24em] text-[#f2a10d]">
-            — Kala Patthar &amp; GorakShep // 24/7 Helicopter Rescue
+            , Kala Patthar &amp; GorakShep // 24/7 Helicopter Rescue
           </p>
 
           <h1 className="mt-7 max-w-[920px] font-fraunces text-[48px] font-semibold leading-[0.98] tracking-[-0.035em] text-[#f6f2ea] sm:text-[62px] lg:text-[76px] xl:text-[84px]">
@@ -28,8 +28,8 @@ export default function KalaPattharRescueHero() {
             evacuation for trekkers, climbers, guides and expedition members
             facing altitude illness, injury, severe weather or other urgent
             conditions in the upper Everest region. Rescue may be coordinated
-            from Kala Patthar, GorakShep, Everest Base Camp, Lobuche,
-            Pheriche, Dingboche and nearby safe pickup points.
+            from Kala Patthar, GorakShep, Everest Base Camp, Lobuche, Pheriche,
+            Dingboche and nearby safe pickup points.
           </p>
 
           <div className="mt-10">

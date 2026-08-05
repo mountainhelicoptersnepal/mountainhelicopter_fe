@@ -86,7 +86,7 @@ export default function KalaPattharProcess() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[1050px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — How a Rescue Unfolds
+            , How a Rescue Unfolds
           </p>
 
           <h2 className="mt-4 max-w-[1120px] font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -96,10 +96,10 @@ export default function KalaPattharProcess() {
           <div className="mt-5 max-w-[860px] space-y-5 font-manrope text-[11px] leading-[1.8] text-[#4d5963] sm:text-[12px]">
             <p>
               Every Kala Patthar and GorakShep rescue follows a structured
-              emergency process designed to verify the patient&apos;s
-              condition, exact location, current altitude, weather, landing
-              access, aircraft requirements, and insurance or payment details
-              as quickly as possible.
+              emergency process designed to verify the patient&apos;s condition,
+              exact location, current altitude, weather, landing access,
+              aircraft requirements, and insurance or payment details as quickly
+              as possible.
             </p>
 
             <p>

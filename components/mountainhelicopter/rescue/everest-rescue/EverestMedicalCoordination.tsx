@@ -13,7 +13,7 @@ const medicalFacilities = [
     ],
   },
   {
-    title: "Everest ER — EBC (5,364 m)",
+    title: "Everest ER, EBC (5,364 m)",
     description:
       "During the spring climbing season, Everest ER operates a temporary clinic at Base Camp for expedition members. Mountain Helicopters Nepal coordinates directly with the Everest ER attending physician for climber evacuations.",
     items: [
@@ -53,7 +53,7 @@ export default function EverestMedicalCoordination() {
       <div className="mx-auto max-w-[1440px]">
         <div className="max-w-[980px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-            — Medical Coordination
+            , Medical Coordination
           </p>
 
           <h2 className="mt-4 font-fraunces text-[40px] font-semibold leading-[1.02] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -63,9 +63,9 @@ export default function EverestMedicalCoordination() {
 
           <p className="mt-5 max-w-[800px] font-manrope text-[11px] leading-[1.75] text-[#4d5963] sm:text-[12px]">
             The Everest region has two dedicated medical facilities. Our
-            dispatch officers coordinate with both before every
-            altitude-illness evacuation. This is why authorized rescue calls
-            dispatch faster than uncoordinated ones.
+            dispatch officers coordinate with both before every altitude-illness
+            evacuation. This is why authorized rescue calls dispatch faster than
+            uncoordinated ones.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default function EverestMedicalCoordination() {
         <div className="mt-20 border border-[#cfd2d3] bg-[#f1eee7] px-6 py-8 sm:px-8 lg:mt-24 lg:px-10 lg:py-10">
           <div className="max-w-[920px]">
             <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-              — Lukla Staging
+              , Lukla Staging
             </p>
 
             <h2 className="mt-4 font-fraunces text-[34px] font-semibold leading-[1.05] tracking-[-0.025em] text-[#071825] sm:text-[42px] lg:text-[50px]">
@@ -133,9 +133,9 @@ export default function EverestMedicalCoordination() {
               </p>
 
               <p>
-                For expedition operators and trekking agencies with
-                pre-arranged rescue accounts, standing Lukla staging requests
-                are handled through the designated agency contact.
+                For expedition operators and trekking agencies with pre-arranged
+                rescue accounts, standing Lukla staging requests are handled
+                through the designated agency contact.
               </p>
             </div>
 

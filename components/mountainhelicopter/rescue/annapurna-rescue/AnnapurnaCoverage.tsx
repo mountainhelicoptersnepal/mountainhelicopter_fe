@@ -76,21 +76,15 @@ function formatAltitude(altitude) {
 }
 
 function getPointX(index) {
-  const usableWidth =
-    chartWidth - chartPaddingLeft - chartPaddingRight;
+  const usableWidth = chartWidth - chartPaddingLeft - chartPaddingRight;
 
-  return (
-    chartPaddingLeft +
-    (index / (rescuePoints.length - 1)) * usableWidth
-  );
+  return chartPaddingLeft + (index / (rescuePoints.length - 1)) * usableWidth;
 }
 
 function getPointY(altitude) {
-  const usableHeight =
-    chartHeight - chartPaddingTop - chartPaddingBottom;
+  const usableHeight = chartHeight - chartPaddingTop - chartPaddingBottom;
 
-  const normalized =
-    (altitude - minAltitude) / (maxAltitude - minAltitude);
+  const normalized = (altitude - minAltitude) / (maxAltitude - minAltitude);
 
   return chartPaddingTop + usableHeight - normalized * usableHeight;
 }
@@ -122,11 +116,8 @@ export default function AnnapurnaCoverage() {
           </p>
 
           <h2 className="mt-5 font-fraunces text-4xl font-semibold leading-[1.02] tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
-            Annapurna Rescue{" "}
-            <br/>
-            <span className="italic text-[#f2ad22]">
-             Coverage Map 
-            </span>
+            Annapurna Rescue <br />
+            <span className="italic text-[#f2ad22]">Coverage Map</span>
           </h2>
 
           <p className="mt-6 max-w-[850px] font-manrope text-sm leading-7 text-white/75 md:text-base md:leading-8">
@@ -184,7 +175,7 @@ export default function AnnapurnaCoverage() {
                 fontWeight="700"
                 letterSpacing="1.2"
               >
-                ALTITUDE ILLNESS RISK ZONE — AMS / HAPE / HACE POSSIBLE
+                ALTITUDE ILLNESS RISK ZONE, AMS / HAPE / HACE POSSIBLE
               </text>
 
               {/* HIGH-ALTITUDE SHUTTLE LIMIT */}

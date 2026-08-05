@@ -24,9 +24,7 @@ function TrustItem({ item, index }) {
   return (
     <div
       className={`flex min-h-[74px] items-center justify-center px-3 text-center ${
-        index !== trustItems.length - 1
-          ? "lg:border-r lg:border-[#d7a03d]"
-          : ""
+        index !== trustItems.length - 1 ? "lg:border-r lg:border-[#d7a03d]" : ""
       }`}
     >
       <span className="font-manrope text-[9px] font-bold uppercase tracking-[0.2em] text-[#071825] sm:text-[10px]">
@@ -65,7 +63,7 @@ export default function MakaluOverview() {
         <div className="mx-auto max-w-[1440px]">
           <div className="max-w-[940px]">
             <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#a66e00]">
-              — Overview
+              , Overview
             </p>
 
             <h2 className="mt-4 max-w-[1080px] font-fraunces text-[40px] font-semibold leading-[1.03] tracking-[-0.03em] text-[#071825] sm:text-[50px] lg:text-[60px]">
@@ -95,9 +93,9 @@ export default function MakaluOverview() {
 
               <p>
                 Mountain Helicopters Nepal coordinates with guides, trekking
-                agencies, insurers, aviation authorities and receiving
-                hospitals to support the rescue from initial call through
-                patient handover.
+                agencies, insurers, aviation authorities and receiving hospitals
+                to support the rescue from initial call through patient
+                handover.
               </p>
             </div>
           </div>
@@ -111,7 +109,7 @@ export default function MakaluOverview() {
       >
         <div className="mx-auto max-w-[1440px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#f2a10d]">
-            — Operational Highlights
+            , Operational Highlights
           </p>
 
           <h2 className="mt-4 max-w-[1150px] font-fraunces text-[40px] font-semibold leading-[1.04] tracking-[-0.03em] text-[#f6f2ea] sm:text-[50px] lg:text-[60px]">

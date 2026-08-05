@@ -1,4 +1,3 @@
-
 const pickupCosts = [
   {
     point: "Namche Bazaar to Kathmandu",
@@ -85,7 +84,7 @@ export default function EverestCosts() {
         <div className="mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20 xl:px-[125px]">
           <div className="w-full max-w-[1100px]">
             <p className="font-manrope text-[9px] font-bold uppercase leading-[14px] tracking-[2px] text-[#B87800]">
-              — Cost by Point
+              , Cost by Point
             </p>
 
             <h2 className="mt-3 font-fraunces text-[34px] font-semibold leading-[40px] tracking-[-0.7px] text-[#003366] sm:text-[42px] sm:leading-[48px] lg:text-[48px] lg:leading-[54px] lg:tracking-[-0.96px]">
@@ -93,10 +92,10 @@ export default function EverestCosts() {
             </h2>
 
             <p className="mt-5 w-full max-w-[780px] font-manrope text-[12px] font-normal leading-[20px] tracking-[0px] text-[#0A1929]/70 sm:text-[14px] sm:leading-[21px]">
-              The cost of Everest Helicopter Rescue depends on pickup
-              location, altitude, distance, flight route, weather delay,
-              aircraft positioning, landing difficulty, patient condition,
-              and whether the flight goes to Lukla or Kathmandu.
+              The cost of Everest Helicopter Rescue depends on pickup location,
+              altitude, distance, flight route, weather delay, aircraft
+              positioning, landing difficulty, patient condition, and whether
+              the flight goes to Lukla or Kathmandu.
             </p>
           </div>
 
@@ -140,17 +139,15 @@ export default function EverestCosts() {
       <div className="bg-white">
         <div className="mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 lg:px-12 lg:py-20 xl:px-[125px]">
           <p className="font-manrope text-[9px] font-bold uppercase leading-[14px] tracking-[2px] text-[#B87800]">
-            — What&apos;s Covered
+            , What&apos;s Covered
           </p>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-0">
             <div className="lg:pr-12">
-
-          <h2 className=" font-fraunces text-[26px] font-semibold leading-[32px] tracking-[-0.4px] text-[#003366]">
-            What is Included in the Rescue Cost?
-          </h2>
+              <h2 className=" font-fraunces text-[26px] font-semibold leading-[32px] tracking-[-0.4px] text-[#003366]">
+                What is Included in the Rescue Cost?
+              </h2>
               <ul className="mt-5 space-y-[7px]">
-   
                 {includedItems.map((item) => (
                   <IncludedItem key={item}>{item}</IncludedItem>
                 ))}

@@ -27,27 +27,27 @@ const journey = [
     time: "08:15",
     title: "Landing at Kala Patthar (5,545 m)",
     description:
-      "The skids settle on the black ridge. The door opens. Everest is right there — filling the windscreen, then filling everything.",
+      "The skids settle on the black ridge. The door opens. Everest is right there, filling the windscreen, then filling everything.",
     highlighted: true,
   },
   {
     time: "08:15–08:30",
     title: "Your fifteen minutes",
     description:
-      "Hot tea from the thermos. Photographs. Then — and we insist on this — one long minute with the camera down, just you and the highest place on earth, breathing the thinnest air you will ever breathe.",
+      "Hot tea from the thermos. Photographs. Then, and we insist on this, one long minute with the camera down, just you and the highest place on earth, breathing the thinnest air you will ever breathe.",
     highlighted: true,
   },
   {
     time: "08:35",
     title: "Optional descent stop",
     description:
-      "Drop to Hotel Everest View for the terrace breakfast add-on, or pause at Lukla — either way, thicker air arrives within minutes and feels like a gift.",
+      "Drop to Hotel Everest View for the terrace breakfast add-on, or pause at Lukla, either way, thicker air arrives within minutes and feels like a gift.",
   },
   {
     time: "10:00",
     title: "Touch down Kathmandu",
     description:
-      "Four hours after leaving your hotel, you are back — with the one story at dinner tonight that nobody can follow.",
+      "Four hours after leaving your hotel, you are back, with the one story at dinner tonight that nobody can follow.",
   },
 ];
 
@@ -86,9 +86,7 @@ export default function Journey() {
             </span>
 
             <div className="pb-8 pt-2">
-              <h3 className="mb-1 font-bold text-[#0A1929]">
-                {item.title}
-              </h3>
+              <h3 className="mb-1 font-bold text-[#0A1929]">{item.title}</h3>
 
               <p className="text-sm leading-relaxed text-[#475569]">
                 {item.description}

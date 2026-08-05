@@ -26,16 +26,14 @@ export default function EverestAircraftRoute() {
         {/* Right content */}
         <div className="max-w-[700px]">
           <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.22em] text-[#f2a10d]">
-            — Same Airframe. Same Crew.
+            , Same Airframe. Same Crew.
           </p>
 
           <h2 className="mt-4 font-fraunces text-[38px] font-semibold leading-[1.02] tracking-[-0.03em] text-[#f6f2ea] sm:text-[48px] lg:text-[58px]">
             The aircraft flying you back
             <span className="block">
               has flown{" "}
-              <span className="italic text-[#f2a10d]">
-                this route every
-              </span>
+              <span className="italic text-[#f2a10d]">this route every</span>
             </span>
             <span className="block">
               <span className="italic text-[#f2a10d]">morning</span> since 2009.
@@ -46,9 +44,9 @@ export default function EverestAircraftRoute() {
             <p>
               Most Nepal helicopter rescue operators are tour companies that
               occasionally arrange rescue flights. Mountain Helicopters is a
-              Khumbu operator. Our AS 350 B3e aircraft fly the Everest Base
-              Camp helicopter tour daily during flying season. The same pilots,
-              the same aircraft, the same route — every clear morning.
+              Khumbu operator. Our AS 350 B3e aircraft fly the Everest Base Camp
+              helicopter tour daily during flying season. The same pilots, the
+              same aircraft, the same route, every clear morning.
             </p>
 
             <p>
@@ -62,7 +60,7 @@ export default function EverestAircraftRoute() {
 
             <p>
               The B3e is the same aircraft class that holds the world altitude
-              record for helicopter landing — 8,848 m on Everest&apos;s summit,
+              record for helicopter landing, 8,848 m on Everest&apos;s summit,
               achieved by an AS 350 B3 in 2005.
             </p>
           </div>

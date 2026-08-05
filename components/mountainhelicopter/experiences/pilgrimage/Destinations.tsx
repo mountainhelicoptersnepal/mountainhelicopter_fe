@@ -10,7 +10,7 @@ const destinations = [
     name: "Gosaikunda",
     altitude: "4,380 M · 2-Hour Round Trip",
     description:
-      "Shiva's alpine lake, born — the scriptures say — when he struck the mountain with his trident to cool the poison in his throat. Frozen for much of the year and mirror-still during the warmer season.",
+      "Shiva's alpine lake, born, the scriptures say, when he struck the mountain with his trident to cool the poison in his throat. Frozen for much of the year and mirror-still during the warmer season.",
     accent: "blue",
   },
   {
@@ -44,7 +44,7 @@ export default function Destinations() {
       </h2>
 
       <p className="mb-8 mt-4 max-w-[600px] leading-relaxed text-[#475569]">
-        Four of the most revered places in the Hindu and Buddhist worlds — each
+        Four of the most revered places in the Hindu and Buddhist worlds, each
         reachable in hours rather than weeks, with unhurried time on the ground.
       </p>
 

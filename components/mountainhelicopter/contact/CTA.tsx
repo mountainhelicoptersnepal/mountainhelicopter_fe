@@ -23,8 +23,8 @@ export default function CTA() {
               </h2>
 
               <p className="max-w-[520px] font-manrope text-lg leading-relaxed text-white/80">
-                For active mountain emergencies — altitude sickness, injury, or
-                evacuation — our dispatch answers immediately. Aircraft airborne
+                For active mountain emergencies, altitude sickness, injury, or
+                evacuation, our dispatch answers immediately. Aircraft airborne
                 in 30–45 minutes.
               </p>
             </div>
