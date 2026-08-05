@@ -63,8 +63,14 @@ export default function InclusionsExclusions() {
             <div className="mt-5 space-y-4">
               {includes.map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <CheckCircle2 size={16} strokeWidth={1.8} className="mt-0.5 shrink-0 text-[#0b7dd8]" />
-                  <p className="font-manrope text-sm leading-6 text-slate-500">{item}</p>
+                  <CheckCircle2
+                    size={16}
+                    strokeWidth={1.8}
+                    className="mt-0.5 shrink-0 text-[#0b7dd8]"
+                  />
+                  <p className="font-manrope text-sm leading-6 text-slate-500">
+                    {item}
+                  </p>
                 </div>
               ))}
             </div>
@@ -77,8 +83,14 @@ export default function InclusionsExclusions() {
             <div className="mt-5 space-y-4">
               {excludes.map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <XCircle size={16} strokeWidth={1.7} className="mt-0.5 shrink-0 text-slate-400" />
-                  <p className="font-manrope text-sm leading-6 text-slate-500">{item}</p>
+                  <XCircle
+                    size={16}
+                    strokeWidth={1.7}
+                    className="mt-0.5 shrink-0 text-slate-400"
+                  />
+                  <p className="font-manrope text-sm leading-6 text-slate-500">
+                    {item}
+                  </p>
                 </div>
               ))}
             </div>
@@ -92,7 +104,10 @@ export default function InclusionsExclusions() {
 
           <div className="mt-8">
             {permits.map((permit) => (
-              <div key={permit.name} className="grid gap-4 border-b border-white/10 py-5 md:grid-cols-[1fr_auto] md:items-center">
+              <div
+                key={permit.name}
+                className="grid gap-4 border-b border-white/10 py-5 md:grid-cols-[1fr_auto] md:items-center"
+              >
                 <div>
                   <h3 className="font-manrope text-sm font-medium text-white">
                     {permit.name}
@@ -102,7 +117,9 @@ export default function InclusionsExclusions() {
                   </p>
                 </div>
                 <div className="text-left md:text-right">
-                  <p className="font-manrope text-sm font-bold text-white">{permit.usd}</p>
+                  <p className="font-manrope text-sm font-bold text-white">
+                    {permit.usd}
+                  </p>
                   <p className="mt-1 font-manrope text-xs uppercase tracking-[0.12em] text-white/35">
                     {permit.npr}
                   </p>

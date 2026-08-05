@@ -18,15 +18,15 @@ export default function FlightExperience() {
         </div>
 
         {/* DESCRIPTION */}
-        <div className="mx-auto mt-8 max-w-6xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
+        <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
             The moment the Khumbu Valley opens, just forty-five minutes after
             departing Kathmandu, the helicopter leaves the city sprawl behind
             and enters the dramatic Dudh Koshi river gorge. Flying past the
             famous Lukla airstrip, the horseshoe-shaped Namche Bazaar, and the
             sacred Tengboche Monastery, the Airbus H125 follows the ancient
-            trekking route into the heart of the Everest region, a path
-            trekkers usually take over a week to complete. Then the landscape
+            trekking route into the heart of the Everest region, a path trekkers
+            usually take over a week to complete. Then the landscape
             dramatically shifts.
           </p>
 
@@ -39,12 +39,12 @@ export default function FlightExperience() {
           </p>
 
           <p>
-            The helicopter lands at Kala Patthar at an altitude of 5,545
-            metres. As the rotors slow, the crisp mountain air, the sheer scale
-            of the world&apos;s highest peaks, and the panoramic views create
-            an unforgettable atmosphere. Passengers have around 10 to 15
-            minutes to step out, take photographs, absorb the surreal altitude,
-            and experience the ultimate vantage point of Mount Everest.
+            The helicopter lands at Kala Patthar at an altitude of 5,545 metres.
+            As the rotors slow, the crisp mountain air, the sheer scale of the
+            world&apos;s highest peaks, and the panoramic views create an
+            unforgettable atmosphere. Passengers have around 10 to 15 minutes to
+            step out, take photographs, absorb the surreal altitude, and
+            experience the ultimate vantage point of Mount Everest.
           </p>
 
           <p>
@@ -58,7 +58,7 @@ export default function FlightExperience() {
         </div>
 
         {/* ROUTE MAP */}
-        <div className="mx-auto mt-10 max-w-3xl overflow-hidden">
+        {/* <div className="mx-auto mt-10 max-w-3xl overflow-hidden">
           <div className="relative aspect-[4/3] w-full">
             <Image
               src="/images/everest-base-camp/everest-helicopter-route-map.png"
@@ -68,7 +68,7 @@ export default function FlightExperience() {
               className="object-cover object-top"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
