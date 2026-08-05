@@ -1,123 +1,81 @@
 const itineraryItems = [
   {
     number: "01",
-    time: "05:30h",
     title: "Hotel Pickup in Kathmandu",
-    description:
-      "A private vehicle collects you from your hotel in Kathmandu or Thamel. The 20-minute drive to Tribhuvan International Airport gives you a quiet view of the city before dawn. Bring your passport or identification, warm layers, and approximately USD 51 in cash for permits.",
+    description: [
+      "We will pick you up from your Kathmandu hotel in a private vehicle and confirm your pickup time and hotel address the evening before the flight.",
+      "If your hotel is located in Thamel, Lazimpat or central Kathmandu then pickup takes 15-20 minutes to reach the Tribhuban International Airport.",
+    ],
   },
   {
     number: "02",
-    time: "06:00h",
-    title:
-      "Arrival at Tribhuvan International Airport (Domestic Terminal)",
-    description:
-      "After pickup, you are taken directly to the domestic terminal helipad area. Our ground team will already have processed your permit documentation from the previous day.",
-    bullets: [
-      "Receive your Sagarmatha National Park entry permit and Khumbu Pasang Lhamu Rural Municipality permit.",
-      "Attend a mandatory pre-flight safety briefing covering oxygen use, emergency procedures, high-altitude precautions, and landing instructions.",
-      "Meet your CAAN-certified mountain pilots.",
-      "Complete final luggage and passenger weight checks.",
+    title: "Arrival at Tribhuvan International Airport (Domestic Terminal)",
+    description: [
+      "After the pickup you are directly taken to the Tribhuvan International Airport. There at the airport our ground team will have already processed your permit documentation the previous day, and at the helipad you will undergo weight checking of luggage and passenger.",
     ],
   },
   {
     number: "03",
-    time: "06:30h",
     title: "Departure From Kathmandu",
-    description:
-      "The helicopter departs Kathmandu and heads northeast. Within minutes, the city and temples disappear beneath the aircraft, revealing the Himalayan foothills and the first line of snow-covered peaks. Your pilot provides commentary and points out major landmarks along the route.",
+    description: [
+      "The helicopter will lift from Kathmandu heading northeast and immediately you will be seeing the open view of Kathmandu valley, the city, temples etc. Within 10 minutes there will be a view of Himalayan foothills and the first line of middle hills. Our pilot provides live commentary, identifying landmarks and peaks as they appear.",
+    ],
   },
   {
     number: "04",
-    time: "07:15h",
-    title: "Refuelling Stop at Lukla, Tenzing-Hillary Airport (2,860m)",
-    description:
-      "The helicopter makes a short refuelling stop at Lukla Airport, known for its short mountain runway and dramatic location. Passengers may briefly step outside when operational conditions permit and observe one of the world's most famous mountain airstrips.",
+    title: "Refueling Stop at Lukla, Tenzing-Hillary Airport(2,860m)",
+    description: [
+      "The helicopter will lift from Kathmandu heading northeast and immediately you will be seeing the open view of Kathmandu valley, the city, temples etc. Within 10 minutes there will be a view of Himalayan foothills and the first line of middle hills. Our pilot provides live commentary, identifying landmarks and peaks as they appear.",
+    ],
   },
   {
     number: "05",
-    time: "07:30h",
     title: "Flyover at Namche Bazaar (3,440m)",
-    description:
-      "Fly above Namche Bazaar, the main trading centre of the Khumbu region. From the aircraft, you can see the curved settlement, terraced slopes, monasteries, trekking trails, and the valley leading deeper into the Everest region.",
+    description: [
+      "Namche Bazaar is a cool place that is shaped like a horseshoe. It is the start of the Khumbu and also the way into the Khumbu. On Saturdays the market in Namche Bazaar is a lot of fun. You can see the market place. There are bakeries and teahouses everywhere. All the terraces in Namche Bazaar will be full of people on Saturdays. This is where all trekkers spend their mandatory first rest day.",
+    ],
   },
   {
     number: "06",
-    time: "07:55h",
     title: "Flyover at Tengboche Monastery (3,860m)",
-    description:
-      "Pass Tengboche Monastery, one of the most important Buddhist sites in the Everest region. The monastery sits on a forested ridge with panoramic views toward Ama Dablam, Everest, Lhotse, and surrounding peaks.",
+    description: [
+      "A most holy site for the Buddhists in the region, located on the edge of a steep cliff ridge in between Imja and Dudh Kosi valley. It is the most famous Buddhist monastery in the Khumbu region. This monastery was built in 1916 and was destroyed by the 1934 earthquake, it was rebuilt but again burned in a fire in 1989 and then restored again in 1993. On clear autumn days, the sound of monks praying echoes in the valley.",
+    ],
   },
   {
     number: "07",
-    time: "08:05h",
-    title: "Flyover at Pheriche (4,240m)",
-    description:
-      "The helicopter continues over Pheriche, a high-altitude village and acclimatization stop for trekkers. The settlement is also known for its seasonal medical clinic and its position beneath the surrounding Himalayan walls.",
+    title: "Landing at Periche (4,240m)",
+    description: [
+      "The helicopter lands at Pheriche, the high-altitude village at 4,240m that serves as the shuttle base point for the onward journey to Everest Base Camp. There is a medical clinic run by the Himalayan Rescue Association specifically for altitude sickness. When the group consists of 4 or 5 passengers, the helicopter conducts 2 shuttle runs from Pheriche to Everest Base Camp. The first group of passengers is flown up to Everest Base Camp and lands for a few minutes on the ground, allowing passengers to step out, take photographs, and take in the raw scale of the Khumbu Glacier, the Khumbu Icefall, and the expedition tents surrounding them, before being flown back to Pheriche. The helicopter then takes the second group of passengers for the same experience. Once both shuttle runs are complete, all passengers are reunited at Pheriche and board the helicopter together for the combined return flight to Kathmandu.",
+    ],
   },
   {
     number: "08",
-    time: "08:30h",
-    title: "Flyover at Everest Base Camp (5,364m)",
-    description:
-      "The aircraft flies above Everest Base Camp, the Khumbu Glacier, expedition tents, and the surrounding icefall. Landing directly at Everest Base Camp is not permitted for scheduled tourist helicopter operations, so the flight continues toward Kala Patthar for the landing experience.",
-  },
-  {
-    number: "09",
-    time: "10:00h",
-    title: "Landing at Kala Patthar (5,545m / 18,192 ft)",
-    description:
-      "Land at Kala Patthar, one of the most extraordinary viewpoints in the Himalayas. The landing normally lasts around 10 to 15 minutes, depending on weather, aircraft performance, and passenger condition.",
-    bullets: [
-      "Mount Everest and the Southwest Face.",
-      "Lhotse and the South Col.",
-      "Nuptse and the surrounding ridgelines.",
-      "Pumori rising directly behind Kala Patthar.",
-      "The Khumbu Glacier and Khumbu Icefall.",
-      "Everest Base Camp beneath the aircraft.",
+    title: "Return Flight to Kathmandu from Pheriche",
+    description: [
+      "Once both shuttle groups have completed their Everest Base Camp landing, all passengers are gathered at Pheriche for a combined return flight to Kathmandu. We follow our route back down through the Khumbu Valley, past Tengboche, across Namche, over the Dudh Koshi gorge, with a possible fuel stop in Lukla, and then south over the foothills back to Kathmandu. This is a short 45-55 minute flight. We pick you up from the airport and drop you off right at your hotel in Kathmandu. By before mid-morning you are back and all afternoon is yours.",
     ],
-    note:
-      "At 5,545 metres, oxygen levels are significantly lower than at sea level. Passengers should move slowly, avoid unnecessary exertion, and follow the pilot's instructions throughout the landing.",
-  },
-  {
-    number: "10",
-    time: "10:15h",
-    title: "Return Flight to Kathmandu",
-    description:
-      "The return flight follows the Khumbu Valley past Tengboche, Namche Bazaar, and the Dudh Koshi gorge. Depending on fuel and operating conditions, the aircraft may make another short stop at Lukla before continuing to Kathmandu.",
-  },
-  {
-    number: "11",
-    time: "10:15h",
-    title: "Drop-Off at Kathmandu Hotel",
-    description:
-      "After landing at Tribhuvan International Airport, our vehicle transfers you back to your hotel in Kathmandu. You return before midday with the rest of the afternoon free.",
   },
 ];
+
+const itineraryBackgroundImage =
+  "https://plus.unsplash.com/premium_photo-1697729961187-c70c5f520227?h=1200&w=2000&crop=faces,edges&auto=format&fit=crop&q=80&ixlib=rb-4.1.0";
 
 export default function Itinerary() {
   return (
     <section
       id="itinerary"
-      className="relative overflow-hidden bg-[#082f59]"
+      className="relative scroll-mt-36 overflow-hidden bg-[#002347]"
     >
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('/images/everest-base-camp/itinerary-bg.jpg')",
-        }}
+      <img
+        src={itineraryBackgroundImage}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-70"
       />
+      <div className="absolute inset-0 bg-[#002347]/85" />
 
-      {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-[#062b52]/90" />
-
-      {/* EXTRA GRADIENT */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#062b52]/30 via-transparent to-[#062b52]/80" />
-
-      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
-        {/* HEADING */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         <div className="text-center">
           <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#e0a321]">
             <span className="h-px w-7 bg-[#e0a321]" />
@@ -131,72 +89,39 @@ export default function Itinerary() {
           </h2>
         </div>
 
-        {/* TIMELINE */}
-        <div className="relative mt-16 md:mt-20">
-          <div className="absolute bottom-0 left-[22px] top-0 w-px bg-[#dda11f] md:left-[26px]" />
+        <div className="relative mx-auto mt-16 max-w-[1120px] md:mt-20">
+          <div className="absolute bottom-0 left-[20px] top-0 w-px bg-[#e0a321] md:left-[23px]" />
 
-          <div className="space-y-10">
+          <div className="space-y-10 md:space-y-14">
             {itineraryItems.map((item, index) => (
               <article
                 key={item.number}
-                className="relative grid grid-cols-[46px_minmax(0,1fr)] gap-4 md:grid-cols-[54px_minmax(0,1fr)] md:gap-6"
+                className="relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
               >
-                {/* NUMBER */}
                 <div
-                  className={`relative z-10 flex h-11 w-11 items-center justify-center rounded-full border font-manrope text-xs font-bold md:h-[52px] md:w-[52px] ${
+                  className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border font-manrope text-[12px] font-bold md:h-[42px] md:w-[42px] ${
                     index === 0
-                      ? "border-[#e0a321] bg-[#0b4c82] text-[#f0ad1f]"
-                      : "border-white/70 bg-white text-[#0a3d69]"
+                      ? "border-[#004d93] bg-[#005da8] text-[#f0ad1f] shadow-[0_0_0_4px_rgba(0,93,168,0.25)]"
+                      : "border-[#d9e4ee] bg-white text-[#7b92a9]"
                   }`}
                 >
                   {item.number}
                 </div>
 
-                {/* CONTENT */}
                 <div className="pb-1 pt-1">
-                  <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                    <span className="font-manrope text-xs font-bold uppercase tracking-[0.08em] text-[#f0ad1f]">
-                      {item.time}
-                    </span>
+                  <h3 className="font-fraunces text-lg font-semibold leading-7 text-white md:text-xl">
+                    {item.title}
+                  </h3>
 
-                    <h3 className="font-fraunces text-lg font-semibold leading-7 text-white md:text-xl">
-                      {item.title}
-                    </h3>
+                  <div className="mt-3 space-y-1 font-manrope text-sm font-medium leading-7 text-white/90">
+                    {item.description.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
                   </div>
-
-                  <p className="mt-3 font-manrope text-sm leading-7 text-white/75">
-                    {item.description}
-                  </p>
-
-                  {item.bullets && (
-                    <ul className="mt-3 space-y-1.5 pl-5 font-manrope text-sm leading-6 text-white/75">
-                      {item.bullets.map((bullet) => (
-                        <li key={bullet} className="list-disc">
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {item.note && (
-                    <p className="mt-4 border-l-2 border-[#e0a321] pl-4 font-manrope text-sm leading-7 text-white/70">
-                      {item.note}
-                    </p>
-                  )}
                 </div>
               </article>
             ))}
           </div>
-        </div>
-        
-        {/* OPERATIONAL NOTE */}
-        <div className="mt-20 rounded-2xl border border-white/15 bg-white/[0.06] px-5 py-6 backdrop-blur-sm md:px-7">
-          <p className="font-manrope text-xs leading-6 text-white/65">
-            All flight times are approximate. The final departure time, route,
-            ground duration, passenger capacity, and return schedule may change
-            according to weather, visibility, aircraft availability, air
-            traffic, passenger weight, and operational safety requirements.
-          </p>
         </div>
       </div>
     </section>

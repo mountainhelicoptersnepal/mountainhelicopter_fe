@@ -12,9 +12,15 @@ const tabs = [
 ];
 
 const quickFacts = [
-  ["Departure Point", "Tribhuvan International Airport Domestic Terminal, Kathmandu"],
+  [
+    "Departure Point",
+    "Tribhuvan International Airport Domestic Terminal, Kathmandu",
+  ],
   ["Landing Zone", "Kyanjin Gompa / Kyanjin Village, 3,870 m / 12,697 ft"],
-  ["Major Views", "Langtang Lirung, Ganesh Himal, Dorje Lakpa, Yala Peak, Langtang Glacier"],
+  [
+    "Major Views",
+    "Langtang Lirung, Ganesh Himal, Dorje Lakpa, Yala Peak, Langtang Glacier",
+  ],
   ["One-Way Flight Time", "25 to 35 minutes"],
   ["Total Tour Duration", "2 to 4 hours including ground time"],
   ["Ground Time", "60 to 90 minutes at Kyanjin Gompa"],
@@ -207,7 +213,10 @@ export default function OverviewSection() {
                 <div className="mt-5 overflow-hidden rounded-xl bg-[#062b55] shadow-[0_15px_35px_rgba(6,43,85,0.12)]">
                   <div className="grid sm:grid-cols-2 lg:grid-cols-3">
                     {quickFacts.map(([label, value]) => (
-                      <div key={label} className="border-b border-white/10 p-5 sm:border-r">
+                      <div
+                        key={label}
+                        className="border-b border-white/10 p-5 sm:border-r"
+                      >
                         <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.16em] text-white/50">
                           {label}
                         </p>
@@ -225,7 +234,10 @@ export default function OverviewSection() {
                   {highlights.map((item) => {
                     const Icon = item.icon;
                     return (
-                      <article key={item.title} className="group rounded-xl border border-slate-200/80 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-[#dca121]/50 hover:shadow-[0_16px_35px_rgba(8,46,82,0.08)]">
+                      <article
+                        key={item.title}
+                        className="group rounded-xl border border-slate-200/80 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-[#dca121]/50 hover:shadow-[0_16px_35px_rgba(8,46,82,0.08)]"
+                      >
                         <div className="flex items-start gap-4">
                           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f4f7fa] text-[#0a4f82] transition group-hover:bg-[#fff5d9] group-hover:text-[#c98d15]">
                             <Icon size={16} strokeWidth={1.8} />
@@ -268,7 +280,9 @@ export default function OverviewSection() {
               <article
                 key={item.title}
                 className={`px-5 py-6 md:px-7 ${
-                  index !== designedForItems.length - 1 ? "border-b border-slate-200" : ""
+                  index !== designedForItems.length - 1
+                    ? "border-b border-slate-200"
+                    : ""
                 }`}
               >
                 <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.13em] text-[#0b3d6b]">
