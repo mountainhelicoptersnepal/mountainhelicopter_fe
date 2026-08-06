@@ -4,7 +4,7 @@ const plans = [
   {
     title: "Shared Seat",
     subtitle: "Join a scheduled dawn departure",
-    price: "$1,100",
+    price: "$1,400",
     unit: "per person",
     button: "Book Shared Seat",
     href: "/contact#inquiry-form",
@@ -22,7 +22,7 @@ const plans = [
   {
     title: "Private Charter",
     subtitle: "The whole helicopter, on your schedule",
-    price: "$5,800",
+    price: "$4,000",
     unit: "per helicopter",
     button: "Charter the Helicopter",
     href: "/contact#inquiry-form",

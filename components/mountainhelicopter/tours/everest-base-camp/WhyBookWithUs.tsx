@@ -4,6 +4,7 @@ import {
   ShieldCheck,
   UsersRound,
   Wind,
+  FileText,
 } from "lucide-react";
 
 const reasons = [
@@ -11,31 +12,37 @@ const reasons = [
     icon: ShieldCheck,
     title: "Experienced Team",
     description:
-      "Our pilots have thousands of hours of high-altitude Himalayan flight experience. Our operations team has been running this route since 2009.",
+      "Your journey is backed by a team with extensive experience in helicopter operations. Our pilots have logged thousands of hours flying in Nepal's high-altitude environment, where changing weather and challenging terrain demand exceptional skill and judgment. Supporting every flight is an experienced operations team that has been managing helicopter services since 2009, ensuring smooth coordination, safety, and reliable service from takeoff to landing.",
   },
   {
     icon: UsersRound,
     title: "Best Pricing",
     description:
-      "We are the direct operator, no agency markup and no third-party commissions. What you pay is the actual operating cost plus our margin, with nothing hidden.",
+      "When you book with us, you're booking directly with the operator and not through a reseller or third-party agency. That means no agency markups, no hidden commissions, and no surprise fees. Our pricing is transparent from the start, so the amount you see is the amount you pay, giving you the best value and complete peace of mind.",
   },
   {
     icon: Clock3,
     title: "Professional Itinerary",
     description:
-      "Every landing, departure time, and breakfast stop has been refined over hundreds of flights. You are not the test case.",
+      "Every detail of your journey has been carefully refined through hundreds of successful flights. From landing procedures and flight timing to breakfast stops and passenger coordination, each part of the experience has been tested, improved, and perfected over years of operation. You're not part of an experiment, you're benefiting from a well-established operation designed to deliver a smooth, safe, and memorable adventure.",
   },
   {
     icon: Headphones,
     title: "24/7 Available",
     description:
-      "Our team is reachable around the clock before, during, and after your flight. WhatsApp, phone, and email are all monitored.",
+      "From the moment you book until you safely return, our team is available 24 hours a day, 7 days a week to assist you. Whether you have a last-minute question, need a weather update, or require support during your journey, we're always just a message or call away. WhatsApp, phone, and email are continuously monitored, ensuring you receive prompt assistance whenever you need it.",
   },
   {
     icon: Wind,
     title: "Environmentally Responsible",
     description:
-      "We operate fuel-efficient aircraft on this route and follow Sagarmatha National Park requirements and approved procedures for mountain landing zones.",
+      "Our commitment to responsible flying goes hand in hand with delivering unforgettable flying experiences. We operate one of the most fuel-efficient helicopters on this route and follow strict operational procedures at every landing site to help minimize our environmental impact. By combining efficient helicopters with responsible flight practices, we strive to protect the fragile environment while maintaining the highest standards of safety and performance.",
+  },
+  {
+    icon: FileText,
+    title: "Transparent Booking",
+    description:
+      "Booking with us is simple, straightforward, and completely transparent. Before you confirm your reservation, you'll receive a detailed itinerary, clear pricing, and a full list of what's included in your tour. With no hidden charges or surprise fees, you can book with confidence, knowing exactly what to expect from start to finish.",
   },
 ];
 
@@ -51,7 +58,7 @@ export default function WhyBookWithUs() {
           </p>
 
           <h2 className="mt-5 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-white md:text-4xl lg:text-5xl">
-            Five reasons to book{" "}
+            Six reasons to book{" "}
             <span className="text-[#e0a321]">directly with us.</span>
           </h2>
         </div>

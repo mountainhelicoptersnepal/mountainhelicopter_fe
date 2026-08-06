@@ -1,59 +1,77 @@
 const itineraryItems = [
   {
     number: "01",
-    title: "Hotel Pickup in Kathmandu",
+    title: "Flight Request and confirmation",
     description: [
-      "We will pick you up from your Kathmandu hotel in a private vehicle and confirm your pickup time and hotel address the evening before the flight.",
-      "If your hotel is located in Thamel, Lazimpat or central Kathmandu then pickup takes 15-20 minutes to reach the Tribhuban International Airport.",
+      "Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal.",
+      "Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.",
+      "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance, so you can prepare for a smooth and hassle-free journey.",
     ],
   },
   {
     number: "02",
-    title: "Arrival at Tribhuvan International Airport (Domestic Terminal)",
+    title: "Arrival at Tribhuban International Airport",
     description: [
-      "After the pickup you are directly taken to the Tribhuvan International Airport. There at the airport our ground team will have already processed your permit documentation the previous day, and at the helipad you will undergo weight checking of luggage and passenger.",
+      "There at the airport our ground team will have already processed your permit documentation the previous day and at the helipad you will undergo weight checking of luggage and passenger.",
+      "If the total weight exceeds the allowed limit, some baggage will need to be stored or sent separately in the next helicopter flight but will charge an extra cost in this case.",
     ],
   },
   {
     number: "03",
-    title: "Departure From Kathmandu",
+    title: "Departure from Kathmandu",
     description: [
-      "The helicopter will lift from Kathmandu heading northeast and immediately you will be seeing the open view of Kathmandu valley, the city, temples etc. Within 10 minutes there will be a view of Himalayan foothills and the first line of middle hills. Our pilot provides live commentary, identifying landmarks and peaks as they appear.",
+      "The helicopter will lift from Kathmandu heading northeast and immediately you will be seeing the open view of Kathmandu valley, the city, temples etc.",
+      "Within 10 minutes there will be a view of Himalayan foothills and the first line of middle hills.",
+      "Our pilot provides live commentary, identifying landmarks and peaks as they appear.",
     ],
   },
   {
     number: "04",
-    title: "Refueling Stop at Lukla, Tenzing-Hillary Airport(2,860m)",
+    title: "Refueling Stop at Lukla, Tenzing-Hillary Airport (2,860m)",
     description: [
-      "The helicopter will lift from Kathmandu heading northeast and immediately you will be seeing the open view of Kathmandu valley, the city, temples etc. Within 10 minutes there will be a view of Himalayan foothills and the first line of middle hills. Our pilot provides live commentary, identifying landmarks and peaks as they appear.",
+      "The helicopter makes a refueling stop at Lukla airport before continuing deeper into the Khumbu.",
+      "Lukla is famous for its extremely short runway (527 meters). It is a one-end uphill design on a mountain cliff at the far end.",
+      "While refueling you can step out shortly and observe the airport which serves as a trekking gateway for all Everest expeditions.",
+      "The stop takes approximately 15-20 minutes before the helicopter continues northeast towards Everest Base Camp.",
     ],
   },
   {
     number: "05",
     title: "Flyover at Namche Bazaar (3,440m)",
     description: [
-      "Namche Bazaar is a cool place that is shaped like a horseshoe. It is the start of the Khumbu and also the way into the Khumbu. On Saturdays the market in Namche Bazaar is a lot of fun. You can see the market place. There are bakeries and teahouses everywhere. All the terraces in Namche Bazaar will be full of people on Saturdays. This is where all trekkers spend their mandatory first rest day.",
+      "Namche Bazaar is a cool place that is shaped like a horseshoe. It is the start of the Khumbu and also the way into the Khumbu.",
+      "On Saturdays the market in Namche Bazaar is a lot of fun. You can see the market place. There are bakeries and teahouses everywhere.",
+      "All the terraces in Namche Bazaar will be full of people on Saturdays. This is where all trekkers spend their mandatory first rest day.",
     ],
   },
   {
     number: "06",
     title: "Flyover at Tengboche Monastery (3,860m)",
     description: [
-      "A most holy site for the Buddhists in the region, located on the edge of a steep cliff ridge in between Imja and Dudh Kosi valley. It is the most famous Buddhist monastery in the Khumbu region. This monastery was built in 1916 and was destroyed by the 1934 earthquake, it was rebuilt but again burned in a fire in 1989 and then restored again in 1993. On clear autumn days, the sound of monks praying echoes in the valley.",
+      "A most holy site for the Buddhists in the region, located on the edge of a steep cliff ridge in between Imja and Dudh Kosi valley.",
+      "It is the most famous Buddhist monastery in the Khumbu region. This monastery was built in 1916 and was destroyed by the 1934 earthquake, it was rebuilt but again burned in a fire in 1989 and then restored again in 1993.",
+      "On clear autumn days, the sound of monks praying echoes in the valley.",
     ],
   },
   {
     number: "07",
-    title: "Landing at Periche (4,240m)",
+    title: "Landing at Pheriche (4,240m)",
     description: [
-      "The helicopter lands at Pheriche, the high-altitude village at 4,240m that serves as the shuttle base point for the onward journey to Everest Base Camp. There is a medical clinic run by the Himalayan Rescue Association specifically for altitude sickness. When the group consists of 4 or 5 passengers, the helicopter conducts 2 shuttle runs from Pheriche to Everest Base Camp. The first group of passengers is flown up to Everest Base Camp and lands for a few minutes on the ground, allowing passengers to step out, take photographs, and take in the raw scale of the Khumbu Glacier, the Khumbu Icefall, and the expedition tents surrounding them, before being flown back to Pheriche. The helicopter then takes the second group of passengers for the same experience. Once both shuttle runs are complete, all passengers are reunited at Pheriche and board the helicopter together for the combined return flight to Kathmandu.",
+      "The helicopter lands at Pheriche, the high-altitude village at 4,240m that serves as the shuttle base point for the onward journey to Everest Base Camp.",
+      "There is a medical clinic run by the Himalayan Rescue Association specifically for altitude sickness.",
+      "When the group consists of 4 or 5 passengers, the helicopter conducts 2 shuttle runs from Pheriche to Everest Base Camp.",
+      "The first group of passengers is flown up to Everest Base Camp and lands for a few minutes on the ground, allowing passengers to step out, take photographs, and take in the raw scale of the Khumbu Glacier, the Khumbu Icefall, and the expedition tents surrounding them, before being flown back to Pheriche.",
+      "The helicopter then takes the second group of passengers for the same experience.",
+      "Once both shuttle runs are complete, all passengers are reunited at Pheriche and board the helicopter together for the combined return flight to Kathmandu.",
     ],
   },
   {
     number: "08",
     title: "Return Flight to Kathmandu from Pheriche",
     description: [
-      "Once both shuttle groups have completed their Everest Base Camp landing, all passengers are gathered at Pheriche for a combined return flight to Kathmandu. We follow our route back down through the Khumbu Valley, past Tengboche, across Namche, over the Dudh Koshi gorge, with a possible fuel stop in Lukla, and then south over the foothills back to Kathmandu. This is a short 45-55 minute flight. We pick you up from the airport and drop you off right at your hotel in Kathmandu. By before mid-morning you are back and all afternoon is yours.",
+      "Once both shuttle groups have completed their Everest Base Camp landing, all passengers are gathered at Pheriche for a combined return flight to Kathmandu.",
+      "We follow our route back down through the Khumbu Valley, past Tengboche, across Namche, over the Dudh Koshi gorge, with a possible fuel stop in Lukla, and then south over the foothills back to Kathmandu. This is a short 45-55 minute flight.",
+      "We pick you up from the helipad and drop you off right at the domestic terminal. By before mid-morning you are back, and all the afternoon is yours.",
     ],
   },
 ];
