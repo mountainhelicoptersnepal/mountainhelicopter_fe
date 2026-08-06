@@ -135,6 +135,237 @@ select {
   color: var(--mh-color-blue-deep);
 }
 
+html.mh-splash-active,
+body.mh-splash-active {
+  overflow: hidden;
+}
+
+.opening-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #ffffff;
+  pointer-events: none;
+  animation: opening-splash-exit 900ms ease 6.7s forwards;
+}
+
+.opening-splash__mark {
+  position: relative;
+  z-index: 2;
+  width: min(58vw, 705px);
+  aspect-ratio: 705 / 254;
+  opacity: 0;
+  transform: translate3d(0, 10px, 0) scale(0.99);
+  animation:
+    opening-stage-enter 560ms ease-out 0s forwards,
+    opening-stage-hide 160ms linear 5.62s forwards;
+}
+
+.opening-splash__first-unit,
+.opening-splash__second-unit,
+.opening-splash__heli {
+  position: absolute;
+  display: block;
+  height: auto;
+  user-select: none;
+}
+
+.opening-splash__first-unit {
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  animation: opening-unit-enter 640ms ease-out 0s forwards;
+}
+
+.opening-splash__second-unit {
+  left: 7%;
+  top: 35%;
+  z-index: 2;
+  width: 36.8%;
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  animation:
+    opening-swoosh-enter 500ms ease-out 1.65s forwards,
+    opening-swoosh-draw 2.45s cubic-bezier(0.45, 0, 0.16, 1) 1.65s forwards;
+}
+
+.opening-splash__heli {
+  left: 11%;
+  top: 22%;
+  z-index: 3;
+  width: 20.7%;
+  opacity: 0;
+  transform: translate3d(-52vw, 7px, 0) scale(0.92);
+  transform-origin: center;
+  animation: opening-heli-flight 2.65s cubic-bezier(0.34, 0, 0.18, 1) 1.65s
+    forwards;
+}
+
+.opening-splash__circle {
+  position: absolute;
+  left: calc(50% - min(58vw, 705px) * 0.2865);
+  top: calc(50% - min(58vw, 705px) * 0.066);
+  z-index: 4;
+  width: 12vmax;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: #f6b714;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  animation:
+    opening-circle-grow 1.25s cubic-bezier(0.72, 0, 0.18, 1) 4.35s forwards,
+    opening-circle-fade 900ms ease 6.7s forwards;
+}
+
+@keyframes opening-stage-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes opening-unit-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes opening-stage-hide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes opening-swoosh-enter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opening-swoosh-draw {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes opening-heli-flight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-52vw, 7px, 0) scale(0.92);
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 1;
+    transform: translate3d(-18px, -1px, 0) scale(1.01);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes opening-circle-grow {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(24);
+  }
+}
+
+@keyframes opening-circle-fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opening-splash-exit {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  .opening-splash__mark {
+    width: min(86vw, 420px);
+  }
+
+  .opening-splash__circle {
+    left: calc(50% - min(86vw, 420px) * 0.2865);
+    top: calc(50% - min(86vw, 420px) * 0.066);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opening-splash {
+    animation-duration: 220ms;
+    animation-delay: 900ms;
+  }
+
+  .opening-splash__mark,
+  .opening-splash__first-unit {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .opening-splash__second-unit,
+  .opening-splash__heli {
+    opacity: 1;
+    clip-path: none;
+    transform: none;
+    animation: none;
+  }
+
+  .opening-splash__circle {
+    display: none;
+  }
+}
+
 @layer utilities {
   .font-manrope {
     font-family: var(--font-family-manrope), Arial, Helvetica, sans-serif;
