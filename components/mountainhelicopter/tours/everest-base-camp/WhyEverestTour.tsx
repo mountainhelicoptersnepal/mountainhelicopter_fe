@@ -1,16 +1,25 @@
 const reasons = [
   [
-    "The helicopter tour to Everest Base camp helicopter tour  when time, altitude and direct access is more important to you than a multi-day trekking trekking program. Flying out of Kathmandu straight to Everest Base Camp (or at least the viewpoint over it on Kala Patthar) can save you a few days of hiking in the Khumbu. The flight from Kathmandu to Everest Base Camp can often be made in about 90 minutes.",
+    "The helicopter tour to Everest Base camp helicopter tour when time, altitude and direct access is more important to you than a multi-day trekking trekking program. Flying out of Kathmandu straight to Everest Base Camp (or at least the viewpoint over it on Kalapatthar) can save you a few days of hiking in the Khumbu."
   ],
   [
-    "A shared seat can be requested by a solo traveler, couple, or small group.",
-    "A private charter can be requested by a family, a photography group, or a party with reduced mobility.",
+    "The flight from Kathmandu to Everest Base Camp can often be made in about 90 minutes."
   ],
   [
-    "A helicopter tour can be requested by travelers who cannot commit to the physical demands of trekking.",
-    "The flight can be coordinated with a hotel pickup, permit processing, and safety briefing in Kathmandu.",
+    "A shared seat can be requested by a solo traveler, couple, or small group."
   ],
-  ["A return helicopter to Kathmandu can also be completed the same morning."],
+  [
+    "A private charter can be requested by a family, a photography group, or a party with reduced mobility."
+  ],
+  [
+    "A helicopter tour can be requested by travelers who cannot commit to the physical demands of trekking."
+  ],
+  [
+    "The flight can be coordinated with a hotel pickup, permit processing, and safety briefing in Kathmandu."
+  ],
+  [
+    "A return helicopter to Kathmandu can also be completed the same morning."
+  ]
 ];
 
 export default function WhyEverestTour() {
@@ -18,7 +27,7 @@ export default function WhyEverestTour() {
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28">
         <h2 className="text-center font-fraunces text-2xl font-semibold leading-none tracking-[0] text-[#061a3a] sm:text-[42px]">
-          Why Everest Base Camp helicopter Tour?
+          Why fly to Everest Base Camp on a helicopter tour?
         </h2>
 
         <div className="mt-12">
