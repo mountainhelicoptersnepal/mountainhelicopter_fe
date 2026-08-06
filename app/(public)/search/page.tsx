@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Search } from "lucide-react";
+import { ArrowRight, Search } from "lucide-react";
 
 import BlogCard from "@/components/shared/cards/BlogCard";
 import { blogPosts } from "@/lib/blogs";
@@ -72,7 +72,8 @@ const packages: PackageResult[] = [
     title: "Langtang Valley Helicopter Tour",
     href: "/tours/langtang-valley",
     category: "Tour Package",
-    excerpt: "A close Himalayan flight from Kathmandu into the Langtang region.",
+    excerpt:
+      "A close Himalayan flight from Kathmandu into the Langtang region.",
     meta: "2 hrs | Langtang",
     price: "From $400",
     image: "/images/tour-section/langtang.jpg",
@@ -141,12 +142,7 @@ function scoreResult(
 
   const terms = normalizedQuery.split(/\s+/).filter(Boolean);
   const title = item.title.toLowerCase();
-  const haystack = [
-    item.title,
-    item.category,
-    item.excerpt,
-    ...item.keywords,
-  ]
+  const haystack = [item.title, item.category, item.excerpt, ...item.keywords]
     .join(" ")
     .toLowerCase();
 
@@ -221,8 +217,8 @@ function PackageCard({ packageItem }: { packageItem: PackageResult }) {
           <span className="font-manrope text-[12px] font-extrabold uppercase tracking-[0.18em] text-[#0E2F4F]">
             View package
           </span>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0E2F4F] font-manrope text-lg font-bold text-white transition group-hover:bg-[#F2B632] group-hover:text-[#0E2F4F]">
-            →
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0E2F4F] text-white transition group-hover:bg-[#F2B632] group-hover:text-[#0E2F4F]">
+            <ArrowRight size={16} strokeWidth={2} className="shrink-0" />
           </span>
         </div>
       </div>

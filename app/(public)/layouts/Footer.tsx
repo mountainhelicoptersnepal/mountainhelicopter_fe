@@ -121,12 +121,12 @@ const toursLinks = [
   { label: "Gosaikunda Lake", href: "/tours/gosaikunda-lake" },
   // { label: "Mera Peak", href: "/tours/mera-peak" },
   // { label: "Cultural Kathmandu", href: "/tours/cultural-kathmandu" },
-  { label: "Heli Picnic", href: "/experiences/heli-picnic" },
+  // { label: "Heli Picnic", href: "/experiences/heli-picnic" },
   // { label: "Rara Lake", href: "/tours/rara-lake" },
 ];
 
 const servicesLinks = [
-  { label: "Charter", href: "/experiences/private-charter" },
+  // { label: "Charter", href: "/experiences/private-charter" },
   { label: "Rescue", href: "/rescue" },
   { label: "Fleet", href: "/fleet" },
   // { label: "About", href: "/about" },

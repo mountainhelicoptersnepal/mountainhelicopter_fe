@@ -47,7 +47,7 @@ export default function CTA() {
           <span className="h-px w-6 bg-[#f5a623]/80 sm:w-9" />
         </div>
 
-        <h2 className="mb-8 font-fraunces text-[clamp(44px,9vw,86.22px)] font-bold leading-[0.92] tracking-[-0.025em] text-white">
+        <h2 className="mb-8 font-fraunces text-[clamp(44px,9vw,86.22px)] font-bold leading-[1.1] tracking-[-0.025em] text-white">
           Ready to Fly with
           <br />
           <span className="text-[#f5a623]">Confidence?</span>

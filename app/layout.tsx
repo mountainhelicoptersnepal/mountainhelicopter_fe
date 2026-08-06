@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Fraunces, JetBrains_Mono, Manrope, Montserrat } from "next/font/google";
+import {
+  Fraunces,
+  JetBrains_Mono,
+  Manrope,
+  Montserrat,
+} from "next/font/google";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -31,6 +36,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Mountain Helicopter",
   description: "Mountain Helicopter frontend",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({
