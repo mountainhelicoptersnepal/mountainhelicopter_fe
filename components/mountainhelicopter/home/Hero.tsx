@@ -237,7 +237,7 @@ export default function Hero() {
             willChange: "transform",
           }}
         >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="/videos/landing_hero.mp4" type="video/mp4" />
         </video>
 
         <div
