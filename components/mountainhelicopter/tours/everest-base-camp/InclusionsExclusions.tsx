@@ -1,21 +1,20 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 
 const includes = [
-  "Helicopter flight (Kathmandu to Everest and Everest to Kathmandu)",
   "Certified pilot and crew",
-  "Hotel pick-up and airport transfers",
-  "Fuel, landing, and helipad fees",
-  "Emergency oxygen system onboard",
+  "Emergency oxygen on board for passenger safety",
+  "Fuel landing and helipad fees",
+  "Helicopter flight",
+  "Travel Insurance",
 ];
 
 const excludes = [
-  "Nepal entry visa and international air fare",
-  "Travel insurance (covering high-altitude flights)",
   "Personal meals and beverages",
-  "Pilot and staff gratuities",
-  "Additional filming or landing permits",
-  "Weather-related delays or reschedules",
-  "Breakfast at Hotel Everest View (landing package)",
+  "Pilots and staff gratuities",
+  "Additional filming",
+  "Breakfasts at hotel everest view",
+  "Excess or separately transported baggage",
+  "Accommodation and meals caused by a delay",
 ];
 
 const permits = [
@@ -56,7 +55,7 @@ export default function InclusionsExclusions() {
         <div className="mt-16 grid gap-14 lg:grid-cols-2 lg:gap-20">
           <div>
             <h3 className="mb-5 font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
-              Includes
+              What is Included
             </h3>
 
             <div className="space-y-4">
@@ -77,7 +76,7 @@ export default function InclusionsExclusions() {
 
           <div>
             <h3 className="mb-5 font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#9aa6b5]">
-              Excludes
+              What is Excluded
             </h3>
 
             <div className="space-y-4">
