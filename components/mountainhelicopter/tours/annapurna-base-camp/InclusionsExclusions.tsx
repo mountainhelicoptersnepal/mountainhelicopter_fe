@@ -18,25 +18,22 @@ const excludes = [
 
 const permits = [
   {
-    country: "SAARC Countries",
-    kathmandu: "500",
-    nationalPark: "3,500",
-    lukla: "500",
-    total: "4,500",
+    nationality: "Nepal",
+    acap: "NPR 100",
+    kathmanduAirportTax: "Payable at Kathmandu Airport",
+    totalPayable: "Confirm at booking",
   },
   {
-    country: "Other Foreign Countries",
-    kathmandu: "500",
-    nationalPark: "6,000",
-    lukla: "500",
-    total: "7,000",
+    nationality: "SAARC Nationals",
+    acap: "NPR 1,000",
+    kathmanduAirportTax: "Payable at Kathmandu Airport",
+    totalPayable: "Confirm at booking",
   },
   {
-    country: "Nepal",
-    kathmandu: "500",
-    nationalPark: "100",
-    lukla: "500",
-    total: "1,100",
+    nationality: "Other Foreign Nationals",
+    acap: "NPR 3,000",
+    kathmanduAirportTax: "Payable at Kathmandu Airport",
+    totalPayable: "Confirm at booking",
   },
 ];
 
@@ -107,40 +104,34 @@ export default function InclusionsExclusions() {
               <thead>
                 <tr className="border-b border-white/10 text-left">
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Countries
+                    Nationality
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Airport Tax of Kathmandu
+                    Annapurna Conservation Area Permit (ACAP)
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    National Park Fees
+                    Kathmandu Airport Tax
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Destination / Local Fee
-                  </th>
-                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Total
+                    Total Payable
                   </th>
                 </tr>
               </thead>
 
               <tbody>
                 {permits.map((row) => (
-                  <tr key={row.country} className="border-b border-white/8">
+                  <tr key={row.nationality} className="border-b border-white/8">
                     <td className="py-10 font-manrope text-sm text-white">
-                      {row.country}
+                      {row.nationality}
                     </td>
                     <td className="py-10 font-manrope text-sm text-white">
-                      {row.kathmandu}
+                      {row.acap}
                     </td>
                     <td className="py-10 font-manrope text-sm text-white">
-                      {row.nationalPark}
-                    </td>
-                    <td className="py-10 font-manrope text-sm text-white">
-                      {row.lukla}
+                      {row.kathmanduAirportTax}
                     </td>
                     <td className="py-10 font-manrope text-sm font-bold text-[#f2b53a]">
-                      {row.total}
+                      {row.totalPayable}
                     </td>
                   </tr>
                 ))}

@@ -28,9 +28,21 @@ export default function HealthSafetyGuidelines() {
             Atmospheric Pressure at Altitude
           </h3>
 
-          <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Annapurna Base Camp (4,130 m), atmospheric pressure is lower than at sea level. Some passengers may feel mild breathlessness, lightheadedness, or a faster heartbeat after landing. Because ground time is limited and the helicopter descends promptly, most healthy passengers experience only temporary effects.
-          </p>
+          <h2 className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
+            At Annapurna Base Camp (4,130 m), the atmospheric pressure is
+            significantly lower than at sea level, meaning each breath contains
+            less oxygen than your body is accustomed to. As a result, some
+            passengers may experience mild shortness of breath, lightheadedness,
+            or a slightly faster heartbeat after landing. These are normal
+            physiological responses to the sudden gain in altitude and are
+            usually temporary. Because the landing at Annapurna Base Camp is
+            brief and the helicopter returns to lower elevations shortly
+            afterward, most healthy passengers experience only mild effects that
+            quickly improve during the descent. To ensure a safe and comfortable
+            visit, passengers are advised to walk slowly, avoid strenuous
+            activity, stay hydrated, and follow all instructions provided by the
+            pilot and ground crew.{" "}
+          </h2>
         </div>
 
         <div className="mt-11 border-t border-white/10 pt-9">

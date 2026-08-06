@@ -5,25 +5,35 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Can the helicopter land at Annapurna Base Camp?",
-    answer: "The helicopter may land at Annapurna Base Camp when weather, snow, visibility, wind, payload, and landing-site conditions are safe. The pilot makes the final decision.",
+    question: "How cold does it get at Annapurna Base Camp?",
+    answer:
+      "Temperatures at 4,130 meters can be below freezing, particularly early in the morning and during winter. Wind can make it feel considerably colder. Wear layered clothing, an insulated jacket, gloves, a warm hat, sunglasses, and sturdy closed footwear in every season.",
   },
   {
-    question: "How long is the Annapurna Base Camp helicopter tour?",
-    answer: "From Kathmandu, allow roughly 1.5 hours each way, with the total operation depending on routing and ground time.",
+    question: "Does the helicopter land at Annapurna Base Camp?",
+    answer:
+      "The standard tour is planned as a landing flight to Annapurna Base Camp. However, no landing can be guaranteed in advance. The pilot may shorten, relocate, or cancel the landing because of wind, cloud, visibility, snow, payload, or landing-site conditions.",
   },
   {
-    question: "What is the maximum altitude reached?",
-    answer: "The planned landing altitude is approximately 4,130 metres at Annapurna Base Camp.",
+    question: "How long does the Annapurna Base Camp Helicopter Tour take?",
+    answer:
+      "The flight normally takes approximately 45-50 minutes each way from Kathmandu. With airport formalities and a short base-camp stop, the complete hotel-to-hotel program is commonly around 1.5-2 hours, but delays are possible.",
   },
   {
-    question: "What happens if weather is unsuitable?",
-    answer: "The operator may delay, reschedule, or cancel the flight. Keep a backup day and follow the pilot safety decision.",
+    question: "How long can passengers stay at Annapurna Base Camp?",
+    answer:
+      "Ground time is usually around 15-30 minutes. It is kept short because passengers arrive at 4,130 meters without acclimatization. The pilot determines the actual duration according to passenger well-being, weather, and operational conditions.",
   },
   {
-    question: "What should I wear?",
-    answer: "Wear warm layers, a wind-resistant jacket, gloves, a hat, UV-protective sunglasses, and closed shoes with good grip.",
-  }
+    question: "Is there an age limit for the tour?",
+    answer:
+      "There is no single universal age limit for every operator, but children, older passengers, and anyone with a medical condition require an individual suitability assessment. The operating airline may apply its own minimum-age, medical, or boarding requirements. Parents should obtain medical advice before taking a young child to high altitude.",
+  },
+  {
+    question: "What happens if the weather is unsuitable?",
+    answer:
+      "The operator may delay, reschedule, or cancel the flight. Keep a flexible backup day in your itinerary and review the cancellation and refund terms before paying. The pilot's safety decision is final.",
+  },
 ];
 
 export default function FAQ() {

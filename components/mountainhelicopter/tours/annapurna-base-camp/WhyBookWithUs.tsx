@@ -1,5 +1,6 @@
 import {
   Clock3,
+  FileText,
   Headphones,
   ShieldCheck,
   UsersRound,
@@ -36,6 +37,12 @@ const reasons = [
     title: "Environmentally Responsible",
     description:
       "We operate fuel-efficient aircraft on this route and follow Sagarmatha National Park requirements and approved procedures for mountain landing zones.",
+  },
+  {
+    icon: FileText,
+    title: "Transparent Booking",
+    description:
+      "Booking with us is simple, straightforward, and completely transparent. Before you confirm your reservation, you'll receive a detailed itinerary, clear pricing, and a full list of what's included in your tour. With no hidden charges or surprise fees, you can book with confidence, knowing exactly what to expect from start to finish.",
   },
 ];
 

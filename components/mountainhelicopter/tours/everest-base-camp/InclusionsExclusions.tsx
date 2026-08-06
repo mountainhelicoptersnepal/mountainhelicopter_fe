@@ -117,7 +117,7 @@ export default function InclusionsExclusions() {
                     National Park Fees
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Airport Tax of Lukla
+                    Destination / Local Fee
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
                     Total

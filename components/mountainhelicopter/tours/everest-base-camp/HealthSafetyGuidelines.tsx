@@ -29,12 +29,16 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Kala Patthar (5,545 m), the atmospheric pressure is approximately
-            53% of sea level. This means that with every breath, your lungs
-            receive roughly half the oxygen compared to what you breathe at sea
-            level. For a very short visit of 10-15 minutes, most healthy people
-            tolerate this without serious issues. However, your body does notice
-            the difference.
+            At Pheriche (4,240 m) and during the Everest Base Camp landing
+            (5,364 m), the atmospheric pressure is significantly lower than at
+            sea level. This means that with every breath, your body receives a
+            reduced amount of oxygen compared to what it normally would. While
+            this can make you feel short of breath, lightheaded, or cause your
+            heart to beat a little faster, these are normal responses to the
+            sudden altitude gain. Because your time at high altitude is limited
+            and the helicopter descends promptly after each shuttle run, most
+            healthy passengers experience only mild, temporary effects before
+            descending to lower elevations.
           </p>
         </div>
 

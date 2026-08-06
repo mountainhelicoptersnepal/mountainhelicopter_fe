@@ -1,5 +1,5 @@
 const landingExpectations = [
-  "Slightly increased heart rate - your body working harder to circulate oxygen",
+  "Slightly increased heart rate your body working harder to circulate oxygen",
   "A mild feeling of breathlessness when moving fast",
   "Possible slight headache if you are sensitive to altitude",
   "Feeling colder than usual despite similar outdoor temperatures",
