@@ -1,9 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#003366] text-white">
-      <div className="absolute inset-0 opacity-10 [background-image:radial-gradient(circle_at_25%_25%,rgba(242,182,50,0.6),transparent_50%),radial-gradient(circle_at_75%_75%,rgba(255,255,255,0.3),transparent_40%)]" />
+      <Image
+        src="/images/home-section/mountain-helicopter.jpg"
+        alt="Mountain Helicopters aircraft flying near the Himalayas"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-[#001A33]/75" />
       <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#f5a623] via-[#e5a82d] to-[#f5a623]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28 mt-10 sm:mt-0">

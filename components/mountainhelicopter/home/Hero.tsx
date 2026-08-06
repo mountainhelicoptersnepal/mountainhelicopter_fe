@@ -30,6 +30,7 @@ export default function Hero() {
       return;
     }
 
+    const desktopQuery = window.matchMedia("(min-width: 768px)");
     const heroElement = hero;
     const videoElement = video;
     const overlayElement = overlay;
@@ -43,6 +44,15 @@ export default function Hero() {
     let isTrackingHeroTouch = false;
 
     const effectEnd = 0.34;
+
+    function resetMobileHero() {
+      contentElement.style.transform = "translate3d(0, 0, 0) scale(1)";
+      contentElement.style.opacity = "1";
+      contentElement.style.pointerEvents = "auto";
+      videoElement.style.transform = "translate3d(0, 0, 0) scale(1)";
+      overlayElement.style.opacity = "0.5";
+      scrollHintElement.style.opacity = "1";
+    }
 
     function updateHero() {
       animationFrameId = null;
@@ -164,6 +174,11 @@ export default function Hero() {
       isTrackingHeroTouch = false;
     }
 
+    if (!desktopQuery.matches) {
+      resetMobileHero();
+      return;
+    }
+
     updateHero();
 
     window.addEventListener("wheel", handleWheel, { passive: false });
@@ -217,7 +232,7 @@ export default function Hero() {
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
           style={{
-            transform: "translate3d(0, 0, 0) scale(1.08)",
+            transform: "translate3d(0, 0, 0) scale(1)",
             transformOrigin: "center center",
             willChange: "transform",
           }}

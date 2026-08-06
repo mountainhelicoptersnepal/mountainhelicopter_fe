@@ -10,7 +10,7 @@ const TESTIMONIALS = [
     location: "London, UK",
     date: "May 2026",
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&fit=crop",
+      "/images/everest-base-camp/everest-base-camp.jpg",
   },
   {
     quote:
@@ -19,7 +19,7 @@ const TESTIMONIALS = [
     location: "London, UK",
     date: "April 2026",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&fit=crop",
+      "/images/annapurna-base-camp/annapurna-base-camp.jpg",
   },
   {
     quote:
@@ -28,7 +28,7 @@ const TESTIMONIALS = [
     location: "Paris, France",
     date: "March 2026",
     image:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80&fit=crop",
+      "/images/experiences/private-charter-bg.png",
   },
   {
     quote:
@@ -37,7 +37,7 @@ const TESTIMONIALS = [
     location: "Tokyo, Japan",
     date: "February 2026",
     image:
-      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=80&fit=crop",
+      "/images/rescue/main/as350-b3e-rescue-helicopter.jpg",
   },
   {
     quote:
@@ -46,7 +46,7 @@ const TESTIMONIALS = [
     location: "Mumbai, India",
     date: "January 2026",
     image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80&fit=crop",
+      "/images/muktinath-pilgrimage/muktinath.jpg",
   },
 ];
 
