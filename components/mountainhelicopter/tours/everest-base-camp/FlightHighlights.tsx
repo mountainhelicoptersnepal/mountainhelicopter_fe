@@ -14,59 +14,51 @@ interface Highlight {
 const highlights: Highlight[] = [
   {
     id: 1,
-    title: "Khumbu Valley",
-    description: "Epic valley flight path",
-    image:
-      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800&auto=format&fit=crop",
+    title: "Cloud-Wrapped Himalayan Peak",
+    description: "A dramatic summit rising through low mountain cloud",
+    image: "/images/everest-base-camp/everest-gallary.jpg",
   },
   {
     id: 2,
-    title: "Namche Bazaar",
-    description: "Famous Sherpa trading hub",
-    image:
-      "https://images.unsplash.com/photo-1518098268026-4e89f1a2cdae?q=80&w=800&auto=format&fit=crop",
+    title: "Everest Region Panorama",
+    description: "Wide Himalayan views across the Khumbu landscape",
+    image: "/images/everest-base-camp/everest-gallary1.jpg",
   },
   {
     id: 3,
-    title: "Tengboche Monastery",
-    description: "Spiritual heart of the Khumbu",
-    image:
-      "https://images.unsplash.com/photo-1589802829985-817e51171b92?q=80&w=800&auto=format&fit=crop",
+    title: "Everest and the Khumbu Glacier",
+    description: "Glacier and high peaks below the world’s highest mountain",
+    image: "/images/everest-base-camp/everest-gallary2.png",
   },
   {
     id: 4,
-    title: "Khumbu Glacier",
-    description: "Ancient ice river valley",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop",
+    title: "Sunrise Over Everest Range",
+    description: "Warm first light across the Everest skyline",
+    image: "/images/everest-base-camp/everest-gallary3.jpg",
   },
   {
     id: 5,
-    title: "Dingboche Village",
-    description: "High altitude settlement",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop",
+    title: "Snow Peaks Above Forested Hills",
+    description: "Lower Khumbu hills opening toward the high Himalaya",
+    image: "/images/everest-base-camp/everest-gallary4.jpg",
   },
   {
     id: 6,
-    title: "Ama Dablam",
-    description: "Matterhorn of the Himalayas",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
+    title: "Kala Patthar Snowfield",
+    description: "Bright high-altitude snow views near the Everest viewpoint",
+    image: "/images/everest-base-camp/everest-gallary5.jpg",
   },
   {
     id: 7,
-    title: "Kala Patthar",
-    description: "Best Everest viewpoint",
-    image:
-      "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=800&auto=format&fit=crop",
+    title: "Ama Dablam Valley View",
+    description: "The iconic peak framed by the valley approach",
+    image: "/images/everest-base-camp/everest-gallary6.jpg",
   },
   {
     id: 8,
-    title: "Lhotse Face",
-    description: "Dramatic south wall ascent",
-    image:
-      "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=800&auto=format&fit=crop",
+    title: "Himalayan Sunset Above Clouds",
+    description: "Evening light over snowy peaks and a cloud-filled valley",
+    image: "/images/everest-base-camp/everest-gallary7.jpg",
   },
 ];
 

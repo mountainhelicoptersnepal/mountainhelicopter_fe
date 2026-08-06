@@ -12,12 +12,12 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Muktinath Temple", description: "Sacred pilgrimage complex at approximately 3,710 metres", image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, title: "108 Mukti Dhara", description: "Water spouts used by pilgrims for ritual purification", image: "https://images.unsplash.com/photo-1518098268026-4e89f1a2cdae?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, title: "Jwala Mai", description: "Shrine associated with naturally occurring flame and water", image: "https://images.unsplash.com/photo-1589802829985-817e51171b92?q=80&w=800&auto=format&fit=crop" },
-  { id: 4, title: "Ranipauwa", description: "Landing area serving the temple approach", image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" },
-  { id: 5, title: "Kali Gandaki Valley", description: "Dramatic river corridor between Himalayan massifs", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" },
-  { id: 6, title: "Dhaulagiri and Annapurna", description: "Major mountain views in favourable conditions", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop" }
+  { id: 1, title: "Muktinath Temple Courtyard", description: "Pilgrims visiting the sacred temple complex", image: "/images/muktinath-pilgrimage/muktinath-gallary.png" },
+  { id: 2, title: "Muktinath Temple at Golden Hour", description: "The shrine glowing beneath the Mustang mountains", image: "/images/muktinath-pilgrimage/muktinath-gallary1.png" },
+  { id: 3, title: "Lower Mustang Road", description: "Dry cliffs and winding tracks through Mustang terrain", image: "/images/muktinath-pilgrimage/muktinath-gallary2.png" },
+  { id: 4, title: "Mustang Settlement and Chorten", description: "Traditional village architecture beneath barren hills", image: "/images/muktinath-pilgrimage/muktinath-gallary3.png" },
+  { id: 5, title: "Ancient Mustang Village", description: "Stone homes, prayer flags, and historic desert landscape", image: "/images/muktinath-pilgrimage/muktinath-gallary4.png" },
+  { id: 6, title: "Kali Gandaki Valley Road", description: "A rugged mountain road above the wide river corridor", image: "/images/muktinath-pilgrimage/muktinath-gallary5.png" }
 ];
 
 export default function FlightHighlights() {

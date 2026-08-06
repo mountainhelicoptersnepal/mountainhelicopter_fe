@@ -12,12 +12,12 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Modi Khola Valley", description: "Natural corridor to the Annapurna Sanctuary", image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, title: "Ghandruk and Chhomrong", description: "Mountain settlements and terraced hills", image: "https://images.unsplash.com/photo-1518098268026-4e89f1a2cdae?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, title: "Machhapuchhre", description: "Sacred Fishtail peak dominating the skyline", image: "https://images.unsplash.com/photo-1589802829985-817e51171b92?q=80&w=800&auto=format&fit=crop" },
-  { id: 4, title: "Annapurna Sanctuary", description: "High mountain amphitheater", image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" },
-  { id: 5, title: "Annapurna I", description: "8,091-metre Himalayan giant", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" },
-  { id: 6, title: "Annapurna Base Camp", description: "Landing point at 4,130 metres", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop" }
+  { id: 1, title: "Annapurna Sanctuary Basin", description: "A broad mountain basin surrounded by snowy walls", image: "/images/annapurna-base-camp/annapurna-gallary.jpg" },
+  { id: 2, title: "Base Camp Mountain Wall", description: "Trekkers facing the immense Annapurna amphitheater", image: "/images/annapurna-base-camp/annapurna-gallary1.jpg" },
+  { id: 3, title: "Trail Below Annapurna", description: "A rugged approach trail beneath towering peaks", image: "/images/annapurna-base-camp/annapurna-gallary2.jpg" },
+  { id: 4, title: "Prayer Flags in Snow", description: "Colorful flags against the snowy Annapurna landscape", image: "/images/annapurna-base-camp/annapurna-gallary3.jpg" },
+  { id: 5, title: "Snowy Sanctuary Trail", description: "High mountain trail between rock and snow", image: "/images/annapurna-base-camp/annapurna-gallary4.jpg" },
+  { id: 6, title: "Machhapuchhre at Sunset", description: "Fishtail peak glowing in soft evening light", image: "/images/annapurna-base-camp/annapurna-gallary5.jpg" }
 ];
 
 export default function FlightHighlights() {

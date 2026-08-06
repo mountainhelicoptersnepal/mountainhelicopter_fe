@@ -12,12 +12,12 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Langtang Valley", description: "Scenic Himalayan valley north of Kathmandu", image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, title: "Kyanjin Gompa", description: "Planned landing area at approximately 3,870 metres", image: "https://images.unsplash.com/photo-1518098268026-4e89f1a2cdae?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, title: "Langtang Lirung", description: "Dominant peak above the valley", image: "https://images.unsplash.com/photo-1589802829985-817e51171b92?q=80&w=800&auto=format&fit=crop" },
-  { id: 4, title: "Rasuwa and Syabrubesi", description: "Gateway region on the approach", image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" },
-  { id: 5, title: "Langtang Himal", description: "Panoramic mountain scenery", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" },
-  { id: 6, title: "High Valley Landing", description: "Brief stop when conditions permit", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop" }
+  { id: 1, title: "Kyanjin Village Lodge", description: "Mountain lodge and local life in the snowy valley", image: "/images/langtang-valley/langtang-gallary.jpg" },
+  { id: 2, title: "Langtang River Gorge", description: "Glacial river flowing through the narrow valley", image: "/images/langtang-valley/langtang-gallary1.jpg" },
+  { id: 3, title: "Rocky Langtang Ridgeline", description: "Sharp highland slopes under a clear blue sky", image: "/images/langtang-valley/langtang-gallary2.jpg" },
+  { id: 4, title: "Misty Forested Valley", description: "Clouds drifting across the green Langtang hills", image: "/images/langtang-valley/langtang-gallary3.jpg" },
+  { id: 5, title: "Snowy Langtang Valley", description: "Winter valley scenery with flowering trees and peaks", image: "/images/langtang-valley/langtang-gallary4.jpg" },
+  { id: 6, title: "High Pasture Yaks", description: "Grazing animals on the open Himalayan slopes", image: "/images/langtang-valley/langtang-gallary5.jpg" }
 ];
 
 export default function FlightHighlights() {

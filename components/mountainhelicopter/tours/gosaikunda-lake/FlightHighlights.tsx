@@ -12,12 +12,42 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Gosaikunda Lake", description: "Sacred alpine lake at approximately 4,380 metres", image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, title: "Langtang Himal", description: "Mountain views north of Kathmandu", image: "https://images.unsplash.com/photo-1518098268026-4e89f1a2cdae?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, title: "Langtang National Park", description: "Protected Himalayan landscape", image: "https://images.unsplash.com/photo-1589802829985-817e51171b92?q=80&w=800&auto=format&fit=crop" },
-  { id: 4, title: "Sacred Lake Basin", description: "Rock, water, snow, and sky", image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" },
-  { id: 5, title: "Kathmandu Valley Departure", description: "Fast access from the capital", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" },
-  { id: 6, title: "High Alpine Landing", description: "Brief visit when conditions permit", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop" }
+  {
+    id: 1,
+    title: "Gosaikunda Lake Panorama",
+    description: "The sacred blue lake surrounded by rugged hills",
+    image: "/images/gosaikunda-lake/gosaikunda-lake.png",
+  },
+  {
+    id: 2,
+    title: "Lakeside Shrine",
+    description: "A stupa and prayer flags beside the snowy lake shore",
+    image: "/images/gosaikunda-lake/gosaikunda-lake1.png",
+  },
+  {
+    id: 3,
+    title: "Snow-Covered Gosaikunda",
+    description: "The lake framed by fresh snow and winter ridges",
+    image: "/images/gosaikunda-lake/gosaikunda-lake2.png",
+  },
+  {
+    id: 4,
+    title: "Prayer Flags by the Lake",
+    description: "Pilgrimage flags along the rocky lakeside path",
+    image: "/images/gosaikunda-lake/gosaikunda-lake3.png",
+  },
+  {
+    id: 5,
+    title: "Mirror Lake Reflection",
+    description: "Clear alpine water reflecting the surrounding hills",
+    image: "/images/gosaikunda-lake/gosaikunda-lake4.png",
+  },
+  {
+    id: 6,
+    title: "Turquoise Alpine Water",
+    description: "Transparent sacred lake water beneath rocky peaks",
+    image: "/images/gosaikunda-lake/gosaikunda-lake5.png",
+  },
 ];
 
 export default function FlightHighlights() {
