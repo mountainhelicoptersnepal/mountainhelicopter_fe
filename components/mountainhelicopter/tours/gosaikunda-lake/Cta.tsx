@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import SecondaryButton from "@/components/shared/buttons/SecondaryButton";
 
 function WhatsappIcon() {
   return (
@@ -41,44 +42,38 @@ export default function CTA() {
           <span className="h-px w-9 bg-[#f5a623]/80" />
 
           <span className="font-manrope text-[0.72rem] font-medium uppercase tracking-[0.22em] text-[#f5a623]">
-            Begin Your Sacred Lake Journey
+            Begin Your Journey
           </span>
 
           <span className="h-px w-9 bg-[#f5a623]/80" />
         </div>
 
-        <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,5.2rem)] font-extrabold leading-[1.05] text-white">
-          Gosaikunda Lake
+        <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,4.2rem)] font-extrabold leading-[1.05] text-white">
+          Ready to Experience
           <br />
-          is <span className="text-[#f5a623]">waiting.</span>
+          Everest <span className="text-[#f5a623]">From Above?</span>
         </h2>
 
         <p className="mx-auto mb-10 max-w-[560px] font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">
-          Fly above Langtang’s valleys, alpine ridges, and Himalayan landscapes
-          to visit the sacred Gosaikunda Lake in comfort and safety.
+          Let our experienced team create your unforgettable Himalayan journey.
         </p>
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
-            href="/contact"
-            className="group relative isolate flex h-[46px] w-[157px] items-center justify-center overflow-hidden bg-[#f5a623] font-manrope text-[14px] font-bold uppercase tracking-[-0.01em] text-[#06203c] transition-colors duration-300"
-          >
-            <span className="absolute inset-0 z-0 -translate-x-[101%] bg-white transition-transform duration-500 [transition-timing-function:cubic-bezier(0.4,0,0.2,1)] group-hover:translate-x-0" />
-            <span className="relative z-10">Book Journey →</span>
-          </Link>
 
-          <a
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <PrimaryButton
+            href="/contact"
+            className="bg-[#f5a623] text-[#06203c]"
+          >
+            Book Journey
+          </PrimaryButton>
+
+          <SecondaryButton
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative isolate flex h-[46px] w-[222.5px] items-center justify-center gap-2 overflow-hidden border border-white bg-transparent font-manrope text-[14px] font-bold uppercase text-white transition-colors duration-300"
           >
-            <span className="absolute inset-0 z-0 -translate-x-[101%] bg-white transition-transform duration-500 [transition-timing-function:cubic-bezier(0.4,0,0.2,1)] group-hover:translate-x-0" />
-
-            <span className="relative z-10 flex items-center gap-2 transition-colors duration-300 group-hover:text-[#06203c]">
-              <WhatsappIcon />
-              Contact our team
-            </span>
-          </a>
+            <WhatsappIcon />
+            Contact our team
+          </SecondaryButton>
         </div>
       </div>
 

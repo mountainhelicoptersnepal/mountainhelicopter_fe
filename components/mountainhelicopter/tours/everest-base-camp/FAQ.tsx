@@ -5,36 +5,25 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How fast do you actually respond?",
-    answer:
-      "WhatsApp messages are typically answered within 5 minutes during operating hours. Email and form inquiries within 2 hours. Emergency rescue calls are answered immediately, any hour of the day or night.",
+    question: "How cold does it get at Everest Base Camp?",
+    answer: "Temperature ranges between 15 degrees Celsius and -5 degrees in spring and autumn, and below -17 degrees Celsius in winter.",
   },
   {
-    question: "What information should I include in my inquiry?",
-    answer:
-      "Three things get you the fastest quote: your preferred date with a backup date if flexible, your group size, and your destination or route. For charter work, add a sentence about the mission, filming, cargo, expedition support, so we can allocate the right configuration.",
+    question: "Why does the helicopter not land at the Everest Base Camp?",
+    answer: "Everest Base Camp is part of the Khumbu Glacier, an unstable terrain with no suitable routine helicopter landing space.",
   },
   {
-    question: "Can I visit the office without an appointment?",
-    answer:
-      "Yes, walk-ins are welcome Monday to Saturday, 09:00–18:00 at Old Sinamangal, Pepsicola. If you want to be sure a flight coordinator is free when you arrive, a quick WhatsApp 30 minutes ahead helps.",
+    question: "What is the age limit of the Everest Base Camp helicopter tour in Nepal?",
+    answer: "There is no fixed age limit. Passengers should be able to board safely and tolerate the high-altitude flight.",
   },
   {
-    question:
-      "I'm calling about an emergency rescue. What do you need from me?",
-    answer:
-      "Three things: the patient's location, their condition, and the number of people needing evacuation. If the patient has travel insurance with heli-rescue cover, have the policy number ready.",
+    question: "Which is better, EBC or ABC?",
+    answer: "EBC is often preferred by travellers who want to see the highest peak in the world and experience massive high-altitude glaciers.",
   },
   {
-    question: "Which languages does your team speak?",
-    answer:
-      "English, Nepali, and Hindi, spoken fluently across our flight desk and crew. For other languages, WhatsApp works well since written messages can be translated on both ends.",
-  },
-  {
-    question: "How do payments work?",
-    answer:
-      "A 30% deposit confirms your booking; the balance is due on flight day. We accept bank transfer, credit card, cash, eSewa, and Khalti. If we cancel for weather, you choose full refund or free reschedule.",
-  },
+    question: "Do we need a passport while traveling by helicopter towards Everest Base Camp?",
+    answer: "Yes. Foreign travellers should carry a passport. Nepali travellers should carry an original official photo ID for airport security, insurance, and permits.",
+  }
 ];
 
 export default function FAQ() {

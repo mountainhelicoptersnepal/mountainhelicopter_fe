@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import {
+  BriefcaseBusiness,
+  CalendarDays,
   Clock3,
-  Gauge,
-  Hotel,
-  MapPin,
+  Download,
   Mountain,
-  Plane,
-  Sunrise,
+  ShieldCheck,
+  Users,
 } from "lucide-react";
 import MuktinathTourSidebar from "./MuktinathTourSidebar";
 
@@ -16,148 +16,51 @@ const tabs = [
   { label: "Overview", href: "#overview" },
   { label: "Itinerary", href: "#itinerary" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Review", href: "#review" },
   { label: "FAQ", href: "#faq" },
 ];
 
 const quickFacts = [
   {
-    label: "Temple Elevation",
-    value: "3,710 m / 12,172 ft",
+    icon: ShieldCheck,
+    label: "Safety",
+    value: "Experienced mountain pilots and weather-dependent operations",
   },
   {
-    label: "Location",
-    value: "Mustang District, Gandaki Province, below Thorong La Pass",
+    icon: Clock3,
+    label: "Duration",
+    value: "Approximately 45-60 minutes",
   },
   {
-    label: "Tour Type",
-    value: "Pilgrimage and scenic helicopter tour",
+    icon: Mountain,
+    label: "Max Altitude Reached",
+    value: "Approximately 3,710 metres",
   },
   {
-    label: "Departure Point",
-    value: "Tribhuvan International Airport, Kathmandu",
+    icon: CalendarDays,
+    label: "Finest Season",
+    value: "Spring (March-May) and autumn (September-November)",
   },
   {
-    label: "Kathmandu Flight Time",
-    value: "Approximately 75-90 minutes one way",
+    icon: Users,
+    label: "No Of Pax",
+    value: "4-5 pax",
   },
   {
-    label: "Total Duration",
-    value: "About 4 hours from Kathmandu",
-  },
-  {
-    label: "Temple Ground Time",
-    value: "About 60 minutes for worship, exploration, and puja",
-  },
-  {
-    label: "Walk to Temple",
-    value: "Approximately 5 minutes from the helipad",
-  },
-  {
-    label: "Helicopter Model",
-    value: "CAAN-certified Airbus H125 (AS350 B3e)",
-  },
-  {
-    label: "Maximum Passengers",
-    value: "5 passengers plus 1 pilot",
-  },
-  {
-    label: "Private Charter",
-    value: "USD 4,800 per helicopter from Kathmandu",
-  },
-  {
-    label: "Per-Person Cost",
-    value: "USD 960 with 5 passengers; USD 2,400 with 2 passengers",
-  },
-  {
-    label: "Required Permits",
-    value: "Annapurna Conservation Area Permit (ACAP), included",
-  },
-  {
-    label: "Major Mountains Visible",
-    value: "Dhaulagiri, Annapurna I, Nilgiri, Annapurna South, Baraha Chuli, Hiunchuli",
-  },
-  {
-    label: "Best Seasons",
-    value: "Spring (February-May) and Autumn (September-November)",
-  },
-  {
-    label: "Tour Availability",
-    value: "Year-round, weather permitting, typically 7:00 AM to 12:00 PM",
+    icon: BriefcaseBusiness,
+    label: "Baggage",
+    value: "400 kg (passenger weight + baggage weight per helicopter)",
   },
 ];
 
 const tourHighlights = [
-  {
-    icon: Mountain,
-    title: "Muktinath Temple",
-    description:
-      "Visit the sacred Lord of Salvation temple, revered by both Hindus and Buddhists.",
-  },
-  {
-    icon: MapPin,
-    title: "108 Holy Taps",
-    description:
-      "Pilgrims can take a purifying bath from the sacred spring-fed jaladharas.",
-  },
-  {
-    icon: Hotel,
-    title: "Shaligram Stones",
-    description:
-      "See the sacred fossils associated with Lord Vishnu in the Muktinath region.",
-  },
-  {
-    icon: Sunrise,
-    title: "Mustang Valley",
-    description:
-      "Fly into the dry, dramatic desert-like landscapes beyond the Annapurna range.",
-  },
-  {
-    icon: Mountain,
-    title: "Kali Gandaki Gorge",
-    description:
-      "Look down over one of Nepal's most striking river valleys during the flight.",
-  },
-  {
-    icon: Plane,
-    title: "Jomsom, Kagbeni and Marpha",
-    description:
-      "View Mustang's windy headquarters, medieval villages, white houses, and apple country.",
-  },
-  {
-    icon: Gauge,
-    title: "Annapurna and Dhaulagiri Views",
-    description:
-      "See Dhaulagiri, Annapurna I, Nilgiri, Annapurna South, Baraha Chuli, and Hiunchuli.",
-  },
-  {
-    icon: Clock3,
-    title: "Lush to Barren Transition",
-    description:
-      "Watch green hills and rhododendron zones change into Mustang's high desert.",
-  },
-];
-
-const designedForItems = [
-  {
-    title: "Travellers on Short Notice",
-    description:
-      "A short trip to Nepal is not enough for the weeks-long Annapurna Circuit trek. It is enough to fly. The helicopter departs in the morning and completes the sacred pilgrimage and return flight in just 3 to 4 hours.",
-  },
-  {
-    title: "Families and Groups",
-    description:
-      "No strenuous fitness requirement and no acclimatization needed at this accessible 3,710-meter altitude. Children and grandparents can make the journey together for darshan, puja, and the 108 holy taps.",
-  },
-  {
-    title: "Creatives & Photographers",
-    description:
-      "Charter privately for full aircraft control, unobstructed window angles, and extended ground time at the temple. The transition from rhododendron forests to Mustang's barren landscapes, framed by Dhaulagiri and Annapurna, is the subject.",
-  },
-  {
-    title: "Travellers With Mobility Limitations",
-    description:
-      "Knee injuries, joint conditions, wheelchair users, and post-surgery recovery can make the multi-day trek impossible. With porter services available at the helipad and a gentle 5-minute walk to the temple, the helicopter removes the physical barrier.",
-  },
+  "Passenger insurance provided by the operating airline",
+  "Private charter and occasional shared-seat options",
+  "Planned landing near Ranipauwa for Muktinath darshan",
+  "Time for worship at a site sacred to Hindus and Buddhists",
+  "Aerial views of the Annapurna, Dhaulagiri and Nilgiri ranges",
+  "Flexible booking and weather-rescheduling support"
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -247,430 +150,123 @@ export default function OverviewSection() {
               </button>
             ))}
 
+            <a
+              href="/pdfs/itinerary_of_muktinath_pilgrimage.pdf"
+              download="Muktinath-Itinerary.pdf"
+              className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
+            >
+              <Download
+                size={15}
+                strokeWidth={2}
+                className="transition-transform duration-300 group-hover:translate-y-0.5"
+              />
+
+              <span className="whitespace-nowrap">Itinerary PDF</span>
+            </a>
           </nav>
         </div>
       </section>
 
       {/* OVERVIEW SECTION */}
       <section id="overview" className="scroll-mt-36 bg-[#fbfbfa]">
-        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 py-8 md:px-12 md:py-12 lg:px-16">
           <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px]">
-            {/* LEFT CONTENT */}
             <main className="min-w-0">
-              <div className="mb-7">
-                <p className="mb-4 flex items-center gap-3 font-manrope text-[11px] font-bold uppercase tracking-[0.24em] text-[#ce8e17]">
-                  <span className="h-px w-7 bg-[#ce8e17]" />
-                  About This Flight
-                </p>
-
-                <h2 className="font-fraunces text-3xl font-semibold leading-[1.12] tracking-[-0.02em] text-[#0a3158] md:text-4xl">
-                  Helicopter Tour to,
-                  <br />
-                  <span className="text-[#dfa11e]">Muktinath Temple.</span>
-                </h2>
-              </div>
-
-              <div className="space-y-4 font-manrope text-sm leading-7 text-[#657180]">
-                <p>
-                  The Muktinath Helicopter Tour by Mountain Helicopters Nepal is
-                  a fast private flight to one of Nepal&apos;s most revered
-                  pilgrimage sites. Muktinath Temple sits at 3,710 m in Mustang,
-                  below Thorong La Pass, and is sacred to both Hindus and
-                  Buddhists.
-                </p>
-
-                <p>
-                  Flying by helicopter saves the time and energy required for a
-                  multi-day trek while still giving you panoramic views of the
-                  Annapurna and Dhaulagiri ranges, lush foothills, Kali Gandaki
-                  Gorge, and the barren Mustang valley.
-                </p>
-
-                <p>
-                  The journey includes temple ground time for worship, puja,
-                  exploration, and the 108 holy taps. For elderly visitors or
-                  passengers with limited mobility, porter support can be
-                  arranged near the helipad.
-                </p>
-              </div>
-
               {/* QUICK FACTS */}
-              <section className="mt-9">
-                <h3 className="font-fraunces text-xl font-semibold text-[#0a3158]">
+              <section>
+                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Quick Facts
                 </h3>
 
-                <p className="mt-2 max-w-4xl font-manrope text-xs leading-6 text-[#7b8490]">
-                  These are the key trip facts for the Muktinath Helicopter
-                  Tour, including altitude, timing, permits, aircraft, and
-                  pricing expectations.
+                <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
+                  These are the trip facts of the Helicopter tour to Everest
+                  Base Camp, which makes the helicopter trip to Everest Base
+                  Camp more predictable of what we are offering you in your
+                  journey.
                 </p>
 
-                <div className="mt-5 overflow-hidden rounded-xl bg-[#062b55] shadow-[0_15px_35px_rgba(6,43,85,0.12)]">
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-4">
-                    {quickFacts.map((fact, index) => (
-                      <div
-                        key={`${fact.label}-${index}`}
-                        className="border-b border-white/10 p-5 sm:border-r"
-                      >
-                        <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.16em] text-white/50">
-                          {fact.label}
-                        </p>
-
-                        <p className="mt-2 font-manrope text-xs font-semibold leading-5 text-white">
-                          {fact.value}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </section>
-
-              {/* TOUR HIGHLIGHTS */}
-              <section className="mt-8">
-                <div className="grid gap-4 md:grid-cols-2">
-                  {tourHighlights.map((item) => {
-                    const Icon = item.icon;
+                <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {quickFacts.map((fact) => {
+                    const Icon = fact.icon;
 
                     return (
                       <article
-                        key={item.title}
-                        className="group rounded-xl border border-slate-200/80 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-[#dca121]/50 hover:shadow-[0_16px_35px_rgba(8,46,82,0.08)]"
+                        key={fact.label}
+                        className="flex min-h-[86px] items-center gap-5 rounded-lg border border-slate-200 bg-white px-5 py-4 shadow-[0_10px_28px_rgba(8,38,71,0.08)]"
                       >
-                        <div className="flex items-start gap-4">
-                          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f4f7fa] text-[#0a4f82] transition group-hover:bg-[#fff5d9] group-hover:text-[#c98d15]">
-                            <Icon size={16} strokeWidth={1.8} />
-                          </div>
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-[#dbe7f2] bg-[#f2f7fc] text-[#0b4674]">
+                          <Icon size={18} strokeWidth={1.8} />
+                        </div>
 
-                          <div>
-                            <h4 className="font-manrope text-xs font-bold uppercase tracking-[0.08em] text-[#0a3158]">
-                              {item.title}
-                            </h4>
+                        <div>
+                          <h4 className="font-manrope text-sm font-bold uppercase tracking-[0.08em] text-[#073763]">
+                            {fact.label}
+                          </h4>
 
-                            <p className="mt-2 font-manrope text-xs leading-5 text-[#7a8490]">
-                              {item.description}
-                            </p>
-                          </div>
+                          <p className="mt-1 font-manrope text-xs font-bold leading-5 text-[#073763]">
+                            {fact.value}
+                          </p>
                         </div>
                       </article>
                     );
                   })}
                 </div>
               </section>
+
+              {/* TOUR HIGHLIGHTS */}
+              <section className="mt-14">
+                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                  Highlights
+                </h3>
+
+                <div className="mt-1 rounded-[28px] bg-white px-5 py-8 shadow-[0_18px_40px_rgba(8,38,71,0.08)] md:px-8 lg:px-9">
+                  <div className="space-y-5">
+                    {tourHighlights.map((item) => (
+                      <article
+                        key={item}
+                        className="rounded-xl border border-slate-200 bg-white px-6 py-5 shadow-[0_8px_22px_rgba(8,38,71,0.06)]"
+                      >
+                        <span className="mb-3 block h-[3px] w-12 rounded-full bg-[#0e6695]" />
+
+                        <h4 className="font-manrope text-base font-bold leading-6 text-[#1a2b3f]">
+                          {item}
+                        </h4>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              </section>
+
+              {/* ABOUT THIS FLIGHT */}
+              <section className="mt-16 bg-white">
+                <div className="mb-8">
+                  <p className="mb-5 flex items-center gap-3 font-manrope text-[11px] font-bold uppercase tracking-[0.28em] text-[#e3a11e]">
+                    <span className="h-px w-12 bg-[#e3a11e]" />
+                    About This Flight
+                  </p>
+
+                  <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
+                    Helicopter Tour to,
+                    <br />
+                    <span className="text-[#f2ae22]">
+                      Muktinath.
+                    </span>
+                  </h2>
+                </div>
+
+                <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
+                  <p>
+                    The Muktinath Helicopter Tour combines a Himalayan scenic flight with a pilgrimage to one of Nepal’s most revered sacred sites. Muktinath Temple lies in Mustang District at approximately 3,710 meters, beneath the Thorong La area and within the Annapurna Conservation Area. When the pilot confirms that conditions are safe, the helicopter lands at the designated helipad near Ranipauwa. Passengers then walk uphill towards the temple complex or use pre-arranged local assistance where available. The visit may include darshan at the main shrine, the 108 Mukti Dhara water spouts, and Jwala Mai.
+                  </p>
+                </div>
+              </section>
             </main>
 
-            {/* SIDEBAR */}
             <MuktinathTourSidebar />
           </div>
         </div>
       </section>
 
-      {/* WHO THIS FLIGHT IS FOR */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
-          <div className="max-w-7xl">
-            <p className="flex items-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#d89b1d]">
-              <span className="h-px w-7 bg-[#d89b1d]" />
-              Who This Flight Is For
-            </p>
-
-            <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-[1.08] tracking-[-0.02em] text-[#092c52] md:text-4xl">
-              Who this flight is
-              <br />
-              <span className="text-[#e3a62a]">designed directly for.</span>
-            </h2>
-
-            <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-              {designedForItems.map((item, index) => (
-                <article
-                  key={item.title}
-                  className={`px-5 py-6 md:px-7 ${
-                    index !== designedForItems.length - 1
-                      ? "border-b border-slate-200"
-                      : ""
-                  }`}
-                >
-                  <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.13em] text-[#0b3d6b]">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-3 max-w-4xl font-manrope text-sm leading-7 text-slate-500">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ROUTE ELEVATION SECTION */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
-          <div className="overflow-hidden rounded-[28px] bg-[#061c38] px-5 py-10 md:px-10 md:py-12 lg:px-14">
-            <div className="text-center">
-              <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#e1a51f]">
-                <span className="h-px w-7 bg-[#e1a51f]" />
-                The Route
-              </p>
-
-              <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight text-white md:text-4xl">
-                Kathmandu to Muktinath,{" "}
-                <span className="text-[#e4ab25]">plotted.</span>
-              </h2>
-            </div>
-
-            <div className="mt-10 overflow-x-auto">
-              <div className="min-w-[760px]">
-                <svg
-                  viewBox="0 0 1100 250"
-                  className="h-auto w-full"
-                  role="img"
-                  aria-label="Elevation profile from Kathmandu to Muktinath and back"
-                >
-                  <defs>
-                    <linearGradient id="routeArea" x1="0" y1="0" x2="0" y2="1">
-                      <stop
-                        offset="0%"
-                        stopColor="#f2b321"
-                        stopOpacity="0.18"
-                      />
-                      <stop offset="100%" stopColor="#f2b321" stopOpacity="0" />
-                    </linearGradient>
-
-                    <filter
-                      id="pointGlow"
-                      x="-50%"
-                      y="-50%"
-                      width="200%"
-                      height="200%"
-                    >
-                      <feGaussianBlur stdDeviation="5" result="blur" />
-                      <feMerge>
-                        <feMergeNode in="blur" />
-                        <feMergeNode in="SourceGraphic" />
-                      </feMerge>
-                    </filter>
-                  </defs>
-
-                  {/* HORIZONTAL GRID */}
-                  {[35, 75, 115, 155, 195, 235].map((y) => (
-                    <line
-                      key={y}
-                      x1="65"
-                      y1={y}
-                      x2="1060"
-                      y2={y}
-                      stroke="#24405d"
-                      strokeWidth="1"
-                      opacity="0.55"
-                    />
-                  ))}
-
-                  {/* ELEVATION LABELS */}
-                  <g
-                    fill="#7f91a6"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="10"
-                  >
-                    <text x="28" y="39">
-                      6k m
-                    </text>
-                    <text x="28" y="79">
-                      5k m
-                    </text>
-                    <text x="28" y="119">
-                      4k m
-                    </text>
-                    <text x="28" y="159">
-                      3k m
-                    </text>
-                    <text x="28" y="199">
-                      2k m
-                    </text>
-                    <text x="28" y="239">
-                      1k m
-                    </text>
-                  </g>
-
-                  {/* AREA */}
-                  <path
-                    d="M65 195
-                       L225 156
-                       L390 105
-                       L610 83
-                       L920 140
-                       L1060 195
-                       L1060 235
-                       L65 235 Z"
-                    fill="url(#routeArea)"
-                  />
-
-                  {/* ROUTE LINE */}
-                  <path
-                    d="M65 195
-                       L225 156
-                       L390 105
-                       L610 83
-                       L920 140
-                       L1060 195"
-                    fill="none"
-                    stroke="#f2b321"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-
-                  {/* KATHMANDU */}
-                  <circle
-                    cx="65"
-                    cy="195"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="65" cy="195" r="6" fill="#f2b321" />
-
-                  <text
-                    x="42"
-                    y="182"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    KTM 1,400m
-                  </text>
-
-                  {/* POKHARA */}
-                  <circle
-                    cx="225"
-                    cy="156"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="225" cy="156" r="6" fill="#f2b321" />
-
-                  <text
-                    x="207"
-                    y="142"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    POKHARA
-                  </text>
-
-                  <text
-                    x="214"
-                    y="152"
-                    fill="#7f91a6"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="8"
-                  >
-                    800m
-                  </text>
-
-                  {/* MUKTINATH */}
-                  <circle
-                    cx="390"
-                    cy="83"
-                    r="14"
-                    fill="#e34d55"
-                    opacity="0.14"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="390" cy="83" r="7" fill="#e34d55" />
-
-                  <text
-                    x="360"
-                    y="66"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    MUKTINATH
-                  </text>
-
-                  <text
-                    x="378"
-                    y="76"
-                    fill="#7f91a6"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="8"
-                  >
-                    3,710m
-                  </text>
-
-                  {/* JOMSOM */}
-                  <circle
-                    cx="610"
-                    cy="140"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="610" cy="140" r="6" fill="#f2b321" />
-
-                  <text
-                    x="600"
-                    y="126"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    JOMSOM
-                  </text>
-
-                  <text
-                    x="594"
-                    y="136"
-                    fill="#7f91a6"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="8"
-                  >
-                    2,743m
-                  </text>
-
-                  {/* RETURN */}
-                  <circle
-                    cx="1060"
-                    cy="195"
-                    r="12"
-                    fill="#f2b321"
-                    opacity="0.12"
-                    filter="url(#pointGlow)"
-                  />
-                  <circle cx="1060" cy="195" r="6" fill="#f2b321" />
-
-                  <text
-                    x="1038"
-                    y="182"
-                    fill="#ffffff"
-                    fontFamily="Manrope, sans-serif"
-                    fontSize="9"
-                    fontWeight="700"
-                  >
-                    KTM 1,400m
-                  </text>
-                </svg>
-              </div>
-            </div>
-
-            <p className="mt-5 font-manrope text-xs leading-6 text-[#7c8da1]">
-              Elevation profile: Kathmandu (1,400 m) to Muktinath Temple
-              (3,710 m) and back, plotted against elapsed time.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

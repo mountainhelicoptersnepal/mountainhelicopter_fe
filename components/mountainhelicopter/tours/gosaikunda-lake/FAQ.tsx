@@ -5,35 +5,25 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Is Gosaikunda Lake frozen?",
-    answer:
-      "Gosaikunda Lake is commonly frozen during the winter months, particularly from December through February. From spring to late autumn, visitors can normally see the lake’s open blue water, although snow and ice conditions vary each year.",
+    question: "Where does the helicopter land?",
+    answer: "The helicopter lands at a designated safe area near Gosaikunda Lake when wind, visibility, payload, and surface conditions permit.",
   },
   {
-    question: "Can elderly passengers and children take this tour?",
-    answer:
-      "The tour does not involve a multi-day trek, making it suitable for many families and elderly pilgrims. However, the helicopter lands at approximately 4,380 metres. Children, elderly passengers and anyone with heart, lung or blood-pressure conditions should consult a qualified medical professional before booking.",
+    question: "How high is Gosaikunda Lake?",
+    answer: "Gosaikunda lies at approximately 4,380 metres.",
   },
   {
-    question: "Do we receive enough time for a holy bath or puja?",
-    answer:
-      "Passengers normally receive approximately 30 to 40 minutes at Gosaikunda when weather and landing conditions permit. This can provide time for a short puja, photography and touching the sacred water. A full bath may not always be practical because of cold temperatures, altitude, ground conditions and the pilot’s required departure time.",
+    question: "How long is the flight from Kathmandu?",
+    answer: "The flight is commonly around 15-20 minutes each way, depending on weather, wind, and routing.",
   },
   {
-    question: "What is the helicopter passenger-weight limit?",
-    answer:
-      "The allowable payload depends on passenger weight, baggage, fuel, temperature, wind and high-altitude aircraft performance. The operations team must receive accurate individual weights before confirming the flight. Passenger capacity may be reduced or split into additional rotations when required.",
+    question: "Can older pilgrims join?",
+    answer: "Many older pilgrims can join if they can board safely and tolerate the brief high-altitude visit.",
   },
   {
-    question: "What should I wear for the Gosaikunda flight?",
-    answer:
-      "Wear thermal inner layers, a warm down jacket, gloves, a beanie covering the ears and comfortable closed-toe shoes with good grip. UV-protective or polarised sunglasses, sunscreen and lip balm are also recommended because sunlight and glare can be intense at altitude.",
-  },
-  {
-    question: "What happens if the flight is cancelled because of weather?",
-    answer:
-      "When visibility, cloud, rain, snowfall or strong winds make the route unsafe, the flight may be delayed, rescheduled or cancelled. Eligible passengers may move their booking to the next suitable departure or receive a refund according to the confirmed cancellation and refund terms.",
-  },
+    question: "What happens if weather is unsuitable?",
+    answer: "The operator may delay, reschedule, or cancel the flight. The pilot safety decision is final.",
+  }
 ];
 
 export default function FAQ() {

@@ -1,41 +1,41 @@
 import {
   Clock3,
+  Headphones,
   ShieldCheck,
-  Plane,
-  BadgeDollarSign,
-  CloudSun
+  UsersRound,
+  Wind,
 } from "lucide-react";
 
 const reasons = [
   {
-    icon: Plane,
-    title: "Direct Helicopter Fleet Operator",
+    icon: ShieldCheck,
+    title: "Experienced Team",
     description:
-      "Mountain Helicopters Nepal is a licensed aviation operator, so you book directly with the company operating the aircraft rather than through a tour agency, broker or intermediary.",
+      "Our pilots have thousands of hours of high-altitude Himalayan flight experience. Our operations team has been running this route since 2009.",
   },
   {
-    icon: ShieldCheck,
-    title: "CAAN-Certified Safety Standards",
+    icon: UsersRound,
+    title: "Best Pricing",
     description:
-      "Our Annapurna Base Camp flights are operated using CAAN-certified Airbus H125 helicopters. Experienced mountain pilots manage Himalayan weather, confined valleys and the requirements of high-altitude landings.",
+      "We are the direct operator, no agency markup and no third-party commissions. What you pay is the actual operating cost plus our margin, with nothing hidden.",
   },
   {
     icon: Clock3,
-    title: "Extended Landing at Annapurna Base Camp",
+    title: "Professional Itinerary",
     description:
-      "Passengers normally receive approximately 30 to 45 minutes at Annapurna Base Camp for photography, sightseeing and hot tea or breakfast. Final ground time depends on weather, wind, passenger condition and the pilot’s safety assessment.",
+      "Every landing, departure time, and breakfast stop has been refined over hundreds of flights. You are not the test case.",
   },
   {
-    icon: BadgeDollarSign,
-    title: "Transparent, All-Inclusive Pricing",
+    icon: Headphones,
+    title: "24/7 Available",
     description:
-      "Your confirmed package clearly explains the helicopter flight, applicable ACAP permit, airport taxes, local tourism charges, VAT, transfers and included ground services, without hidden intermediary commissions.",
+      "Our team is reachable around the clock before, during, and after your flight. WhatsApp, phone, and email are all monitored.",
   },
   {
-    icon: CloudSun,
-    title: "Flexible Weather Rescheduling",
+    icon: Wind,
+    title: "Environmentally Responsible",
     description:
-      "When poor visibility, rain, snowfall or strong winds make the Annapurna route unsafe, eligible bookings may be moved to the next suitable departure or refunded according to the confirmed weather-cancellation terms.",
+      "We operate fuel-efficient aircraft on this route and follow Sagarmatha National Park requirements and approved procedures for mountain landing zones.",
   },
 ];
 

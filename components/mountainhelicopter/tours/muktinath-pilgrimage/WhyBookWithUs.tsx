@@ -3,32 +3,39 @@ import {
   Headphones,
   ShieldCheck,
   UsersRound,
+  Wind,
 } from "lucide-react";
 
 const reasons = [
   {
     icon: ShieldCheck,
-    title: "Direct Helicopter Fleet Operator",
+    title: "Experienced Team",
     description:
-      "We are a certified aviation operator, so you work directly with the operating company rather than through an intermediary.",
+      "Our pilots have thousands of hours of high-altitude Himalayan flight experience. Our operations team has been running this route since 2009.",
   },
   {
     icon: UsersRound,
-    title: "CAAN Certified Safety Standards",
+    title: "Best Pricing",
     description:
-      "Our Airbus H125 series aircraft are flown by skilled Himalayan pilots with appropriate high-altitude type ratings.",
+      "We are the direct operator, no agency markup and no third-party commissions. What you pay is the actual operating cost plus our margin, with nothing hidden.",
   },
   {
     icon: Clock3,
-    title: "100% Transparency in Total Cost",
+    title: "Professional Itinerary",
     description:
-      "We quote the total cost clearly, including ACAP permits, airport tax, and VAT, so there is nothing unexpected to pay.",
+      "Every landing, departure time, and breakfast stop has been refined over hundreds of flights. You are not the test case.",
   },
   {
     icon: Headphones,
-    title: "Weather Flexible Reschedule Guarantee",
+    title: "24/7 Available",
     description:
-      "If mountain conditions do not support the morning flight, you receive either a reschedule option or a full refund.",
+      "Our team is reachable around the clock before, during, and after your flight. WhatsApp, phone, and email are all monitored.",
+  },
+  {
+    icon: Wind,
+    title: "Environmentally Responsible",
+    description:
+      "We operate fuel-efficient aircraft on this route and follow Sagarmatha National Park requirements and approved procedures for mountain landing zones.",
   },
 ];
 
@@ -44,7 +51,7 @@ export default function WhyBookWithUs() {
           </p>
 
           <h2 className="mt-5 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-white md:text-4xl lg:text-5xl">
-            Why book Muktinath{" "}
+            Five reasons to book{" "}
             <span className="text-[#e0a321]">directly with us.</span>
           </h2>
         </div>

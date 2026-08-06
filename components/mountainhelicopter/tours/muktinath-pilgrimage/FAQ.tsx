@@ -5,35 +5,25 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Is the Muktinath helicopter tour available on a sharing basis?",
-    answer:
-      "Unlike ABC or EBC tours, the Muktinath tour usually operates as a private charter because most visitors travel as a family or private pilgrimage group. Sharing may be possible if multiple guests book the same date, but shared availability is not guaranteed.",
+    question: "Is the Muktinath Helicopter Tour available on a shared basis?",
+    answer: "Most Muktinath flights operate as private charters. Shared seats may occasionally be arranged when passengers have compatible dates, routes, and payload requirements.",
   },
   {
-    question: "How long do we spend at Muktinath Temple?",
-    answer:
-      "The standard ground time is about 60 minutes, enough for the 108-taps bath, darshan at the main Vishnu temple, Jwala Mai temple darshan, and monastery visit.",
+    question: "Where does the helicopter land?",
+    answer: "The helicopter generally lands at a designated helipad near Ranipauwa rather than inside the temple complex.",
   },
   {
-    question: "Can the 60-minute ground time be extended?",
-    answer:
-      "Yes, on a private charter. Depending on schedule and weather, extended ground time of 2 to 3 hours may be possible for longer puja, meditation, or repeated 108-taps rituals. Please mention this while booking.",
+    question: "How far is the helipad from Muktinath Temple?",
+    answer: "Walking time varies with landing location, steps, crowding, and passenger pace. Travellers with limited mobility should request current assistance details in advance.",
   },
   {
-    question: "Is there a Jomsom fuel stop on the Kathmandu route?",
-    answer:
-      "Yes. Kathmandu-Muktinath flights often stop briefly at Jomsom Airport for refueling. This is standard operating procedure and adds approximately 15 to 20 minutes to the one-way journey.",
+    question: "How long do passengers spend at Muktinath?",
+    answer: "The operational ground allocation is commonly around 60-90 minutes including travel between the helipad and temple, but the pilot controls the actual time.",
   },
   {
-    question: "Can we get breakfast at Muktinath?",
-    answer:
-      "Yes. Ranipauwa village near Muktinath Temple has teahouses and small restaurants serving basic Nepali food, Indian dal-bhat, noodles, egg dishes, tea, and coffee. Bring Nepali rupee notes because card payment is not reliable.",
-  },
-  {
-    question: "What happens if weather cancels the flight?",
-    answer:
-      "We review the weather at 4 AM and notify guests by WhatsApp or Viber around 5 AM. If bad weather cancels the flight, you can reschedule for the next clear morning free of charge or claim a full refund if rescheduling is not possible during your Nepal trip.",
-  },
+    question: "Can I bathe beneath the 108 water spouts?",
+    answer: "The ritual is optional. The water is extremely cold, so passengers should consider health, air temperature, and available time before bathing.",
+  }
 ];
 
 export default function FAQ() {

@@ -1,106 +1,59 @@
 const itineraryItems = [
   {
     number: "01",
-    time: "07:00h",
-    title: "Hotel Pickup in Kathmandu",
-    description:
-      "We pick you up from your hotel and transfer you to Tribhuvan International Airport for the Muktinath helicopter flight.",
+    title: "Flight Request and confirmation",
+    description: ["Share your preferred date, passenger count, exact weights, and baggage details. The operations team verifies aircraft availability, weather, airport status, and payload before confirmation."],
   },
   {
     number: "02",
-    time: "07:30h",
-    title: "Depart from Kathmandu to Muktinath",
-    description:
-      "The helicopter departs Kathmandu and heads toward Mustang. Enjoy aerial views of white Himalayan peaks, lush valleys, and the Annapurna and Dhaulagiri ranges.",
+    title: "Arrival at the Airport",
+    description: ["The ground team checks passenger identification and permit documents. Every passenger and baggage item is weighed before the safety briefing."],
   },
   {
     number: "03",
-    time: "08:15h",
-    title: "Muktinath Temple Puja and Worship",
-    description:
-      "Arrive at Muktinath and perform puja, worship, and the 108-tap ritual bath. Ground time is normally about 30 to 60 minutes depending on the package and operating conditions.",
+    title: "Departure From Kathmandu",
+    description: ["The helicopter crosses the middle hills towards the Annapurna region and may make a fuel stop at Jomsom or another suitable location."],
   },
   {
     number: "04",
-    time: "08:45h",
-    title: "Fly Back to Kathmandu",
-    description:
-      "After darshan and temple exploration, fly back toward Kathmandu with another chance to see the Mustang valley, Kali Gandaki Gorge, Annapurna, and Dhaulagiri from the air.",
+    title: "Flight Through the Kali Gandaki and Mustang Region",
+    description: ["The route offers a dramatic contrast between snow-covered Himalaya and the arid terrain of Lower Mustang. Jomsom, Marpha, Kagbeni, and the Kali Gandaki Valley may be visible."],
   },
   {
     number: "05",
-    time: "10:00h",
-    title: "Return to Kathmandu",
-    description:
-      "Land back at Kathmandu airport and complete the morning pilgrimage flight.",
+    title: "Landing Near Ranipauwa",
+    description: ["Before landing, the pilot assesses wind, clouds, visibility, payload, and helipad condition. If unsuitable, the landing may be delayed, relocated, or cancelled."],
   },
   {
     number: "06",
-    time: "07:00h",
-    title: "Pokhara Route: Airport Transfer",
-    description:
-      "For the Pokhara departure, start with a hotel-to-airport transfer at 7:00 AM.",
+    title: "Darshan and Temple Visit",
+    description: ["The planned visit may include Muktinath Temple, the 108 Mukti Dhara water spouts, and Jwala Mai. Actual ground time is controlled by the pilot."],
   },
   {
     number: "07",
-    time: "07:30h",
-    title: "Pokhara to Muktinath Flight",
-    description:
-      "Take off from Pokhara and enjoy the Annapurna range, Mustang valley, and high Himalayan terrain from above.",
-  },
-  {
-    number: "08",
-    time: "08:15h",
-    title: "Darshan, Puja and Havan at Muktinath",
-    description:
-      "Arrive at Muktinath Temple for darshan, puja, havan, and time around the sacred temple complex.",
-  },
-  {
-    number: "09",
-    time: "08:45h",
-    title: "Fly Back to Pokhara",
-    description:
-      "Depart Muktinath and return to Pokhara while enjoying the aerial scenery again.",
-  },
-  {
-    number: "10",
-    time: "09:30h",
-    title: "Arrive in Pokhara",
-    description:
-      "Land in Pokhara. The PDF notes optional Pokhara sightseeing around Phewa Lake and the valley view after arrival.",
-  },
-  {
-    number: "11",
-    time: "10:00h",
-    title: "Pokhara Tour Completion",
-    description:
-      "Complete the Pokhara-based Muktinath helicopter tour.",
-  },
+    title: "Return Flight",
+    description: ["After darshan, passengers return to the helipad for the flight back to Kathmandu, possibly with another fuel stop depending on the plan."],
+  }
 ];
+
+const itineraryBackgroundImage =
+  "https://plus.unsplash.com/premium_photo-1697729961187-c70c5f520227?h=1200&w=2000&crop=faces,edges&auto=format&fit=crop&q=80&ixlib=rb-4.1.0";
 
 export default function Itinerary() {
   return (
     <section
       id="itinerary"
-      className="relative overflow-hidden bg-[#082f59]"
+      className="relative scroll-mt-36 overflow-hidden bg-[#002347]"
     >
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('/images/muktinath-pilgrimage/mustang.jpg')",
-        }}
+      <img
+        src={itineraryBackgroundImage}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-70"
       />
+      <div className="absolute inset-0 bg-[#002347]/85" />
 
-      {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-[#062b52]/90" />
-
-      {/* EXTRA GRADIENT */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#062b52]/30 via-transparent to-[#062b52]/80" />
-
-      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
-        {/* HEADING */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
         <div className="text-center">
           <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#e0a321]">
             <span className="h-px w-7 bg-[#e0a321]" />
@@ -114,57 +67,39 @@ export default function Itinerary() {
           </h2>
         </div>
 
-        {/* TIMELINE */}
-        <div className="relative mt-16 md:mt-20">
-          <div className="absolute bottom-0 left-[22px] top-0 w-px bg-[#dda11f] md:left-[26px]" />
+        <div className="relative mx-auto mt-16 max-w-[1120px] md:mt-20">
+          <div className="absolute bottom-0 left-[20px] top-0 w-px bg-[#e0a321] md:left-[23px]" />
 
-          <div className="space-y-10">
+          <div className="space-y-10 md:space-y-14">
             {itineraryItems.map((item, index) => (
               <article
                 key={item.number}
-                className="relative grid grid-cols-[46px_minmax(0,1fr)] gap-4 md:grid-cols-[54px_minmax(0,1fr)] md:gap-6"
+                className="relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
               >
-                {/* NUMBER */}
                 <div
-                  className={`relative z-10 flex h-11 w-11 items-center justify-center rounded-full border font-manrope text-xs font-bold md:h-[52px] md:w-[52px] ${
+                  className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border font-manrope text-[12px] font-bold md:h-[42px] md:w-[42px] ${
                     index === 0
-                      ? "border-[#e0a321] bg-[#0b4c82] text-[#f0ad1f]"
-                      : "border-white/70 bg-white text-[#0a3d69]"
+                      ? "border-[#004d93] bg-[#005da8] text-[#f0ad1f] shadow-[0_0_0_4px_rgba(0,93,168,0.25)]"
+                      : "border-[#d9e4ee] bg-white text-[#7b92a9]"
                   }`}
                 >
                   {item.number}
                 </div>
 
-                {/* CONTENT */}
                 <div className="pb-1 pt-1">
-                  <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                    <span className="font-manrope text-xs font-bold uppercase tracking-[0.08em] text-[#f0ad1f]">
-                      {item.time}
-                    </span>
+                  <h3 className="font-fraunces text-lg font-semibold leading-7 text-white md:text-xl">
+                    {item.title}
+                  </h3>
 
-                    <h3 className="font-fraunces text-lg font-semibold leading-7 text-white md:text-xl">
-                      {item.title}
-                    </h3>
+                  <div className="mt-3 space-y-1 font-manrope text-sm font-medium leading-7 text-white/90">
+                    {item.description.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
                   </div>
-
-                  <p className="mt-3 font-manrope text-sm leading-7 text-white/75">
-                    {item.description}
-                  </p>
-
                 </div>
               </article>
             ))}
           </div>
-        </div>
-        
-        {/* OPERATIONAL NOTE */}
-        <div className="mt-20 rounded-2xl border border-white/15 bg-white/[0.06] px-5 py-6 backdrop-blur-sm md:px-7">
-          <p className="font-manrope text-xs leading-6 text-white/65">
-            All flight times are approximate. The final departure time, route,
-            ground duration, passenger capacity, and return schedule may change
-            according to weather, visibility, aircraft availability, air
-            traffic, passenger weight, and operational safety requirements.
-          </p>
         </div>
       </div>
     </section>

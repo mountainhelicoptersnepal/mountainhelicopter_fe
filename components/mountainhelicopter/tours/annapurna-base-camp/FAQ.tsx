@@ -5,77 +5,25 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question:
-      "How long does the Annapurna Base Camp helicopter tour take?",
-    answer:
-      "From Pokhara, the complete experience normally takes approximately 2 to 3 hours, including hotel transfers, airport procedures, the helicopter flight and ground time at Annapurna Base Camp. A one-way flight from Pokhara generally takes around 20 to 25 minutes. Flights from Kathmandu require more time and may include operational or refuelling stops.",
+    question: "Can the helicopter land at Annapurna Base Camp?",
+    answer: "The helicopter may land at Annapurna Base Camp when weather, snow, visibility, wind, payload, and landing-site conditions are safe. The pilot makes the final decision.",
   },
   {
-    question:
-      "Where does the helicopter land during the Annapurna tour?",
-    answer:
-      "The planned landing is at Annapurna Base Camp, approximately 4,130 metres above sea level. The exact landing point is selected by the pilot according to wind, snow, visibility, passenger weight and current landing-zone conditions. When landing at ABC is not considered safe, the pilot may change the route, use an approved lower-altitude landing or return to Pokhara.",
+    question: "How long is the Annapurna Base Camp helicopter tour?",
+    answer: "From Kathmandu, allow roughly 1.5 hours each way, with the total operation depending on routing and ground time.",
   },
   {
-    question:
-      "How much time do passengers receive at Annapurna Base Camp?",
-    answer:
-      "Passengers normally receive approximately 30 to 45 minutes at Annapurna Base Camp. During this time, you can take photographs, enjoy the mountain views, walk around the permitted area and have hot tea or breakfast when lodge services are available. The pilot may shorten the landing because of changing weather, wind, aircraft performance or passenger health.",
+    question: "What is the maximum altitude reached?",
+    answer: "The planned landing altitude is approximately 4,130 metres at Annapurna Base Camp.",
   },
   {
-    question:
-      "Is the Annapurna Base Camp helicopter tour safe for children and elderly passengers?",
-    answer:
-      "The tour does not require trekking or advanced physical fitness, so many families and older passengers can participate. However, Annapurna Base Camp is located at 4,130 metres, where oxygen availability is lower than at sea level. Children, elderly travellers and passengers with heart, lung, blood-pressure or mobility concerns should consult a qualified healthcare professional before booking.",
+    question: "What happens if weather is unsuitable?",
+    answer: "The operator may delay, reschedule, or cancel the flight. Keep a backup day and follow the pilot safety decision.",
   },
   {
-    question:
-      "Can altitude sickness occur during the ABC helicopter tour?",
-    answer:
-      "Mild altitude symptoms can occur because the helicopter ascends rapidly from Pokhara to 4,130 metres. Some passengers may experience a light headache, faster heartbeat, mild breathlessness, dizziness or nausea. Move slowly, avoid running and inform the pilot immediately if you feel unwell. Supplemental oxygen and a first-aid kit are carried onboard.",
-  },
-  {
-    question:
-      "What happens when the weather is unsuitable for the flight?",
-    answer:
-      "The flight may be delayed, rescheduled, rerouted or cancelled when poor visibility, cloud, rain, snowfall or strong winds make the route unsafe. Eligible passengers may receive a rescheduled departure or a refund according to the confirmed booking terms. The pilot has final authority over all departure, route and landing decisions.",
-  },
-  {
-    question:
-      "What should I wear for the Annapurna Base Camp helicopter tour?",
-    answer:
-      "Wear thermal base layers, a fleece or light insulating layer and a warm windproof down jacket. Bring gloves, a hat covering the ears, UV-protective sunglasses, sunscreen and comfortable walking shoes or light hiking boots. Annapurna Base Camp can be cold and windy even when Pokhara is warm.",
-  },
-  {
-    question:
-      "Are ACAP and TIMS permits required for the helicopter tour?",
-    answer:
-      "An Annapurna Conservation Area Permit, commonly known as ACAP, is required for entry into the Annapurna Conservation Area and can be arranged as part of the confirmed package. A TIMS card may be required when the helicopter journey is combined with trekking. The final documentation requirement depends on your itinerary, nationality and type of trip.",
-  },
-  {
-    question:
-      "Why is passenger weight required before confirming the flight?",
-    answer:
-      "Accurate passenger weight is required for aircraft balance, payload planning, fuel calculation and high-altitude performance. Annapurna Base Camp is located at 4,130 metres, where helicopter lifting performance is lower than at Pokhara. The operations team may arrange weight distribution, passenger grouping or additional flight rotations when necessary.",
-  },
-  {
-    question:
-      "Can I book the Annapurna helicopter tour for two or three passengers?",
-    answer:
-      "Yes. Two or three passengers may join a shared departure when matching seats are available. The operations team can combine your booking with other travellers. A private charter is available when you prefer the complete helicopter, greater privacy and more control over the departure schedule.",
-  },
-  {
-    question:
-      "Is breakfast included in the Annapurna Base Camp helicopter tour?",
-    answer:
-      "Hot tea, beverages or breakfast may be included according to the selected package and lodge availability at Annapurna Base Camp. Food service can be affected by the season, weather, lodge operation and available ground time. Your booking confirmation will clearly state what is included.",
-  },
-  {
-    question:
-      "How many passengers can fly in the Airbus H125 helicopter?",
-    answer:
-      "The Airbus H125 can carry up to five passengers plus the pilot under suitable conditions. The actual passenger capacity may be reduced according to total passenger weight, baggage, fuel requirements, weather and high-altitude aircraft performance.",
-  },
+    question: "What should I wear?",
+    answer: "Wear warm layers, a wind-resistant jacket, gloves, a hat, UV-protective sunglasses, and closed shoes with good grip.",
+  }
 ];
 
 export default function FAQ() {

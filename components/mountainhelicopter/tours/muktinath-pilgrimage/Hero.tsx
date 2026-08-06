@@ -4,7 +4,7 @@ import Link from "next/link";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import TourTabsNavbar from "@/components/shared/navbar/TourTabsNavbar";
 
-export default function MuktinathPilgrimageHero() {
+export default function EverestBaseCamp() {
   return (
     <div
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
@@ -30,13 +30,12 @@ export default function MuktinathPilgrimageHero() {
             </div>
 
             <h1 className="font-fraunces font-bold leading-[0.95] tracking-[-1.5px] text-[#FFFFFF] text-[42px] sm:text-[68px] md:text-[88px] lg:text-[104px] xl:text-[90.32px] sm:tracking-[-2.83px]">
-              Muktinath Helicopter <br />
-              Tour.
+              Muktinath <br />
+              Helicopter Tour.
             </h1>
 
             <p className="mt-6 max-w-[540px] font-manrope text-[17px] font-bold leading-[1.45] text-white sm:mt-7 sm:text-[20px] md:text-[20px] tracking-normal">
-              Reach the sacred Muktinath Temple in Mustang by private
-              helicopter, with sweeping Annapurna and Dhaulagiri views.
+              Fly to the sacred temple of Muktinath by helicopter.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">

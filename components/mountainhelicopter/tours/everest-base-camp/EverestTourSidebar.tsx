@@ -301,7 +301,7 @@ export default function EverestTourSidebar() {
             <div className="flex justify-between gap-4">
               <span className="text-slate-400">Specialty</span>
               <span className="text-right font-semibold text-[#0a3158]">
-                Everest & Khumbu Region
+                Everest Base Camp
               </span>
             </div>
           </div>

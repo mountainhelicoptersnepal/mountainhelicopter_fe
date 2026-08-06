@@ -1,119 +1,85 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Factory, MapPin, Mountain, Plane, Trees, Users } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  CalendarDays,
+  Clock3,
+  Download,
+  Mountain,
+  ShieldCheck,
+  Users,
+} from "lucide-react";
 import LangtangTourSidebar from "./LangtangTourSidebar";
 
 const tabs = [
   { label: "Overview", href: "#overview" },
   { label: "Itinerary", href: "#itinerary" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Review", href: "#review" },
   { label: "FAQ", href: "#faq" },
 ];
 
 const quickFacts = [
-  [
-    "Departure Point",
-    "Tribhuvan International Airport Domestic Terminal, Kathmandu",
-  ],
-  ["Landing Zone", "Kyanjin Gompa / Kyanjin Village, 3,870 m / 12,697 ft"],
-  [
-    "Major Views",
-    "Langtang Lirung, Ganesh Himal, Dorje Lakpa, Yala Peak, Langtang Glacier",
-  ],
-  ["One-Way Flight Time", "25 to 35 minutes"],
-  ["Total Tour Duration", "2 to 4 hours including ground time"],
-  ["Ground Time", "60 to 90 minutes at Kyanjin Gompa"],
-  ["Helicopter Model", "CAAN-certified Airbus H125 (AS350 B3e)"],
-  ["Capacity", "Up to 5 passengers + pilot"],
-  ["Shared Tour Price", "From USD 250-350 per person"],
-  ["Private Charter", "From USD 1,400-2,000 full helicopter"],
-  ["Permit", "Langtang National Park Entry Permit"],
-  ["Best Season", "March-May and September-November"],
-  ["Difficulty", "Easy, no physical fitness required"],
-  ["Meals", "Breakfast at a local teahouse in Kyanjin Gompa"],
-  ["Travel Insurance", "Required, minimum 4,000 m altitude coverage"],
-];
-
-const highlights = [
   {
-    icon: MapPin,
-    title: "Kyanjin Gompa Monastery",
-    description:
-      "Visit the monastery and experience Tibetan Buddhist culture, prayer traditions, and mountain village life.",
+    icon: ShieldCheck,
+    label: "Safety",
+    value: "Experienced mountain pilots and weather-dependent operations",
   },
   {
-    icon: Users,
-    title: "Traditional Tamang Village",
-    description:
-      "Explore stone houses, teahouses, prayer flags, grazing yaks, and the living culture of Langtang Valley.",
-  },
-  {
-    icon: Factory,
-    title: "Kyanjin Cheese Factory",
-    description:
-      "Visit the historic yak cheese factory when open and taste a distinctive local product of the valley.",
+    icon: Clock3,
+    label: "Duration",
+    value: "Approximately 25-35 minutes each way from Kathmandu",
   },
   {
     icon: Mountain,
-    title: "Langtang Glacier",
-    description:
-      "Photograph glacier landscapes, Langtang Lirung, Dorje Lakpa, Yala Peak, and surrounding peaks.",
+    label: "Max Altitude Reached",
+    value: "Approximately 3,870 metres",
   },
   {
-    icon: Trees,
-    title: "Forests and Gosaikunda Views",
-    description:
-      "Fly over oak, maple, pine, rhododendron forests, and enjoy a bird's-eye view toward Gosaikunda Lake.",
+    icon: CalendarDays,
+    label: "Finest Season",
+    value: "Spring (March-May) and autumn (September-November)",
   },
   {
-    icon: Plane,
-    title: "Short Himalayan Flight",
-    description:
-      "Avoid the 7 to 9 day trek and reach Kyanjin Gompa from Kathmandu in about 25 to 35 minutes.",
+    icon: Users,
+    label: "No Of Pax",
+    value: "4-5 pax",
+  },
+  {
+    icon: BriefcaseBusiness,
+    label: "Baggage",
+    value: "400 kg (passenger weight + baggage weight per helicopter)",
   },
 ];
 
-const designedForItems = [
-  {
-    title: "Short Trip Travellers",
-    description:
-      "A normal Langtang Valley trek takes 7 to 9 full days. This helicopter tour gives you one week of mountain scenery in one morning, returning you to Kathmandu by early afternoon.",
-  },
-  {
-    title: "Families, Seniors, and Non-Trekkers",
-    description:
-      "No strenuous physical activity, heavy luggage, or prolonged trekking is required. Children, senior citizens, and non-trekkers can experience a 3,870 m Himalayan village safely by helicopter.",
-  },
-  {
-    title: "Photographers, Creatives, and Avid Explorers",
-    description:
-      "Capture the Trishuli River corridor, Shivapuri hills, rhododendron forests, Langtang Glacier, and the face of Langtang Lirung through spacious cabin windows and 60-90 minutes on the ground.",
-  },
-  {
-    title: "Culture and Nature Enthusiasts",
-    description:
-      "Experience the Valley of Glaciers, Tamang culture, Tibetan Buddhist heritage, Kyanjin Gompa monastery, stone villages, and the yak cheese factory without the physical hardship of trekking.",
-  },
-  {
-    title: "VIP Clients and Special Occasions",
-    description:
-      "Private charters suit anniversaries, birthdays, corporate offsites, and exclusive mountain breakfasts with close views of Langtang Lirung and Dorje Lakpa.",
-  },
+const tourHighlights = [
+  "Passenger insurance provided by the operating airline",
+  "Private charter and occasional shared-seat options",
+  "Planned landing at Kyanjin Gompa when conditions permit",
+  "Aerial views of Langtang Lirung and the Langtang Himal",
+  "Flexible booking and weather-rescheduling support"
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
   const startY = window.scrollY;
   const distance = targetY - startY;
   const startTime = performance.now();
+
   const easeInOutCubic = (time: number) =>
     time < 0.5 ? 4 * time * time * time : 1 - Math.pow(-2 * time + 2, 3) / 2;
 
   const animateScroll = (currentTime: number) => {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    window.scrollTo(0, startY + distance * easeInOutCubic(progress));
-    if (progress < 1) requestAnimationFrame(animateScroll);
+    const easedProgress = easeInOutCubic(progress);
+
+    window.scrollTo(0, startY + distance * easedProgress);
+
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
   };
 
   requestAnimationFrame(animateScroll);
@@ -124,30 +90,47 @@ export default function OverviewSection() {
 
   const handleTabClick = (href: string) => {
     setActiveTab(href);
+
     const section = document.querySelector(href);
     if (!section) return;
-    smoothScrollTo(section.getBoundingClientRect().top + window.scrollY - 150);
+
+    const offset = 150;
+
+    const sectionTop =
+      section.getBoundingClientRect().top + window.scrollY - offset;
+
+    smoothScrollTo(sectionTop);
   };
 
   useEffect(() => {
     const handleScroll = () => {
+      const offset = 170;
       let currentTab = "";
+
       tabs.forEach((tab) => {
         const section = document.querySelector(tab.href);
+
         if (!section) return;
+
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 170 && rect.bottom > 170) currentTab = tab.href;
+
+        if (rect.top <= offset && rect.bottom > offset) {
+          currentTab = tab.href;
+        }
       });
+
       setActiveTab(currentTab);
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
+      {/* MINI NAVBAR */}
       <section className="sticky top-[75px] z-40 border-b border-slate-200 bg-white">
         <div className="mx-auto flex min-h-[58px] max-w-7xl items-center px-6 md:px-12 lg:px-16">
           <nav className="mobile-tabs-scrollbar flex h-full w-full items-center gap-1 overflow-x-scroll pb-1 md:overflow-x-auto md:pb-0">
@@ -165,95 +148,115 @@ export default function OverviewSection() {
                 {tab.label}
               </button>
             ))}
+
+            <a
+              href="/pdfs/itinerary_of_langtang_valley.pdf"
+              download="Langtang-Valley-Itinerary.pdf"
+              className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
+            >
+              <Download
+                size={15}
+                strokeWidth={2}
+                className="transition-transform duration-300 group-hover:translate-y-0.5"
+              />
+
+              <span className="whitespace-nowrap">Itinerary PDF</span>
+            </a>
           </nav>
         </div>
       </section>
 
+      {/* OVERVIEW SECTION */}
       <section id="overview" className="scroll-mt-36 bg-[#fbfbfa]">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6 py-8 md:px-12 md:py-12 lg:px-16">
           <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px]">
             <main className="min-w-0">
-              <p className="mb-4 flex items-center gap-3 font-manrope text-[11px] font-bold uppercase tracking-[0.24em] text-[#ce8e17]">
-                <span className="h-px w-7 bg-[#ce8e17]" />
-                About This Flight
-              </p>
-
-              <h2 className="font-fraunces text-3xl font-semibold leading-[1.12] tracking-[-0.02em] text-[#0a3158] md:text-4xl">
-                Langtang Helicopter Tour to{" "}
-                <span className="text-[#dfa11e]">Kyanjin Gompa.</span>
-              </h2>
-
-              <div className="mt-6 space-y-4 font-manrope text-sm leading-7 text-[#657180]">
-                <p>
-                  The Langtang Helicopter Tour is one of the shortest panoramic
-                  helicopter tours from Kathmandu. Within 25 to 35 minutes, the
-                  flight reaches Langtang Valley and Kyanjin Gompa at 3,870 m,
-                  avoiding the usual 7 to 9 day trek.
-                </p>
-
-                <p>
-                  The route heads north from Kathmandu over Shivapuri hills and
-                  the Trishuli River corridor toward Syabrubesi and Langtang
-                  National Park. You can see Langtang Lirung, Ganesh Himal,
-                  Dorje Lakpa, Yala Peak, and Langtang Glacier before landing.
-                </p>
-
-                <p>
-                  Ground time at Kyanjin Gompa is normally 60 to 90 minutes for
-                  the monastery, stone village, cheese factory, breakfast at a
-                  local teahouse, and photographs with the Langtang Himalayas.
-                </p>
-              </div>
-
-              <section className="mt-9">
-                <h3 className="font-fraunces text-xl font-semibold text-[#0a3158]">
+              {/* QUICK FACTS */}
+              <section>
+                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Quick Facts
                 </h3>
 
-                <div className="mt-5 overflow-hidden rounded-xl bg-[#062b55] shadow-[0_15px_35px_rgba(6,43,85,0.12)]">
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3">
-                    {quickFacts.map(([label, value]) => (
-                      <div
-                        key={label}
-                        className="border-b border-white/10 p-5 sm:border-r"
+                <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
+                  These are the trip facts of the Helicopter tour to Everest
+                  Base Camp, which makes the helicopter trip to Everest Base
+                  Camp more predictable of what we are offering you in your
+                  journey.
+                </p>
+
+                <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {quickFacts.map((fact) => {
+                    const Icon = fact.icon;
+
+                    return (
+                      <article
+                        key={fact.label}
+                        className="flex min-h-[86px] items-center gap-5 rounded-lg border border-slate-200 bg-white px-5 py-4 shadow-[0_10px_28px_rgba(8,38,71,0.08)]"
                       >
-                        <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.16em] text-white/50">
-                          {label}
-                        </p>
-                        <p className="mt-2 font-manrope text-xs font-semibold leading-5 text-white">
-                          {value}
-                        </p>
-                      </div>
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-[#dbe7f2] bg-[#f2f7fc] text-[#0b4674]">
+                          <Icon size={18} strokeWidth={1.8} />
+                        </div>
+
+                        <div>
+                          <h4 className="font-manrope text-sm font-bold uppercase tracking-[0.08em] text-[#073763]">
+                            {fact.label}
+                          </h4>
+
+                          <p className="mt-1 font-manrope text-xs font-bold leading-5 text-[#073763]">
+                            {fact.value}
+                          </p>
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
+
+              {/* TOUR HIGHLIGHTS */}
+              <section className="mt-14">
+                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                  Highlights
+                </h3>
+
+                <div className="mt-1 rounded-[28px] bg-white px-5 py-8 shadow-[0_18px_40px_rgba(8,38,71,0.08)] md:px-8 lg:px-9">
+                  <div className="space-y-5">
+                    {tourHighlights.map((item) => (
+                      <article
+                        key={item}
+                        className="rounded-xl border border-slate-200 bg-white px-6 py-5 shadow-[0_8px_22px_rgba(8,38,71,0.06)]"
+                      >
+                        <span className="mb-3 block h-[3px] w-12 rounded-full bg-[#0e6695]" />
+
+                        <h4 className="font-manrope text-base font-bold leading-6 text-[#1a2b3f]">
+                          {item}
+                        </h4>
+                      </article>
                     ))}
                   </div>
                 </div>
               </section>
 
-              <section className="mt-8">
-                <div className="grid gap-4 md:grid-cols-2">
-                  {highlights.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <article
-                        key={item.title}
-                        className="group rounded-xl border border-slate-200/80 bg-white p-5 transition duration-300 hover:-translate-y-1 hover:border-[#dca121]/50 hover:shadow-[0_16px_35px_rgba(8,46,82,0.08)]"
-                      >
-                        <div className="flex items-start gap-4">
-                          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f4f7fa] text-[#0a4f82] transition group-hover:bg-[#fff5d9] group-hover:text-[#c98d15]">
-                            <Icon size={16} strokeWidth={1.8} />
-                          </div>
-                          <div>
-                            <h4 className="font-manrope text-xs font-bold uppercase tracking-[0.08em] text-[#0a3158]">
-                              {item.title}
-                            </h4>
-                            <p className="mt-2 font-manrope text-xs leading-5 text-[#7a8490]">
-                              {item.description}
-                            </p>
-                          </div>
-                        </div>
-                      </article>
-                    );
-                  })}
+              {/* ABOUT THIS FLIGHT */}
+              <section className="mt-16 bg-white">
+                <div className="mb-8">
+                  <p className="mb-5 flex items-center gap-3 font-manrope text-[11px] font-bold uppercase tracking-[0.28em] text-[#e3a11e]">
+                    <span className="h-px w-12 bg-[#e3a11e]" />
+                    About This Flight
+                  </p>
+
+                  <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
+                    Helicopter Tour to,
+                    <br />
+                    <span className="text-[#f2ae22]">
+                      Langtang Valley.
+                    </span>
+                  </h2>
+                </div>
+
+                <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
+                  <p>
+                    The Langtang Valley Helicopter Tour offers a direct aerial journey into one of Nepal’s most accessible Himalayan valleys. The flight heads north from Kathmandu towards Rasuwa and Syabrubesi, then enters the Langtang Valley beneath Langtang Lirung. When operating conditions allow, the helicopter lands at Kyanjin Gompa at approximately 3,870 meters, giving passengers time to experience the high mountain settlement before flying back to Kathmandu.
+                  </p>
                 </div>
               </section>
             </main>
@@ -263,39 +266,6 @@ export default function OverviewSection() {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
-          <p className="flex items-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#d89b1d]">
-            <span className="h-px w-7 bg-[#d89b1d]" />
-            Who This Tour Is Designed For
-          </p>
-
-          <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-[1.08] tracking-[-0.02em] text-[#092c52] md:text-4xl">
-            A Himalayan morning for{" "}
-            <span className="text-[#e3a62a]">many travellers.</span>
-          </h2>
-
-          <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            {designedForItems.map((item, index) => (
-              <article
-                key={item.title}
-                className={`px-5 py-6 md:px-7 ${
-                  index !== designedForItems.length - 1
-                    ? "border-b border-slate-200"
-                    : ""
-                }`}
-              >
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.13em] text-[#0b3d6b]">
-                  {item.title}
-                </h3>
-                <p className="mt-3 max-w-4xl font-manrope text-sm leading-7 text-slate-500">
-                  {item.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

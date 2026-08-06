@@ -16,7 +16,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
-const phoneNumber = "9779712082949";
+const phoneNumber = "9779712082953";
 
 const message =
   "Hi, I would like to know more about the Gosaikunda Lake Helicopter Tour.";
@@ -107,7 +107,7 @@ export default function EverestTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  $1,400
+                  On request
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">
@@ -301,7 +301,7 @@ export default function EverestTourSidebar() {
             <div className="flex justify-between gap-4">
               <span className="text-slate-400">Specialty</span>
               <span className="text-right font-semibold text-[#0a3158]">
-                Everest & Khumbu Region
+                Gosaikunda Lake
               </span>
             </div>
           </div>

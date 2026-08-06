@@ -1,74 +1,71 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 
 const includes = [
-  "Roundtrip Airbus H125 helicopter flight",
-  "Hotel pickup and drop-off inside Kathmandu city",
-  "Airport assistance at Kathmandu Domestic Terminal",
-  "Langtang National Park Entry Permit",
-  "Kathmandu domestic airport departure taxes",
-  "Government VAT 13%",
-  "60-90 minutes of ground time at Kyanjin Gompa",
-  "Breakfast at a local teahouse in Kyanjin",
-  "Oxygen cylinder and first aid kit on each flight",
-  "Experienced mountain licensed pilot",
-  "Pre-flight safety briefing",
+  "Certified pilot and crew",
+  "Emergency oxygen on board for passenger safety",
+  "Fuel landing and helipad fees",
+  "Helicopter flight",
+  "Travel Insurance"
 ];
 
 const excludes = [
-  "Personal travel insurance",
-  "Emergency medical evacuation insurance",
-  "Warm and windproof clothing",
-  "Sunglasses, gloves, beanie, and personal gear",
-  "Personal beverages or extra food",
-  "Tips for pilot or ground staff",
-  "Any cost caused by personal delay or itinerary change",
+  "Personal meals and beverages",
+  "Pilots and staff gratuities",
+  "Additional filming",
+  "Excess or separately transported baggage",
+  "Accommodation and meals caused by a delay"
 ];
 
 const permits = [
   {
-    name: "Langtang National Park Entry Permit",
-    authority: "Required for landing inside Langtang National Park",
-    usd: "Included",
-    npr: "NPR 3,000 average value",
+    country: "SAARC Countries",
+    kathmandu: "500",
+    nationalPark: "3,500",
+    lukla: "500",
+    total: "4,500",
   },
   {
-    name: "TIMS Card",
-    authority: "Not required for helicopter-only trips",
-    usd: "Not needed",
-    npr: "Not needed",
+    country: "Other Foreign Countries",
+    kathmandu: "500",
+    nationalPark: "6,000",
+    lukla: "500",
+    total: "7,000",
+  },
+  {
+    country: "Nepal",
+    kathmandu: "500",
+    nationalPark: "100",
+    lukla: "500",
+    total: "1,100",
   },
 ];
 
 export default function InclusionsExclusions() {
   return (
     <section className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+      <div className="mx-auto max-w-6xl px-6 py-16 md:px-12 md:py-20 lg:px-16 lg:py-24">
         <div className="text-center">
-          <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#d99a1b]">
-            <span className="h-px w-7 bg-[#d99a1b]" />
-            Inclusions and Exclusions
-          </p>
-
-          <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
+          <h2 className="font-fraunces text-[38px] font-semibold leading-none tracking-[-0.03em] text-[#081d44] md:text-[46px]">
             Included. Excluded.{" "}
-            <span className="text-[#e0a326]">Itemised.</span>
+            <span className="text-[#f2b53a]">Itemised.</span>
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="mt-16 grid gap-14 lg:grid-cols-2 lg:gap-20">
           <div>
-            <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.18em] text-[#d99a1b]">
+            <h3 className="mb-5 font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
               Includes
             </h3>
-            <div className="mt-5 space-y-4">
+
+            <div className="space-y-4">
               {includes.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle2
                     size={16}
-                    strokeWidth={1.8}
-                    className="mt-0.5 shrink-0 text-[#0b7dd8]"
+                    strokeWidth={2}
+                    className="mt-0.5 shrink-0 text-[#0a7bd7]"
                   />
-                  <p className="font-manrope text-sm leading-6 text-slate-500">
+                  <p className="font-manrope text-sm leading-6 text-[#6b7b8e]">
                     {item}
                   </p>
                 </div>
@@ -77,18 +74,19 @@ export default function InclusionsExclusions() {
           </div>
 
           <div>
-            <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
+            <h3 className="mb-5 font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#9aa6b5]">
               Excludes
             </h3>
-            <div className="mt-5 space-y-4">
+
+            <div className="space-y-4">
               {excludes.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <XCircle
                     size={16}
-                    strokeWidth={1.7}
-                    className="mt-0.5 shrink-0 text-slate-400"
+                    strokeWidth={2}
+                    className="mt-0.5 shrink-0 text-[#a9b4c1]"
                   />
-                  <p className="font-manrope text-sm leading-6 text-slate-500">
+                  <p className="font-manrope text-sm leading-6 text-[#6b7b8e]">
                     {item}
                   </p>
                 </div>
@@ -97,35 +95,57 @@ export default function InclusionsExclusions() {
           </div>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-[24px] bg-[#061b35] px-5 py-8 md:px-8 md:py-10 lg:px-10">
-          <p className="text-center font-manrope text-xs font-bold uppercase tracking-[0.2em] text-[#e0a326]">
-            Permits Required
-          </p>
+        <div className="mt-16 overflow-hidden rounded-[24px] bg-[#071c36] px-6 py-8 shadow-[0_24px_45px_rgba(7,28,54,0.18)] md:px-10 md:py-10">
+          <div className="text-center">
+            <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
+              Permits Not Included in Your Seat
+            </p>
+          </div>
 
-          <div className="mt-8">
-            {permits.map((permit) => (
-              <div
-                key={permit.name}
-                className="grid gap-4 border-b border-white/10 py-5 md:grid-cols-[1fr_auto] md:items-center"
-              >
-                <div>
-                  <h3 className="font-manrope text-sm font-medium text-white">
-                    {permit.name}
-                  </h3>
-                  <p className="mt-1 font-manrope text-xs leading-5 text-white/35">
-                    {permit.authority}
-                  </p>
-                </div>
-                <div className="text-left md:text-right">
-                  <p className="font-manrope text-sm font-bold text-white">
-                    {permit.usd}
-                  </p>
-                  <p className="mt-1 font-manrope text-xs uppercase tracking-[0.12em] text-white/35">
-                    {permit.npr}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <div className="mt-10 overflow-x-auto">
+            <table className="w-full min-w-[760px] border-collapse">
+              <thead>
+                <tr className="border-b border-white/10 text-left">
+                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
+                    Countries
+                  </th>
+                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
+                    Airport Tax of Kathmandu
+                  </th>
+                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
+                    National Park Fees
+                  </th>
+                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
+                    Destination / Local Fee
+                  </th>
+                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
+                    Total
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {permits.map((row) => (
+                  <tr key={row.country} className="border-b border-white/8">
+                    <td className="py-10 font-manrope text-sm text-white">
+                      {row.country}
+                    </td>
+                    <td className="py-10 font-manrope text-sm text-white">
+                      {row.kathmandu}
+                    </td>
+                    <td className="py-10 font-manrope text-sm text-white">
+                      {row.nationalPark}
+                    </td>
+                    <td className="py-10 font-manrope text-sm text-white">
+                      {row.lukla}
+                    </td>
+                    <td className="py-10 font-manrope text-sm font-bold text-[#f2b53a]">
+                      {row.total}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

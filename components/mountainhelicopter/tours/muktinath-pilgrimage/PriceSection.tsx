@@ -2,39 +2,40 @@
 
 const plans = [
   {
-    title: "Kathmandu Charter",
-    subtitle: "Private Kathmandu to Muktinath helicopter",
-    price: "$4,800",
-    unit: "per helicopter",
-    button: "Book Kathmandu Charter",
+    title: "Shared Seat",
+    subtitle: "Join a scheduled dawn departure",
+    price: "On request",
+    unit: "per person",
+    button: "Book Shared Seat",
     href: "/contact#inquiry-form",
     featured: false,
     features: [
-      "1 passenger: USD 4,800",
-      "2 passengers: USD 2,400 per person",
-      "3 passengers: USD 1,600 per person",
-      "4 passengers: USD 1,200 per person",
-      "5 passengers: USD 960 per person",
-      "ACAP permit included",
-      "About 4 hours total from Kathmandu",
+      "Hotel pickup & drop in Kathmandu",
+      "Pre-flight safety briefing",
+      "Window seat (every passenger)",
+      "Planned landing when conditions permit",
+      "Pre-flight safety briefing",
+      "All park entry fees",
+      "Oxygen on board (if needed)",
     ],
   },
   {
-    title: "Pokhara Charter",
-    subtitle: "Private Pokhara to Muktinath helicopter",
-    price: "$2,900",
+    title: "Private Charter",
+    subtitle: "The whole helicopter, on your schedule",
+    price: "$5,800",
     unit: "per helicopter",
-    button: "Book Pokhara Charter",
+    button: "Charter the Helicopter",
     href: "/contact#inquiry-form",
     featured: true,
     features: [
-      "1 passenger: USD 2,900",
-      "2 passengers: USD 1,450 per person",
-      "3 passengers: USD 967 per person",
-      "4 passengers: USD 725 per person",
-      "5 passengers: USD 580 per person",
-      "ACAP permit included",
-      "Pokhara route with Annapurna and Mustang views",
+      "Everything in Shared Seat",
+      "Custom departure time",
+      "Custom landing points (where permitted)",
+      "Ground time as approved by pilot",
+      "Private briefing",
+      "Dedicated ground coordinator",
+      "Up to 5 passengers full aircraft",
+      "Priority weather rescheduling",
     ],
   },
 ];
@@ -59,7 +60,7 @@ function PriceCard({ plan }: { plan: Plan }) {
       {/* FEATURED BADGE */}
       {plan.featured && (
         <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-[#F2B632] px-5 py-2 font-manrope text-[9px] font-extrabold uppercase tracking-[0.2em] text-[#003366] transition-all duration-500 group-hover:bg-[#003366] group-hover:text-white sm:px-7 sm:py-[10px] sm:text-[10px] sm:tracking-[0.24em]">
-            Popular Charter
+          Most Exclusive
         </div>
       )}
 
@@ -147,13 +148,12 @@ export default function PriceSection() {
           </div>
 
           <h2 className="font-fraunces text-[36px] font-semibold leading-none tracking-[-0.03em] text-[#003366] sm:text-[44px] md:text-[52px]">
-            Muktinath Helicopter Tour Cost
+            Two ways to fly
           </h2>
 
           <p className="mx-auto mt-5 max-w-[620px] font-manrope text-[14px] leading-7 text-[#7b8795] sm:text-[15px]">
-            Muktinath is usually operated as a private charter because most
-            pilgrims travel with family or a specific group. Shared tours may
-            be possible when another guest is travelling on the same date.
+            Shared by the seat, or the cabin to yourselves. Both fly to the same
+            standard.
           </p>
         </div>
 
@@ -165,8 +165,7 @@ export default function PriceSection() {
         </div>
 
         <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
-          Prices are estimated for 2025/2026 and may vary with aircraft,
-          weather, passenger weight, and operating conditions.
+          Fares exclude: Travel insurance · Gratuities
         </p>
       </div>
     </section>

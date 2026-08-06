@@ -1,92 +1,59 @@
 import { CircleX } from "lucide-react";
 
-const landingExpectations = [
-  "A little shortness of breath when walking.",
-  "Possible mild headache or faster heart rate.",
-  "Cold and wind exposure at Kyanjin Gompa.",
-  "Low risk of serious altitude sickness due to short ground time.",
-];
-
-const safetyActions = [
-  "Do not run or exert yourself unnecessarily.",
-  "Keep ground time within the planned 60-90 minutes.",
-  "Inform the pilot immediately if you feel unwell.",
-  "Use onboard oxygen if needed.",
-];
-
 const contraindications = [
-  "Major heart conditions.",
-  "Major chronic respiratory problems such as asthma or COPD.",
-  "Pregnancy beyond 24 weeks.",
+  "Have a history of serious heart conditions or unstable high blood pressure.",
+  "Suffer from any chronic respiratory problems like COPD or severe asthma.",
+  "Active pregnancy (especially past your first trimester; we strongly advise against rapid high-altitude helicopter landings in this situation.)",
+  "Have had major surgery within the last six weeks.",
 ];
 
 export default function HealthSafetyGuidelines() {
   return (
-    <section className="bg-[#071b33]">
-      <div className="mx-auto max-w-7xl bg-[#061a31] px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+    <section className="bg-[#071b33] px-6 py-20 md:px-12 md:py-24 lg:px-16 lg:py-28">
+      <div className="mx-auto max-w-7xl bg-[#061a31] px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28">
         <div className="text-center">
-          <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#e0a321]">
-            <span className="h-px w-7 bg-[#e0a321]" />
+          <p className="flex items-center justify-center gap-3 font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#e0a321]">
+            <span className="h-px w-8 bg-[#e0a321]" />
             Health, Safety, and Altitude Guidelines
           </p>
 
-          <h2 className="mt-5 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-white md:text-4xl">
+          <h2 className="mt-6 font-fraunces text-[34px] font-semibold leading-tight tracking-[0] text-white md:text-[46px]">
             Health, Safety, and Altitude Guidelines{" "}
             <span className="text-[#e0a321]">(AMS)</span>
           </h2>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-9">
-          <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.2em] text-[#e0a321]">
-            Oxygen and Atmospheric Pressure
+        <div className="mt-9 border-t border-white/10 pt-9">
+          <h3 className="font-manrope text-[12px] font-bold uppercase tracking-[0.3em] text-[#e0a321]">
+            Atmospheric Pressure at Altitude
           </h3>
 
-          <p className="mt-6 font-manrope text-sm leading-7 text-white/65 md:text-base md:leading-8">
-            Kyanjin Gompa is at 3,870 m, where oxygen is around 65% of sea
-            level. Because the helicopter lands directly from Kathmandu, your
-            body has little time to adapt, so mild temporary symptoms can occur.
+          <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
+            At Kyanjin Gompa (approximately 3,870 m), oxygen availability is lower than at sea level. Some passengers may feel mild breathlessness, lightheadedness, or cold more strongly than usual. Move slowly, avoid exertion, and tell the pilot immediately if you feel unwell.
           </p>
-
-          <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">
-            <div>
-              <h4 className="font-manrope text-sm font-semibold text-white">
-                Possible side effects:
-              </h4>
-              <ul className="mt-4 space-y-3">
-                {landingExpectations.map((item) => (
-                  <li key={item} className="flex items-start gap-3 font-manrope text-sm leading-6 text-white/60">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#e0a321]" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-manrope text-sm font-semibold text-white">
-                Preventative measures:
-              </h4>
-              <ul className="mt-4 space-y-3">
-                {safetyActions.map((item) => (
-                  <li key={item} className="flex items-start gap-3 font-manrope text-sm leading-6 text-white/60">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#e0a321]" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-9">
-          <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.2em] text-[#e0a321]">
-            Who Should Not Fly Without Medical Advice
+        <div className="mt-11 border-t border-white/10 pt-9">
+          <h3 className="font-manrope text-[12px] font-bold uppercase tracking-[0.3em] text-[#e0a321]">
+            Medical Contraindications
           </h3>
 
-          <ul className="mt-6 space-y-4">
+          <p className="mt-7 font-manrope text-base leading-7 text-white/68">
+            Please consult your doctor beforehand if you:
+          </p>
+
+          <ul className="mt-7 space-y-4">
             {contraindications.map((item) => (
-              <li key={item} className="flex items-start gap-3 font-manrope text-sm leading-6 text-white/60">
-                <CircleX size={16} strokeWidth={1.7} className="mt-1 shrink-0 text-white/50" />
+              <li
+                key={item}
+                className="flex items-start gap-3 font-manrope text-sm leading-6 text-white/55"
+              >
+                <CircleX
+                  size={14}
+                  strokeWidth={1.8}
+                  className="mt-1 shrink-0 text-white/50"
+                />
+
                 <span>{item}</span>
               </li>
             ))}

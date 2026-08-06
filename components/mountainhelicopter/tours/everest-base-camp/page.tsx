@@ -15,7 +15,6 @@ import LandingSafetySnapshot from "./LandingSafetySnapshot";
 import OverviewSection from "./OverviewSection";
 import PriceSection from "./PriceSection";
 import RouteElevationSection from "./RouteElevationSection";
-import Testimonials from "./Testimonial";
 // import WhatToPack from "./WhatToPack";
 import WhyEverestTour from "./WhyEverestTour";
 import WhyBookWithUs from "./WhyBookWithUs";
@@ -39,7 +38,6 @@ export default function EverestBaseCampPage() {
       {/* <CancellationPolicy /> */}
       <HealthSafetyGuidelines />
       <WhyBookWithUs />
-      <Testimonials />
       <FAQ />
       <CTA />
 

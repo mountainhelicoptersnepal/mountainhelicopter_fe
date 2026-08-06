@@ -1,166 +1,136 @@
-import Image from "next/image";
+import { Star } from "lucide-react";
 
 const seasons = [
   {
     name: "Spring",
-    months: "March–May",
-    temperature: "-5°C to 10°C",
+    months: "March-May",
+    completion: "92%",
     visibility: "Excellent",
-    cancellationRisk: "Low",
     status: "Highly Recommended",
-    statusClass: "bg-[#2f8f57] text-white",
-    image: "/images/annapurna-base-camp/annapurna-gallary1.jpg",
-    description:
-      "Spring brings generally stable mornings, clear mountain views and colourful rhododendron forests below the Annapurna Sanctuary. Fresh snowfall can make the peaks especially bright and photogenic.",
+    statusClass: "bg-[#2f7f52]",
+    rating: 5,
   },
   {
     name: "Autumn",
-    months: "September–November",
-    temperature: "-5°C to 8°C",
+    months: "March-May",
+    completion: "95%",
     visibility: "Excellent",
-    cancellationRisk: "Lowest",
-    status: "Best Season",
-    statusClass: "bg-[#2f8f57] text-white",
-    image: "/images/annapurna-base-camp/annapurna-gallary2.jpg",
-    description:
-      "After the monsoon, the atmosphere is often exceptionally clear. Autumn offers crisp skies, stable conditions and some of the finest views of Annapurna I, Machhapuchhre and the surrounding sanctuary.",
+    status: "Highly Recommended",
+    statusClass: "bg-[#2f7f52]",
+    rating: 5,
   },
   {
     name: "Winter",
-    months: "December–February",
-    temperature: "-12°C to 4°C",
-    visibility: "Good to Excellent",
-    cancellationRisk: "Moderate",
-    status: "Weather Dependent",
-    statusClass: "bg-[#e59b20] text-white",
-    image: "/images/annapurna-base-camp/annapurna-gallary3.jpg",
-    description:
-      "Winter can provide very clear skies and dramatic snow-covered scenery. However, freezing temperatures, fresh snowfall and strong winds may affect the landing area and flight schedule.",
+    months: "Dec-Feb",
+    completion: "68%",
+    visibility: "Medium",
+    status: "With Cautious",
+    statusClass: "bg-[#e32f28]",
+    rating: 3,
   },
   {
     name: "Monsoon",
-    months: "June–August",
-    temperature: "2°C to 12°C",
-    visibility: "Variable to Poor",
-    cancellationRisk: "High",
-    status: "Not Recommended",
-    statusClass: "bg-[#ef3434] text-white",
-    image: "/images/annapurna-base-camp/annapurna-gallary4.jpg",
-    description:
-      "Cloud, rain and reduced mountain visibility are common during the monsoon. Flights may still operate on suitable mornings, but delays, route changes and cancellations are more likely.",
+    months: "Jun-Aug",
+    completion: "34%",
+    visibility: "Low",
+    status: "With Cautious",
+    statusClass: "bg-[#e32f28]",
+    rating: 2,
   },
 ];
 
+function RatingStars({ rating }: { rating: number }) {
+  return (
+    <span className="inline-flex items-center gap-0.5">
+      {Array.from({ length: 5 }).map((_, index) => (
+        <Star
+          key={index}
+          size={18}
+          fill="currentColor"
+          strokeWidth={0}
+          className={index < rating ? "text-[#f2ad22]" : "text-[#6e7d8c]"}
+        />
+      ))}
+    </span>
+  );
+}
+
 export default function BestTime() {
   return (
-    <section className="bg-white px-5 py-16 md:px-8 lg:py-20">
-      <div className="mx-auto max-w-7xl">
-        {/* SECTION HEADING */}
+    <section className="relative overflow-hidden bg-[#0a3158]">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/everest-base-camp/everest-base-camp.jpg')",
+        }}
+      />
+      <div className="absolute inset-0 bg-[#0a3158]/72" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a3158]/45 via-[#0a3158]/68 to-[#061e37]/82" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-24 lg:px-16 lg:py-28">
         <div className="text-center">
-          <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.22em] text-[#d99a1b]">
-            <span className="h-px w-7 bg-[#d99a1b]" />
-            Best Months to Fly
+          <p className="flex items-center justify-center gap-3 font-manrope text-xs font-bold uppercase tracking-[0.32em] text-[#f2ad22]">
+            <span className="h-px w-8 bg-[#f2ad22]" />
+            Seasons
           </p>
 
-          <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            When to take the Annapurna Base Camp{" "}
-            <span className="text-[#e0a326]">helicopter tour.</span>
+          <h2 className="mx-auto mt-8 max-w-6xl font-fraunces text-4xl font-semibold leading-tight tracking-[0] text-white/90 md:text-5xl">
+            When we recommend flying and when we{" "}
+            <span className="text-[#f2ad22]">don&apos;t.</span>
           </h2>
-
-          <p className="mx-auto mt-5 max-w-4xl font-manrope text-sm leading-7 text-slate-500">
-            The Annapurna Base Camp helicopter tour can operate throughout the
-            year, but visibility, wind, snowfall and landing conditions vary
-            significantly by season. Spring and autumn generally offer the most
-            reliable combination of clear skies and stable weather.
-          </p>
         </div>
 
-        {/* SEASON CARDS */}
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mx-auto mt-14 grid max-w-6xl gap-7 md:grid-cols-2 lg:gap-x-8 lg:gap-y-8">
           {seasons.map((season) => (
             <article
               key={season.name}
-              className="group relative min-h-[360px] overflow-hidden rounded-[22px] bg-[#dce4eb]"
+              className="rounded-md bg-white px-8 py-7 shadow-[0_18px_42px_rgba(3,20,37,0.16)]"
             >
-              <Image
-                src={season.image}
-                alt={`${season.name} season at Annapurna Base Camp`}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition duration-700 group-hover:scale-105"
-              />
-
-              {/* IMAGE OVERLAY */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#061b35]/80 via-[#061b35]/20 to-transparent" />
-
-              {/* SEASON CONTENT */}
-              <div className="absolute inset-x-5 bottom-5 rounded-xl border border-white/20 bg-white/70 px-5 py-5 shadow-lg backdrop-blur-md md:inset-x-7">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <p className="font-manrope text-[10px] font-bold uppercase tracking-[0.16em] text-[#d99a1b]">
-                      {season.months}
-                    </p>
-
-                    <h3 className="mt-1 font-fraunces text-2xl font-semibold text-[#0a4d83]">
-                      {season.name}
-                    </h3>
-                  </div>
-
-                  <span
-                    className={`rounded-sm px-3 py-1.5 font-manrope text-[9px] font-bold uppercase tracking-[0.12em] ${season.statusClass}`}
-                  >
-                    {season.status}
-                  </span>
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <h3 className="font-fraunces text-xl font-semibold leading-none text-[#00508e]">
+                    {season.name}
+                  </h3>
+                  <RatingStars rating={season.rating} />
                 </div>
 
-                <p className="mt-3 font-manrope text-xs leading-5 text-[#5f6f80]">
-                  {season.description}
-                </p>
+                <span
+                  className={`rounded-sm px-4 py-1.5 font-manrope text-[10px] font-bold uppercase tracking-[0.16em] text-white ${season.statusClass}`}
+                >
+                  {season.status}
+                </span>
+              </div>
 
-                <div className="mt-5 grid grid-cols-3 gap-3 border-t border-slate-300/60 pt-4">
-                  <div>
-                    <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.12em] text-slate-500">
-                      Temperature
-                    </p>
+              <div className="mt-7 grid grid-cols-3 gap-6 text-center">
+                <div>
+                  <p className="font-manrope text-xs font-medium uppercase tracking-[0.14em] text-[#18263a]">
+                    Months
+                  </p>
+                  <p className="mt-2 font-manrope text-base text-[#15243a]">
+                    {season.months}
+                  </p>
+                </div>
 
-                    <p className="mt-1 font-manrope text-xs font-semibold text-[#25384b]">
-                      {season.temperature}
-                    </p>
-                  </div>
+                <div>
+                  <p className="font-manrope text-xs font-medium uppercase tracking-[0.14em] text-[#18263a]">
+                    Completion
+                  </p>
+                  <p className="mt-2 font-manrope text-base text-[#15243a]">
+                    {season.completion}
+                  </p>
+                </div>
 
-                  <div>
-                    <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.12em] text-slate-500">
-                      Visibility
-                    </p>
-
-                    <p className="mt-1 font-manrope text-xs font-semibold text-[#25384b]">
-                      {season.visibility}
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="font-manrope text-[9px] font-bold uppercase tracking-[0.12em] text-slate-500">
-                      Cancellation Risk
-                    </p>
-
-                    <p className="mt-1 font-manrope text-xs font-semibold text-[#25384b]">
-                      {season.cancellationRisk}
-                    </p>
-                  </div>
+                <div>
+                  <p className="font-manrope text-xs font-medium uppercase tracking-[0.14em] text-[#18263a]">
+                    Visibility
+                  </p>
+                  <p className="mt-2 font-manrope text-base text-[#15243a]">
+                    {season.visibility}
+                  </p>
                 </div>
               </div>
             </article>
           ))}
-        </div>
-
-        {/* WEATHER NOTE */}
-        <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 text-center md:px-8">
-          <p className="font-manrope text-xs leading-6 text-slate-500">
-            Himalayan weather can change quickly in every season. Early-morning
-            departures are generally preferred, while the final route, landing
-            and departure decision remains with the pilot based on visibility,
-            wind, cloud cover, snow conditions and aircraft performance.
-          </p>
         </div>
       </div>
     </section>

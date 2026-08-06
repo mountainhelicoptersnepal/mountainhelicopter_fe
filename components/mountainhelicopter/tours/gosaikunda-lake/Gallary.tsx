@@ -4,35 +4,35 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake.jpg",
+    src: "/images/everest-base-camp/everest-gallary.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake1.png",
+    src: "/images/everest-base-camp/everest-gallary1.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake2.png",
+    src: "/images/everest-base-camp/everest-gallary2.png",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake3.png",
+    src: "/images/everest-base-camp/everest-gallary3.jpg",
     className: "col-span-1 row-span-1 md:col-span-2",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake4.png",
+    src: "/images/everest-base-camp/everest-gallary4.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake5.png",
+    src: "/images/everest-base-camp/everest-gallary5.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake6.png",
+    src: "/images/everest-base-camp/everest-gallary6.jpg",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/images/gosaikunda-lake/gosaikunda-lake7.png",
+    src: "/images/everest-base-camp/everest-gallary7.jpg",
     className: "col-span-1 row-span-1",
   },
 ];

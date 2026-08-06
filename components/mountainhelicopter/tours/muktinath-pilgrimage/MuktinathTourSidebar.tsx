@@ -33,7 +33,7 @@ const bookingFacts: Array<{
   {
     icon: Clock3,
     label: "Duration",
-    value: "About 4 Hours",
+    value: "5 Hours",
   },
   {
     icon: Users,
@@ -53,22 +53,22 @@ const bookingFacts: Array<{
 ];
 
 const whyBookItems = [
-  "Direct Fleet Operator",
-  "ACAP Permit Included",
-  "Weather Reschedule Guarantee",
+  "Best Price Guarantee",
+  "No Hidden Charges",
+  "Flexible Booking Options",
   "CAAN Certified Operations",
   "Professional High-Altitude Pilots",
 ];
 
 const groupPricing = [
-  ["1 Passenger", "USD 4,800"],
-  ["2 Passengers", "USD 2,400 pp"],
-  ["3 Passengers", "USD 1,600 pp"],
-  ["4 Passengers", "USD 1,200 pp"],
-  ["5 Passengers", "USD 960 pp"],
+  ["1 Passenger", "USD 1,400–1,600"],
+  ["2 Passengers", "USD 1,280–1,500"],
+  ["3 Passengers", "USD 1,200–1,350"],
+  ["4 Passengers", "USD 1,000–1,200"],
+  ["5 Passengers", "USD 1,000–1,200"],
 ];
 
-export default function MuktinathTourSidebar() {
+export default function EverestTourSidebar() {
   return (
     <aside className="space-y-5 lg:sticky lg:top-[155px] lg:self-start">
       {/* BOOKING CARD */}
@@ -107,7 +107,7 @@ export default function MuktinathTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  $960
+                  On request
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">
@@ -116,9 +116,9 @@ export default function MuktinathTourSidebar() {
               </div>
 
               <p className="mt-2 font-manrope text-[10px] text-slate-400">
-                Kathmandu full group
+                Shared & Private Charter
                 <br />
-                per-person estimate
+                Available
               </p>
             </div>
 
@@ -201,8 +201,8 @@ export default function MuktinathTourSidebar() {
             </div>
 
             <p className="mt-3 font-manrope text-[9px] leading-4 text-slate-400">
-              Kathmandu private charter is USD 4,800 per helicopter. Pokhara
-              private charter is USD 2,900 per helicopter.
+              Prices change based on group size, operating conditions and
+              available aircraft.
             </p>
           </div>
 
@@ -259,7 +259,7 @@ export default function MuktinathTourSidebar() {
           <div className="mt-4 flex items-center gap-3">
             <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
               <Image
-                src="/images/muktinath-pilgrimage/muktinath-gallary3.png"
+                src="/images/everest-base-camp/everest-gallary3.jpg"
                 alt="Mountain Helicopters Nepal tour expert"
                 fill
                 sizes="56px"
@@ -301,13 +301,13 @@ export default function MuktinathTourSidebar() {
             <div className="flex justify-between gap-4">
               <span className="text-slate-400">Specialty</span>
               <span className="text-right font-semibold text-[#0a3158]">
-                Muktinath & Mustang Region
+                Muktinath
               </span>
             </div>
           </div>
 
           <p className="mt-4 font-manrope text-[10px] leading-5 text-slate-500">
-            Need help planning your Muktinath pilgrimage flight? Our Himalayan
+            Need help choosing the perfect helicopter experience? Our Himalayan
             travel specialists are here to guide you.
           </p>
 
@@ -323,7 +323,7 @@ export default function MuktinathTourSidebar() {
 
           <div className="mt-3 grid grid-cols-2">
             <a
-              href="tel:+9779712082949"
+              href="tel:+9779712082953"
               className="flex min-h-9 items-center justify-center gap-2 border border-slate-200 font-manrope text-[9px] font-semibold text-[#0a3158] transition hover:bg-slate-50"
             >
               <Headphones size={12} />

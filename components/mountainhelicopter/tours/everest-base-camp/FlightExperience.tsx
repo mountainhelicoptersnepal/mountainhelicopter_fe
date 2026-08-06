@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function FlightExperience() {
   return (
     <section className="bg-white">
