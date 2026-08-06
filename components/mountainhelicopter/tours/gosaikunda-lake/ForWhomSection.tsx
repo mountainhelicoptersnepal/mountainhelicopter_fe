@@ -1,8 +1,44 @@
 const designedForItems = [
-  { title: "Pilgrims", description: "Pilgrims who wish to visit sacred Gosaikunda without a long trek." },
-  { title: "Travellers on a short schedule seeking a s", description: "Travellers on a short schedule seeking a same-day Himalayan experience from Kathmandu." },
-  { title: "Families and private groups looking to tra", description: "Families and private groups looking to travel together on a dedicated charter." },
-  { title: "Photographers and nature enthusiasts inter", description: "Photographers and nature enthusiasts interested in Langtang Himal and alpine lake scenery." }
+  {
+    title: "Pilgrims",
+    description:
+      "Pilgrims wishing to visit the sacred Gosaikunda Lake without undertaking the multi-day pilgrimage trek.",
+  },
+  {
+    title: "Short-schedule travellers",
+    description:
+      "Travellers on a short schedule who want to experience Gosaikunda and return to Kathmandu on the same day.",
+  },
+  {
+    title: "Families and private groups",
+    description:
+      "Families and private groups looking for the comfort, flexibility, and privacy of a dedicated helicopter charter.",
+  },
+  {
+    title: "Senior travellers",
+    description:
+      "Senior travellers who wish to visit the sacred lake with minimal physical effort, subject to safe boarding and medical suitability.",
+  },
+  {
+    title: "Photographers and nature enthusiasts",
+    description:
+      "Photographers, filmmakers, and nature enthusiasts seeking aerial views of Gosaikunda, the Langtang Himal, and surrounding landscapes.",
+  },
+  {
+    title: "Religious and shared-flight groups",
+    description:
+      "Religious groups, solo travellers, and couples looking to reserve seats on a shared helicopter flight.",
+  },
+  {
+    title: "Production teams",
+    description:
+      "Documentary crews, researchers, and commercial production teams requiring flexible aerial access.",
+  },
+  {
+    title: "Private charter guests",
+    description:
+      "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive flight experience.",
+  },
 ];
 
 export default function ForWhomSection() {

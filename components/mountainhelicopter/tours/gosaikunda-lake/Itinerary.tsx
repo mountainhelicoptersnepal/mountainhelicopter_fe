@@ -2,32 +2,54 @@ const itineraryItems = [
   {
     number: "01",
     title: "Flight Request and confirmation",
-    description: ["Share your travel date, passenger count, exact weights, and baggage details. The operations team checks helicopter availability, weather, airport status, and total payload."],
+    description: [
+      "Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team verifies helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.",
+      "Once everything is confirmed, you receive your final itinerary, reporting time, meeting point, and baggage allowance.",
+    ],
   },
   {
     number: "02",
     title: "Arrival at Tribhuvan International Airport",
-    description: ["The ground team checks documents, passenger weights, baggage, and gives the safety briefing before boarding."],
+    description: [
+      "At the airport, the ground team checks passenger identification, permit documents, and the flight manifest. Every passenger and piece of baggage must be weighed because total payload affects helicopter performance at high altitude.",
+      "If the total weight exceeds the allowed limit, some baggage may need to be stored or sent separately on another helicopter flight at extra cost. The crew then provides a safety briefing covering boarding, seatbelts, headsets, emergency procedures, and safe movement around the helicopter.",
+    ],
   },
   {
     number: "03",
     title: "Departure from Kathmandu",
-    description: ["The helicopter departs Kathmandu and heads north towards the Langtang region."],
+    description: [
+      "The helicopter lifts from Kathmandu and heads north. Passengers may see the city, the surrounding valley and the forested Shivapuri hills shortly after takeoff. The precise route depends on weather, visibility and air-traffic instructions.",
+    ],
   },
   {
     number: "04",
     title: "Flight Towards the Langtang Region",
-    description: ["The flight crosses forested hills, river valleys, and rugged ridgelines as the terrain becomes increasingly alpine."],
+    description: [
+      "Beyond the Kathmandu Valley, the helicopter passes above a landscape of forested ridges, rivers, terraced hills and settlements. In suitable visibility, passengers can see the Ganesh Himal and Langtang ranges as the aircraft climbs towards Gosaikunda.",
+    ],
   },
   {
     number: "05",
-    title: "Landing Near Gosaikunda Lake (Approximately 4,380 m)",
-    description: ["When wind, visibility, payload, and surface conditions are suitable, the helicopter lands near Gosaikunda Lake for a short visit."],
+    title: "Approach to the Sacred Lakes",
+    description: [
+      "The terrain becomes rocky and alpine as the helicopter approaches the lake system. Gosaikunda, Bhairab Kunda, and Saraswati Kunda may be visible from the air. Before landing, the pilot assesses clouds, wind, snow cover, visibility, payload, and the condition of the designated landing area.",
+    ],
   },
   {
     number: "06",
+    title: "Landing Near Gosaikunda Lake (Approximately 4,380 m)",
+    description: [
+      "When conditions permit, the helicopter lands near Gosaikunda Lake. Passengers generally receive approximately 15-30 minutes on the ground for photographs, sightseeing, and a brief religious observance.",
+    ],
+  },
+  {
+    number: "07",
     title: "Return Flight to Kathmandu",
-    description: ["Passengers return to the helicopter and fly back to Kathmandu according to pilot instructions and weather conditions."],
+    description: [
+      "After the lake stop, the helicopter descends across the Langtang foothills and returns to Tribhuvan International Airport. The return flight normally takes approximately 20-30 minutes.",
+      "Our vehicle will then transfer you to your Kathmandu hotel. The complete program is generally finished during the morning, although weather or air-traffic delays can extend the schedule.",
+    ],
   }
 ];
 

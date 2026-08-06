@@ -1,8 +1,14 @@
 const designedForItems = [
-  { title: "Pilgrims", description: "Pilgrims who wish to visit Muktinath Temple without undertaking a long road journey or trek." },
-  { title: "Travellers on a short schedule seeking a s", description: "Travellers on a short schedule seeking a same-day pilgrimage from Kathmandu." },
-  { title: "Families and religious groups looking to t", description: "Families and religious groups looking to travel together on a private helicopter charter." },
-  { title: "Older pilgrims and travellers with limited", description: "Older pilgrims and travellers with limited mobility who can safely board the helicopter and complete the short uphill walk." }
+  { title: "Pilgrims", description: "Pilgrims who wish to visit the sacred Muktinath Temple without undertaking a long road journey or trek." },
+  { title: "Short-schedule travellers", description: "Travellers on a short schedule seeking a same-day pilgrimage from Kathmandu." },
+  { title: "Spiritual travellers", description: "Visitors with limited time in Nepal who want to combine convenience with a spiritual experience." },
+  { title: "Families and religious groups", description: "Families and religious groups looking to travel together on a private helicopter charter." },
+  { title: "Older pilgrims", description: "Older pilgrims who prefer to minimize the physical demands of reaching Muktinath." },
+  { title: "Travellers with limited mobility", description: "Travellers with limited mobility who can safely board the helicopter and complete the short uphill walk from the helipad to the temple." },
+  { title: "Shared-seat guests", description: "Solo travellers or couples looking to reserve seats on a shared helicopter flight." },
+  { title: "Photographers and nature enthusiasts", description: "Photographers and nature enthusiasts interested in the dramatic landscapes of the Kali Gandaki Valley and Mustang region." },
+  { title: "Professional teams", description: "Corporate groups, documentary crews, and research teams requiring flexible aerial transportation." },
+  { title: "Private charter guests", description: "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive flight experience." },
 ];
 
 export default function ForWhomSection() {

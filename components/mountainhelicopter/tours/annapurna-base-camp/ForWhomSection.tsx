@@ -1,8 +1,14 @@
 const designedForItems = [
-  { title: "Travellers with limited time", description: "Travellers with limited time who want to experience the Annapurna Sanctuary without trekking." },
-  { title: "Families and private groups looking for a ", description: "Families and private groups looking for a comfortable dedicated helicopter charter." },
-  { title: "Photographers and content creators seeking", description: "Photographers and content creators seeking aerial views of Annapurna, Machhapuchhre, and the Modi Khola valley." },
-  { title: "Travellers with mobility limitations", description: "Travellers with mobility limitations who can safely board the helicopter and tolerate the high-altitude landing." }
+  { title: "Short-schedule travellers", description: "Travellers on a short schedule who want to visit Annapurna Base Camp without completing the multi-day trek." },
+  { title: "Same-day Himalayan visitors", description: "Visitors with limited time in Nepal seeking a same-day Himalayan experience." },
+  { title: "Families and private groups", description: "Families and private groups looking for the comfort and flexibility of a dedicated helicopter charter." },
+  { title: "Photographers and creative teams", description: "Photographers, filmmakers, and creative teams requiring aerial perspectives of the Annapurna Sanctuary." },
+  { title: "Trek-limited travellers", description: "Travellers who are unable to complete the trek because of time constraints or physical limitations." },
+  { title: "Senior travellers", description: "Senior travellers who prefer to experience the Annapurna region with minimal walking." },
+  { title: "Pilgrims and mountain enthusiasts", description: "Pilgrims and mountain enthusiasts wishing to reach Annapurna Base Camp quickly and comfortably." },
+  { title: "Shared-seat guests", description: "Solo travellers or couples looking to reserve seats on a shared helicopter flight." },
+  { title: "Professional teams", description: "Research teams, documentary crews, and commercial production teams requiring flexible air access." },
+  { title: "Private charter guests", description: "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive flight experience." },
 ];
 
 export default function ForWhomSection() {

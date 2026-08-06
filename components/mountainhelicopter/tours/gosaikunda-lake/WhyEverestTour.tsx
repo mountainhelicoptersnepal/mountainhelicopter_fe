@@ -1,4 +1,19 @@
-const reasons = [["The Gosaikunda Helicopter Tour is practical when pilgrimage, altitude, and limited time matter more than completing a trek."], ["A private charter can be requested by families, pilgrimage groups, or private parties."], ["Shared seats may occasionally be arranged when compatible dates and payload requirements can be combined."], ["The flight reduces the long road approach and physical demands of the trekking route."]];
+const reasons = [
+  [
+    "The Gosaikunda Helicopter Tour is a practical choice when time, comfort, and direct access matter more than completing a multi-day trekking itinerary. Reaching the lake on foot normally requires several days of steep walking, while a helicopter can reach the area from Kathmandu in less than half an hour under favorable conditions.",
+  ],
+  ["A shared seat may be requested by a solo traveler, couple, or small group."],
+  [
+    "A private charter may be requested by a family, pilgrimage group, photography team, or private party.",
+  ],
+  [
+    "The tour can help travellers who cannot undertake the trek, subject to medical fitness and safe boarding requirements.",
+  ],
+  [
+    "A brief puja or respectful contact with the lake may be possible during the landing window.",
+  ],
+  ["The complete journey can usually be completed in the same morning."],
+];
 
 export default function WhyEverestTour() {
   return (

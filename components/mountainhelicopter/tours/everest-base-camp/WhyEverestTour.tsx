@@ -1,6 +1,6 @@
 const reasons = [
   [
-    "The helicopter tour to Everest Base camp helicopter tour when time, altitude and direct access is more important to you than a multi-day trekking trekking program. Flying out of Kathmandu straight to Everest Base Camp (or at least the viewpoint over it on Kalapatthar) can save you a few days of hiking in the Khumbu."
+    "The helicopter tour to Everest Base Camp is when time, altitude, and direct access are more important to you than a multi-day trekking program. Flying out of Kathmandu straight to Everest Base Camp, or at least the viewpoint over it on Kalapatthar, can save you a few days of hiking in the Khumbu."
   ],
   [
     "The flight from Kathmandu to Everest Base Camp can often be made in about 90 minutes."

@@ -1,4 +1,22 @@
-const reasons = [["The Langtang Helicopter Tour is a strong choice when time, mountain scenery, and direct valley access matter more than trekking."], ["A private charter can be requested by families, photographers, or small groups."], ["Shared seats may occasionally be arranged when compatible dates, routing, and payload requirements match."], ["The flight can include hotel transfer, permit processing, passenger weighing, and safety briefing in Kathmandu."]];
+const reasons = [
+  [
+    "The Langtang Helicopter Tour is a practical choice when time, comfort, and direct access matter more than completing a multi-day trekking itinerary. A conventional Langtang Valley trek generally requires several days of walking, while a helicopter can reach Kyanjin Gompa from Kathmandu in well under an hour when conditions are favorable.",
+  ],
+  ["A shared seat may be requested by a solo traveler, couple, or small group."],
+  [
+    "A private charter may be requested by a family, photography team, or private party.",
+  ],
+  [
+    "The flight can help travelers who cannot undertake the trek, subject to medical fitness and safe boarding requirements.",
+  ],
+  [
+    "Hotel transfers, Langtang National Park permit processing, passenger weighing, and a safety briefing can be coordinated in Kathmandu.",
+  ],
+  [
+    "A brief village, monastery, or teahouse visit may be possible during the landing window.",
+  ],
+  ["The complete journey can normally be completed in the same morning."],
+];
 
 export default function WhyEverestTour() {
   return (

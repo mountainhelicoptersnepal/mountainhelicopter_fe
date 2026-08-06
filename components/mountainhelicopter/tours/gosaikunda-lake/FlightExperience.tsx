@@ -18,16 +18,39 @@ export default function FlightExperience() {
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
-            The helicopter leaves Kathmandu and heads north toward the Langtang region, with the city quickly giving way to hills, forests, and river valleys.
+            Shortly after the helicopter leaves Kathmandu, the city begins to
+            disappear behind the green ridges to the north. Roads and dense
+            neighborhoods give way to forested hills, river valleys, terraced
+            slopes and small mountain settlements.
           </p>
           <p>
-            As altitude increases, the terrain becomes colder and more rugged, opening towards the sacred lake basin.
+            As the helicopter continues towards Rasuwa, the landscape becomes
+            increasingly alpine. On a clear morning, the Ganesh Himal and
+            Langtang ranges appear beyond the ridges. Snow-covered summits frame
+            the horizon while the helicopter climbs towards the high country of
+            Langtang National Park.
           </p>
           <p>
-            Gosaikunda comes into view as a high alpine lake set within rock, water, snow, and sky.
+            Then Gosaikunda comes into view: a sacred lake held within a stark
+            landscape of rock, water, snow, and sky. Bhairab Kunda, Saraswati
+            Kunda, and other lakes form part of the wider pilgrimage setting.
+            The contrast with Kathmandu, left behind only minutes earlier, is
+            extraordinary.
           </p>
           <p>
-            When conditions allow, passengers land near the lake for a brief visit, photographs, and quiet time before returning to Kathmandu.
+            When the pilot confirms that conditions are safe, the helicopter
+            lands at the designated site near the lake. The usual ground window
+            is approximately 15-30 minutes, although it may be shortened because
+            of wind, cloud, snow, passenger wellbeing or operational
+            requirements.
+          </p>
+          <p>
+            During the stop, passengers can take photographs, offer a short
+            prayer or touch the lake water if the crew confirms that it is safe
+            to do so. Entering the water or attempting a full bath is not
+            recommended because the lake is extremely cold, the ground may be
+            icy, and passengers are exposed to 4,380 metres without
+            acclimatisation.
           </p>
         </div>
 

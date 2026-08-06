@@ -59,7 +59,7 @@ const tourHighlights = [
   "Shared departures and private charter options",
   "Direct landing at Annapurna Base Camp, when conditions permit",
   "Spectacular aerial views of the Annapurna Sanctuary",
-  "Early-morning departures for the most favourable flying conditions"
+  "Early-morning departures for the most favourable flying conditions",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -173,15 +173,14 @@ export default function OverviewSection() {
             <main className="min-w-0">
               {/* QUICK FACTS */}
               <section>
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Quick Facts
-                </h3>
+                </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts of the Helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the trip facts for the Annapurna Base Camp
+                  Helicopter Tour, including safety, duration, maximum altitude,
+                  finest season, passenger capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -214,9 +213,9 @@ export default function OverviewSection() {
 
               {/* TOUR HIGHLIGHTS */}
               <section className="mt-14">
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Highlights
-                </h3>
+                </h2>
 
                 <div className="mt-1 rounded-[28px] bg-white px-5 py-8 shadow-[0_18px_40px_rgba(8,38,71,0.08)] md:px-8 lg:px-9">
                   <div className="space-y-5">
@@ -247,16 +246,41 @@ export default function OverviewSection() {
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
                     Helicopter Tour to,
                     <br />
-                    <span className="text-[#f2ae22]">
-                      Annapurna Base Camp.
-                    </span>
+                    <span className="text-[#f2ae22]">Annapurna Base Camp.</span>
                   </h2>
                 </div>
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
-                  <p>
-                    The Annapurna Base Camp Helicopter Tour is more than a scenic flight. It is an opportunity to enter the heart of the Annapurna Sanctuary without committing to the physical demands and time required for a multi-day trek. After the passenger weight check and safety briefing, the helicopter flies north towards the Annapurna range, passing above green hills, terraced fields, river valleys, and mountain villages. In approximately 20-30 minutes, the landscape opens into the natural amphitheater surrounding Annapurna Base Camp. Subject to weather, snow, and landing-site conditions, the helicopter lands at Annapurna Base Camp at 4,130 meters before returning the same morning.
-                  </p>
+                  <h2>
+                    The Annapurna Base Camp Helicopter Tour is more than a
+                    scenic flight. It is an opportunity to enter the heart of
+                    the Annapurna Sanctuary without committing to the physical
+                    demands and time required for a multi-day trek.
+                  </h2>
+                  <h2 className="mt-5">
+                    The journey begins with a pickup from your hotel in
+                    Kathmandu if requested, which requires extra pricing, which
+                    incurs external charges, and a transfer to the airport.
+                    After the passenger weight check and safety briefing, the
+                    helicopter flies north towards the Annapurna range, passing
+                    above green hills, terraced fields, river valleys, and
+                    mountain villages. In approximately 20–30 minutes, the
+                    landscape opens into the natural amphitheater surrounding
+                    Annapurna Base Camp. Annapurna I (8,091 m), Annapurna South,
+                    Hiunchuli, Gangapurna, and Machhapuchhre rise around the
+                    sanctuary. Subject to weather, snow, and landing-site
+                    conditions, the helicopter lands at Annapurna Base Camp at
+                    4,130 meters. Passengers can step outside for photographs
+                    and experience the scale of the mountains before returning
+                    to Kathmandu the same morning.
+                  </h2>
+                  <h2 className="mt-5">
+                    The Annapurna Base Camp Helicopter Tour with landing is
+                    particularly suitable for travelers with limited time, those
+                    unable to complete the trek, and anyone who wants to see the
+                    Annapurna and it’s surroundings from a remarkable aerial
+                    perspective.
+                  </h2>
                 </div>
               </section>
             </main>
@@ -265,7 +289,6 @@ export default function OverviewSection() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

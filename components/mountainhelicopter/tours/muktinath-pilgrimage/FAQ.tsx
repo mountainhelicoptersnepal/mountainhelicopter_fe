@@ -6,24 +6,54 @@ import Link from "next/link";
 const faqs = [
   {
     question: "Is the Muktinath Helicopter Tour available on a shared basis?",
-    answer: "Most Muktinath flights operate as private charters. Shared seats may occasionally be arranged when passengers have compatible dates, routes, and payload requirements.",
+    answer:
+      "Most Muktinath flights operate as private charters. Shared seats may occasionally be arranged when passengers have compatible dates, routes, and payload requirements, but availability is not guaranteed.",
   },
   {
     question: "Where does the helicopter land?",
-    answer: "The helicopter generally lands at a designated helipad near Ranipauwa rather than inside the temple complex.",
+    answer:
+      "The helicopter generally lands at a designated helipad near Ranipauwa rather than inside the temple complex. Passengers must travel uphill from the landing area to the temple. The exact landing point is determined operationally.",
   },
   {
     question: "How far is the helipad from Muktinath Temple?",
-    answer: "Walking time varies with landing location, steps, crowding, and passenger pace. Travellers with limited mobility should request current assistance details in advance.",
+    answer:
+      "Published estimates vary. Some itineraries describe a 5-10-minute uphill walk, while others allow longer depending on the landing location, steps, crowding and passenger pace. Travellers with limited mobility should request a precise current assessment and arrange assistance in advance.",
+  },
+  {
+    question: "How long is the helicopter flight?",
+    answer:
+      "From Kathmandu, the flight is commonly around 30-45 minutes each way. From Kathmandu, it is commonly around 75-90 minutes each way and may include a fuel stop. Weather, wind and routing can change these times.",
   },
   {
     question: "How long do passengers spend at Muktinath?",
-    answer: "The operational ground allocation is commonly around 60-90 minutes including travel between the helipad and temple, but the pilot controls the actual time.",
+    answer:
+      "The operational ground allocation is commonly around 60-90 minutes, including travel between the helipad and temple. Actual time is controlled by the pilot and may be reduced. Temple queues can affect how many rituals are completed.",
+  },
+  {
+    question: "Can the ground time be extended?",
+    answer:
+      "Only if the airline approves it as part of the confirmed charter plan. Fuel, crew duty, parking, weather and aircraft scheduling all matter. Do not assume that a two- or three-hour stay is possible without written confirmation.",
+  },
+  {
+    question: "Can older pilgrims or wheelchair users join?",
+    answer:
+      "Some older pilgrims can join successfully, but the helicopter does not remove the uphill temple approach. Wheelchair access and local assistance are not universally guaranteed. Discuss the passenger's mobility and health in detail before paying.",
   },
   {
     question: "Can I bathe beneath the 108 water spouts?",
-    answer: "The ritual is optional. The water is extremely cold, so passengers should consider health, air temperature, and available time before bathing.",
-  }
+    answer:
+      "The ritual is optional. The water is extremely cold, and passengers should consider their medical condition, air temperature and available time. Bring a towel and warm, dry clothing. Skip the bath if conditions or your health make it unsafe.",
+  },
+  {
+    question: "Is there a fuel stop on the Kathmandu route?",
+    answer:
+      "A fuel stop is often required, commonly at Kathmandu or Jomsom, but the location and necessity depend on the aircraft, load, fuel plan, and conditions. The confirmed itinerary should state the expected arrangement.",
+  },
+  {
+    question: "What happens if the weather is unsuitable?",
+    answer:
+      "The operator may delay, reschedule, or cancel the flight. Keep a flexible backup day and review the written cancellation and refund terms before paying. Refund conditions may differ if the helicopter departs, makes a fuel stop, or cannot complete the planned landing. The pilot's safety decision is final.",
+  },
 ];
 
 export default function FAQ() {

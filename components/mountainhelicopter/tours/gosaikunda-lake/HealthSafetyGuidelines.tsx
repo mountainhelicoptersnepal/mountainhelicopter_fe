@@ -1,10 +1,10 @@
 import { CircleX } from "lucide-react";
 
 const contraindications = [
-  "Have a history of serious heart conditions or unstable high blood pressure.",
-  "Suffer from any chronic respiratory problems like COPD or severe asthma.",
-  "Active pregnancy (especially past your first trimester; we strongly advise against rapid high-altitude helicopter landings in this situation.)",
-  "Have had major surgery within the last six weeks.",
+  "Have a history of serious heart condition and unstable high blood pressure",
+  "Suffer from any chronic respiratory problems like COPD and severe asthma",
+  "Active pregnancy (especially past your first trimester)",
+  "Have had major surgeries within the past 6 weeks",
 ];
 
 export default function HealthSafetyGuidelines() {
@@ -29,17 +29,29 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Gosaikunda Lake (approximately 4,380 m), the air contains less oxygen than at lower elevations. Mild shortness of breath, lightheadedness, or a faster heartbeat can occur. The visit is brief, and passengers should move slowly, stay hydrated, and follow the pilot’s instructions.
+            At Gosaikunda (4,380 m), the atmospheric pressure is significantly
+            lower than at sea level, meaning each breath contains less oxygen
+            than your body is accustomed to. As a result, some passengers may
+            notice mild shortness of breath, lightheadedness, or a slightly
+            faster heartbeat after landing. These are normal physiological
+            responses to the sudden increase in altitude and usually remain mild
+            because the visit is brief. Since the helicopter returns to lower
+            elevations shortly after the stop, most healthy passengers
+            experience only temporary effects that resolve naturally during the
+            descent. Passengers are encouraged to walk slowly, avoid unnecessary
+            exertion, stay hydrated, and follow the pilot&apos;s or crew&apos;s
+            instructions throughout the visit to ensure a safe and comfortable
+            high-altitude experience.
           </p>
         </div>
 
         <div className="mt-11 border-t border-white/10 pt-9">
           <h3 className="font-manrope text-[12px] font-bold uppercase tracking-[0.3em] text-[#e0a321]">
-            Medical Contraindications
+            What doctors recommend
           </h3>
 
           <p className="mt-7 font-manrope text-base leading-7 text-white/68">
-            Please consult your doctor beforehand if you:
+            Consult the doctor for any of these if you:
           </p>
 
           <ul className="mt-7 space-y-4">

@@ -14,16 +14,23 @@ const faqs = [
   },
   {
     question: "What is the age limit of the Everest Base Camp helicopter tour in Nepal?",
-    answer: "There is no fixed age limit. Passengers should be able to board safely and tolerate the high-altitude flight.",
+    answer:
+      "There is no age limit for the Everest Base Camp helicopter tour in Nepal, as anyone can join the helicopter tour. If there is any emergency or a guest feels uneasy, we will immediately fly back to Kathmandu.",
   },
   {
     question: "Which is better, EBC or ABC?",
     answer: "EBC is often preferred by travellers who want to see the highest peak in the world and experience massive high-altitude glaciers.",
   },
   {
+    question: "Which is the highest camp a helicopter can go on in Everest?",
+    answer:
+      "The highest a helicopter reliably landed for routine operation and rescue mission on Mt. Everest is at Camp 2, approximately 6,400 meters.",
+  },
+  {
     question: "Do we need a passport while traveling by helicopter towards Everest Base Camp?",
-    answer: "Yes. Foreign travellers should carry a passport. Nepali travellers should carry an original official photo ID for airport security, insurance, and permits.",
-  }
+    answer:
+      "Yes, you need to carry a passport for a helicopter tour towards Everest Base Camp. If you are Nepali, bring an original official photo ID card for airport security, flight insurance and local entry permits.",
+  },
 ];
 
 export default function FAQ() {

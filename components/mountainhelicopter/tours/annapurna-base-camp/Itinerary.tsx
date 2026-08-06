@@ -2,32 +2,37 @@ const itineraryItems = [
   {
     number: "01",
     title: "Flight Request and confirmation",
-    description: ["Share your preferred travel date, passenger count, exact weights, and baggage details. The operations team verifies aircraft availability, weather, airport status, and payload before confirming the itinerary."],
+    description: ["Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.", "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance."],
   },
   {
     number: "02",
     title: "Arrival at Tribhuvan International Airport",
-    description: ["At the airport, passenger identification, permit documents, passenger weights, and baggage weights are checked before the safety briefing."],
+    description: ["At the airport, the ground team checks passenger identification, documents, and the passenger manifest. Every passenger and piece of baggage must be weighed because aircraft performance at high altitude depends on total payload and weather conditions.", "If the total weight exceeds the allowed limit, some baggage may need to be stored or sent separately on another helicopter flight at extra cost. The crew then provides a safety briefing covering boarding, seatbelts, headsets, emergency procedures, and safe movement around the helicopter."],
   },
   {
     number: "03",
     title: "Departure from Kathmandu",
-    description: ["The helicopter lifts from Kathmandu and heads north towards the Annapurna region, crossing hills, valleys, villages, and terraced landscapes."],
+    description: ["The helicopter lifts from Kathmandu and heads north towards the Annapurna range. Soon after takeoff, passengers may see Kathmandu Valley, Phewa Lake, green hills, and the first line of Himalayan peaks. Visibility and the precise route depend on the day's weather and air-traffic instructions."],
   },
   {
     number: "04",
     title: "Flight Over the Modi Khola Valley",
-    description: ["The aircraft follows the natural corridor towards the Annapurna Sanctuary, with views of Ghandruk, Chhomrong, and the surrounding hills when conditions are clear."],
+    description: ["The aircraft continues towards the Modi Khola Valley, with views of terraced hills, forests, rivers, and settlements associated with the Annapurna trekking route. Ghandruk and Chhomrong may be visible depending on the flight path and conditions."],
   },
   {
     number: "05",
-    title: "Landing at Annapurna Base Camp (4,130 m)",
-    description: ["When weather, snow, wind, visibility, and landing-site conditions permit, the helicopter lands at Annapurna Base Camp for photographs and a short high-altitude experience."],
+    title: "Entering the Annapurna Sanctuary",
+    description: ["As the helicopter approaches the Sanctuary, the terrain becomes steeper and more alpine. Machhapuchhre, Annapurna South, Hiunchuli, Gangapurna and Annapurna I form a dramatic mountain wall around the flight path. The pilot assesses cloud, wind, snow cover, visibility, and landing-site conditions before continuing with the landing."],
   },
   {
     number: "06",
+    title: "Landing at Annapurna Base Camp (4,130 m)",
+    description: ["When conditions permit, the helicopter lands at Annapurna Base Camp at 4,130 meters. Passengers generally spend about 15-30 minutes on the ground for photographs and sightseeing. Tea or breakfast may be purchased from a nearby lodge if it is open and the operational schedule allows."],
+  },
+  {
+    number: "07",
     title: "Return Flight to Kathmandu",
-    description: ["Passengers board again for the return flight to Kathmandu, with routing and timing controlled by the pilot and current operating conditions."],
+    description: ["After the base-camp stop, the helicopter descends through the Sanctuary and follows the mountain valleys back towards Kathmandu. The return flight normally takes approximately 20-30 minutes.", "On arrival, our vehicle will transfer you from the helipad to the domestic terminal. The complete program is usually finished during the morning, although weather or air-traffic delays can extend the schedule."],
   }
 ];
 

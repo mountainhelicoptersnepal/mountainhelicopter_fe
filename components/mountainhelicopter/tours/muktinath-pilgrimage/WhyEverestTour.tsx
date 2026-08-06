@@ -1,4 +1,19 @@
-const reasons = [["The Muktinath Helicopter Tour is a practical choice when pilgrimage, comfort, and time matter more than completing a long road journey or a multi-day trek."], ["A private charter can be requested by a family, pilgrimage group, or private party."], ["Shared seats may occasionally be arranged when passengers with compatible dates and payload requirements can be combined."], ["The flight reduces the long road journey and physical demands of the trekking route."]];
+const reasons = [
+  [
+    "The Muktinath Helicopter Tour is a practical choice when pilgrimage, comfort, and time matter more than completing a long road journey or a multi-day trek. It allows elite travelers to reach the sacred site and return to Kathmandu on the same day under favorable conditions.",
+  ],
+  ["A private charter can be requested by a family, pilgrimage group, or private party."],
+  [
+    "Shared seats may occasionally be arranged when passengers with compatible dates and payload requirements can be combined.",
+  ],
+  ["The flight reduces the long road journey and physical demands of the trekking route."],
+  [
+    "Hotel transfers, permit processing, passenger weighing, and a safety briefing can be coordinated in the departure city.",
+  ],
+  [
+    "A Kathmandu charter may include a planned fuel stop, while Kathmandu offers the shorter flight.",
+  ],
+];
 
 export default function WhyEverestTour() {
   return (

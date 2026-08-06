@@ -2,22 +2,22 @@ const itineraryItems = [
   {
     number: "01",
     title: "Flight Request and confirmation",
-    description: ["Share your preferred date, passenger count, exact weights, and baggage details. The operations team verifies aircraft availability, weather, airport status, and payload before confirmation."],
+    description: ["Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.", "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance."],
   },
   {
     number: "02",
     title: "Arrival at the Airport",
-    description: ["The ground team checks passenger identification and permit documents. Every passenger and baggage item is weighed before the safety briefing."],
+    description: ["At the airport, the ground team checks passenger identification and permit documents. Every passenger and piece of baggage must be weighed because total payload affects helicopter range and performance at altitude.", "If the total weight exceeds the allowed limit, some baggage may need to be stored or sent separately on another helicopter flight at extra cost. The crew provides a safety briefing covering boarding, seatbelts, headsets, and safe movement around the aircraft."],
   },
   {
     number: "03",
     title: "Departure From Kathmandu",
-    description: ["The helicopter crosses the middle hills towards the Annapurna region and may make a fuel stop at Jomsom or another suitable location."],
+    description: ["The Kathmandu route is substantially longer. The helicopter crosses the middle hills towards the Annapurna region and may make a fuel stop at Jomsom, or another suitable location. Total flight time and routing depend on the helicopter, fuel plan, weather, and air-traffic instructions."],
   },
   {
     number: "04",
     title: "Flight Through the Kali Gandaki and Mustang Region",
-    description: ["The route offers a dramatic contrast between snow-covered Himalaya and the arid terrain of Lower Mustang. Jomsom, Marpha, Kagbeni, and the Kali Gandaki Valley may be visible."],
+    description: ["The route offers a dramatic contrast between the snow-covered Himalaya and the arid terrain of Lower Mustang. Jomsom, Marpha, Kagbeni, and sections of the Kali Gandaki Valley may be visible, but no particular flyover is guaranteed."],
   },
   {
     number: "05",
@@ -27,12 +27,12 @@ const itineraryItems = [
   {
     number: "06",
     title: "Darshan and Temple Visit",
-    description: ["The planned visit may include Muktinath Temple, the 108 Mukti Dhara water spouts, and Jwala Mai. Actual ground time is controlled by the pilot."],
+    description: ["The planned visit may include the main Muktinath temple, the 108 Mukti Dhara water spouts, and Jwala Mai. A typical operational ground allocation is around 60-90 minutes, including the walk in both directions, although the actual duration is controlled by the pilot and may be shortened."],
   },
   {
     number: "07",
     title: "Return Flight",
-    description: ["After darshan, passengers return to the helipad for the flight back to Kathmandu, possibly with another fuel stop depending on the plan."],
+    description: ["After darshan, passengers return to the helipad for the flight back to Kathmandu. A Kathmandu return may include another fuel stop. Airport pickup and hotel drop-off are provided when included in the confirmed package with extra charges."],
   }
 ];
 

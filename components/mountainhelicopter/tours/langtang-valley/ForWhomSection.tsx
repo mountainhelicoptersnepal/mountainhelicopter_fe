@@ -1,8 +1,54 @@
 const designedForItems = [
-  { title: "Travellers with limited time", description: "Travellers with limited time who want a same-day Himalayan valley experience." },
-  { title: "Families and private groups seeking a comf", description: "Families and private groups seeking a comfortable helicopter charter." },
-  { title: "Photographers and content creators seeking", description: "Photographers and content creators seeking views of Langtang Lirung and the valley landscape." },
-  { title: "Travellers", description: "Travellers who cannot commit to the physical demands of the Langtang trek but can safely board the helicopter." }
+  {
+    title: "Short-schedule travellers",
+    description:
+      "Travellers on a short schedule who want to experience the Langtang region without completing the multi-day trek.",
+  },
+  {
+    title: "Same-day Himalayan visitors",
+    description:
+      "Visitors with limited time in Nepal who prefer a same-day Himalayan excursion.",
+  },
+  {
+    title: "Families and small groups",
+    description:
+      "Families and small groups seeking the comfort and privacy of a dedicated helicopter charter.",
+  },
+  {
+    title: "Senior travellers",
+    description:
+      "Senior travellers who want to experience the mountains with minimal physical effort.",
+  },
+  {
+    title: "Photographers and nature enthusiasts",
+    description:
+      "Photographers and nature enthusiasts looking for aerial views of the Langtang Valley and surrounding peaks.",
+  },
+  {
+    title: "Trek-limited travellers",
+    description:
+      "Travellers who are unable to complete the trek due to time constraints or physical limitations.",
+  },
+  {
+    title: "Pilgrims and Kyanjin visitors",
+    description:
+      "Pilgrims and visitors wishing to reach Kyanjin Gompa conveniently.",
+  },
+  {
+    title: "Shared-seat guests",
+    description:
+      "Solo travellers or couples looking to reserve seats on a shared helicopter flight.",
+  },
+  {
+    title: "Professional teams",
+    description:
+      "Corporate groups, researchers, filmmakers, and project teams requiring flexible transportation.",
+  },
+  {
+    title: "Private charter guests",
+    description:
+      "Anyone who prefers a private charter for greater flexibility, privacy, and control over the travel schedule.",
+  },
 ];
 
 export default function ForWhomSection() {

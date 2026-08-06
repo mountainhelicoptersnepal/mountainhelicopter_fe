@@ -1,16 +1,16 @@
 const landingExpectations = [
-  "Slightly increased heart rate your body working harder to circulate oxygen",
-  "A mild feeling of breathlessness when moving fast",
+  "Slightly increased heart rate",
+  "A mild feeling of breathlessness when moving fast.",
   "Possible slight headache if you are sensitive to altitude",
   "Feeling colder than usual despite similar outdoor temperatures",
 ];
 
 const safetyActions = [
-  "Move slowly and deliberately - do not run",
-  "Breathe steadily and deeply",
-  "Stay hydrated - drink water before the flight",
+  "Move slowly and deliberately (do not run).",
+  "Breathe steadily and deeply.",
+  "Stay hydrated (drink water before the flight.)",
   "Inform the pilot immediately if you feel unwell",
-  "Use the supplemental oxygen onboard if needed",
+  "Use the supplemental oxygen onboard if needed.",
 ];
 
 function BulletList({ title, items }: { title: string; items: string[] }) {

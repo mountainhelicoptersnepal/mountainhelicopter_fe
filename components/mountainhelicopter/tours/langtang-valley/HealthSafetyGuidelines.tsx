@@ -1,10 +1,10 @@
 import { CircleX } from "lucide-react";
 
 const contraindications = [
-  "Have a history of serious heart conditions or unstable high blood pressure.",
-  "Suffer from any chronic respiratory problems like COPD or severe asthma.",
-  "Active pregnancy (especially past your first trimester; we strongly advise against rapid high-altitude helicopter landings in this situation.)",
-  "Have had major surgery within the last six weeks.",
+  "Have a history of serious heart condition and unstable high blood pressure",
+  "Suffer from any chronic respiratory problems like COPD and severe asthma",
+  "Active pregnancy (especially past your first trimester)",
+  "Have had major surgeries within the past 6 weeks",
 ];
 
 export default function HealthSafetyGuidelines() {
@@ -29,17 +29,29 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Kyanjin Gompa (approximately 3,870 m), oxygen availability is lower than at sea level. Some passengers may feel mild breathlessness, lightheadedness, or cold more strongly than usual. Move slowly, avoid exertion, and tell the pilot immediately if you feel unwell.
+            At Kyanjin Gompa (3,870 m), the atmospheric pressure is lower than
+            at sea level, meaning each breath contains less oxygen than your
+            body is accustomed to. As a result, some passengers may experience
+            mild shortness of breath, lightheadedness, or a slightly faster
+            heartbeat after landing. These are normal physiological responses to
+            the sudden gain in altitude and are generally mild because the
+            helicopter visit is brief. Since the flight returns to lower
+            elevations shortly afterward, most healthy passengers experience
+            only temporary effects that improve naturally during the descent. To
+            ensure a safe and comfortable visit, passengers are advised to walk
+            slowly, avoid strenuous activity, stay well hydrated, and follow all
+            instructions provided by the pilot and ground crew throughout the
+            stop.
           </p>
         </div>
 
         <div className="mt-11 border-t border-white/10 pt-9">
           <h3 className="font-manrope text-[12px] font-bold uppercase tracking-[0.3em] text-[#e0a321]">
-            Medical Contraindications
+            What doctors recommend
           </h3>
 
           <p className="mt-7 font-manrope text-base leading-7 text-white/68">
-            Please consult your doctor beforehand if you:
+            Consult the doctor for any of these if you:
           </p>
 
           <ul className="mt-7 space-y-4">

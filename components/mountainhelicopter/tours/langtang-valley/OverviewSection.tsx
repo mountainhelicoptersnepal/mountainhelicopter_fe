@@ -30,7 +30,7 @@ const quickFacts = [
   {
     icon: Clock3,
     label: "Duration",
-    value: "Approximately 25-35 minutes each way from Kathmandu",
+    value: "25-40 minutes",
   },
   {
     icon: Mountain,
@@ -56,10 +56,11 @@ const quickFacts = [
 
 const tourHighlights = [
   "Passenger insurance provided by the operating airline",
-  "Private charter and occasional shared-seat options",
-  "Planned landing at Kyanjin Gompa when conditions permit",
-  "Aerial views of Langtang Lirung and the Langtang Himal",
-  "Flexible booking and weather-rescheduling support"
+  "Shared departures and private charter options",
+  "Planned landing at Kyanjin Gompa, when conditions permit",
+  "Aerial views of Langtang Valley and the surrounding Himalayan ranges",
+  "Close views of Langtang Lirung, glaciers and alpine terrain",
+  "A brief opportunity to experience Kyanjin village and its Buddhist setting",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -173,15 +174,14 @@ export default function OverviewSection() {
             <main className="min-w-0">
               {/* QUICK FACTS */}
               <section>
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Quick Facts
-                </h3>
+                </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts of the Helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the trip facts for the Langtang Helicopter Tour,
+                  including the usual duration, maximum altitude, operating
+                  season, passenger capacity, and payload limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -214,9 +214,9 @@ export default function OverviewSection() {
 
               {/* TOUR HIGHLIGHTS */}
               <section className="mt-14">
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Highlights
-                </h3>
+                </h2>
 
                 <div className="mt-1 rounded-[28px] bg-white px-5 py-8 shadow-[0_18px_40px_rgba(8,38,71,0.08)] md:px-8 lg:px-9">
                   <div className="space-y-5">
@@ -255,7 +255,31 @@ export default function OverviewSection() {
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
                   <p>
-                    The Langtang Valley Helicopter Tour offers a direct aerial journey into one of Nepal’s most accessible Himalayan valleys. The flight heads north from Kathmandu towards Rasuwa and Syabrubesi, then enters the Langtang Valley beneath Langtang Lirung. When operating conditions allow, the helicopter lands at Kyanjin Gompa at approximately 3,870 meters, giving passengers time to experience the high mountain settlement before flying back to Kathmandu.
+                    The Langtang Helicopter Tour is a fast and scenic journey
+                    from Kathmandu to Kyanjin Gompa, a high-altitude settlement
+                    in the upper Langtang Valley. Located inside Langtang
+                    National Park at approximately 3,870 meters, Kyanjin is
+                    surrounded by glaciers, alpine pastures, and peaks dominated
+                    by Langtang Lirung.
+                  </p>
+                  <p className="mt-5">
+                    The tour begins early in the morning with a transfer from
+                    your Kathmandu hotel to Tribhuvan International Airport.
+                    After document checks, passenger weighing, and a safety
+                    briefing, the helicopter flies north towards Rasuwa
+                    District. Forested hills, river valleys, and mountain
+                    settlements give way to the dramatic glacial landscape of
+                    upper Langtang.
+                  </p>
+                  <p className="mt-5">
+                    Under favorable conditions, the flight from Kathmandu to
+                    Kyanjin Gompa takes approximately 25-40 minutes. The
+                    helicopter then lands at the designated site near the
+                    village, where passengers can step outside for photographs
+                    and a brief experience of the surrounding landscape. Every
+                    departure, route, and landing remains subject to weather,
+                    visibility, payload, landing-site conditions, and the
+                    pilot&apos;s final decision.
                   </p>
                 </div>
               </section>

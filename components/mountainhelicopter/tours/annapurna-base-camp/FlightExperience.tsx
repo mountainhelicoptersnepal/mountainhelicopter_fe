@@ -17,22 +17,22 @@ export default function FlightExperience() {
 
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
-          <h2>
+          <p>
             As the helicopter gains altitude, the landscape changes quickly.
             Forested ridges give way to steep rock walls, hanging glaciers, and
             snow-covered summits. Machhapuchhre appears above the valley while
             Annapurna South and Hiunchuli rise ahead. The confined approach then
             opens into the vast natural amphitheater of the Sanctuary.
-          </h2>
-          <h2>
+          </p>
+          <p>
             {" "}
             Annapurna I, Annapurna South, Hiunchuli, Gangapurna, and
             Machhapuchhre surround the aircraft in an extraordinary panorama of
             rock, snow, and ice. Instead of seeing the range from a distant
             viewpoint, passengers enter the center of the mountain landscape
             and, when conditions allow, land at Annapurna Base Camp itself.
-          </h2>
-          <h2>
+          </p>
+          <p>
             Ground time is deliberately brief because passengers travel from
             Kathmandu to 4,130 meters without acclimatization. The usual landing
             window is approximately 15–30 minutes, although the pilot may
@@ -41,13 +41,13 @@ export default function FlightExperience() {
             the stop, passengers can take photographs, enjoy the panoramic view,
             and purchase tea or breakfast from a lodge if it is open and time
             permits.
-          </h2>
-          <h2>
+          </p>
+          <p>
             The return journey follows the Sanctuary and Modi Khola Valley back
             towards Kathmandu. Within a single morning, passengers can
             experience one of Nepal’s most celebrated mountain settings and
             return to their hotel with the rest of the day still available.
-          </h2>
+          </p>
         </div>
 
         {/* ROUTE MAP */}

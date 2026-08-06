@@ -23,11 +23,11 @@ export default function FlightExperience() {
           </p>
 
           <p>
-            Mount Everest, Lhotse, Nuptse, and Ama Dablam surround the helicopter in a breathtaking 360-degree amphitheater of rock, snow, and ice. Rather than viewing the Himalayas from a distance, passengers fly directly over the massive Khumbu Glacier, the treacherous Khumbu Icefall, and the colorful expedition tents of Everest Base Camp. The helicopter lands at Pheriche at an altitude of 4,240 meters. From Pheriche, the helicopter shuttles passengers in groups to Everest Base Camp, where each group lands for a few minutes on the ground, stepping out, taking photographs, and experiencing the raw scale of the world's highest mountain base. Once all shuttles are complete, the group reunites at Pheriche for a combined flight back to Kathmandu
+            Mount Everest, Lhotse, Nuptse, and Ama Dablam surround the helicopter in a breathtaking 360-degree amphitheater of rock, snow, and ice. Rather than viewing the Himalayas from a distance, passengers fly directly over the massive Khumbu Glacier, the treacherous Khumbu Icefall, and the colorful expedition tents of Everest Base Camp. The helicopter lands at Pheriche at an altitude of 4,240 meters. From Pheriche, the helicopter shuttles passengers in groups to Everest Base Camp, where each group lands for a few minutes on the ground, stepping out, taking photographs, and experiencing the raw scale of the world&apos;s highest mountain base. Once all shuttles are complete, the group reunites at Pheriche for a combined flight back to Kathmandu
           </p>
 
           <p>
-           The return flight offers a relaxing journey back over the Khumbu Valley to Kathmandu. Within a single morning, passengers can stand at the foot of the world's highest mountain and return to their hotel before mid-morning.
+           The return flight offers a relaxing journey back over the Khumbu Valley to Kathmandu. Within a single morning, passengers can stand at the foot of the world&apos;s highest mountain and return to their hotel before mid-morning.
           </p>
 
      

@@ -1,23 +1,53 @@
 const designedForItems = [
   {
-    title: "Travellers on Short Notice",
+    title: "Short-schedule travellers",
     description:
-      "A short trip to Nepal isn't enough to trek. It is enough to fly. The helicopter departs at dawn from Kathmandu and returns in just 4 to 5 hours. This is the tour designed for tight itineraries and tighter schedules.",
+      "Travellers on a short schedule who want to experience Mount Everest without completing the two-week trek.",
   },
   {
-    title: "Families and Multi-Generational Groups",
+    title: "Same-day Himalayan visitors",
     description:
-      "No fitness requirement. No acclimatization. No age limit. Children aged 3 and above fly, and so do grandparents. The lap of Mount Everest is not reserved for the young and strong. It is reserved for those who book.",
+      "Visitors with limited time in Nepal seeking a same-day Himalayan adventure.",
   },
   {
-    title: "Creatives & Photographers",
+    title: "Families and private groups",
     description:
-      "Charter privately for full aircraft control, unobstructed window angles, and extended ground time at 5,545 meters. The amphitheater of the Khumbu giants lit by first light is not a backdrop. It is the subject. Ask about door-off configuration.",
+      "Families and private groups looking for the comfort, flexibility, and exclusivity of a dedicated helicopter charter.",
   },
   {
-    title: "Travellers With Mobility Limitations",
+    title: "Photographers and creators",
     description:
-      "Knee injuries. Joint conditions. Wheelchair users. Post-surgery recovery. The two-week trek is not an option, but the destination still is. The helicopter removes every physical barrier between Kathmandu and the foot of Mount Everest.",
+      "Photographers, filmmakers, and content creators seeking spectacular aerial views of Everest, the Khumbu Glacier, and the surrounding Himalayan peaks.",
+  },
+  {
+    title: "Travellers with mobility limitations",
+    description:
+      "Travellers with mobility limitations who are unable to undertake the physically demanding trek but can safely board the helicopter and tolerate the high-altitude flight.",
+  },
+  {
+    title: "Senior travellers",
+    description:
+      "Senior travellers who wish to experience the Everest region with minimal physical effort.",
+  },
+  {
+    title: "Shared-seat guests",
+    description:
+      "Solo travellers or couples looking to reserve seats on a shared helicopter flight.",
+  },
+  {
+    title: "Professional teams",
+    description:
+      "Corporate groups, documentary crews, research teams, and expedition support personnel requiring flexible aerial transportation.",
+  },
+  {
+    title: "Adventure travellers",
+    description:
+      "Adventure travellers who want to stand near the world's highest mountain within a single day.",
+  },
+  {
+    title: "Private charter guests",
+    description:
+      "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive Himalayan flight experience.",
   },
 ];
 

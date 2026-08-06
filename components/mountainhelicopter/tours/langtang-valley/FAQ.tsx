@@ -5,25 +5,30 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Where does the helicopter land in Langtang?",
-    answer: "The planned landing is generally at Kyanjin Gompa when wind, weather, visibility, payload, and landing-site conditions permit.",
-  },
-  {
-    question: "How high is Kyanjin Gompa?",
-    answer: "Kyanjin Gompa is approximately 3,870 metres above sea level.",
+    question: "How long is the flight from Kathmandu to Kyanjin Gompa?",
+    answer:
+      "The flight commonly takes approximately 25-40 minutes each way. The exact duration depends on routing, wind, weather, and air-traffic instructions.",
   },
   {
     question: "How long can passengers stay at Kyanjin Gompa?",
-    answer: "Ground time is usually around 20-45 minutes, with the actual duration controlled by the pilot and operating conditions.",
+    answer:
+      "Ground time is usually around 20-45 minutes. The pilot determines the actual duration according to conditions, passenger well-being, and the operating schedule. A promised 60-90-minute stop should not be assumed unless confirmed by the airline for a private charter.",
   },
   {
     question: "Why must I provide my weight before the flight?",
-    answer: "Accurate passenger and baggage weights are required for aircraft balance, fuel planning, and high-altitude performance.",
+    answer:
+      "Accurate passenger and baggage weights are required to calculate aircraft balance, fuel, and high-altitude performance. The airline may reduce passenger numbers, rearrange seating, or require an additional flight if the payload is unsuitable.",
+  },
+  {
+    question: "What should I wear?",
+    answer:
+      "Wear thermal layers, an insulated and wind-resistant jacket, warm trousers, gloves, a hat, UV-protective sunglasses, and closed shoes with good grip. Carry sunscreen, personal medication, and only a small daypack. Keep loose objects secured near the helicopter.",
   },
   {
     question: "What happens if the weather is unsuitable?",
-    answer: "The operator may delay, reschedule, or cancel the flight. Keep a flexible backup day and follow the pilot final safety decision.",
-  }
+    answer:
+      "The operator may delay, reschedule, or cancel the flight. Keep a flexible backup day and review the written cancellation and refund terms before paying. Refund conditions may differ if the helicopter departs but cannot complete the planned landing. The pilot's safety decision is final.",
+  },
 ];
 
 export default function FAQ() {

@@ -174,15 +174,14 @@ export default function OverviewSection() {
             <main className="min-w-0">
               {/* QUICK FACTS */}
               <section>
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Quick Facts
-                </h3>
+                </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts of the Helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the trip facts for the Everest Base Camp Helicopter
+                  Tour, including safety, duration, maximum altitude, finest
+                  season, passenger capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -215,9 +214,9 @@ export default function OverviewSection() {
 
               {/* TOUR HIGHLIGHTS */}
               <section className="mt-14">
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Highlights
-                </h3>
+                </h2>
 
                 <div className="mt-1 rounded-[28px] bg-white px-5 py-8 shadow-[0_18px_40px_rgba(8,38,71,0.08)] md:px-8 lg:px-9">
                   <div className="space-y-5">

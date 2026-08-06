@@ -30,12 +30,12 @@ export default function EverestBaseCamp() {
             </div>
 
             <h1 className="font-fraunces font-bold leading-[0.95] tracking-[-1.5px] text-[#FFFFFF] text-[42px] sm:text-[68px] md:text-[88px] lg:text-[104px] xl:text-[90.32px] sm:tracking-[-2.83px]">
-              Gosaikunda Lake <br />
+              Gosaikunda <br />
               Helicopter Tour.
             </h1>
 
             <p className="mt-6 max-w-[540px] font-manrope text-[17px] font-bold leading-[1.45] text-white sm:mt-7 sm:text-[20px] md:text-[20px] tracking-normal">
-              Fly to the sacred alpine lake of Gosaikunda.
+              Reach one of Nepal&apos;s most sacred mountain lakes with ease.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">

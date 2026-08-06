@@ -30,7 +30,7 @@ const quickFacts = [
   {
     icon: Clock3,
     label: "Duration",
-    value: "Approximately 15-20 minutes each way from Kathmandu",
+    value: "20-30 minutes",
   },
   {
     icon: Mountain,
@@ -55,11 +55,12 @@ const quickFacts = [
 ];
 
 const tourHighlights = [
-  "Passenger insurance provided by the operating airline",
-  "Private charter and occasional shared-seat options",
+  "Passenger insurance included",
+  "Shared departures and private charter options",
   "Planned landing near Gosaikunda Lake when conditions permit",
-  "Aerial views of Langtang Himal and surrounding ridges",
-  "Flexible booking and weather-rescheduling support"
+  "Aerial views of Shivapuri, Langtang and Ganesh Himal",
+  "Time for photographs and a brief religious observance",
+  "Flexible booking support",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -178,10 +179,9 @@ export default function OverviewSection() {
                 </h3>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts of the Helicopter tour to Everest
-                  Base Camp, which makes the helicopter trip to Everest Base
-                  Camp more predictable of what we are offering you in your
-                  journey.
+                  These are the trip facts for the Gosaikunda Helicopter Tour,
+                  including the usual duration, operating season, passenger
+                  capacity, altitude, and payload limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -255,7 +255,31 @@ export default function OverviewSection() {
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
                   <p>
-                    The Gosaikunda Helicopter Tour combines a short Himalayan flight with a visit to one of Nepal’s most sacred alpine lakes. Gosaikunda lies at approximately 4,380 meters and holds deep importance for both Hindu and Buddhist pilgrims. The helicopter departs from Kathmandu and flies north towards the Langtang region, crossing forested hills, river valleys, and rugged ridgelines before the lake appears within a stark high-altitude landscape of rock, snow, and sky.
+                    The Gosaikunda Helicopter Tour is a scenic flight and
+                    pilgrimage journey from Kathmandu to one of Nepal&apos;s most
+                    revered alpine lakes. Located within Langtang National Park
+                    in Rasuwa District, Gosaikunda lies at approximately 4,380
+                    meters and holds deep importance for both Hindu and Buddhist
+                    communities.
+                  </p>
+                  <p className="mt-5">
+                    The tour begins with a transfer from your Kathmandu hotel to
+                    Tribhuvan International Airport, available on request for an
+                    additional charge. After passenger weighing, document checks,
+                    and a safety briefing, the helicopter flies north over the
+                    green ridges surrounding Kathmandu and towards the Langtang
+                    Himalayas. The journey normally takes approximately 20-30
+                    minutes each way, depending on route, weather, and air
+                    traffic instructions.
+                  </p>
+                  <p className="mt-5">
+                    When conditions permit, the helicopter lands at the
+                    designated site near Gosaikunda. Passengers can step outside
+                    for photographs, take in the sacred landscape, and perform a
+                    short puja or other respectful observance before returning
+                    to Kathmandu. Every departure and landing remains subject to
+                    weather, payload, landing-site conditions, and the pilot&apos;s
+                    final safety decision.
                   </p>
                 </div>
               </section>

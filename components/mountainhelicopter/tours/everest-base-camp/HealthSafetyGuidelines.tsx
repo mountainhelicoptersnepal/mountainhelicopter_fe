@@ -1,10 +1,10 @@
 import { CircleX } from "lucide-react";
 
 const contraindications = [
-  "Have a history of serious heart conditions or unstable high blood pressure.",
-  "Suffer from any chronic respiratory problems like COPD or severe asthma.",
-  "Active pregnancy (especially past your first trimester; we strongly advise against rapid high-altitude helicopter landings in this situation.)",
-  "Have had major surgery within the last six weeks.",
+  "Have a history of serious heart condition and unstable high blood pressure",
+  "Suffer from any chronic respiratory problems like COPD and severe asthma",
+  "Active pregnancy (especially past your first trimester)",
+  "Have had major surgeries within the past 6 weeks",
 ];
 
 export default function HealthSafetyGuidelines() {
@@ -44,11 +44,11 @@ export default function HealthSafetyGuidelines() {
 
         <div className="mt-11 border-t border-white/10 pt-9">
           <h3 className="font-manrope text-[12px] font-bold uppercase tracking-[0.3em] text-[#e0a321]">
-            Medical Contraindications
+            What doctors recommend
           </h3>
 
           <p className="mt-7 font-manrope text-base leading-7 text-white/68">
-            Please consult your doctor beforehand if you:
+            Consult the doctor for any of these if you:
           </p>
 
           <ul className="mt-7 space-y-4">

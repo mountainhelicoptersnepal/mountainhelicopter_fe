@@ -51,7 +51,7 @@ export default function CTA() {
         <h2 className="mb-6 font-fraunces text-[clamp(2.4rem,6vw,4.2rem)] font-extrabold leading-[1.05] text-white">
           Ready to Experience
           <br />
-          Everest <span className="text-[#f5a623]">From Above?</span>
+          Gosaikunda <span className="text-[#f5a623]">From Above?</span>
         </h2>
 
         <p className="mx-auto mb-10 max-w-[560px] font-manrope text-[clamp(0.9rem,1.6vw,1.05rem)] font-light leading-[1.75] text-white/65">

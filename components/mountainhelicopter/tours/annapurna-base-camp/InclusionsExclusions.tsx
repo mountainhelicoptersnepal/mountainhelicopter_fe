@@ -94,9 +94,9 @@ export default function InclusionsExclusions() {
 
         <div className="mt-16 overflow-hidden rounded-[24px] bg-[#071c36] px-6 py-8 shadow-[0_24px_45px_rgba(7,28,54,0.18)] md:px-10 md:py-10">
           <div className="text-center">
-            <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
-              Permits Not Included in Your Seat
-            </p>
+            <h2 className="font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
+              Permits Excluded (in NPR)
+            </h2>
           </div>
 
           <div className="mt-10 overflow-x-auto">

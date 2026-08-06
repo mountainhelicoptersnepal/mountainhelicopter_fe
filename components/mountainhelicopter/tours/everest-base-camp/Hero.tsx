@@ -35,7 +35,7 @@ export default function EverestBaseCamp() {
             </h1>
 
             <p className="mt-6 max-w-[540px] font-manrope text-[17px] font-bold leading-[1.45] text-white sm:mt-7 sm:text-[20px] md:text-[20px] tracking-normal">
-              Reach the roof of the world in hours, not days
+              Reach the roof of the world in hours, not days.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">

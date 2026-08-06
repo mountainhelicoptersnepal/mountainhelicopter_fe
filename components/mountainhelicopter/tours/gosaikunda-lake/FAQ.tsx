@@ -5,25 +5,30 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Where does the helicopter land?",
-    answer: "The helicopter lands at a designated safe area near Gosaikunda Lake when wind, visibility, payload, and surface conditions permit.",
+    question: "How long does the Gosaikunda helicopter tour take?",
+    answer:
+      "The flight normally takes approximately 20-30 minutes each way from Kathmandu. With airport formalities and a short lake stop, the complete hotel-to-hotel program is commonly around 1.5-2 hours, although delays are possible.",
   },
   {
-    question: "How high is Gosaikunda Lake?",
-    answer: "Gosaikunda lies at approximately 4,380 metres.",
+    question: "How long can passengers stay at Gosaikunda?",
+    answer:
+      "Ground time is usually around 15-30 minutes. It is kept short because passengers reach approximately 4,380 meters without acclimatization. The pilot determines the actual duration according to passenger well-being, weather, and operational conditions.",
   },
   {
-    question: "How long is the flight from Kathmandu?",
-    answer: "The flight is commonly around 15-20 minutes each way, depending on weather, wind, and routing.",
+    question: "Can I perform a puja or touch the holy water?",
+    answer:
+      "A brief puja or respectful contact with the water may be possible if the landing location, weather, and available time allow. Tell the booking team about your religious requirements in advance and follow the crew's instructions at the lake.",
   },
   {
-    question: "Can older pilgrims join?",
-    answer: "Many older pilgrims can join if they can board safely and tolerate the brief high-altitude visit.",
+    question: "Is there an age limit for the tour?",
+    answer:
+      "There is no single universal age limit for every operator. Children, older passengers, and anyone with a medical condition require an individual suitability assessment, and the airline may apply its own minimum-age or boarding rules. Parents should obtain medical advice before taking a young child to high altitude.",
   },
   {
-    question: "What happens if weather is unsuitable?",
-    answer: "The operator may delay, reschedule, or cancel the flight. The pilot safety decision is final.",
-  }
+    question: "What should I wear?",
+    answer:
+      "Wear thermal layers, an insulated and wind-resistant jacket, warm trousers, gloves, a hat, UV-protective sunglasses, and closed shoes with good grip. Carry only a small daypack and secure loose items around the helicopter.",
+  },
 ];
 
 export default function FAQ() {
