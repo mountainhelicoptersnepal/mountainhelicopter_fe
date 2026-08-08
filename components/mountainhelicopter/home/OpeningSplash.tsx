@@ -59,7 +59,7 @@ export default function OpeningSplash() {
         <>
           <div className="opening-splash__mark">
             <Image
-              src="/loading/first-unit.png"
+              src="/loading/first-unit.svg"
               alt=""
               width={705}
               height={254}
@@ -67,7 +67,7 @@ export default function OpeningSplash() {
               className="opening-splash__first-unit"
             />
             <Image
-              src="/loading/second-unit.png"
+              src="/loading/second-unit.svg"
               alt=""
               width={259}
               height={196}
@@ -75,7 +75,7 @@ export default function OpeningSplash() {
               className="opening-splash__second-unit"
             />
             <Image
-              src="/loading/Heli.png"
+              src="/loading/Heli.svg"
               alt=""
               width={146}
               height={49}

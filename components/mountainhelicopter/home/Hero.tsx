@@ -212,6 +212,7 @@ export default function Hero() {
 
   return (
     <section
+      id="home-hero"
       ref={heroRef}
       className="relative h-screen overflow-x-clip bg-[#071825]"
     >

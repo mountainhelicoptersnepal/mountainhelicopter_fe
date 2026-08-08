@@ -200,7 +200,9 @@ body.mh-splash-active {
   opacity: 0;
   transform: translate3d(-52vw, 7px, 0) scale(0.92);
   transform-origin: center;
-  animation: opening-heli-flight 2.65s cubic-bezier(0.34, 0, 0.18, 1) 1.65s
+  backface-visibility: hidden;
+  will-change: opacity, transform;
+  animation: opening-heli-flight 2.65s cubic-bezier(0.2, 0.72, 0.18, 1) 1.65s
     forwards;
 }
 
@@ -279,11 +281,6 @@ body.mh-splash-active {
 
   8% {
     opacity: 1;
-  }
-
-  72% {
-    opacity: 1;
-    transform: translate3d(-18px, -1px, 0) scale(1.01);
   }
 
   100% {

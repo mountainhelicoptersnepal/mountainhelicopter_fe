@@ -46,7 +46,10 @@ function BlogSectionBlock({ section }: { section: BlogSection }) {
         <thead>
           <tr className="bg-[#0E2F4F] text-left text-white">
             {section.columns.map((column) => (
-              <th key={column} className="px-4 py-3 font-extrabold sm:px-5 sm:py-4">
+              <th
+                key={column}
+                className="px-4 py-3 font-extrabold sm:px-5 sm:py-4"
+              >
                 {column}
               </th>
             ))}
@@ -88,7 +91,7 @@ export default function BlogDetailPage({ post }: BlogDetailPageProps) {
         <div className="relative z-10 mx-auto flex min-h-[460px] w-full max-w-7xl items-end px-5 pb-10 pt-28 sm:min-h-[520px] sm:px-6 sm:pb-14 md:px-12 lg:min-h-[560px] lg:px-16 lg:pb-16">
           <div className="max-w-4xl">
             <Link
-              href="/blog"
+              href="/blogs"
               className="font-manrope text-[11px] font-bold uppercase tracking-[0.18em] text-[#F2B632] transition hover:text-white sm:text-[12px] sm:tracking-[0.22em]"
             >
               Back to Blogs

@@ -295,7 +295,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
         {/* Logo */}
 
         <Link
-          href="/"
+          href="/#home-hero"
           onClick={closeNavigation}
           aria-label="Go to homepage"
           className="flex shrink-0 flex-col leading-none"
@@ -357,16 +357,6 @@ function NavbarContent({ pathname }: { pathname: string }) {
                   className="group relative flex items-center gap-1 transition hover:text-[#f7b51e]"
                 >
                   {link.label}
-
-                  {hasDropdown ? (
-                    <ChevronDown
-                      size={16}
-                      aria-hidden="true"
-                      className={`opacity-0 transition-all duration-300 group-hover/nav-item:opacity-100 ${
-                        isDropdownOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  ) : null}
 
                   <span
                     className={`absolute -bottom-2 left-0 h-[2px] bg-[#f5b82e] transition-all duration-300 ${
@@ -441,14 +431,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
             </button>
           </div>
 
-          <Link
+          {/* <Link
             href="/account"
             onClick={closeNavigation}
             aria-label="Open account"
             className="transition hover:text-[#f7b51e]"
           >
             <UserRound size={25} />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile navigation buttons */}

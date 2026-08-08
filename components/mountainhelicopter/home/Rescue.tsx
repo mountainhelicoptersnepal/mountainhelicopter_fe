@@ -102,11 +102,11 @@ export default function Rescue() {
                 className="object-cover opacity-65"
               />
 
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#040d18] to-transparent px-4 pb-4 pt-10">
+              {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#040d18] to-transparent px-4 pb-4 pt-10">
                 <p className="font-manrope text-[12px] font-normal leading-[19.5px] text-white/55">
                   {photo.caption}
                 </p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
