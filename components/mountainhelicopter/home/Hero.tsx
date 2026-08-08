@@ -229,6 +229,7 @@ export default function Hero() {
           loop
           playsInline
           preload="auto"
+          poster="/videos/landing-poster.webp"
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
           style={{
@@ -237,6 +238,7 @@ export default function Hero() {
             willChange: "transform",
           }}
         >
+          <source src="/videos/landing_hero.webm" type="video/webm" />
           <source src="/videos/landing_hero.mp4" type="video/mp4" />
         </video>
 

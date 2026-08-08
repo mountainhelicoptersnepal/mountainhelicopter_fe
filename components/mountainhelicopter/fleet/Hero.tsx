@@ -10,6 +10,7 @@ export default function Hero() {
         loop
         playsInline
         preload="auto"
+        poster="/videos/fleet-hero-poster.webp"
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"
       >
