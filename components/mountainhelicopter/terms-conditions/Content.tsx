@@ -11,9 +11,6 @@ import {
   HeartPulse,
   LifeBuoy,
   Luggage,
-  Mail,
-  MapPin,
-  Phone,
   Plane,
   Route,
   Scale,
@@ -35,7 +32,7 @@ type Section = {
   blocks: Block[];
 };
 
-const LAST_UPDATED = "[Insert Date]";
+const LAST_UPDATED = "09/09/2026";
 
 const sections: Section[] = [
   {
@@ -50,7 +47,7 @@ const sections: Section[] = [
           "Phone: +977-9712082949",
           "Email: info@mountainhelicoptersnepal.com",
           "WhatsApp: +977-9712082949",
-          "Website enquiry form: https://mountainhelicoptersnepal.com/#contact",
+          "Website enquiry form: https://mountainhelicoptersnepal.com/contact#inquiry-form",
         ],
       },
       {
@@ -79,7 +76,7 @@ const sections: Section[] = [
         items: [
           {
             label: "Advance Payment",
-            text: "A non-refundable advance payment of [Insert %] of the total flight cost is required to secure a booking.",
+            text: "A non-refundable advance payment of 20% of the total flight cost is required to secure a booking.",
           },
           {
             label: "Final Payment",
@@ -93,7 +90,7 @@ const sections: Section[] = [
         items: [
           "Bank transfer",
           "Cash",
-          "Credit/debit card (a processing surcharge of [Insert %] applies to card payments)",
+          "Credit/debit card (a processing surcharge of 4% applies to card payments)",
         ],
       },
     ],
@@ -105,29 +102,32 @@ const sections: Section[] = [
     blocks: [
       {
         type: "paragraph",
-        text: "Cancellation by the Client — all cancellations must be submitted in writing (email or official letter). Charges apply based on notice given:",
+        text: "All cancellations must be submitted in writing (email or official letter). Charges apply based on notice given:",
       },
       {
         type: "steps",
         items: [
           {
-            label: "More than 30 days",
-            text: "Loss of advance payment only.",
+            label: "More than 30 days before departure",
+            text: "Full refund. The advance payment is not lost, and no cancellation charge applies.",
           },
           {
-            label: "15–30 days",
-            text: "[Insert %] of total flight cost charged.",
+            label: "15–30 days before departure",
+            text: "70% of the total flight cost refunded. Standard charter cancellation.",
           },
-          { label: "Less than 15 days", text: "No refund." },
+          {
+            label: "5–15 days before departure",
+            text: "40% of the total flight cost refunded. Late charter cancellation.",
+          },
+          {
+            label: "1–5 days before departure",
+            text: "10% of the total flight cost refunded. Very late cancellation.",
+          },
+          {
+            label: "Same day as departure",
+            text: "No refund. The aircraft and crew are already blocked for your departure.",
+          },
         ],
-      },
-      {
-        type: "paragraph",
-        text: "Cancellation by Mountain Helicopters Nepal — your safety is our priority. We may postpone, reroute, or cancel a flight due to weather, mechanical issues, or safety concerns. Affected clients will be offered the next available flight slot or a full refund, at the Company's discretion.",
-      },
-      {
-        type: "paragraph",
-        text: "Postponement requests — rescheduling a flight is subject to aircraft and pilot availability. Additional charges may apply for postponed flights.",
       },
     ],
   },
@@ -139,8 +139,8 @@ const sections: Section[] = [
       {
         type: "list",
         items: [
-          "All flights depend on weather, visibility, and Air Traffic Control clearance.",
-          "The Pilot-in-Command has final authority over whether a flight proceeds, including route, altitude, and landing decisions.",
+          "All flights depend on weather, visibility, and air traffic control clearance.",
+          "The pilot-in-command has final authority over whether a flight proceeds, including route, altitude, and landing decisions.",
           "Mountain Helicopters Nepal is not liable for costs such as accommodation, meals, or missed onward travel resulting from weather- or technical-related delays.",
         ],
       },
@@ -155,7 +155,7 @@ const sections: Section[] = [
         type: "list",
         items: [
           "Passengers must declare accurate body weight and luggage weight at the time of booking.",
-          "Strict payload limits apply for flights above [Insert altitude, e.g. 4,000 meters].",
+          "Strict payload limits apply for flights at high altitudes.",
           "Excess baggage may need to be left behind or sent on a separate shuttle flight at the Client's expense.",
         ],
       },
@@ -219,7 +219,7 @@ const sections: Section[] = [
         items: [
           "Mountain Helicopters Nepal maintains passenger liability insurance as required by the Civil Aviation Authority of Nepal (CAAN).",
           "The Company is not liable for injury, illness, delay, or baggage loss unless caused by proven negligence.",
-          "The Company is not responsible for inherent risks associated with high-altitude mountain travel.",
+          "The company is not responsible for inherent risks associated with high-altitude mountain travel.",
           "Passengers are responsible for their own luggage and belongings throughout the trip.",
         ],
       },
@@ -291,7 +291,7 @@ const sections: Section[] = [
   },
 ];
 
-/** Renders bracketed placeholders such as [Insert %] as highlighted tokens. */
+/** Renders bracketed placeholders such as [Insert %] as highlighted tokens, or plain text if none. */
 function RichText({ text }: { text: string }) {
   const parts = text.split(/(\[[^\]]+\])/g);
 
@@ -379,22 +379,6 @@ function BlockContent({ block }: { block: Block }) {
   );
 }
 
-const contactDetails = [
-  { icon: MapPin, label: "Address", value: "Old Sinamangal, Kathmandu" },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "info@mountainhelicoptersnepal.com",
-    href: "mailto:info@mountainhelicoptersnepal.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+977-9712082949",
-    href: "tel:+9779712082949",
-  },
-];
-
 export default function Content() {
   return (
     <section className="bg-white">
@@ -471,63 +455,55 @@ export default function Content() {
                   </div>
 
                   <div className="mt-5 space-y-5 md:pl-14">
-                    {section.blocks.map((block, blockIndex) => (
-                      <BlockContent key={blockIndex} block={block} />
-                    ))}
+                    {section.id === "cancellation-refund" && (
+                      <div className="space-y-6">
+                        <div className="space-y-3">
+                          <h4 className="font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
+                            Cancellation by the Client
+                          </h4>
+                          <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+                            All cancellations must be submitted in writing (email or official letter). Charges apply based on notice given:
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                    {section.blocks.map((block, blockIndex) => {
+                      if (section.id === "cancellation-refund" && blockIndex === 0) {
+                        return null;
+                      }
+                      return <BlockContent key={blockIndex} block={block} />;
+                    })}
+
+                    {section.id === "cancellation-refund" && (
+                      <div className="space-y-6 pt-2">
+                        <div className="space-y-3">
+                          <h4 className="font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
+                            Cancellation by Mountain Helicopters Nepal
+                          </h4>
+                          <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+                            Your safety is our priority. We may postpone, reroute, or cancel a flight due to weather, mechanical issues, or safety concerns. Affected clients will be offered the next available flight slot or a full refund, at the company&apos;s discretion.
+                          </p>
+                        </div>
+
+                        <div className="space-y-3">
+                          <h4 className="font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
+                            Postponement Requests
+                          </h4>
+                          <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+                            Rescheduling a flight is subject to aircraft and pilot availability. Additional charges may apply for postponed flights.
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </article>
               );
             })}
 
-            {/* CONTACT */}
-            <article id="contact-us" className="scroll-mt-28">
-              <div className="rounded-2xl bg-[#002347] px-6 py-8 text-white md:px-10 md:py-10">
-                <div className="flex items-center gap-3">
-                  <span className="h-px w-8 bg-[#F2B632]" />
-                  <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.22em] text-[#F2B632]">
-                    Contact Us
-                  </p>
-                </div>
-
-                <h3 className="mt-4 font-fraunces text-2xl font-semibold leading-tight text-white md:text-3xl">
-                  Mountain Helicopters Nepal
-                </h3>
-
-                <div className="mt-8 grid gap-6 sm:grid-cols-3">
-                  {contactDetails.map((detail) => {
-                    const Icon = detail.icon;
-
-                    return (
-                      <div key={detail.label} className="flex gap-3">
-                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded bg-white/10 text-[#F2B632]">
-                          <Icon size={18} strokeWidth={1.8} />
-                        </div>
-
-                        <div>
-                          <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.16em] text-white/55">
-                            {detail.label}
-                          </p>
-
-                          {detail.href ? (
-                            <a
-                              href={detail.href}
-                              className="mt-1 block font-manrope text-sm leading-6 text-white transition-colors hover:text-[#F2B632]"
-                            >
-                              {detail.value}
-                            </a>
-                          ) : (
-                            <p className="mt-1 font-manrope text-sm leading-6 text-white">
-                              {detail.value}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="mt-8 flex items-start gap-3 rounded-2xl border border-[#e7d5a8] bg-[#fffaf0] px-5 py-5 md:px-7">
+            {/* AGREEMENT NOTE */}
+            <article className="scroll-mt-28">
+              <div className="flex items-start gap-3 rounded-2xl border border-[#e7d5a8] bg-[#fffaf0] px-5 py-5 md:px-7">
                 <span className="mt-0.5 text-[#a6770c]">
                   <BadgeCheck size={20} strokeWidth={1.8} />
                 </span>
