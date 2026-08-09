@@ -10,7 +10,7 @@ export default function EverestBaseCamp() {
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
       style={{
         backgroundImage:
-          "url('/images/everest-base-camp/everest-base-camp.jpg')",
+          "url('/images/everest-kalapatthar-kathmandu/Kala Patthar Landing- HEV-Hero.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-[#06182c]/55" />

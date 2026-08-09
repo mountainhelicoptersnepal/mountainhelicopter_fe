@@ -8,7 +8,7 @@ const tours = [
     price: "FROM $1,499",
     cta: "VIEW EVEREST TOUR",
     href: "/tours/everest-kalapatthar-kathmandu",
-    image: "/images/home-section/everest-base-camp.jpg",
+    image: "/images/featured-section/kalapatthar.jpg",
     detail:
       "Fly deep into the heart of the Everest region for an unforgettable Himalayan adventure. Soar above the legendary Everest Base Camp, Khumbu Glacier, and the towering peaks of Everest, Lhotse, Nuptse, and Ama Dablam before landing at Kala Patthar for panoramic mountain views.",
     size: "hero",
@@ -19,7 +19,7 @@ const tours = [
     price: "From $1,200",
     cta: "VIEW GOKYO TOUR",
     href: "/tours/everest-gokyo-kathmandu",
-    image: "/images/langtang-valley/langtang.jpg",
+    image: "/images/featured-section/Gokyo.jpg",
     detail:
       "Fly close to Everest, then land beside the turquoise waters of Gokyo Lake before returning to Kathmandu.",
     size: "side",
@@ -30,7 +30,7 @@ const tours = [
     price: "From $1,200",
     cta: "VIEW GORAKSHEP FLIGHT",
     href: "/tours/gorakshep-kathmandu-helicopter",
-    image: "/images/gosaikunda-lake/gosaikunda-lake.jpg",
+    image: "/images/featured-section/gorakshep.JPG",
     detail:
       "Return quickly from Gorakshep and the Everest trail to Kathmandu when time, comfort, or itinerary recovery matters.",
     size: "small",
@@ -41,7 +41,7 @@ const tours = [
     price: "From $500",
     cta: "VIEW KATHMANDU LUKLA",
     href: "/tours/kathmandu-lukla-helicopter",
-    image: "/images/home-section/image_filtersection.png",
+    image: "/images/featured-section/lukla1.jpg",
     detail:
       "Fly directly from Kathmandu to Lukla, the gateway of the Everest region, while avoiding the long Ramechhap road transfer.",
     size: "small",
@@ -52,7 +52,7 @@ const tours = [
     price: "On request",
     cta: "VIEW RAMECHHAP LUKLA",
     href: "/tours/ramechhap-lukla-helicopter",
-    image: "/images/langtang-valley/langtang-gallary5.jpg",
+    image: "/images/featured-section/Ramechhap.jpg",
     detail:
       "Connect from Ramechhap to Lukla by helicopter when scheduled flights are delayed, full, or unsuitable for your plan.",
     size: "small",

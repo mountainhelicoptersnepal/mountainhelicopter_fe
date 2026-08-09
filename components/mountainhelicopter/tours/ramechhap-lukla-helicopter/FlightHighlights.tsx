@@ -12,11 +12,11 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Manthali and the Tamakoshi River", description: "Ramechhap Airport, Manthali Bazaar, river roads, and dry lower hills", image: "/images/everest-base-camp/everest-gallary.jpg" },
-  { id: 2, title: "Terraced Hills and Rural Settlements", description: "Terraced fields, small settlements, and winding hill roads", image: "/images/everest-base-camp/everest-gallary1.jpg" },
-  { id: 3, title: "River Valleys of the Lower Everest Region", description: "Deep valleys and drainage systems on the way toward Lukla", image: "/images/everest-base-camp/everest-gallary2.png" },
-  { id: 4, title: "Lukla and the Lower Khumbu Region", description: "Lukla town, airport area, and slopes around the Khumbu gateway", image: "/images/everest-base-camp/everest-gallary3.jpg" },
-  { id: 5, title: "Himalayan Skyline", description: "Snow-covered peaks that may appear on clear days", image: "/images/everest-base-camp/everest-gallary4.jpg" }
+  { id: 1, title: "Manthali and the Tamakoshi River", description: "Ramechhap Airport, Manthali Bazaar, river roads, and dry lower hills", image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-highlights1.jpg" },
+  { id: 2, title: "Terraced Hills and Rural Settlements", description: "Terraced fields, small settlements, and winding hill roads", image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-highlights2.png" },
+  { id: 3, title: "River Valleys of the Lower Everest Region", description: "Deep valleys and drainage systems on the way toward Lukla", image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-highlights3.png" },
+  { id: 4, title: "Lukla and the Lower Khumbu Region", description: "Lukla town, airport area, and slopes around the Khumbu gateway", image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-highlights4.jpg" },
+  { id: 5, title: "Himalayan Skyline", description: "Snow-covered peaks that may appear on clear days", image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-highlights5.png" }
 ];
 
 export default function FlightHighlights() {

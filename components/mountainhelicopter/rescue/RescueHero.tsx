@@ -6,7 +6,7 @@ export default function RescueHero() {
     <section className="relative min-h-screen overflow-hidden bg-[#07131f] text-white">
       {/* Background image */}
       <Image
-        src="/images/rescue/regions/everest.jpg"
+        src="/images/rescue/rescue-hero.webp"
         alt="Everest mountain range at sunrise"
         fill
         priority
@@ -24,7 +24,6 @@ export default function RescueHero() {
       {/* Main content */}
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-6 py-16 pt-28 md:px-12 md:py-24 md:pt-28 lg:px-16 lg:py-28">
         <div className="w-full max-w-[820px]">
-
           {/* Main heading */}
           <h1 className="font-fraunces text-[47px] font-bold leading-[0.94] tracking-[-2px] text-white sm:text-[62px] md:text-[74px] lg:text-[76px] lg:leading-[0.92] lg:tracking-[-3px]">
             <span className="block">Helicopter Rescue in Nepal </span>
@@ -32,10 +31,14 @@ export default function RescueHero() {
 
           {/* Description */}
           <p className="mt-7 max-w-[500px] font-manrope text-[14px] font-normal leading-[1.55] text-white/80 sm:text-[16px] lg:mt-8 lg:max-w-[510px] lg:text-[16px]">
-            Helicopter rescue service Nepal enables emergency rescue in case of an accident in the mountains, health emergencies in remote and high altitude areas and
-             rescue service to tourists including trekkers and climbers. Helicopter service in Nepal for rescue has been instrumental especially in altitude related medical 
-             problems and serious injuries where road connection is unavailable or difficult to reach. Emergency helicopter rescue services are available at major trekking regions
-              and other isolated parts of Nepal.
+            Helicopter rescue service Nepal enables emergency rescue in case of
+            an accident in the mountains, health emergencies in remote and high
+            altitude areas and rescue service to tourists including trekkers and
+            climbers. Helicopter service in Nepal for rescue has been
+            instrumental especially in altitude related medical problems and
+            serious injuries where road connection is unavailable or difficult
+            to reach. Emergency helicopter rescue services are available at
+            major trekking regions and other isolated parts of Nepal.
           </p>
 
           {/* Action buttons */}
@@ -52,9 +55,7 @@ export default function RescueHero() {
                 className="h-[15px] w-[15px]"
               />
 
-              <span className="whitespace-nowrap">
-                Call emergency line
-              </span>
+              <span className="whitespace-nowrap">Call emergency line</span>
 
               <span
                 aria-hidden="true"
@@ -78,9 +79,7 @@ export default function RescueHero() {
                 className="h-[15px] w-[15px]"
               />
 
-              <span className="whitespace-nowrap">
-                WhatsApp dispatch
-              </span>
+              <span className="whitespace-nowrap">WhatsApp dispatch</span>
 
               <span
                 aria-hidden="true"
@@ -102,9 +101,7 @@ export default function RescueHero() {
                 className="h-[15px] w-[15px]"
               />
 
-              <span className="whitespace-nowrap">
-                Email coordination
-              </span>
+              <span className="whitespace-nowrap">Email coordination</span>
 
               <span
                 aria-hidden="true"

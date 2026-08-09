@@ -19,7 +19,7 @@ const page = () => {
       <Story />
       <Rescue />
       <Testimonial />
-      <InstagramSection />
+      {/* <InstagramSection /> */}
       <Blogs />
       <FAQ />
       <Cta />

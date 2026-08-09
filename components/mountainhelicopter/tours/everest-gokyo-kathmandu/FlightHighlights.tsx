@@ -12,12 +12,12 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Kathmandu Valley", description: "Temple-studded valley floor and forested ridgelines below the departure route", image: "/images/muktinath-pilgrimage/muktinath-gallary.png" },
-  { id: 2, title: "Lukla and the Khumbu Gateway", description: "A brief refueling stop at the famous mountain airstrip used by Everest trekkers", image: "/images/muktinath-pilgrimage/muktinath-gallary1.png" },
-  { id: 3, title: "Namche Bazaar", description: "The largest Sherpa town in the Khumbu region and a classic acclimatization stop", image: "/images/muktinath-pilgrimage/muktinath-gallary2.png" },
-  { id: 4, title: "Tengboche Monastery", description: "The region's famous Buddhist monastery set against Himalayan backdrops", image: "/images/muktinath-pilgrimage/muktinath-gallary3.png" },
-  { id: 5, title: "Kala Patthar and the Everest Skyline", description: "Close aerial views of Everest, Lhotse, Nuptse, Pumori, and the Khumbu Glacier", image: "/images/muktinath-pilgrimage/muktinath-gallary4.png" },
-  { id: 6, title: "Gokyo Lake Landing", description: "A five to ten minute touchdown beside turquoise glacial water and the Ngozumpa Glacier", image: "/images/muktinath-pilgrimage/muktinath-gallary5.png" }
+  { id: 1, title: "Kathmandu Valley", description: "Temple-studded valley floor and forested ridgelines below the departure route", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights1.png" },
+  { id: 2, title: "Lukla and the Khumbu Gateway", description: "A brief refueling stop at the famous mountain airstrip used by Everest trekkers", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights2.jpg" },
+  { id: 3, title: "Namche Bazaar", description: "The largest Sherpa town in the Khumbu region and a classic acclimatization stop", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights3.png" },
+  { id: 4, title: "Tengboche Monastery", description: "The region's famous Buddhist monastery set against Himalayan backdrops", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights4.png" },
+  { id: 5, title: "Kala Patthar and the Everest Skyline", description: "Close aerial views of Everest, Lhotse, Nuptse, Pumori, and the Khumbu Glacier", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights5.png" },
+  { id: 6, title: "Gokyo Lake Landing", description: "A five to ten minute touchdown beside turquoise glacial water and the Ngozumpa Glacier", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights6.png" }
 ];
 
 export default function FlightHighlights() {
