@@ -12,11 +12,46 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Kathmandu Valley", description: "The flight from the Kathmandu Valley offers views of the historical heritage city, surrounded by forested ridges and cultivated hills.", image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights1.png" },
-  { id: 2, title: "Terraced Hills and Rural Settlements", description: "Agricultural terraces, isolated houses, and villages can be seen across the hills east of Kathmandu. The landscape becomes steeper and less urban as the helicopter continues toward Solukhumbu.", image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights2.png" },
-  { id: 3, title: "Rivers", description: "There are some deep valleys and rivers dotted along the path of the flight. They change from one season to another; the slopes are quite green after the rainy season and in the monsoon but are sandier and browner in the winter.", image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights3.jpg" },
-  { id: 4, title: "Solukhumbu Landscape", description: "The land becomes progressively more mountainous as the flight approaches Lukla. Mountain villages, ridges, and the foothills of the Everest Himalayas can be seen from the plane on clear days.", image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights4.jpg" },
-  { id: 5, title: "Himalayan Skyline", description: "On clear days, snow-covered Himalayan peaks rise above the distant hills, adding a memorable mountain view to the flight.", image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights5.png" }
+  {
+    id: 1,
+    title: "Kathmandu Valley",
+    description:
+      "The flight from the Kathmandu Valley offers views of the historical heritage city, surrounded by forested ridges and cultivated hills.",
+    image:
+      "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights1.png",
+  },
+  {
+    id: 2,
+    title: "Terraced Hills and Rural Settlements",
+    description:
+      "Agricultural terraces, isolated houses, and villages can be seen across the hills east of Kathmandu. The landscape becomes steeper and less urban as the helicopter continues toward Solukhumbu.",
+    image:
+      "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights2.png",
+  },
+  {
+    id: 3,
+    title: "Rivers",
+    description:
+      "There are some deep valleys and rivers dotted along the path of the flight. They change from one season to another; the slopes are quite green after the rainy season and in the monsoon but are sandier and browner in the winter.",
+    image:
+      "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights3.jpg",
+  },
+  {
+    id: 4,
+    title: "Solukhumbu Landscape",
+    description:
+      "The land becomes progressively more mountainous as the flight approaches Lukla. Mountain villages, ridges, and the foothills of the Everest Himalayas can be seen from the plane on clear days.",
+    image:
+      "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights4.jpg",
+  },
+  {
+    id: 5,
+    title: "Himalayan Skyline",
+    description:
+      "On clear days, snow-covered Himalayan peaks rise above the distant hills, adding a memorable mountain view to the flight.",
+    image:
+      "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hightlights5.png",
+  },
 ];
 
 export default function FlightHighlights() {
@@ -24,7 +59,7 @@ export default function FlightHighlights() {
     <section className="w-full bg-[#f4f6f8] py-16 md:py-24">
       {/* Title */}
       <div className="mb-10 md:mb-14 text-center px-4">
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
+        <h2 className="font-serif max-w-7xl mx-auto text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
           Major Attractions on the Kathmandu to Lukla Helicopter Flight
         </h2>
       </div>

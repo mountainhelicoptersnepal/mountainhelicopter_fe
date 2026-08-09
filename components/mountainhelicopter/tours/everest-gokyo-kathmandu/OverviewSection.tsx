@@ -22,11 +22,11 @@ const tabs = [
 ];
 
 const quickFacts = [
-  {
-    icon: ShieldCheck,
-    label: "Passenger Insurance",
-    value: "Covered by the operating airline",
-  },
+  // {
+  //   icon: ShieldCheck,
+  //   label: "Passenger Insurance",
+  //   value: "Covered by the operating airline",
+  // },
   {
     icon: Clock3,
     label: "Duration",
@@ -178,12 +178,12 @@ export default function OverviewSection() {
                   Quick Facts
                 </h2>
 
-                <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
+                {/* <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
                   These are the trip facts for the Everest Mountain Overfly with
                   Gokyo Lake Landing from Kathmandu, including duration, maximum
                   altitude, best seasons, passenger capacity, and baggage
                   limits.
-                </p>
+                </p> */}
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {quickFacts.map((fact) => {
@@ -258,24 +258,48 @@ export default function OverviewSection() {
                     from Kathmandu combines a close aerial pass over the Everest
                     region with a landing beside the turquoise waters of Gokyo
                     Lake, where travelers step out to take in views of Cho Oyu,
-                    Everest, Lhotse, and Makalu mirrored in the still water.
+                    Everest, Lhotse, and Makalu mirrored in the still water. It
+                    brings together the two most sought-after experiences of the
+                    Everest region, the Everest skyline seen up close from the
+                    air and a real touchdown at one of the Himalayas' most
+                    beautiful hiThe Everest Mountain Overfly with Gokyo Lake
+                    Landing tour from Kathmandu combines a close aerial pass
+                    over the Everest region with a landing beside the turquoise
+                    waters of Gokyo Lake, where travelers step out to take in
+                    views of Cho Oyu, Everest, Lhotse, and Makalu mirrored in
+                    the still water.gh-altitude lakes, all within a single day
+                    trip from Kathmandu.
                   </p>
                   <p className="mt-5">
                     The flight carries passengers from Kathmandu to Lukla, the
                     gateway airstrip of the Khumbu region, before continuing
-                    toward Everest Base Camp, Kala Patthar, and Gokyo Lake.
-                    Along the way, passengers fly over the Dudh Koshi Valley,
-                    Namche Bazaar, and Tengboche, with the landscape shifting
-                    from forested foothills to glacial valleys, rocky moraines,
-                    and snow-covered summits.
+                    toward the high peaks of the Everest region. The route
+                    climbs into the mountains, passing over the Everest Base
+                    Camp and Kala Patthar area for close aerial views of
+                    Everest, the Khumbu Icefall, Lhotse, and Nuptse, then
+                    continuing on to Gokyo Lake for a five to ten minute
+                    touchdown beside the water. Along the way, passengers fly
+                    over the Dudh Koshi Valley, Namche Bazaar, and Tengboche,
+                    with the landscape shifting from forested foothills to
+                    glacial valleys, rocky moraines, and snow-covered summits.
                   </p>
                   <p className="mt-5">
                     After completing the overfly and Gokyo Lake landing, the
                     helicopter flies directly back to Kathmandu, with a brief
-                    refueling stop at Lukla along the way. Whether conditions
-                    allow a full landing at Gokyo or a scenic approach, the
-                    route and all flight decisions are made by the pilot and
-                    operations team based on safety.
+                    refueling stop at Lukla along the way. The Everest Mountain
+                    Overfly with Gokyo Lake Landing tour is designed for
+                    travelers who want to see the Everest skyline from the air
+                    and land beside the Gokyo Lakes in a focused, efficient
+                    itinerary, with no extra stops on the ground. Whether the
+                    conditions allow a full landing at Gokyo or a scenic
+                    approach, the route and all flight decisions are made by the
+                    pilot and operations team based on safety.After completing
+                    the overfly and Gokyo Lake landing, the helicopter flies
+                    directly back to Kathmandu, with a brief refueling stop at
+                    Lukla along the way. Whether conditions allow a full landing
+                    at Gokyo or a scenic approach, the route and all flight
+                    decisions are made by the pilot and operations team based on
+                    safety.
                   </p>
                 </div>
               </section>

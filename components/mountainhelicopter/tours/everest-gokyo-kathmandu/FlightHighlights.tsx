@@ -12,12 +12,48 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Kathmandu Valley", description: "Temple-studded valley floor and forested ridgelines below the departure route", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights1.png" },
-  { id: 2, title: "Lukla and the Khumbu Gateway", description: "A brief refueling stop at the famous mountain airstrip used by Everest trekkers", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights2.jpg" },
-  { id: 3, title: "Namche Bazaar", description: "The largest Sherpa town in the Khumbu region and a classic acclimatization stop", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights3.png" },
-  { id: 4, title: "Tengboche Monastery", description: "The region's famous Buddhist monastery set against Himalayan backdrops", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights4.png" },
-  { id: 5, title: "Kala Patthar and the Everest Skyline", description: "Close aerial views of Everest, Lhotse, Nuptse, Pumori, and the Khumbu Glacier", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights5.png" },
-  { id: 6, title: "Gokyo Lake Landing", description: "A five to ten minute touchdown beside turquoise glacial water and the Ngozumpa Glacier", image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights6.png" }
+  {
+    id: 1,
+    title: "Kathmandu Valley",
+    description:
+      "Temple-studded valley floor and forested ridgelines below the departure route",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights1.png",
+  },
+  {
+    id: 2,
+    title: "Lukla and the Khumbu Gateway",
+    description:
+      "A brief refueling stop at the famous mountain airstrip used by Everest trekkers",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights2.jpg",
+  },
+  {
+    id: 3,
+    title: "Namche Bazaar",
+    description:
+      "The largest Sherpa town in the Khumbu region and a classic acclimatization stop",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights3.png",
+  },
+  {
+    id: 4,
+    title: "Tengboche Monastery",
+    description:
+      "The region's famous Buddhist monastery set against Himalayan backdrops",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights4.png",
+  },
+  {
+    id: 5,
+    title: "Kala Patthar and the Everest Skyline",
+    description:
+      "Close aerial views of Everest, Lhotse, Nuptse, Pumori, and the Khumbu Glacier",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights5.png",
+  },
+  {
+    id: 6,
+    title: "Gokyo Lake Landing",
+    description:
+      "A five to ten minute touchdown beside turquoise glacial water and the Ngozumpa Glacier",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights6.png",
+  },
 ];
 
 export default function FlightHighlights() {
@@ -25,7 +61,7 @@ export default function FlightHighlights() {
     <section className="w-full bg-[#f4f6f8] py-16 md:py-24">
       {/* Title */}
       <div className="mb-10 md:mb-14 text-center px-4">
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
+        <h2 className="font-serif max-w-7xl mx-auto text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
           Highlights Along The flight Route
         </h2>
       </div>

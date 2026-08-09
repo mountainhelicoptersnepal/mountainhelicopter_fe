@@ -21,23 +21,18 @@ export default function FlightExperience() {
             Because Gorakshep is situated at an altitude of over 5,000 meters,
             the descent from the air is fast and spectacular, with the rugged
             alpine landscape quickly giving way to lush forests, terraced
-            farmland, and larger mountain settlements.
-          </p>
-          <p>
-            The helicopter lifts off from the high valley and descends out of
-            the Khumbu, offering a final sweeping look at the peaks that
-            surround the Everest Base Camp trail.
+            farmland, and larger mountain settlements. The helicopter lifts off
+            from the high valley and descends out of the Khumbu, offering a
+            final sweeping look at the peaks that surround the Everest Base Camp
+            trail.
           </p>
           <p>
             From there, the flight continues over the rolling foothills of the
             Khumbu region and the terraced hills of central Nepal, typically
             including a brief refueling stop at Lukla before the final approach
-            into the Kathmandu Valley.
-          </p>
-          <p>
-            Light turbulence over mountain ridges is a normal part of Himalayan
-            flying, and every stage of the journey is operated only when weather
-            and safety conditions are suitable.
+            into the Kathmandu Valley. Light turbulence over mountain ridges is
+            a normal part of Himalayan flying, and every stage of the journey is
+            operated only when weather and safety conditions are suitable.
           </p>
           <p>
             Upon arrival in Kathmandu, passengers disembark at the domestic

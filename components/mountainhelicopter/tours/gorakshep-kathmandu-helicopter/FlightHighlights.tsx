@@ -15,38 +15,50 @@ const highlights: Highlight[] = [
   {
     id: 1,
     title: "Gorakshep and the Khumbu Glacier",
-    description: "Soon after takeoff, passengers get a last look at the sandy Gorakshep basin, its lodges, and sections of the Khumbu Glacier. The exact departure direction depends on the wind and terrain on the day.",
-    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights1.png",
+    description:
+      "Soon after takeoff, passengers get a last look at the sandy Gorakshep basin, its lodges, and sections of the Khumbu Glacier. The exact departure direction depends on the wind and terrain on the day.",
+    image:
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights1.png",
   },
   {
     id: 2,
     title: "Pumori, Nuptse, and Lhotse",
-    description: "Several major upper-Khumbu peaks are visible in clear conditions, and Everest itself can sometimes be spotted, though it's partly screened from many angles by the surrounding giants.",
-    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights2.png",
+    description:
+      "Several major upper-Khumbu peaks are visible in clear conditions, and Everest itself can sometimes be spotted, though it's partly screened from many angles by the surrounding giants.",
+    image:
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights2.png",
   },
   {
     id: 3,
     title: "Lobuche and Pheriche",
-    description: "The route often passes over Lobuche, Thukla, and Pheriche, which also doubles as the shuttle and regrouping point when the full Gorakshep group needs to be split across multiple lifts.",
-    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights3.png",
+    description:
+      "The route often passes over Lobuche, Thukla, and Pheriche, which also doubles as the shuttle and regrouping point when the full Gorakshep group needs to be split across multiple lifts.",
+    image:
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights3.png",
   },
   {
     id: 4,
     title: "Ama Dablam and the Lower Khumbu Villages",
-    description: "Ama Dablam is usually the easiest peak to pick out lower down the valley, with Pangboche and Tengboche appearing depending on the exact flight line.",
-    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights4.png",
+    description:
+      "Ama Dablam is usually the easiest peak to pick out lower down the valley, with Pangboche and Tengboche appearing depending on the exact flight line.",
+    image:
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights4.png",
   },
   {
     id: 5,
     title: "Dudh Koshi Valley and Lukla",
-    description: "Forested slopes and the Dudh Koshi River system lead toward Lukla, where the helicopter typically makes a brief refueling stop before continuing.",
-    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights5.png",
+    description:
+      "Forested slopes and the Dudh Koshi River system lead toward Lukla, where the helicopter typically makes a brief refueling stop before continuing.",
+    image:
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights5.png",
   },
   {
     id: 6,
     title: "Terraced Hills and the Kathmandu Valley",
-    description: "Beyond Lukla, the terrain flattens into the terraced mid-hills of Solukhumbu and central Nepal before the temple-studded Kathmandu Valley comes into view on the final approach.",
-    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights6.jpg",
+    description:
+      "Beyond Lukla, the terrain flattens into the terraced mid-hills of Solukhumbu and central Nepal before the temple-studded Kathmandu Valley comes into view on the final approach.",
+    image:
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights6.jpg",
   },
 ];
 
@@ -54,7 +66,7 @@ export default function FlightHighlights() {
   return (
     <section className="w-full bg-[#f4f6f8] py-16 md:py-24">
       {/* Title */}
-      <div className="mb-10 md:mb-14 text-center px-4">
+      <div className="mb-10 max-w-7xl mx-auto md:mb-14 text-center px-4">
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
           Major Attractions on the Gorakshep to Kathmandu Helicopter Flight
         </h2>
