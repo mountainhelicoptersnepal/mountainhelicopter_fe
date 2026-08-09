@@ -13,7 +13,6 @@ export default function Hero() {
         className="object-cover"
       />
       <div className="absolute inset-0 bg-[#061a31]/78" />
-      <div className="absolute left-0 right-0 top-0 h-1 bg-[#F2B632]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28 mt-10 sm:mt-0">
         <div className="grid items-center gap-12 lg:grid-cols-[3fr_2fr]">

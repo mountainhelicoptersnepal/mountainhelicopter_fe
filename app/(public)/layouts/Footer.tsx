@@ -114,9 +114,18 @@ const ChevronRightIcon = () => (
 
 // ─── Link Data ───
 const toursLinks = [
-  { label: "Everest Kalapatthar Kathmandu", href: "/tours/everest-kalapatthar-kathmandu" },
-  { label: "Everest Gokyo Lake Landing", href: "/tours/everest-gokyo-kathmandu" },
-  { label: "Gorakshep to Kathmandu", href: "/tours/gorakshep-kathmandu-helicopter" },
+  {
+    label: "Everest Kalapatthar Kathmandu",
+    href: "/tours/everest-kalapatthar-kathmandu",
+  },
+  {
+    label: "Everest Gokyo Lake Landing",
+    href: "/tours/everest-gokyo-kathmandu",
+  },
+  {
+    label: "Gorakshep to Kathmandu",
+    href: "/tours/gorakshep-kathmandu-helicopter",
+  },
   { label: "Kathmandu to Lukla", href: "/tours/kathmandu-lukla-helicopter" },
   { label: "Ramechhap to Lukla", href: "/tours/ramechhap-lukla-helicopter" },
   // { label: "Mera Peak", href: "/tours/mera-peak" },
@@ -136,10 +145,10 @@ const servicesLinks = [
 ];
 
 const legalLinks = [
-  { label: "PRIVACY", href: "/privacy" },
-  { label: "TERMS", href: "/terms" },
-  { label: "CANCELLATION", href: "/cancellation" },
-  { label: "REFUND", href: "/refund" },
+  { label: "PRIVACY", href: "/privacy-policy" },
+  { label: "TERMS", href: "/terms-condition" },
+  { label: "CANCELLATION & REFUND", href: "/cancellation-refund" },
+  // { label: "REFUND", href: "/refund" },
 ];
 
 export default function Footer() {
