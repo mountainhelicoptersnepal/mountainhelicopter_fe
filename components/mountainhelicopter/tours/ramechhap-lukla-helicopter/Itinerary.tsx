@@ -11,24 +11,21 @@ const itineraryItems = [
     number: "02",
     title: "Weather and Ramechhap Airport Assessment",
     description: [
-      "Before departure, our operations team reviews weather conditions in Ramechhap and Lukla, including visibility, wind, air traffic, and airport status, to determine whether the flight can operate safely.",
-      "A booking request is not considered a confirmed departure until the helicopter, flight route, and operating window have been approved. Once confirmed, passengers report to the agreed meeting point with their passport and the baggage declared during booking, ready for check-in and departure.",
+      "Before departure, our operations team reviews weather conditions in Ramechhap and Lukla, including visibility, wind, air traffic, and airport status, to determine whether the flight can operate safely. A booking request is not considered a confirmed departure until the helicopter, flight route, and operating window have been approved. Once confirmed, passengers report to the agreed meeting point with their passport and the baggage declared during booking, ready for check-in and departure.",
     ],
   },
   {
     number: "03",
     title: "Passenger and Baggage Weighing",
     description: [
-      "Before departure, the passenger's body weight and baggage are verified to ensure the helicopter remains within its safe operating limits. If the combined load exceeds the permitted payload, non-essential baggage may need to be left behind or transported on a separate flight at an additional cost.",
-      "Once the final load has been confirmed, passenger details are recorded, a comprehensive safety briefing is provided, and seating is carefully assigned in accordance with weight-and-balance requirements for a safe and comfortable flight.",
+      "Before departure, the passenger's body weight and baggage are verified to ensure the helicopter remains within its safe operating limits. If the combined load exceeds the permitted payload, non-essential baggage may need to be left behind or transported on a separate flight at an additional cost. Once the final load has been confirmed, passenger details are recorded, a comprehensive safety briefing is provided, and seating is carefully assigned in accordance with weight-and-balance requirements for a safe and comfortable flight.",
     ],
   },
   {
     number: "04",
     title: "Helicopter Flight from Ramechhap to Lukla",
     description: [
-      "Once final weather and operational clearance are received, the helicopter departs Manthali and climbs toward the Solu-Khumbu region. The flight typically takes 20-25 minutes, although weather conditions, air traffic, routing, or operational stops may affect the duration.",
-      "Throughout the journey, passengers must remain seated with their seat belts securely fastened until instructed otherwise by the crew. Cameras, mobile phones, and other loose belongings should be kept secure while the helicopter is in operation.",
+      "Once final weather and operational clearance are received, the helicopter departs Manthali and climbs toward the Solu-Khumbu region. The flight typically takes 20–25 minutes, although weather conditions, air traffic, routing, or operational stops may affect the duration. Throughout the journey, passengers must remain seated with their seat belts securely fastened until instructed otherwise by the crew. Cameras, mobile phones, and other loose belongings should be kept secure while the helicopter is in operation.",
     ],
   },
 ];

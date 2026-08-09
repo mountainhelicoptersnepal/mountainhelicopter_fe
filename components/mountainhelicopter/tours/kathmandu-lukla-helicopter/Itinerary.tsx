@@ -2,13 +2,15 @@ const itineraryItems = [
   {
     number: "01",
     title: "Flight Request and Confirmation",
-    description: ["Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.", "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance, so you can prepare for a smooth and hassle-free journey."],
+    description: ["Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely. Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance, so you can prepare for a smooth and hassle-free journey."],
   },
+
   {
     number: "02",
     title: "Report at Tribhuvan International Airport",
-    description: ["At the airport, please have your passport and approved trekking baggage ready for check-in. Any excess baggage or items not required for your journey can be securely stored at your hotel before departure.", "If important baggage must be taken to the destination, we can pick up your baggage on our next flight and provide it to you, but it will incur additional charges."],
+    description: ["At the airport, please have your passport and approved trekking baggage ready for check-in. Any excess baggage or items not required for your journey can be securely stored at your hotel before departure. In case of your important baggage that should be taken to the destination, we will pick up your baggage on our next flight and provide it to you, but it will incur additional charges."],
   },
+
   {
     number: "03",
     title: "Safety Briefing and Boarding",
@@ -27,7 +29,7 @@ const itineraryItems = [
   {
     number: "06",
     title: "Guide Meeting or Trek Departure",
-    description: ["Upon arrival in Lukla, the group meets at the agreed meeting point, where the guide and support team coordinate the next steps. Trekking permits, porter arrangements, and accommodation plans are confirmed before the trek begins.", "Travelers are advised to allow a reasonable time buffer in their itinerary in case the helicopter arrives later than scheduled due to weather or operational conditions."],
+    description: ["Upon arrival in Lukla, the group meets at the agreed meeting point, where the guide and support team coordinate the next steps. Trekking permits, porter arrangements, and accommodation plans are confirmed before the trek begins. Travelers are advised to allow a reasonable time buffer in their itinerary in case the helicopter arrives later than scheduled due to weather or operational conditions."],
   },
 ];
 

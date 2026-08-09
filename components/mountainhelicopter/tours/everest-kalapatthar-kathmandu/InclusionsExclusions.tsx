@@ -4,7 +4,7 @@ const includes = [
   "Helicopter flight, Kathmandu to Kala Patthar and return",
   "Certified pilot and crew",
   "Emergency oxygen",
-  "Medical Insurance up to 20,000 NRS",
+  "Medical Insurance up to 20,000 NPR",
 ];
 
 const excludes = [

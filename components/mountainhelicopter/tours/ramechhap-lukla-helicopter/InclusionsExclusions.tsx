@@ -5,7 +5,7 @@ const includes = [
   "Certified pilot and crew",
   "Emergency oxygen",
   "Helicopter flight",
-  "Medical Insurance up to 20,000 NRS"
+  "Medical Insurance up to 20,000 NPR"
 ];
 
 const excludes = [

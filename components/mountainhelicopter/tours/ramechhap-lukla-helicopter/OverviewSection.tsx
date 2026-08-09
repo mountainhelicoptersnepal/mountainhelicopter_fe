@@ -260,12 +260,7 @@ export default function OverviewSection() {
                     date.
                   </p>
                   <p className="mt-5">
-                    Many travelers arrive in Ramechhap after a long road journey
-                    from Kathmandu at midnight or early. Finding out that their
-                    regular Lukla flight has been canceled or delayed can affect
-                    the rest of their Everest-region itinerary. Choosing a
-                    helicopter offers travelers a faster, more convenient way to
-                    reach Lukla after a scheduled flight disruption.
+                    Many travelers arrive in Ramechhap after a long road journey from Kathmandu at midnight or early. Finding out that their regular Lukla flight has been canceled or delayed can affect the rest of their Everest-region itinerary. Choosing a helicopter offers travelers a faster, more convenient way to reach Lukla after a scheduled flight disruption. It helps avoid further delays and keeps the Everest region itinerary moving. As with all mountain flights, the final departure is confirmed after routine checks of the weather, visibility, passenger and baggage weight, and airport conditions.
                   </p>
                   <p className="mt-5">
                     Mountain Helicopters Nepal provides both shared seats and

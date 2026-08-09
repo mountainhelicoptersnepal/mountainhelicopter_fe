@@ -6,11 +6,24 @@ const reasons = [
     "You will fly directly from Kathmandu, skipping the long drive to Ramechhap and reaching Lukla in just 40-45 minutes, saving valuable travel time.",
   ],
   [
-    "You can enjoy breathtaking Himalayan views throughout the flight and book a private charter for your family, trekking group, or expedition team.",
+    "Reach Lukla in just 40-45 minutes, saving your valuable travel time.",
   ],
   [
-    "You can request a helicopter if your scheduled Lukla flight is canceled or delayed, and carry trekking baggage within the permitted weight allowance.",
+    "You can enjoy breathtaking Himalayan views throughout the flight.",
   ],
+
+  [
+    "You can also book a private charter for your family, trekking group, or expedition team.",
+  ],
+
+  [
+    "Request a helicopter if your scheduled Lukla flight is canceled or delayed.",
+  ],
+
+  [
+    "Carry your trekking baggage within the permitted weight allowance.",
+  ],
+
 ];
 
 export default function WhyEverestTour() {

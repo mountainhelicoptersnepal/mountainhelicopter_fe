@@ -18,35 +18,15 @@ export default function FlightExperience() {
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
-            Soon after takeoff from Ramechhap, the helicopter follows the
-            Tamakoshi Valley before climbing towards the beautiful hills and
-            breathtaking mountain landscapes of the Everest region. As the
-            altitude gradually increases, the scenery transforms from green
-            valleys and terraced farmland to dense forests, steep ridges, and
-            dramatic Himalayan terrain.
+            Soon after takeoff from Ramechhap, the helicopter follows the Tamakoshi Valley before climbing towards the beautiful hills and breathtaking mountain landscapes of the Everest region. As the altitude gradually increases, the scenery transforms from green valleys and terraced farmland to dense forests, steep ridges, and dramatic Himalayan terrain. Headsets are provided throughout the flight so passengers can comfortably hear the pilot's safety announcements and communicate when necessary.
           </p>
           <p>
-            Headsets are provided throughout the flight so passengers can
-            comfortably hear the pilot&apos;s safety announcements and communicate
-            when necessary.
+            One of the highlights of the journey is witnessing the rapid change in landscape. In just 20 to 25 minutes, you travel from the warm lower hills of Ramechhap to the cool mountain environment of Lukla, more than 2,300 meters higher. On clear days, the views become even more spectacular as the surrounding valleys and distant Himalayan peaks come into sight.
           </p>
           <p>
-            One of the highlights of the journey is witnessing the rapid change
-            in landscape. In just 20 to 25 minutes, you travel from the warm
-            lower hills of Ramechhap to the cool mountain environment of Lukla,
-            more than 2,300 meters higher.
+           As the helicopter approaches, Lukla, Tenzing-Hillary Airport, and the surrounding mountain village gradually come into view below, offering a memorable arrival at the gateway to the Everest region. After landing, passengers remain seated until the crew confirms it is safe to disembark. Once you are outside the helicopter, your Everest region adventure begins as you meet your guide or proceed with your onward arrangements.
           </p>
-          <p>
-            On clear days, the views become even more spectacular as the
-            surrounding valleys and distant Himalayan peaks come into sight.
-          </p>
-          <p>
-            As the helicopter approaches, Lukla, Tenzing-Hillary Airport, and
-            the surrounding mountain village gradually come into view below,
-            offering a memorable arrival at the gateway to the Everest region.
-            After landing, passengers remain seated until the crew confirms it
-            is safe to disembark.
-          </p>
+          
         </div>
 
         {/* ROUTE MAP */}

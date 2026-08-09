@@ -40,7 +40,7 @@ const quickFacts = [
   {
     icon: CalendarDays,
     label: "Finest Season",
-    value: "Spring (March-May) and autumn (September-November)",
+    value: "Spring (March-May) and Autumn (September-November)",
   },
   {
     icon: Users,
@@ -55,12 +55,12 @@ const quickFacts = [
 ];
 
 const tourHighlights = [
-  "Passenger insurance included",
-  "Daily fixed departures",
-  "Experienced and professional flight crew",
-  "Spectacular Himalayan aerial views",
-  "Reliable flights with fewer weather delays",
-  "Flexible booking support",
+  "Passenger Insurance Included",
+  "Daily Fixed Departures",
+  "Experienced & Professional Flight Crew",
+  "Spectacular Himalayan Aerial Views",
+  "Reliable Flights with Fewer Weather Delays",
+  "Flexible Booking Support",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -253,32 +253,13 @@ export default function OverviewSection() {
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
                   <h2>
-                    The Kathmandu-to-Lukla helicopter flight is the air journey
-                    from the capital city of Kathmandu to the remote
-                    Tenzing-Hillary Airport in Lukla, known for its small
-                    landing area on steep terrain. This is the fastest and most
-                    comfortable way to reach the Everest region, with a scenic
-                    flight of approximately 40-45 minutes each way under ideal
-                    weather and flight conditions.
+                    The Kathmandu-to-Lukla helicopter flight is the air journey from the capital city of Kathmandu to the remote Tenzing-Hillary Airport in Lukla, known for its small landing area on steep terrain. This is the fastest and most comfortable way to reach the Everest region, with a scenic flight of approximately 40-45 minutes each way under ideal weather and flight conditions. As every flight is influenced by weather, the exact duration may vary depending on weather, visibility, air traffic, and the flight route assigned on the day of departure.
                   </h2>
                   <h2 className="mt-5">
-                    The fastest, surest, and most convenient way to access the
-                    Everest region is the Kathmandu to Lukla helicopter flight,
-                    especially when scheduled fixed-wing flights are canceled or
-                    delayed due to weather or air traffic. Several regular
-                    Lukla-bound flights operate from Ramechhap, which often
-                    requires an early departure from Kathmandu and several hours
-                    of additional travel, completely disrupting the itinerary
-                    and plans.
+                    The fastest, surest, and most convenient way to access the Everest region is the Kathmandu to Lukla helicopter flight, especially when scheduled fixed-wing flights are canceled or delayed due to weather or air traffic. Several regular Lukla-bound flights operate from Ramechhap, which often requires an early departure from Kathmandu and several hours of additional travel, completely disrupting the itinerary and plans. In that case, Our Mountain Helicopters Nepal’s Kathmandu to Lukla flight is available daily for travelers seeking a direct, comfortable, and efficient flight. 
                   </h2>
                   <h2 className="mt-5">
-                    Mountain Helicopters Nepal provides a quick and convenient
-                    flight from Kathmandu to Lukla, offering passengers views of
-                    Nepal&apos;s remote terraced hills, winding rivers, and
-                    distant mountain ranges before landing at Tenzing-Hillary
-                    Airport. It is especially useful for travelers, trekkers,
-                    and climbers who want to save time, avoid unnecessary
-                    delays, and keep their itinerary moving.
+                    We provide a quick and convenient flight from Kathmandu to Lukla, offering passengers views of Nepal’s most remote terraced hills, winding rivers, and distant mountain ranges before landing at Tenzing-Hillary Airport. It is especially useful for travelers, trekkers, and climbers who want to save time, avoid unnecessary delays, and keep their itinerary moving.
                   </h2>
                 </div>
               </section>
