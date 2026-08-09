@@ -36,8 +36,8 @@ type PackageResult = {
 
 const packages: PackageResult[] = [
   {
-    title: "Everest Base Camp Helicopter Tour",
-    href: "/tours/everest-base-camp",
+    title: "Everest Kalapatthar Kathmandu Helicopter Tour",
+    href: "/tours/everest-kalapatthar-kathmandu",
     category: "Tour Package",
     excerpt:
       "Fly to the Everest region and land near Kala Patthar for a same-morning Himalayan experience.",
@@ -47,48 +47,48 @@ const packages: PackageResult[] = [
     keywords: ["everest", "base camp", "ebc", "kala patthar", "helicopter"],
   },
   {
-    title: "Annapurna Base Camp Helicopter Tour",
-    href: "/tours/annapurna-base-camp",
+    title: "Everest Gokyo Kathmandu Helicopter Tour",
+    href: "/tours/everest-gokyo-kathmandu",
     category: "Tour Package",
     excerpt:
-      "A scenic helicopter route into the Annapurna Sanctuary from Pokhara.",
-    meta: "2-3 hrs | Annapurna",
-    price: "From $500",
+      "A scenic helicopter route into the Gokyo side of the Everest region.",
+    meta: "4-5 hrs | Khumbu",
+    price: "From $1,200",
     image: "/images/tour-section/annapurna-base-camp.jpg",
-    keywords: ["annapurna", "abc", "pokhara", "base camp", "tour"],
+    keywords: ["everest", "gokyo", "khumbu", "helicopter", "tour"],
   },
   {
-    title: "Muktinath Pilgrimage by Helicopter",
-    href: "/tours/muktinath-pilgrimage",
-    category: "Pilgrimage Package",
-    excerpt:
-      "Same-day darshan route for families and pilgrims travelling to Mustang.",
-    meta: "4-5 hrs | Mustang",
-    price: "From $1,100",
-    image: "/images/tour-section/muktinath.jpg",
-    keywords: ["muktinath", "pilgrimage", "darshan", "mustang", "yatra"],
-  },
-  {
-    title: "Langtang Valley Helicopter Tour",
-    href: "/tours/langtang-valley",
+    title: "Gorakshep to Kathmandu Helicopter",
+    href: "/tours/gorakshep-kathmandu-helicopter",
     category: "Tour Package",
     excerpt:
-      "A close Himalayan flight from Kathmandu into the Langtang region.",
-    meta: "2 hrs | Langtang",
-    price: "From $400",
-    image: "/images/tour-section/langtang.jpg",
-    keywords: ["langtang", "valley", "helicopter", "tour"],
+      "Fast helicopter return from the Everest trekking route to Kathmandu.",
+    meta: "45-60 min | Everest",
+    price: "On request",
+    image: "/images/tour-section/muktinath.jpg",
+    keywords: ["gorakshep", "kathmandu", "everest", "return", "helicopter"],
   },
   {
-    title: "Gosaikunda Lake Helicopter Tour",
-    href: "/tours/gosaikunda-lake",
-    category: "Pilgrimage Package",
+    title: "Kathmandu to Lukla Helicopter Flight",
+    href: "/tours/kathmandu-lukla-helicopter",
+    category: "Tour Package",
     excerpt:
-      "A short sacred alpine lake flight for pilgrims and mountain travellers.",
-    meta: "2-3 hrs | Langtang",
-    price: "From $650",
+      "Direct helicopter transfer from Kathmandu to the gateway of the Everest region.",
+    meta: "40-50 min | Lukla",
+    price: "From $500",
+    image: "/images/tour-section/langtang.jpg",
+    keywords: ["kathmandu", "lukla", "everest", "transfer", "helicopter"],
+  },
+  {
+    title: "Ramechhap to Lukla Helicopter Flight",
+    href: "/tours/ramechhap-lukla-helicopter",
+    category: "Tour Package",
+    excerpt:
+      "Convenient helicopter transfer from Ramechhap to Lukla.",
+    meta: "Short transfer | Lukla",
+    price: "On request",
     image: "/images/tour-section/gosaikunda.jpg",
-    keywords: ["gosaikunda", "lake", "pilgrimage", "tour"],
+    keywords: ["ramechhap", "lukla", "everest", "transfer", "helicopter"],
   },
   {
     title: "Private Charter Experience",
@@ -269,7 +269,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                 name="q"
                 type="search"
                 defaultValue={query}
-                placeholder="Search Everest, Muktinath, rescue..."
+                placeholder="Search Everest, Lukla, rescue..."
                 className="h-12 min-w-0 flex-1 bg-transparent font-manrope text-sm text-[#102A43] outline-none placeholder:text-[#64748B]"
               />
             </div>
@@ -355,7 +355,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
               No matching result found.
             </h3>
             <p className="mt-3 max-w-2xl font-manrope text-sm leading-7 text-[#475569]">
-              Try searching for Everest, Muktinath, rescue, charter, cost, or
+              Try searching for Everest, Lukla, rescue, charter, cost, or
               season. The operations team can also help if you are looking for a
               custom route.
             </p>

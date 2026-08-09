@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const tourTabs = [
   { label: "OUR TOURS", href: "/tours" },
-  { label: "EVEREST BASE CAMP", href: "/tours/everest-base-camp" },
-  { label: "MUKTINATH PILGRIMAGE", href: "/tours/muktinath-pilgrimage" },
-  { label: "LANGTANG VALLEY", href: "/tours/langtang-valley" },
-  { label: "ANNAPURNA BASE CAMP", href: "/tours/annapurna-base-camp" },
-  { label: "GOSAIKUNDA LAKE", href: "/tours/gosaikunda-lake" },
+  { label: "EVEREST KALAPATTHAR", href: "/tours/everest-kalapatthar-kathmandu" },
+  { label: "EVEREST GOKYO", href: "/tours/everest-gokyo-kathmandu" },
+  { label: "GORAKSHEP TO KATHMANDU", href: "/tours/gorakshep-kathmandu-helicopter" },
+  { label: "KATHMANDU TO LUKLA", href: "/tours/kathmandu-lukla-helicopter" },
+  { label: "RAMECHHAP TO LUKLA", href: "/tours/ramechhap-lukla-helicopter" },
 ];
 
 type TourTabsNavbarProps = {

@@ -114,11 +114,11 @@ const ChevronRightIcon = () => (
 
 // ─── Link Data ───
 const toursLinks = [
-  { label: "Everest Base Camp", href: "/tours/everest-base-camp" },
-  { label: "Annapurna Base Camp", href: "/tours/annapurna-base-camp" },
-  { label: "Langtang Valley", href: "/tours/langtang-valley" },
-  { label: "Muktinath Pilgrimage", href: "/tours/muktinath-pilgrimage" },
-  { label: "Gosaikunda Lake", href: "/tours/gosaikunda-lake" },
+  { label: "Everest Kalapatthar Kathmandu", href: "/tours/everest-kalapatthar-kathmandu" },
+  { label: "Everest Gokyo Kathmandu", href: "/tours/everest-gokyo-kathmandu" },
+  { label: "Gorakshep to Kathmandu", href: "/tours/gorakshep-kathmandu-helicopter" },
+  { label: "Kathmandu to Lukla", href: "/tours/kathmandu-lukla-helicopter" },
+  { label: "Ramechhap to Lukla", href: "/tours/ramechhap-lukla-helicopter" },
   // { label: "Mera Peak", href: "/tours/mera-peak" },
   // { label: "Cultural Kathmandu", href: "/tours/cultural-kathmandu" },
   // { label: "Heli Picnic", href: "/experiences/heli-picnic" },

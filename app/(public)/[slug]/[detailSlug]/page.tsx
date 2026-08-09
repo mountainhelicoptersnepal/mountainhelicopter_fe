@@ -8,11 +8,11 @@ import KalaPattharPage from "@/components/mountainhelicopter/experiences/kala-pa
 import PhotoFlightPage from "@/components/mountainhelicopter/experiences/photo-flight/page";
 import PilgrimagePage from "@/components/mountainhelicopter/experiences/pilgrimage/page";
 import PrivateCharterPage from "@/components/mountainhelicopter/experiences/private-charter/page";
-import AnnapurnaBaseCampPage from "@/components/mountainhelicopter/tours/annapurna-base-camp/page";
-import EverestBaseCampPage from "@/components/mountainhelicopter/tours/everest-base-camp/page";
-import GosaikundaLakePage from "@/components/mountainhelicopter/tours/gosaikunda-lake/page";
-import LangtangValleyPage from "@/components/mountainhelicopter/tours/langtang-valley/page";
-import MuktinathPilgrimagePage from "@/components/mountainhelicopter/tours/muktinath-pilgrimage/page";
+import EverestGokyoKathmanduPage from "@/components/mountainhelicopter/tours/everest-gokyo-kathmandu/page";
+import EverestKalapattharKathmanduPage from "@/components/mountainhelicopter/tours/everest-kalapatthar-kathmandu/page";
+import GorakshepKathmanduHelicopterPage from "@/components/mountainhelicopter/tours/gorakshep-kathmandu-helicopter/page";
+import KathmanduLuklaHelicopterPage from "@/components/mountainhelicopter/tours/kathmandu-lukla-helicopter/page";
+import RamechhapLuklaHelicopterPage from "@/components/mountainhelicopter/tours/ramechhap-lukla-helicopter/page";
 import { blogPosts, getBlogPost } from "@/lib/blogs";
 
 type DetailPageProps = {
@@ -23,11 +23,11 @@ type DetailPageProps = {
 };
 
 const tourPages = {
-  "annapurna-base-camp": AnnapurnaBaseCampPage,
-  "everest-base-camp": EverestBaseCampPage,
-  "gosaikunda-lake": GosaikundaLakePage,
-  "langtang-valley": LangtangValleyPage,
-  "muktinath-pilgrimage": MuktinathPilgrimagePage,
+  "everest-kalapatthar-kathmandu": EverestKalapattharKathmanduPage,
+  "everest-gokyo-kathmandu": EverestGokyoKathmanduPage,
+  "gorakshep-kathmandu-helicopter": GorakshepKathmanduHelicopterPage,
+  "kathmandu-lukla-helicopter": KathmanduLuklaHelicopterPage,
+  "ramechhap-lukla-helicopter": RamechhapLuklaHelicopterPage,
 } as const;
 
 const experiencePages = {
