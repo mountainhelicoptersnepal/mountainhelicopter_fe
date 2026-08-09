@@ -151,7 +151,7 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_muktinath_pilgrimage.pdf"
+              href="/pdfs/Detailed Everest Mountain Overfly with Gokyo Lake.pdf"
               download="Everest-Gokyo-Lake-Landing-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
@@ -181,7 +181,8 @@ export default function OverviewSection() {
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
                   These are the trip facts for the Everest Mountain Overfly with
                   Gokyo Lake Landing from Kathmandu, including duration, maximum
-                  altitude, best seasons, passenger capacity, and baggage limits.
+                  altitude, best seasons, passenger capacity, and baggage
+                  limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -247,9 +248,7 @@ export default function OverviewSection() {
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
                     Everest Mountain Overfly with,
                     <br />
-                    <span className="text-[#f2ae22]">
-                      Gokyo Lake Landing.
-                    </span>
+                    <span className="text-[#f2ae22]">Gokyo Lake Landing.</span>
                   </h2>
                 </div>
 
@@ -286,7 +285,6 @@ export default function OverviewSection() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

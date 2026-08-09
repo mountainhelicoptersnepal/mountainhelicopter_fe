@@ -151,7 +151,7 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_abc.pdf"
+              href="/public/pdfs/KTM TO LUK.pdf"
               download="Kathmandu-Lukla-Helicopter-Flight-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
@@ -179,10 +179,9 @@ export default function OverviewSection() {
                 </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts for the Kathmandu to Lukla
-                  Helicopter Flight, including safety, duration, maximum
-                  altitude, finest season, passenger capacity, and baggage
-                  limits.
+                  These are the trip facts for the Kathmandu to Lukla Helicopter
+                  Flight, including safety, duration, maximum altitude, finest
+                  season, passenger capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -275,11 +274,11 @@ export default function OverviewSection() {
                   <h2 className="mt-5">
                     Mountain Helicopters Nepal provides a quick and convenient
                     flight from Kathmandu to Lukla, offering passengers views of
-                    Nepal&apos;s remote terraced hills, winding rivers, and distant
-                    mountain ranges before landing at Tenzing-Hillary Airport.
-                    It is especially useful for travelers, trekkers, and
-                    climbers who want to save time, avoid unnecessary delays,
-                    and keep their itinerary moving.
+                    Nepal&apos;s remote terraced hills, winding rivers, and
+                    distant mountain ranges before landing at Tenzing-Hillary
+                    Airport. It is especially useful for travelers, trekkers,
+                    and climbers who want to save time, avoid unnecessary
+                    delays, and keep their itinerary moving.
                   </h2>
                 </div>
               </section>

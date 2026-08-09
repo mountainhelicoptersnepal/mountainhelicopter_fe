@@ -50,7 +50,8 @@ const quickFacts = [
   {
     icon: BriefcaseBusiness,
     label: "Baggage",
-    value: "400 kg total (combined passenger and baggage weight per helicopter)",
+    value:
+      "400 kg total (combined passenger and baggage weight per helicopter)",
   },
 ];
 
@@ -151,7 +152,7 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_gosaikunda.pdf"
+              href="/public/pdfs/GOR TO KTM.pdf"
               download="Gorakshep-Kathmandu-Helicopter-Flight-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
@@ -247,9 +248,7 @@ export default function OverviewSection() {
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
                     Gorakshep to Kathmandu,
                     <br />
-                    <span className="text-[#f2ae22]">
-                      Helicopter Flight.
-                    </span>
+                    <span className="text-[#f2ae22]">Helicopter Flight.</span>
                   </h2>
                 </div>
 
@@ -266,9 +265,9 @@ export default function OverviewSection() {
                     Unlike the Gorakshep to Lukla helicopter flight, which still
                     requires additional flights or ground transfers, this option
                     completes your return in a single trip. It saves valuable
-                    time, eliminates multiple travel connections, and helps avoid
-                    the delays and cancellations that frequently affect Lukla
-                    flights.
+                    time, eliminates multiple travel connections, and helps
+                    avoid the delays and cancellations that frequently affect
+                    Lukla flights.
                   </p>
                   <p className="mt-5">
                     Mountain Helicopters Nepal operates this route as both a
@@ -287,7 +286,6 @@ export default function OverviewSection() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

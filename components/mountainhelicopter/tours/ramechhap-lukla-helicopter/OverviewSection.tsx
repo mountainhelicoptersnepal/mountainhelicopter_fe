@@ -150,7 +150,7 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_langtang_valley.pdf"
+              href="/public/pdfs/RAM TO LUK.pdf"
               download="Ramechhap-Lukla-Helicopter-Flight-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
@@ -178,10 +178,9 @@ export default function OverviewSection() {
                 </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts for the Ramechhap to Lukla
-                  Helicopter Flight, including safety, duration, maximum
-                  altitude, finest season, passenger capacity, and baggage
-                  limits.
+                  These are the trip facts for the Ramechhap to Lukla Helicopter
+                  Flight, including safety, duration, maximum altitude, finest
+                  season, passenger capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -247,9 +246,7 @@ export default function OverviewSection() {
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
                     Ramechhap to Lukla,
                     <br />
-                    <span className="text-[#f2ae22]">
-                      Helicopter Flight.
-                    </span>
+                    <span className="text-[#f2ae22]">Helicopter Flight.</span>
                   </h2>
                 </div>
 
@@ -263,13 +260,12 @@ export default function OverviewSection() {
                     date.
                   </p>
                   <p className="mt-5">
-                    Many travelers arrive in Ramechhap after a long road
-                    journey from Kathmandu at midnight or early. Finding out
-                    that their regular Lukla flight has been canceled or delayed
-                    can affect the rest of their Everest-region itinerary.
-                    Choosing a helicopter offers travelers a faster, more
-                    convenient way to reach Lukla after a scheduled flight
-                    disruption.
+                    Many travelers arrive in Ramechhap after a long road journey
+                    from Kathmandu at midnight or early. Finding out that their
+                    regular Lukla flight has been canceled or delayed can affect
+                    the rest of their Everest-region itinerary. Choosing a
+                    helicopter offers travelers a faster, more convenient way to
+                    reach Lukla after a scheduled flight disruption.
                   </p>
                   <p className="mt-5">
                     Mountain Helicopters Nepal provides both shared seats and
@@ -289,7 +285,6 @@ export default function OverviewSection() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

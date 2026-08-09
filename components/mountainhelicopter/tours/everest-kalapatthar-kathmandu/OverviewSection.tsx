@@ -150,7 +150,7 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/pdfs/itinerary_of_ebc.pdf"
+              href="/pdfs/Detailed Everest Mountain Overfly with Kala Patthar.pdf"
               download="Everest-Kala-Patthar-HEV-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
@@ -257,14 +257,14 @@ export default function OverviewSection() {
                   <p>
                     The Everest Mountain Overfly with Kala Patthar Landing and
                     Breakfast at Hotel Everest View is the complete
-                    Everest-by-air experience, a touchdown at Kala Patthar&apos;s
-                    famous ridgeline at 5,545 metres, followed by breakfast with
-                    a 360-degree Himalayan view, all completed in a single day
-                    from Kathmandu. The flight carries passengers from Kathmandu
-                    to Lukla and up to Kala Patthar, the same iconic viewpoint
-                    that Everest Base Camp trekkers walk days to reach, before
-                    descending to Hotel Everest View for a sit-down breakfast
-                    and returning to Kathmandu.
+                    Everest-by-air experience, a touchdown at Kala
+                    Patthar&apos;s famous ridgeline at 5,545 metres, followed by
+                    breakfast with a 360-degree Himalayan view, all completed in
+                    a single day from Kathmandu. The flight carries passengers
+                    from Kathmandu to Lukla and up to Kala Patthar, the same
+                    iconic viewpoint that Everest Base Camp trekkers walk days
+                    to reach, before descending to Hotel Everest View for a
+                    sit-down breakfast and returning to Kathmandu.
                   </p>
                   <p className="mt-5">
                     The helicopter first flies from Kathmandu to Lukla, then
@@ -290,7 +290,6 @@ export default function OverviewSection() {
           </div>
         </div>
       </section>
-
     </>
   );
 }
