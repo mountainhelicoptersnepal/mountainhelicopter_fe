@@ -22,11 +22,11 @@ const tabs = [
 ];
 
 const quickFacts = [
-  {
-    icon: ShieldCheck,
-    label: "Safety",
-    value: "Experienced high-altitude pilots",
-  },
+  // {
+  //   icon: ShieldCheck,
+  //   label: "Safety",
+  //   value: "Experienced high-altitude pilots",
+  // },
   {
     icon: Clock3,
     label: "Duration",
@@ -179,11 +179,11 @@ export default function OverviewSection() {
                   Quick Facts
                 </h2>
 
-                <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
+                {/* <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
                   These are the trip facts for the Gorakshep to Kathmandu
                   Helicopter Flight, including duration, maximum altitude,
                   finest season, passenger capacity, and baggage limits.
-                </p>
+                </p> */}
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {quickFacts.map((fact) => {

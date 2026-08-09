@@ -177,12 +177,12 @@ export default function OverviewSection() {
                   Quick Facts
                 </h2>
 
-                <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
+                {/* <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
                   These are the trip facts for the Everest Mountain Overfly with
                   Kala Patthar Landing and Breakfast at Hotel Everest View,
                   including duration, maximum altitude, finest season, passenger
                   capacity, and baggage limits.
-                </p>
+                </p> */}
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {quickFacts.map((fact) => {
@@ -278,9 +278,13 @@ export default function OverviewSection() {
                   <p className="mt-5">
                     After the Kala Patthar landing, the helicopter flies to
                     Hotel Everest View at Syangboche, where a relaxed breakfast
-                    stop is served with sweeping views of Everest, Ama Dablam
-                    and Thamserku. From there, the flight retraces its route
-                    through Lukla and back to Kathmandu.
+                    of 20 to 30 minutes is served with sweeping views of
+                    Everest, Ama Dablam and Thamserku. From there, the flight
+                    retraces its route through Lukla and back to Kathmandu,
+                    completing one of the most comprehensive single-day Everest
+                    experiences available, stepping out at the famous viewpoint
+                    and paired with breakfast at one of the world's
+                    highest-placed hotels.
                   </p>
                 </div>
               </section>

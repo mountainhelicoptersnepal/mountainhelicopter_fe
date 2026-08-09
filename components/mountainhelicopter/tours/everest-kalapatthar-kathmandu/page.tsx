@@ -14,7 +14,7 @@ import Itinerary from "./Itinerary";
 import LandingSafetySnapshot from "./LandingSafetySnapshot";
 import OverviewSection from "./OverviewSection";
 import PriceSection from "./PriceSection";
-import RouteElevationSection from "./RouteElevationSection";
+// import RouteElevationSection from "./RouteElevationSection";
 // import WhatToPack from "./WhatToPack";
 import WhyEverestTour from "./WhyEverestTour";
 import WhyBookWithUs from "./WhyBookWithUs";
@@ -26,7 +26,7 @@ export default function EverestBaseCampPage() {
       <OverviewSection />
       <FlightHighlights />
       <WhyEverestTour />
-      <RouteElevationSection />
+      {/* <RouteElevationSection /> */}
       <FlightExperience />
       <ForWhomSection />
       <Itinerary />

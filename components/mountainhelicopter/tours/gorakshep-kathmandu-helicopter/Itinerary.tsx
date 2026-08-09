@@ -36,7 +36,7 @@ const itineraryItems = [
     title: "Gorakshep Pickup and Return Readiness",
     description: [
       "The helicopter arrives at Gorakshep, the last settlement on the Everest Base Camp trail, and boards the approved passenger load for the return journey.",
-      "As the aircraft lifts off from the high-altitude valley, passengers get one last look at the surrounding peaks before descending out of the Khumbu. Depending on operational requirements, the flight may make a brief refueling stop at Lukla along the way, offering a final view of the gateway airstrip below.",
+      "As the aircraft lifts off from the high-altitude valley, passengers get one last look at the surrounding peaks before descending out of the Khumbu. Depending on operational requirements, the flight may make a brief refueling stop at Lukla along the way, offering a final view of the gateway airstrip below. From there, the helicopter continues on to Kathmandu, completing the journey and ending the tour in the capital.",
     ],
   },
   {
@@ -89,9 +89,7 @@ export default function Itinerary() {
                 key={item.number}
                 className="group relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
               >
-                <div
-                  className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#d9e4ee] bg-white font-manrope text-[12px] font-bold text-[#7b92a9] transition-all duration-300 group-hover:border-[#004d93] group-hover:bg-[#005da8] group-hover:text-[#f0ad1f] group-hover:shadow-[0_0_0_4px_rgba(0,93,168,0.25)] md:h-[42px] md:w-[42px]"
-                >
+                <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#d9e4ee] bg-white font-manrope text-[12px] font-bold text-[#7b92a9] transition-all duration-300 group-hover:border-[#004d93] group-hover:bg-[#005da8] group-hover:text-[#f0ad1f] group-hover:shadow-[0_0_0_4px_rgba(0,93,168,0.25)] md:h-[42px] md:w-[42px]">
                   {item.number}
                 </div>
 
