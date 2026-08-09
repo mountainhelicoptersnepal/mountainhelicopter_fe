@@ -3,7 +3,7 @@ import AircraftCard from "@/components/shared/cards/AircraftCard";
 const aircraft = [
   {
     registration: "9N-ALD",
-    image: "/images/fleet/aircraft-1-as350.jpg",
+    image: "/images/helicopter/9N-ALD.jpg",
     imageAlt: "Airbus AS350 B3e flying over snow-covered Himalayan peaks",
     specs: [
       { label: "Make & Model", value: "Airbus Helicopters H125 (AS350 B3e)" },
@@ -34,7 +34,7 @@ const aircraft = [
   },
   {
     registration: "9N-AOP",
-    image: "/images/fleet/aircraft-2-bell407.jpg",
+    image: "/images/helicopter/9N-AOP.webp",
     imageAlt: "Bell 407GXi helicopter on snowy mountain terrain",
     specs: [
       { label: "Make & Model", value: "Airbus Helicopters H125 (AS350 B3e)" },
