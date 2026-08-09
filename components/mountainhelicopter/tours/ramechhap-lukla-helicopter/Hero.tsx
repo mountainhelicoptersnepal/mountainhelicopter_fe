@@ -9,7 +9,7 @@ export default function EverestBaseCamp() {
     <div
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
       style={{
-        backgroundImage: "url('/images/langtang-valley/langtang-valley.png')",
+        backgroundImage: "url('/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-Hero.png')",
       }}
     >
       <div className="absolute inset-0 bg-[#06182c]/55" />

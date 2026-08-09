@@ -1,10 +1,13 @@
 import Image from "next/image";
 
 const stats = [
-  { value: "3,105+", label: "Lives assisted through rescue support" },
-  { value: "5", label: "Active Himalayan rescue regions" },
+  { value: "4,105+", label: "Lives assisted through rescue support" },
+  {
+    value: "Rescue Operation",
+    label: "All Over Nepal",
+  },
   { value: "12 min", label: "Avg. response coordination time" },
-  { value: "24/7", label: "Emergency operations readiness" },
+  { value: "Sunrise to Sunset", label: "Emergency operations readiness" },
 ] as const;
 
 const photos = [
@@ -87,9 +90,9 @@ export default function Rescue() {
             </div>
           </div>
 
-          <div className="relative aspect-[530/431] w-full overflow-hidden border border-white/[0.08] lg:mt-[52px]">
+          <div className="relative aspect-[530/531] w-full overflow-hidden border border-white/[0.08] lg:mt-[52px]">
             <Image
-              src="/images/rescue/section/rescue-winch-operation.png"
+              src="/images/rescue/landing-rescue-section.jpg"
               alt="Helicopter crew winching a climber to safety during a high-altitude rescue operation"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"

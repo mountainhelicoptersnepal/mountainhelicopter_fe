@@ -3,7 +3,7 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 
 const launchItems = [
   {
-    title: "All 8 Tours Detailed",
+    title: "All Region Tours Detailed",
     text: "Pricing, itineraries, season guides",
     icon: Plane,
   },
@@ -39,7 +39,7 @@ export default function NotFoundPage() {
         </p>
 
         <PrimaryButton
-          href="/inquire"
+          href="/contact"
           className="mt-10 w-[180px] shadow-[0_12px_28px_rgba(242,182,50,0.24)]"
         >
           Send Inquiry
