@@ -146,7 +146,7 @@ const servicesLinks = [
 
 const legalLinks = [
   { label: "PRIVACY", href: "/privacy-policy" },
-  { label: "TERMS", href: "/terms-condition" },
+  { label: "TERMS", href: "/terms-conditions" },
   { label: "CANCELLATION & REFUND", href: "/cancellation-refund" },
   // { label: "REFUND", href: "/refund" },
 ];

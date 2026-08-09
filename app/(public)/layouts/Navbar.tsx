@@ -24,7 +24,8 @@ const NAV_LINKS = [
       {
         title: "Everest Kalapatthar Kathmandu",
         href: "/tours/everest-kalapatthar-kathmandu",
-        description: "Experience the Everest region and Kala Patthar viewpoint.",
+        description:
+          "Experience the Everest region and Kala Patthar viewpoint.",
       },
       {
         title: "Everest Gokyo Lake Landing",
@@ -564,14 +565,14 @@ function NavbarContent({ pathname }: { pathname: string }) {
             );
           })}
 
-          <Link
+          {/* <Link
             href="/account"
             onClick={closeNavigation}
             className="mt-5 flex items-center gap-3"
           >
             <UserRound size={22} />
             Account
-          </Link>
+          </Link> */}
         </div>
       </div>
     </header>

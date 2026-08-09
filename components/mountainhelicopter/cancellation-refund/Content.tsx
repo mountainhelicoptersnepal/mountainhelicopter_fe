@@ -264,7 +264,10 @@ const sections: Section[] = [
           ["Razorpay (Indian payments)", "3 – 7 business days"],
           ["eSewa (Nepali payments)", "1 – 3 business days"],
           ["Wire transfer", "7 – 14 business days"],
-          ["OTA platforms", "Per the OTA's refund policy, typically 7 – 21 days"],
+          [
+            "OTA platforms",
+            "Per the OTA's refund policy, typically 7 – 21 days",
+          ],
         ],
       },
       {
@@ -317,7 +320,7 @@ function RichText({ text }: { text: string }) {
           </span>
         ) : (
           <Fragment key={index}>{part}</Fragment>
-        )
+        ),
       )}
     </>
   );
@@ -326,7 +329,7 @@ function RichText({ text }: { text: string }) {
 function BlockContent({ block }: { block: Block }) {
   if (block.type === "paragraph") {
     return (
-      <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+      <p className="break-words font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
         <RichText text={block.text} />
       </p>
     );
@@ -346,10 +349,10 @@ function BlockContent({ block }: { block: Block }) {
         {block.items.map((item) => (
           <li
             key={item}
-            className="flex gap-3 font-manrope text-sm leading-7 text-[#4f5965] md:text-base"
+            className="flex min-w-0 gap-3 break-words font-manrope text-sm leading-7 text-[#4f5965] md:text-base"
           >
             <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#F2B632]" />
-            <span>
+            <span className="min-w-0">
               <RichText text={item} />
             </span>
           </li>
@@ -369,7 +372,7 @@ function BlockContent({ block }: { block: Block }) {
             <p className="font-manrope text-xs font-bold uppercase tracking-[0.08em] text-[#00569a]">
               {item.label}
             </p>
-            <p className="mt-1.5 font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+            <p className="mt-1.5 break-words font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
               <RichText text={item.text} />
             </p>
           </div>
@@ -427,7 +430,7 @@ function BlockContent({ block }: { block: Block }) {
       }
     >
       <p
-        className={`font-manrope text-xs leading-6 md:text-sm ${
+        className={`break-words font-manrope text-xs leading-6 md:text-sm ${
           block.tone === "gold" ? "text-[#6f6245]" : "text-[#38536b]"
         }`}
       >
@@ -439,10 +442,10 @@ function BlockContent({ block }: { block: Block }) {
 
 export default function Content() {
   return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24 lg:px-16 lg:py-28">
+    <section className="overflow-hidden bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:px-12 md:py-24 lg:px-16 lg:py-28">
         {/* HEADING */}
-        <div className="border-l-4 border-[#F2B632] pl-5 md:pl-6">
+        <div className="border-l-4 mt-8 sm:mt-0 border-[#F2B632] pl-5 md:pl-6">
           <div className="flex items-center gap-3">
             <span className="h-px w-8 bg-[#F2B632]" />
             <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.22em] text-[#a6770c]">
@@ -450,16 +453,16 @@ export default function Content() {
             </p>
           </div>
 
-          <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#171717] md:text-4xl">
+          <h2 className="mt-4 break-words font-fraunces text-2xl font-semibold leading-tight tracking-[-0.02em] text-[#171717] sm:text-3xl md:text-4xl">
             Cancellation &amp; Refund Policy
           </h2>
 
-          <p className="mt-3 max-w-4xl font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+          <p className="mt-3 max-w-4xl break-words font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
             Cancellation timelines, refund schedules, and what happens when
             weather or operations require us to change your flight.
           </p>
 
-          <p className="mt-3 max-w-4xl font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
+          <p className="mt-3 max-w-4xl break-words font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
             Mountain Helicopters Nepal operates flights in challenging mountain
             conditions. This Cancellation &amp; Refund Policy explains what
             happens when you need to cancel, when we need to cancel for weather
@@ -472,9 +475,9 @@ export default function Content() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-[260px_1fr] lg:gap-16">
+        <div className="mt-10 grid min-w-0 gap-10 md:mt-12 md:gap-12 lg:grid-cols-[260px_1fr] lg:gap-16">
           {/* TABLE OF CONTENTS */}
-          <aside className="lg:sticky lg:top-28 lg:self-start">
+          <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
             <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.18em] text-[#6b7886]">
               On this page
             </p>
@@ -484,7 +487,7 @@ export default function Content() {
                 <a
                   key={section.id}
                   href={`#${section.id}`}
-                  className="group flex gap-3 border-l-2 border-transparent py-1.5 pl-4 font-manrope text-sm leading-6 text-[#4f5965] transition-colors hover:border-[#F2B632] hover:text-[#00569a]"
+                  className="group flex min-w-0 gap-3 break-words border-l-2 border-transparent py-1.5 pl-4 font-manrope text-sm leading-6 text-[#4f5965] transition-colors hover:border-[#F2B632] hover:text-[#00569a]"
                 >
                   <span className="pt-0.5 font-manrope text-[11px] font-bold tabular-nums text-[#94a3b8] group-hover:text-[#a6770c]">
                     {String(index + 1).padStart(2, "0")}
@@ -496,7 +499,7 @@ export default function Content() {
           </aside>
 
           {/* SECTIONS */}
-          <div className="space-y-14 md:space-y-16">
+          <div className="min-w-0 space-y-12 md:space-y-16">
             {sections.map((section, index) => {
               const Icon = section.icon;
 
@@ -511,11 +514,11 @@ export default function Content() {
                       <Icon size={20} strokeWidth={1.8} />
                     </div>
 
-                    <div>
+                    <div className="min-w-0">
                       <p className="font-manrope text-[11px] font-bold uppercase tracking-[0.18em] text-[#94a3b8]">
                         Section {String(index + 1).padStart(2, "0")}
                       </p>
-                      <h3 className="mt-1 font-fraunces text-2xl font-semibold leading-tight text-[#00569a] md:text-[26px]">
+                      <h3 className="mt-1 break-words font-fraunces text-xl font-semibold leading-tight text-[#00569a] sm:text-2xl md:text-[26px]">
                         {section.title}
                       </h3>
                     </div>
@@ -537,8 +540,8 @@ export default function Content() {
                   <BadgeCheck size={20} strokeWidth={1.8} />
                 </span>
                 <p className="font-manrope text-xs leading-6 text-[#6f6245] md:text-sm">
-                  By confirming your booking with Mountain Helicopters Nepal, you
-                  accept this Cancellation &amp; Refund Policy.
+                  By confirming your booking with Mountain Helicopters Nepal,
+                  you accept this Cancellation &amp; Refund Policy.
                 </p>
               </div>
             </article>

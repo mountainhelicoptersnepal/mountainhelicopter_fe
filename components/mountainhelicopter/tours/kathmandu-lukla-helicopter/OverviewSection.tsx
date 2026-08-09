@@ -151,7 +151,7 @@ export default function OverviewSection() {
             ))}
 
             <a
-              href="/public/pdfs/KTM TO LUK.pdf"
+              href="/pdfs/KTM TO LUK.pdf"
               download="Kathmandu-Lukla-Helicopter-Flight-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
