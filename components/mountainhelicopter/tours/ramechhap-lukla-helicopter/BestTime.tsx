@@ -25,7 +25,7 @@ const seasons = [
     completion: "68%",
     visibility: "Medium",
     status: "With Caution",
-    statusClass: "bg-[#e32f28]",
+    statusClass: "bg-[#e37928]",
     rating: 3,
   },
   {
@@ -34,7 +34,7 @@ const seasons = [
     completion: "34%",
     visibility: "Low",
     status: "With Caution",
-    statusClass: "bg-[#e32f28]",
+    statusClass: "bg-[#e37928]",
     rating: 2,
   },
 ];
@@ -61,7 +61,8 @@ export default function BestTime() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/everest-base-camp/everest-base-camp.jpg')",
+          backgroundImage:
+            "url('/images/everest-base-camp/everest-base-camp.jpg')",
         }}
       />
       <div className="absolute inset-0 bg-[#0a3158]/72" />

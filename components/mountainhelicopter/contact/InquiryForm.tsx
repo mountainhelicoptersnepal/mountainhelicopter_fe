@@ -57,14 +57,14 @@ export default function InquiryForm() {
   return (
     <section
       id="inquiry-form"
-      className="relative overflow-hidden bg-[#003366] text-white"
+      className="relative overflow-hidden bg-[#071c36] text-white"
     >
       <div className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:radial-gradient(circle,#FFFFFF_1px,transparent_1px)] [background-size:20px_20px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-[2fr_3fr] lg:gap-16">
           <div>
-            <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
+            <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#F2B632]">
               Ready to fly?
             </span>
 
@@ -78,12 +78,12 @@ export default function InquiryForm() {
             </p>
 
             <div>
-              <span className="mb-5 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#f5a623]">
+              <span className="mb-5 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#F2B632]">
                 What happens next
               </span>
 
               <div className="relative ml-3.5 border-l border-white/20 pb-8 pl-10">
-                <div className="absolute -left-[13px] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#f5a623] font-manrope text-xs font-bold text-[#003366]">
+                <div className="absolute -left-[13px] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#F2B632] font-manrope text-xs font-bold text-[#071c36]">
                   1
                 </div>
                 <h4 className="mb-1 font-manrope font-bold">
@@ -96,7 +96,7 @@ export default function InquiryForm() {
               </div>
 
               <div className="relative ml-3.5 border-l border-white/20 pb-8 pl-10">
-                <div className="absolute -left-[13px] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#f5a623] font-manrope text-xs font-bold text-[#003366]">
+                <div className="absolute -left-[13px] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#F2B632] font-manrope text-xs font-bold text-[#071c36]">
                   2
                 </div>
                 <h4 className="mb-1 font-manrope font-bold">
@@ -109,7 +109,7 @@ export default function InquiryForm() {
               </div>
 
               <div className="relative ml-3.5 pl-10">
-                <div className="absolute -left-[13px] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#f5a623] font-manrope text-xs font-bold text-[#003366]">
+                <div className="absolute -left-[13px] top-0 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[#F2B632] font-manrope text-xs font-bold text-[#071c36]">
                   3
                 </div>
                 <h4 className="mb-1 font-manrope font-bold">Confirm & fly</h4>
@@ -121,7 +121,7 @@ export default function InquiryForm() {
             </div>
           </div>
 
-          <div className="rounded-2xl border-t-4 border-[#f5a623] bg-white p-8 text-[#0A1929] shadow-2xl md:p-10">
+          <div className="rounded-2xl border-t-4 border-[#F2B632] bg-white p-8 text-[#071c36] shadow-2xl md:p-10">
             <span className="mb-2 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#003366]">
               Inquiry form
             </span>
@@ -144,7 +144,7 @@ export default function InquiryForm() {
                     required
                     type="text"
                     name="name"
-                    className="w-full rounded-lg border border-[#E2E8F0] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
+                    className="w-full rounded-lg border border-[#dbe7f2] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/25"
                   />
                 </label>
 
@@ -156,7 +156,7 @@ export default function InquiryForm() {
                     required
                     type="email"
                     name="email"
-                    className="w-full rounded-lg border border-[#E2E8F0] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
+                    className="w-full rounded-lg border border-[#dbe7f2] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/25"
                   />
                 </label>
               </div>
@@ -171,7 +171,7 @@ export default function InquiryForm() {
                     type="tel"
                     name="phone"
                     placeholder="+977 …"
-                    className="w-full rounded-lg border border-[#E2E8F0] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
+                    className="w-full rounded-lg border border-[#dbe7f2] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/25"
                   />
                 </label>
 
@@ -181,7 +181,7 @@ export default function InquiryForm() {
                   </span>
                   <select
                     name="group"
-                    className="w-full rounded-lg border border-[#E2E8F0] bg-white px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
+                    className="w-full rounded-lg border border-[#dbe7f2] bg-white px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/25"
                   >
                     <option value="1">1 passenger</option>
                     <option value="2">2 passengers</option>
@@ -208,7 +208,7 @@ export default function InquiryForm() {
                         defaultChecked={item === "Tour"}
                         className="peer sr-only"
                       />
-                      <span className="block rounded-lg bg-[#E6F0F8] p-3 text-center font-manrope text-sm font-semibold text-[#0A1929] transition hover:bg-[#E6F0F8]/70 peer-checked:bg-[#003366] peer-checked:text-white">
+                      <span className="block rounded-lg bg-[#f2f7fc] p-3 text-center font-manrope text-sm font-semibold text-[#071c36] transition hover:bg-[#fff4d5] peer-checked:bg-[#003366] peer-checked:text-white">
                         {item}
                       </span>
                     </label>
@@ -223,7 +223,7 @@ export default function InquiryForm() {
                 <input
                   type="date"
                   name="date"
-                  className="w-full rounded-lg border border-[#E2E8F0] bg-white px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
+                  className="w-full rounded-lg border border-[#dbe7f2] bg-white px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/25"
                 />
               </label>
 
@@ -235,14 +235,14 @@ export default function InquiryForm() {
                   name="message"
                   rows={4}
                   placeholder="Destination, dates, special requests…"
-                  className="w-full rounded-lg border border-[#E2E8F0] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/30"
+                  className="w-full rounded-lg border border-[#dbe7f2] px-3.5 py-3 font-manrope text-sm transition focus:border-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366]/25"
                 />
               </label>
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-lg border-b-2 border-[#f5a623] bg-[#003366] px-8 py-4 font-manrope font-bold text-white transition hover:bg-[#001A33]"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-lg border-b-2 border-[#F2B632] bg-[#003366] px-8 py-4 font-manrope font-bold text-white transition hover:bg-[#071c36]"
               >
                 {isSubmitting ? "Sending..." : "Send Inquiry"}
                 <svg

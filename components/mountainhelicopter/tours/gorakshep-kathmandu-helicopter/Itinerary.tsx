@@ -50,7 +50,7 @@ const itineraryItems = [
 ];
 
 const itineraryBackgroundImage =
-  "/images/gorakshep-kathmandu-helicopter/Iternery_BG.png";
+  "/images/kathmandu-lukla-helicopter/Iternery_BG.png";
 
 export default function Itinerary() {
   return (

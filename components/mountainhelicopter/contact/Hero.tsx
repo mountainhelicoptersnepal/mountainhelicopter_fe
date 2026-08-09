@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#003366] text-white">
+    <section className="relative overflow-hidden bg-[#071c36] text-white">
       <Image
         src="/images/home-section/mountain-helicopter.jpg"
         alt="Mountain Helicopters aircraft flying near the Himalayas"
@@ -12,13 +12,13 @@ export default function Hero() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-[#001A33]/75" />
-      <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#f5a623] via-[#e5a82d] to-[#f5a623]" />
+      <div className="absolute inset-0 bg-[#061a31]/78" />
+      <div className="absolute left-0 right-0 top-0 h-1 bg-[#F2B632]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28 mt-10 sm:mt-0">
         <div className="grid items-center gap-12 lg:grid-cols-[3fr_2fr]">
           <div>
-            <nav className="mb-5 font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
+            <nav className="mb-5 font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#F2B632]">
               <Link href="/" className="transition hover:text-white">
                 Home
               </Link>
@@ -27,8 +27,8 @@ export default function Hero() {
             </nav>
 
             <span className="mb-6 inline-flex items-center gap-3">
-              <span className="block h-px w-10 bg-[#f5a623]" />
-              <span className="font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
+              <span className="block h-px w-10 bg-[#F2B632]" />
+              <span className="font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#F2B632]">
                 Get in touch
               </span>
             </span>
@@ -36,7 +36,7 @@ export default function Hero() {
             <h1 className="mb-6 font-fraunces text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
               Direct line.
               <br />
-              <span className="text-[#f5a623]">Fast response.</span>
+              <span className="text-[#F2B632]">Fast response.</span>
             </h1>
 
             <p className="mb-8 max-w-[560px] font-manrope text-lg leading-relaxed text-white/85 md:text-xl">
@@ -47,7 +47,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
               <div className="flex items-center gap-2">
-                <span className="h-2 w-2 animate-pulse rounded-full bg-[#f5a623] shadow-[0_0_10px_rgba(245,166,35,1)]" />
+                <span className="h-2 w-2 animate-pulse rounded-full bg-[#F2B632] shadow-[0_0_10px_rgba(242,182,50,1)]" />
                 <span className="font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-white/80">
                   Flight desk open now
                 </span>
@@ -55,7 +55,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-2">
                 <svg
-                  className="h-4 w-4 text-[#f5a623]"
+                  className="h-4 w-4 text-[#F2B632]"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -75,9 +75,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl bg-white text-[#0A1929] shadow-2xl">
-            <div className="bg-[#f5a623] px-6 py-3 text-center">
-              <span className="font-manrope text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#003366]">
+          <div className="overflow-hidden rounded-2xl bg-white text-[#071c36] shadow-2xl">
+            <div className="bg-[#F2B632] px-6 py-3 text-center">
+              <span className="font-manrope text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#071c36]">
                 Fastest way to reach us
               </span>
             </div>
@@ -85,9 +85,9 @@ export default function Hero() {
             <div className="space-y-3 p-6">
               <a
                 href="tel:+9779712082949"
-                className="group flex items-center gap-4 rounded-xl border border-[#E2E8F0] p-4 transition hover:border-[#f5a623] hover:bg-[#E6F0F8]/30"
+                className="group flex items-center gap-4 rounded-xl border border-[#dbe7f2] p-4 transition hover:border-[#F2B632] hover:bg-[#f2f7fc]"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#E6F0F8] transition group-hover:bg-[#003366]">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#f2f7fc] transition group-hover:bg-[#003366]">
                   <svg
                     className="h-5 w-5 text-[#003366] transition group-hover:text-white"
                     viewBox="0 0 24 24"
@@ -113,11 +113,11 @@ export default function Hero() {
                 href="https://wa.me/9779712082949"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 rounded-xl border border-[#E2E8F0] p-4 transition hover:border-[#25D366] hover:bg-green-50"
+                className="group flex items-center gap-4 rounded-xl border border-[#dbe7f2] p-4 transition hover:border-[#F2B632] hover:bg-[#f2f7fc]"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#25D366]/10 transition group-hover:bg-[#25D366]">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#fff4d5] transition group-hover:bg-[#003366]">
                   <svg
-                    className="h-5 w-5 text-[#25D366] transition group-hover:text-white"
+                    className="h-5 w-5 text-[#F2B632] transition group-hover:text-white"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -137,9 +137,9 @@ export default function Hero() {
 
               <a
                 href="mailto:info@mountainhelicoptersnepal.com"
-                className="group flex items-center gap-4 rounded-xl border border-[#E2E8F0] p-4 transition hover:border-[#f5a623] hover:bg-[#E6F0F8]/30"
+                className="group flex items-center gap-4 rounded-xl border border-[#dbe7f2] p-4 transition hover:border-[#F2B632] hover:bg-[#f2f7fc]"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#E6F0F8] transition group-hover:bg-[#003366]">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#f2f7fc] transition group-hover:bg-[#003366]">
                   <svg
                     className="h-5 w-5 text-[#003366] transition group-hover:text-white"
                     viewBox="0 0 24 24"
@@ -167,7 +167,7 @@ export default function Hero() {
 
               <a
                 href="#inquiry-form"
-                className="block w-full rounded-xl border-b-2 border-[#f5a623] bg-[#003366] py-3.5 text-center font-manrope font-bold text-white transition hover:bg-[#001A33]"
+                className="block w-full rounded-xl border-b-2 border-[#F2B632] bg-[#003366] py-3.5 text-center font-manrope font-bold text-white transition hover:bg-[#071c36]"
               >
                 Or send an inquiry form ↓
               </a>

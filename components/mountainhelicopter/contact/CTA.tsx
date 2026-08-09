@@ -2,24 +2,24 @@ export default function CTA() {
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#003366] via-[#001A33] to-[#003366] p-8 text-white md:p-12 lg:p-16">
+        <div className="relative overflow-hidden rounded-3xl bg-[#071c36] p-8 text-white md:p-12 lg:p-16">
           <div className="absolute right-6 top-6 flex items-center gap-2 md:right-8 md:top-8">
-            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#f5a623] shadow-[0_0_12px_rgba(245,166,35,1)]" />
-            <span className="font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#f5a623]">
+            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#F2B632] shadow-[0_0_12px_rgba(242,182,50,1)]" />
+            <span className="font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#F2B632]">
               Emergency line open
             </span>
           </div>
 
           <div className="grid mt-6 sm:mt-0 items-center gap-8 lg:grid-cols-[3fr_2fr]">
             <div>
-              <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
+              <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#F2B632]">
                 Helicopter rescue · 24/7
               </span>
 
               <h2 className="mb-4 font-fraunces text-[clamp(2rem,4.5vw,3.5rem)] font-semibold leading-[1.05] tracking-[-0.02em]">
                 Trekker in trouble?
                 <br />
-                <span className="text-[#f5a623]">Call now.</span>
+                <span className="text-[#F2B632]">Call now.</span>
               </h2>
 
               <p className="max-w-[520px] font-manrope text-lg leading-relaxed text-white/80">
@@ -32,9 +32,9 @@ export default function CTA() {
             <div className="space-y-3">
               <a
                 href="tel:+9779712082949"
-                className="group block rounded-xl bg-[#f5a623] p-5 text-[#003366] transition hover:bg-[#e5a82d]"
+                className="group block rounded-xl bg-[#F2B632] p-5 text-[#071c36] transition hover:bg-[#e0a321]"
               >
-                <div className="mb-1 font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#003366]/70">
+                <div className="mb-1 font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#071c36]/70">
                   Emergency dial
                 </div>
 
@@ -56,7 +56,7 @@ export default function CTA() {
                 href="https://wa.me/9779712082949?text=EMERGENCY%20RESCUE%20—%20"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block rounded-xl border-2 border-white/30 p-5 transition hover:border-[#f5a623] hover:bg-white/5"
+                className="group block rounded-xl border-2 border-white/30 p-5 transition hover:border-[#F2B632] hover:bg-white/5"
               >
                 <div className="mb-1 font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/70">
                   WhatsApp rescue
@@ -65,7 +65,7 @@ export default function CTA() {
                 <div className="flex items-center justify-between font-fraunces text-2xl font-semibold tabular-nums text-white">
                   +977-9712082949
                   <svg
-                    className="h-6 w-6 text-[#f5a623]"
+                    className="h-6 w-6 text-[#F2B632]"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >

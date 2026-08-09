@@ -43,7 +43,7 @@ const packages: PackageResult[] = [
       "Fly to the Everest region and land near Kala Patthar for a same-morning Himalayan experience.",
     meta: "4-5 hrs | Khumbu",
     price: "From $1,499",
-    image: "/images/tour-section/everest-base-camp.jpg",
+    image: "/images/everest-kalapatthar-kathmandu/Kala Patthar Landing- HEV-Hero.jpg",
     keywords: ["everest", "base camp", "ebc", "kala patthar", "helicopter"],
   },
   {
@@ -54,7 +54,7 @@ const packages: PackageResult[] = [
       "Fly close to Everest, then land beside the turquoise waters of Gokyo Lake.",
     meta: "4-5 hrs | Khumbu",
     price: "From $1,200",
-    image: "/images/tour-section/annapurna-base-camp.jpg",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Hero.jpg",
     keywords: ["everest", "gokyo", "khumbu", "helicopter", "tour"],
   },
   {
@@ -65,7 +65,7 @@ const packages: PackageResult[] = [
       "Fast helicopter return from the Everest trekking route to Kathmandu.",
     meta: "45-60 min | Everest",
     price: "From $1,200",
-    image: "/images/tour-section/muktinath.jpg",
+    image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-hero.JPG",
     keywords: ["gorakshep", "kathmandu", "everest", "return", "helicopter"],
   },
   {
@@ -76,7 +76,7 @@ const packages: PackageResult[] = [
       "Direct helicopter transfer from Kathmandu to the gateway of the Everest region.",
     meta: "40-50 min | Lukla",
     price: "From $500",
-    image: "/images/tour-section/langtang.jpg",
+    image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hero.jpg",
     keywords: ["kathmandu", "lukla", "everest", "transfer", "helicopter"],
   },
   {
@@ -87,7 +87,7 @@ const packages: PackageResult[] = [
       "Convenient helicopter transfer from Ramechhap to Lukla.",
     meta: "Short transfer | Lukla",
     price: "On request",
-    image: "/images/tour-section/gosaikunda.jpg",
+    image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-Hero.png",
     keywords: ["ramechhap", "lukla", "everest", "transfer", "helicopter"],
   },
   {

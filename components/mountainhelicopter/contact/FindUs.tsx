@@ -5,11 +5,11 @@ const mapEmbedLink =
 
 export default function FindUs() {
   return (
-    <section className="border-y border-[#E2E8F0] bg-[#F8FAFC]">
+    <section className="border-y border-[#dbe7f2] bg-[#fbfbfa]">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-24 lg:py-28">
         <header className="mb-10 grid items-end gap-8 lg:grid-cols-[3fr_2fr]">
           <div>
-            <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#f5a623]">
+            <span className="mb-4 block font-manrope text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#F2B632]">
               Find us
             </span>
 
@@ -27,7 +27,7 @@ export default function FindUs() {
         </header>
 
         <div className="grid items-stretch gap-6 lg:grid-cols-[3fr_2fr] lg:gap-8">
-          <div className="h-[450px] overflow-hidden rounded-2xl border border-[#E2E8F0] bg-[#E6F0F8] shadow-[0_8px_24px_rgba(0,51,102,0.12)] md:h-[560px]">
+          <div className="h-[450px] overflow-hidden rounded-2xl border border-[#dbe7f2] bg-[#f2f7fc] shadow-[0_8px_24px_rgba(0,51,102,0.12)] md:h-[560px]">
             <iframe
               src={mapEmbedLink}
               width="100%"
@@ -41,8 +41,8 @@ export default function FindUs() {
           </div>
 
           <div className="space-y-5">
-            <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 md:p-7">
-              <span className="mb-3 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#f5a623]">
+            <div className="rounded-2xl border border-[#dbe7f2] bg-white p-6 md:p-7">
+              <span className="mb-3 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#F2B632]">
                 Office address
               </span>
 
@@ -59,25 +59,25 @@ export default function FindUs() {
                   href={mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-[#003366] px-5 py-2.5 font-manrope text-sm font-semibold text-white transition hover:bg-[#001A33]"
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#003366] px-5 py-2.5 font-manrope text-sm font-semibold text-white transition hover:bg-[#071c36]"
                 >
                   Google Maps
                 </a>
 
                 <a
                   href="tel:+9779712082949"
-                  className="inline-flex items-center gap-2 rounded-lg border border-[#003366] px-5 py-2.5 font-manrope text-sm font-semibold text-[#003366] transition hover:bg-[#E6F0F8]"
+                  className="inline-flex items-center gap-2 rounded-lg border border-[#003366] px-5 py-2.5 font-manrope text-sm font-semibold text-[#003366] transition hover:bg-[#f2f7fc]"
                 >
                   Call for directions
                 </a>
               </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl bg-[#003366] p-6 text-white md:p-7">
-              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#f5a623]/10" />
+            <div className="relative overflow-hidden rounded-2xl bg-[#071c36] p-6 text-white md:p-7">
+              <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-[#F2B632]/10" />
 
               <div className="relative">
-                <span className="mb-3 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#f5a623]">
+                <span className="mb-3 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#F2B632]">
                   Helipad access
                 </span>
 
@@ -93,21 +93,21 @@ export default function FindUs() {
 
                 <div className="space-y-1.5 border-t border-white/15 pt-4 font-manrope text-sm">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#f5a623]">◷</span>
+                    <span className="text-[#F2B632]">◷</span>
                     <span className="text-white/90">
                       10 min airport → office
                     </span>
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <span className="text-[#f5a623]">▣</span>
+                    <span className="text-[#F2B632]">▣</span>
                     <span className="text-white/90">
                       Visitor parking on-site
                     </span>
                   </div>
 
                   <div className="flex items-center gap-2">
-                    <span className="text-[#f5a623]">✓</span>
+                    <span className="text-[#F2B632]">✓</span>
                     <span className="text-white/90">
                       Hotel pickup on tour bookings
                     </span>
@@ -116,8 +116,8 @@ export default function FindUs() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 md:p-7">
-              <span className="mb-4 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#f5a623]">
+            <div className="rounded-2xl border border-[#dbe7f2] bg-white p-6 md:p-7">
+              <span className="mb-4 block font-manrope text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-[#F2B632]">
                 Hours
               </span>
 

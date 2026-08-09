@@ -34,7 +34,7 @@ const itineraryItems = [
 ];
 
 const itineraryBackgroundImage =
-  "https://plus.unsplash.com/premium_photo-1697729961187-c70c5f520227?h=1200&w=2000&crop=faces,edges&auto=format&fit=crop&q=80&ixlib=rb-4.1.0";
+  "/images/kathmandu-lukla-helicopter/Iternery_BG.png";
 
 export default function Itinerary() {
   return (
