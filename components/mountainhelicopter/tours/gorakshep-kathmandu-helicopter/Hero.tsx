@@ -9,8 +9,7 @@ export default function EverestBaseCamp() {
     <div
       className="relative bg-cover bg-center bg-no-repeat pt-[75px]"
       style={{
-        backgroundImage:
-          "url('/images/gosaikunda-lake/gosaikunda-lake.jpg')",
+        backgroundImage: "url('/images/gosaikunda-lake/gosaikunda-lake.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-[#06182c]/55" />
@@ -21,7 +20,7 @@ export default function EverestBaseCamp() {
       {/* Hero Section */}
       <section className="relative z-10 min-h-[560px] py-16 sm:py-20 lg:h-[calc(100vh-168px)] lg:py-0">
         <div className="mx-auto flex h-full max-w-7xl items-center px-6 md:px-12 lg:px-16">
-          <div className="max-w-[900px]">
+          <div className="max-w-4xl">
             <div className="mb-5 flex items-center gap-3 sm:mb-6 sm:gap-4">
               <span className="h-px w-8 bg-[#f5b82e] sm:w-10" />
               <p className="font-manrope text-[9px] font-bold uppercase text-[#F2B632] tracking-[2.5px] leading-3.75 sm:text-[10px] sm:tracking-[3.5px]">
@@ -30,12 +29,12 @@ export default function EverestBaseCamp() {
             </div>
 
             <h1 className="font-fraunces font-bold leading-[0.95] tracking-[-1.5px] text-[#FFFFFF] text-[42px] sm:text-[68px] md:text-[88px] lg:text-[104px] xl:text-[90.32px] sm:tracking-[-2.83px]">
-              Gorakshep to Kathmandu <br />
-              Helicopter Flight.
+              Gorakshep to Kathmandu Helicopter Flight.
             </h1>
 
             <p className="mt-6 max-w-[540px] font-manrope text-[17px] font-bold leading-[1.45] text-white sm:mt-7 sm:text-[20px] md:text-[20px] tracking-normal">
-              Fast helicopter return from the Everest trail to Kathmandu.
+              Skip the return trail and fly straight from the last village
+              before EBC.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-10">

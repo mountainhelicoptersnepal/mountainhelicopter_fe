@@ -8,9 +8,9 @@ const landingExpectations = [
 const safetyActions = [
   "Move slowly and deliberately (do not run).",
   "Breathe steadily and deeply.",
-  "Stay hydrated (drink water before the flight.)",
+  "Stay hydrated (drink water before the flight)",
   "Inform the pilot immediately if you feel unwell",
-  "Use the supplemental oxygen onboard if needed.",
+  "Use the supplemental oxygen provided in the helicopter if needed",
 ];
 
 function BulletList({ title, items }: { title: string; items: string[] }) {

@@ -27,9 +27,9 @@ const NAV_LINKS = [
         description: "Experience the Everest region and Kala Patthar viewpoint.",
       },
       {
-        title: "Everest Gokyo Kathmandu",
+        title: "Everest Gokyo Lake Landing",
         href: "/tours/everest-gokyo-kathmandu",
-        description: "Fly into the Gokyo side of the Everest region.",
+        description: "Fly close to Everest and land beside Gokyo Lake.",
       },
       {
         title: "Gorakshep to Kathmandu",

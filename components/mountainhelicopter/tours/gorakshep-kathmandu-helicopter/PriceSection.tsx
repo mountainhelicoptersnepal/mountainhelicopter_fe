@@ -3,26 +3,24 @@
 const plans = [
   {
     title: "Shared Seat",
-    subtitle: "Join a scheduled dawn departure",
-    price: "On request",
+    subtitle: "Join a group return to Kathmandu",
+    price: "$1200",
     unit: "per person",
     button: "Book Shared Seat",
     href: "/contact#inquiry-form",
     featured: false,
     features: [
-      "Hotel pickup & drop in Kathmandu",
       "Pre-flight safety briefing",
-      "Window seat (every passenger)",
-      "Planned landing when conditions permit",
-      "Pre-flight safety briefing",
-      "All park entry fees",
+      "Gorakshep to Kathmandu helicopter flight",
+      "Shared seat when matching is available",
+      "Brief refueling stop at Lukla when required",
       "Oxygen on board (if needed)",
     ],
   },
   {
     title: "Private Charter",
     subtitle: "The whole helicopter, on your schedule",
-    price: "$5,800",
+    price: "On request",
     unit: "per helicopter",
     button: "Charter the Helicopter",
     href: "/contact#inquiry-form",
@@ -30,12 +28,10 @@ const plans = [
     features: [
       "Everything in Shared Seat",
       "Custom departure time",
-      "Custom landing points (where permitted)",
-      "Ground time as approved by pilot",
       "Private briefing",
       "Dedicated ground coordinator",
       "Up to 5 passengers full aircraft",
-      "Priority weather rescheduling",
+      "Timing based on group size and operating conditions",
     ],
   },
 ];
@@ -148,12 +144,12 @@ export default function PriceSection() {
           </div>
 
           <h2 className="font-fraunces text-[36px] font-semibold leading-none tracking-[-0.03em] text-[#003366] sm:text-[44px] md:text-[52px]">
-            Two ways to fly
+            Ways to Fly
           </h2>
 
           <p className="mx-auto mt-5 max-w-[620px] font-manrope text-[14px] leading-7 text-[#7b8795] sm:text-[15px]">
-            Shared by the seat, or the cabin to yourselves. Both fly to the same
-            standard.
+            Shared by the seat, or the cabin to yourselves. Both cover the
+            return from Gorakshep to Kathmandu.
           </p>
         </div>
 
@@ -165,7 +161,8 @@ export default function PriceSection() {
         </div>
 
         <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
-          Fares exclude: Travel insurance · Gratuities
+          Fares exclude: meals, gratuities, additional filming, separately
+          transported baggage, and delay-related accommodation or meals.
         </p>
       </div>
     </section>

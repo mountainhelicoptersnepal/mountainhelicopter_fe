@@ -10,7 +10,7 @@ export default function FlightExperience() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            What The Everest Helicopter Tour{" "}
+            What Does the Everest Mountain Overfly with Kala Patthar Landing and Breakfast at HEV{" "}
             <span className="text-[#e0a326]">Feels Like.</span>
           </h2>
         </div>
@@ -18,16 +18,29 @@ export default function FlightExperience() {
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
-            The moment the Khumbu Valley opens, just forty-five minutes after departing Kathmandu, the helicopter leaves the city behind and enters the dramatic Dudh Kosi River gorge. Flying past the famous Lukla, the helicopter follows the ancient trekking route into the heart of the Everest region, a path trekkers usually take over a week to complete. Then the landscape dramatically shifts.
+            The heli ride to Everest begins gently with a scenic hop from
+            Kathmandu to Lukla, which offers sweeping views of Nepal&apos;s mid-hills
+            and river valleys. After a short refueling stop, the flight
+            continues deeper into the mountains, passing over Namche Bazaar and
+            Tengboche before climbing into the wide, high-altitude Khumbu
+            Valley.
 
           </p>
 
           <p>
-            Mount Everest, Lhotse, Nuptse, and Ama Dablam surround the helicopter in a breathtaking 360-degree amphitheater of rock, snow, and ice. Rather than viewing the Himalayas from a distance, passengers fly directly over the massive Khumbu Glacier, the treacherous Khumbu Icefall, and the colorful expedition tents of Everest Base Camp. The helicopter lands at Pheriche at an altitude of 4,240 meters. From Pheriche, the helicopter shuttles passengers in groups to Everest Base Camp, where each group lands for a few minutes on the ground, stepping out, taking photographs, and experiencing the raw scale of the world&apos;s highest mountain base. Once all shuttles are complete, the group reunites at Pheriche for a combined flight back to Kathmandu
+            The helicopter climbs close past Everest Base Camp and the Khumbu
+            Glacier before touching down at Kala Patthar at 5,545 meters. The
+            landing itself lasts around five minutes, just enough time to step
+            out onto the high ridgeline and take in a completely unobstructed
+            view of Mount Everest and its neighboring giants.
           </p>
 
           <p>
-           The return flight offers a relaxing journey back over the Khumbu Valley to Kathmandu. Within a single morning, passengers can stand at the foot of the world&apos;s highest mountain and return to their hotel before mid-morning.
+            Once the landing is complete, the whole group flies on together to
+            Hotel Everest View, where a relaxed breakfast is served with
+            panoramic views of Everest, Ama Dablam, and Thamserku. From there,
+            the helicopter retraces its route through Lukla and back to
+            Kathmandu.
           </p>
 
      

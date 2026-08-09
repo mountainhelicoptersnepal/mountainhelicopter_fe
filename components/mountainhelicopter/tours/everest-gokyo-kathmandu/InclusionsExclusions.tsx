@@ -2,37 +2,41 @@ import { CheckCircle2, XCircle } from "lucide-react";
 
 const includes = [
   "Certified pilot and crew",
-  "Emergency oxygen on board for passenger safety",
-  "Fuel landing and helipad fees",
-  "Travel Insurance"
+  "Emergency oxygen",
+  "Helicopter flight",
+  "Medical Insurance up to 20,000 NRS",
 ];
 
 const excludes = [
   "Personal meals and beverages",
   "Pilots and staff gratuities",
   "Additional filming",
+  "Breakfasts at Hotel Everest View",
   "Excess or separately transported baggage",
-  "Accommodation and meals caused by a delay"
+  "Accommodation and meals caused by a delay",
 ];
 
 const permits = [
   {
+    nationality: "SAARC",
+    kathmanduAirportTax: "500",
+    nationalParkFees: "3500",
+    localAreaFee: "500",
+    totalPayable: "4500",
+  },
+  {
+    nationality: "Other foreign countries",
+    kathmanduAirportTax: "500",
+    nationalParkFees: "6000",
+    localAreaFee: "500",
+    totalPayable: "7000",
+  },
+  {
     nationality: "Nepal",
-    acap: "NPR 100",
-    kathmanduAirportTax: "Payable at Kathmandu Airport",
-    totalPayable: "Confirm at booking",
-  },
-  {
-    nationality: "SAARC Nationals",
-    acap: "NPR 1,000",
-    kathmanduAirportTax: "Payable at Kathmandu Airport",
-    totalPayable: "Confirm at booking",
-  },
-  {
-    nationality: "Other Foreign Nationals",
-    acap: "NPR 3,000",
-    kathmanduAirportTax: "Payable at Kathmandu Airport",
-    totalPayable: "Confirm at booking",
+    kathmanduAirportTax: "500",
+    nationalParkFees: "100",
+    localAreaFee: "500",
+    totalPayable: "1100",
   },
 ];
 
@@ -94,22 +98,32 @@ export default function InclusionsExclusions() {
         <div className="mt-16 overflow-hidden rounded-[24px] bg-[#071c36] px-6 py-8 shadow-[0_24px_45px_rgba(7,28,54,0.18)] md:px-10 md:py-10">
           <div className="text-center">
             <h2 className="font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
-              Permits Excluded (in NPR)
+              Permits Excluded (In NPR)
             </h2>
           </div>
+
+          <p className="mx-auto mt-6 max-w-4xl text-center font-manrope text-sm leading-7 text-white/70">
+            The airport tax is payable at the airport before departure.
+            National park and local permit fees are paid either upon arrival in
+            the Everest region or before takeoff, depending on the flight&apos;s
+            operating arrangements and the crew&apos;s instructions.
+          </p>
 
           <div className="mt-10 overflow-x-auto">
             <table className="w-full min-w-[760px] border-collapse">
               <thead>
                 <tr className="border-b border-white/10 text-left">
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Nationality
+                    Countries
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Annapurna Conservation Area Permit (ACAP)
+                    Airport tax of Kathmandu
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
-                    Kathmandu Airport Tax
+                    National park fees
+                  </th>
+                  <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
+                    Local area fee
                   </th>
                   <th className="pb-6 font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#f2b53a]">
                     Total Payable
@@ -124,10 +138,13 @@ export default function InclusionsExclusions() {
                       {row.nationality}
                     </td>
                     <td className="py-10 font-manrope text-sm text-white">
-                      {row.acap}
+                      {row.kathmanduAirportTax}
                     </td>
                     <td className="py-10 font-manrope text-sm text-white">
-                      {row.kathmanduAirportTax}
+                      {row.nationalParkFees}
+                    </td>
+                    <td className="py-10 font-manrope text-sm text-white">
+                      {row.localAreaFee}
                     </td>
                     <td className="py-10 font-manrope text-sm font-bold text-[#f2b53a]">
                       {row.totalPayable}

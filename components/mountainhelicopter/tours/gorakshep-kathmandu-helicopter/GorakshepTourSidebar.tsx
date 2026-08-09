@@ -19,7 +19,7 @@ import {
 const phoneNumber = "9779712082953";
 
 const message =
-  "Hi, I would like to know more about the Muktinath Helicopter Tour.";
+  "Hi, I would like to know more about the Gorakshep to Kathmandu Helicopter Flight.";
 
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   message,
@@ -33,7 +33,7 @@ const bookingFacts: Array<{
   {
     icon: Clock3,
     label: "Duration",
-    value: "5 Hours",
+    value: "1.5-2 hours",
   },
   {
     icon: Users,
@@ -43,7 +43,7 @@ const bookingFacts: Array<{
   {
     icon: Mountain,
     label: "Max Altitude",
-    value: "3,710 m",
+    value: "5,164 m",
   },
   {
     icon: CalendarDays,
@@ -61,14 +61,11 @@ const whyBookItems = [
 ];
 
 const groupPricing = [
-  ["1 Passenger", "USD 1,400–1,600"],
-  ["2 Passengers", "USD 1,280–1,500"],
-  ["3 Passengers", "USD 1,200–1,350"],
-  ["4 Passengers", "USD 1,000–1,200"],
-  ["5 Passengers", "USD 1,000–1,200"],
+  ["Shared Seat", "USD 1,200"],
+  ["Private Charter", "On request"],
 ];
 
-export default function EverestTourSidebar() {
+export default function GorakshepTourSidebar() {
   return (
     <aside className="space-y-5 lg:sticky lg:top-[155px] lg:self-start">
       {/* BOOKING CARD */}
@@ -77,9 +74,9 @@ export default function EverestTourSidebar() {
 
         <div className="p-5">
           <h3 className="font-fraunces text-xl font-semibold leading-tight text-[#0a3158]">
-            Muktinath
+            Gorakshep to Kathmandu
             <br />
-            Helicopter Tour
+            Helicopter Flight
           </h3>
 
           <div className="mt-2 flex flex-wrap items-center gap-2">
@@ -107,7 +104,7 @@ export default function EverestTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  On request
+                  USD 1,200
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">
@@ -116,7 +113,7 @@ export default function EverestTourSidebar() {
               </div>
 
               <p className="mt-2 font-manrope text-[10px] text-slate-400">
-                Shared & Private Charter
+                Shared Seat & Private Charter
                 <br />
                 Available
               </p>
@@ -201,8 +198,8 @@ export default function EverestTourSidebar() {
             </div>
 
             <p className="mt-3 font-manrope text-[9px] leading-4 text-slate-400">
-              Prices change based on group size, operating conditions and
-              available aircraft.
+              Private charter pricing is quoted on request based on group size,
+              operating conditions, and available aircraft.
             </p>
           </div>
 
@@ -301,7 +298,7 @@ export default function EverestTourSidebar() {
             <div className="flex justify-between gap-4">
               <span className="text-slate-400">Specialty</span>
               <span className="text-right font-semibold text-[#0a3158]">
-                Muktinath
+                Gorakshep to Kathmandu
               </span>
             </div>
           </div>

@@ -115,7 +115,7 @@ const ChevronRightIcon = () => (
 // ─── Link Data ───
 const toursLinks = [
   { label: "Everest Kalapatthar Kathmandu", href: "/tours/everest-kalapatthar-kathmandu" },
-  { label: "Everest Gokyo Kathmandu", href: "/tours/everest-gokyo-kathmandu" },
+  { label: "Everest Gokyo Lake Landing", href: "/tours/everest-gokyo-kathmandu" },
   { label: "Gorakshep to Kathmandu", href: "/tours/gorakshep-kathmandu-helicopter" },
   { label: "Kathmandu to Lukla", href: "/tours/kathmandu-lukla-helicopter" },
   { label: "Ramechhap to Lukla", href: "/tours/ramechhap-lukla-helicopter" },

@@ -8,9 +8,9 @@ const landingExpectations = [
 const safetyActions = [
   "Move slowly and deliberately (do not run).",
   "Breathe steadily and deeply.",
-  "Stay hydrated (drink water before the flight.)",
+  "Stay hydrated (drink water before the flight).",
   "Inform the pilot immediately if you feel unwell",
-  "Use the supplemental oxygen onboard if needed.",
+  "Use the supplemental oxygen provided in the helicopter if needed.",
 ];
 
 function BulletList({ title, items }: { title: string; items: string[] }) {
@@ -40,10 +40,10 @@ export default function LandingSafetySnapshot() {
     <section className="bg-white">
       <div className="mx-auto grid max-w-5xl gap-16 px-6 py-24 md:grid-cols-2 md:px-12 lg:px-0">
         <BulletList
-          title="What to expect during the landing:"
+          title="What to Expect During the Landing"
           items={landingExpectations}
         />
-        <BulletList title="What you should do:" items={safetyActions} />
+        <BulletList title="What You Should Do" items={safetyActions} />
       </div>
     </section>
   );

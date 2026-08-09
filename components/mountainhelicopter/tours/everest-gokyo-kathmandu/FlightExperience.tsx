@@ -10,7 +10,7 @@ export default function FlightExperience() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            What The Muktinath Helicopter Tour {" "}
+            What Does the Everest Mountain Overfly with Gokyo Lake Landing from Kathmandu{" "}
             <span className="text-[#e0a326]">Feels Like.</span>
           </h2>
         </div>
@@ -18,37 +18,41 @@ export default function FlightExperience() {
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
-            From Kathmandu, the helicopter leaves the green valley and heads
-            towards the deep Kali Gandaki corridor. The longer route crosses
-            Nepal&apos;s middle hills before approaching the Annapurna region, with
-            a fuel stop possible according to the aircraft and operating plan.
+            This Everest heli tour with Gokyo landing begins gently with a
+            scenic hop from Kathmandu to Lukla, already offering sweeping views
+            of Nepal&apos;s mid-hills and river valleys. After a short refueling
+            stop, the flight continues deeper into the mountains, passing over
+            Namche Bazaar and Tengboche before climbing toward the Everest
+            region.
           </p>
           <p>
-            The landscape changes dramatically during the journey. Forested
-            slopes and river valleys lead towards the vast Himalayan massifs.
-            Dhaulagiri rises to the west, Annapurna to the east, and the
-            Nilgiri peaks above the approach into Mustang.
+            As the aircraft gains altitude, forested foothills give way to
+            alpine ridges, glacial streams, rocky moraines, and the first
+            snow-covered summits. The helicopter turns onto a close aerial
+            overfly toward Everest Base Camp and Kala Patthar, flying past the
+            Khumbu Icefall, Everest, Lhotse, and Nuptse before continuing on
+            toward Gokyo.
           </p>
           <p>
-            Beyond the wetter southern slopes, the terrain becomes dry, brown,
-            and wind-carved. Jomsom, Marpha, Kagbeni, and other settlements may
-            be visible depending on the route. The helicopter continues towards
-            the Muktinath Valley and lands near Ranipauwa when wind, visibility,
-            payload, and landing-site conditions permit.
+            The real highlight begins as the helicopter descends toward the
+            Gokyo Lakes, a chain of glacial lakes cradled high in the Dudh Koshi
+            Valley. Touching down for five to ten minutes beside the still,
+            turquoise water, passengers step out into thin mountain air to a
+            landscape of reflected peaks, glacial water, and high Himalayan
+            silence.
           </p>
           <p>
-            The pilgrimage continues on foot from the helipad. The approach is
-            uphill and may include steps or uneven ground. Walking time varies
-            with the actual landing point, the passenger&apos;s pace, and crowd
-            conditions. At 3,710 meters, even a short walk can feel more
-            demanding than it would at sea level.
+            The landing spot sits beside Dudh Pokhari, the biggest of the Gokyo
+            lakes, with the Ngozumpa Glacier spreading across the valley below.
+            On clear days, Cho Oyu, Everest, Lhotse, Makalu, and Gauri Shankar
+            may all be visible from the area.
           </p>
           <p>
-            At the temple complex, passengers may receive darshan, pass beneath
-            the 108 water spouts, and visit Jwala Mai if opening hours and the
-            operational schedule allow. Ritual bathing is optional and should be
-            approached cautiously because the water and air can be extremely
-            cold.
+            After the landing, the helicopter lifts off again and heads directly
+            back toward Kathmandu, stopping briefly at Lukla to refuel before
+            continuing home. Rotor noise, gentle vibration, and light turbulence
+            over ridgelines and near the high-altitude landing zone are normal
+            parts of the experience.
           </p>
         </div>
 

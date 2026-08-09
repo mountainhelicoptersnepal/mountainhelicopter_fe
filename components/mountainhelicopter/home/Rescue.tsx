@@ -46,16 +46,26 @@ export default function Rescue() {
 
             <div className="flex flex-col gap-5">
               <p className="font-manrope text-[16px] font-medium leading-[26px] text-[#4a5568]">
-                Mountain Helicopters Nepal also participates in various rescue
-                missions in the high altitude regions of Nepal. Our helicopters
-                are highly skilled and knowledgeable about navigating through
-                the challenging mountains, where time is of the essence.
+                When lives are on the line, every minute counts. Mountain
+                Helicopters Nepal responds to emergencies across the whole
+                country, from the high Himalaya down to the Terai, from crowded
+                city streets to the most remote settlements. Behind every
+                response to an emergency call is a team that understands the
+                weight of every call: pilots with years of flying Nepal's
+                hardest routes under their belt, and crew members trained for
+                the moments you can't plan for.
               </p>
 
               <p className="font-manrope text-[16px] font-medium leading-[26px] text-[#4a5568]">
-                Through rescuing climbers and expedition teams to performing
-                emergency evacuation, our rescue missions set the safety
-                standards for all our flights.
+                Every mission is planned around the two things that matter most:
+                speed and safety. Our crews have carried climbers down from high
+                camps, airlifted the injured from remote roads, evacuated
+                patients from small district hospitals, and delivered food and
+                medicine to communities affected by floods, landslides, and
+                earthquakes. There is no room for error when people are counting
+                on us. Our pilots plan every rescue carefully and train
+                year-round for the situations you can't plan for. When it goes
+                well, the reward is simple: someone gets their life back.
               </p>
             </div>
 

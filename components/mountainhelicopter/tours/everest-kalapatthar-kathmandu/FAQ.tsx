@@ -5,31 +5,32 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How cold does it get at Everest Base Camp?",
-    answer: "Temperature ranges between 15 degrees Celsius and -5 degrees in spring and autumn, and below -17 degrees Celsius in winter.",
+    question: "Do all passengers actually land at Kala Patthar or just fly over it?",
+    answer: "Every passenger gets a landing. Because of strict weight limits above 5,000 meters, the helicopter can carry only two passengers at a time above Pheriche. For larger groups, the helicopter shuttles back and forth until everyone has had their own landing at Kala Patthar.",
   },
   {
-    question: "Why does the helicopter not land at the Everest Base Camp?",
-    answer: "Everest Base Camp is part of the Khumbu Glacier, an unstable terrain with no suitable routine helicopter landing space.",
+    question: "How long do we actually spend on the ground at Kala Patthar?",
+    answer: "Each pair typically gets around 5-10 minutes at the landing site, enough time for photos and to take in the view of Everest, Lhotse, Nuptse, and Ama Dablam, before the helicopter returns to Pheriche for the next group.",
   },
   {
-    question: "What is the age limit of the Everest Base Camp helicopter tour in Nepal?",
-    answer:
-      "There is no age limit for the Everest Base Camp helicopter tour in Nepal, as anyone can join the helicopter tour. If there is any emergency or a guest feels uneasy, we will immediately fly back to Kathmandu.",
+    question: "Does the tour land at Everest Base Camp?",
+    answer: "No. The tour flies over the Everest Base Camp and Khumbu Glacier area but makes its actual high-altitude landing at Kala Patthar, at 5,545 meters.",
   },
   {
-    question: "Which is better, EBC or ABC?",
-    answer: "EBC is often preferred by travellers who want to see the highest peak in the world and experience massive high-altitude glaciers.",
+    question: "Is this tour safe given the altitude?",
+    answer: "Yes. The short duration at altitude, combined with pilot discretion over weather and weight limits, is specifically designed to manage altitude risk. Passengers with underlying heart or lung conditions should consult a doctor before booking.",
   },
   {
-    question: "Which is the highest camp a helicopter can go on in Everest?",
-    answer:
-      "The highest a helicopter reliably landed for routine operation and rescue mission on Mt. Everest is at Camp 2, approximately 6,400 meters.",
+    question: "What happens while other passengers are flying to Kala Patthar?",
+    answer: "Passengers who are waiting remain at Pheriche while the helicopter completes the other shuttle rotations. Once everyone has completed their Kala Patthar landing, the entire group reunites before continuing to Hotel Everest View.",
   },
   {
-    question: "Do we need a passport while traveling by helicopter towards Everest Base Camp?",
-    answer:
-      "Yes, you need to carry a passport for a helicopter tour towards Everest Base Camp. If you are Nepali, bring an original official photo ID card for airport security, flight insurance and local entry permits.",
+    question: "Can I choose which passenger goes to Kala Patthar first?",
+    answer: "The shuttle sequence is determined by the crew according to passenger weight, aircraft balance, and operational requirements. Individual requests may therefore not always be possible.",
+  },
+  {
+    question: "Does the helicopter refuel during the tour?",
+    answer: "Yes. The itinerary includes a brief refueling stop at Lukla during the outbound journey and again on the return route before Kathmandu.",
   },
 ];
 

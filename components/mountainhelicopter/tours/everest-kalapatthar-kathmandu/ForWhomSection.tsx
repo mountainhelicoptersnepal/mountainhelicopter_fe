@@ -1,53 +1,33 @@
 const designedForItems = [
   {
-    title: "Short-schedule travellers",
+    title: "Limited-time travelers",
     description:
-      "Travellers on a short schedule who want to experience Mount Everest without completing the two-week trek.",
+      "Travelers with limited time in Nepal who still want to stand within sight of Mount Everest.",
   },
   {
-    title: "Same-day Himalayan visitors",
+    title: "Older travelers and mobility-limited guests",
     description:
-      "Visitors with limited time in Nepal seeking a same-day Himalayan adventure.",
+      "Older travelers, or those with physical limitations, who cannot undertake a multi-day trek to Everest Base Camp or Kala Patthar.",
   },
   {
-    title: "Families and private groups",
+    title: "Photographers and adventure seekers",
     description:
-      "Families and private groups looking for the comfort, flexibility, and exclusivity of a dedicated helicopter charter.",
+      "Photographers and adventure seekers looking for one of the most dramatic short helicopter experiences in the world.",
   },
   {
-    title: "Photographers and creators",
+    title: "Honeymooners, families, and small groups",
     description:
-      "Photographers, filmmakers, and content creators seeking spectacular aerial views of Everest, the Khumbu Glacier, and the surrounding Himalayan peaks.",
+      "Honeymooners, families, and small groups wanting a shared, once-in-a-lifetime Himalayan experience with a proper sit-down breakfast.",
   },
   {
-    title: "Travellers with mobility limitations",
+    title: "EBC trail finishers",
     description:
-      "Travellers with mobility limitations who are unable to undertake the physically demanding trek but can safely board the helicopter and tolerate the high-altitude flight.",
-  },
-  {
-    title: "Senior travellers",
-    description:
-      "Senior travellers who wish to experience the Everest region with minimal physical effort.",
-  },
-  {
-    title: "Shared-seat guests",
-    description:
-      "Solo travellers or couples looking to reserve seats on a shared helicopter flight.",
-  },
-  {
-    title: "Professional teams",
-    description:
-      "Corporate groups, documentary crews, research teams, and expedition support personnel requiring flexible aerial transportation.",
-  },
-  {
-    title: "Adventure travellers",
-    description:
-      "Adventure travellers who want to stand near the world's highest mountain within a single day.",
+      "Trekkers who have already completed the Everest Base Camp trail and want an added Kala Patthar landing experience.",
   },
   {
     title: "Private charter guests",
     description:
-      "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive Himalayan flight experience.",
+      "Anyone seeking a private charter option for a more personalised, flexible-timing tour.",
   },
 ];
 
@@ -62,8 +42,8 @@ export default function ForWhomSection() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-2xl font-semibold leading-tight text-[#092c52] sm:text-[42px]">
-            For whom this flight is{" "}
-            <span className="text-[#e3a62a]">designed for.</span>
+            For Whom Is This Flight{" "}
+            <span className="text-[#e3a62a]">Designed?</span>
           </h2>
         </div>
 

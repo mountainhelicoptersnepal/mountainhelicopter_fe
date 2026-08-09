@@ -1,14 +1,10 @@
 const designedForItems = [
-  { title: "Pilgrims", description: "Pilgrims who wish to visit the sacred Muktinath Temple without undertaking a long road journey or trek." },
-  { title: "Short-schedule travellers", description: "Travellers on a short schedule seeking a same-day pilgrimage from Kathmandu." },
-  { title: "Spiritual travellers", description: "Visitors with limited time in Nepal who want to combine convenience with a spiritual experience." },
-  { title: "Families and religious groups", description: "Families and religious groups looking to travel together on a private helicopter charter." },
-  { title: "Older pilgrims", description: "Older pilgrims who prefer to minimize the physical demands of reaching Muktinath." },
-  { title: "Travellers with limited mobility", description: "Travellers with limited mobility who can safely board the helicopter and complete the short uphill walk from the helipad to the temple." },
-  { title: "Shared-seat guests", description: "Solo travellers or couples looking to reserve seats on a shared helicopter flight." },
-  { title: "Photographers and nature enthusiasts", description: "Photographers and nature enthusiasts interested in the dramatic landscapes of the Kali Gandaki Valley and Mustang region." },
-  { title: "Professional teams", description: "Corporate groups, documentary crews, and research teams requiring flexible aerial transportation." },
-  { title: "Private charter guests", description: "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive flight experience." },
+  { title: "Gokyo Lake Priority", description: "Travelers who want to actually stand at Gokyo Lake, with Everest as a close aerial highlight rather than a second landing." },
+  { title: "Older Travelers", description: "Older travelers, or those with physical limitations, who cannot undertake the multi-day trek to the Gokyo Lakes on foot." },
+  { title: "Photographers", description: "Photographers and adventure seekers looking for a shorter, more direct Himalayan flying experience with a genuine landing." },
+  { title: "Couples and Families", description: "Honeymooners, families, and small groups wanting a shared mountain flight without a full-day commitment." },
+  { title: "Tight Schedules", description: "Travelers with a tight schedule who still want a real touchdown in the Khumbu, not just an aerial view." },
+  { title: "Private Charter Guests", description: "Anyone seeking a private charter option for a more personalized, flexible-timing tour." },
 ];
 
 export default function ForWhomSection() {

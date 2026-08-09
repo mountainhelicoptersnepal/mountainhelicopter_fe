@@ -12,12 +12,12 @@ interface Highlight {
 }
 
 const highlights: Highlight[] = [
-  { id: 1, title: "Muktinath Temple Courtyard", description: "Pilgrims visiting the sacred temple complex", image: "/images/muktinath-pilgrimage/muktinath-gallary.png" },
-  { id: 2, title: "Muktinath Temple at Golden Hour", description: "The shrine glowing beneath the Mustang mountains", image: "/images/muktinath-pilgrimage/muktinath-gallary1.png" },
-  { id: 3, title: "Lower Mustang Road", description: "Dry cliffs and winding tracks through Mustang terrain", image: "/images/muktinath-pilgrimage/muktinath-gallary2.png" },
-  { id: 4, title: "Mustang Settlement and Chorten", description: "Traditional village architecture beneath barren hills", image: "/images/muktinath-pilgrimage/muktinath-gallary3.png" },
-  { id: 5, title: "Ancient Mustang Village", description: "Stone homes, prayer flags, and historic desert landscape", image: "/images/muktinath-pilgrimage/muktinath-gallary4.png" },
-  { id: 6, title: "Kali Gandaki Valley Road", description: "A rugged mountain road above the wide river corridor", image: "/images/muktinath-pilgrimage/muktinath-gallary5.png" }
+  { id: 1, title: "Kathmandu Valley", description: "Temple-studded valley floor and forested ridgelines below the departure route", image: "/images/muktinath-pilgrimage/muktinath-gallary.png" },
+  { id: 2, title: "Lukla and the Khumbu Gateway", description: "A brief refueling stop at the famous mountain airstrip used by Everest trekkers", image: "/images/muktinath-pilgrimage/muktinath-gallary1.png" },
+  { id: 3, title: "Namche Bazaar", description: "The largest Sherpa town in the Khumbu region and a classic acclimatization stop", image: "/images/muktinath-pilgrimage/muktinath-gallary2.png" },
+  { id: 4, title: "Tengboche Monastery", description: "The region's famous Buddhist monastery set against Himalayan backdrops", image: "/images/muktinath-pilgrimage/muktinath-gallary3.png" },
+  { id: 5, title: "Kala Patthar and the Everest Skyline", description: "Close aerial views of Everest, Lhotse, Nuptse, Pumori, and the Khumbu Glacier", image: "/images/muktinath-pilgrimage/muktinath-gallary4.png" },
+  { id: 6, title: "Gokyo Lake Landing", description: "A five to ten minute touchdown beside turquoise glacial water and the Ngozumpa Glacier", image: "/images/muktinath-pilgrimage/muktinath-gallary5.png" }
 ];
 
 export default function FlightHighlights() {

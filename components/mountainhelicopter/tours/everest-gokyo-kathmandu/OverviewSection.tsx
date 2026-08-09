@@ -10,7 +10,7 @@ import {
   ShieldCheck,
   Users,
 } from "lucide-react";
-import MuktinathTourSidebar from "./MuktinathTourSidebar";
+import GokyoTourSidebar from "./GokyoTourSidebar";
 
 const tabs = [
   { label: "Overview", href: "#overview" },
@@ -24,18 +24,18 @@ const tabs = [
 const quickFacts = [
   {
     icon: ShieldCheck,
-    label: "Safety",
-    value: "Experienced mountain pilots and weather-dependent operations",
+    label: "Passenger Insurance",
+    value: "Covered by the operating airline",
   },
   {
     icon: Clock3,
     label: "Duration",
-    value: "Approximately 45-60 minutes",
+    value: "3.5 to 4 hours",
   },
   {
     icon: Mountain,
     label: "Max Altitude Reached",
-    value: "Approximately 3,710 metres",
+    value: "Approximately 5,500 meters / 18,045 feet",
   },
   {
     icon: CalendarDays,
@@ -45,7 +45,7 @@ const quickFacts = [
   {
     icon: Users,
     label: "No Of Pax",
-    value: "4-5 pax",
+    value: "Up to 4 passengers per tour",
   },
   {
     icon: BriefcaseBusiness,
@@ -55,12 +55,12 @@ const quickFacts = [
 ];
 
 const tourHighlights = [
-  "Passenger insurance provided by the operating airline",
-  "Private charter and occasional shared-seat options",
-  "Planned landing near Ranipauwa for Muktinath darshan",
-  "Time for worship at a site sacred to Hindus and Buddhists",
-  "Aerial views of the Annapurna, Dhaulagiri and Nilgiri ranges",
-  "Flexible booking and weather-rescheduling support"
+  "Close aerial overfly of Everest, Lhotse, Nuptse, and Ama Dablam",
+  "Landing at Gokyo Lake, one of the highest freshwater lake systems in the world",
+  "Sweeping views over Everest Base Camp, the Khumbu Glacier, and Kala Patthar",
+  "Route via Lukla, Namche Bazaar, Tengboche Monastery, and Gokyo",
+  "Passenger insurance covered",
+  "Entire trip completed in a single day",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -152,7 +152,7 @@ export default function OverviewSection() {
 
             <a
               href="/pdfs/itinerary_of_muktinath_pilgrimage.pdf"
-              download="Muktinath-Itinerary.pdf"
+              download="Everest-Gokyo-Lake-Landing-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
               <Download
@@ -179,9 +179,9 @@ export default function OverviewSection() {
                 </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts for the Muktinath Helicopter Tour,
-                  including safety, duration, maximum altitude, best seasons,
-                  passenger capacity, and baggage limits.
+                  These are the trip facts for the Everest Mountain Overfly with
+                  Gokyo Lake Landing from Kathmandu, including duration, maximum
+                  altitude, best seasons, passenger capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -245,45 +245,44 @@ export default function OverviewSection() {
                   </p>
 
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
-                    Helicopter Tour to,
+                    Everest Mountain Overfly with,
                     <br />
                     <span className="text-[#f2ae22]">
-                      Muktinath.
+                      Gokyo Lake Landing.
                     </span>
                   </h2>
                 </div>
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
                   <p>
-                    The Muktinath Helicopter Tour combines a Himalayan scenic
-                    flight with a pilgrimage to one of Nepal&apos;s most revered
-                    sacred sites. Muktinath Temple lies in Mustang District at
-                    approximately 3,710 meters, beneath the Thorong La area and
-                    within the Annapurna Conservation Area. The complex is
-                    important to both Hindu and Buddhist traditions.
+                    The Everest Mountain Overfly with Gokyo Lake Landing tour
+                    from Kathmandu combines a close aerial pass over the Everest
+                    region with a landing beside the turquoise waters of Gokyo
+                    Lake, where travelers step out to take in views of Cho Oyu,
+                    Everest, Lhotse, and Makalu mirrored in the still water.
                   </p>
                   <p className="mt-5">
-                    During the flight, passengers see the landscape change from
-                    green hills and deep river valleys to the dry,
-                    high-altitude terrain of Lower Mustang. Dhaulagiri,
-                    Annapurna I, the Nilgiri massif, and other peaks may be
-                    visible in favorable conditions.
+                    The flight carries passengers from Kathmandu to Lukla, the
+                    gateway airstrip of the Khumbu region, before continuing
+                    toward Everest Base Camp, Kala Patthar, and Gokyo Lake.
+                    Along the way, passengers fly over the Dudh Koshi Valley,
+                    Namche Bazaar, and Tengboche, with the landscape shifting
+                    from forested foothills to glacial valleys, rocky moraines,
+                    and snow-covered summits.
                   </p>
                   <p className="mt-5">
-                    When the pilot confirms that conditions are safe, the
-                    helicopter lands at the designated helipad near Ranipauwa.
-                    Passengers then walk uphill towards the temple complex or
-                    use pre-arranged local assistance where available. The visit
-                    may include darshan at the main shrine, the 108 Mukti Dhara
-                    water spouts, and Jwala Mai. The complete plan remains
-                    subject to weather, payload, temple access, landing
-                    conditions, and the pilot&apos;s final decision.
+                    After completing the overfly and Gokyo Lake landing, the
+                    helicopter flies directly back to Kathmandu, with a brief
+                    refueling stop at Lukla along the way. Whether conditions
+                    allow a full landing at Gokyo or a scenic approach, the
+                    route and all flight decisions are made by the pilot and
+                    operations team based on safety.
                   </p>
                 </div>
               </section>
             </main>
 
-            <MuktinathTourSidebar />
+            <GokyoTourSidebar />
           </div>
         </div>
       </section>

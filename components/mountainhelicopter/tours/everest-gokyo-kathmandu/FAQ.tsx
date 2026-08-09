@@ -5,54 +5,34 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Is the Muktinath Helicopter Tour available on a shared basis?",
+    question: "Where does the helicopter land in Gokyo?",
     answer:
-      "Most Muktinath flights operate as private charters. Shared seats may occasionally be arranged when passengers have compatible dates, routes, and payload requirements, but availability is not guaranteed.",
+      "The helicopter lands at the designated landing area near Gokyo Lake, subject to the landing site's condition, weather, and operational clearance. Passengers can step out briefly to experience the lake and surrounding Himalayan landscape.",
   },
   {
-    question: "Where does the helicopter land?",
+    question: "How long do we spend on the ground at Gokyo Lake?",
     answer:
-      "The helicopter generally lands at a designated helipad near Ranipauwa rather than inside the temple complex. Passengers must travel uphill from the landing area to the temple. The exact landing point is determined operationally.",
+      "Each pair typically gets five to ten minutes at Gokyo Lake, enough time to take photos and take in the turquoise water and surrounding peaks before the helicopter returns to Pheriche for the next group.",
   },
   {
-    question: "How far is the helipad from Muktinath Temple?",
+    question: "How many passengers can land at Gokyo Lake at once?",
     answer:
-      "Published estimates vary. Some itineraries describe a 5-10-minute uphill walk, while others allow longer depending on the landing location, steps, crowding and passenger pace. Travellers with limited mobility should request a precise current assessment and arrange assistance in advance.",
+      "Due to the high-altitude payload limitations, passengers are generally taken in pairs for the Gokyo Lake sector. A group of five therefore requires three shuttle rotations from Pheriche.",
   },
   {
-    question: "How long is the helicopter flight?",
+    question: "Why does the helicopter shuttle passengers in pairs?",
     answer:
-      "From Kathmandu, the flight is commonly around 30-45 minutes each way. From Kathmandu, it is commonly around 75-90 minutes each way and may include a fuel stop. Weather, wind and routing can change these times.",
+      "Flying close to 5,500 meters and landing at the high-altitude Gokyo Lake both require strict weight limits for safe helicopter performance. For larger groups, the aircraft shuttles from Pheriche in rotations, so every passenger gets close-flying time near Everest and their own landing at Gokyo Lake.",
   },
   {
-    question: "How long do passengers spend at Muktinath?",
+    question: "What happens while we wait at Pheriche?",
     answer:
-      "The operational ground allocation is commonly around 60-90 minutes, including travel between the helipad and temple. Actual time is controlled by the pilot and may be reduced. Temple queues can affect how many rituals are completed.",
+      "Passengers waiting for their shuttle remain at Pheriche while the helicopter takes the other group to Gokyo Lake. The waiting time depends on the number of passengers, weather, and operational conditions.",
   },
   {
-    question: "Can the ground time be extended?",
+    question: "Can the helicopter land directly at Gokyo Lake from Kathmandu?",
     answer:
-      "Only if the airline approves it as part of the confirmed charter plan. Fuel, crew duty, parking, weather and aircraft scheduling all matter. Do not assume that a two- or three-hour stay is possible without written confirmation.",
-  },
-  {
-    question: "Can older pilgrims or wheelchair users join?",
-    answer:
-      "Some older pilgrims can join successfully, but the helicopter does not remove the uphill temple approach. Wheelchair access and local assistance are not universally guaranteed. Discuss the passenger's mobility and health in detail before paying.",
-  },
-  {
-    question: "Can I bathe beneath the 108 water spouts?",
-    answer:
-      "The ritual is optional. The water is extremely cold, and passengers should consider their medical condition, air temperature and available time. Bring a towel and warm, dry clothing. Skip the bath if conditions or your health make it unsafe.",
-  },
-  {
-    question: "Is there a fuel stop on the Kathmandu route?",
-    answer:
-      "A fuel stop is often required, commonly at Kathmandu or Jomsom, but the location and necessity depend on the aircraft, load, fuel plan, and conditions. The confirmed itinerary should state the expected arrangement.",
-  },
-  {
-    question: "What happens if the weather is unsuitable?",
-    answer:
-      "The operator may delay, reschedule, or cancel the flight. Keep a flexible backup day and review the written cancellation and refund terms before paying. Refund conditions may differ if the helicopter departs, makes a fuel stop, or cannot complete the planned landing. The pilot's safety decision is final.",
+      "No. The itinerary uses Pheriche as the high-altitude shuttle point. The group is divided into smaller passenger loads at Pheriche before continuing toward Gokyo Lake.",
   },
 ];
 

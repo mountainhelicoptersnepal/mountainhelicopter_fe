@@ -1,18 +1,17 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 
 const includes = [
+  "Helicopter flight, Kathmandu to Kala Patthar and return",
   "Certified pilot and crew",
-  "Emergency oxygen on board for passenger safety",
-  "Fuel landing and helipad fees",
-  "Helicopter flight",
-  "Travel Insurance",
+  "Emergency oxygen",
+  "Medical Insurance up to 20,000 NRS",
 ];
 
 const excludes = [
   "Personal meals and beverages",
   "Pilots and staff gratuities",
   "Additional filming",
-  "Breakfasts at hotel everest view",
+  "Breakfasts at Hotel Everest View",
   "Excess or separately transported baggage",
   "Accommodation and meals caused by a delay",
 ];
@@ -21,23 +20,23 @@ const permits = [
   {
     country: "SAARC",
     kathmandu: "500",
-    nationalPark: "3,500",
+    nationalPark: "3500",
     lukla: "500",
-    total: "4,500",
+    total: "4500",
   },
   {
     country: "Other foreign countries",
     kathmandu: "500",
-    nationalPark: "6,000",
+    nationalPark: "6000",
     lukla: "500",
-    total: "7,000",
+    total: "7000",
   },
   {
     country: "Nepal",
     kathmandu: "500",
     nationalPark: "100",
     lukla: "500",
-    total: "1,100",
+    total: "1100",
   },
 ];
 
@@ -99,9 +98,16 @@ export default function InclusionsExclusions() {
         <div className="mt-16 overflow-hidden rounded-[24px] bg-[#071c36] px-6 py-8 shadow-[0_24px_45px_rgba(7,28,54,0.18)] md:px-10 md:py-10">
           <div className="text-center">
             <h2 className="font-manrope text-[11px] font-bold uppercase tracking-[0.32em] text-[#f2b53a]">
-              Permits Excluded (In NRS)
+              Permits Excluded
             </h2>
           </div>
+
+          <p className="mx-auto mt-6 max-w-4xl text-center font-manrope text-sm leading-7 text-white/70">
+            The airport tax is payable at the airport before departure.
+            National park and local permit fees are paid either upon arrival in
+            the Everest region or before takeoff, depending on the flight&apos;s
+            operating arrangements and the crew&apos;s instructions.
+          </p>
 
           <div className="mt-10 overflow-x-auto">
             <table className="w-full min-w-[760px] border-collapse">

@@ -1,56 +1,52 @@
 const itineraryItems = [
   {
     number: "01",
-    title: "Flight Request and confirmation",
+    title: "Flight Request and Confirmation",
     description: [
-      "Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team verifies helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.",
-      "Once everything is confirmed, you receive your final itinerary, reporting time, meeting point, and baggage allowance.",
+      "Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.",
+      "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance, so you can prepare for a smooth and hassle-free journey.",
     ],
   },
   {
     number: "02",
-    title: "Arrival at Tribhuvan International Airport",
+    title: "Helicopter and Shared-Seat Check",
     description: [
-      "At the airport, the ground team checks passenger identification, permit documents, and the flight manifest. Every passenger and piece of baggage must be weighed because total payload affects helicopter performance at high altitude.",
-      "If the total weight exceeds the allowed limit, some baggage may need to be stored or sent separately on another helicopter flight at extra cost. The crew then provides a safety briefing covering boarding, seatbelts, headsets, emergency procedures, and safe movement around the helicopter.",
+      "Our operations team checks the availability and positioning of a suitable helicopter while coordinating with the current Everest region flight schedule.",
+      "For shared flights, solo travelers and couples may be matched with other passengers returning to Kathmandu, subject to availability, aircraft capacity, and operational requirements.",
     ],
   },
   {
     number: "03",
-    title: "Departure from Kathmandu",
+    title: "Weather, Landing, and Payload Assessment",
     description: [
-      "The helicopter lifts from Kathmandu and heads north. Passengers may see the city, the surrounding valley and the forested Shivapuri hills shortly after takeoff. The precise route depends on weather, visibility and air-traffic instructions.",
+      "Before departure, our operations team carefully reviews weather conditions at Gorakshep and along the entire route to Kathmandu, including visibility, wind, and overall flying conditions.",
+      "Once the flight is approved for safe operation, passengers receive their final departure instructions and prepare for the return journey to Kathmandu.",
     ],
   },
   {
     number: "04",
-    title: "Flight Towards the Langtang Region",
+    title: "Safety Briefing and Seat Assignment",
     description: [
-      "Beyond the Kathmandu Valley, the helicopter passes above a landscape of forested ridges, rivers, terraced hills and settlements. In suitable visibility, passengers can see the Ganesh Himal and Langtang ranges as the aircraft climbs towards Gosaikunda.",
+      "Before boarding, the crew provides a comprehensive safety briefing covering the helicopter approach, proper use of seat belts and headsets, onboard communication, and emergency procedures.",
+      "Seating is then carefully assigned according to passenger weight and balance to ensure a safe and comfortable flight. If the total weight exceeds the allowed limit, some baggage will need to be stored or sent on the next helicopter flight, and an extra charge will apply.",
     ],
   },
   {
     number: "05",
-    title: "Approach to the Sacred Lakes",
+    title: "Gorakshep Pickup and Return Readiness",
     description: [
-      "The terrain becomes rocky and alpine as the helicopter approaches the lake system. Gosaikunda, Bhairab Kunda, and Saraswati Kunda may be visible from the air. Before landing, the pilot assesses clouds, wind, snow cover, visibility, payload, and the condition of the designated landing area.",
+      "The helicopter arrives at Gorakshep, the last settlement on the Everest Base Camp trail, and boards the approved passenger load for the return journey.",
+      "As the aircraft lifts off from the high-altitude valley, passengers get one last look at the surrounding peaks before descending out of the Khumbu. Depending on operational requirements, the flight may make a brief refueling stop at Lukla along the way, offering a final view of the gateway airstrip below.",
     ],
   },
   {
     number: "06",
-    title: "Landing Near Gosaikunda Lake (Approximately 4,380 m)",
+    title: "Flight to Kathmandu",
     description: [
-      "When conditions permit, the helicopter lands near Gosaikunda Lake. Passengers generally receive approximately 15-30 minutes on the ground for photographs, sightseeing, and a brief religious observance.",
+      "From Lukla, the helicopter continues on to Kathmandu, completing the journey and ending the tour in the capital.",
+      "The helicopter continues over the mid-hills of Solukhumbu and central Nepal on its way to Kathmandu. Passengers disembark only after receiving crew permission and collect their baggage at Tribhuvan International Airport.",
     ],
   },
-  {
-    number: "07",
-    title: "Return Flight to Kathmandu",
-    description: [
-      "After the lake stop, the helicopter descends across the Langtang foothills and returns to Tribhuvan International Airport. The return flight normally takes approximately 20-30 minutes.",
-      "Our vehicle will then transfer you to your Kathmandu hotel. The complete program is generally finished during the morning, although weather or air-traffic delays can extend the schedule.",
-    ],
-  }
 ];
 
 const itineraryBackgroundImage =
@@ -78,9 +74,9 @@ export default function Itinerary() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-4xl font-semibold leading-[0.95] tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
-            Your Journey,
+            Detailed Gorakshep to Kathmandu,
             <br />
-            <span className="text-[#f0ad1f]">Step by Step.</span>
+            <span className="text-[#f0ad1f]">Helicopter Flight Itinerary.</span>
           </h2>
         </div>
 
@@ -88,17 +84,13 @@ export default function Itinerary() {
           <div className="absolute bottom-0 left-[20px] top-0 w-px bg-[#e0a321] md:left-[23px]" />
 
           <div className="space-y-10 md:space-y-14">
-            {itineraryItems.map((item, index) => (
+            {itineraryItems.map((item) => (
               <article
                 key={item.number}
-                className="relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
+                className="group relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
               >
                 <div
-                  className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border font-manrope text-[12px] font-bold md:h-[42px] md:w-[42px] ${
-                    index === 0
-                      ? "border-[#004d93] bg-[#005da8] text-[#f0ad1f] shadow-[0_0_0_4px_rgba(0,93,168,0.25)]"
-                      : "border-[#d9e4ee] bg-white text-[#7b92a9]"
-                  }`}
+                  className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#d9e4ee] bg-white font-manrope text-[12px] font-bold text-[#7b92a9] transition-all duration-300 group-hover:border-[#004d93] group-hover:bg-[#005da8] group-hover:text-[#f0ad1f] group-hover:shadow-[0_0_0_4px_rgba(0,93,168,0.25)] md:h-[42px] md:w-[42px]"
                 >
                   {item.number}
                 </div>

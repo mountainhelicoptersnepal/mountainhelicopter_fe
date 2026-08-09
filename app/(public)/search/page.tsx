@@ -42,16 +42,16 @@ const packages: PackageResult[] = [
     excerpt:
       "Fly to the Everest region and land near Kala Patthar for a same-morning Himalayan experience.",
     meta: "4-5 hrs | Khumbu",
-    price: "From $1,200",
+    price: "From $1,499",
     image: "/images/tour-section/everest-base-camp.jpg",
     keywords: ["everest", "base camp", "ebc", "kala patthar", "helicopter"],
   },
   {
-    title: "Everest Gokyo Kathmandu Helicopter Tour",
+    title: "Everest Mountain Overfly with Gokyo Lake Landing",
     href: "/tours/everest-gokyo-kathmandu",
     category: "Tour Package",
     excerpt:
-      "A scenic helicopter route into the Gokyo side of the Everest region.",
+      "Fly close to Everest, then land beside the turquoise waters of Gokyo Lake.",
     meta: "4-5 hrs | Khumbu",
     price: "From $1,200",
     image: "/images/tour-section/annapurna-base-camp.jpg",
@@ -64,7 +64,7 @@ const packages: PackageResult[] = [
     excerpt:
       "Fast helicopter return from the Everest trekking route to Kathmandu.",
     meta: "45-60 min | Everest",
-    price: "On request",
+    price: "From $1,200",
     image: "/images/tour-section/muktinath.jpg",
     keywords: ["gorakshep", "kathmandu", "everest", "return", "helicopter"],
   },

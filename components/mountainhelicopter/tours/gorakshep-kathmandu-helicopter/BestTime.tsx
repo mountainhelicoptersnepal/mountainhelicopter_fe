@@ -75,8 +75,8 @@ export default function BestTime() {
           </p>
 
           <h2 className="mx-auto mt-8 max-w-6xl font-fraunces text-4xl font-semibold leading-tight tracking-[0] text-white/90 md:text-5xl">
-            When we recommend flying and when we{" "}
-            <span className="text-[#f2ad22]">don&apos;t.</span>
+            Best Time for a Gorakshep-to-Kathmandu{" "}
+            <span className="text-[#f2ad22]">Helicopter Flight.</span>
           </h2>
         </div>
 

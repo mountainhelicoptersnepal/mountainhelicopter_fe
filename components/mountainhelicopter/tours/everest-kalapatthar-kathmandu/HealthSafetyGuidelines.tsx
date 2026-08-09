@@ -18,8 +18,8 @@ export default function HealthSafetyGuidelines() {
           </p>
 
           <h2 className="mt-6 font-fraunces text-[34px] font-semibold leading-tight tracking-[0] text-white md:text-[46px]">
-            Health, Safety, and Altitude Guidelines{" "}
-            <span className="text-[#e0a321]">(AMS)</span>
+            AMS and What Doctors{" "}
+            <span className="text-[#e0a321]">Recommend?</span>
           </h2>
         </div>
 
@@ -29,16 +29,14 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Pheriche (4,240 m) and during the Everest Base Camp landing
-            (5,364 m), the atmospheric pressure is significantly lower than at
-            sea level. This means that with every breath, your body receives a
-            reduced amount of oxygen compared to what it normally would. While
-            this can make you feel short of breath, lightheaded, or cause your
-            heart to beat a little faster, these are normal responses to the
-            sudden altitude gain. Because your time at high altitude is limited
-            and the helicopter descends promptly after each shuttle run, most
-            healthy passengers experience only mild, temporary effects before
-            descending to lower elevations.
+            Kala Patthar sits at 5,545 meters, where the air holds roughly half
+            the oxygen available at sea level. Because passengers ascend rapidly
+            by helicopter without the days of gradual acclimatization a trek
+            would allow, some may notice mild light-headedness, breathlessness,
+            or a headache during the brief time on the ground. Symptoms are
+            usually short-lived given the brief exposure, and the descent to
+            Hotel Everest View shortly afterwards brings noticeably easier
+            breathing.
           </p>
         </div>
 

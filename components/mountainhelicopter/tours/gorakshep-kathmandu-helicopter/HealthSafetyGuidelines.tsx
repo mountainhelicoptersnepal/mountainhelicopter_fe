@@ -1,7 +1,7 @@
 import { CircleX } from "lucide-react";
 
 const contraindications = [
-  "Have a history of serious heart condition and unstable high blood pressure",
+  "Have a history of serious heart conditions and unstable high blood pressure",
   "Suffer from any chronic respiratory problems like COPD and severe asthma",
   "Active pregnancy (especially past your first trimester)",
   "Have had major surgeries within the past 6 weeks",
@@ -18,7 +18,7 @@ export default function HealthSafetyGuidelines() {
           </p>
 
           <h2 className="mt-6 font-fraunces text-[34px] font-semibold leading-tight tracking-[0] text-white md:text-[46px]">
-            Health, Safety, and Altitude Guidelines{" "}
+            AMS and What Doctors Recommend{" "}
             <span className="text-[#e0a321]">(AMS)</span>
           </h2>
         </div>
@@ -29,19 +29,18 @@ export default function HealthSafetyGuidelines() {
           </h3>
 
           <p className="mt-7 max-w-[1180px] font-manrope text-base leading-8 text-white/68">
-            At Gosaikunda (4,380 m), the atmospheric pressure is significantly
-            lower than at sea level, meaning each breath contains less oxygen
-            than your body is accustomed to. As a result, some passengers may
-            notice mild shortness of breath, lightheadedness, or a slightly
-            faster heartbeat after landing. These are normal physiological
-            responses to the sudden increase in altitude and usually remain mild
-            because the visit is brief. Since the helicopter returns to lower
-            elevations shortly after the stop, most healthy passengers
-            experience only temporary effects that resolve naturally during the
-            descent. Passengers are encouraged to walk slowly, avoid unnecessary
-            exertion, stay hydrated, and follow the pilot&apos;s or crew&apos;s
-            instructions throughout the visit to ensure a safe and comfortable
-            high-altitude experience.
+            Gorakshep lies above 5,000 meters, where headache, nausea,
+            dizziness, fatigue, and poor sleep can all signal acute mountain
+            sickness. These symptoms should never be ignored or hidden. Medical
+            guidance is to stop further ascent as soon as AMS is suspected and
+            to descend promptly and seek medical help if symptoms worsen. Flying
+            directly to Kathmandu reduces exposure to altitude faster than any
+            other option on this route, but a helicopter is transportation, not
+            medical treatment. Confusion, loss of coordination, breathlessness
+            at rest, or reduced consciousness are emergency warning signs that a
+            passenger with severe symptoms may need oxygen, urgent evacuation,
+            and direct hospital coordination rather than an ordinary shared
+            flight.
           </p>
         </div>
 

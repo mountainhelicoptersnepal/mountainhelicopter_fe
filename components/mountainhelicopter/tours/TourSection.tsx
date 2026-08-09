@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const tours = [
   {
-    title: "Everest Base Camp & Kala Patthar Helicopter Tour",
-    meta: "4-5 HRS  |  5,364M  |  KHUMBU, NEPAL",
-    price: "FROM $1,200",
+    title: "Everest Mountain Overfly with Kala Patthar Landing",
+    meta: "4-5 HRS  |  5,545M  |  KALA PATTHAR",
+    price: "FROM $1,499",
     cta: "VIEW EVEREST TOUR",
     href: "/tours/everest-kalapatthar-kathmandu",
     image: "/images/home-section/everest-base-camp.jpg",
@@ -14,20 +14,20 @@ const tours = [
     size: "hero",
   },
   {
-    title: "Everest Gokyo Kathmandu Helicopter Tour",
+    title: "Everest Mountain Overfly with Gokyo Lake Landing",
     meta: "4-5 HRS  |  GOKYO  |  KHUMBU, NEPAL",
     price: "From $1,200",
     cta: "VIEW GOKYO TOUR",
     href: "/tours/everest-gokyo-kathmandu",
     image: "/images/langtang-valley/langtang.jpg",
     detail:
-      "Fly into the Gokyo side of the Everest region for lake, valley, and Himalayan views before returning to Kathmandu.",
+      "Fly close to Everest, then land beside the turquoise waters of Gokyo Lake before returning to Kathmandu.",
     size: "side",
   },
   {
     title: "Gorakshep to Kathmandu Helicopter Flight",
     meta: "45-60 MIN  |  EVEREST REGION",
-    price: "On request",
+    price: "From $1,200",
     cta: "VIEW GORAKSHEP FLIGHT",
     href: "/tours/gorakshep-kathmandu-helicopter",
     image: "/images/gosaikunda-lake/gosaikunda-lake.jpg",

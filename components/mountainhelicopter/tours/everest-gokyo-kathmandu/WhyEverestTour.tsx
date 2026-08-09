@@ -1,17 +1,17 @@
 const reasons = [
   [
-    "The Muktinath Helicopter Tour is a practical choice when pilgrimage, comfort, and time matter more than completing a long road journey or a multi-day trek. It allows elite travelers to reach the sacred site and return to Kathmandu on the same day under favorable conditions.",
+    "A helicopter is the fastest and most direct way to see the Everest region, and this tour combines its two defining experiences: a close aerial view of Everest and a real landing beside the turquoise Gokyo lakes, all in a single day from Kathmandu.",
   ],
-  ["A private charter can be requested by a family, pilgrimage group, or private party."],
+  ["See Everest, Lhotse, Nuptse, and Ama Dablam at close range from the air."],
   [
-    "Shared seats may occasionally be arranged when passengers with compatible dates and payload requirements can be combined.",
+    "Land at Gokyo Lake for five to ten minutes, one of the highest freshwater lake systems in the world, without the multi-day trek to reach it on foot.",
   ],
-  ["The flight reduces the long road journey and physical demands of the trekking route."],
+  ["Complete the entire experience in 3.5 to 4 hours, round trip from Kathmandu."],
   [
-    "Hotel transfers, permit processing, passenger weighing, and a safety briefing can be coordinated in the departure city.",
+    "Every passenger gets an equal share of close-up flying time near Everest and a full landing at Gokyo Lake, with the route flown to give each traveler the same experience of the Everest skyline from the air.",
   ],
   [
-    "A Kathmandu charter may include a planned fuel stop, while Kathmandu offers the shorter flight.",
+    "Ideal for travelers who want the Gokyo Lake landing as the priority, with the Everest skyline as a close aerial highlight.",
   ],
 ];
 
@@ -20,7 +20,7 @@ export default function WhyEverestTour() {
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28">
         <h2 className="text-center font-fraunces text-2xl font-semibold leading-none tracking-[0] text-[#061a3a] sm:text-[42px]">
-          Why Fly to Muktinath by Helicopter?
+          Why Fly Over Mount Everest with a Gokyo Lake Landing from Kathmandu?
         </h2>
 
         <div className="mt-12">

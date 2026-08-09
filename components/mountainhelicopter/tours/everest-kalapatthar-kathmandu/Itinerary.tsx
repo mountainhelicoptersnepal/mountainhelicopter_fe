@@ -1,7 +1,7 @@
 const itineraryItems = [
   {
     number: "01",
-    title: "Flight Request and confirmation",
+    title: "Flight Request and Confirmation",
     description: [
       "Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal.",
       "Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.",
@@ -10,68 +10,46 @@ const itineraryItems = [
   },
   {
     number: "02",
-    title: "Arrival at Tribhuban International Airport",
+    title: "Safety Briefing and Boarding",
     description: [
-      "There at the airport our ground team will have already processed your permit documentation the previous day and at the helipad you will undergo weight checking of luggage and passenger.",
-      "If the total weight exceeds the allowed limit, some baggage will need to be stored or sent separately in the next helicopter flight but will charge an extra cost in this case.",
+      "Before boarding, the crew briefs passengers on seating, restraint belts, communication signals, and in-flight procedures.",
+      "If the total weight exceeds the allowed limit, some baggage will need to be stored or sent on the next helicopter flight, and an extra charge will apply.",
     ],
   },
   {
     number: "03",
-    title: "Departure from Kathmandu",
+    title: "Flight from Kathmandu to Lukla",
     description: [
-      "The helicopter will lift from Kathmandu heading northeast and immediately you will be seeing the open view of Kathmandu valley, the city, temples etc.",
-      "Within 10 minutes there will be a view of Himalayan foothills and the first line of middle hills.",
-      "Our pilot provides live commentary, identifying landmarks and peaks as they appear.",
+      "The helicopter flies east across hills, farmland, and river valleys to Lukla, where a brief stop is made for refueling.",
     ],
   },
   {
     number: "04",
-    title: "Refueling Stop at Lukla, Tenzing-Hillary Airport (2,860m)",
+    title: "Flight from Lukla to the Everest Region",
     description: [
-      "The helicopter makes a refueling stop at Lukla airport before continuing deeper into the Khumbu.",
-      "Lukla is famous for its extremely short runway (527 meters). It is a one-end uphill design on a mountain cliff at the far end.",
-      "While refueling you can step out shortly and observe the airport which serves as a trekking gateway for all Everest expeditions.",
-      "The stop takes approximately 15-20 minutes before the helicopter continues northeast towards Everest Base Camp.",
+      "From Lukla, the helicopter continues over Namche Bazaar and Tengboche Monastery, climbing along the Dudh Koshi Valley toward the high peaks of the Everest region before approaching the Kala Patthar area.",
     ],
   },
   {
     number: "05",
-    title: "Flyover at Namche Bazaar (3,440m)",
+    title: "Kala Patthar Landing",
     description: [
-      "Namche Bazaar is a cool place that is shaped like a horseshoe. It is the start of the Khumbu and also the way into the Khumbu.",
-      "On Saturdays the market in Namche Bazaar is a lot of fun. You can see the market place. There are bakeries and teahouses everywhere.",
-      "All the terraces in Namche Bazaar will be full of people on Saturdays. This is where all trekkers spend their mandatory first rest day.",
+      "The helicopter flies close past the Kala Patthar ridgeline, offering dramatic aerial views of Everest, Lhotse, Nuptse, and Pumori before touching down at around 5,545 meters.",
+      "Passengers step out onto the high ridge to enjoy sweeping views of Everest, Lhotse, Nuptse, and Ama Dablam.",
     ],
   },
   {
     number: "06",
-    title: "Flyover at Tengboche Monastery (3,860m)",
+    title: "Breakfast at Hotel Everest View",
     description: [
-      "A most holy site for the Buddhists in the region, located on the edge of a steep cliff ridge in between Imja and Dudh Kosi valley.",
-      "It is the most famous Buddhist monastery in the Khumbu region. This monastery was built in 1916 and was destroyed by the 1934 earthquake, it was rebuilt but again burned in a fire in 1989 and then restored again in 1993.",
-      "On clear autumn days, the sound of monks praying echoes in the valley.",
+      "After the Kala Patthar landing, the helicopter continues to Hotel Everest View at Syangboche, where passengers enjoy breakfast with panoramic views of Everest, Ama Dablam, and Thamserku before flying back to Lukla or onward along the confirmed route.",
     ],
   },
   {
     number: "07",
-    title: "Landing at Pheriche (4,240m)",
+    title: "Return Flight to Kathmandu",
     description: [
-      "The helicopter lands at Pheriche, the high-altitude village at 4,240m that serves as the shuttle base point for the onward journey to Everest Base Camp.",
-      "There is a medical clinic run by the Himalayan Rescue Association specifically for altitude sickness.",
-      "When the group consists of 4 or 5 passengers, the helicopter conducts 2 shuttle runs from Pheriche to Everest Base Camp.",
-      "The first group of passengers is flown up to Everest Base Camp and lands for a few minutes on the ground, allowing passengers to step out, take photographs, and take in the raw scale of the Khumbu Glacier, the Khumbu Icefall, and the expedition tents surrounding them, before being flown back to Pheriche.",
-      "The helicopter then takes the second group of passengers for the same experience.",
-      "Once both shuttle runs are complete, all passengers are reunited at Pheriche and board the helicopter together for the combined return flight to Kathmandu.",
-    ],
-  },
-  {
-    number: "08",
-    title: "Return Flight to Kathmandu from Pheriche",
-    description: [
-      "Once both shuttle groups have completed their Everest Base Camp landing, all passengers are gathered at Pheriche for a combined return flight to Kathmandu.",
-      "We follow our route back down through the Khumbu Valley, past Tengboche, across Namche, over the Dudh Koshi gorge, with a possible fuel stop in Lukla, and then south over the foothills back to Kathmandu. This is a short 45-55 minute flight.",
-      "We pick you up from the helipad and drop you off right at the domestic terminal. By before mid-morning you are back, and all the afternoon is yours.",
+      "After breakfast, the helicopter retraces its route through Lukla for refuelling before returning to Kathmandu.",
     ],
   },
 ];
@@ -101,9 +79,9 @@ export default function Itinerary() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-4xl font-semibold leading-[0.95] tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
-            Your Journey,
+            Detailed Everest Mountain Overfly,
             <br />
-            <span className="text-[#f0ad1f]">Step by Step.</span>
+            <span className="text-[#f0ad1f]">with Kala Patthar Landing.</span>
           </h2>
         </div>
 
@@ -111,17 +89,13 @@ export default function Itinerary() {
           <div className="absolute bottom-0 left-[20px] top-0 w-px bg-[#e0a321] md:left-[23px]" />
 
           <div className="space-y-10 md:space-y-14">
-            {itineraryItems.map((item, index) => (
+            {itineraryItems.map((item) => (
               <article
                 key={item.number}
-                className="relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
+                className="group relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
               >
                 <div
-                  className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border font-manrope text-[12px] font-bold md:h-[42px] md:w-[42px] ${
-                    index === 0
-                      ? "border-[#004d93] bg-[#005da8] text-[#f0ad1f] shadow-[0_0_0_4px_rgba(0,93,168,0.25)]"
-                      : "border-[#d9e4ee] bg-white text-[#7b92a9]"
-                  }`}
+                  className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#d9e4ee] bg-white font-manrope text-[12px] font-bold text-[#7b92a9] transition-all duration-300 group-hover:border-[#004d93] group-hover:bg-[#005da8] group-hover:text-[#f0ad1f] group-hover:shadow-[0_0_0_4px_rgba(0,93,168,0.25)] md:h-[42px] md:w-[42px]"
                 >
                   {item.number}
                 </div>

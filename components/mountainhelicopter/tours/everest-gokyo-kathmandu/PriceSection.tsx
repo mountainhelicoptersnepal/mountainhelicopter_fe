@@ -3,39 +3,36 @@
 const plans = [
   {
     title: "Shared Seat",
-    subtitle: "Join a scheduled dawn departure",
-    price: "On request",
+    subtitle: "Group joining seat",
+    price: "$1,499",
     unit: "per person",
     button: "Book Shared Seat",
     href: "/contact#inquiry-form",
     featured: false,
     features: [
-      "Hotel pickup & drop in Kathmandu",
+      "Kathmandu to Lukla flight",
+      "Everest mountain overfly",
+      "Gokyo Lake landing",
+      "Passenger insurance covered",
       "Pre-flight safety briefing",
-      "Window seat (every passenger)",
-      "Planned landing when conditions permit",
-      "Pre-flight safety briefing",
-      "All park entry fees",
       "Oxygen on board (if needed)",
     ],
   },
   {
     title: "Private Charter",
-    subtitle: "The whole helicopter, on your schedule",
-    price: "$5,800",
+    subtitle: "Based on group size",
+    price: "On request",
     unit: "per helicopter",
     button: "Charter the Helicopter",
     href: "/contact#inquiry-form",
     featured: true,
     features: [
       "Everything in Shared Seat",
-      "Custom departure time",
-      "Custom landing points (where permitted)",
-      "Ground time as approved by pilot",
-      "Private briefing",
+      "Private helicopter arrangement",
+      "Flexible timing where operationally possible",
       "Dedicated ground coordinator",
-      "Up to 5 passengers full aircraft",
-      "Priority weather rescheduling",
+      "Route and landing subject to pilot approval",
+      "Priority weather coordination",
     ],
   },
 ];
@@ -152,8 +149,8 @@ export default function PriceSection() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-[620px] font-manrope text-[14px] leading-7 text-[#7b8795] sm:text-[15px]">
-            Shared by the seat, or the cabin to yourselves. Both fly to the same
-            standard.
+            Group joining seat, or private charter based on your group size.
+            Both follow the same safety-led mountain flight plan.
           </p>
         </div>
 
@@ -165,7 +162,8 @@ export default function PriceSection() {
         </div>
 
         <p className="mt-8 text-center font-manrope text-[12px] leading-6 text-[#7b8795] sm:text-[13px]">
-          Fares exclude: Travel insurance · Gratuities
+          Fares exclude: permits, airport taxes, personal meals, gratuities, and
+          expenses caused by delays.
         </p>
       </div>
     </section>

@@ -5,29 +5,29 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "How long does the Gosaikunda helicopter tour take?",
+    question: "How is this different from the Gorakshep-to-Lukla helicopter flight?",
     answer:
-      "The flight normally takes approximately 20-30 minutes each way from Kathmandu. With airport formalities and a short lake stop, the complete hotel-to-hotel program is commonly around 1.5-2 hours, although delays are possible.",
+      "The Gorakshep to Lukla flight covers only the short, high-altitude sector, leaving the Lukla-to-Kathmandu leg to be arranged separately via a fixed-wing ticket or road transfer. This flight covers the entire distance from Gorakshep to Kathmandu in a single, continuous helicopter journey, with no separate connections to book or risk.",
   },
   {
-    question: "How long can passengers stay at Gosaikunda?",
+    question: "Why is passenger weight important for a Gorakshep helicopter flight?",
     answer:
-      "Ground time is usually around 15-30 minutes. It is kept short because passengers reach approximately 4,380 meters without acclimatization. The pilot determines the actual duration according to passenger well-being, weather, and operational conditions.",
+      "Because Gorakshep is located above 5,000 meters, the helicopter's available payload is more restricted than at lower elevations. Passenger and baggage weights are therefore checked before departure to ensure the aircraft can operate safely.",
   },
   {
-    question: "Can I perform a puja or touch the holy water?",
+    question: "Why does the helicopter stop at Lukla if this is a direct Kathmandu flight?",
     answer:
-      "A brief puja or respectful contact with the water may be possible if the landing location, weather, and available time allow. Tell the booking team about your religious requirements in advance and follow the crew's instructions at the lake.",
+      "The stop at Lukla is for refueling only, not a passenger transfer. Most passengers remain with the aircraft during this brief stop before the flight continues to Kathmandu.",
   },
   {
-    question: "Is there an age limit for the tour?",
+    question: "Why might the helicopter stop at Pheriche?",
     answer:
-      "There is no single universal age limit for every operator. Children, older passengers, and anyone with a medical condition require an individual suitability assessment, and the airline may apply its own minimum-age or boarding rules. Parents should obtain medical advice before taking a young child to high altitude.",
+      "Pheriche sits much lower than Gorakshep and is used to manage payloads safely at altitude. Part of the group may be set down there first while the helicopter returns for the rest before everyone continues on toward Kathmandu together.",
   },
   {
-    question: "What should I wear?",
+    question: "What happens to my baggage if a Pheriche shuttle is required?",
     answer:
-      "Wear thermal layers, an insulated and wind-resistant jacket, warm trousers, gloves, a hat, UV-protective sunglasses, and closed shoes with good grip. Carry only a small daypack and secure loose items around the helicopter.",
+      "The crew coordinates passenger and baggage loading in accordance with the aircraft's payload limitations. If some baggage cannot be carried on the initial lift, the operations team will arrange its movement according to the available flight plan, but it will incur extra charges for the cargo.",
   },
 ];
 

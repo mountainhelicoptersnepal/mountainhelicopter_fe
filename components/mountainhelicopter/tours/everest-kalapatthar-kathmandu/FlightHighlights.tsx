@@ -14,50 +14,50 @@ interface Highlight {
 const highlights: Highlight[] = [
   {
     id: 1,
-    title: "Cloud-Wrapped Himalayan Peak",
-    description: "A dramatic summit rising through low mountain cloud",
+    title: "Kathmandu Valley",
+    description: "The flight lifts off over Kathmandu's temple-studded valley floor and forested ridgelines, giving an early aerial view of the capital before the terrain begins to rise.",
     image: "/images/everest-base-camp/everest-gallary.jpg",
   },
   {
     id: 2,
-    title: "Everest Region Panorama",
-    description: "Wide Himalayan views across the Khumbu landscape",
+    title: "Lukla and the Khumbu Gateway",
+    description: "The first stop is Lukla, the mountain town famous for Tenzing-Hillary Airport and its short, sloping runway.",
     image: "/images/everest-base-camp/everest-gallary1.jpg",
   },
   {
     id: 3,
-    title: "Everest and the Khumbu Glacier",
-    description: "Glacier and high peaks below the world’s highest mountain",
+    title: "Namche Bazaar",
+    description: "From Lukla, the route continues over Namche Bazaar, the largest Sherpa town in the Khumbu region.",
     image: "/images/everest-base-camp/everest-gallary2.png",
   },
   {
     id: 4,
-    title: "Sunrise Over Everest Range",
-    description: "Warm first light across the Everest skyline",
+    title: "Tengboche Monastery",
+    description: "The flight passes above Tengboche, home to the region's most famous Buddhist monastery.",
     image: "/images/everest-base-camp/everest-gallary3.jpg",
   },
   {
     id: 5,
-    title: "Snow Peaks Above Forested Hills",
-    description: "Lower Khumbu hills opening toward the high Himalaya",
+    title: "Pheriche",
+    description: "Pheriche is a working trekking-trail village on the Everest Base Camp route, set against the wide, high-altitude Khumbu valley.",
     image: "/images/everest-base-camp/everest-gallary4.jpg",
   },
   {
     id: 6,
-    title: "Kala Patthar Snowfield",
-    description: "Bright high-altitude snow views near the Everest viewpoint",
+    title: "Everest Base Camp and Khumbu Glacier",
+    description: "The flight passes over the Khumbu Glacier and Everest Base Camp area, offering aerial views of ice formations and glacial terrain.",
     image: "/images/everest-base-camp/everest-gallary5.jpg",
   },
   {
     id: 7,
-    title: "Ama Dablam Valley View",
-    description: "The iconic peak framed by the valley approach",
+    title: "Kala Patthar Landing",
+    description: "At 5,545 meters, Kala Patthar is the highlight of the tour and one of the highest points in the world reachable by helicopter landing.",
     image: "/images/everest-base-camp/everest-gallary6.jpg",
   },
   {
     id: 8,
-    title: "Himalayan Sunset Above Clouds",
-    description: "Evening light over snowy peaks and a cloud-filled valley",
+    title: "Hotel Everest View",
+    description: "After the overfly, the helicopter heads to Hotel Everest View in Syangboche for breakfast with sweeping Himalayan views.",
     image: "/images/everest-base-camp/everest-gallary7.jpg",
   },
 ];
@@ -68,7 +68,7 @@ export default function FlightHighlights() {
       {/* Title */}
       <div className="mb-10 md:mb-14 text-center px-4">
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
-          Highlights Along The flight Route
+          Major Attractions on Mount Everest Overfly with Kala Patthar Landing and Breakfast at HEV
         </h2>
       </div>
 

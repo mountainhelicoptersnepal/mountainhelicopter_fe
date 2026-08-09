@@ -30,12 +30,12 @@ const quickFacts = [
   {
     icon: Clock3,
     label: "Duration",
-    value: "40 to 50 minutes",
+    value: "4 to 5 hours",
   },
   {
     icon: Mountain,
     label: "Max Altitude Reached",
-    value: "5,545 metres",
+    value: "5,545 metres / 18,192 feet (Kala Patthar)",
   },
   {
     icon: CalendarDays,
@@ -45,7 +45,7 @@ const quickFacts = [
   {
     icon: Users,
     label: "No Of Pax",
-    value: "4 or 5 passengers",
+    value: "Up to 5 passengers per tour",
   },
   {
     icon: BriefcaseBusiness,
@@ -55,12 +55,11 @@ const quickFacts = [
 ];
 
 const tourHighlights = [
-  "Passenger Insurance Included",
-  "Daily Fixed Departures",
-  "Hotel Pickup & Drop-off service (in Kathmandu)",
-  "Spectacular Himalayan Aerial Views",
-  "Reliable Flights with Fewer Weather Delays",
-  "Flexible Booking Support",
+  "Landing at Kala Patthar (5,545m), the closest point to Mount Everest reachable without climbing",
+  "Close-up aerial views of Everest, Lhotse, Nuptse, Ama Dablam, and the Khumbu Glacier",
+  "Route via Lukla, Namche Bazaar, Tengboche Monastery, and HEV",
+  "20-to-30-minute breakfast stop at Hotel Everest View, the highest-placed hotel in the world",
+  "Passenger insurance covered",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -152,7 +151,7 @@ export default function OverviewSection() {
 
             <a
               href="/pdfs/itinerary_of_ebc.pdf"
-              download="Everest-Base-Camp-Itinerary.pdf"
+              download="Everest-Kala-Patthar-HEV-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
               <Download
@@ -179,9 +178,10 @@ export default function OverviewSection() {
                 </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts for the Everest Base Camp Helicopter
-                  Tour, including safety, duration, maximum altitude, finest
-                  season, passenger capacity, and baggage limits.
+                  These are the trip facts for the Everest Mountain Overfly with
+                  Kala Patthar Landing and Breakfast at Hotel Everest View,
+                  including duration, maximum altitude, finest season, passenger
+                  capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -245,30 +245,42 @@ export default function OverviewSection() {
                   </p>
 
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
-                    Helicopter Tour to,
+                    Everest Mountain Overfly,
                     <br />
                     <span className="text-[#f2ae22]">
-                      Everest Base Camp.
+                      Kala Patthar and HEV.
                     </span>
                   </h2>
                 </div>
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
                   <p>
-                    The Everest Base Camp Helicopter Tour is not just an
-                    experience of flying, it is an entire experience of being in
-                    the presence of the highest peak on earth. The helicopter
-                    tour to Everest Base Camp begins early in the morning where
-                    the helicopter takes off from the Tribhuvan airport in
-                    Kathmandu and flies towards the north east where it tours
-                    over the beautiful scenic paths of Khumbu region. In no time
-                    of taking off, in around ninety minutes the helicopter will
-                    be viewing the beautiful Khumbu glacier (a popular view
-                    point), scenic Lhotse and the dreamy Mt. Everest
-                    (8848.86m). The Everest Base Camp Helicopter Tour with
-                    landing is an excellent opportunity for travelers who cannot
-                    go trekking and want to feel the thrill of standing at the
-                    lap of Mt. Everest.
+                    The Everest Mountain Overfly with Kala Patthar Landing and
+                    Breakfast at Hotel Everest View is the complete
+                    Everest-by-air experience, a touchdown at Kala Patthar&apos;s
+                    famous ridgeline at 5,545 metres, followed by breakfast with
+                    a 360-degree Himalayan view, all completed in a single day
+                    from Kathmandu. The flight carries passengers from Kathmandu
+                    to Lukla and up to Kala Patthar, the same iconic viewpoint
+                    that Everest Base Camp trekkers walk days to reach, before
+                    descending to Hotel Everest View for a sit-down breakfast
+                    and returning to Kathmandu.
+                  </p>
+                  <p className="mt-5">
+                    The helicopter first flies from Kathmandu to Lukla, then
+                    continues deep into the Khumbu Valley, passing over Namche
+                    Bazaar and Tengboche as the terrain opens into the
+                    high-altitude approach to the Everest region. From there,
+                    the flight climbs close past Everest Base Camp and the
+                    Khumbu Glacier before touching down at Kala Patthar for a
+                    brief halt to take in the view and capture photos.
+                  </p>
+                  <p className="mt-5">
+                    After the Kala Patthar landing, the helicopter flies to
+                    Hotel Everest View at Syangboche, where a relaxed breakfast
+                    stop is served with sweeping views of Everest, Ama Dablam
+                    and Thamserku. From there, the flight retraces its route
+                    through Lukla and back to Kathmandu.
                   </p>
                 </div>
               </section>

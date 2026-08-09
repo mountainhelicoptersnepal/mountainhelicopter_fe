@@ -10,7 +10,7 @@ import {
   ShieldCheck,
   Users,
 } from "lucide-react";
-import GosaikundaTourSidebar from "./GosaikundaTourSidebar";
+import GorakshepTourSidebar from "./GorakshepTourSidebar";
 
 const tabs = [
   { label: "Overview", href: "#overview" },
@@ -25,17 +25,17 @@ const quickFacts = [
   {
     icon: ShieldCheck,
     label: "Safety",
-    value: "Experienced mountain pilots and weather-dependent operations",
+    value: "Experienced high-altitude pilots",
   },
   {
     icon: Clock3,
     label: "Duration",
-    value: "20-30 minutes",
+    value: "1.5 to 2 hours",
   },
   {
     icon: Mountain,
     label: "Max Altitude Reached",
-    value: "Approximately 4,380 metres",
+    value: "5,164 meters / 16,942 feet",
   },
   {
     icon: CalendarDays,
@@ -45,22 +45,22 @@ const quickFacts = [
   {
     icon: Users,
     label: "No Of Pax",
-    value: "4-5 pax",
+    value: "4 or 5 passengers",
   },
   {
     icon: BriefcaseBusiness,
     label: "Baggage",
-    value: "400 kg (passenger weight + baggage weight per helicopter)",
+    value: "400 kg total (combined passenger and baggage weight per helicopter)",
   },
 ];
 
 const tourHighlights = [
   "Passenger insurance included",
-  "Shared departures and private charter options",
-  "Planned landing near Gosaikunda Lake when conditions permit",
-  "Aerial views of Shivapuri, Langtang and Ganesh Himal",
-  "Time for photographs and a brief religious observance",
-  "Flexible booking support",
+  "Daily fixed departures",
+  "A single continuous journey, no fixed-wing connection or Ramechhap transfer required",
+  "Spectacular Himalayan aerial views across the full length of the Khumbu region",
+  "Reliable flights with fewer connection risks than a two-stage Lukla journey",
+  "Flexible booking support before and during your trip",
 ];
 
 function smoothScrollTo(targetY: number, duration = 700) {
@@ -152,7 +152,7 @@ export default function OverviewSection() {
 
             <a
               href="/pdfs/itinerary_of_gosaikunda.pdf"
-              download="Gosaikunda-Itinerary.pdf"
+              download="Gorakshep-Kathmandu-Helicopter-Flight-Itinerary.pdf"
               className="group ml-1 flex h-10 shrink-0 items-center gap-2 rounded-sm bg-[#073763] px-4 font-manrope text-xs font-bold uppercase tracking-[0.1em] text-white shadow-[0_8px_20px_rgba(7,55,99,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f6b51f] hover:text-[#073763] md:ml-auto md:px-5"
             >
               <Download
@@ -174,14 +174,14 @@ export default function OverviewSection() {
             <main className="min-w-0">
               {/* QUICK FACTS */}
               <section>
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Quick Facts
-                </h3>
+                </h2>
 
                 <p className="mt-5 max-w-6xl font-manrope text-sm leading-7 text-[#687482]">
-                  These are the trip facts for the Gosaikunda Helicopter Tour,
-                  including the usual duration, operating season, passenger
-                  capacity, altitude, and payload limits.
+                  These are the trip facts for the Gorakshep to Kathmandu
+                  Helicopter Flight, including duration, maximum altitude,
+                  finest season, passenger capacity, and baggage limits.
                 </p>
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -214,9 +214,9 @@ export default function OverviewSection() {
 
               {/* TOUR HIGHLIGHTS */}
               <section className="mt-14">
-                <h3 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
+                <h2 className="font-manrope text-xs font-bold uppercase tracking-[0.24em] text-[#071f3d]">
                   Highlights
-                </h3>
+                </h2>
 
                 <div className="mt-1 rounded-[28px] bg-white px-5 py-8 shadow-[0_18px_40px_rgba(8,38,71,0.08)] md:px-8 lg:px-9">
                   <div className="space-y-5">
@@ -245,47 +245,45 @@ export default function OverviewSection() {
                   </p>
 
                   <h2 className="font-fraunces text-4xl font-semibold leading-[0.98] tracking-[0] text-[#061a3a] md:text-5xl">
-                    Helicopter Tour to,
+                    Gorakshep to Kathmandu,
                     <br />
                     <span className="text-[#f2ae22]">
-                      Gosaikunda Lake.
+                      Helicopter Flight.
                     </span>
                   </h2>
                 </div>
 
                 <div className="max-w-6xl font-manrope text-base leading-8 text-[#687482]">
                   <p>
-                    The Gosaikunda Helicopter Tour is a scenic flight and
-                    pilgrimage journey from Kathmandu to one of Nepal&apos;s most
-                    revered alpine lakes. Located within Langtang National Park
-                    in Rasuwa District, Gosaikunda lies at approximately 4,380
-                    meters and holds deep importance for both Hindu and Buddhist
-                    communities.
+                    After completing your Everest region adventure, the
+                    Gorakshep to Kathmandu helicopter flight is the fastest and
+                    most convenient way to return to the capital. Instead of
+                    trekking back to Lukla, waiting for a scheduled fixed-wing
+                    flight, or making a long road transfer from Ramechhap, you
+                    can fly directly to Kathmandu in one seamless journey.
                   </p>
                   <p className="mt-5">
-                    The tour begins with a transfer from your Kathmandu hotel to
-                    Tribhuvan International Airport, available on request for an
-                    additional charge. After passenger weighing, document checks,
-                    and a safety briefing, the helicopter flies north over the
-                    green ridges surrounding Kathmandu and towards the Langtang
-                    Himalayas. The journey normally takes approximately 20-30
-                    minutes each way, depending on route, weather, and air
-                    traffic instructions.
+                    Unlike the Gorakshep to Lukla helicopter flight, which still
+                    requires additional flights or ground transfers, this option
+                    completes your return in a single trip. It saves valuable
+                    time, eliminates multiple travel connections, and helps avoid
+                    the delays and cancellations that frequently affect Lukla
+                    flights.
                   </p>
                   <p className="mt-5">
-                    When conditions permit, the helicopter lands at the
-                    designated site near Gosaikunda. Passengers can step outside
-                    for photographs, take in the sacred landscape, and perform a
-                    short puja or other respectful observance before returning
-                    to Kathmandu. Every departure and landing remains subject to
-                    weather, payload, landing-site conditions, and the pilot&apos;s
-                    final safety decision.
+                    Mountain Helicopters Nepal operates this route as both a
+                    shared-seat and private charter service. Because Gorakshep
+                    is located above 5,000 meters, helicopter payload is
+                    carefully managed to ensure a safe flight back to Kathmandu.
+                    This service is designed as a reliable transportation option
+                    for trekkers returning from the Everest region and is not a
+                    sightseeing tour or an emergency evacuation service.
                   </p>
                 </div>
               </section>
             </main>
 
-            <GosaikundaTourSidebar />
+            <GorakshepTourSidebar />
           </div>
         </div>
       </section>

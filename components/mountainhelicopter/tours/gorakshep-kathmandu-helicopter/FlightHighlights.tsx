@@ -14,38 +14,38 @@ interface Highlight {
 const highlights: Highlight[] = [
   {
     id: 1,
-    title: "Gosaikunda Lake Panorama",
-    description: "The sacred blue lake surrounded by rugged hills",
+    title: "Gorakshep and the Khumbu Glacier",
+    description: "Soon after takeoff, passengers get a last look at the sandy Gorakshep basin, its lodges, and sections of the Khumbu Glacier. The exact departure direction depends on the wind and terrain on the day.",
     image: "/images/gosaikunda-lake/gosaikunda-lake.png",
   },
   {
     id: 2,
-    title: "Lakeside Shrine",
-    description: "A stupa and prayer flags beside the snowy lake shore",
+    title: "Pumori, Nuptse, and Lhotse",
+    description: "Several major upper-Khumbu peaks are visible in clear conditions, and Everest itself can sometimes be spotted, though it's partly screened from many angles by the surrounding giants.",
     image: "/images/gosaikunda-lake/gosaikunda-lake1.png",
   },
   {
     id: 3,
-    title: "Snow-Covered Gosaikunda",
-    description: "The lake framed by fresh snow and winter ridges",
+    title: "Lobuche and Pheriche",
+    description: "The route often passes over Lobuche, Thukla, and Pheriche, which also doubles as the shuttle and regrouping point when the full Gorakshep group needs to be split across multiple lifts.",
     image: "/images/gosaikunda-lake/gosaikunda-lake2.png",
   },
   {
     id: 4,
-    title: "Prayer Flags by the Lake",
-    description: "Pilgrimage flags along the rocky lakeside path",
+    title: "Ama Dablam and the Lower Khumbu Villages",
+    description: "Ama Dablam is usually the easiest peak to pick out lower down the valley, with Pangboche and Tengboche appearing depending on the exact flight line.",
     image: "/images/gosaikunda-lake/gosaikunda-lake3.png",
   },
   {
     id: 5,
-    title: "Mirror Lake Reflection",
-    description: "Clear alpine water reflecting the surrounding hills",
+    title: "Dudh Koshi Valley and Lukla",
+    description: "Forested slopes and the Dudh Koshi River system lead toward Lukla, where the helicopter typically makes a brief refueling stop before continuing.",
     image: "/images/gosaikunda-lake/gosaikunda-lake4.png",
   },
   {
     id: 6,
-    title: "Turquoise Alpine Water",
-    description: "Transparent sacred lake water beneath rocky peaks",
+    title: "Terraced Hills and the Kathmandu Valley",
+    description: "Beyond Lukla, the terrain flattens into the terraced mid-hills of Solukhumbu and central Nepal before the temple-studded Kathmandu Valley comes into view on the final approach.",
     image: "/images/gosaikunda-lake/gosaikunda-lake5.png",
   },
 ];
@@ -56,7 +56,7 @@ export default function FlightHighlights() {
       {/* Title */}
       <div className="mb-10 md:mb-14 text-center px-4">
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
-          Highlights Along The flight Route
+          Major Attractions on the Gorakshep to Kathmandu Helicopter Flight
         </h2>
       </div>
 

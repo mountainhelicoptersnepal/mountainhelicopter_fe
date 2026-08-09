@@ -1,43 +1,38 @@
 const designedForItems = [
   {
-    title: "Pilgrims",
+    title: "Everest region trekkers",
     description:
-      "Pilgrims wishing to visit the sacred Gosaikunda Lake without undertaking the multi-day pilgrimage trek.",
+      "Everest region trekkers who want to reach Kathmandu the same day, without a Lukla stopover.",
   },
   {
-    title: "Short-schedule travellers",
+    title: "Kala Patthar return passengers",
     description:
-      "Travellers on a short schedule who want to experience Gosaikunda and return to Kathmandu on the same day.",
+      "Passengers returning after a Kala Patthar climb who want a single, uninterrupted journey home.",
   },
   {
-    title: "Families and private groups",
+    title: "Climbers and expedition members",
     description:
-      "Families and private groups looking for the comfort, flexibility, and privacy of a dedicated helicopter charter.",
+      "Climbers and expedition members traveling from Gorakshep to Kathmandu who have an international flight to catch and cannot risk delays in Lukla.",
   },
   {
-    title: "Senior travellers",
+    title: "Families and groups",
     description:
-      "Senior travellers who wish to visit the sacred lake with minimal physical effort, subject to safe boarding and medical suitability.",
+      "Families and groups requesting a private charter for full control over timing.",
   },
   {
-    title: "Photographers and nature enthusiasts",
+    title: "Solo travelers",
     description:
-      "Photographers, filmmakers, and nature enthusiasts seeking aerial views of Gosaikunda, the Langtang Himal, and surrounding landscapes.",
+      "Solo travelers looking for a shared helicopter seat covering the entire distance.",
   },
   {
-    title: "Religious and shared-flight groups",
+    title: "Professional teams",
     description:
-      "Religious groups, solo travellers, and couples looking to reserve seats on a shared helicopter flight.",
+      "Guides, researchers, film crews, and project staff needing a direct exit from the upper Khumbu region.",
   },
   {
-    title: "Production teams",
+    title: "Trail-weary trekkers",
     description:
-      "Documentary crews, researchers, and commercial production teams requiring flexible aerial access.",
-  },
-  {
-    title: "Private charter guests",
-    description:
-      "Anyone who prefers a private charter for greater privacy, schedule flexibility, and an exclusive flight experience.",
+      "Trekkers who want to avoid the long and tiring journey by road from Gorakshep to Kathmandu.",
   },
 ];
 
@@ -52,8 +47,8 @@ export default function ForWhomSection() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-2xl font-semibold leading-tight text-[#092c52] sm:text-[42px]">
-            For whom this flight is{" "}
-            <span className="text-[#e3a62a]">designed for.</span>
+            For Whom is This Flight{" "}
+            <span className="text-[#e3a62a]">Designed?</span>
           </h2>
         </div>
 

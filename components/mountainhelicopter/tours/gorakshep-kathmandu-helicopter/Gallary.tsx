@@ -62,7 +62,7 @@ export default function Gallary() {
             >
               <Image
                 src={image.src}
-                alt={`Everest Base Camp gallary image ${index + 1}`}
+                alt={`Gorakshep to Kathmandu helicopter flight gallery image ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 quality={80}

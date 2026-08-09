@@ -10,7 +10,7 @@ export default function FlightExperience() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-3xl font-semibold leading-tight tracking-[-0.02em] text-[#08294d] md:text-4xl">
-            What The Gosaikunda Helicopter Tour {" "}
+            What Does the Gorakshep to Kathmandu Helicopter Flight{" "}
             <span className="text-[#e0a326]">Feels Like.</span>
           </h2>
         </div>
@@ -18,39 +18,32 @@ export default function FlightExperience() {
         {/* DESCRIPTION */}
         <div className="mx-auto mt-8 max-w-7xl space-y-5 font-manrope text-sm leading-7 text-slate-500">
           <p>
-            Shortly after the helicopter leaves Kathmandu, the city begins to
-            disappear behind the green ridges to the north. Roads and dense
-            neighborhoods give way to forested hills, river valleys, terraced
-            slopes and small mountain settlements.
+            Because Gorakshep is situated at an altitude of over 5,000 meters,
+            the descent from the air is fast and spectacular, with the rugged
+            alpine landscape quickly giving way to lush forests, terraced
+            farmland, and larger mountain settlements.
           </p>
           <p>
-            As the helicopter continues towards Rasuwa, the landscape becomes
-            increasingly alpine. On a clear morning, the Ganesh Himal and
-            Langtang ranges appear beyond the ridges. Snow-covered summits frame
-            the horizon while the helicopter climbs towards the high country of
-            Langtang National Park.
+            The helicopter lifts off from the high valley and descends out of
+            the Khumbu, offering a final sweeping look at the peaks that
+            surround the Everest Base Camp trail.
           </p>
           <p>
-            Then Gosaikunda comes into view: a sacred lake held within a stark
-            landscape of rock, water, snow, and sky. Bhairab Kunda, Saraswati
-            Kunda, and other lakes form part of the wider pilgrimage setting.
-            The contrast with Kathmandu, left behind only minutes earlier, is
-            extraordinary.
+            From there, the flight continues over the rolling foothills of the
+            Khumbu region and the terraced hills of central Nepal, typically
+            including a brief refueling stop at Lukla before the final approach
+            into the Kathmandu Valley.
           </p>
           <p>
-            When the pilot confirms that conditions are safe, the helicopter
-            lands at the designated site near the lake. The usual ground window
-            is approximately 15-30 minutes, although it may be shortened because
-            of wind, cloud, snow, passenger wellbeing or operational
-            requirements.
+            Light turbulence over mountain ridges is a normal part of Himalayan
+            flying, and every stage of the journey is operated only when weather
+            and safety conditions are suitable.
           </p>
           <p>
-            During the stop, passengers can take photographs, offer a short
-            prayer or touch the lake water if the crew confirms that it is safe
-            to do so. Entering the water or attempting a full bath is not
-            recommended because the lake is extremely cold, the ground may be
-            icy, and passengers are exposed to 4,380 metres without
-            acclimatisation.
+            Upon arrival in Kathmandu, passengers disembark at the domestic
+            terminal and collect their baggage, ending their Everest Base Camp
+            journey with a comfortable helicopter return from the heart of the
+            Himalayas.
           </p>
         </div>
 

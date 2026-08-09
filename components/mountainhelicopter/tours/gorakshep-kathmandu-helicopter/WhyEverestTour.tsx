@@ -1,18 +1,13 @@
 const reasons = [
   [
-    "The Gosaikunda Helicopter Tour is a practical choice when time, comfort, and direct access matter more than completing a multi-day trekking itinerary. Reaching the lake on foot normally requires several days of steep walking, while a helicopter can reach the area from Kathmandu in less than half an hour under favorable conditions.",
+    "This route is ideal for trekkers who value time, convenience, and certainty over the lower cost of a two-stage Gorakshep-Lukla-Kathmandu journey. Instead of retracing the trail to Lukla or coordinating additional flights and transfers, you'll fly directly from Gorakshep to Kathmandu, saving days of walking and eliminating unnecessary connections.",
   ],
-  ["A shared seat may be requested by a solo traveler, couple, or small group."],
-  [
-    "A private charter may be requested by a family, pilgrimage group, photography team, or private party.",
-  ],
-  [
-    "The tour can help travellers who cannot undertake the trek, subject to medical fitness and safe boarding requirements.",
-  ],
-  [
-    "A brief puja or respectful contact with the lake may be possible during the landing window.",
-  ],
-  ["The complete journey can usually be completed in the same morning."],
+  ["Reach Kathmandu directly, with no fixed-wing ticket or Ramechhap transfer to arrange separately."],
+  ["Skip the risk of a Lukla plane connection being delayed or canceled by weather elsewhere in the system."],
+  ["Complete the entire journey from high-altitude Gorakshep to Kathmandu in a single day."],
+  ["Move personal gear and essential climbing equipment within your confirmed payload, without a second baggage transfer."],
+  ["Share the cost with other passengers on a group-joining seat, or book a private charter for full control over timing."],
+  ["Land directly at Kathmandu's Tribhuvan International Airport."],
 ];
 
 export default function WhyEverestTour() {
@@ -20,7 +15,7 @@ export default function WhyEverestTour() {
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-16 md:py-20 lg:py-28">
         <h2 className="text-center font-fraunces text-2xl font-semibold leading-none tracking-[0] text-[#061a3a] sm:text-[42px]">
-          Why fly to Gosaikunda by helicopter?
+          Why Fly from Gorakshep to Kathmandu by Helicopter?
         </h2>
 
         <div className="mt-12">

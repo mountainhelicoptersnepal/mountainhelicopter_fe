@@ -1,39 +1,34 @@
 const itineraryItems = [
   {
     number: "01",
-    title: "Flight Request and confirmation",
-    description: ["Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.", "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance."],
+    title: "Flight Request and Confirmation",
+    description: ["Share your preferred travel date, the number of passengers, exact passenger weights, and baggage details with Mountain Helicopters Nepal. Our operations team will verify helicopter availability, weather conditions, airport status, and total payload to ensure the flight can be operated safely.", "Once everything is confirmed, you will receive your final itinerary, reporting time, meeting point, and baggage allowance, so you can prepare for a smooth and hassle-free journey."],
   },
   {
     number: "02",
-    title: "Arrival at the Airport",
-    description: ["At the airport, the ground team checks passenger identification and permit documents. Every passenger and piece of baggage must be weighed because total payload affects helicopter range and performance at altitude.", "If the total weight exceeds the allowed limit, some baggage may need to be stored or sent separately on another helicopter flight at extra cost. The crew provides a safety briefing covering boarding, seatbelts, headsets, and safe movement around the aircraft."],
+    title: "Safety Briefing and Boarding",
+    description: ["Before boarding, the crew briefs passengers on seating, restraint belts, communication signals, and in-flight procedures.", "If the total weight exceeds the allowed limit, some baggage will need to be stored or sent on the next helicopter flight, and an extra charge will apply."],
   },
   {
     number: "03",
-    title: "Departure From Kathmandu",
-    description: ["The Kathmandu route is substantially longer. The helicopter crosses the middle hills towards the Annapurna region and may make a fuel stop at Jomsom, or another suitable location. Total flight time and routing depend on the helicopter, fuel plan, weather, and air-traffic instructions."],
+    title: "Flight from Kathmandu to Lukla",
+    description: ["The helicopter flies from Kathmandu to the east across hills, farmland, and river valleys to Lukla, where it makes a brief stop to refuel."],
   },
   {
     number: "04",
-    title: "Flight Through the Kali Gandaki and Mustang Region",
-    description: ["The route offers a dramatic contrast between the snow-covered Himalaya and the arid terrain of Lower Mustang. Jomsom, Marpha, Kagbeni, and sections of the Kali Gandaki Valley may be visible, but no particular flyover is guaranteed."],
+    title: "Flight to the Khumbu Region",
+    description: ["After refueling, the helicopter heads into the Khumbu region, passing over or near Lukla, Namche Bazaar, and Tengboche Monastery before climbing toward the high valleys of the Everest region.", "As the aircraft gains altitude, forested valleys give way to alpine ridges, glacial streams, and the first views of the surrounding Himalayan peaks."],
   },
   {
     number: "05",
-    title: "Landing Near Ranipauwa",
-    description: ["Before landing, the pilot assesses wind, clouds, visibility, payload, and helipad condition. If unsuitable, the landing may be delayed, relocated, or cancelled."],
+    title: "Everest Mountain Overfly and Gokyo Lake Landing",
+    description: ["The helicopter completes a close overfly of the Everest Base Camp and Kala Patthar area, revealing the Khumbu Icefall and the summits of Everest, Lhotse, and Nuptse.", "It then continues to Gokyo for a 5-10 minute landing beside the turquoise lake, surrounded by the Ngozumpa Glacier and towering peaks, before returning along the confirmed route."],
   },
   {
     number: "06",
-    title: "Darshan and Temple Visit",
-    description: ["The planned visit may include the main Muktinath temple, the 108 Mukti Dhara water spouts, and Jwala Mai. A typical operational ground allocation is around 60-90 minutes, including the walk in both directions, although the actual duration is controlled by the pilot and may be shortened."],
+    title: "Return Flight to Kathmandu",
+    description: ["After the journey, the helicopter departs and heads directly back toward Kathmandu, with a brief refueling stop at Lukla along the way."],
   },
-  {
-    number: "07",
-    title: "Return Flight",
-    description: ["After darshan, passengers return to the helipad for the flight back to Kathmandu. A Kathmandu return may include another fuel stop. Airport pickup and hotel drop-off are provided when included in the confirmed package with extra charges."],
-  }
 ];
 
 const itineraryBackgroundImage =
@@ -61,9 +56,9 @@ export default function Itinerary() {
           </p>
 
           <h2 className="mt-4 font-fraunces text-4xl font-semibold leading-[0.95] tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
-            Your Journey,
+            Detailed Everest Mountain Overfly,
             <br />
-            <span className="text-[#f0ad1f]">Step by Step.</span>
+            <span className="text-[#f0ad1f]">with Gokyo Lake Landing Itinerary.</span>
           </h2>
         </div>
 
@@ -71,17 +66,13 @@ export default function Itinerary() {
           <div className="absolute bottom-0 left-[20px] top-0 w-px bg-[#e0a321] md:left-[23px]" />
 
           <div className="space-y-10 md:space-y-14">
-            {itineraryItems.map((item, index) => (
+            {itineraryItems.map((item) => (
               <article
                 key={item.number}
-                className="relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
+                className="group relative grid grid-cols-[42px_minmax(0,1fr)] gap-5 md:grid-cols-[48px_minmax(0,1fr)] md:gap-7"
               >
                 <div
-                  className={`relative z-10 flex h-10 w-10 items-center justify-center rounded-full border font-manrope text-[12px] font-bold md:h-[42px] md:w-[42px] ${
-                    index === 0
-                      ? "border-[#004d93] bg-[#005da8] text-[#f0ad1f] shadow-[0_0_0_4px_rgba(0,93,168,0.25)]"
-                      : "border-[#d9e4ee] bg-white text-[#7b92a9]"
-                  }`}
+                  className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#d9e4ee] bg-white font-manrope text-[12px] font-bold text-[#7b92a9] transition-all duration-300 group-hover:border-[#004d93] group-hover:bg-[#005da8] group-hover:text-[#f0ad1f] group-hover:shadow-[0_0_0_4px_rgba(0,93,168,0.25)] md:h-[42px] md:w-[42px]"
                 >
                   {item.number}
                 </div>
