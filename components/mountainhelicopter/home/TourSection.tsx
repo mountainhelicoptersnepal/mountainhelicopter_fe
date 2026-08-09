@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const tours = [
   {
-    title: "Everest Base Camp & Kala Patthar Helicopter Tour",
-    meta: "4-5 HRS  |  5,364M  |  KHUMBU, NEPAL",
+    title: "Everest Mountain Overfly with Kalapatthar Landing and Breakfast at Hotel Everest View from Kathmandu",
+    meta: "4-5 HRS  |  5,545 M  |  KHUMBU, NEPAL",
     price: "FROM $1,200",
     cta: "VIEW EVEREST TOUR",
     href: "/tours/everest-base-camp",
