@@ -11,6 +11,7 @@ import {
   HeartPulse,
   LifeBuoy,
   Luggage,
+  Mail,
   Plane,
   Route,
   Scale,
@@ -21,6 +22,7 @@ import {
 
 type Block =
   | { type: "paragraph"; text: string }
+  | { type: "subhead"; text: string }
   | { type: "list"; items: string[] }
   | { type: "steps"; items: { label: string; text: string }[] }
   | { type: "note"; tone: "gold" | "blue"; text: string };
@@ -100,6 +102,7 @@ const sections: Section[] = [
     title: "Cancellation and Refund Policy",
     icon: Scale,
     blocks: [
+      { type: "subhead", text: "Cancellation by the Client" },
       {
         type: "paragraph",
         text: "All cancellations must be submitted in writing (email or official letter). Charges apply based on notice given:",
@@ -128,6 +131,16 @@ const sections: Section[] = [
             text: "No refund. The aircraft and crew are already blocked for your departure.",
           },
         ],
+      },
+      { type: "subhead", text: "Cancellation by Mountain Helicopters Nepal" },
+      {
+        type: "paragraph",
+        text: "Your safety is our priority. We may postpone, reroute, or cancel a flight due to weather, mechanical issues, or safety concerns. Affected clients will be offered the next available flight slot or a full refund, at the company's discretion.",
+      },
+      { type: "subhead", text: "Postponement Requests" },
+      {
+        type: "paragraph",
+        text: "Rescheduling a flight is subject to aircraft and pilot availability. Additional charges may apply for postponed flights.",
       },
     ],
   },
@@ -289,6 +302,24 @@ const sections: Section[] = [
       },
     ],
   },
+  {
+    id: "contact-us",
+    title: "Contact Us",
+    icon: Mail,
+    blocks: [
+      {
+        type: "steps",
+        items: [
+          {
+            label: "Mountain Helicopters Nepal",
+            text: "Old Sinamangal, Kathmandu",
+          },
+          { label: "Email", text: "info@mountainhelicoptersnepal.com" },
+          { label: "Phone", text: "+977-9712082949" },
+        ],
+      },
+    ],
+  },
 ];
 
 /** Renders bracketed placeholders such as [Insert %] as highlighted tokens, or plain text if none. */
@@ -319,6 +350,14 @@ function BlockContent({ block }: { block: Block }) {
       <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
         <RichText text={block.text} />
       </p>
+    );
+  }
+
+  if (block.type === "subhead") {
+    return (
+      <h4 className="pt-2 font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
+        {block.text}
+      </h4>
     );
   }
 
@@ -455,47 +494,9 @@ export default function Content() {
                   </div>
 
                   <div className="mt-5 space-y-5 md:pl-14">
-                    {section.id === "cancellation-refund" && (
-                      <div className="space-y-6">
-                        <div className="space-y-3">
-                          <h4 className="font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
-                            Cancellation by the Client
-                          </h4>
-                          <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
-                            All cancellations must be submitted in writing (email or official letter). Charges apply based on notice given:
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
-                    {section.blocks.map((block, blockIndex) => {
-                      if (section.id === "cancellation-refund" && blockIndex === 0) {
-                        return null;
-                      }
-                      return <BlockContent key={blockIndex} block={block} />;
-                    })}
-
-                    {section.id === "cancellation-refund" && (
-                      <div className="space-y-6 pt-2">
-                        <div className="space-y-3">
-                          <h4 className="font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
-                            Cancellation by Mountain Helicopters Nepal
-                          </h4>
-                          <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
-                            Your safety is our priority. We may postpone, reroute, or cancel a flight due to weather, mechanical issues, or safety concerns. Affected clients will be offered the next available flight slot or a full refund, at the company&apos;s discretion.
-                          </p>
-                        </div>
-
-                        <div className="space-y-3">
-                          <h4 className="font-fraunces text-xl font-medium text-[#00569a] md:text-2xl">
-                            Postponement Requests
-                          </h4>
-                          <p className="font-manrope text-sm leading-7 text-[#4f5965] md:text-base">
-                            Rescheduling a flight is subject to aircraft and pilot availability. Additional charges may apply for postponed flights.
-                          </p>
-                        </div>
-                      </div>
-                    )}
+                    {section.blocks.map((block, blockIndex) => (
+                      <BlockContent key={blockIndex} block={block} />
+                    ))}
                   </div>
                 </article>
               );
