@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const WHITE_HOLD_MS = 900;
-const SPLASH_DURATION_MS = 8200;
+const WHITE_HOLD_MS = 300;
+const SPLASH_DURATION_MS = 3950;
 
 let hasOpeningSplashPlayed = false;
 
