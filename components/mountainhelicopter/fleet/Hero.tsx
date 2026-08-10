@@ -31,7 +31,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-7 max-w-[680px] font-manrope text-[18px] font-medium leading-[30px] text-white sm:text-[20px] sm:leading-[34px]">
-            Built for the Himalayas. Trusted for every mission.
+            Built for Nepal's Skies. Trusted for every mission.
           </p>
         </div>
       </div>

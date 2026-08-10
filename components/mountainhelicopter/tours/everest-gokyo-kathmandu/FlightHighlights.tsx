@@ -61,8 +61,8 @@ export default function FlightHighlights() {
     <section className="w-full bg-[#f4f6f8] py-16 md:py-24">
       {/* Title */}
       <div className="mb-10 md:mb-14 text-center px-4">
-        <h2 className="font-serif max-w-7xl mx-auto text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
-          Highlights Along The flight Route
+        <h2 className="[font-family:'Fraunces',serif] max-w-7xl mx-auto text-3xl md:text-4xl lg:text-5xl text-[#0f172a] tracking-tight">
+          Highlights Along The Flight Route
         </h2>
       </div>
 
