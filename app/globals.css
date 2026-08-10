@@ -149,7 +149,7 @@ body.mh-splash-active {
   overflow: hidden;
   background: #ffffff;
   pointer-events: none;
-  animation: opening-splash-exit 900ms ease 6.7s forwards;
+  animation: opening-splash-exit 450ms ease 3.2s forwards;
 }
 
 .opening-splash__mark {
@@ -160,8 +160,8 @@ body.mh-splash-active {
   opacity: 0;
   transform: translate3d(0, 10px, 0) scale(0.99);
   animation:
-    opening-stage-enter 560ms ease-out 0s forwards,
-    opening-stage-hide 160ms linear 5.62s forwards;
+    opening-stage-enter 280ms ease-out 0s forwards,
+    opening-stage-hide 100ms linear 2.7s forwards;
 }
 
 .opening-splash__first-unit,
@@ -177,7 +177,7 @@ body.mh-splash-active {
   inset: 0;
   width: 100%;
   opacity: 0;
-  animation: opening-unit-enter 640ms ease-out 0s forwards;
+  animation: opening-unit-enter 320ms ease-out 0s forwards;
 }
 
 .opening-splash__second-unit {
@@ -188,8 +188,8 @@ body.mh-splash-active {
   opacity: 0;
   clip-path: inset(0 100% 0 0);
   animation:
-    opening-swoosh-enter 500ms ease-out 1.65s forwards,
-    opening-swoosh-draw 2.45s cubic-bezier(0.45, 0, 0.16, 1) 1.65s forwards;
+    opening-swoosh-enter 250ms ease-out 0.8s forwards,
+    opening-swoosh-draw 1.2s cubic-bezier(0.45, 0, 0.16, 1) 0.8s forwards;
 }
 
 .opening-splash__heli {
@@ -202,7 +202,7 @@ body.mh-splash-active {
   transform-origin: center;
   backface-visibility: hidden;
   will-change: opacity, transform;
-  animation: opening-heli-flight 2.65s cubic-bezier(0.2, 0.72, 0.18, 1) 1.65s
+  animation: opening-heli-flight 1.3s cubic-bezier(0.2, 0.72, 0.18, 1) 0.8s
     forwards;
 }
 
@@ -218,8 +218,8 @@ body.mh-splash-active {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
   animation:
-    opening-circle-grow 1.25s cubic-bezier(0.72, 0, 0.18, 1) 4.35s forwards,
-    opening-circle-fade 900ms ease 6.7s forwards;
+    opening-circle-grow 0.65s cubic-bezier(0.72, 0, 0.18, 1) 2.15s forwards,
+    opening-circle-fade 450ms ease 3.2s forwards;
 }
 
 @keyframes opening-stage-enter {
