@@ -374,7 +374,7 @@ export default function Footer() {
               </p>
             </div>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Old+Sinamangal+Pepsicola+Kathmandu+Nepal"
+              href="https://maps.app.goo.gl/s7eijkmdLarDjZtp7"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1 text-gold text-sm transition-colors hover:text-gold-warm"
