@@ -45,14 +45,14 @@ const highlights: Highlight[] = [
     title: "Kala Patthar and the Everest Skyline",
     description:
       "Close aerial views of Everest, Lhotse, Nuptse, Pumori, and the Khumbu Glacier",
-    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights5.png",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights7.png",
   },
   {
     id: 6,
     title: "Gokyo Lake Landing",
     description:
       "A five to ten minute touchdown beside turquoise glacial water and the Ngozumpa Glacier",
-    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights6.png",
+    image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Highlights8.png",
   },
 ];
 

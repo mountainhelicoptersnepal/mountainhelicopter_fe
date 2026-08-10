@@ -34,7 +34,7 @@ const highlights: Highlight[] = [
     description:
       "The route often passes over Lobuche, Thukla, and Pheriche, which also doubles as the shuttle and regrouping point when the full Gorakshep group needs to be split across multiple lifts.",
     image:
-      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights3.png",
+      "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-highlights3.webp",
   },
   {
     id: 4,

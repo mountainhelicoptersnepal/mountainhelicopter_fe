@@ -50,7 +50,7 @@ const highlights: Highlight[] = [
     description:
       "Pheriche is a working trekking-trail village on the Everest Base Camp route, set against the wide, high-altitude Khumbu valley.",
     image:
-      "/images/everest-kalapatthar-kathmandu/Kala Patthar Landing- HEV-highlights5.png",
+      "/images/everest-kalapatthar-kathmandu/Kala Patthar Landing- HEV-highlights5.webp",
   },
   {
     id: 6,
