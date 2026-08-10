@@ -35,15 +35,11 @@ const AircraftCard = ({
           className="object-cover"
         />
 
-        <div
-          className={`absolute inset-0 from-transparent from-55% to-[rgba(0,22,45,0.5)] ${
-            reverse ? "bg-gradient-to-l" : "bg-gradient-to-r"
-          }`}
-        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,22,45,0.5)] from-0% via-transparent via-45% to-transparent" />
 
         <div
           aria-hidden="true"
-          className="absolute bottom-0 left-1/2 h-[45%] w-[130%] -translate-x-1/2 rounded-b-[80px] bg-primary-blue/90 blur-[50px] transition-opacity duration-500 lg:group-hover:opacity-0"
+          className="absolute bottom-0 left-1/2 h-[45%] w-[130%] -translate-x-1/2 rounded-b-[80px] bg-primary-blue/30 blur-[50px] transition-opacity duration-500 lg:group-hover:opacity-0"
         />
 
         <p className="absolute inset-x-6 bottom-[8%] text-center font-fraunces text-[28px] font-semibold tracking-[-0.02em] text-gold transition-opacity duration-300 lg:group-hover:opacity-0 sm:text-[36px] lg:text-[44px]">
@@ -69,9 +65,7 @@ const AircraftCard = ({
                   className="flex flex-col font-manrope text-[15px] leading-[1.8] sm:text-[16px]"
                 >
                   <div className="flex flex-wrap gap-x-1.5">
-                    <dt className="font-bold text-[#002448]">
-                      {spec.label}:
-                    </dt>
+                    <dt className="font-bold text-[#002448]">{spec.label}:</dt>
                     <dd className="font-semibold text-[#335c85]">
                       1 Pilot + 5 Passengers or
                     </dd>
@@ -86,9 +80,7 @@ const AircraftCard = ({
                   className="flex flex-wrap gap-x-1.5 font-manrope text-[15px] leading-[1.8] sm:text-[16px]"
                 >
                   <dt className="font-bold text-[#002448]">{spec.label}:</dt>
-                  <dd className="font-semibold text-[#335c85]">
-                    {spec.value}
-                  </dd>
+                  <dd className="font-semibold text-[#335c85]">{spec.value}</dd>
                 </div>
               ),
             )}

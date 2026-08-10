@@ -1,13 +1,13 @@
 import { notFound } from "next/navigation";
 
 import BlogDetailPage from "@/components/mountainhelicopter/blogs/BlogDetailPage";
-import CelebrationsPage from "@/components/mountainhelicopter/experiences/celebrations/page";
-import EverestBreakfastExperiencePage from "@/components/mountainhelicopter/experiences/everest-breakfast/page";
-import HeliPicnicPage from "@/components/mountainhelicopter/experiences/heli-picnic/page";
-import KalaPattharPage from "@/components/mountainhelicopter/experiences/kala-patthar/page";
-import PhotoFlightPage from "@/components/mountainhelicopter/experiences/photo-flight/page";
-import PilgrimagePage from "@/components/mountainhelicopter/experiences/pilgrimage/page";
-import PrivateCharterPage from "@/components/mountainhelicopter/experiences/private-charter/page";
+// import CelebrationsPage from "@/components/mountainhelicopter/experiences/celebrations/page";
+// import EverestBreakfastExperiencePage from "@/components/mountainhelicopter/experiences/everest-breakfast/page";
+// import HeliPicnicPage from "@/components/mountainhelicopter/experiences/heli-picnic/page";
+// import KalaPattharPage from "@/components/mountainhelicopter/experiences/kala-patthar/page";
+// import PhotoFlightPage from "@/components/mountainhelicopter/experiences/photo-flight/page";
+// import PilgrimagePage from "@/components/mountainhelicopter/experiences/pilgrimage/page";
+// import PrivateCharterPage from "@/components/mountainhelicopter/experiences/private-charter/page";
 import EverestGokyoKathmanduPage from "@/components/mountainhelicopter/tours/everest-gokyo-kathmandu/page";
 import EverestKalapattharKathmanduPage from "@/components/mountainhelicopter/tours/everest-kalapatthar-kathmandu/page";
 import GorakshepKathmanduHelicopterPage from "@/components/mountainhelicopter/tours/gorakshep-kathmandu-helicopter/page";
@@ -30,15 +30,15 @@ const tourPages = {
   "ramechhap-lukla-helicopter": RamechhapLuklaHelicopterPage,
 } as const;
 
-const experiencePages = {
-  celebrations: CelebrationsPage,
-  "everest-breakfast": EverestBreakfastExperiencePage,
-  "heli-picnic": HeliPicnicPage,
-  "kala-patthar": KalaPattharPage,
-  "photo-flight": PhotoFlightPage,
-  pilgrimage: PilgrimagePage,
-  "private-charter": PrivateCharterPage,
-} as const;
+// const experiencePages = {
+//   celebrations: CelebrationsPage,
+//   "everest-breakfast": EverestBreakfastExperiencePage,
+//   "heli-picnic": HeliPicnicPage,
+//   "kala-patthar": KalaPattharPage,
+//   "photo-flight": PhotoFlightPage,
+//   pilgrimage: PilgrimagePage,
+//   "private-charter": PrivateCharterPage,
+// } as const;
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -91,12 +91,12 @@ export default async function DetailPage({ params }: DetailPageProps) {
     return <TourPage />;
   }
 
-  if (slug === "experiences" && detailSlug in experiencePages) {
-    const ExperiencePage =
-      experiencePages[detailSlug as keyof typeof experiencePages];
+  // if (slug === "experiences" && detailSlug in experiencePages) {
+  //   const ExperiencePage =
+  //     experiencePages[detailSlug as keyof typeof experiencePages];
 
-    return <ExperiencePage />;
-  }
+  //   return <ExperiencePage />;
+  // }
 
   notFound();
 }
