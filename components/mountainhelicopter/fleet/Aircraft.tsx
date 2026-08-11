@@ -10,7 +10,7 @@ const aircraft = [
       { label: "Manufacturer", value: "Airbus Helicopters" },
       { label: "Year of Manufacturer", value: "June 2014" },
       {
-        label: "Engline and Horse Power",
+        label: "Engine and Horse Power",
         value: "Safran Arriel 2D 802 shp (Max Take-off power)",
       },
       {
@@ -41,7 +41,7 @@ const aircraft = [
       { label: "Manufacturer", value: "Airbus Helicopters" },
       { label: "Year of Manufacturer", value: "April 2016" },
       {
-        label: "Engline and Horse Power",
+        label: "Engine and Horse Power",
         value: "Safran Arriel 2D 802 shp (Max Take-off power)",
       },
       {
