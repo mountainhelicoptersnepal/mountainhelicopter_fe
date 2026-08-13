@@ -63,6 +63,18 @@ export default function BookingForm({
     setCaptcha(randomCaptcha());
   }, []);
 
+  // Book CTAs elsewhere on the page preselect the flight type here.
+  useEffect(() => {
+    const onBook = (event: Event) => {
+      const service = (event as CustomEvent<string>).detail;
+      if ((FLIGHT_TYPES as readonly string[]).includes(service)) {
+        setType(service);
+      }
+    };
+    window.addEventListener("lukla:book", onBook);
+    return () => window.removeEventListener("lukla:book", onBook);
+  }, []);
+
   const refreshCaptcha = () => {
     setCaptcha(randomCaptcha());
     setCaptchaAnswer("");
@@ -132,8 +144,8 @@ export default function BookingForm({
 
   if (submitted) {
     return (
-      <div className="rounded-[14px] bg-white p-6 text-center text-[#0A1929] shadow-[0_22px_60px_rgba(5,31,73,.45)] sm:p-8">
-        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#003366]">
+      <div className="rounded-[14px] bg-white p-6 text-center text-[#12233F] shadow-[0_22px_60px_rgba(5,31,73,.45)] sm:p-8">
+        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#0C4396]">
           <svg
             className="h-7 w-7 text-white"
             fill="none"
@@ -149,7 +161,7 @@ export default function BookingForm({
             />
           </svg>
         </div>
-        <h3 className="font-fraunces text-xl font-extrabold text-[#0d1a2d]">
+        <h3 className="font-fraunces leading-[1.12] text-xl font-extrabold text-[#051F49]">
           Request sent.
         </h3>
         <p className="mt-2 text-sm text-[#4A5B76]">
@@ -157,7 +169,7 @@ export default function BookingForm({
         </p>
         <p className="mt-4 text-sm text-[#4A5B76]">
           Prefer to talk now?{" "}
-          <a href={`tel:${PHONE_TEL}`} className="font-semibold text-[#003366]">
+          <a href={`tel:${PHONE_TEL}`} className="font-semibold text-[#0C4396]">
             {PHONE_TEL}
           </a>
         </p>
@@ -170,12 +182,12 @@ export default function BookingForm({
       onSubmit={handleSubmit}
       autoComplete="on"
       aria-label="Booking request form"
-      className="rounded-[14px] bg-white p-6 text-[#0A1929] shadow-[0_22px_60px_rgba(5,31,73,.45)] sm:p-7"
+      className="rounded-[14px] bg-white p-6 text-[#12233F] shadow-[0_22px_60px_rgba(5,31,73,.45)] sm:p-7"
     >
       {heading ? (
         <>
-          <h2 className="font-fraunces text-[1.15rem] font-extrabold text-[#0d1a2d]">
-            Check your date<span className="text-[#F2B632]">.</span>
+          <h2 className="font-fraunces leading-[1.12] text-[1.15rem] font-extrabold text-[#051F49]">
+            Check your date<span className="text-[#F5AF00]">.</span>
           </h2>
           <p className="mb-4 mt-1 text-[13px] text-[#4A5B76]">
             A flight specialist replies within 2 hours, 7 days a week.
@@ -189,7 +201,7 @@ export default function BookingForm({
           name="type"
           value={type}
           onChange={(e) => setType(e.target.value)}
-          className="w-full rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-3.5 py-3 font-sans text-[15.5px] text-[#0A1929] focus:border-[#003366] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#003366]"
+          className="w-full rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-3.5 py-3 font-geist text-[15.5px] text-[#12233F] focus:border-[#0C4396] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#0C4396]"
         >
           {FLIGHT_TYPES.map((option) => (
             <option key={option}>{option}</option>
@@ -216,7 +228,7 @@ export default function BookingForm({
             name="pax"
             value={pax}
             onChange={(e) => setPax(e.target.value)}
-            className="w-full rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-3.5 py-3 font-sans text-[15.5px] text-[#0A1929] focus:border-[#003366] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#003366]"
+            className="w-full rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-3.5 py-3 font-geist text-[15.5px] text-[#12233F] focus:border-[#0C4396] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#0C4396]"
           >
             {["1", "2", "3", "4", "5", "More than 5"].map((n) => (
               <option key={n}>{n}</option>
@@ -262,7 +274,7 @@ export default function BookingForm({
             aria-label="Country code"
             value={countryDialCode}
             onChange={(e) => setCountryDialCode(e.target.value)}
-            className="rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-2 py-3 font-sans text-[14.5px] text-[#0A1929] focus:border-[#003366] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#003366]"
+            className="rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white px-2 py-3 font-geist text-[14.5px] text-[#12233F] focus:border-[#0C4396] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#0C4396]"
           >
             {DIAL_CODES.map(([country, code], i) => (
               <option key={`${country}-${i}`} value={`${country}|${code}`}>
@@ -323,7 +335,7 @@ export default function BookingForm({
             type="button"
             onClick={refreshCaptcha}
             aria-label="New question"
-            className="w-[46px] rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white text-[19px] text-[#003366] hover:border-[#003366]"
+            className="w-[46px] rounded-[9px] border-[1.5px] border-[#D7E2F2] bg-white text-[19px] text-[#0C4396] hover:border-[#0C4396]"
           >
             &#8635;
           </button>
@@ -336,7 +348,7 @@ export default function BookingForm({
       <button
         type="submit"
         disabled={submitting}
-        className="mt-1 w-full rounded-full bg-[#F2B632] px-6 py-3.5 text-[15.5px] font-bold tracking-[.02em] text-[#0d1a2d] shadow-[0_4px_14px_rgba(245,175,0,.35)] transition hover:bg-[#f5a623] active:scale-[.98] disabled:opacity-60"
+        className="mt-1 w-full rounded-full bg-[#F5AF00] px-6 py-3.5 text-[15.5px] font-bold tracking-[.02em] text-[#051F49] shadow-[0_4px_14px_rgba(245,175,0,.35)] transition hover:bg-[#FFBE12] active:scale-[.98] disabled:opacity-60"
       >
         {submitting ? "Sending…" : "Reserve My Seat Now"}
       </button>
@@ -348,7 +360,7 @@ export default function BookingForm({
       </p>
       <p className="mt-3 border-t border-dashed border-[#D7E2F2] pt-3 text-center text-[13.5px] text-[#4A5B76]">
         Prefer to talk?{" "}
-        <a href={`tel:${PHONE_TEL}`} className="font-semibold text-[#003366]">
+        <a href={`tel:${PHONE_TEL}`} className="font-semibold text-[#0C4396]">
           {PHONE_TEL}
         </a>
       </p>
@@ -357,8 +369,8 @@ export default function BookingForm({
 }
 
 function inputClass(invalid: boolean) {
-  return `w-full rounded-[9px] border-[1.5px] bg-white px-3.5 py-3 font-sans text-[15.5px] text-[#0A1929] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#003366] ${
-    invalid ? "border-[#B3261E]" : "border-[#D7E2F2] focus:border-[#003366]"
+  return `w-full rounded-[9px] border-[1.5px] bg-white px-3.5 py-3 font-geist text-[15.5px] text-[#12233F] focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-[#0C4396] ${
+    invalid ? "border-[#B3261E]" : "border-[#D7E2F2] focus:border-[#0C4396]"
   }`;
 }
 

@@ -29,10 +29,10 @@ export default function Comparison() {
     <section className="bg-[#F3F7FD] py-[70px]">
       <div className="mx-auto max-w-[1160px] px-[22px]">
         <Reveal className="mb-9 max-w-[700px]">
-          <div className="mb-2.5 font-manrope text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#C49A3C]">
+          <div className="mb-2.5 font-geist-mono text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#D99A00]">
             Why Helicopter
           </div>
-          <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#0d1a2d]">
+          <h2 className="font-fraunces leading-[1.12] text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#051F49]">
             Travel by helicopter so your trek never waits on a delay.
           </h2>
           <p className="mt-3 text-[#4A5B76]">
@@ -47,7 +47,7 @@ export default function Comparison() {
             <thead>
               <tr>
                 <th className="border-b border-[#D7E2F2] px-[18px] py-[15px] text-[13.5px] font-extrabold uppercase tracking-[.05em] text-[#4A5B76]" />
-                <th className="border-b border-[#D7E2F2] bg-[#003366] px-[18px] py-[15px] text-[13.5px] font-extrabold uppercase tracking-[.05em] text-white">
+                <th className="border-b border-[#D7E2F2] bg-[#0C4396] px-[18px] py-[15px] text-[13.5px] font-extrabold uppercase tracking-[.05em] text-white">
                   Helicopter with us
                 </th>
                 <th className="border-b border-[#D7E2F2] px-[18px] py-[15px] text-[13.5px] font-extrabold uppercase tracking-[.05em]">
@@ -61,8 +61,8 @@ export default function Comparison() {
                   <td className="border-b border-[#D7E2F2] px-[18px] py-[15px] text-[14.5px] text-[#4A5B76] last:border-b-0">
                     {label}
                   </td>
-                  <td className="border-b border-[#D7E2F2] bg-[#003366]/[.05] px-[18px] py-[15px] text-[15.5px] font-semibold text-[#0d1a2d] last:border-b-0">
-                    <span className="font-bold text-[#003366]">✓</span> {heli}
+                  <td className="border-b border-[#D7E2F2] bg-[#0C4396]/[.05] px-[18px] py-[15px] text-[15.5px] font-semibold text-[#051F49] last:border-b-0">
+                    <span className="font-bold text-[#0C4396]">✓</span> {heli}
                   </td>
                   <td className="border-b border-[#D7E2F2] px-[18px] py-[15px] text-[15.5px] last:border-b-0">
                     {fixed}

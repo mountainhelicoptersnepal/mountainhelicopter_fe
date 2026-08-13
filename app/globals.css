@@ -72,6 +72,8 @@
 
   --font-sans: var(--font-family-manrope), Arial, Helvetica, sans-serif;
   --font-manrope: var(--font-family-manrope), Arial, Helvetica, sans-serif;
+  --font-geist: var(--font-family-geist), Arial, Helvetica, sans-serif;
+  --font-geist-mono: var(--font-family-geist-mono), "Courier New", monospace;
   --font-fraunces:
     var(--font-family-fraunces), Georgia, "Times New Roman", serif;
   --font-montserrat:

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import {
   Fraunces,
+  Geist,
+  Geist_Mono,
   JetBrains_Mono,
   Manrope,
   Montserrat,
@@ -9,6 +11,18 @@ import "./globals.css";
 
 const manrope = Manrope({
   variable: "--font-family-manrope",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geist = Geist({
+  variable: "--font-family-geist",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-family-geist-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -54,10 +68,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${geist.variable} ${geistMono.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body
-        className={`${manrope.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} min-h-full flex flex-col`}
+        className={`${manrope.variable} ${geist.variable} ${geistMono.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} min-h-full flex flex-col`}
       >
         {/* reCAPTCHA removed */}
         {/* RootProvider is reserved for the later dynamic/admin phase. */}

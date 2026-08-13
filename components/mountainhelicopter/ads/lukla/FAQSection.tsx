@@ -12,10 +12,10 @@ export default function FAQSection() {
     <section id="faq" className="bg-[#F3F7FD] py-[70px]">
       <div className="mx-auto max-w-[1160px] px-[22px]">
         <Reveal className="mb-9 max-w-[700px]">
-          <div className="mb-2.5 font-manrope text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#C49A3C]">
+          <div className="mb-2.5 font-geist-mono text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#D99A00]">
             Before You Fly
           </div>
-          <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#0d1a2d]">
+          <h2 className="font-fraunces leading-[1.12] text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#051F49]">
             Questions travelers ask us every season.
           </h2>
         </Reveal>
@@ -32,11 +32,11 @@ export default function FAQSection() {
                   type="button"
                   aria-expanded={isOpen}
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="flex w-full cursor-pointer items-center justify-between gap-3.5 px-[22px] py-[18px] text-left text-[16.5px] font-semibold text-[#0d1a2d]"
+                  className="flex w-full cursor-pointer items-center justify-between gap-3.5 px-[22px] py-[18px] text-left text-[16.5px] font-semibold text-[#051F49]"
                 >
                   {faq.question}
                   <ChevronIcon
-                    className={`h-5 w-5 shrink-0 text-[#003366] transition-transform duration-200 ${
+                    className={`h-5 w-5 shrink-0 text-[#0C4396] transition-transform duration-200 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />

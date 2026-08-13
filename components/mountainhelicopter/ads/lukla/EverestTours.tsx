@@ -1,16 +1,15 @@
 import Reveal from "./Reveal";
 import ServiceCard from "./ServiceCard";
-import { waLink } from "./constants";
 
 export default function EverestTours() {
   return (
     <section id="tours" className="pb-[70px]">
       <div className="mx-auto max-w-[1160px] px-[22px]">
         <Reveal className="mb-9 max-w-[700px]">
-          <div className="mb-2.5 font-manrope text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#C49A3C]">
+          <div className="mb-2.5 font-geist-mono text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#D99A00]">
             Everest Helicopter Tours
           </div>
-          <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#0d1a2d]">
+          <h2 className="font-fraunces leading-[1.12] text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#051F49]">
             See Everest by air. Back in Kathmandu by lunch.
           </h2>
           <p className="mt-3 text-[#4A5B76]">
@@ -35,12 +34,10 @@ export default function EverestTours() {
                 "Breakfast at Hotel Everest View (3,880 m), one of the highest hotels in the world",
                 "Roughly 4 hours door to door from Kathmandu",
               ]}
-              price="USD 1,150"
+              price="USD 1,600"
               priceNote="/ person"
               ctaLabel="Book Everest Tour"
-              ctaHref={waLink(
-                "Hi, I want to book the Everest Heli Tour with Kala Patthar landing and breakfast at Hotel Everest View.",
-              )}
+              ctaService="Everest Heli Tour: Kala Patthar landing + HEV breakfast"
             />
           </Reveal>
           <Reveal delay={0.08}>
@@ -56,12 +53,10 @@ export default function EverestTours() {
                 "Photo landing subject to weather and permits",
                 "Ideal for photographers and repeat visitors",
               ]}
-              price="USD 1,150"
+              price="USD 1,700"
               priceNote="/ person"
               ctaLabel="Book Gokyo Tour"
-              ctaHref={waLink(
-                "Hi, I want to book the Gokyo Lake and mountain overfly helicopter tour.",
-              )}
+              ctaService="Gokyo Lake + mountain overfly tour"
             />
           </Reveal>
         </div>

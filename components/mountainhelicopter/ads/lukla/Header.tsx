@@ -21,13 +21,13 @@ export default function Header() {
           aria-label="Page sections"
           className="hidden gap-6 text-[15.5px] font-medium md:flex"
         >
-          <a href="#flights" className="text-[#4A5B76] hover:text-[#003366]">
+          <a href="#flights" className="text-[#4A5B76] hover:text-[#0C4396]">
             Daily Flights
           </a>
-          <a href="#tours" className="text-[#4A5B76] hover:text-[#003366]">
+          <a href="#tours" className="text-[#4A5B76] hover:text-[#0C4396]">
             Everest Tours
           </a>
-          <a href="#faq" className="text-[#4A5B76] hover:text-[#003366]">
+          <a href="#faq" className="text-[#4A5B76] hover:text-[#0C4396]">
             FAQ
           </a>
         </nav>
@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex items-center gap-3.5">
           <a
             href={`tel:${PHONE_TEL}`}
-            className="hidden whitespace-nowrap font-manrope text-[13.5px] font-semibold text-[#003366] lg:inline"
+            className="hidden whitespace-nowrap font-geist-mono text-[13.5px] font-semibold text-[#0C4396] lg:inline"
           >
             {PHONE_DISPLAY}
           </a>
@@ -45,7 +45,7 @@ export default function Header() {
             )}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#F2B632] px-5 py-3 text-sm font-bold tracking-[.02em] text-[#0d1a2d] shadow-[0_4px_14px_rgba(245,175,0,.35)] transition hover:bg-[#f5a623] active:scale-[.98]"
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#F5AF00] px-5 py-3 text-sm font-bold tracking-[.02em] text-[#051F49] shadow-[0_4px_14px_rgba(245,175,0,.35)] transition hover:bg-[#FFBE12] active:scale-[.98]"
           >
             <WhatsAppIcon className="h-[18px] w-[18px] shrink-0" />
             WhatsApp

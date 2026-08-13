@@ -1,16 +1,15 @@
 import Reveal from "./Reveal";
 import ServiceCard from "./ServiceCard";
-import { waLink } from "./constants";
 
 export default function DailyFlights() {
   return (
     <section id="flights" className="py-[70px]">
       <div className="mx-auto max-w-[1160px] px-[22px]">
         <Reveal className="mb-9 max-w-[700px]">
-          <div className="mb-2.5 font-manrope text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#C49A3C]">
+          <div className="mb-2.5 font-geist-mono text-[12.5px] font-semibold uppercase tracking-[.16em] text-[#D99A00]">
             Daily Flights · Everyday Departure
           </div>
-          <h2 className="font-fraunces text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#0d1a2d]">
+          <h2 className="font-fraunces leading-[1.12] text-[clamp(1.55rem,3.5vw,2.3rem)] font-extrabold tracking-[-.01em] text-[#051F49]">
             The Everest Gateway, every direction, every single day.
           </h2>
           <p className="mt-3 text-[#4A5B76]">
@@ -35,12 +34,10 @@ export default function DailyFlights() {
                 "10 kg baggage per person, airport assistance included",
                 "Free date change on weather cancellation",
               ]}
-              price="USD 550"
+              price="USD 500"
               priceNote="/ person"
               ctaLabel="Book Flight"
-              ctaHref={waLink(
-                "Hi, I want to book a Kathmandu to Lukla helicopter seat.",
-              )}
+              ctaService="Kathmandu to Lukla, shared seat"
             />
           </Reveal>
           <Reveal delay={0.08}>
@@ -58,12 +55,10 @@ export default function DailyFlights() {
                 "Book on WhatsApp from anywhere on the trail",
                 "Same rate as the outbound leg",
               ]}
-              price="USD 550"
+              price="USD 500"
               priceNote="/ person"
               ctaLabel="Book Return"
-              ctaHref={waLink(
-                "Hi, I want to book a Lukla to Kathmandu helicopter seat.",
-              )}
+              ctaService="Lukla to Kathmandu, shared seat"
             />
           </Reveal>
           <Reveal delay={0.16}>
@@ -82,9 +77,7 @@ export default function DailyFlights() {
               price="USD 1,200"
               priceNote="/ person"
               ctaLabel="Book Pickup"
-              ctaHref={waLink(
-                "Hi, I want a helicopter pickup from GorakShep to Kathmandu after my EBC trek.",
-              )}
+              ctaService="GorakShep to Kathmandu, after EBC trek"
             />
           </Reveal>
         </div>

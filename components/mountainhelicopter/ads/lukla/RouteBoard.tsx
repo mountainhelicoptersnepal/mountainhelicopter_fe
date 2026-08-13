@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarDays, Clock, Luggage, Plane, Users } from "lucide-react";
+import { CalendarDays, Clock, Plane, Users } from "lucide-react";
 import { HeliIcon } from "./icons";
 
 const STATS = [
@@ -9,7 +9,6 @@ const STATS = [
   { Icon: Clock, v: "≈ 45 MIN", k: "KTM to Lukla" },
   { Icon: Plane, v: "AS 350 B3e", k: "Airbus fleet" },
   { Icon: Users, v: "5 SEATS", k: "Per departure" },
-  { Icon: Luggage, v: "10 KG", k: "Baggage per person" },
 ];
 
 export default function RouteBoard() {
@@ -21,10 +20,10 @@ export default function RouteBoard() {
           className="grid grid-cols-[auto_1fr_auto] items-center gap-[clamp(14px,3vw,34px)]"
         >
           <div className="text-center">
-            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#003366]">
+            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#0C4396]">
               KTM
             </div>
-            <div className="font-manrope text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
+            <div className="font-geist-mono text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
               Kathmandu · 1,400 m
             </div>
           </div>
@@ -42,25 +41,20 @@ export default function RouteBoard() {
           </div>
 
           <div className="text-center">
-            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#003366]">
+            <div className="font-fraunces text-[clamp(1.7rem,4vw,2.4rem)] font-black tracking-[.02em] text-[#0C4396]">
               LUA
             </div>
-            <div className="font-manrope text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
+            <div className="font-geist-mono text-[11px] uppercase tracking-[.1em] text-[#4A5B76]">
               Lukla · 2,860 m
             </div>
           </div>
         </div>
 
-        <div className="mt-5 grid grid-cols-2 gap-3.5 border-t border-[#D7E2F2] pt-[18px] sm:grid-cols-5">
-          {STATS.map(({ Icon, v, k }, i) => (
-            <div
-              key={v}
-              className={`text-center ${
-                i === 4 ? "col-span-2 sm:col-span-1" : ""
-              }`}
-            >
-              <Icon className="mx-auto mb-1 h-[19px] w-[19px] text-[#C49A3C]" />
-              <div className="font-manrope text-[clamp(.95rem,2vw,1.15rem)] font-semibold text-[#003366]">
+        <div className="mt-5 grid grid-cols-2 gap-3.5 border-t border-[#D7E2F2] pt-[18px] sm:grid-cols-4">
+          {STATS.map(({ Icon, v, k }) => (
+            <div key={v} className="text-center">
+              <Icon className="mx-auto mb-1 h-[19px] w-[19px] text-[#D99A00]" />
+              <div className="font-geist-mono text-[clamp(.95rem,2vw,1.15rem)] font-semibold text-[#0C4396]">
                 {v}
               </div>
               <div className="text-xs uppercase tracking-[.08em] text-[#4A5B76]">{k}</div>

@@ -21,13 +21,13 @@ export default function FloatingCta() {
           href={waLink(message)}
           target="_blank"
           rel="noopener"
-          className="inline-flex items-center justify-center rounded-full bg-[#F2B632] px-2.5 py-3.5 text-[14.5px] font-bold tracking-[.02em] text-[#0d1a2d]"
+          className="inline-flex items-center justify-center rounded-full bg-[#F5AF00] px-2.5 py-3.5 text-[14.5px] font-bold tracking-[.02em] text-[#051F49]"
         >
           WhatsApp Us
         </a>
         <a
           href="#top"
-          className="inline-flex items-center justify-center rounded-full bg-[#003366] px-2.5 py-3.5 text-[14.5px] font-bold tracking-[.02em] text-white"
+          className="inline-flex items-center justify-center rounded-full bg-[#0C4396] px-2.5 py-3.5 text-[14.5px] font-bold tracking-[.02em] text-white"
         >
           Book Now
         </a>

@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#071c36] text-white">
       <Image
-        src="/images/home-section/mountain-helicopter.jpg"
-        alt="Mountain Helicopters aircraft flying near the Himalayas"
+        src="/images/fleet/fleet2.png"
+        alt="Mountain Helicopters 9N-AOP, an Airbus AS350 B3e (H125)"
         fill
         priority
         sizes="100vw"
