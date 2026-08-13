@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import type { BlogPost, BlogSection } from "@/lib/blogs";
+import BlogFaqAccordion from "./BlogFaqAccordion";
 
 type BlogDetailPageProps = {
   post: BlogPost;
@@ -130,21 +131,7 @@ export default function BlogDetailPage({ post }: BlogDetailPageProps) {
             <h2 className="font-fraunces text-[28px] font-semibold text-[#0E2F4F] sm:text-[30px]">
               Frequently Asked Questions
             </h2>
-            <div className="mt-6 space-y-4 sm:mt-7 sm:space-y-5">
-              {post.faqs.map((faq) => (
-                <div
-                  key={faq.question}
-                  className="rounded-[8px] border border-[#D8CEC0] bg-white p-5 shadow-sm sm:p-6"
-                >
-                  <h3 className="font-manrope text-[16px] font-bold leading-6 text-[#0E2F4F] sm:text-[17px]">
-                    {faq.question}
-                  </h3>
-                  <p className="mt-3 font-manrope text-[15px] leading-7 text-[#475569]">
-                    {faq.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <BlogFaqAccordion faqs={post.faqs} />
           </section>
 
           <div className="mt-10 rounded-[8px] bg-[#0E2F4F] p-5 text-white shadow-sm sm:mt-12 sm:p-7">

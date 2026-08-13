@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden bg-[#002347] text-white">
       {/* Full-width background image */}
       <Image
-        src="/images/experiences/celebration-bg.png"
+        src="/images/fleet/fleet2.png"
         alt="Helicopter on a private Himalayan ridge prepared for a celebration"
         fill
         priority
