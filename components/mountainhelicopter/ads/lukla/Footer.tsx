@@ -5,12 +5,12 @@ export default function Footer() {
     <footer className="bg-[#0d1a2d] pb-[90px] pt-11 text-[14.5px] text-[#A9C2E8] md:pb-11">
       <div className="mx-auto flex max-w-[1160px] flex-wrap items-center justify-between gap-[26px] px-[22px]">
         <div>
-          <div className="inline-block rounded-xl bg-white p-[12px_18px]">
+          <div className="inline-block">
             <Image
-              src="/images/navbar-logo-clear.png"
-              alt="Mountain Helicopters Pvt. Ltd."
-              width={140}
-              height={46}
+              src="/images/logo/mountainheli-logo.svg"
+              alt="Mountain Helicopters Logo"
+              width={192}
+              height={64}
               className="h-[46px] w-auto"
             />
           </div>

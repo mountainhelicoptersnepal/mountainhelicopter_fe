@@ -305,7 +305,7 @@ export const blogPosts: BlogPost[] = [
     secondaryKeywords: ["everest helicopter tour vs trek", "is helicopter tour worth it nepal"],
     internalLinks: [
       { label: "Everest Base Camp helicopter tour", href: "/tours/everest-base-camp" },
-      { label: "Lukla transfer", href: "/ads/lukla" },
+      { label: "Lukla transfer", href: "/kathmandu-to-lukla-helicopter"},
     ],
     content: [
       {

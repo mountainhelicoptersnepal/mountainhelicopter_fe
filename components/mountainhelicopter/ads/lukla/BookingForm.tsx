@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { submitAdsLuklaBooking } from "@/lib/ads-lukla-bookings";
 import { DIAL_CODES, FLIGHT_TYPES, PHONE_TEL } from "./constants";
 
@@ -32,6 +33,7 @@ export default function BookingForm({
   idPrefix: string;
   heading?: boolean;
 }) {
+  const router = useRouter();
   const minDate = useMemo(() => today(), []);
   const formStartedAt = useRef(0);
   // Fixed values on first render so SSR and client hydration match;
@@ -115,6 +117,7 @@ export default function BookingForm({
         captcha_answer: Number(captchaAnswer),
       });
       setSubmitted(true);
+      router.push("/kathmandu-to-lukla-helicopter/thank-you");
     } catch (error) {
       console.error("Ads booking submission failed:", error);
       setServerError(
