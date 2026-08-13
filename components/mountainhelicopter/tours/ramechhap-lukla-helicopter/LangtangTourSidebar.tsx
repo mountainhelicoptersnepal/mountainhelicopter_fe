@@ -61,8 +61,8 @@ const whyBookItems = [
 ];
 
 const groupPricing = [
-  ["Shared Seat", "On request"],
-  ["Private Charter", "On request"],
+  ["Shared Seat", " USD 400"],
+  ["Private Charter", "USD 1500"],
 ];
 
 export default function EverestTourSidebar() {
@@ -104,7 +104,7 @@ export default function EverestTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  On request
+                  $400
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">

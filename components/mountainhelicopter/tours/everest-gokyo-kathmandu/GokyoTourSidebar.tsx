@@ -61,8 +61,8 @@ const whyBookItems = [
 ];
 
 const groupPricing = [
-  ["Group joining seat", "USD 1,499"],
-  ["Private charter", "On request"],
+  ["Group joining seat", "USD 4000"],
+  ["Private charter", "USD 7000"],
   ["Permits and taxes", "Excluded"],
 ];
 
@@ -105,7 +105,7 @@ export default function GokyoTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  $1,499
+                  $4000
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">

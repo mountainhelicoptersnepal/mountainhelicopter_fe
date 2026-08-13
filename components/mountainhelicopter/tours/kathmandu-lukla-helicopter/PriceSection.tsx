@@ -4,7 +4,7 @@ const plans = [
   {
     title: "Shared Seat",
     subtitle: "Join a fixed departure to Lukla",
-    price: "$500",
+    price: "$550",
     unit: "per person",
     button: "Book Shared Seat",
     href: "/contact#inquiry-form",
@@ -20,7 +20,7 @@ const plans = [
   {
     title: "Private Charter",
     subtitle: "The whole helicopter, on your schedule",
-    price: "$3000",
+    price: "$1900",
     unit: "per helicopter",
     button: "Charter the Helicopter",
     href: "/contact#inquiry-form",

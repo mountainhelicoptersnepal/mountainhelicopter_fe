@@ -4,7 +4,7 @@ const plans = [
   {
     title: "Shared Seat",
     subtitle: "Group joining seat",
-    price: "$1,499",
+    price: "$4000",
     unit: "per person",
     button: "Book Shared Seat",
     href: "/contact#inquiry-form",
@@ -21,7 +21,7 @@ const plans = [
   {
     title: "Private Charter",
     subtitle: "Based on group size",
-    price: "On request",
+    price: "$7000",
     unit: "per helicopter",
     button: "Charter the Helicopter",
     href: "/contact#inquiry-form",

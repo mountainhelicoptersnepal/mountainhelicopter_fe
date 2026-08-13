@@ -61,8 +61,8 @@ const whyBookItems = [
 ];
 
 const groupPricing = [
-  ["Shared Seat", "USD 1,200"],
-  ["Private Charter", "On request"],
+  ["Shared Seat", "USD 1700"],
+  ["Private Charter", "USD 6500"],
 ];
 
 export default function GorakshepTourSidebar() {
@@ -104,7 +104,7 @@ export default function GorakshepTourSidebar() {
 
               <div className="mt-1 flex items-end">
                 <span className="font-fraunces text-4xl font-medium leading-none text-[#0a4e80]">
-                  USD 1,200
+                  $1700
                 </span>
 
                 <span className="mb-1 ml-1 font-manrope text-[9px] text-slate-400">

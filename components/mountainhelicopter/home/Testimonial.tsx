@@ -28,7 +28,7 @@ const TESTIMONIALS = [
     location: "Paris, France",
     date: "March 2026",
     image:
-      "/images/experiences/private-charter-bg.png",
+      "/images/fleet/fleet2.png",
   },
   {
     quote:
@@ -37,7 +37,7 @@ const TESTIMONIALS = [
     location: "Tokyo, Japan",
     date: "February 2026",
     image:
-      "/images/rescue/main/as350-b3e-rescue-helicopter.jpg",
+      "/images/featured-section/gorakshep.jpg",
   },
   {
     quote:
