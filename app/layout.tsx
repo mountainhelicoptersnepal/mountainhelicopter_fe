@@ -7,7 +7,10 @@ import {
   Manrope,
   Montserrat,
 } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
 const manrope = Manrope({
   variable: "--font-family-manrope",
@@ -48,6 +51,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://mountainhelicoptersnepal.com"
+  ),
   title: "Mountain Helicopter",
   description: "Mountain Helicopter frontend",
   robots: {
@@ -70,9 +76,28 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${geist.variable} ${geistMono.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
+      {gtmId ? (
+        <Script id="gtm" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${gtmId}');`}
+        </Script>
+      ) : null}
       <body
         className={`${manrope.variable} ${geist.variable} ${geistMono.variable} ${fraunces.variable} ${montserrat.variable} ${jetbrainsMono.variable} min-h-full flex flex-col`}
       >
+        {gtmId ? (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        ) : null}
         {/* reCAPTCHA removed */}
         {/* RootProvider is reserved for the later dynamic/admin phase. */}
         {children}
