@@ -31,7 +31,7 @@ const packages: PackageResult[] = [
     excerpt:
       "Fly to the Everest region and land near Kala Patthar for a same-morning Himalayan experience.",
     meta: "4-5 hrs | Khumbu",
-    price: "From $1,499",
+    price: "From $3,000",
     image: "/images/everest-kalapatthar-kathmandu/Kala Patthar Landing- HEV-Hero.jpg",
     keywords: ["everest", "base camp", "ebc", "kala patthar", "helicopter"],
   },
@@ -42,7 +42,7 @@ const packages: PackageResult[] = [
     excerpt:
       "Fly close to Everest, then land beside the turquoise waters of Gokyo Lake.",
     meta: "4-5 hrs | Khumbu",
-    price: "From $1,200",
+    price: "From $4,000",
     image: "/images/everest-gokyo-kathmandu/Gokyo-Landing-Hero.jpg",
     keywords: ["everest", "gokyo", "khumbu", "helicopter", "tour"],
   },
@@ -53,7 +53,7 @@ const packages: PackageResult[] = [
     excerpt:
       "Fast helicopter return from the Everest trekking route to Kathmandu.",
     meta: "45-60 min | Everest",
-    price: "From $1,200",
+    price: "From $1,700",
     image: "/images/gorakshep-kathmandu-helicopter/Gorakshep-Kathmandu-helicopter-hero.JPG",
     keywords: ["gorakshep", "kathmandu", "everest", "return", "helicopter"],
   },
@@ -64,7 +64,7 @@ const packages: PackageResult[] = [
     excerpt:
       "Direct helicopter transfer from Kathmandu to the gateway of the Everest region.",
     meta: "40-50 min | Lukla",
-    price: "From $500",
+    price: "From $550",
     image: "/images/kathmandu-lukla-helicopter/kathmandu-Lukla-helicopter-hero.jpg",
     keywords: ["kathmandu", "lukla", "everest", "transfer", "helicopter"],
   },
@@ -75,7 +75,7 @@ const packages: PackageResult[] = [
     excerpt:
       "Convenient helicopter transfer from Ramechhap to Lukla.",
     meta: "Short transfer | Lukla",
-    price: "On request",
+    price: "From $400",
     image: "/images/ramechhap-lukla-helicopter/Ramechhap-Lukla-helicopter-Hero.png",
     keywords: ["ramechhap", "lukla", "everest", "transfer", "helicopter"],
   },

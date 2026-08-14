@@ -5,7 +5,7 @@ const tours = [
   {
     title: "Everest Mountain Overfly with Kala Patthar Landing",
     meta: "4-5 HRS  |  5,545M  |  KALA PATTHAR",
-    price: "FROM $1,499",
+    price: "FROM $3,000",
     cta: "VIEW EVEREST TOUR",
     href: "/tours/everest-kalapatthar-kathmandu",
     image: "/images/featured-section/kalapatthar.jpg",
@@ -16,7 +16,7 @@ const tours = [
   {
     title: "Everest Mountain Overfly with Gokyo Lake Landing",
     meta: "4-5 HRS  |  GOKYO  |  KHUMBU, NEPAL",
-    price: "From $1,200",
+    price: "From $4,000",
     cta: "VIEW GOKYO TOUR",
     href: "/tours/everest-gokyo-kathmandu",
     image: "/images/featured-section/Gokyo.jpg",
@@ -27,10 +27,10 @@ const tours = [
   {
     title: "Gorakshep to Kathmandu Helicopter Flight",
     meta: "45-60 MIN  |  EVEREST REGION",
-    price: "From $1,200",
+    price: "From $1,700",
     cta: "VIEW GORAKSHEP FLIGHT",
     href: "/tours/gorakshep-kathmandu-helicopter",
-    image: "/images/featured-section/gorakshep.JPG",
+    image: "/images/featured-section/gorakshep.jpg",
     detail:
       "Return quickly from Gorakshep and the Everest trail to Kathmandu when time, comfort, or itinerary recovery matters.",
     size: "small",
@@ -38,7 +38,7 @@ const tours = [
   {
     title: "Kathmandu to Lukla Helicopter Flight",
     meta: "40-50 MIN  |  2,846 M  |  LUKLA",
-    price: "From $500",
+    price: "From $550",
     cta: "VIEW KATHMANDU LUKLA",
     href: "/tours/kathmandu-lukla-helicopter",
     image: "/images/featured-section/lukla1.jpg",
@@ -49,7 +49,7 @@ const tours = [
   {
     title: "Ramechhap to Lukla Helicopter Flight",
     meta: "SHORT TRANSFER  |  LUKLA",
-    price: "On request",
+    price: "From $400",
     cta: "VIEW RAMECHHAP LUKLA",
     href: "/tours/ramechhap-lukla-helicopter",
     image: "/images/featured-section/Ramechhap.jpg",
