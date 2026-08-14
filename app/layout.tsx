@@ -10,7 +10,7 @@ import {
 import Script from "next/script";
 import "./globals.css";
 
-const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-NLZ6HKWH";
 
 const manrope = Manrope({
   variable: "--font-family-manrope",
